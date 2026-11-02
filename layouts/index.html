@@ -14,7 +14,7 @@
       <p class="hero-description">Cloud, AI, and code that ships to production.<br>We decode what matters across <strong>{{ $sourceCount }} curated sources</strong> so you can understand what changed — and why.</p>
       <div class="hero-actions">
         {{- range $latest }}<a class="button button-primary" href="{{ .RelPermalink }}">Read the latest edition <span aria-hidden="true">→</span></a>{{ end }}
-        <a class="button button-secondary" href="{{ "podcast/" | relURL }}">Listen to the podcast</a>
+        <a class="button button-secondary" href="{{ "podcast/" | relURL }}">{{ partial "brand-icon.html" "headphones" }}Listen to the podcast</a>
       </div>
       <p class="hero-note">Built for people who build. Updated every day.</p>
     </div>
@@ -50,7 +50,7 @@
         <div class="edition-bottom"><span>{{ .ReadingTime }} min read</span><a href="{{ .RelPermalink }}">Read the edition <span aria-hidden="true">→</span></a></div>
       </article>
       <aside class="podcast-card" aria-labelledby="podcast-title">
-        <p class="eyebrow">On another frequency</p>
+        <p class="eyebrow">{{ partial "brand-icon.html" "headphones" }}On another frequency</p>
         <h3 id="podcast-title">Press play.<br>Connect the dots.</h3>
         <p>Anna, Maria, and Pedro unpack the technology stories that matter. Three AI-generated English voices, grounded in the day's reporting.</p>
         {{- range first 1 (partial "podcast-episodes.html" .) }}

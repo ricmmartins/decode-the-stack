@@ -63,6 +63,12 @@ class SiteAudioTests(unittest.TestCase):
                     "Many sources. One direction.",
                 )
                 self.assertEqual(home_soup.html["lang"], "en")
+                for selector in (".hero-actions .button-secondary", ".podcast-card .eyebrow"):
+                    element = home_soup.select_one(selector)
+                    icon = element.select_one("svg.brand-icon")
+                    self.assertIsNotNone(icon)
+                    self.assertEqual(icon["aria-hidden"], "true")
+                    self.assertEqual(len(icon.select("rect")), 2)
                 edition = (root / "public" / "posts" / "2026-11-02-daily" / "index.html")
                 self.assertIn("<audio", edition.read_text(encoding="utf-8"))
                 for page in ("index.html", "categories/index.html"):
