@@ -60,8 +60,12 @@ class PostGenerationTests(unittest.TestCase):
             )
             sources = root / "sources.yaml"
             sources.write_text("sources:\n  - name: Example\n", encoding="utf-8")
+            audio = root / "static/podcast/audio/2026-11-02.mp3"
+            audio.parent.mkdir(parents=True)
+            audio.write_bytes(b"ID3-test-audio")
             with patch.multiple(
                 generate_post,
+                PROJECT_DIR=root,
                 DATA_DIR=data,
                 DATA_RANKED_DIR=ranked,
                 CONTENT_DIR=posts,
@@ -76,6 +80,7 @@ class PostGenerationTests(unittest.TestCase):
         self.assertEqual((main_count, quick_count), (1, 1))
         self.assertIn('slug: "2026-11-02-daily"', text)
         self.assertIn("/podcast/audio/2026-11-02.mp3", text)
+        self.assertRegex(text, r"/podcast/audio/2026-11-02\.mp3\?v=[0-9a-f]{12}")
         self.assertIn("Monday, 2 November 2026", text)
         self.assertIn("comments: false", text)
 

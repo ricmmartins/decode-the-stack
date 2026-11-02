@@ -1,0 +1,3 @@
+{{- $audio := printf "podcast/audio/%s.mp3" . }}
+{{- $version := (os.ReadFile (printf "static/%s" $audio)) | crypto.SHA256 }}
+{{- return (printf "%s?v=%.12s" ($audio | relURL) $version) }}

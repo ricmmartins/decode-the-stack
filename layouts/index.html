@@ -55,7 +55,7 @@
         <h3 id="podcast-title">Press play.<br>Connect the dots.</h3>
         <p>Anna, Maria, and Pedro unpack the technology stories that matter. Three AI-generated English voices, grounded in the day's reporting.</p>
         {{- range first 1 (partial "podcast-episodes.html" .) }}
-        {{- $audio := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
+        {{- $audio := partial "podcast-audio-url.html" (.Date.Format "2006-01-02") }}
         <span class="podcast-date">Episode from {{ .Date | time.Format "January 2, 2006" }}</span>
         <audio controls preload="none" aria-label="Listen to the episode from {{ .Date | time.Format "January 2, 2006" }}"><source src="{{ $audio | relURL }}" type="audio/mpeg">Your browser does not support audio. <a href="{{ $audio | relURL }}">Download the episode</a>.</audio>
         {{- end }}

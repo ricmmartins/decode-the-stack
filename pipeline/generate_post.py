@@ -4,6 +4,7 @@ Converts synthesis output into a Hugo-compatible markdown post.
 """
 
 import json
+import hashlib
 import re
 import sys
 from datetime import datetime, timezone
@@ -506,10 +507,12 @@ TocOpen: false
 
     # Add audio player if podcast was generated
     if has_audio:
+        audio_path = PROJECT_DIR / "static" / "podcast" / "audio" / f"{date}.mp3"
+        audio_version = hashlib.sha256(audio_path.read_bytes()).hexdigest()[:12]
         front_matter += f"""[AUDIO] **Listen to today's podcast** — with Anna, Maria, and Pedro:
 
 <audio controls preload="metadata" style="width:100%; margin-bottom: 1.5em;">
-  <source src="/podcast/audio/{date}.mp3" type="audio/mpeg">
+  <source src="/podcast/audio/{date}.mp3?v={audio_version}" type="audio/mpeg">
 </audio>
 
 """

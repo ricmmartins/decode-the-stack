@@ -41,7 +41,7 @@ class EnglishPodcastTests(unittest.TestCase):
             generate.assert_not_called()
             speak.assert_not_called()
 
-    def test_music_bed_matches_original_gain_loop_and_fades(self):
+    def test_music_bed_has_controlled_audible_level_loop_and_fades(self):
         from pydub import AudioSegment
         from pydub.generators import Sine
 
@@ -66,11 +66,29 @@ class EnglishPodcastTests(unittest.TestCase):
                 podcast._overlay_background_music(output)
             mixed = captured[0]
             self.assertEqual(len(mixed), len(speech))
-            self.assertAlmostEqual(mixed[4000:5000].dBFS - music[0:1000].dBFS, -20, delta=0.1)
+            self.assertAlmostEqual(mixed[4000:5000].dBFS, -28, delta=0.2)
             self.assertGreater(mixed[11000:11500].rms, 0)
             self.assertLess(mixed[0:500].rms, mixed[3000:3500].rms)
             self.assertLess(mixed[-500:].rms, mixed[-5500:-5000].rms)
             self.assertEqual(output.read_bytes(), b"mixed")
+
+    def test_quiet_music_intro_is_lifted_without_changing_full_bed_target(self):
+        from pydub.generators import Sine
+        music = (
+            Sine(440).to_audio_segment(duration=5000).apply_gain(-20)
+            + Sine(440).to_audio_segment(duration=5000).apply_gain(-8)
+        )
+        bed = podcast._prepare_background_music(music, 20000)
+        self.assertGreater(bed[3500:4500].dBFS, -34)
+        self.assertLess(bed[6500:7500].dBFS, -25)
+        self.assertGreater(bed[13500:14500].rms, 0)
+
+    def test_mix_reserves_headroom_without_clipping(self):
+        from pydub.generators import Sine
+        speech = Sine(440).to_audio_segment(duration=1000)
+        mixed = podcast._mix_background_audio(speech, speech)
+        self.assertAlmostEqual(mixed.max_dBFS, -1, delta=0.01)
+        self.assertEqual(len(mixed), len(speech))
 
     def test_missing_music_fails_instead_of_publishing_dry_episode(self):
         with (
@@ -78,6 +96,15 @@ class EnglishPodcastTests(unittest.TestCase):
             self.assertRaisesRegex(FileNotFoundError, "Required podcast background music"),
         ):
             podcast._overlay_background_music(Path("episode.mp3"))
+
+    def test_mix_aligns_submillisecond_sample_rounding(self):
+        from pydub.generators import Sine
+        speech = Sine(440).to_audio_segment(duration=1000)
+        music = speech._spawn(speech.raw_data[:-2])
+        mixed = podcast._mix_background_audio(speech, music)
+        self.assertEqual(mixed.frame_count(), speech.frame_count())
+        with self.assertRaisesRegex(ValueError, "same duration"):
+            podcast._mix_background_audio(speech, music[:900])
 
     def test_duration_targets_fifteen_minutes(self):
         self.assertEqual(podcast.DEFAULT_PODCAST_TARGET_MINUTES, 15)

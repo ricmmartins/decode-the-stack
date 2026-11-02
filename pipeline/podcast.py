@@ -178,7 +178,8 @@ JINGLE_URL = ""
 
 # Background music file (lo-fi, CC0, for ambient bed under voices)
 BG_MUSIC_PATH = PROJECT_DIR / "static" / "podcast" / "music" / "bgmusic.mp3"
-BG_MUSIC_DB = -20  # Volume reduction in dB (negative = quieter)
+BG_MUSIC_TARGET_DBFS = -28.0
+BG_MUSIC_COMPRESSION_THRESHOLD_DBFS = -24.0
 
 # ── English tech terms for correct pronunciation via <lang> tags ──
 ENGLISH_TECH_TERMS = {
@@ -552,6 +553,22 @@ def script_to_ssml(script):
     return ssml
 
 
+def _prepare_background_music(music, duration_ms):
+    """Keep the quiet introduction audible without overpowering narration."""
+    from pydub.effects import compress_dynamic_range
+
+    if not len(music) or music.rms == 0:
+        raise ValueError("Background music must contain non-silent audio.")
+    music = compress_dynamic_range(
+        music, threshold=BG_MUSIC_COMPRESSION_THRESHOLD_DBFS,
+        ratio=4.0, attack=10, release=250,
+    )
+    music = music.apply_gain(BG_MUSIC_TARGET_DBFS - music.dBFS)
+    if len(music) < duration_ms:
+        music = music * ((duration_ms // len(music)) + 1)
+    return music[:duration_ms].fade_in(3000).fade_out(5000)
+
+
 def _overlay_background_music(speech_path):
     """Overlay lo-fi background music at low volume under the speech."""
     if not BG_MUSIC_PATH.exists():
@@ -563,18 +580,42 @@ def _overlay_background_music(speech_path):
     speech_len = len(speech)
     if not speech_len or not len(music):
         raise ValueError("Speech and background music must contain nonempty audio.")
-    if len(music) < speech_len:
-        music = music * ((speech_len // len(music)) + 1)
-    music = music[:speech_len]
-    music = (music + BG_MUSIC_DB).fade_in(3000).fade_out(5000)
-    combined = speech.overlay(music)
+    music = _prepare_background_music(music, speech_len)
+    combined = _mix_background_audio(speech, music)
     temporary = Path(speech_path).with_suffix(".mix.mp3")
     try:
         combined.export(str(temporary), format="mp3", bitrate=MP3_BITRATE)
         temporary.replace(speech_path)
     finally:
         temporary.unlink(missing_ok=True)
-    print(f"[AUDIO] Background music overlaid ({BG_MUSIC_DB} dB, {speech_len/1000:.0f}s; fades 3s/5s)")
+    print(f"[AUDIO] Background music overlaid (target {BG_MUSIC_TARGET_DBFS} dBFS, {speech_len/1000:.0f}s; fades 3s/5s)")
+
+
+def _mix_background_audio(speech, music):
+    """Sum without saturation, reserving 1 dB of shared sample headroom."""
+    import numpy as np
+    from pydub import AudioSegment
+
+    channels = max(speech.channels, music.channels)
+    rate = max(speech.frame_rate, music.frame_rate)
+    speech = speech.set_channels(channels).set_frame_rate(rate).set_sample_width(2)
+    music = music.set_channels(channels).set_frame_rate(rate).set_sample_width(2)
+    speech_samples = np.asarray(speech.get_array_of_samples(), dtype=np.int32)
+    music_samples = np.asarray(music.get_array_of_samples(), dtype=np.int32)
+    # Millisecond slicing/resampling can differ by one partial millisecond.
+    difference = len(speech_samples) - len(music_samples)
+    if abs(difference) > rate * channels / 1000:
+        raise ValueError("Speech and prepared music must have the same duration.")
+    if difference > 0:
+        music_samples = np.pad(music_samples, (0, difference))
+    samples = speech_samples + music_samples[:len(speech_samples)]
+    peak = int(np.max(np.abs(samples))) if len(samples) else 0
+    gain_db = min(0.0, 20 * np.log10(32767 / peak) - 1) if peak else 0.0
+    scaled = (samples * (10 ** (gain_db / 20))).astype("<i2")
+    print(f"[AUDIO] Shared mix headroom adjustment: {gain_db:.2f} dB")
+    return AudioSegment(
+        scaled.tobytes(), sample_width=2, frame_rate=rate, channels=channels,
+    )
 
 
 def _post_process_audio(output_path):

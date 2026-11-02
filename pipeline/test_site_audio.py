@@ -1,5 +1,6 @@
 import re
 import json
+import hashlib
 import shutil
 import subprocess
 import tempfile
@@ -45,7 +46,10 @@ class SiteAudioTests(unittest.TestCase):
                 for page in ("index.html", "podcast/index.html"):
                     content = (root / "public" / page).read_text(encoding="utf-8")
                     sources = re.findall(r"<source\b[^>]*\bsrc=[\"']?([^\"'\s>]+)", content)
-                    self.assertEqual(sources, ["/podcast/audio/2026-11-02.mp3"])
+                    digest = hashlib.sha256(
+                        (root / "static/podcast/audio/2026-11-02.mp3").read_bytes()
+                    ).hexdigest()[:12]
+                    self.assertEqual(sources, [f"/podcast/audio/2026-11-02.mp3?v={digest}"])
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)
                 edition = (root / "public" / "posts" / "2026-11-02-daily" / "index.html")

@@ -11,6 +11,7 @@
   {{- range $posts }}
     {{- $audio := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
     {{- if and (not $latest) (fileExists (printf "static/%s" $audio)) }}
+      {{- $audio = partial "podcast-audio-url.html" (.Date.Format "2006-01-02") }}
       {{- $latest = . }}
       <section class="podcast-show" aria-label="Latest podcast episode">
         <img class="podcast-cover" src="{{ "images/podcast-cover.png" | relURL }}" width="3000" height="3000" alt="Decode the Stack podcast cover in navy, cyan, and lime">
@@ -42,6 +43,7 @@
         {{- $post := . }}
         {{- $episodeAudio := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
         {{- if and (fileExists (printf "static/%s" $episodeAudio)) (ne .RelPermalink $latestURL) }}
+          {{- $episodeAudio = partial "podcast-audio-url.html" (.Date.Format "2006-01-02") }}
           {{- $episodeCount = add $episodeCount 1 }}
           <article class="post-entry episode-card">
             <div class="edition-meta"><span class="edition-badge">Podcast episode</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "January 2, 2006" }}</time></div>

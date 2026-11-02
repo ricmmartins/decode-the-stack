@@ -50,8 +50,15 @@ fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
 The shared background track is bundled at `static/podcast/music/bgmusic.mp3`,
 copied byte-for-byte from Decodifica.Tech's existing track (original commit
 `3dd1395`, recorded there as CC0/Pixabay). It loops under the complete episode
-at -20 dB, with a 3-second fade-in and 5-second fade-out, matching the original
-mixing behavior. Missing or invalid background music now fails publication
+with a 3-second fade-in and 5-second fade-out. The source track's quiet opening
+was almost inaudible with the original fixed -20 dB attenuation, so music
+dynamics are now compressed at -24 dBFS (4:1) and normalized to -28 dBFS before
+looping and fades. This keeps the bed roughly 8 dB below the normalized speech
+instead of over 20 dB below speech during the opening.
+Speech and music receive the same final gain when needed to reserve 1 dB of
+sample headroom. Website players use a content-hash query to refresh remixes;
+the podcast RSS enclosure URL and episode GUID stay unchanged.
+Missing or invalid background music now fails publication
 instead of silently producing a dry episode. The Portuguese spoken jingle is
 not copied into the English show.
 
@@ -65,9 +72,9 @@ The first complete publication was generated on 2 November 2026 using Azure
 OpenAI and the complete three-host Edge TTS fallback: 2,335 spoken words,
 15:41 of audio. The validated runner artifact was published through local
 authenticated Git after the orchestrator's existing fine-grained PAT returned
-HTTP 403 on push. **Future scheduled publication is blocked until the owner
-authorizes `decode-the-stack` on that PAT with Contents: Read and write**,
-preserving its existing repository permissions. The orchestrator now checks
+HTTP 403 on push. The owner subsequently corrected repository authorization;
+the orchestrator's site-only run `41450443349` verified write access without
+regenerating analysis or audio. The orchestrator now checks
 actual write access before spending on generation; API `permissions.push`
 alone is not sufficient proof. No token values were copied into this repository.
 
