@@ -120,6 +120,10 @@ class SiteAudioTests(unittest.TestCase):
                     "Many sources. One direction.",
                 )
                 self.assertEqual(home_soup.html["lang"], "en")
+                self.assertEqual(
+                    home_soup.select_one(".terminal-code p").get_text(" ", strip=True),
+                    "$ decode --topic tech",
+                )
                 for selector in (".hero-actions .button-secondary", ".podcast-card .eyebrow"):
                     element = home_soup.select_one(selector)
                     icon = element.select_one("svg.brand-icon")

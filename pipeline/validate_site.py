@@ -86,7 +86,7 @@ def _validate_home(root):
         raise ValueError("The home page does not display the full curated source count.")
     for expected in (
         "MANY SOURCES. ONE DIRECTION.",
-        "decode --topic tech --language en",
+        "decode --topic tech",
         "Filter the noise. Connect the dots.",
         "Less hype. More engineering.",
         "categories/cloud/",
