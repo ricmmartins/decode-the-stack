@@ -220,6 +220,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .post-content { font-size: 17px; line-height: 1.9; }
 .post-content a { color: var(--accent); }
 .post-content a:hover { color: var(--accent-hover); }
+.post-content pre { margin: 20px 0; padding: 10px; overflow-x: auto; background: var(--code-block-bg); border-radius: 6px; }
+.post-content pre code { display: block; padding: 0; color: #e5e5e5; background: transparent; font: 14px/1.5 var(--mono); white-space: pre; }
 .post-content table:not(.highlighttable) { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; font-size: inherit; margin-bottom: 24px; }
 .post-content table:not(.highlighttable) th, .post-content table:not(.highlighttable) td { min-width: 80px; padding: 6px 13px; border: 1px solid var(--border); text-align: start; line-height: 1.5; }
 .post-content blockquote { border-left: 3px solid var(--accent); background: var(--entry); border-radius: 0 10px 10px 0; padding: 18px 22px; }

@@ -1,6 +1,7 @@
 """Generate Decode the Stack's English three-host podcast from its synthesis."""
 
 import os
+import json
 import re
 import sys
 import time
@@ -285,6 +286,41 @@ def _sanitize_script(script):
     return script.strip()
 
 
+def _decode_script_section(response):
+    """Require explicit speaker attribution; never infer a host for narration."""
+    response = response.strip()
+    if not response.startswith("{"):
+        _validate_dialogue(response)
+        return response
+    try:
+        payload = json.loads(response)
+    except ValueError as error:
+        raise ValueError("Podcast section must be valid JSON with explicitly attributed turns.") from error
+    if not isinstance(payload, dict) or set(payload) != {"turns"}:
+        raise ValueError("Podcast JSON must contain exactly a turns array.")
+    turns = payload["turns"]
+    if not isinstance(turns, list) or not turns:
+        raise ValueError("Podcast JSON turns must be a nonempty array.")
+    lines = []
+    for turn in turns:
+        if not isinstance(turn, dict):
+            raise ValueError("Every podcast turn must explicitly name its speaker and text.")
+        if set(turn) == {"marker"} and turn["marker"] == "[INTRO]":
+            lines.append("[INTRO]")
+            continue
+        if set(turn) != {"speaker", "text"} or turn["speaker"] not in (HOST_A, HOST_B, HOST_C):
+            raise ValueError("Every spoken turn must use speaker Anna, Maria, or Pedro.")
+        text = turn["text"]
+        if not isinstance(text, str) or not text.strip():
+            raise ValueError("Every spoken turn must contain nonempty text.")
+        if re.search(r"\[(?:INTRO|TOPIC_CHANGE)\]", text):
+            raise ValueError("Stage markers must be separate from spoken text.")
+        lines.append(f"{turn['speaker']}: {' '.join(text.split())}")
+    script = "\n".join(lines)
+    _validate_dialogue(script)
+    return script
+
+
 def generate_podcast_script(synthesis_content):
     """Generate bounded sections so shorter-output providers can meet the duration."""
     from synthesize import _call_llm
@@ -326,15 +362,24 @@ def generate_podcast_script(synthesis_content):
             f"This is section {index + 1} of {section_count}. {position}\n"
             f"Write {section_minimum}-{section_maximum} spoken words, excluding "
             "speaker labels and markers. This is a strict section budget, not the "
-            "whole episode. Use all three speakers Anna:, Maria:, and Pedro:, "
-            "one turn per line, at most three sentences per turn. "
+            "whole episode. Use all three speakers Anna, Maria, and Pedro, "
+            "one JSON object per turn, at most three sentences per turn. "
             "Anna is the clear, concise anchor; Maria adds technical depth; "
             "Pedro asks practical questions in a conversational tone. "
             "Explain the supplied stories, engineering trade-offs, uncertainty, "
             "and practical questions using only the supplied evidence. "
             "Never invent facts, quotations, numbers, examples presented as facts, "
             "or publisher claims. Do not pad with repeated summaries. No Markdown, "
-            "URLs, stage directions, or markers except [INTRO]."
+            "URLs, stage directions, or markers except [INTRO]. "
+            'Return ONLY a JSON object with exactly this structure: {"turns":['
+            '{"speaker":"Anna","text":"Spoken words"},'
+            '{"marker":"[INTRO]"},'
+            '{"speaker":"Maria","text":"Spoken words"},'
+            '{"speaker":"Pedro","text":"Spoken words"}]}. '
+            "Use the optional INTRO marker only in the opening section. "
+            "Repeat speaker/text objects for each conversational turn. Every spoken "
+            "word, including the welcome, must be inside an explicitly named speaker's "
+            "text field. Never output standalone narration or unlabeled text."
         )
         accepted = None
         feedback = ""
@@ -347,15 +392,19 @@ def generate_podcast_script(synthesis_content):
             )
             if not candidate:
                 raise RuntimeError(f"No provider generated podcast section {index + 1}.")
-            candidate = _sanitize_script(candidate)
-            word_count = _spoken_word_count(candidate)
             try:
-                _validate_dialogue(candidate)
+                candidate = _decode_script_section(_sanitize_script(candidate))
             except ValueError as error:
                 if attempt == 1:
                     raise
-                feedback = f"\nFix this dialogue format error in the next draft: {error}"
+                feedback = (
+                    f"\nThe previous draft was rejected: {error}. "
+                    "Rewrite the same supplied source material as the required JSON turns "
+                    "array. Every spoken turn needs an explicit speaker and text. "
+                    "Do not repeat the rejected standalone narration format."
+                )
                 continue
+            word_count = _spoken_word_count(candidate)
             if section_minimum <= word_count <= section_maximum:
                 accepted = candidate
                 break

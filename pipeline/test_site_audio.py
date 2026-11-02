@@ -79,6 +79,14 @@ class SiteAudioTests(unittest.TestCase):
                 )
                 compact_styles = re.sub(r"\s+", "", styles)
                 self.assertIn(
+                    ".post-contentpre{margin:20px0;padding:10px;overflow-x:auto;background:var(--code-block-bg);border-radius:6px}",
+                    compact_styles,
+                )
+                self.assertIn(
+                    ".post-contentprecode{display:block;padding:0;color:#e5e5e5;background:00;font:14px/1.5var(--mono);white-space:pre}",
+                    compact_styles,
+                )
+                self.assertIn(
                     ".post-contenttable:not(.highlighttable){display:block;width:100%;overflow-x:auto;border-collapse:collapse;font-size:inherit;margin-bottom:24px}",
                     compact_styles,
                 )

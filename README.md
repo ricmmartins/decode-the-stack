@@ -57,6 +57,10 @@ repository.
 The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
 English. `OPENAI_TTS_VOICE_PEDRO` configures Pedro's primary voice; the Edge
 fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
+Podcast generation requests structured JSON turns with explicit speaker names,
+then validates every turn before audio synthesis. Unattributed narration,
+unknown hosts, missing hosts, or invalid section lengths block publication;
+they are never silently dropped or assigned a guessed speaker.
 The shared background track is bundled at `static/podcast/music/bgmusic.mp3`,
 copied byte-for-byte from Decodifica.Tech's existing track (original commit
 `3dd1395`, recorded there as CC0/Pixabay). It loops under the complete episode

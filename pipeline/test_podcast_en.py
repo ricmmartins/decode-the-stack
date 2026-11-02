@@ -1,5 +1,6 @@
 import unittest
 import tempfile
+import json
 from pathlib import Path
 from unittest.mock import patch
 
@@ -202,6 +203,60 @@ Pedro: Let us look at the engineering trade-offs."""
         for dialogue in ("Anna: Hello.\nMaria: Hello.", "Narrator: Hello."):
             with self.subTest(dialogue=dialogue), self.assertRaises(ValueError):
                 podcast._validate_dialogue(dialogue)
+
+    def test_structured_turns_keep_every_word_and_explicit_host(self):
+        response = json.dumps({"turns": [
+            {"speaker": "Anna", "text": "A teaser.\nWelcome to Decode the Stack."},
+            {"marker": "[INTRO]"},
+            {"speaker": "Maria", "text": "Technical context."},
+            {"speaker": "Pedro", "text": "A practical question."},
+        ]})
+        self.assertEqual(podcast._decode_script_section(response), (
+            "Anna: A teaser. Welcome to Decode the Stack.\n[INTRO]\n"
+            "Maria: Technical context.\nPedro: A practical question."
+        ))
+
+    def test_structured_turns_reject_unattributed_narration_and_unknown_hosts(self):
+        for turn in (
+            {"text": "Welcome without a speaker."},
+            {"speaker": "Narrator", "text": "Welcome."},
+            {"speaker": "Anna", "text": ""},
+            {"speaker": "Anna", "text": "Welcome.", "extra": "Unspoken words."},
+            {"speaker": "Anna", "text": "Welcome [INTRO]"},
+        ):
+            with self.subTest(turn=turn), self.assertRaises(ValueError):
+                podcast._decode_script_section(json.dumps({"turns": [turn]}))
+        with self.assertRaises(ValueError):
+            podcast._decode_script_section(
+                "Anna: A teaser.\nWelcome to Decode the Stack, where we dive deep.\n"
+                "Maria: Context.\nPedro: A question."
+            )
+
+    def test_unlabeled_welcome_is_retried_as_structured_turns_without_dropping_words(self):
+        bad = "Anna: Teaser.\nWelcome to Decode the Stack.\nMaria: Context.\nPedro: Question."
+        good = json.dumps({"turns": [
+            {"speaker": host, "text": " ".join(["context"] * size)}
+            for host, size in (("Anna", 126), ("Maria", 126), ("Pedro", 128))
+        ]})
+        synthesis = "\n\n".join(f"### Story {i}\nVerified reporting." for i in range(6))
+        with (
+            patch.dict("sys.modules", {"synthesize": synthesize}),
+            patch.object(synthesize, "_call_llm", side_effect=[bad, *[good] * 6]) as call,
+        ):
+            script = podcast.generate_podcast_script(synthesis)
+        self.assertEqual(podcast._spoken_word_count(script), 2280)
+        self.assertEqual(call.call_count, 7)
+        self.assertIn("required JSON turns", call.call_args_list[1].args[0])
+
+    def test_repeated_unlabeled_welcome_still_blocks_generation(self):
+        synthesis = "\n\n".join(f"### Story {i}\nVerified reporting." for i in range(6))
+        with (
+            patch.dict("sys.modules", {"synthesize": synthesize}),
+            patch.object(synthesize, "_call_llm", return_value="Welcome to Decode the Stack.") as call,
+            self.assertRaisesRegex(ValueError, "unrecognized dialogue line"),
+        ):
+            podcast.generate_podcast_script(synthesis)
+        self.assertEqual(call.call_count, 2)
 
     def test_tts_fallback_restarts_entire_three_host_episode(self):
         def partial_openai(segments, directory):

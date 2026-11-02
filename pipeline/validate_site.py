@@ -271,6 +271,8 @@ def validate(root):
             raise ValueError(f"Required site output is empty: {path}")
 
     _validate_shared_layout(root)
+    if f"Sitemap: {SITE_URL}sitemap.xml" not in _read(root / "robots.txt"):
+        raise ValueError("The robots policy is missing the canonical sitemap URL.")
     _validate_home(root)
     _validate_search(root)
     _validate_written_feed(root)
