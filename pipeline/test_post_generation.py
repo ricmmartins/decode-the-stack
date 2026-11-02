@@ -6,6 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from pipeline import generate_post, weekly_summary
+import humanizer
 
 
 class PostGenerationTests(unittest.TestCase):
@@ -63,7 +64,15 @@ class PostGenerationTests(unittest.TestCase):
             audio = root / "static/podcast/audio/2026-11-02.mp3"
             audio.parent.mkdir(parents=True)
             audio.write_bytes(b"ID3-test-audio")
-            with patch.multiple(
+            def editor(system, user, label):
+                if label == "Humanizer editorial review":
+                    return user
+                return json.dumps(dict(
+                    facts_preserved=True, names_preserved=True,
+                    attribution_preserved=True, no_new_claims=True,
+                ))
+
+            with patch.object(humanizer, "_call_llm", side_effect=editor), patch.multiple(
                 generate_post,
                 PROJECT_DIR=root,
                 DATA_DIR=data,
@@ -71,9 +80,15 @@ class PostGenerationTests(unittest.TestCase):
                 CONTENT_DIR=posts,
                 SOURCES_FILE=sources,
             ):
+                with patch.object(humanizer, "_call_llm", side_effect=humanizer.HumanizerError("Rejected")):
+                    with self.assertRaises(humanizer.HumanizerError):
+                        generate_post.generate_post("2026-11-02", has_audio=True)
+                self.assertFalse(posts.exists())
+                self.assertFalse((root / "data/humanizer").exists())
                 output, main_count, quick_count = generate_post.generate_post(
                     "2026-11-02", has_audio=True
                 )
+                self.assertTrue((root / "data/humanizer/2026-11-02-daily.json").is_file())
             text = output.read_text(encoding="utf-8")
 
         self.assertEqual(output.name, "2026-11-02-daily.md")

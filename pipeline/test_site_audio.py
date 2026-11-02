@@ -7,6 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from bs4 import BeautifulSoup
+from humanizer import SKILL_SHA256, digest as post_digest
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -22,7 +23,7 @@ class SiteAudioTests(unittest.TestCase):
             with self.subTest(date=date), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 shutil.copy2(ROOT / "hugo.toml", root / "hugo.toml")
-                for name in ("assets", "layouts", "content", "data", "static"):
+                for name in ("assets", "layouts", "content", "data", "static", ".github"):
                     ignore = shutil.ignore_patterns("posts") if name == "content" else None
                     shutil.copytree(ROOT / name, root / name, ignore=ignore)
                 (root / "content" / "posts").mkdir()
@@ -39,6 +40,14 @@ class SiteAudioTests(unittest.TestCase):
                     "This edition has no separate audio episode.\n",
                     encoding="utf-8",
                 )
+                receipts = root / "data/humanizer"
+                receipts.mkdir(exist_ok=True)
+                for post in (root / "content/posts").glob("*.md"):
+                    hashed = post_digest(post.read_text(encoding="utf-8"))
+                    (receipts / f"{post.stem}.json").write_text(json.dumps({
+                        "version": 1, "post_sha256": hashed, "input_sha256": hashed,
+                        "skill_sha256": SKILL_SHA256, "meaning_verified": True,
+                    }), encoding="utf-8")
                 subprocess.run(
                     ["hugo", "--minify", "--buildFuture", "--source", str(root)],
                     check=True, capture_output=True, text=True,

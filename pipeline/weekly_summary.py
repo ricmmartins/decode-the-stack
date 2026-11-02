@@ -231,9 +231,8 @@ TocOpen: false
 {content}
 """
 
-    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
-    with open(weekly_file, "w", encoding="utf-8") as f:
-        f.write(post)
+    from humanizer import write_reviewed_post
+    write_reviewed_post(weekly_file, post, PROJECT_DIR)
 
     print(f"[WRITE] Weekly summary generated: {weekly_file}")
     return weekly_file

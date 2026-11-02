@@ -20,6 +20,7 @@ from stats import (
     save_weekly_buffer,
 )
 from weekly_summary import run as weekly_run
+from humanizer import HumanizerError
 
 PROJECT_DIR = Path(__file__).parent.parent
 CONTENT_DIR = PROJECT_DIR / "content" / "posts"
@@ -190,6 +191,8 @@ def _try_weekly(date):
     try:
         print(f"\n[DATE] Checking weekly summary...")
         weekly_run(date)
+    except HumanizerError:
+        raise
     except Exception as e:
         print(f"[WARN]  Weekly summary failed (non-blocking): {e}")
 

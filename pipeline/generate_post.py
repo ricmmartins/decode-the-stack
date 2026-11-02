@@ -586,11 +586,9 @@ TocOpen: false
         line.rstrip() for line in (front_matter + content).splitlines()
     ).rstrip() + "\n"
 
-    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
     output_file = CONTENT_DIR / f"{date}-daily.md"
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(post_content)
+    from humanizer import write_reviewed_post
+    write_reviewed_post(output_file, post_content, PROJECT_DIR)
 
     print(f"[WRITE] Generated post: {output_file}")
     return output_file, main_count, quick_count

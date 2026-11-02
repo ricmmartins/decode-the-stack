@@ -1,0 +1,19 @@
+{{- $skillHash := "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad" }}
+{{- $skill := os.ReadFile ".github/skills/humanizer/SKILL.md" | replaceRE "\r\n" "\n" }}
+{{- if ne ($skill | crypto.SHA256) $skillHash }}{{ errorf "Required pinned Humanizer skill is missing or changed" }}{{ end }}
+{{- $legacy := dict "posts/2026-11-02-daily.md" "d5f3004f9fcce6bbca1044c35c4c4a43ab3e801933739ee103469f976750eead" }}
+{{- range where site.RegularPages "Section" "posts" }}
+  {{- $path := replace .File.Path "\\" "/" }}
+  {{- $hash := os.ReadFile (printf "content/%s" $path) | replaceRE "\r\n" "\n" | crypto.SHA256 }}
+  {{- if ne (index $legacy $path) $hash }}
+    {{- $receiptPath := printf "data/humanizer/%s.json" .File.ContentBaseName }}
+    {{- if not (os.FileExists $receiptPath) }}
+      {{- errorf "Missing required Humanizer receipt for %s" $path }}
+    {{- else }}
+      {{- $receipt := os.ReadFile $receiptPath | transform.Unmarshal }}
+      {{- if or (ne $receipt.version 1) (ne $receipt.post_sha256 $hash) (ne $receipt.skill_sha256 $skillHash) (ne $receipt.meaning_verified true) (ne (len (findRE "^[a-f0-9]{64}$" $receipt.input_sha256)) 1) }}
+        {{- errorf "Invalid or stale Humanizer receipt for %s" $path }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}

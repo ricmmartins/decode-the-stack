@@ -1,0 +1,200 @@
+import json
+import shutil
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+import humanizer
+import run_pipeline
+import weekly_summary
+
+
+POST = """---
+title: "A release"
+date: 2026-11-06T00:00:00Z
+---
+
+## Cloud
+
+### [Original title](https://example.com/report)
+
+Acme released version 12 with "exact words" and `safe_code`.
+
+*Sources: [Publisher](https://example.com/source)*
+
+```python
+value = 42
+```
+
+<audio src="/podcast/audio/2026-11-06.mp3"></audio>
+"""
+
+VERDICT = dict(facts_preserved=True, names_preserved=True,
+               attribution_preserved=True, no_new_claims=True)
+
+
+def successful_editor(system, user, label):
+    if label == "Humanizer editorial review":
+        return user.replace("Acme released", "Acme shipped")
+    return json.dumps(VERDICT)
+
+
+class HumanizerTests(unittest.TestCase):
+    def install_skill(self, root):
+        path = root / ".github/skills/humanizer/SKILL.md"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(humanizer.SKILL_PATH, path)
+
+    def test_loads_complete_pinned_skill_and_preserves_protected_material(self):
+        with patch.object(humanizer, "_call_llm", side_effect=successful_editor) as call:
+            output, receipt = humanizer.review_post(POST)
+        self.assertEqual(call.call_count, 2)
+        self.assertIn(humanizer.load_skill(), call.call_args_list[0].args[0])
+        self.assertEqual(output, POST.replace("Acme released", "Acme shipped"))
+        self.assertEqual(receipt["post_sha256"], humanizer.digest(output))
+        self.assertEqual(receipt["skill_sha256"], humanizer.SKILL_SHA256)
+
+    def test_missing_or_changed_skill_blocks_before_any_llm_call(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "SKILL.md"
+            for content in (None, "Changed skill"):
+                if content:
+                    path.write_text(content)
+                with patch.object(humanizer, "SKILL_PATH", path), patch.object(humanizer, "_call_llm") as call:
+                    with self.assertRaises(humanizer.HumanizerError):
+                        humanizer.review_post(POST)
+                    call.assert_not_called()
+
+    def test_provider_failure_does_not_create_or_overwrite_post(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.install_skill(root)
+            path = root / "content/posts/2026-11-06-daily.md"
+            for existing in (False, True):
+                if existing:
+                    path.parent.mkdir(parents=True)
+                    path.write_text("Existing publication")
+                with patch.object(humanizer, "_call_llm", side_effect=humanizer.HumanizerError("Provider failed")):
+                    with self.assertRaises(humanizer.HumanizerError):
+                        humanizer.write_reviewed_post(path, POST, root)
+                self.assertEqual(path.read_text() if path.exists() else None, "Existing publication" if existing else None)
+                self.assertFalse((root / "data/humanizer").exists())
+
+    def test_invalid_or_fact_changing_output_is_rejected(self):
+        def malformed(system, user, label):
+            return "Not JSON"
+
+        def changed_token(system, user, label):
+            return user.replace("__HUMANIZER_0__", "Different")
+
+        def added_number(system, user, label):
+            return user.replace("Acme released", "Acme released 99")
+
+        def semantic_loss(system, user, label):
+            return user if label == "Humanizer editorial review" else json.dumps({**VERDICT, "names_preserved": False})
+
+        def missing_paragraph(system, user, label):
+            return '{"paragraphs":[]}'
+
+        def empty(system, user, label):
+            return ""
+
+        def added_link(system, user, label):
+            return user.replace("Acme released", "See https://unverified.example. Acme released")
+
+        for response in (malformed, changed_token, added_number, semantic_loss, missing_paragraph, empty, added_link):
+            with self.subTest(response=response.__name__), patch.object(humanizer, "_call_llm", side_effect=response):
+                with self.assertRaises(humanizer.HumanizerError):
+                    humanizer.review_post(POST)
+
+    def test_receipt_blocks_unreviewed_manual_additions_and_later_edits(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.install_skill(root)
+            path = root / "content/posts/2026-11-06-daily.md"
+            with patch.object(humanizer, "_call_llm", side_effect=successful_editor):
+                humanizer.write_reviewed_post(path, POST, root)
+            humanizer.validate_posts(root)
+            path.write_text(path.read_text() + "\nUnreviewed change.")
+            with self.assertRaisesRegex(humanizer.HumanizerError, "Stale"):
+                humanizer.validate_posts(root)
+            (root / "data/humanizer/2026-11-06-daily.json").unlink()
+            with self.assertRaisesRegex(humanizer.HumanizerError, "Missing"):
+                humanizer.validate_posts(root)
+
+    def test_weekly_runner_does_not_swallow_editorial_failure(self):
+        with patch.object(run_pipeline, "weekly_run", side_effect=humanizer.HumanizerError("Rejected")):
+            with self.assertRaises(humanizer.HumanizerError):
+                run_pipeline._try_weekly("2026-11-06")
+
+    def test_provider_empty_result_or_exception_blocks_review(self):
+        import synthesize
+        for result in (None, ""):
+            with patch.object(synthesize, "_call_llm", return_value=result):
+                with self.assertRaises(humanizer.HumanizerError):
+                    humanizer.review_post(POST)
+        with patch.object(synthesize, "_call_llm", side_effect=RuntimeError("API failed")):
+            with self.assertRaises(humanizer.HumanizerError):
+                humanizer.review_post(POST)
+
+    def test_weekly_generator_uses_review_and_does_not_write_on_failure(self):
+        stories = [{
+            "title": f"Report {index}", "url": f"https://example.com/{index}",
+            "category": "cloud" if index < 3 else "dev", "summary": "Verified source",
+        } for index in range(5)]
+        for fail in (True, False):
+            with self.subTest(fail=fail), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                self.install_skill(root)
+                with (
+                    patch.object(weekly_summary, "PROJECT_DIR", root),
+                    patch.object(weekly_summary, "CONTENT_DIR", root / "content/posts"),
+                    patch.object(weekly_summary, "load_weekly_buffer", return_value=[{"date": "2026-11-06", "stories": stories}]),
+                    patch.object(weekly_summary, "_call_llm", return_value=POST.split("---", 2)[2]),
+                    patch.object(humanizer, "_call_llm", side_effect=humanizer.HumanizerError("Rejected") if fail else successful_editor),
+                ):
+                    if fail:
+                        with self.assertRaises(humanizer.HumanizerError):
+                            weekly_summary.run("2026-11-06")
+                        self.assertFalse((root / "content/posts").exists())
+                    else:
+                        result = weekly_summary.run("2026-11-06")
+                        self.assertTrue(result.is_file())
+                        humanizer.validate_posts(root)
+
+    @unittest.skipUnless(shutil.which("hugo"), "Hugo required for direct build gate")
+    def test_direct_hugo_build_blocks_manual_posts_and_modified_history(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            project = humanizer.PROJECT_DIR
+            shutil.copy2(project / "hugo.toml", root / "hugo.toml")
+            for name in ("assets", "layouts", "content", "data", "static", ".github"):
+                shutil.copytree(project / name, root / name)
+            def build():
+                return subprocess.run(["hugo", "--buildFuture", "--source", str(root)], capture_output=True, text=True)
+            result = build()
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            manual = root / "content/posts/2026-11-06-manual.md"
+            manual.write_text(POST, encoding="utf-8")
+            result = build()
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("Humanizer receipt", result.stdout + result.stderr)
+            with patch.object(humanizer, "_call_llm", side_effect=successful_editor):
+                humanizer.write_reviewed_post(manual, POST, root)
+            result = build()
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            manual.write_text(manual.read_text(encoding="utf-8") + "\nChanged after review.", encoding="utf-8")
+            self.assertNotEqual(build().returncode, 0)
+            manual.unlink()
+            legacy = root / "content/posts/2026-11-02-daily.md"
+            original_legacy = legacy.read_text(encoding="utf-8")
+            legacy.write_text(legacy.read_text(encoding="utf-8") + "\nUnreviewed edit", encoding="utf-8")
+            self.assertNotEqual(build().returncode, 0)
+            with self.assertRaises(humanizer.HumanizerError):
+                humanizer.validate_posts(root)
+            legacy.write_text(original_legacy, encoding="utf-8")
+            humanizer.validate_posts(root)
+            (root / ".github/skills/humanizer/SKILL.md").write_text("Modified skill")
+            self.assertNotEqual(build().returncode, 0)

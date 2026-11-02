@@ -153,5 +153,25 @@ are unmodified upstream copies.
 
 The initial review covered fixed public pages and interface copy, preserving
 page structure, facts, links, metadata, and the chosen brand slogans. Historical
-editions, audio, feeds, and generation prompts were excluded. Installing this
-skill does not add an automatic rewriting step to the publishing pipeline.
+editions, audio, and feeds were excluded from that initial review.
+
+Every newly generated daily or weekly post now passes a mandatory editorial
+step before it is written. The step loads the entire pinned `SKILL.md`, calls
+the configured LLM provider chain to revise prose, and makes a second LLM call
+to check preservation of meaning, named entities, attribution, and claims.
+Metadata, headings, links, source credits, numbers, quotations, code, HTML,
+and functional structure are protected. Failures block publication without
+falling back to the unreviewed original. This adds two LLM requests per post
+(provider failures may trigger the existing fallback chain), with the
+associated token cost.
+
+Successful reviews write content-hash receipts under `data/humanizer/`.
+Hugo itself and the offline site validator reject new or modified posts
+without a matching receipt, including manual additions and direct builds.
+The single existing edition is exempt only at its recorded, unchanged hash;
+it has not been retrospectively reviewed. Source changes can deliberately
+change these gates: receipts are audit records, not signed attestations.
+
+Humanizer is an editorial aid, not a fact-checker or a guarantee of human
+authorship. Deterministic preservation checks and the second model pass reduce
+the risk of changed meaning but cannot prove every factual claim.

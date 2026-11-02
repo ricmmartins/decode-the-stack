@@ -255,6 +255,8 @@ def _validate_published_values(root):
 
 
 def validate(root):
+    from humanizer import validate_posts
+    validate_posts()
     missing = [path for path in REQUIRED if not (root / path).is_file()]
     if missing:
         raise ValueError("Missing required site output: " + ", ".join(missing))
