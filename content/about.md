@@ -47,7 +47,6 @@ Decode the Stack reduces the noise by filtering that coverage, with the aim of s
 | Site generator | Hugo Extended with custom templates adapted from PaperMod |
 | Hosting | Cloudflare Pages, on the free pages.dev address |
 | CI/CD | GitHub Actions (daily publishing at 09:00 Brasília time; backup at 09:45); English repository CI tests and builds |
-| Comments | Giscus, backed by the English repository's GitHub Discussions |
 
 ## Sources
 
@@ -79,7 +78,6 @@ Each post contains:
 - **Archive:** All posts organized chronologically.
 - **Statistics:** A public dashboard with pipeline figures (sources, articles, clusters).
 - **Weekly briefing:** A re-ranked Top 10 of the week, published every Friday.
-- **Comments:** Join discussions on editions through Giscus by signing in with GitHub.
 - **PWA:** Install the site as an app and access cached pages offline.
 - **SEO:** JSON-LD (Article/WebSite), Open Graph, sitemap, and robots.txt.
 - **RSS:** A full feed at `/index.xml`.
@@ -91,7 +89,7 @@ Have suggestions, feedback, or want to contribute?
 
 📧 [Send an email](mailto:rmmartins@outlook.com)
 
-You can also open an issue in the [Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues) or comment on an edition. [Giscus](https://giscus.app/) connects comments to the English repository's GitHub Discussions. Sign in with a GitHub account to participate.
+For corrections or suggestions, open an issue in the [Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues).
 
 ---
 

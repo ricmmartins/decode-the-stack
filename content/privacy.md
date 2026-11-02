@@ -10,8 +10,7 @@ date: 2026-11-02T00:00:00Z
 ## Information handled by this site
 
 Decode the Stack is a static publication. It does not provide reader accounts,
-registration forms, advertising, or first-party analytics. Optional comments
-use GitHub accounts through Giscus.
+registration forms, advertising, or first-party analytics.
 
 The theme switch stores your light or dark preference in your browser's local
 storage. That value stays in the browser and is not sent to the publication.
@@ -33,17 +32,6 @@ Each service has its own privacy policy.
 The podcast page and RSS feed are public. A podcast app may contact this site
 to retrieve the feed and audio; the app's provider may collect information
 under its own policy.
-
-## Comments
-
-Edition pages load a [Giscus](https://giscus.app/) widget, which sends requests
-to Giscus and GitHub. You can read comments without signing in. To post a
-comment or reaction, sign in with GitHub and authorize Giscus. Your public
-GitHub identity and contributions appear in the English repository's
-[Discussions](https://github.com/ricmmartins/decode-the-stack/discussions).
-GitHub handles account authentication; this publication does not receive your
-password. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
-for its data practices.
 
 ## Contact and changes
 

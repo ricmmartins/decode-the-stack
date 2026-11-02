@@ -20,12 +20,6 @@ paginate = 12
   icon = "images/brand-mark.svg"
   iconHeight = 38
 
-[params.giscus]
-  repo = "ricmmartins/decode-the-stack"
-  repoId = "R_kgDOVfkfHw"
-  category = "Announcements"
-  categoryId = "DIC_kwDOVfkfH84DKLrd"
-
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
 
