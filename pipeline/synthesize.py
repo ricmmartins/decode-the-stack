@@ -156,7 +156,8 @@ def _call_openai(system_prompt, user_prompt, label="", max_tokens=6000, temperat
             return None
         usage = getattr(response, "usage", None)
         tokens = getattr(usage, "total_tokens", 0)
-        print(f"[OK] [{label}] OpenAI complete ({len(content)} chars, {tokens} tokens)")
+        actual_model = getattr(response, "model", "not returned")
+        print(f"[OK] [{label}] OpenAI model={actual_model} complete ({len(content)} chars, {tokens} tokens)")
         return content
     except OpenAIError as e:
         print(f"[WARN]  [{label}] OpenAI error: {e}")
@@ -209,7 +210,7 @@ def _call_azure_openai(system_prompt, user_prompt, label="", max_tokens=6000, te
         api_version="2025-01-01-preview",
     )
 
-    print(f"[AI] [{label}] Sending to Azure OpenAI ({deployment})...")
+    print(f"[AI] [{label}] Sending to Azure OpenAI...")
     try:
         response = client.chat.completions.create(
             model=deployment,
@@ -222,10 +223,11 @@ def _call_azure_openai(system_prompt, user_prompt, label="", max_tokens=6000, te
         )
         content = response.choices[0].message.content
         tokens = response.usage.total_tokens
-        print(f"[OK] [{label}] Azure OpenAI complete ({len(content)} chars, {tokens} tokens)")
+        actual_model = getattr(response, "model", "not returned")
+        print(f"[OK] [{label}] Azure OpenAI model={actual_model} complete ({len(content)} chars, {tokens} tokens)")
         return content
     except Exception as e:
-        print(f"[WARN]  [{label}] Azure OpenAI error: {e}")
+        print(f"[WARN]  [{label}] Azure OpenAI error: {str(e).replace(deployment, '[deployment]')}")
         return None
 
 

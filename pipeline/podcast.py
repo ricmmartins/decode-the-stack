@@ -288,49 +288,111 @@ def _sanitize_script(script):
 
 
 def generate_podcast_script(synthesis_content):
-    """Generate a three-host dialogue script using the shared LLM provider chain."""
+    """Generate bounded sections so shorter-output providers can meet the duration."""
     from synthesize import _call_llm
 
-    print("[AUDIO]  Generating three-host podcast script...")
+    minimum_words, maximum_words = _script_word_range(PODCAST_TARGET_MINUTES)
+    section_count = (maximum_words + 399) // 400
+    blocks = [
+        block.strip()
+        for block in re.split(r"(?m)(?=^### |^- \*\*\[)", synthesis_content)
+        if block.strip()
+    ]
+    if len(blocks) < section_count:
+        raise ValueError("Insufficient source story sections for a full contextual podcast.")
 
-    script = _call_llm(PODCAST_SCRIPT_PROMPT, synthesis_content, "Podcast")
-
-    if script:
-        script = _sanitize_script(script)
-        minimum_words, maximum_words = _script_word_range(PODCAST_TARGET_MINUTES)
-        word_count = _spoken_word_count(script)
-        if word_count < int(minimum_words * 0.9):
-            correction_prompt = (
-                f"{PODCAST_SCRIPT_PROMPT}\n\n"
-                f"The previous draft contained {word_count} spoken words, below "
-                f"the required minimum of {minimum_words}. Write a complete "
-                "replacement dialogue of the requested length. Expand context "
-                "only from the supplied source synthesis; never add unsupported facts."
+    sections = []
+    print(f"[AUDIO] Generating {section_count} bounded three-host podcast sections...")
+    for index in range(section_count):
+        used_words = sum(_spoken_word_count(section) for section in sections)
+        if index == section_count - 1:
+            section_minimum = max(100, minimum_words - used_words)
+            section_maximum = maximum_words - used_words
+        else:
+            section_minimum = max(100, minimum_words // section_count - 66)
+            section_maximum = maximum_words // section_count + 50
+        source = "\n\n".join(
+            blocks[index * len(blocks) // section_count:
+                   (index + 1) * len(blocks) // section_count]
+        )
+        position = (
+            "Open with a short teaser, then [INTRO] and the show welcome."
+            if index == 0 else
+            "Finish with a brief sign-off; do not introduce the show again."
+            if index == section_count - 1 else
+            "Continue the conversation without a welcome, recap, or sign-off."
+        )
+        prompt = (
+            "Write ONE section of Decode the Stack's English technology podcast. "
+            f"This is section {index + 1} of {section_count}. {position}\n"
+            f"Write {section_minimum}-{section_maximum} spoken words, excluding "
+            "speaker labels and markers. This is a strict section budget, not the "
+            "whole episode. Use all three speakers Anna:, Maria:, and Alex:, "
+            "one turn per line, at most three sentences per turn. "
+            "Anna is the clear, concise anchor; Maria adds technical depth; "
+            "Alex asks practical questions in a conversational tone. "
+            "Explain the supplied stories, engineering trade-offs, uncertainty, "
+            "and practical questions using only the supplied evidence. "
+            "Never invent facts, quotations, numbers, examples presented as facts, "
+            "or publisher claims. Do not pad with repeated summaries. No Markdown, "
+            "URLs, stage directions, or markers except [INTRO]."
+        )
+        accepted = None
+        feedback = ""
+        for attempt in range(2):
+            candidate = _call_llm(
+                prompt + feedback,
+                source,
+                f"Podcast section {index + 1}/{section_count}, attempt {attempt + 1}",
+                max_tokens=2000,
             )
-            revised = _call_llm(
-                correction_prompt,
-                synthesis_content,
-                "Podcast length correction",
-                max_tokens=8000,
+            if not candidate:
+                raise RuntimeError(f"No provider generated podcast section {index + 1}.")
+            candidate = _sanitize_script(candidate)
+            word_count = _spoken_word_count(candidate)
+            try:
+                _validate_dialogue(candidate)
+            except ValueError as error:
+                if attempt == 1:
+                    raise
+                feedback = f"\nFix this dialogue format error in the next draft: {error}"
+                continue
+            if section_minimum <= word_count <= section_maximum:
+                accepted = candidate
+                break
+            feedback = (
+                f"\nThe previous draft had {word_count} spoken words. Rewrite this "
+                f"section to contain {section_minimum}-{section_maximum} words. "
+                "Expand only source-grounded explanation, or shorten repeated material."
             )
-            if revised:
-                script = _sanitize_script(revised)
-                word_count = _spoken_word_count(script)
-        if word_count > maximum_words:
+        if accepted is None:
             raise ValueError(
-                f"Podcast script has {word_count} words, above the "
-                f"{maximum_words}-word limit for {PODCAST_TARGET_MINUTES} minutes."
+                f"Podcast section {index + 1} has {word_count} spoken words; "
+                f"required {section_minimum}-{section_maximum}."
             )
-        if word_count < int(minimum_words * 0.9):
-            raise ValueError(
-                f"Podcast script has {word_count} spoken words; expected about "
-                f"{minimum_words}-{maximum_words} for a {PODCAST_TARGET_MINUTES}-minute show."
-            )
-        print(f"[OK] Podcast script generated ({word_count} spoken words, {len(script)} chars)")
-        return script
+        sections.append(accepted)
 
-    print("[WARN]  Podcast script generation failed (no LLM available)")
-    return None
+    script = "\n[TOPIC_CHANGE]\n".join(sections)
+    word_count = _spoken_word_count(script)
+    if not minimum_words <= word_count <= maximum_words:
+        raise ValueError(f"Podcast has {word_count} words; required {minimum_words}-{maximum_words}.")
+    print(f"[OK] Podcast script generated ({word_count} spoken words, {len(script)} chars)")
+    return script
+
+
+def _validate_dialogue(script):
+    """Reject material that the speech parser would silently omit."""
+    speakers = set()
+    for line in script.splitlines():
+        line = line.strip()
+        if not line or line in {"[INTRO]", "[TOPIC_CHANGE]"}:
+            continue
+        match = re.fullmatch(r"(Anna|Maria|Alex):\s*(\S.*)", line)
+        if not match:
+            raise ValueError(f"Podcast contains an unrecognized dialogue line: {line[:80]}")
+        speakers.add(match.group(1))
+    if speakers != {HOST_A, HOST_B, HOST_C}:
+        raise ValueError("Each podcast section must include all three English hosts.")
 
 
 def _spoken_word_count(script):

@@ -55,6 +55,11 @@ paginate = 12
   category = "categories"
   tag = "tags"
 
+[[module.mounts]]
+  source = "data"
+  target = "data"
+  files = ["! *.md", "! *.txt", "! **/*.md", "! **/*.txt", "**"]
+
 [services.rss]
   limit = 30
 
@@ -70,7 +75,7 @@ paginate = 12
     weight = 80
 
 [markup.goldmark.renderer]
-  unsafe = false
+  unsafe = true
 
 [markup.highlight]
   codeFences = true

@@ -35,7 +35,7 @@ def _set_github_output(key, value):
             f.write(f"{key}={value}\n")
 
 
-def run_pipeline(date_str=None, skip_ingest=False, force=False):
+def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=False):
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     # Idempotency guard: scheduled retries do not regenerate an existing edition.
@@ -49,6 +49,41 @@ def run_pipeline(date_str=None, skip_ingest=False, force=False):
     print(f"[START] Decode the Stack publishing pipeline — {date} (UTC)")
     print(f"{'='*60}\n")
 
+    if reuse_synthesis:
+        articles_count, clusters_count, main_stories, quick_stories = _load_recovery_inputs(date)
+    else:
+        articles_count, clusters_count, main_stories, quick_stories = _prepare_synthesis(
+            date, skip_ingest=skip_ingest, force=force
+        )
+
+    _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories)
+
+
+def _load_recovery_inputs(date):
+    """Require the complete recovered analysis before spending on script or audio."""
+    data = PROJECT_DIR / "data"
+    synthesis = data / f"synthesis_{date}.md"
+    if not synthesis.is_file() or not synthesis.read_text(encoding="utf-8").strip():
+        raise ValueError(f"No nonempty recovered synthesis exists for {date}.")
+    values = []
+    for relative in (
+        f"raw/articles_{date}.json",
+        f"clustered/stories_{date}.json",
+        f"ranked/top_{date}.json",
+        f"ranked/quick_{date}.json",
+    ):
+        path = data / relative
+        value = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(value, list):
+            raise ValueError(f"Recovered pipeline input must be a list: {path}")
+        values.append(value)
+    if not values[0] or not values[1] or not values[2]:
+        raise ValueError("Recovered raw articles, clusters, and main stories must not be empty.")
+    print(f"[RECOVERY] Reusing saved analysis for {date}; no ingestion, ranking, or synthesis calls.")
+    return len(values[0]), len(values[1]), values[2], values[3]
+
+
+def _prepare_synthesis(date, skip_ingest=False, force=False):
     # Step 1: Ingest public source feeds.
     articles_count = 0
     if not skip_ingest:
@@ -83,6 +118,10 @@ def run_pipeline(date_str=None, skip_ingest=False, force=False):
     if not synthesis:
         raise RuntimeError(f"AI synthesis did not produce an English edition for {date}.")
 
+    return articles_count, clusters_count, main_stories, quick_stories
+
+
+def _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories):
     # Step 5: A complete edition includes its three-host audio episode.
     print(f"\n[AUDIO]  Step 5/7: Generating podcast...")
     audio_path = podcast_run(date)
@@ -161,6 +200,13 @@ if __name__ == "__main__":
     parser.add_argument("--date", help="Date to process (YYYY-MM-DD)", default=None)
     parser.add_argument("--skip-ingest", action="store_true", help="Skip feed ingestion")
     parser.add_argument("--force", action="store_true", help="Force regeneration even if post exists")
+    parser.add_argument(
+        "--reuse-synthesis", action="store_true",
+        help="Resume from existing synthesis and raw/clustered/ranked data without new analysis",
+    )
     args = parser.parse_args()
 
-    run_pipeline(date_str=args.date, skip_ingest=args.skip_ingest, force=args.force)
+    run_pipeline(
+        date_str=args.date, skip_ingest=args.skip_ingest, force=args.force,
+        reuse_synthesis=args.reuse_synthesis,
+    )

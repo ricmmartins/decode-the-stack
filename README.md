@@ -77,6 +77,12 @@ python pipeline/run_pipeline.py
 Use `--force` to regenerate the current UTC day's edition. `--skip-ingest` is
 for runs with an existing cached feed collection only.
 
+After a recovered analysis-only failure, `--force --reuse-synthesis` resumes
+from the dated synthesis and its raw, clustered, and ranked JSON files without
+calling ingestion or contextual synthesis again. Missing recovery inputs fail
+explicitly. Podcast dialogue is generated in bounded, source-grounded sections
+and must total 2200–2400 spoken words for the default 15-minute target.
+
 The 3000 × 3000 RGB podcast cover is
 `static/images/podcast-cover.png`; regenerate it with
 `python pipeline/generate_podcast_cover.py`.

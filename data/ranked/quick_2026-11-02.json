@@ -1,0 +1,592 @@
+[
+  {
+    "id": "492fcdf36dac56fb",
+    "title": "RK3588 INT8, measured: 1.96 on YOLOv8n, 1.4 on YOLO11n — plus OCR joins the bench",
+    "url": "https://dev.to/anguoyang/rk3588-int8-measured-196x-on-yolov8n-14x-on-yolo11n-plus-ocr-joins-the-bench-jbf",
+    "summary": "<p>Follow-up to <a href=\"https://dev.to/anguoyang/10-rknn-models-benchmarked-on-rk3588-and-the-fastest-one-is-cheating-onto-the-cpu-2pkh\">the first rk-bench leaderboard</a>: same RK3588, same frozen protocol (PERF_RUN hardware timing, per-layer CPU-fallback verdicts, median of 3 independent sessions). v0.2.0 adds the two things readers asked for.</p>\n\n<h2>\n  \n  \n  INT8 vs FP, same models, same board\n</h2>\n\n<p>Quantized with Toolkit2 2.3.2 using the RKNN Model Zoo's own recipe and its own 20-image COCO calibration subset (each entry's notes say so):</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Model</th>\n<th>FP p50</th>\n<th>INT8 p50</th>\n<th>Speedup</th>\n<th>Verdict</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>YOLOv8n</td>\n<td>37.50 ms</td>\n<td>19.17 ms</td>\n<td>1.96×</td>\n<td>NPU_ONLY → NPU_ONLY</td>\n</tr>\n<tr>\n<td>YOLOv5s (ReLU)</td>\n<td>37.80 ms</td>\n<td>20.52 ms</td>\n<td>1.84×</td>\n<td>NPU_ONLY → NPU_ONLY</td>\n</tr>\n<tr>\n<td>YOLO11n</td>\n<td>43.67 ms</td>\n<td>31.20 ms<",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T02:38:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/anguoyang/rk3588-int8-measured-196x-on-yolov8n-14x-on-yolo11n-plus-ocr-joins-the-bench-jbf"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7424983ff0ca616c",
+    "title": "Game Off 2026: The theme is SHIFT",
+    "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+    "summary": "<p>GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key.</p>\n<p>The post <a href=\"https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/\">Game Off 2026: The theme is SHIFT</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "GitHub Blog",
+    "published": "2026-11-01T21:36:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+      }
+    ],
+    "score": 20.07
+  },
+  {
+    "id": "efae339499a06a80",
+    "title": "Making Failure Diagnosis Reliable with Pensive AI",
+    "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4",
+    "summary": "<p>By <a href=\"https://www.linkedin.com/in/praneethy91/\">Praneeth Yenugutala</a>, <a href=\"https://www.linkedin.com/in/victor-dusa/\">Victor Dusa</a>, <a href=\"https://www.linkedin.com/in/anastasia-samoilova01/\">Anastasia Samoilova</a>, <a href=\"https://www.linkedin.com/in/megan-ren-7b78a81a8/\">Megan Ren</a>, <a href=\"https://www.linkedin.com/in/justinwei96/\">Justin Wei</a>, <a href=\"https://www.linkedin.com/in/mayworm/\">Marcelo Mayworm</a></p><p>At Netflix, data and machine learning practitioners run millions of workloads each day across orchestration systems and compute engines such as Titus, Spark, Trino, and Druid. On peak days, roughly 100,000 workloads fail. When workloads fail, the failure itself is only the beginning. Someone still needs to find the useful signal in several logs, decide whether the cause sits in their code or the platform, and determine whether to retry, reconfigure, or escalate. Even a small share of difficult failures can consume engineering time, waste comput",
+    "category": "dev",
+    "source_name": "Netflix Tech Blog",
+    "published": "2026-10-26T17:04:57+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Netflix Tech Blog",
+        "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4"
+      },
+      {
+        "name": "Netflix Tech Blog",
+        "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "c56bc2edbf92d73c",
+    "title": "A Specialised Haskell Processor on FPGA",
+    "url": "https://bathtub-01.github.io/technical/ouros-demo/",
+    "summary": "<p><a href=\"https://lobste.rs/s/8o9wus/specialised_haskell_processor_on_fpga\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-01T16:13:20+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://bathtub-01.github.io/technical/ouros-demo/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://lemire.me/blog/2026/10/31/beating-the-compiler-at-signed-32-bit-division/"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "5bcdf894cda3390e",
+    "title": "Quiz: Socket Programming in Python",
+    "url": "https://realpython.com/quizzes/socket-programming-in-python/",
+    "summary": "In this quiz, you'll test your understanding of Python sockets. With this knowledge, you'll be able to create your own client-server applications, handle multiple connections simultaneously, and send messages and data between endpoints.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-10-31T12:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/documenting-python-code/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/documenting-python-code/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/python-sockets/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/socket-programming-in-python/"
+      }
+    ],
+    "score": 19.36
+  },
+  {
+    "id": "d6fc3e67bd7ce15c",
+    "title": "The best free project management software in 2026",
+    "url": "https://zapier.com/blog/free-project-management-software",
+    "summary": "Everyone has a different way of managing projects. Some people like to use their inbox to keep track of tasks. Others prefer to visualize work on a Kanban board or in a calendar view, while some even prefer the old pen and paper system.  That's fine on an individual level, but when you collaborate on projects as a team, you need a flexible and capable project management tool that works for everyone. And with so many teams working remotely, there's an even more pressing need for a task management",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-10-30T14:44:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Paul Graham",
+        "url": "http://www.paulgraham.com/own.html"
+      },
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/free-project-management-software"
+      },
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/best-ai-project-management-tools"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "63e5c10170795671",
+    "title": "Brilliant Builds: Building for Choice",
+    "url": "https://www.twilio.com/en-us/blog/events/Brilliant-builds-episode-4",
+    "summary": "To close out the season, we’re joined by Scott Seaborn—a leading digital transformation and AI strategist who helps global brands modernise their customer experience.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-10-29T00:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Brilliant-Builds-Episode-1"
+      },
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Brilliant-builds-episode-3"
+      },
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Brilliant-builds-episode-4"
+      },
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Brilliant-builds-episode-2"
+      }
+    ],
+    "score": 18.66
+  },
+  {
+    "id": "c098ff2484ba7e75",
+    "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
+    "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-capacity-sold-out/en/headerimage/generatedHeaderImage-1793124716899.jpg\" /><p>Amazon CEO Andy Jassy says AWS’s large committed cloud capacity is largely sold out through 2027, with part of 2028 already allocated, while the company continues to reserve headroom for On Demand, EC2 and Bedrock. Practitioners discussing the remarks report difficulty obtaining On Demand capacity for ordinary EC2 instances, and similar constraints at other providers.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-01T08:03:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "0c6f4990264fc32e",
+    "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
+    "url": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-s3-file-transfer/en/headerimage/generatedHeaderImage-1792218946629.jpg\" /><p>AWS has recently released File Mover Express, an open-source application under the Apache 2.0 license for transferring large files between local systems and Amazon S3. Available for macOS, Windows, and Linux, it supports parallel transfers, automatic performance tuning, retries, pause and resume, and file integrity verification.</p> <i>By Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-01T06:32:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 17.83
+  },
+  {
+    "id": "62a5f536c65d726b",
+    "title": "The AI cost of JavaScript frameworks",
+    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+    "summary": "<p>Article URL: <a href=\"https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/\">https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50323088\">https://news.ycombinator.com/item?id=50323088</a></p>\n<p>Points: 310</p>\n<p># Comments: 230</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-01T06:06:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+      }
+    ],
+    "score": 17.48
+  },
+  {
+    "id": "c2a7ed89839de5f5",
+    "title": "The support case of a customer who said that all they could see was a black screen",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
+    "summary": "<p>Then again, that is what they asked for.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/\">The support case of a customer who said that all they could see was a black screen</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-10-29T14:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261030-00/?p=112815/"
+      },
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/"
+      },
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261027-00/?p=112800/"
+      }
+    ],
+    "score": 17.2
+  },
+  {
+    "id": "10c92f06374489a9",
+    "title": "Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption",
+    "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/10/cf-pq-geokey-manager/en/headerimage/generatedHeaderImage-1793376907936.jpg\" /><p>Cloudflare has moved a post-quantum rebuild of GeoKey Manager into closed beta, guarding geo-fenced keys with hybrid ML-KEM-768 and X25519 instead of the attribute-based encryption used since 2022. Keys live only in kernel memory on verified regional servers, and any failed check rejects the request, a fail-closed choice practitioners ask could cause a regional outage. GA is planned for Q1 2027.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-10-31T19:56:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "3ef35bff22d7809b",
+    "title": "Bliki: LLM Voice",
+    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+    "summary": "<p>Sometimes when I read a post, I get the growing feeling that I'm reading\n  the output of an LLM. I can't necessarily define why, although there are the common\n  tells (it's not the em-dashes, it's the load-bearing tapestries). As I\n  do this my desire to read on atrophies, sometimes to the point of revulsion</p>\n\n<p>There are tools out there that claim to be able to tell the difference\n  between LLM-written prose and the old-fashioned biological product. I'm wary\n  of them, partly due skeptism about their accuracy, but also because it rather\n  misses the point. The reaction to LLM-Voice is a human one, that sense that we\n  are in an <a href=\"https://en.wikipedia.org/wiki/Uncanny_valley\">uncanny\n  valley</a> of prose. By the time I'd reach for a tool to tell me what I'm\n  reading, it's already too late, even if it confidently tells me there's no LLM\n  present.</p>\n\n<p>I'm also suspicious of my own ability to accurately recognize LLM voice. Language\n  changes over time, so a common si",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-10-29T14:28:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/bliki/LLM-Voice.html"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "6f50c0c2f9ee555f",
+    "title": "Why are good developers so wary of agentic development?",
+    "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+    "summary": "<p class=\"precis\"><b>TL;DR</b><br /><i>Good developers’ caution about agentic development comes from knowing that built isn’t the same as working in production.</i></p>\n<img src=\"https://martinfowler.com/rachels-ramblings/card.png\" /><p>I’ve been surprised by how many excellent developers have been hesitant to go all in on coding agents. These are people who usually try new ways of working before anyone else and in many cases invent new tools and practices that support building the application well. So why have we had so much reluctance?</p>\n\n<p>The easy (lazy?) answer is that they love writing code, or they’re worried about their jobs. I’m sure that’s true for some people, some of the time. And I know it is true for some of the developers I talk to but I always felt there was something else, another fear hiding behind those obvious ones. When we put together the <a href=\"https://www.thoughtworks.com/en-us/radar\">Technology Radar</a> every six months I try to block out a chunk of time ",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-10-29T13:50:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "c45d91ea69c3a821",
+    "title": "Fragments: October 28",
+    "url": "https://martinfowler.com/fragments/2026-10-28.html",
+    "summary": "<p>Andrej Karpathy sees <a href=\"https://x.com/karpathy/status/2109361546505966046\">a widening gap</a> in how people see LLM capabilities.</p>\n\n<blockquote>\n  <p>The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time.</p>\n</blockquote>\n\n<p>Many of my colleagues are living in a world where LLM capabilities are stunning, but it’s easy to forget that’s not what most people experience. One thing I do is use free-tier LLM chatbots, and I’m still finding that while most of the time they are useful, their unreliability undermines much of that usefulness. Yes, you can argue that I’m not using frontier tools or a forceful enough harness, but that’s true of most regular folks too. To understand their perception, it’s handy to experience it.</p>\n\n",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-10-28T12:55:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/fragments/2026-10-28.html"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "4c6c24ed5779bebc",
+    "title": "ChatGPT and Codex usage limits merging",
+    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+    "summary": "<p>Article URL: <a href=\"https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits\">https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50320588\">https://news.ycombinator.com/item?id=50320588</a></p>\n<p>Points: 217</p>\n<p># Comments: 163</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-10-31T21:49:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+      }
+    ],
+    "score": 16.82
+  },
+  {
+    "id": "4033ae8922479a24",
+    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "summary": "<p>Article URL: <a href=\"https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve\">https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50320995\">https://news.ycombinator.com/item?id=50320995</a></p>\n<p>Points: 428</p>\n<p># Comments: 208</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-10-31T22:46:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve"
+      }
+    ],
+    "score": 16.58
+  },
+  {
+    "id": "17ee63e0eb5738f4",
+    "title": "OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements",
+    "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/10/openbsd-8-released/en/headerimage/openbsd-8-released-1793464400707.jpeg\" /><p>OpenBSD 8.0 is a substantial upgrade bringing broader hardware compatibility, enhanced security, an expanded virtual address space, and support for modern architectures, including Intel Arc A-Series graphics support, ARM64 hibernation, RISC-V improvements, and enhanced virtual machine support.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-10-31T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 16.48
+  },
+  {
+    "id": "6e48bd2e17cb2bae",
+    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+    "summary": "<p>Article URL: <a href=\"https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf\">https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50319143\">https://news.ycombinator.com/item?id=50319143</a></p>\n<p>Points: 705</p>\n<p># Comments: 325</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-10-31T19:16:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf"
+      }
+    ],
+    "score": 16.2
+  },
+  {
+    "id": "46ee037952c1e5ec",
+    "title": "Preparing for Your Next Certification Could Start with Your Visual Studio Subscription",
+    "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/",
+    "summary": "<p>Are you thinking about earning a Microsoft certification to help advance your career, build on your existing skills, or meet new requirements at work?  If so, you may already be wondering where to start. Which courses, labs, and hands-on exercises will help you prepare? How much time will it take to find the right resources, [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/\">Preparing for Your Next Certification Could Start with Your Visual Studio Subscription </a> appeared first on <a href=\"https://devblogs.microsoft.com/visualstudio\">Visual Studio Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Visual Studio Blog",
+    "published": "2026-10-28T22:30:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Visual Studio Blog",
+        "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/"
+      },
+      {
+        "name": "Visual Studio Blog",
+        "url": "https://devblogs.microsoft.com/visualstudio/keep-your-investigation-between-sessions/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "157b16037df687c6",
+    "title": "Simplifying runtime caching on Vercel",
+    "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
+    "summary": "<p>Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js <code>fetch</code> caching or <code>unstable_cache</code>, you won’t need to change your code. Pro and Enterprise projects will get larger storage allocations.</p><p>Runtime Cache lets your code reuse fetched or computed data across requests without operating a separate caching service. Over the past year, we’ve improved read performance during traffic bursts, increased storage budgets, and made cache usage easier to investigate.</p><h2>Why we built Runtime Cache</h2><p>Data Cache was originally launched as Vercel’s data caching service for the Next.js App Router, used by <code>fetch</code> caching and <code>unstable_cache</code>. Unlike <a href=\"https://vercel.com/docs/caching/cdn-cache\">CDN caching</a>, which stores complete HTTP responses, Data Cache stores data your application uses to generate those responses. A product page, for exa",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-10-30T04:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "eac94933d765c5f2",
+    "title": "Vercel Daemons can now call services with bindings",
+    "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
+    "summary": "<p><a href=\"https://vercel.com/daemons\">Vercel Daemons</a> can now call the <a href=\"https://vercel.com/docs/services\">services</a> in their deployment through <a href=\"https://vercel.com/docs/services/bindings\">service bindings</a>.</p><p>Declare the binding on the daemon. It names the target service and the environment variable that receives the service's URL:</p><div></div><p>The daemon calls that URL like any other HTTP endpoint. Vercel handles the internal routing, authentication, and TLS, and the service stays private:</p><div></div><p>Bindings point one way: services can't bind to daemons. Each instance keeps calling the deployment that started it, even after a promotion or rollback.</p><p>Learn more about daemon service bindings in the <a href=\"https://vercel.com/docs/daemons#service-bindings\">docs</a>.</p>\n          <p class=\"more\">\n            <a href=\"https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings\">Read more</a>\n          </p>",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-10-30T00:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "8dadb6d39ef555ee",
+    "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
+    "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/mistral-large-4\">Mistral Large 4 from Mistral</a> now uses updated weights on <a href=\"https://vercel.com/docs/ai-gateway\">AI Gateway</a>, with lower pricing for input, cached input, and output tokens.</p><p>According to <a href=\"https://mistral.ai/news/mistral-large-4-oss/\">Mistral’s release announcement</a>, the updated weights improve agentic coding and defensive cybersecurity, with greater token efficiency on coding tasks. The release also improves spreadsheet creation and editing, web research, and resistance to prompt injection.</p><p>If you were already using <code>mistral/mistral-large-4</code> via AI Gateway, there is no need to change your model to start using the updated version. The existing model ID string uses the new model with updated weights and pricing.</p><div></div><p>To use Mistral Large 4 in fx, Pi, Claude Code, Codex, Cursor, or other harnesses, install the latest Vercel CLI and run setup:</p><div></div><p>Then sel",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-10-29T00:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/rihpig/mistral-large-4reul-rokeoleseo-silhaenghaneun-bangbeob-3380"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "ae8d6966d7d764b6",
+    "title": "GitLab Orbit is GA: Higher agent accuracy, lower token cost",
+    "url": "https://about.gitlab.com/blog/gitlab-orbit-ga/",
+    "summary": "<p>An agent’s true cost isn’t only the tokens it burns. It’s the review that calls your code “safe to merge” after seeing the diff, but without any context on the pipeline. We call that artificial confidence, not artificial intelligence. Agents guess because code is all they can see; they can’t see the merge request that last changed it, the pipeline that ran it, the vulnerability it carries, or the people who wrote and reviewed it.</p><p>Guessing is expensive. If you’ve tried running agents in a large monorepo, one with tens of thousands of files, you know how it goes: the agent iterates, pinging the backend again and again for the information it needs to complete the task. Every round trip costs more time and more tokens. Eventually the agent gives up.</p><p>The model isn’t the constraint. Context is.</p><p>That’s the constraint that GitLab Orbit removes. Now generally available, Orbit is the context graph for your software lifecycle: a live, queryable view of all your code, merge re",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-10-29T00:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/gitlab-orbit-ga/"
+      },
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/find-vulnerability-blast-radius-with-gitlab-orbit/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "6b6a5d5cbe4023e0",
+    "title": "Gemini automation: How to use the Zapier Gemini integration (Gemini 3.8 Flash, Gemini Enterprise, and more)",
+    "url": "https://zapier.com/blog/automate-google-ai-studio",
+    "summary": "Anyone who lives in the Google ecosystem has probably used Gemini for a quick draft or a fast answer. (Or if you're like me, you've been driven to your limit by the Google Docs popups encouraging you to use AI whenever your cursor strays too close to the bottom of the screen.) But a chat window is just the beginning of what Gemini can do. Its real power shows up when you connect it to the rest of your apps and let it do work on your behalf. Gemini's models are available in Zapier, so you can add",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-10-29T05:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-google-ai-studio"
+      },
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/google-gemini"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "8cb01e58d88cc938",
+    "title": "AI Made Me Homeless Part 2",
+    "url": "https://medium.com/effortless-programming/ai-made-me-homeless-part-2-3647b2f75112?source=rss-c359511de780------2",
+    "summary": "<h4>How I went from $500k/year to living in my car.</h4><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/836/1*rdnNsKwNxdAcnXOBA7ulpg@2x.jpeg\" /></figure><p>Yesterday, I published an article called “AI Made Me Homeless.”</p><p>I wasn’t prepared for what happened next.</p><p>Friends, former colleagues, and complete strangers began reaching out. Some offered job leads. Others shared stories of losing their own livelihoods. Many donated what they could.</p><p>Within 24 hours, people had donated enough to cover our first month’s rent on an apartment.</p><p>I’m writing this from my car. Tomorrow, if everything goes according to plan, we’ll finally have a bed, a shower, a kitchen, and a place where we can close the door and feel safe.</p><p>I’m overwhelmed with gratitude. After months of sleeping in a car, the kindness of strangers has given us a chance to rebuild.</p><p>I still don’t have a job. I have no sustainable income, and I don’t know where next month’s rent will come fro",
+    "category": "dev",
+    "source_name": "Eric Elliott",
+    "published": "2026-10-30T22:50:08+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Eric Elliott",
+        "url": "https://medium.com/effortless-programming/ai-made-me-homeless-part-2-3647b2f75112?source=rss-c359511de780------2"
+      },
+      {
+        "name": "Eric Elliott",
+        "url": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59?source=rss-c359511de780------2"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "3e3f41b6f17ae118",
+    "title": "DevFest is back!",
+    "url": "https://developers.googleblog.com/devfest-is-back/",
+    "summary": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/devfest-is-back/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "03d35da074af0763",
+    "title": "Fast, reliable A2UI, with swappable inference formats",
+    "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+    "summary": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDKs. Developers can also use controlled generation with TypeSafe's Jev system-decision models to render known-shape screens in under 300 ms while smaller models stream text. These updates require no changes to frontend renderers or component catalogs, offering flexible performance levers for generative UI development across Python, TypeScript, and Dart.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/fast-reliable-a2ui/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "c4730bfbc306b1da",
+    "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
+    "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
+    "summary": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specifications. This update allows developers to route long-lived, bi-directional streams and AI workloads directly through the gateway while maintaining consistent authentication, rate limiting, and observability. Additionally, gateways now feature deterministic default hostnames, simplifying environment provisioning and infrastructure-as-code management.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "f1e8c5e145bccb16",
+    "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
+    "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/",
+    "summary": "Google Research has completed the 32-bit open-source Coral NPU RISC-V architecture with the introduction of its Matrix Execution Unit, which delivers up to 1 TOPS while targeting 10 mW average power for edge inference. Alongside this architecture, the release of the v1.0 open-source IREE/MLIR compiler allows developers to take models from JAX, PyTorch, and TensorFlow straight to Coral NPU hardware without writing custom assembly. Developers can now prototype and deploy these multimodal edge applications using new hardware options like the Synaptics Astra SR200 MCU series and globally available Coralboard devkits.12",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/"
+      }
+    ],
+    "score": 16.0
+  }
+]
