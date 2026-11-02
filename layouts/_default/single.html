@@ -6,7 +6,7 @@
     {{ with .Description }}<div class="post-description">{{ . | markdownify }}</div>{{ end }}
     <div class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "January 2, 2006" }}</time>
-      {{ if .ReadingTime }}<span>· {{ .ReadingTime }} min read</span>{{ end }}
+      {{ if and .ReadingTime (ne (.Param "ShowReadingTime") false) }}<span>· {{ .ReadingTime }} min read</span>{{ end }}
       {{ range .GetTerms "categories" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
     </div>
   </header>

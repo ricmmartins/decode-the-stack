@@ -43,13 +43,35 @@ class SiteAudioTests(unittest.TestCase):
                     ["hugo", "--minify", "--buildFuture", "--source", str(root)],
                     check=True, capture_output=True, text=True,
                 )
-                for page in ("index.html", "podcast/index.html"):
+                for page in ("index.html",):
                     content = (root / "public" / page).read_text(encoding="utf-8")
                     sources = re.findall(r"<source\b[^>]*\bsrc=[\"']?([^\"'\s>]+)", content)
                     digest = hashlib.sha256(
                         (root / "static/podcast/audio/2026-11-02.mp3").read_bytes()
                     ).hexdigest()[:12]
                     self.assertEqual(sources, [f"/podcast/audio/2026-11-02.mp3?v={digest}"])
+                podcast_page = BeautifulSoup(
+                    (root / "public/podcast/index.html").read_text(encoding="utf-8"), "html.parser",
+                )
+                self.assertEqual(
+                    [heading.get_text(strip=True) for heading in podcast_page.select("main h3")],
+                    ["Where to listen", "The hosts", "About", "RSS feed"],
+                )
+                self.assertIsNone(podcast_page.select_one("main audio, .podcast-show, .episode-card, .toc"))
+                self.assertEqual(
+                    podcast_page.select_one("main pre code").get_text().strip(),
+                    "https://decodethestack.pages.dev/podcast/feed.xml",
+                )
+                rows = podcast_page.select("main table tbody tr")
+                self.assertEqual(len(rows), 3)
+                for row, name, trait in zip(rows, ("Anna", "Maria", "Pedro"), ("charisma", "historical context", "creative analogies")):
+                    self.assertIn(name, row.get_text())
+                    self.assertIn(trait, row.get_text())
+                main_text = podcast_page.select_one("main").get_text()
+                for unwanted in ("Instagram", "Spotify", "Azure", "7–12", "directory", "Published episodes"):
+                    self.assertNotIn(unwanted, main_text)
+                self.assertIn("Approximately 15 minutes", main_text)
+                self.assertIn("Edge TTS fallback", main_text)
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)
                 home_soup = BeautifulSoup(home, "html.parser")
