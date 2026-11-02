@@ -2,6 +2,7 @@
 
 import os
 import json
+import hashlib
 import re
 import sys
 import time
@@ -321,7 +322,7 @@ def _decode_script_section(response):
     return script
 
 
-def generate_podcast_script(synthesis_content):
+def generate_podcast_script(synthesis_content, checkpoint_path=None):
     """Generate bounded sections so shorter-output providers can meet the duration."""
     from synthesize import _call_llm
 
@@ -335,6 +336,25 @@ def generate_podcast_script(synthesis_content):
     if len(blocks) < section_count:
         raise ValueError("Insufficient source story sections for a full contextual podcast.")
 
+    checkpoint_key = hashlib.sha256(
+        f"speaker-turns-v1:{minimum_words}:{maximum_words}:{synthesis_content}".encode("utf-8")
+    ).hexdigest()
+    saved_sections = []
+    if checkpoint_path is not None and checkpoint_path.exists():
+        checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+        if not isinstance(checkpoint, dict) or set(checkpoint) != {"key", "sections"}:
+            raise ValueError("Invalid podcast section checkpoint.")
+        if checkpoint["key"] != checkpoint_key:
+            print("[RECOVERY] Podcast source or duration changed; generating new sections.")
+        else:
+            saved_sections = checkpoint["sections"]
+            if (
+                not isinstance(saved_sections, list)
+                or len(saved_sections) > section_count
+                or not all(isinstance(section, str) for section in saved_sections)
+            ):
+                raise ValueError("Invalid saved podcast sections.")
+
     sections = []
     print(f"[AUDIO] Generating {section_count} bounded three-host podcast sections...")
     for index in range(section_count):
@@ -345,6 +365,15 @@ def generate_podcast_script(synthesis_content):
         else:
             section_minimum = max(100, minimum_words // section_count - 66)
             section_maximum = maximum_words // section_count + 50
+        if index < len(saved_sections):
+            saved = saved_sections[index]
+            _validate_dialogue(saved)
+            if not section_minimum <= _spoken_word_count(saved) <= section_maximum:
+                raise ValueError(f"Saved podcast section {index + 1} is outside its word budget.")
+            sections.append(saved)
+            print(f"[RECOVERY] Reusing validated podcast section {index + 1}/{section_count}.")
+            continue
+        target_words = (section_minimum + section_maximum) // 2
         source = "\n\n".join(
             blocks[index * len(blocks) // section_count:
                    (index + 1) * len(blocks) // section_count]
@@ -361,7 +390,10 @@ def generate_podcast_script(synthesis_content):
             "Write ONE section of Decode the Stack's English technology podcast. "
             f"This is section {index + 1} of {section_count}. {position}\n"
             f"Write {section_minimum}-{section_maximum} spoken words, excluding "
-            "speaker labels and markers. This is a strict section budget, not the "
+            f"speaker labels and markers. Aim for {target_words} words, safely inside "
+            "the allowed interval. Count words in text fields, not JSON keys. "
+            "Plan conversational turns totaling that target before returning JSON. "
+            "This is a strict section budget, not the "
             "whole episode. Use all three speakers Anna, Maria, and Pedro, "
             "one JSON object per turn, at most three sentences per turn. "
             "Anna is the clear, concise anchor; Maria adds technical depth; "
@@ -383,7 +415,7 @@ def generate_podcast_script(synthesis_content):
         )
         accepted = None
         feedback = ""
-        for attempt in range(2):
+        for attempt in range(4):
             candidate = _call_llm(
                 prompt + feedback,
                 source,
@@ -395,7 +427,7 @@ def generate_podcast_script(synthesis_content):
             try:
                 candidate = _decode_script_section(_sanitize_script(candidate))
             except ValueError as error:
-                if attempt == 1:
+                if attempt == 3:
                     raise
                 feedback = (
                     f"\nThe previous draft was rejected: {error}. "
@@ -409,9 +441,19 @@ def generate_podcast_script(synthesis_content):
                 accepted = candidate
                 break
             feedback = (
-                f"\nThe previous draft had {word_count} spoken words. Rewrite this "
-                f"section to contain {section_minimum}-{section_maximum} words. "
-                "Expand only source-grounded explanation, or shorten repeated material."
+                f"\nThe previous draft had exactly {word_count} spoken words; "
+                f"the permitted interval is {section_minimum}-{section_maximum}. "
+                f"Revise it toward {target_words} words: "
+                f"{'remove' if word_count > target_words else 'add'} approximately "
+                f"{abs(word_count - target_words)} spoken words. "
+                "Shorten repetition or expand only source-grounded explanation. "
+                "Keep source facts and explicit speaker attribution; return the full revised "
+                "JSON section, never a partial patch. The rejected draft follows:\n"
+                + json.dumps({"turns": [
+                    {"speaker": line.split(":", 1)[0], "text": line.split(":", 1)[1].strip()}
+                    if not line.startswith("[") else {"marker": line}
+                    for line in (line.strip() for line in candidate.splitlines()) if line
+                ]})
             )
         if accepted is None:
             raise ValueError(
@@ -419,6 +461,14 @@ def generate_podcast_script(synthesis_content):
                 f"required {section_minimum}-{section_maximum}."
             )
         sections.append(accepted)
+        if checkpoint_path is not None:
+            checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+            temporary = checkpoint_path.with_suffix(".tmp")
+            temporary.write_text(
+                json.dumps({"key": checkpoint_key, "sections": sections}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            temporary.replace(checkpoint_path)
 
     script = "\n[TOPIC_CHANGE]\n".join(sections)
     word_count = _spoken_word_count(script)
@@ -1155,7 +1205,9 @@ def run(date_str=None, reuse_script=False):
         return None
 
     # Step 1: Generate dialogue script
-    script = generate_podcast_script(synthesis_content)
+    script = generate_podcast_script(
+        synthesis_content, checkpoint_path=DATA_DIR / f"podcast_sections_{date}.json",
+    )
     if not script:
         return None
 

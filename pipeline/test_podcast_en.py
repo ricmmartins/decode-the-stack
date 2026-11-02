@@ -185,7 +185,7 @@ Pedro: Let us look at the engineering trade-offs."""
             self.assertRaisesRegex(ValueError, "required 300-450"),
         ):
             podcast.generate_podcast_script(synthesis)
-        self.assertEqual(call.call_count, 2)
+        self.assertEqual(call.call_count, 4)
 
     def test_final_section_adapts_to_prior_lengths_without_weakening_total(self):
         synthesis = "\n\n".join(f"### Story {i}\nVerified reporting." for i in range(6))
@@ -198,6 +198,71 @@ Pedro: Let us look at the engineering trade-offs."""
             script = podcast.generate_podcast_script(synthesis)
         self.assertEqual(podcast._spoken_word_count(script), 2250)
         self.assertIn("450-650 spoken words", call.call_args.args[0])
+
+    def test_over_budget_drafts_receive_count_and_revision_before_third_attempt(self):
+        synthesis = "\n\n".join(f"### Story {i}\nVerified reporting." for i in range(6))
+        with (
+            patch.dict("sys.modules", {"synthesize": synthesize}),
+            patch.object(synthesize, "_call_llm", side_effect=[
+                *[self.dialogue(380)] * 3, self.dialogue(800), self.dialogue(467),
+                *[self.dialogue(380)] * 3,
+            ]) as call,
+        ):
+            script = podcast.generate_podcast_script(synthesis)
+        self.assertEqual(podcast._spoken_word_count(script), 2280)
+        self.assertEqual(call.call_count, 8)
+        prompt = call.call_args_list[5].args[0]
+        self.assertIn("exactly 467 spoken words", prompt)
+        self.assertIn("remove approximately 92 spoken words", prompt)
+        self.assertIn("permitted interval is 300-450", prompt)
+        self.assertIn('"speaker": "Anna"', prompt)
+
+    def test_partial_checkpoint_resumes_without_regenerating_accepted_sections(self):
+        synthesis = "\n\n".join(f"### Story {i}\nVerified reporting." for i in range(6))
+        with tempfile.TemporaryDirectory() as directory:
+            checkpoint = Path(directory) / "sections.json"
+            with (
+                patch.dict("sys.modules", {"synthesize": synthesize}),
+                patch.object(synthesize, "_call_llm", side_effect=[
+                    *[self.dialogue(380)] * 3, *[self.dialogue(467)] * 4,
+                ]) as call,
+                self.assertRaisesRegex(ValueError, "section 4.*467.*300-450"),
+            ):
+                podcast.generate_podcast_script(synthesis, checkpoint)
+            self.assertEqual(call.call_count, 7)
+            self.assertEqual(len(json.loads(checkpoint.read_text())["sections"]), 3)
+            with (
+                patch.dict("sys.modules", {"synthesize": synthesize}),
+                patch.object(synthesize, "_call_llm", return_value=self.dialogue(380)) as call,
+            ):
+                script = podcast.generate_podcast_script(synthesis, checkpoint)
+            self.assertEqual(call.call_count, 3)
+            self.assertIn("section 4 of 6", call.call_args_list[0].args[0])
+            self.assertEqual(podcast._spoken_word_count(script), 2280)
+            with patch.object(synthesize, "_call_llm", side_effect=AssertionError("No LLM")):
+                self.assertEqual(podcast.generate_podcast_script(synthesis, checkpoint), script)
+
+    def test_checkpoint_source_change_invalidates_and_corruption_fails_closed(self):
+        synthesis = "\n\n".join(f"### Story {i}\nVerified reporting." for i in range(6))
+        with tempfile.TemporaryDirectory() as directory:
+            checkpoint = Path(directory) / "sections.json"
+            with (
+                patch.dict("sys.modules", {"synthesize": synthesize}),
+                patch.object(synthesize, "_call_llm", return_value=self.dialogue(380)) as call,
+            ):
+                podcast.generate_podcast_script(synthesis, checkpoint)
+                podcast.generate_podcast_script(synthesis + "\nChanged evidence.", checkpoint)
+            self.assertEqual(call.call_count, 12)
+            data = json.loads(checkpoint.read_text())
+            data["sections"][0] = "Welcome without a speaker."
+            checkpoint.write_text(json.dumps(data))
+            with (
+                patch.dict("sys.modules", {"synthesize": synthesize}),
+                patch.object(synthesize, "_call_llm") as call,
+                self.assertRaisesRegex(ValueError, "unrecognized dialogue"),
+            ):
+                podcast.generate_podcast_script(synthesis + "\nChanged evidence.", checkpoint)
+            call.assert_not_called()
 
     def test_unspoken_narration_or_missing_host_is_rejected(self):
         for dialogue in ("Anna: Hello.\nMaria: Hello.", "Narrator: Hello."):
@@ -256,7 +321,7 @@ Pedro: Let us look at the engineering trade-offs."""
             self.assertRaisesRegex(ValueError, "unrecognized dialogue line"),
         ):
             podcast.generate_podcast_script(synthesis)
-        self.assertEqual(call.call_count, 2)
+        self.assertEqual(call.call_count, 4)
 
     def test_tts_fallback_restarts_entire_three_host_episode(self):
         def partial_openai(segments, directory):
