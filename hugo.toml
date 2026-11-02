@@ -41,25 +41,15 @@ paginate = 12
     url = "categories/"
     weight = 20
   [[menu.main]]
-    identifier = "archive"
-    name = "Archive"
-    url = "archive/"
-    weight = 30
-  [[menu.main]]
-    identifier = "stats"
-    name = "Statistics"
-    url = "stats/"
-    weight = 40
-  [[menu.main]]
     identifier = "podcast"
     name = "Podcast"
     url = "podcast/"
-    weight = 50
+    weight = 30
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "about/"
-    weight = 60
+    weight = 40
 
 [taxonomies]
   category = "categories"
