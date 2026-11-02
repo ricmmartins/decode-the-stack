@@ -5,6 +5,7 @@ for the public stats page and trend history charts.
 """
 
 import json
+import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -134,7 +135,7 @@ def _read_ranked_stories(date_str):
 
 
 def generate_publication_stats():
-    """Rebuild archive totals from published English editions and their ranking data."""
+    """Count published stories, excluding ranked candidates omitted by synthesis."""
     daily_posts = sorted(CONTENT_DIR.glob("*-daily.md"))
     source_counts = {}
     category_counts = {}
@@ -143,26 +144,21 @@ def generate_publication_stats():
 
     for post_path in daily_posts:
         date_str = post_path.name.removesuffix("-daily.md")
-        story_data = _read_ranked_stories(date_str)
-        main_path = DATA_RANKED_DIR / f"top_{date_str}.json"
-        quick_path = DATA_RANKED_DIR / f"quick_{date_str}.json"
-        main_stories = []
-        quick_stories = []
-        if main_path.is_file():
-            with main_path.open(encoding="utf-8") as source_file:
-                main_stories = json.load(source_file)
-        if quick_path.is_file():
-            with quick_path.open(encoding="utf-8") as source_file:
-                quick_stories = json.load(source_file)
-
-        if not story_data:
-            frontmatter = post_path.read_text(encoding="utf-8").split("---", 2)
-            metadata = yaml.safe_load(frontmatter[1]) if len(frontmatter) > 2 else {}
-            main_count = int((metadata or {}).get("mainCount", 0))
-            quick_count = int((metadata or {}).get("quickCount", 0))
-            count = main_count + quick_count
-        else:
-            count = len(story_data)
+        content = post_path.read_text(encoding="utf-8")
+        frontmatter = content.split("---", 2)
+        metadata = yaml.safe_load(frontmatter[1]) if len(frontmatter) > 2 else {}
+        published_urls = set(re.findall(
+            r"(?m)^#{2,4}\s+\[.*?\]\((https?://\S+)\)\s*$", content
+        ))
+        story_data = [
+            story for story in _read_ranked_stories(date_str)
+            if story.get("url") in published_urls
+        ]
+        main_count = int((metadata or {}).get("mainCount", 0))
+        quick_count = int((metadata or {}).get("quickCount", 0))
+        count = main_count + quick_count
+        if not count:
+            count = len(published_urls)
         headline_total += count
 
         publishers_for_day = set()

@@ -13,13 +13,29 @@
     <div class="stats-grid">
       <article class="featured-edition"><p class="eyebrow">Configured feeds</p><strong class="stat-number">{{ .configured_feeds }}</strong><p>Public RSS and Atom sources in the current pipeline configuration.</p></article>
       <article class="featured-edition"><p class="eyebrow">Published editions</p><strong class="stat-number">{{ .editions_published }}</strong><p>Daily English editions in the archive.</p></article>
-      <article class="featured-edition"><p class="eyebrow">Published stories</p><strong class="stat-number">{{ .headlines_published }}</strong><p>Main stories and Quick Reads in published editions.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Published stories</p><strong class="stat-number" data-stat="published-stories">{{ .headlines_published }}</strong><p>Main stories and Quick Reads in published editions.</p></article>
       <article class="featured-edition"><p class="eyebrow">Publishers credited</p><strong class="stat-number">{{ .sources_credited }}</strong><p>Distinct sources represented in the archive.</p></article>
     </div>
   </section>
 
   {{- with .latest_edition_date }}
   <p class="eyebrow">Latest edition: <a href="{{ printf "posts/%s-daily/" . | relURL }}">{{ . }}</a> · {{ $stats.latest_headlines }} stories</p>
+  {{- end }}
+
+  {{- with hugo.Data.pipeline }}
+  {{- with .pipeline_stats }}
+  <section class="section-block" aria-labelledby="pipeline-stats-title">
+    <h2 id="pipeline-stats-title">Latest pipeline run</h2>
+    <p>Source collection and clustering are processing counts, not published story counts.</p>
+    <div class="stats-grid">
+      <article class="featured-edition"><p class="eyebrow">Articles ingested</p><strong class="stat-number" data-stat="articles-ingested">{{ .articles_ingested }}</strong></article>
+      <article class="featured-edition"><p class="eyebrow">Story clusters</p><strong class="stat-number" data-stat="clusters-formed">{{ .clusters_formed }}</strong></article>
+      <article class="featured-edition"><p class="eyebrow">Main stories published</p><strong class="stat-number" data-stat="main-stories">{{ .main_stories }}</strong></article>
+      <article class="featured-edition"><p class="eyebrow">Quick Reads published</p><strong class="stat-number" data-stat="quick-reads">{{ .radar_items }}</strong></article>
+    </div>
+    <p class="eyebrow">Pipeline date: {{ .date }}</p>
+  </section>
+  {{- end }}
   {{- end }}
 
   {{- with .history }}

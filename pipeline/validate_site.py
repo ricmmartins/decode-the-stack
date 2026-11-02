@@ -10,6 +10,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
 import yaml
+from bs4 import BeautifulSoup
 
 
 SITE_URL = "https://decodethestack.pages.dev/"
@@ -185,6 +186,70 @@ def _validate_podcast_page(root):
     if len(sources) != len(set(sources)):
         raise ValueError("The podcast page repeats an episode audio player.")
 
+def _validate_published_values(root):
+    """Compare rendered counts and listings against actual published content."""
+    project = Path(__file__).resolve().parent.parent
+    category_slugs = {
+        "Cloud": "cloud", "AI/ML": "ai-ml", "DevOps & SRE": "devops-sre",
+        "Software Engineering": "software-engineering", "Security": "security",
+    }
+    counts = dict.fromkeys(category_slugs.values(), 0)
+    search = {item["url"]: item for item in json.loads(_read(root / "search-index.json"))}
+    archive = BeautifulSoup(_read(root / "archive/index.html"), "html.parser")
+    headline_total = 0
+    for path in (project / "content/posts").glob("*.md"):
+        text = _read(path)
+        metadata = yaml.safe_load(text.split("---", 2)[1])
+        url = f"/posts/{metadata.get('slug', path.stem)}/"
+        if metadata.get("draft"):
+            continue
+        if url not in search:
+            raise ValueError(f"The search index omits published edition {url}.")
+        item = search[url]
+        if item["title"] != metadata["title"] or not item.get("content"):
+            raise ValueError(f"The search index has stale title/content for {url}.")
+        first_story = re.search(r"(?m)^### \[(.*?)\]", text)
+        indexed_content = html.unescape(item["content"]).replace("\u2019", "'")
+        if first_story and first_story.group(1).replace("\u2019", "'") not in indexed_content:
+            raise ValueError(f"The search index omits the published story content for {url}.")
+        for category in metadata.get("categories", []):
+            if category not in category_slugs:
+                continue
+            slug = category_slugs[category]
+            counts[slug] += 1
+            term = BeautifulSoup(_read(root / f"categories/{slug}/index.html"), "html.parser")
+            if not term.select_one(f'main a[href="{url}"]'):
+                raise ValueError(f"The {category} category omits published edition {url}.")
+        if path.name.endswith("-daily.md"):
+            headline_total += int(metadata.get("mainCount", 0)) + int(metadata.get("quickCount", 0))
+    for page in ("index.html", "categories/index.html"):
+        soup = BeautifulSoup(_read(root / page), "html.parser")
+        for slug, count in counts.items():
+            card = soup.select_one(f'a.topic-card[href="/categories/{slug}/"] .topic-count')
+            if card is None or int(card.get_text().split()[0]) != count:
+                raise ValueError(f"The {slug} topic count on {page} must be {count}.")
+    latest = max(search.values(), key=lambda item: item["date"], default=None)
+    if latest and not archive.select_one(f'main a[href="{latest["url"]}"]'):
+        raise ValueError("The archive does not list the latest published edition.")
+    stats = json.loads(_read(project / "data/stats.json"))
+    if stats.get("headlines_published") != headline_total:
+        raise ValueError("Publication statistics count ranked candidates instead of published stories.")
+    rendered = BeautifulSoup(_read(root / "stats/index.html"), "html.parser")
+    values = {"published-stories": headline_total}
+    pipeline_path = project / "static/data/pipeline_stats.json"
+    if pipeline_path.is_file():
+        pipeline = json.loads(_read(pipeline_path))
+        values.update({
+            "articles-ingested": pipeline["articles_ingested"],
+            "clusters-formed": pipeline["clusters_formed"],
+            "main-stories": pipeline["main_stories"],
+            "quick-reads": pipeline["radar_items"],
+        })
+    for field, expected in values.items():
+        element = rendered.select_one(f'[data-stat="{field}"]')
+        if element is None or int(element.get_text()) != expected:
+            raise ValueError(f"The statistics page must display {field}={expected}.")
+
 
 def validate(root):
     missing = [path for path in REQUIRED if not (root / path).is_file()]
@@ -201,6 +266,7 @@ def validate(root):
     _validate_written_feed(root)
     _validate_podcast_feed(root)
     _validate_podcast_page(root)
+    _validate_published_values(root)
 
     about = _read(root / "about" / "index.html")
     if "Table of contents" not in about or "How it works" not in about:

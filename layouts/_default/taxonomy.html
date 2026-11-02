@@ -1,12 +1,11 @@
 {{ define "main" }}
 <header class="page-header">
-  <p class="eyebrow">Browse / Index</p>
+  <p class="eyebrow">Category / {{ .Title }}</p>
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<div class="post-description">{{ . | markdownify }}</div>{{ end }}
+  <p class="eyebrow">{{ len .Pages }} {{ if eq (len .Pages) 1 }}edition{{ else }}editions{{ end }}</p>
 </header>
-<ul class="terms-tags">
-  {{- range .Data.Terms.Alphabetical }}
-  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <sup>{{ .Count }}</sup></a></li>
-  {{- end }}
-</ul>
+<div class="editions-grid">
+  {{- range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">No editions have been published in this category yet.</p>{{ end }}
+</div>
 {{ end }}

@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-11-02T03:12:11.240842+00:00",
+  "updated_at": "2026-11-02T03:18:59.710698+00:00",
   "configured_feeds": 242,
   "editions_published": 1,
-  "headlines_published": 50,
-  "sources_credited": 26,
+  "headlines_published": 36,
+  "sources_credited": 21,
   "latest_edition_date": "2026-11-02",
-  "latest_headlines": 50,
+  "latest_headlines": 36,
   "source_counts": [
-    {
-      "name": "Dev.to (Top)",
-      "headlines": 10
-    },
-    {
-      "name": "Hacker News (Best)",
-      "headlines": 5
-    },
     {
       "name": "Vercel Blog",
       "headlines": 5
     },
     {
+      "name": "Dev.to (Top)",
+      "headlines": 4
+    },
+    {
       "name": "Google Developers Blog",
+      "headlines": 4
+    },
+    {
+      "name": "Hacker News (Best)",
       "headlines": 4
     },
     {
@@ -30,14 +30,6 @@
     {
       "name": "Martin Fowler",
       "headlines": 3
-    },
-    {
-      "name": "Schneier on Security",
-      "headlines": 2
-    },
-    {
-      "name": "Simon Willison",
-      "headlines": 2
     },
     {
       "name": "Zapier Engineering",
@@ -61,14 +53,6 @@
     },
     {
       "name": "GitLab Blog",
-      "headlines": 1
-    },
-    {
-      "name": "Kubernetes Blog",
-      "headlines": 1
-    },
-    {
-      "name": "Laravel News",
       "headlines": 1
     },
     {
@@ -100,10 +84,6 @@
       "headlines": 1
     },
     {
-      "name": "The New Stack",
-      "headlines": 1
-    },
-    {
       "name": "Twilio Blog",
       "headlines": 1
     },
@@ -115,7 +95,7 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 38
+      "headlines": 29
     },
     {
       "name": "Cloud",
@@ -123,22 +103,14 @@
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 3
-    },
-    {
-      "name": "AI/ML",
-      "headlines": 2
-    },
-    {
-      "name": "Security",
       "headlines": 2
     }
   ],
   "history": [
     {
       "date": "2026-11-02",
-      "headlines": 50,
-      "sources": 26
+      "headlines": 36,
+      "sources": 21
     }
   ]
 }

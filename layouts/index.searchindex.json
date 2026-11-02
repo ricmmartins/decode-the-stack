@@ -7,7 +7,7 @@
     "url": {{ $page.RelPermalink | jsonify }},
     "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
     "description": {{ $page.Description | jsonify }},
-    "content": {{ $page.Plain | jsonify }}
+    "content": {{ $page.Plain | htmlUnescape | jsonify }}
   }
 {{- end -}}
 ]

@@ -7,15 +7,15 @@
 </header>
 {{- $topics := slice
   (dict "title" "Cloud" "description" "Architecture that runs." "icon" "cloud" "url" "cloud")
-  (dict "title" "AI/ML" "description" "From demo to system." "icon" "cpu" "url" "ai-ml")
-  (dict "title" "DevOps & SRE" "description" "Reliability in practice." "icon" "layers" "url" "devops-sre")
+  (dict "title" "AI/ML" "description" "From demo to system." "icon" "cpu" "url" "ai-ml" "path" "ai/ml")
+  (dict "title" "DevOps & SRE" "description" "Reliability in practice." "icon" "layers" "url" "devops-sre" "path" "devops-&-sre")
   (dict "title" "Software Engineering" "description" "Code, design, and decisions." "icon" "code" "url" "software-engineering")
   (dict "title" "Security" "description" "Trust by design." "icon" "shield" "url" "security")
 -}}
 <div class="topic-grid">
   {{- range $topics }}
     {{- $topic := . }}
-    {{- $term := site.GetPage (printf "/categories/%s" $topic.url) }}
+    {{- $term := site.GetPage (printf "/categories/%s" ($topic.path | default $topic.url)) }}
     {{- $count := 0 }}
     {{- with $term }}{{ $count = len .Pages }}{{ end }}
     <a class="topic-card" href="{{ printf "categories/%s/" $topic.url | relURL }}">

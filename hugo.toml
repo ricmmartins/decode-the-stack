@@ -60,6 +60,10 @@ paginate = 12
   target = "data"
   files = ["! *.md", "! *.txt", "! **/*.md", "! **/*.txt", "**"]
 
+[[module.mounts]]
+  source = "static/data"
+  target = "data/pipeline"
+
 [services.rss]
   limit = 30
 

@@ -1,7 +1,7 @@
 ---
 title: "Publication statistics"
 description: "Transparent counts calculated from Decode the Stack editions that have actually been published."
-layout: stats
+type: stats
 url: /stats/
 date: 2026-11-02T00:00:00Z
 ---
