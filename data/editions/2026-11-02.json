@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-02",
+  "title": "The engineering briefing — November 2, 2026",
+  "description": "A source-linked briefing covering 6 recent headlines.",
+  "items": [
+    {
+      "title": "Open-source security in the AI exploit era: Patch without changing a thing",
+      "url": "https://thenewstack.io/patchmageddon-open-source-security22842502/",
+      "source": "The New Stack",
+      "category": "Cloud & DevOps",
+      "published": "2026-11-01T16:00:00+00:00"
+    },
+    {
+      "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
+      "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "source": "InfoQ",
+      "category": "Engineering",
+      "published": "2026-11-01T08:03:00+00:00"
+    },
+    {
+      "title": "A step-by-step guide for how to kill the line-by-line code review",
+      "url": "https://thenewstack.io/ai-code-review-invariants/",
+      "source": "The New Stack",
+      "category": "Cloud & DevOps",
+      "published": "2026-11-01T15:00:00+00:00"
+    },
+    {
+      "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
+      "url": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "source": "InfoQ",
+      "category": "Engineering",
+      "published": "2026-11-01T06:32:00+00:00"
+    },
+    {
+      "title": "The context problem: How Docusign built agents that understand the business behind contracts",
+      "url": "https://thenewstack.io/docusign-contract-ai-agents/",
+      "source": "The New Stack",
+      "category": "Cloud & DevOps",
+      "published": "2026-10-31T16:13:35+00:00"
+    },
+    {
+      "title": "Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption",
+      "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "source": "InfoQ",
+      "category": "Engineering",
+      "published": "2026-10-31T19:56:00+00:00"
+    }
+  ]
+}
