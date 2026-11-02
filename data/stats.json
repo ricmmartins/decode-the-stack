@@ -1,36 +1,144 @@
 {
-  "updated_at": "2026-11-02T02:02:50.862715+00:00",
+  "updated_at": "2026-11-02T03:12:11.240842+00:00",
   "configured_feeds": 242,
   "editions_published": 1,
-  "headlines_published": 6,
-  "sources_credited": 2,
+  "headlines_published": 50,
+  "sources_credited": 26,
   "latest_edition_date": "2026-11-02",
-  "latest_headlines": 6,
+  "latest_headlines": 50,
   "source_counts": [
     {
+      "name": "Dev.to (Top)",
+      "headlines": 10
+    },
+    {
+      "name": "Hacker News (Best)",
+      "headlines": 5
+    },
+    {
+      "name": "Vercel Blog",
+      "headlines": 5
+    },
+    {
+      "name": "Google Developers Blog",
+      "headlines": 4
+    },
+    {
       "name": "InfoQ",
+      "headlines": 4
+    },
+    {
+      "name": "Martin Fowler",
       "headlines": 3
     },
     {
+      "name": "Schneier on Security",
+      "headlines": 2
+    },
+    {
+      "name": "Simon Willison",
+      "headlines": 2
+    },
+    {
+      "name": "Zapier Engineering",
+      "headlines": 2
+    },
+    {
+      "name": "Azure DevOps Blog",
+      "headlines": 1
+    },
+    {
+      "name": "DigitalOcean Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Eric Elliott",
+      "headlines": 1
+    },
+    {
+      "name": "GitHub Blog",
+      "headlines": 1
+    },
+    {
+      "name": "GitLab Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Kubernetes Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Laravel News",
+      "headlines": 1
+    },
+    {
+      "name": "Lobsters",
+      "headlines": 1
+    },
+    {
+      "name": "Netflix Tech Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Nvidia Developer Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Paul Graham",
+      "headlines": 1
+    },
+    {
+      "name": "Raymond Chen (Old New Thing)",
+      "headlines": 1
+    },
+    {
+      "name": "Real Python",
+      "headlines": 1
+    },
+    {
+      "name": "The Daily WTF",
+      "headlines": 1
+    },
+    {
       "name": "The New Stack",
-      "headlines": 3
+      "headlines": 1
+    },
+    {
+      "name": "Twilio Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Visual Studio Blog",
+      "headlines": 1
     }
   ],
   "category_counts": [
     {
-      "name": "Cloud & DevOps",
+      "name": "Software Engineering",
+      "headlines": 38
+    },
+    {
+      "name": "Cloud",
+      "headlines": 5
+    },
+    {
+      "name": "DevOps & SRE",
       "headlines": 3
     },
     {
-      "name": "Engineering",
-      "headlines": 3
+      "name": "AI/ML",
+      "headlines": 2
+    },
+    {
+      "name": "Security",
+      "headlines": 2
     }
   ],
   "history": [
     {
       "date": "2026-11-02",
-      "headlines": 6,
-      "sources": 2
+      "headlines": 50,
+      "sources": 26
     }
   ]
 }

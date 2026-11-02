@@ -1,0 +1,509 @@
+{
+  "entries": [
+    {
+      "date": "2026-11-02",
+      "stories": [
+        {
+          "title": "I Stopped Vibe Coding and Started Using Prompt Contracts, Here's What the Data",
+          "url": "https://dev.to/mashrafaiman/i-stopped-vibe-coding-and-started-using-prompt-contracts-heres-what-the-data-2ab7",
+          "category": "dev",
+          "score": 27.0,
+          "coverage_count": 3,
+          "source_name": "Dev.to (Top)",
+          "summary": "<div class=\"ltag__link--embedded\">\n  <div class=\"crayons-story \">\n  <a class=\"crayons-story__hidden-navigation-link\" href=\"https://dev.to/mashraf_aiman/i-stopped-vibe-coding-and-started-using-prompt-c",
+          "section": "main"
+        },
+        {
+          "title": "Deploying to 20 Rockchip boards by hand is a trap — so I built rk-deploy",
+          "url": "https://dev.to/anguoyang/deploying-to-20-rockchip-boards-by-hand-is-a-trap-so-i-built-rk-deploy-58c5",
+          "category": "dev",
+          "score": 27.0,
+          "coverage_count": 3,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>If you ship software to Rockchip boards — RK3588, RK3576, RK356x — you<br />\nknow the ritual. Build a tarball. <code>scp</code> it to the board. SSH in, untar<br />\nit somewhere, write a systemd un",
+          "section": "main"
+        },
+        {
+          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+          "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
+          "category": "dev",
+          "score": 25.0,
+          "coverage_count": 10,
+          "source_name": "Nvidia Developer Blog",
+          "summary": "<img alt=\"Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://d",
+          "section": "main"
+        },
+        {
+          "title": "The fx adapter now runs the harness on the host",
+          "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
+          "category": "cloud",
+          "score": 25.0,
+          "coverage_count": 5,
+          "source_name": "Vercel Blog",
+          "summary": "<p>The fx adapter for the AI SDK’s <code>HarnessAgent</code> now uses <code>libfx</code>, the TypeScript library for fx. The harness and model requests run in your application’s process, while built-i",
+          "section": "main"
+        },
+        {
+          "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free",
+          "url": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
+          "category": "cloud",
+          "score": 19.0,
+          "coverage_count": 3,
+          "source_name": "Vercel Blog",
+          "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/ling-3.1-flash-1019\">Ling 3.1 Flash 1019 from InclusionAI</a> is now available on <a href=\"https://vercel.com/docs/ai-gateway\">AI Gateway</a>, free unt",
+          "section": "main"
+        },
+        {
+          "title": "PHP2Shell and Azure DevOps: what to check",
+          "url": "https://devblogs.microsoft.com/devops/php2shell-and-azure-devops-what-to-check/",
+          "category": "devops",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Azure DevOps Blog",
+          "summary": "<p>On October 21, 2026, PHP disclosed two critical vulnerabilities that can allow remote code execution. Neither Azure DevOps Services, our cloud-hosted offering, nor Azure DevOps Server, our on-premi",
+          "section": "main"
+        },
+        {
+          "title": "From Working Group to SIG Architecture: spotlight on AI Conformance",
+          "url": "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/",
+          "category": "devops",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Kubernetes Blog",
+          "summary": "<p>In this SIG Architecture spotlight we talked with <a href=\"https://github.com/janetkuo\">Janet Kuo</a> (Google)\nand <a href=\"https://github.com/terrytangyuan\">Yuan Tang</a> (TensorScale AI) about th",
+          "section": "main"
+        },
+        {
+          "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
+          "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
+          "category": "security",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Schneier on Security",
+          "summary": "<p>Neat <a href=\"https://www.smithsonianmag.com/smart-news/watch-an-elusive-and-ethereal-bigfin-squid-float-above-the-seafloor-off-central-california-180989491/\">video</a>:</p>\n<blockquote><p>The sigh",
+          "section": "main"
+        },
+        {
+          "title": "Bloatware in Aftermarket Auto Parts",
+          "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+          "category": "security",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Schneier on Security",
+          "summary": "<p>This <a href=\"https://www.thedrive.com/news/cheap-aftermarket-head-units-are-loaded-with-spyware-by-the-way\">story</a> is interesting:</p>\n<blockquote><p>One Civic owner purchased a cheap aftermark",
+          "section": "main"
+        },
+        {
+          "title": "If in doubt, delete the uv.lock file",
+          "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+          "category": "ai",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p>I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:</p>\n<p><strong>If in doubt, delete the uv.lock file</s",
+          "section": "main"
+        },
+        {
+          "title": "Quoting Kyle Kingsbury",
+          "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+          "category": "ai",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<blockquote cite=\"https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs\"><p>More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. P",
+          "section": "main"
+        },
+        {
+          "title": "Open-source security in the AI exploit era: Patch without changing a thing",
+          "url": "https://thenewstack.io/patchmageddon-open-source-security22842502/",
+          "category": "news",
+          "score": 33.0,
+          "coverage_count": 5,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"A vibrant digital illustration of an open combination padlock against a dark navy background. The lock features a colorful purple-to-green gradient and five tumblers displaying bright green ",
+          "section": "main"
+        },
+        {
+          "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+          "url": "https://hackerbooks.org",
+          "category": "news",
+          "score": 23.0,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Ea",
+          "section": "main"
+        },
+        {
+          "title": "Delete Expired Sessions in Laravel With a Scheduled Command",
+          "url": "https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+          "category": "dev",
+          "score": 22.0,
+          "coverage_count": 4,
+          "source_name": "Laravel News",
+          "summary": "<p><a href=\"https://laravel-news.com/laravel-delete-expired-sessions\"><img alt=\"Delete Expired Sessions in Laravel With a Scheduled Command\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.co",
+          "section": "main"
+        },
+        {
+          "title": "The commit message was the whole instrument panel",
+          "url": "https://dev.to/phpboyscout/the-commit-message-was-the-whole-instrument-panel-2jp9",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>I asked an agent to work out why a pipeline was failing, and explicitly not to fix it. I wanted the diagnosis.</p>\n\n<p>It fixed it. Then it wrote a commit message saying it had added a config file ",
+          "section": "main"
+        },
+        {
+          "title": "Node.js Text to Image API Integration Queued Rendering Over Immediate Rendering",
+          "url": "https://dev.to/dorianvale91583/nodejs-text-to-image-api-integration-queued-rendering-over-immediate-rendering-3lmp",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>For a Node.js text to image API integration, queued rendering is the better default for a marketplace service that reviews code changes and returns structured findings. Immediate rendering still be",
+          "section": "main"
+        },
+        {
+          "title": "7 SQL checks I run before UAT sign-off (with queries you can copy)",
+          "url": "https://dev.to/prachitparikh/7-sql-checks-i-run-before-uat-sign-off-with-queries-you-can-copy-38h5",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>The hour I trust least on any project is the one right before UAT sign-off. The testers have clicked through every screen, the defect board is mostly green, and someone is waiting for a signature. ",
+          "section": "main"
+        },
+        {
+          "title": "SEO AI khác SEO truyền thống ở đâu: nhìn từ phía người viết HTML",
+          "url": "https://dev.to/manhdigital68/seo-ai-khac-seo-truyen-thong-o-dau-nhin-tu-phia-nguoi-viet-html-4f60",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Dạo này khách hay hỏi team mình một câu: \"Làm SEO AI thì dev phải sửa gì?\". Câu hỏi nghe to, nhưng khi ngồi soát code thì phần việc của dev nhỏ hơn nhiều người nghĩ, và gần như toàn là những thứ SE",
+          "section": "main"
+        },
+        {
+          "title": "Building a Better WordPress Login Experience",
+          "url": "https://dev.to/hmdia/building-a-better-wordpress-login-experience-5686",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>I’m Hamed, the developer behind <strong>HMDIA Login &amp; Registration</strong>, a WordPress plugin for creating custom login, registration, password reset and account pages.</p>\n\n<p>The goal is to",
+          "section": "main"
+        },
+        {
+          "title": "Houdini Copernicus to GLB: Nine Bakes and 18 Browser Starts",
+          "url": "https://dev.to/alicia_lu/houdini-copernicus-to-glb-nine-bakes-and-18-browser-starts-3fhj",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><em>Originally published at <a href=\"https://digitalgarden.si/blog/houdini-copernicus-bake-glb-threejs/\" rel=\"noopener noreferrer\">Digital Garden by Alicia</a>.</em></p>\n\n<p>I baked a 55,296-triang",
+          "section": "main"
+        },
+        {
+          "title": "RK3588 INT8, measured: 1.96 on YOLOv8n, 1.4 on YOLO11n — plus OCR joins the bench",
+          "url": "https://dev.to/anguoyang/rk3588-int8-measured-196x-on-yolov8n-14x-on-yolo11n-plus-ocr-joins-the-bench-jbf",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Follow-up to <a href=\"https://dev.to/anguoyang/10-rknn-models-benchmarked-on-rk3588-and-the-fastest-one-is-cheating-onto-the-cpu-2pkh\">the first rk-bench leaderboard</a>: same RK3588, same frozen p",
+          "section": "radar"
+        },
+        {
+          "title": "Game Off 2026: The theme is SHIFT",
+          "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+          "category": "dev",
+          "score": 20.07,
+          "coverage_count": 1,
+          "source_name": "GitHub Blog",
+          "summary": "<p>GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key.</p",
+          "section": "radar"
+        },
+        {
+          "title": "Making Failure Diagnosis Reliable with Pensive AI",
+          "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4",
+          "category": "dev",
+          "score": 20.0,
+          "coverage_count": 2,
+          "source_name": "Netflix Tech Blog",
+          "summary": "<p>By <a href=\"https://www.linkedin.com/in/praneethy91/\">Praneeth Yenugutala</a>, <a href=\"https://www.linkedin.com/in/victor-dusa/\">Victor Dusa</a>, <a href=\"https://www.linkedin.com/in/anastasia-sam",
+          "section": "radar"
+        },
+        {
+          "title": "A Specialised Haskell Processor on FPGA",
+          "url": "https://bathtub-01.github.io/technical/ouros-demo/",
+          "category": "news",
+          "score": 19.94,
+          "coverage_count": 3,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/8o9wus/specialised_haskell_processor_on_fpga\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "Quiz: Socket Programming in Python",
+          "url": "https://realpython.com/quizzes/socket-programming-in-python/",
+          "category": "dev",
+          "score": 19.36,
+          "coverage_count": 4,
+          "source_name": "Real Python",
+          "summary": "In this quiz, you'll test your understanding of Python sockets. With this knowledge, you'll be able to create your own client-server applications, handle multiple connections simultaneously, and send ",
+          "section": "radar"
+        },
+        {
+          "title": "The best free project management software in 2026",
+          "url": "https://zapier.com/blog/free-project-management-software",
+          "category": "dev",
+          "score": 19.0,
+          "coverage_count": 3,
+          "source_name": "Zapier Engineering",
+          "summary": "Everyone has a different way of managing projects. Some people like to use their inbox to keep track of tasks. Others prefer to visualize work on a Kanban board or in a calendar view, while some even ",
+          "section": "radar"
+        },
+        {
+          "title": "Brilliant Builds: Building for Choice",
+          "url": "https://www.twilio.com/en-us/blog/events/Brilliant-builds-episode-4",
+          "category": "dev",
+          "score": 18.66,
+          "coverage_count": 4,
+          "source_name": "Twilio Blog",
+          "summary": "To close out the season, we’re joined by Scott Seaborn—a leading digital transformation and AI strategist who helps global brands modernise their customer experience.",
+          "section": "radar"
+        },
+        {
+          "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
+          "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-capacity-sold-out/en/headerimage/generatedHeaderImage-1793124716899.jpg\" /><p>Amazon CEO Andy Jassy says AWS’s large committed cloud capacity is largel",
+          "section": "radar"
+        },
+        {
+          "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
+          "url": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 17.83,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-s3-file-transfer/en/headerimage/generatedHeaderImage-1792218946629.jpg\" /><p>AWS has recently released File Mover Express, an open-source application u",
+          "section": "radar"
+        },
+        {
+          "title": "The AI cost of JavaScript frameworks",
+          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+          "category": "news",
+          "score": 17.48,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/\">https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/</a></p>\n<p>Comments URL: <a ",
+          "section": "radar"
+        },
+        {
+          "title": "The support case of a customer who said that all they could see was a black screen",
+          "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
+          "category": "dev",
+          "score": 17.2,
+          "coverage_count": 3,
+          "source_name": "Raymond Chen (Old New Thing)",
+          "summary": "<p>Then again, that is what they asked for.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/\">The support case of a customer who said that all they could see ",
+          "section": "radar"
+        },
+        {
+          "title": "Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption",
+          "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/10/cf-pq-geokey-manager/en/headerimage/generatedHeaderImage-1793376907936.jpg\" /><p>Cloudflare has moved a post-quantum rebuild of GeoKey Manager into closed ",
+          "section": "radar"
+        },
+        {
+          "title": "Bliki: LLM Voice",
+          "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+          "category": "dev",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Martin Fowler",
+          "summary": "<p>Sometimes when I read a post, I get the growing feeling that I'm reading\n  the output of an LLM. I can't necessarily define why, although there are the common\n  tells (it's not the em-dashes, it's ",
+          "section": "radar"
+        },
+        {
+          "title": "Why are good developers so wary of agentic development?",
+          "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+          "category": "dev",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Martin Fowler",
+          "summary": "<p class=\"precis\"><b>TL;DR</b><br /><i>Good developers’ caution about agentic development comes from knowing that built isn’t the same as working in production.</i></p>\n<img src=\"https://martinfowler.",
+          "section": "radar"
+        },
+        {
+          "title": "Fragments: October 28",
+          "url": "https://martinfowler.com/fragments/2026-10-28.html",
+          "category": "dev",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Martin Fowler",
+          "summary": "<p>Andrej Karpathy sees <a href=\"https://x.com/karpathy/status/2109361546505966046\">a widening gap</a> in how people see LLM capabilities.</p>\n\n<blockquote>\n  <p>The general public has mostly not inte",
+          "section": "radar"
+        },
+        {
+          "title": "ChatGPT and Codex usage limits merging",
+          "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+          "category": "news",
+          "score": 16.82,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits\">https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-l",
+          "section": "radar"
+        },
+        {
+          "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+          "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+          "category": "news",
+          "score": 16.58,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve\">https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve</a></p>\n<p>Comment",
+          "section": "radar"
+        },
+        {
+          "title": "OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements",
+          "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 16.48,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/10/openbsd-8-released/en/headerimage/openbsd-8-released-1793464400707.jpeg\" /><p>OpenBSD 8.0 is a substantial upgrade bringing broader hardware compatibility,",
+          "section": "radar"
+        },
+        {
+          "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+          "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+          "category": "news",
+          "score": 16.2,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf\">https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinat",
+          "section": "radar"
+        },
+        {
+          "title": "Preparing for Your Next Certification Could Start with Your Visual Studio Subscription",
+          "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Visual Studio Blog",
+          "summary": "<p>Are you thinking about earning a Microsoft certification to help advance your career, build on your existing skills, or meet new requirements at work?  If so, you may already be wondering where to ",
+          "section": "radar"
+        },
+        {
+          "title": "Simplifying runtime caching on Vercel",
+          "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
+          "category": "cloud",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Vercel Blog",
+          "summary": "<p>Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js <code>fetch</code> caching or <code>unstable_cache",
+          "section": "radar"
+        },
+        {
+          "title": "Vercel Daemons can now call services with bindings",
+          "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
+          "category": "cloud",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Vercel Blog",
+          "summary": "<p><a href=\"https://vercel.com/daemons\">Vercel Daemons</a> can now call the <a href=\"https://vercel.com/docs/services\">services</a> in their deployment through <a href=\"https://vercel.com/docs/service",
+          "section": "radar"
+        },
+        {
+          "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
+          "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
+          "category": "cloud",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Vercel Blog",
+          "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/mistral-large-4\">Mistral Large 4 from Mistral</a> now uses updated weights on <a href=\"https://vercel.com/docs/ai-gateway\">AI Gateway</a>, with lower p",
+          "section": "radar"
+        },
+        {
+          "title": "GitLab Orbit is GA: Higher agent accuracy, lower token cost",
+          "url": "https://about.gitlab.com/blog/gitlab-orbit-ga/",
+          "category": "devops",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "GitLab Blog",
+          "summary": "<p>An agent’s true cost isn’t only the tokens it burns. It’s the review that calls your code “safe to merge” after seeing the diff, but without any context on the pipeline. We call that artificial con",
+          "section": "radar"
+        },
+        {
+          "title": "Gemini automation: How to use the Zapier Gemini integration (Gemini 3.8 Flash, Gemini Enterprise, and more)",
+          "url": "https://zapier.com/blog/automate-google-ai-studio",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Zapier Engineering",
+          "summary": "Anyone who lives in the Google ecosystem has probably used Gemini for a quick draft or a fast answer. (Or if you're like me, you've been driven to your limit by the Google Docs popups encouraging you ",
+          "section": "radar"
+        },
+        {
+          "title": "AI Made Me Homeless Part 2",
+          "url": "https://medium.com/effortless-programming/ai-made-me-homeless-part-2-3647b2f75112?source=rss-c359511de780------2",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 2,
+          "source_name": "Eric Elliott",
+          "summary": "<h4>How I went from $500k/year to living in my car.</h4><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/836/1*rdnNsKwNxdAcnXOBA7ulpg@2x.jpeg\" /></figure><p>Yesterday, I published an artic",
+          "section": "radar"
+        },
+        {
+          "title": "DevFest is back!",
+          "url": "https://developers.googleblog.com/devfest-is-back/",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Google Developers Blog",
+          "summary": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,",
+          "section": "radar"
+        },
+        {
+          "title": "Fast, reliable A2UI, with swappable inference formats",
+          "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Google Developers Blog",
+          "summary": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDK",
+          "section": "radar"
+        },
+        {
+          "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
+          "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Google Developers Blog",
+          "summary": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specificatio",
+          "section": "radar"
+        },
+        {
+          "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
+          "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Google Developers Blog",
+          "summary": "Google Research has completed the 32-bit open-source Coral NPU RISC-V architecture with the introduction of its Matrix Execution Unit, which delivers up to 1 TOPS while targeting 10 mW average power f",
+          "section": "radar"
+        }
+      ]
+    }
+  ]
+}
