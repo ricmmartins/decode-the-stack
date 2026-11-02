@@ -300,6 +300,12 @@ audio { accent-color: var(--accent); max-width: 100%; }
 .stats-table th, .stats-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
 .stats-table th { color: var(--primary); }
 .stats-table td { color: var(--secondary); }
+.tag-chart { display: grid; gap: 8px; padding: 20px; border: 1px solid var(--border); border-radius: 10px; background: var(--entry); }
+.tag-bar-row { display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr) 28px; align-items: center; gap: 10px; font: 12px var(--mono); }
+.tag-bar-label { overflow-wrap: anywhere; text-align: right; }
+.tag-bar-track { min-width: 0; }
+.tag-bar-fill { display: block; min-width: 4px; height: 22px; border-radius: 4px; background: var(--gradient); }
+.tag-bar-value { color: var(--secondary); font-weight: normal; }
 .not-found { min-height: 55vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .not-found .button { margin-top: 12px; }
 

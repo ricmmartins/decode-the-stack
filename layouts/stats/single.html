@@ -70,6 +70,31 @@
     </tbody></table></div>
   </section>
   {{- end }}
+  {{- with hugo.Data.pipeline.trends }}
+    {{- $trends := . }}
+    {{- $totals := dict }}
+    {{- $maximum := 0 }}
+    {{- range .top_tags }}
+      {{- $tag := . }}
+      {{- $total := 0 }}
+      {{- range $trends.days }}{{ $total = add $total (index .tags $tag | default 0) }}{{ end }}
+      {{- $totals = merge $totals (dict $tag $total) }}
+      {{- if gt $total $maximum }}{{ $maximum = $total }}{{ end }}
+    {{- end }}
+    {{- if gt $maximum 0 }}
+  <section class="section-block" aria-labelledby="frequent-tags-title">
+    <h2 id="frequent-tags-title">Most frequent tags</h2>
+    <p>Tag frequencies in the pipeline's rolling trend data (up to 30 days), not counts of editions.</p>
+    <div class="tag-chart">
+      {{- range .top_tags }}
+        {{- $total := index $totals . }}
+        {{- $percent := math.Max 2 (math.Round (div (mul $total 100.0) $maximum)) }}
+      <div class="tag-bar-row" data-tag="{{ . }}"><span class="tag-bar-label">{{ . }}</span><div class="tag-bar-track"><span class="tag-bar-fill" style="width: {{ $percent }}%"></span></div><strong class="tag-bar-value">{{ $total }}</strong></div>
+      {{- end }}
+    </div>
+  </section>
+    {{- end }}
+  {{- end }}
   <p class="eyebrow">Updated {{ .updated_at }}</p>
   {{- else }}
   <p class="empty-state">Statistics will appear after the first English edition is published.</p>

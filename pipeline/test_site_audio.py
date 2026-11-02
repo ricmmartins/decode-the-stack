@@ -150,6 +150,23 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertEqual(entry["url"], "/posts/2026-11-02-daily/")
                 self.assertIn("Verified story context.", entry["content"])
                 statistics = BeautifulSoup((root / "public/stats/index.html").read_text(encoding="utf-8"), "html.parser")
+                trends = json.loads((root / "static/data/trends.json").read_text(encoding="utf-8"))
+                totals = {
+                    tag: sum(day["tags"].get(tag, 0) for day in trends["days"])
+                    for tag in trends["top_tags"]
+                }
+                rows = statistics.select(".tag-bar-row")
+                self.assertEqual([row["data-tag"] for row in rows], trends["top_tags"])
+                self.assertEqual(
+                    [int(row.select_one(".tag-bar-value").get_text()) for row in rows],
+                    list(totals.values()),
+                )
+                maximum = max(totals.values())
+                for row in rows:
+                    percentage = max(2, int(totals[row["data-tag"]] / maximum * 100 + 0.5))
+                    self.assertIn(f"width:{percentage}%", row.select_one(".tag-bar-fill")["style"].replace(" ", ""))
+                self.assertEqual(statistics.select_one("#frequent-tags-title").get_text(), "Most frequent tags")
+                self.assertNotIn("🔥", statistics.get_text())
                 data = json.loads((root / "data/stats.json").read_text(encoding="utf-8"))
                 self.assertEqual(int(statistics.select_one('[data-stat="published-stories"]').get_text()), data["headlines_published"])
                 pipeline = json.loads((root / "static/data/pipeline_stats.json").read_text(encoding="utf-8"))
