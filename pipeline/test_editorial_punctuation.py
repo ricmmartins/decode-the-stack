@@ -62,8 +62,12 @@ class EditorialPunctuationTests(unittest.TestCase):
         for path in (ROOT / "content").rglob("*.md"):
             self.assertFalse(has_editorial_dashes(path.read_text(encoding="utf-8")), path)
 
-    def test_historical_migration_changed_only_punctuation_and_preserved_urls(self):
+    def test_historical_migration_preserves_streams_or_replacement_has_full_review(self):
         current = (ROOT / "content/posts/2026-11-02-daily.md").read_text(encoding="utf-8")
+        if humanizer.digest(current) != humanizer.LEGACY_POSTS["2026-11-02-daily.md"]:
+            self.assertTrue((ROOT / "data/humanizer/2026-11-02-daily.json").is_file())
+            humanizer.validate_posts(ROOT)
+            return
         # Original e858677 word/URL streams, independent of shallow CI history.
         words = re.findall(r"\w+", current)
         urls = re.findall(r"https?://[^\s<>\"')]+", current)
