@@ -1,42 +1,54 @@
 {
-  "updated_at": "2026-11-02T12:39:26.861755+00:00",
+  "updated_at": "2026-11-02T21:02:19.808393+00:00",
   "configured_feeds": 242,
   "editions_published": 1,
-  "headlines_published": 36,
-  "sources_credited": 21,
+  "headlines_published": 41,
+  "sources_credited": 23,
   "latest_edition_date": "2026-11-02",
-  "latest_headlines": 36,
+  "latest_headlines": 41,
   "source_counts": [
     {
-      "name": "Vercel Blog",
-      "headlines": 5
-    },
-    {
       "name": "Dev.to (Top)",
-      "headlines": 4
+      "headlines": 10
     },
     {
-      "name": "Google Developers Blog",
-      "headlines": 4
-    },
-    {
-      "name": "Hacker News (Best)",
+      "name": "TechCrunch",
       "headlines": 4
     },
     {
       "name": "InfoQ",
-      "headlines": 4
-    },
-    {
-      "name": "Martin Fowler",
       "headlines": 3
     },
     {
-      "name": "Zapier Engineering",
+      "name": "The Hacker News",
+      "headlines": 3
+    },
+    {
+      "name": "Vercel Blog",
+      "headlines": 3
+    },
+    {
+      "name": "LangChain Blog",
       "headlines": 2
     },
     {
-      "name": "Azure DevOps Blog",
+      "name": "OpenAI Blog",
+      "headlines": 2
+    },
+    {
+      "name": "The Verge - Tech",
+      "headlines": 2
+    },
+    {
+      "name": "AWS Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Cloudflare Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Dark Reading",
       "headlines": 1
     },
     {
@@ -44,31 +56,23 @@
       "headlines": 1
     },
     {
-      "name": "Eric Elliott",
+      "name": "Grafana Blog",
       "headlines": 1
     },
     {
-      "name": "GitHub Blog",
+      "name": "Hacker News (Best)",
       "headlines": 1
     },
     {
-      "name": "GitLab Blog",
+      "name": "Kubernetes Blog",
       "headlines": 1
     },
     {
-      "name": "Lobsters",
-      "headlines": 1
-    },
-    {
-      "name": "Netflix Tech Blog",
+      "name": "Laravel News",
       "headlines": 1
     },
     {
       "name": "Nvidia Developer Blog",
-      "headlines": 1
-    },
-    {
-      "name": "Paul Graham",
       "headlines": 1
     },
     {
@@ -80,26 +84,38 @@
       "headlines": 1
     },
     {
+      "name": "Schneier on Security",
+      "headlines": 1
+    },
+    {
+      "name": "Simon Willison",
+      "headlines": 1
+    },
+    {
       "name": "The Daily WTF",
       "headlines": 1
     },
     {
       "name": "Twilio Blog",
       "headlines": 1
-    },
-    {
-      "name": "Visual Studio Blog",
-      "headlines": 1
     }
   ],
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 29
+      "headlines": 25
+    },
+    {
+      "name": "AI/ML",
+      "headlines": 5
+    },
+    {
+      "name": "Security",
+      "headlines": 5
     },
     {
       "name": "Cloud",
-      "headlines": 5
+      "headlines": 4
     },
     {
       "name": "DevOps & SRE",
@@ -109,8 +125,8 @@
   "history": [
     {
       "date": "2026-11-02",
-      "headlines": 36,
-      "sources": 21
+      "headlines": 41,
+      "sources": 23
     }
   ]
 }
