@@ -132,6 +132,15 @@ This fails if the saved script is missing, malformed, or too short; it does not
 silently call a language model. FFmpeg and ffprobe must be on `PATH` for audio.
 With `OPENAI_KEY` absent, recovery uses the complete free Edge TTS path.
 
+For a bounded voice audition only, run `python pipeline/create_voice_preview.py`.
+It creates `static/podcast/previews/naturalness-sample.mp3`, never an RSS item.
+The six-turn English sample keeps Aria/Jenny/Guy as Anna/Maria/Pedro, changes
+Edge speed from +8% to +0%, uses shorter conversational turns, and trims only
+quiet boundary padding below -55 dBFS while retaining 120/180 ms margins.
+These audition settings do not change the full episode or production defaults.
+Edge receives text and rate, not the OpenAI vocal-direction instructions;
+this sample cannot promise equivalent expressive control.
+
 The 3000 × 3000 RGB podcast cover is
 `static/images/podcast-cover.png`; regenerate it with
 `python pipeline/generate_podcast_cover.py`.
