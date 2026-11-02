@@ -72,6 +72,41 @@ class SiteAudioTests(unittest.TestCase):
                     self.assertNotIn(unwanted, main_text)
                 self.assertIn("Approximately 15 minutes", main_text)
                 self.assertIn("Edge TTS fallback", main_text)
+                about = BeautifulSoup(
+                    (root / "public/about/index.html").read_text(encoding="utf-8"), "html.parser",
+                )
+                self.assertEqual(
+                    [heading.get_text(strip=True) for heading in about.select("main h2")],
+                    ["What is Decode the Stack?", "How it works", "Who is it for?", "Why?",
+                     "Technology stack", "Sources", "Daily post format", "Site features", "Contact"],
+                )
+                self.assertIsNotNone(about.select_one(".toc"))
+                about_text = about.select_one("main .post-content").get_text(" ", strip=True)
+                for phrase in ("242 international technology feeds", "Engineering (172 feeds)",
+                               "09:00", "09:45", "20", "10", "15 minutes",
+                               "en-US-AriaNeural", "en-US-JennyNeural", "en-US-GuyNeural",
+                               "custom JavaScript", "reduces the noise", "30+ minutes"):
+                    self.assertIn(phrase, about_text)
+                groups = about.select_one("#sources").find_next_sibling("ul").select("li")
+                self.assertEqual(len(groups), 6)
+                for group, examples in zip(groups, (
+                    ("Netflix", "Guido van Rossum", "Evil Martians"),
+                    ("AWS", "Azure", "Fastly"), ("Kubernetes", "Charity Majors", "Pulumi"),
+                    ("Krebs", "PortSwigger", "Filippo Valsorda"),
+                    ("OpenAI", "Lilian Weng", "Simon Willison"),
+                    ("Hacker News", "Wired", "TLDR"),
+                )):
+                    for example in examples:
+                        self.assertIn(example, group.get_text())
+                for unwanted in ("Instagram", "FLUX", "290", "200+", "Fuse.js", "DragonHD",
+                                 "Google Analytics", "AdSense", "$0.20", "0775yERUMPLZiKpocJyBqm",
+                                 "Podcast hosts", "AI and editorial safeguards"):
+                    self.assertNotIn(unwanted, about_text)
+                self.assertIsNotNone(about.select_one('a[href="mailto:rmmartins@outlook.com"]'))
+                self.assertEqual(
+                    about.select_one("main .post-content > p:last-child em").get_text(),
+                    "Decode the Stack — Decoding the tech that matters.",
+                )
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)
                 home_soup = BeautifulSoup(home, "html.parser")
