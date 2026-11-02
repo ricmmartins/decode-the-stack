@@ -6,9 +6,11 @@
     {{ with .Description }}<p class="article-summary">{{ . }}</p>{{ end }}
   </header>
   <div class="article-content">{{ .Content }}</div>
+  {{ if eq .Section "posts" }}
   <nav class="article-nav" aria-label="Edition navigation">
     {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← Newer: {{ .Title }}</a>{{ end }}
     {{ with .NextInSection }}<a href="{{ .RelPermalink }}">Older: {{ .Title }} →</a>{{ end }}
   </nav>
+  {{ end }}
 </article>
 {{ end }}

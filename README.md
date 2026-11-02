@@ -10,19 +10,10 @@ reporting or claim that feed excerpts are independently verified.
 
 ## Live site and hosting decision
 
-The launch address is
-[`https://ricardomartins.com.br/decode-the-stack/`](https://ricardomartins.com.br/decode-the-stack/).
-GitHub Pages was selected over Cloudflare Pages because the authenticated
-GitHub account can create and deploy this repository, while no independent
-Cloudflare authorization is available for this project. Pages redirects its
-`ricmmartins.github.io` project address to the account's already-configured
-custom Pages domain. That existing domain configuration was not changed and no
-domain was purchased for this launch. The deployment uses GitHub Actions and
-the official Pages artifact workflow; it needs no Cloudflare token.
-
-The site URL includes the repository path. Hugo's `baseURL`, navigation,
-canonical metadata, search index, images, and feeds are configured to preserve
-that path.
+The free branded address is
+[`https://decodethestack.pages.dev/`](https://decodethestack.pages.dev/).
+The project uses Cloudflare Pages' free `pages.dev` address and Git-connected
+builds. No paid domain or Cloudflare credentials are stored in this repository.
 
 ## Daily publishing
 
@@ -35,21 +26,27 @@ manually. The generator:
 3. Writes a dated English edition with the original title, a cleaned excerpt
    supplied by the publisher, and a direct link to each source.
 4. Commits a new edition only when the day has not already been published.
-5. Builds the static site and deploys it to GitHub Pages.
+5. Recalculates publication statistics and validates the static site; the
+   resulting Git commit triggers the Cloudflare Pages build.
 
-No model API, account secret, or paid service is required. Failed individual
-feeds are reported in the workflow log; if no feed can be fetched, the
+No model API key or paid service is required for the daily edition or audio.
+Voice synthesis uses Microsoft Edge TTS's network service with no API key.
+Failed individual feeds are reported in the workflow log; if no feed can be
+fetched, the
 publication step fails instead of producing an empty or success-shaped issue.
 
 ## Podcast
 
 Decode the Stack has a distinct podcast identity and a dedicated
-[`/podcast/`](https://ricardomartins.com.br/decode-the-stack/podcast/) page.
-There are no English episodes or audio files at launch, so the page says so
-clearly and the podcast RSS feed contains no fabricated episode. The feed is
-available at `/podcast/feed.xml` for future use; the site RSS at `/index.xml`
-already carries the written editions. This launch does not claim Spotify
-distribution or reuse the Portuguese show's feed or audio.
+[`/podcast/`](https://decodethestack.pages.dev/podcast/) page.
+The first episode is an actual Edge TTS-rendered English headline bulletin.
+The podcast RSS feed includes an enclosure only when the corresponding
+non-empty MP3 exists. The site RSS at `/index.xml` carries written editions.
+This launch does not claim Spotify distribution or reuse the Portuguese show's
+feed or audio.
+
+The RSS owner name and email are included for directory verification. No
+Spotify or other podcast-directory submission is claimed.
 
 ## Local preview
 
@@ -57,7 +54,9 @@ Install [Hugo Extended](https://gohugo.io/installation/) and Python 3.11+:
 
 ```powershell
 python pipeline\publish.py
-hugo --minify
+python pipeline\podcast.py
+hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.pages.dev/
+python pipeline\validate_site.py public
 hugo server
 ```
 
@@ -70,12 +69,17 @@ python -m unittest discover -s pipeline -p "test_*.py"
 ```
 
 The podcast cover is a 3000 × 3000 RGB PNG at
-`static/images/podcast-cover.png`; regenerate it with
-`python pipeline\generate_podcast_cover.py` after installing Pillow.
+`static/images/podcast-cover.png`; Pillow is included in `requirements.txt` for
+regenerating it with `python pipeline\generate_podcast_cover.py`.
 
 ## Repository setup
 
-Enable GitHub Pages with **GitHub Actions** as the build and deployment source.
-The included `.github/workflows/publish.yml` builds and deploys the site on
-every push to `main` and on its daily schedule. No repository secrets are
-required.
+Cloudflare Pages is connected to this public repository's `main` branch. Its
+Hugo build uses version `0.160.1`, command
+`hugo --minify --destination public --baseURL https://decodethestack.pages.dev/`,
+and output directory `public`. The daily GitHub Actions workflow collects new
+source items, generates an English headline bulletin when Edge TTS is available,
+recalculates the publication statistics, validates the built site, and commits
+the edition. That commit triggers the Cloudflare Git integration. The
+authorized RSS owner email is stored as a GitHub Actions secret; the English
+repository contains no Cloudflare credentials.

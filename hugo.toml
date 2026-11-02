@@ -1,4 +1,4 @@
-baseURL = "https://ricardomartins.com.br/decode-the-stack/"
+baseURL = "https://decodethestack.pages.dev/"
 locale = "en"
 title = "Decode the Stack"
 enableRobotsTXT = true
@@ -39,15 +39,25 @@ timeZone = "UTC"
     url = "categories/"
     weight = 20
   [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "archive/"
+    weight = 30
+  [[menu.main]]
+    identifier = "stats"
+    name = "Stats"
+    url = "stats/"
+    weight = 40
+  [[menu.main]]
     identifier = "podcast"
     name = "Podcast"
     url = "podcast/"
-    weight = 30
+    weight = 50
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "about/"
-    weight = 40
+    weight = 60
 
 [taxonomies]
   category = "categories"

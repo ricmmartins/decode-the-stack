@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $posts = $posts.ByDate.Reverse }}
+{{ $episodeAudio := "" }}
+{{ $episodePermalink := "" }}
+{{ $episodeTitle := "" }}
+{{ $episodeDate := "" }}
+{{ range $posts }}
+  {{ $candidate := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
+  {{ if and (not $episodeAudio) (fileExists (printf "static/%s" $candidate)) }}
+    {{ $episodeAudio = $candidate }}
+    {{ $episodePermalink = .RelPermalink }}
+    {{ $episodeTitle = .Title }}
+    {{ $episodeDate = .Date | time.Format "January 2, 2006" }}
+  {{ end }}
+{{ end }}
+<section class="page-heading">
+  <p class="eyebrow">The Decode the Stack Podcast</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+</section>
+<section class="podcast-show">
+  <img class="podcast-cover" src="{{ "images/podcast-cover.png" | relURL }}" width="600" height="600" alt="Decode the Stack podcast cover: cyan and lime convergence mark, English show name, and daily tech briefing tagline">
+  <div class="podcast-player">
+    {{ if $episodeAudio }}
+      <p class="eyebrow">Latest episode · {{ $episodeDate }}</p>
+      <h2>{{ $episodeTitle }}</h2>
+      <p>A short English-language bulletin reading recent headlines and crediting each original publisher.</p>
+      <audio controls preload="none" aria-label="Listen to the Decode the Stack headline bulletin"><source src="{{ $episodeAudio | relURL }}" type="audio/mpeg">Your browser does not support audio.</audio>
+      <a class="text-link" href="{{ $episodePermalink }}">Read the edition and follow every source →</a>
+    {{ else }}
+      <p class="eyebrow">Audio edition</p>
+      <h2>Listen to the daily signal.</h2>
+      <p>The next episode will appear here after its audio is generated and published.</p>
+    {{ end }}
+  </div>
+</section>
+<div class="article-content podcast-description">{{ .Content }}</div>
+{{ end }}

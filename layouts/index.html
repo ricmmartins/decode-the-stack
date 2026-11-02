@@ -35,10 +35,18 @@
     </article>
     {{ end }}
     <aside class="podcast-card">
-      <p class="eyebrow">A future companion</p>
+      <p class="eyebrow">Audio briefing</p>
       <h3>Decode the Stack Podcast</h3>
-      <p>An English-language audio companion is in the works. There are no episodes yet; we won't dress up an empty feed as a show.</p>
-      <a class="text-link" href="{{ "podcast/" | relURL }}">See podcast status →</a>
+      <p>A concise audio bulletin of today's headlines, with each story credited to its original publisher.</p>
+      {{ $latestAudio := false }}
+      {{ range $posts }}
+        {{ $audio := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
+        {{ if and (not $latestAudio) (fileExists (printf "static/%s" $audio)) }}
+          {{ $latestAudio = true }}
+          <audio controls preload="none" aria-label="Listen to the Decode the Stack briefing from {{ .Date | time.Format "January 2, 2006" }}"><source src="{{ $audio | relURL }}" type="audio/mpeg">Your browser does not support audio.</audio>
+        {{ end }}
+      {{ end }}
+      <a class="text-link" href="{{ "podcast/" | relURL }}">Open the podcast page →</a>
     </aside>
   </div>
 </section>
@@ -46,11 +54,14 @@
 
 <section class="section-block">
   <div class="section-heading"><div><p class="eyebrow">02 / Recent reading</p><h2>Keep your stack in view.</h2></div><a class="text-link" href="{{ "archive/" | relURL }}">Browse the archive →</a></div>
+  {{ $recent := first 6 (after 1 $posts) }}
   <div class="card-grid">
-    {{ range first 6 (after 1 $posts) }}
-      {{ partial "card.html" . }}
+    {{ if gt (len $recent) 0 }}
+      {{ range $recent }}{{ partial "card.html" . }}{{ end }}
+    {{ else if eq (len $posts) 0 }}
+      <p class="empty-state">No editions have been published yet. New briefings appear here when recent source stories are available.</p>
     {{ else }}
-      <p class="empty-state">The first edition is being assembled from public source feeds.</p>
+      <p class="empty-state">This is the first edition. Check the archive for new daily briefings.</p>
     {{ end }}
   </div>
 </section>

@@ -1,5 +1,8 @@
 import unittest
 from datetime import date, datetime, timedelta, timezone
+import json
+import tempfile
+from pathlib import Path
 from unittest.mock import patch
 
 import publish
@@ -70,6 +73,30 @@ class FeedParsingTests(unittest.TestCase):
         self.assertIn("**Engineering · Example · Nov 01, 10:00 UTC**", edition)
         self.assertIn("https://example.com/story?a=1&b=2", edition)
         self.assertIn("not independent verification", edition)
+        self.assertIn("date: 2026-11-01T00:00:00Z", edition)
+
+    def test_stats_reflect_published_edition_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            data_dir = Path(directory) / "editions"
+            stats_file = Path(directory) / "stats.json"
+            data_dir.mkdir()
+            (data_dir / "2026-11-01.json").write_text(json.dumps({
+                "date": "2026-11-01",
+                "items": [
+                    {"source": "Example", "category": "Engineering"},
+                    {"source": "Other", "category": "Cloud"},
+                ],
+            }), encoding="utf-8")
+            with patch.object(publish, "EDITION_DATA_DIR", data_dir), patch.object(
+                publish, "STATS_FILE", stats_file
+            ):
+                publish.refresh_stats([{"name": "Example"}, {"name": "Other"}])
+            stats = json.loads(stats_file.read_text(encoding="utf-8"))
+        self.assertEqual(stats["configured_feeds"], 2)
+        self.assertEqual(stats["editions_published"], 1)
+        self.assertEqual(stats["headlines_published"], 2)
+        self.assertEqual(stats["sources_credited"], 2)
+        self.assertEqual(stats["latest_headlines"], 2)
 
     def test_no_recent_items_does_not_create_edition(self):
         with patch.object(publish, "fetch_source", return_value=[]), patch.object(

@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $stats := site.Data.stats }}
+<article class="article">
+  <header class="article-header">
+    <p class="eyebrow">Publication / Transparency</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="article-summary">{{ . }}</p>{{ end }}
+  </header>
+  <div class="article-content">{{ .Content }}</div>
+  {{ with $stats }}
+  <section class="section-block">
+    <h2>At a glance</h2>
+    <div class="card-grid">
+      <article class="latest-card"><p class="eyebrow">Configured feeds</p><h3>{{ .configured_feeds }}</h3><p>Public publisher RSS or Atom feeds in the current pipeline configuration.</p></article>
+      <article class="latest-card"><p class="eyebrow">Published editions</p><h3>{{ .editions_published }}</h3><p>Dated editions in this site's archive.</p></article>
+      <article class="latest-card"><p class="eyebrow">Published headlines</p><h3>{{ .headlines_published }}</h3><p>Source-linked items across the archived editions.</p></article>
+      <article class="latest-card"><p class="eyebrow">Publishers credited</p><h3>{{ .sources_credited }}</h3><p>Distinct publishers represented in the archive.</p></article>
+    </div>
+  </section>
+  {{ with .latest_edition_date }}<p class="eyebrow">Latest edition: <a href="{{ printf "posts/%s-daily/" . | relURL }}">{{ . }}</a> ({{ $stats.latest_headlines }} headlines)</p>{{ end }}
+  {{ with .source_counts }}
+  <section class="section-block">
+    <h2>Publishers represented</h2>
+    <ul>{{ range . }}<li>{{ .name }} — {{ .headlines }} {{ cond (eq .headlines 1) "headline" "headlines" }}</li>{{ end }}</ul>
+  </section>
+  {{ end }}
+  {{ with .category_counts }}
+  <section class="section-block">
+    <h2>Categories represented</h2>
+    <ul>{{ range . }}<li>{{ .name }} — {{ .headlines }} {{ cond (eq .headlines 1) "headline" "headlines" }}</li>{{ end }}</ul>
+  </section>
+  {{ end }}
+  {{ with .history }}
+  <section class="section-block">
+    <h2>Recent editions</h2>
+    <ul>{{ range . }}<li><a href="{{ printf "posts/%s-daily/" .date | relURL }}">{{ .date }}</a> — {{ .headlines }} headlines from {{ .sources }} publishers</li>{{ end }}</ul>
+  </section>
+  {{ end }}
+  <p class="eyebrow">Updated {{ .updated_at }}</p>
+  {{ else }}
+  <p class="empty-state">Statistics will appear after the first edition is published.</p>
+  {{ end }}
+</article>
+{{ end }}

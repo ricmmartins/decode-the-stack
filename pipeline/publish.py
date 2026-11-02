@@ -18,7 +18,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "pipeline" / "sources.json"
 POSTS_DIR = ROOT / "content" / "posts"
-USER_AGENT = "DecodeTheStack/1.0 (+https://ricardomartins.com.br/decode-the-stack/)"
+EDITION_DATA_DIR = ROOT / "data" / "editions"
+STATS_FILE = ROOT / "data" / "stats.json"
+USER_AGENT = "DecodeTheStack/1.0 (+https://decodethestack.pages.dev/)"
 MAX_FEED_BYTES = 2_000_000
 MAX_ITEMS = 12
 
@@ -165,7 +167,7 @@ def render_edition(day: date, items: list[dict]) -> str:
     lines = [
         "---",
         f"title: {_yaml_string(f'The engineering briefing — {day:%B} {day.day}, {day.year}')}",
-        f"date: {day.isoformat()}T12:00:00Z",
+        f"date: {day.isoformat()}T00:00:00Z",
         f"description: {_yaml_string(headline + '.')}",
         "categories:",
         "  - Daily Briefing",
@@ -200,6 +202,52 @@ def render_edition(day: date, items: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def refresh_stats(sources: list[dict]) -> None:
+    editions = []
+    for data_file in sorted(EDITION_DATA_DIR.glob("*.json")):
+        edition = json.loads(data_file.read_text(encoding="utf-8"))
+        items = edition.get("items")
+        if not isinstance(items, list):
+            raise ValueError(f"Edition metadata has no item list: {data_file}")
+        editions.append({"date": edition["date"], "items": items})
+
+    source_counts: dict[str, int] = defaultdict(int)
+    category_counts: dict[str, int] = defaultdict(int)
+    for edition in editions:
+        for item in edition["items"]:
+            source_counts[item["source"]] += 1
+            category_counts[item["category"]] += 1
+
+    latest = editions[-1] if editions else None
+    stats = {
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "configured_feeds": len(sources),
+        "editions_published": len(editions),
+        "headlines_published": sum(len(edition["items"]) for edition in editions),
+        "sources_credited": len(source_counts),
+        "latest_edition_date": latest["date"] if latest else None,
+        "latest_headlines": len(latest["items"]) if latest else 0,
+        "source_counts": [
+            {"name": name, "headlines": count}
+            for name, count in sorted(source_counts.items(), key=lambda entry: (-entry[1], entry[0].casefold()))
+        ],
+        "category_counts": [
+            {"name": name, "headlines": count}
+            for name, count in sorted(category_counts.items(), key=lambda entry: (-entry[1], entry[0].casefold()))
+        ],
+        "history": [
+            {
+                "date": edition["date"],
+                "headlines": len(edition["items"]),
+                "sources": len({item["source"] for item in edition["items"]}),
+            }
+            for edition in editions[-30:]
+        ],
+    }
+    STATS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    STATS_FILE.write_text(json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def publish(day: date | None = None, max_age_hours: int = 48) -> Path | None:
     day = day or datetime.now(timezone.utc).date()
     sources = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
@@ -222,14 +270,35 @@ def publish(day: date | None = None, max_age_hours: int = 48) -> Path | None:
     items = select_recent(fetched, cutoff)
     if not items:
         print("No recent dated stories; no edition was created.")
+        refresh_stats(sources)
         return None
 
     output = POSTS_DIR / f"{day.isoformat()}-daily.md"
     if output.exists():
         print(f"Edition already exists: {output}")
+        refresh_stats(sources)
         return output
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     output.write_text(render_edition(day, items), encoding="utf-8")
+    EDITION_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    edition_data = {
+        "date": day.isoformat(),
+        "title": f"The engineering briefing — {day:%B} {day.day}, {day.year}",
+        "description": f"A source-linked briefing covering {len(items)} recent headlines.",
+        "items": [
+            {
+                "title": item["title"],
+                "url": item["url"],
+                "source": item["source"],
+                "category": item["category"],
+                "published": item["published"].isoformat(),
+            }
+            for item in items
+        ],
+    }
+    data_file = EDITION_DATA_DIR / f"{day.isoformat()}.json"
+    data_file.write_text(json.dumps(edition_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    refresh_stats(sources)
     print(f"Published {len(items)} source-linked items to {output}")
     if errors:
         print(f"{len(errors)} source(s) were unavailable; see feed warnings above.", file=sys.stderr)

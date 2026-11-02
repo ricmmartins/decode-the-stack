@@ -1,0 +1,36 @@
+{
+  "updated_at": "2026-11-02T01:59:44.623009+00:00",
+  "configured_feeds": 1,
+  "editions_published": 1,
+  "headlines_published": 6,
+  "sources_credited": 2,
+  "latest_edition_date": "2026-11-02",
+  "latest_headlines": 6,
+  "source_counts": [
+    {
+      "name": "InfoQ",
+      "headlines": 3
+    },
+    {
+      "name": "The New Stack",
+      "headlines": 3
+    }
+  ],
+  "category_counts": [
+    {
+      "name": "Cloud & DevOps",
+      "headlines": 3
+    },
+    {
+      "name": "Engineering",
+      "headlines": 3
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-11-02",
+      "headlines": 6,
+      "sources": 2
+    }
+  ]
+}
