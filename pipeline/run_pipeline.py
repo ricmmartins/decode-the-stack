@@ -21,6 +21,7 @@ from stats import (
 )
 from weekly_summary import run as weekly_run
 from humanizer import HumanizerError
+from copilot_client import CopilotError
 
 PROJECT_DIR = Path(__file__).parent.parent
 CONTENT_DIR = PROJECT_DIR / "content" / "posts"
@@ -191,7 +192,7 @@ def _try_weekly(date):
     try:
         print(f"\n[DATE] Checking weekly summary...")
         weekly_run(date)
-    except HumanizerError:
+    except (HumanizerError, CopilotError):
         raise
     except Exception as e:
         print(f"[WARN]  Weekly summary failed (non-blocking): {e}")

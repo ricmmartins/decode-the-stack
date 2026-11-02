@@ -1,4 +1,4 @@
-"""Contextual English synthesis using the configured OpenAI/Groq/Azure fallback chain."""
+"""Contextual English synthesis with explicit Copilot or legacy API selection."""
 
 import json
 import os
@@ -7,6 +7,7 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from copilot_client import _call_copilot
 
 PROJECT_DIR = Path(__file__).parent.parent
 DATA_RANKED_DIR = PROJECT_DIR / "data" / "ranked"
@@ -232,7 +233,13 @@ def _call_azure_openai(system_prompt, user_prompt, label="", max_tokens=6000, te
 
 
 def _call_llm(system_prompt, user_prompt, label="", max_tokens=6000, temperature=0.7):
-    """Try configured LLM providers in quality-first fallback order."""
+    """Use the selected text provider, with no API fallback from Copilot."""
+    provider = os.environ.get("LLM_PROVIDER", "auto").strip().lower()
+    if provider == "copilot":
+        print(f"[AI] [{label}] Using authenticated Copilot CLI text provider.")
+        return _call_copilot(system_prompt, user_prompt)
+    if provider != "auto":
+        raise ValueError(f"Unsupported LLM_PROVIDER: {provider!r}; use copilot or auto.")
     providers = [
         ("OpenAI", bool(os.environ.get("OPENAI_KEY")), _call_openai),
         ("Groq", bool(os.environ.get("GROQ_API_KEY")), _call_groq),

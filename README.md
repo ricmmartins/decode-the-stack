@@ -43,9 +43,10 @@ generation logic with English prompts and voices:
 3. Rank stories using source authority, coverage, relevance, category balance,
    and recency; retain the main-story and Quick Reads distinction.
 4. Synthesize contextual English analysis in separate main-story and
-   Quick Reads passes. The provider chain is OpenAI, Groq, then Azure OpenAI;
-   the configured provider and model are logged at runtime. If all providers
-   fail, the pipeline stops instead of publishing a headline-only fallback.
+   Quick Reads passes. `LLM_PROVIDER=copilot` selects authenticated GitHub
+   Copilot CLI for all text generation and review. Failure blocks publication
+   without falling back to separately billed LLM APIs. An unset selection or
+   explicit `auto` mode retains the legacy OpenAI, Groq, then Azure OpenAI chain.
 5. Generate a three-host English dialogue and audio, update the Friday weekly
    story buffer, public statistics and trends, then rebuild the RSS feed.
 
@@ -54,10 +55,37 @@ fallback. The script target is about 15 minutes. Provider credentials remain
 on the authenticated original publishing runner and are not copied into this
 repository.
 
-Provider order describes configuration, not guaranteed availability. The
+Provider configuration does not guarantee availability. The
 November 2 regeneration used Azure OpenAI for text and Edge TTS for audio;
 OpenAI reported exhausted credit and Groq reported an unavailable model.
 The approximately 15-minute script target remains unchanged.
+
+### GitHub Copilot text provider
+
+The publishing runner installs `@github/copilot@1.0.105` and supplies
+`LLM_PROVIDER=copilot` and `COPILOT_GITHUB_TOKEN` only to generation or the
+read-only provider check. `COPILOT_MODEL` is optional: an empty value uses the
+CLI default, while an explicit value must be available to the authenticated
+account. `COPILOT_CLI_PATH` can select an installed executable.
+
+`pipeline/copilot_client.py` sends system and source text through stdin, runs
+in an empty temporary working directory, disables custom instructions and
+built-in MCP servers, exposes no tools, and forbids interactive questions.
+It removes collection and billed-provider credentials from the child
+environment and rejects Copilot BYOK overrides. It requires valid JSON
+events, a successful terminal result, and nonempty assistant text. Missing
+authentication, CLI failures, malformed events, tool requests, and the
+300-second timeout raise explicit errors without echoing provider output.
+
+Daily synthesis, Quick Reads, weekly summaries, podcast dialogue, Humanizer
+editing, and semantic verification share this selection. Existing word
+budgets, source protections, section checkpoints, receipts, and publishing
+gates remain mandatory. The CLI has no equivalent to the API's
+`max_tokens`/`temperature` arguments here; section sizes and editorial output
+are still checked by the existing validators. TTS is unchanged and does not
+use Copilot. Installing this integration does not regenerate an edition or
+prove that a token has Copilot access; the runner's small provider check
+tests authentication separately.
 
 Hugo reads `pipeline/sources.yaml` directly at build time for current source
 totals on the home, About, and statistics pages, including About's engineering
