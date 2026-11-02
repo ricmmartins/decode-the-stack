@@ -81,6 +81,9 @@ class SiteAudioTests(unittest.TestCase):
                     self.assertIn(name, row.get_text())
                     self.assertIn(trait, row.get_text())
                 main_text = podcast_page.select_one("main").get_text()
+                self.assertNotIn("🎙", podcast_page.get_text())
+                self.assertIn("🧠", main_text)
+                self.assertIn("😄", main_text)
                 for unwanted in ("Instagram", "Spotify", "Azure", "7–12", "directory", "Published episodes"):
                     self.assertNotIn(unwanted, main_text)
                 self.assertIn("Approximately 15 minutes", main_text)

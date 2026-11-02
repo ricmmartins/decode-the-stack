@@ -1,5 +1,5 @@
 ---
-title: "🎙️ Daily Technology Podcast — Decode the Stack"
+title: "Daily Technology Podcast — Decode the Stack"
 description: "A daily, English-language, three-host briefing on software engineering, cloud, DevOps, AI/ML, and security."
 date: 2026-11-02T00:00:00Z
 type: page
@@ -21,7 +21,7 @@ in a relaxed, fun conversation — like friends talking tech at a bar.
 
 | Host | Style |
 |---|---|
-| **Anna** 🎙️ | The lead anchor. Guides the show with energy and charisma. Curious and good at explaining things. |
+| **Anna** | The lead anchor. Guides the show with energy and charisma. Curious and good at explaining things. |
 | **Maria** 🧠 | The technical expert. Brings depth, historical context, and strong opinions. |
 | **Pedro** 😄 | The laid-back one. Jokes, creative analogies, and unexpected insights. |
 
