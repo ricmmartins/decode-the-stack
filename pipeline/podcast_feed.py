@@ -16,7 +16,7 @@ CONTENT_DIR = PROJECT_DIR / "content" / "posts"
 FEED_FILE = PROJECT_DIR / "static" / "podcast" / "feed.xml"
 
 SITE_URL = os.environ.get(
-    "DECODE_SITE_URL", "https://decodethestack.pages.dev"
+    "DECODE_SITE_URL", "https://decodethestack.com"
 ).rstrip("/")
 PODCAST_TITLE = "Decode the Stack"
 PODCAST_DESCRIPTION = (
@@ -27,13 +27,21 @@ PODCAST_DESCRIPTION = (
 PODCAST_AUTHOR = "Decode the Stack"
 PODCAST_OWNER_NAME = "Ricardo Martins"
 PODCAST_OWNER_EMAIL = os.environ.get(
-    "PODCAST_OWNER_EMAIL", "rmmartins@outlook.com"
+    "PODCAST_OWNER_EMAIL", "podcast@decodethestack.com"
 )
 PODCAST_LANGUAGE = "en-US"
 PODCAST_IMAGE = f"{SITE_URL}/images/podcast-cover.png"
 ITUNES_NS = "http://www.itunes.com/dtds/podcast-1.0.dtd"
 ATOM_NS = "http://www.w3.org/2005/Atom"
 PODCAST_NS = "https://podcastindex.org/namespace/1.0"
+LEGACY_EPISODE_URLS = {
+    "2026-11-02": "https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3",
+}
+
+
+def episode_audio_url(date_str):
+    """Keep published episode identity stable across the custom-domain migration."""
+    return LEGACY_EPISODE_URLS.get(date_str, f"{SITE_URL}/podcast/audio/{date_str}.mp3")
 
 
 def _episode_post(date_str):
@@ -92,7 +100,7 @@ def generate_feed():
         size = mp3.stat().st_size
         if size <= 1024:
             raise ValueError(f"Podcast episode is empty or too small: {mp3}")
-        audio_url = f"{SITE_URL}/podcast/audio/{date_str}.mp3"
+        audio_url = episode_audio_url(date_str)
         post_url = f"{SITE_URL}/posts/{date_str}-daily/"
         title, description = _episode_metadata(date_str)
         duration = _duration_seconds(mp3)

@@ -249,7 +249,7 @@ OUTPUT AND STRUCTURE:
 - Introduce the other hosts briefly; vary who speaks and let them react naturally.
 - Put [TOPIC_CHANGE] on its own line when moving to a new main topic.
 - End with a short, friendly sign-off. Do not claim the show is already listed on Spotify or any other directory.
-- Mention the website decodethestack.pages.dev for the written briefing and original links.
+- Mention the website decodethestack.com for the written briefing and original links.
 
 EDITORIAL RULES:
 - Use natural conversational English, concise turns, and a professional but relaxed tone.

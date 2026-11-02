@@ -15,6 +15,7 @@ stories, like friends discussing tech at a bar.
 ### Where to listen
 
 - **On the site**: The player appears at the top of each daily post
+- **Spotify**: [Listen to Decode the Stack](https://open.spotify.com/show/0wAKdLX0HpJF1qfAj2Yiea)
 - **Direct RSS**: [Subscribe to the podcast feed](/podcast/feed.xml)
 
 ### The hosts
@@ -38,7 +39,7 @@ stories, like friends discussing tech at a bar.
 To subscribe manually or add the podcast to any podcast app:
 
 ```
-https://decodethestack.pages.dev/podcast/feed.xml
+https://decodethestack.com/podcast/feed.xml
 ```
 
 ---

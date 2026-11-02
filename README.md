@@ -10,15 +10,25 @@ daily edition and a separate three-host podcast.
 ## Live site and hosting
 
 The publication is live at
-[`https://decodethestack.pages.dev/`](https://decodethestack.pages.dev/).
-It uses the free Cloudflare Pages `pages.dev` address with Git-connected builds;
-no paid domain, Cloudflare token, or hosting secret is stored here.
+[`https://decodethestack.com/`](https://decodethestack.com/).
+It uses free Cloudflare Pages hosting with Git-connected builds and the
+owner-purchased custom domain. No Cloudflare token or hosting secret is stored here.
 
 Cloudflare Pages was selected over GitHub Pages because the authenticated Git
 integration provided the free branded root address without a project-path
 prefix. GitHub remains the source and CI host. Audio is encoded below Pages'
 25 MiB per-file limit, with a 24 MiB safety target; larger future media would
 require a separate hosting decision rather than silently breaking deployment.
+
+The original `decodethestack.pages.dev` address remains available. Spotify's
+feed evaluator rejected that feed domain but accepted the identical XML at
+`decodethestack.com`, reaching ownership verification. This does not establish
+a blanket restriction on all `pages.dev` addresses. The canonical podcast feed
+is `https://decodethestack.com/podcast/feed.xml`; its public owner/contact alias
+is `podcast@decodethestack.com`, routed through Cloudflare Email Routing.
+The November 2 episode retains its original `pages.dev` enclosure and GUID to
+preserve identity; new episodes use the custom domain. Keep that legacy audio
+URL available. Existing spoken audio is unchanged.
 
 ## Editorial pipeline
 
@@ -92,7 +102,7 @@ progressive web app with offline page caching. Topic pages remain available
 when their published-edition count is zero.
 
 Corrections and suggestions can be sent through the repository's issue tracker.
-A podcast-directory listing link can be added once its official URL is available.
+The podcast is also listed on [Spotify](https://open.spotify.com/show/0wAKdLX0HpJF1qfAj2Yiea).
 
 ## Local checks
 
@@ -101,7 +111,7 @@ Hugo Extended 0.160.1. Unit tests are offline and do not call AI providers:
 
 ```powershell
 python -m unittest discover -s pipeline -p "test_*.py"
-hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.pages.dev/
+hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.com/
 python pipeline/validate_site.py public
 ```
 

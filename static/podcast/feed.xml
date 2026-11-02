@@ -6,27 +6,27 @@
      xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
     <title>Decode the Stack</title>
-    <link>https://decodethestack.pages.dev/</link>
+    <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
     <lastBuildDate>Mon, 02 Nov 2026 13:18:43 +0000</lastBuildDate>
-    <atom:link href="https://decodethestack.pages.dev/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
     <itunes:owner>
       <itunes:name>Ricardo Martins</itunes:name>
-      <itunes:email>rmmartins@outlook.com</itunes:email>
+      <itunes:email>podcast@decodethestack.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://decodethestack.pages.dev/images/podcast-cover.png"/>
+    <itunes:image href="https://decodethestack.com/images/podcast-cover.png"/>
     <itunes:category text="Technology">
       <itunes:category text="Tech News"/>
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <image>
-      <url>https://decodethestack.pages.dev/images/podcast-cover.png</url>
+      <url>https://decodethestack.com/images/podcast-cover.png</url>
       <title>Decode the Stack</title>
-      <link>https://decodethestack.pages.dev/</link>
+      <link>https://decodethestack.com/</link>
     </image>
     <item>
       <title>Developers Embrace Tools and Innovations Amid Challenges</title>
@@ -34,13 +34,13 @@
       <pubDate>Mon, 02 Nov 2026 12:00:00 +0000</pubDate>
       <enclosure url="https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3" length="11343875" type="audio/mpeg"/>
       <guid isPermaLink="true">https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3</guid>
-      <link>https://decodethestack.pages.dev/posts/2026-11-02-daily/</link>
+      <link>https://decodethestack.com/posts/2026-11-02-daily/</link>
       <itunes:author>Decode the Stack</itunes:author>
       <itunes:summary>Today's tech landscape showcases a blend of innovations and practical solutions aimed at streamlining workflows, enhancing performance, and addressing the complexities of modern development. From AI-driven coding tools to improved deployment strategies,…</itunes:summary>
       <itunes:duration>945</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
-      <podcast:chapters url="https://decodethestack.pages.dev/podcast/chapters/2026-11-02.json" type="application/json+chapters"/>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-02.json" type="application/json+chapters"/>
     </item>
   </channel>
 </rss>

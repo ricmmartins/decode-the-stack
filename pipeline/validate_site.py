@@ -13,7 +13,7 @@ import yaml
 from bs4 import BeautifulSoup
 
 
-SITE_URL = "https://decodethestack.pages.dev/"
+SITE_URL = "https://decodethestack.com/"
 REQUIRED = [
     "index.html",
     "index.xml",
@@ -66,6 +66,9 @@ def _validate_shared_layout(root):
             raise ValueError(f"JSON-LD metadata is missing from {path.relative_to(root)}.")
         if 'aria-label="More about Decode the Stack"' not in text:
             raise ValueError(f"The shared footer is missing from {path.relative_to(root)}.")
+        canonical = BeautifulSoup(text, "html.parser").select_one('link[rel="canonical"]')
+        if canonical is None or not canonical.get("href", "").startswith(SITE_URL):
+            raise ValueError(f"Incorrect canonical domain in {path.relative_to(root)}.")
 
 
 def _validate_home(root):
@@ -100,7 +103,7 @@ def _validate_home(root):
     if SITE_URL not in home or not re.search(
         r"<link\b(?=[^>]*\brel=[\"']?canonical(?:[\"'\s>]|$))", home, re.I
     ):
-        raise ValueError("The home page is missing its canonical Cloudflare Pages URL.")
+        raise ValueError("The home page is missing its canonical publication URL.")
     if len(re.findall(r"<source\b[^>]*\bsrc=[\"']?[^\"'\s>]+", home, re.I)) != 1:
         raise ValueError("The home page must include exactly one latest-episode audio source.")
     if "Instagram" in home or "open.spotify.com" in home:
@@ -132,6 +135,7 @@ def _validate_written_feed(root):
 
 
 def _validate_podcast_feed(root):
+    from podcast_feed import LEGACY_EPISODE_URLS
     feed_path = root / "podcast" / "feed.xml"
     feed_text = _read(feed_path)
     if "images/podcast-cover.png" not in feed_text:
@@ -149,8 +153,8 @@ def _validate_podcast_feed(root):
         raise ValueError("The podcast RSS feed is missing owner metadata.")
     if owner.findtext(f"{{{ITUNES_NS}}}name") != "Ricardo Martins":
         raise ValueError("The podcast RSS feed has the wrong owner name.")
-    if not owner.findtext(f"{{{ITUNES_NS}}}email"):
-        raise ValueError("The podcast RSS feed is missing its authorized owner email.")
+    if owner.findtext(f"{{{ITUNES_NS}}}email") != "podcast@decodethestack.com":
+        raise ValueError("The podcast RSS feed must use its authorized public email alias.")
 
     advertised_audio = set()
     for episode in channel.findall("item"):
@@ -158,7 +162,7 @@ def _validate_podcast_feed(root):
         if enclosure is None or enclosure.get("type") != "audio/mpeg":
             raise ValueError("A podcast RSS item is missing its MP3 enclosure.")
         url = enclosure.get("url", "")
-        if not url.startswith(f"{SITE_URL}podcast/audio/"):
+        if not url.startswith(f"{SITE_URL}podcast/audio/") and url not in LEGACY_EPISODE_URLS.values():
             raise ValueError(f"The podcast feed contains an unbranded enclosure URL: {url}")
         local_path = root / urlparse(url).path.lstrip("/")
         if not local_path.is_file() or local_path.stat().st_size <= 1024:

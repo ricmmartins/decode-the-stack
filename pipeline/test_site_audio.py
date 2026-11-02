@@ -69,7 +69,7 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertIsNone(podcast_page.select_one("main audio, .podcast-show, .episode-card, .toc"))
                 self.assertEqual(
                     podcast_page.select_one("main pre code").get_text().strip(),
-                    "https://decodethestack.pages.dev/podcast/feed.xml",
+                    "https://decodethestack.com/podcast/feed.xml",
                 )
                 rows = podcast_page.select("main table tbody tr")
                 self.assertEqual(len(rows), 3)
@@ -93,7 +93,12 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertNotIn("🎙", podcast_page.get_text())
                 self.assertIn("🧠", main_text)
                 self.assertIn("😄", main_text)
-                for unwanted in ("Instagram", "Spotify", "Azure", "7–12", "directory", "Published episodes"):
+                spotify = podcast_page.select_one('a[href="https://open.spotify.com/show/0wAKdLX0HpJF1qfAj2Yiea"]')
+                self.assertIsNotNone(spotify)
+                self.assertEqual(spotify.get_text(strip=True), "Listen to Decode the Stack")
+                self.assertEqual(len(podcast_page.select('a[href*="open.spotify.com/show/"]')), 1)
+                for unwanted in ("Instagram", "4qDnpZwEzYOzPPgDXezMxu", "0775yERUMPLZiKpocJyBqm",
+                                 "Azure", "7–12", "directory", "Published episodes"):
                     self.assertNotIn(unwanted, main_text)
                 self.assertIn("Approximately 15 minutes", main_text)
                 self.assertIn("Edge TTS fallback", main_text)
@@ -108,7 +113,8 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertIsNotNone(about.select_one(".toc"))
                 about_text = about.select_one("main .post-content").get_text(" ", strip=True)
                 for phrase in ("242 international technology feeds", "Engineering (172 feeds)",
-                               "09:00", "09:45", "20", "10", "15 minutes",
+                               "07:00 EST", "08:00 EDT", "07:45 EST", "08:45 EDT",
+                               "20", "10", "15 minutes",
                                "en-US-AriaNeural", "en-US-JennyNeural", "en-US-GuyNeural",
                                "custom JavaScript", "reduces the noise", "30+ minutes"):
                     self.assertIn(phrase, about_text)
@@ -127,7 +133,7 @@ class SiteAudioTests(unittest.TestCase):
                                  "Google Analytics", "AdSense", "$0.20", "0775yERUMPLZiKpocJyBqm",
                                  "Podcast hosts", "AI and editorial safeguards"):
                     self.assertNotIn(unwanted, about_text)
-                self.assertIsNotNone(about.select_one('a[href="mailto:rmmartins@outlook.com"]'))
+                self.assertIsNotNone(about.select_one('a[href="mailto:podcast@decodethestack.com"]'))
                 self.assertEqual(
                     about.select_one("main .post-content > p:last-child em").get_text(),
                     "Decode the Stack: Decoding the tech that matters.",

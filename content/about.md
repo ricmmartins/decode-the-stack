@@ -10,7 +10,7 @@ TocOpen: false
 
 **Decode the Stack** is your daily technology briefing.
 
-Our automated pipeline collects and filters stories from 242 feeds, then writes a morning briefing. It runs at 09:00 Brasília time, with a backup at 09:45.
+Our automated pipeline collects and filters stories from 242 feeds, then writes a morning briefing. It runs at 07:00 EST (08:00 EDT during daylight saving time), with a backup 45 minutes later.
 
 ## How it works
 
@@ -45,8 +45,8 @@ Decode the Stack reduces the noise by filtering that coverage, with the aim of s
 | Podcast (TTS) | OpenAI text-to-speech (Marin, Sage, Ash); Edge fallback (en-US-AriaNeural, en-US-JennyNeural, en-US-GuyNeural) |
 | Branding | Logo and podcast cover generated with Pillow |
 | Site generator | Hugo Extended with custom templates adapted from PaperMod |
-| Hosting | Cloudflare Pages, on the free pages.dev address |
-| CI/CD | GitHub Actions (daily publishing at 09:00 Brasília time; backup at 09:45); English repository CI tests and builds |
+| Hosting | Cloudflare Pages, at decodethestack.com |
+| CI/CD | GitHub Actions (daily publishing at 07:00 EST / 08:00 EDT; backup at 07:45 EST / 08:45 EDT); English repository CI tests and builds |
 
 ## Sources
 
@@ -87,7 +87,7 @@ Each post contains:
 
 Have suggestions, feedback, or want to contribute?
 
-📧 [Send an email](mailto:rmmartins@outlook.com)
+📧 [Send an email](mailto:podcast@decodethestack.com)
 
 For corrections or suggestions, open an issue in the [Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues).
 

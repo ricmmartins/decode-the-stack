@@ -35,7 +35,7 @@ jobs:
         run: python -m unittest discover -s pipeline -p "test_*.py"
 
       - name: Build site
-        run: hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.pages.dev/
+        run: hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.com/
 
       - name: Validate built site
         run: python pipeline/validate_site.py public
