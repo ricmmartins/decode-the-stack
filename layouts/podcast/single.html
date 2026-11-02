@@ -30,6 +30,8 @@
   <div class="post-content"><p class="empty-state">The first episode will appear here after English script and audio generation succeeds.</p></div>
   {{- end }}
 
+  {{- $latestURL := "" }}
+  {{- with $latest }}{{ $latestURL = .RelPermalink }}{{ end }}
   {{- if .Param "ShowToc" }}<div class="toc"><details {{ if .Param "TocOpen" }}open{{ end }}><summary>On this page</summary>{{ .TableOfContents }}</details></div>{{ end }}
   <div class="post-content podcast-description">{{ .Content }}</div>
 
@@ -40,7 +42,7 @@
       {{- range $posts }}
         {{- $post := . }}
         {{- $episodeAudio := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
-        {{- if fileExists (printf "static/%s" $episodeAudio) }}
+        {{- if and (fileExists (printf "static/%s" $episodeAudio)) (ne .RelPermalink $latestURL) }}
           {{- $episodeCount = add $episodeCount 1 }}
           <article class="post-entry episode-card">
             <div class="edition-meta"><span class="edition-badge">Podcast episode</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "January 2, 2006" }}</time></div>
@@ -51,7 +53,7 @@
           </article>
         {{- end }}
       {{- end }}
-      {{- if eq $episodeCount 0 }}<p class="empty-state">No episodes have been published yet.</p>{{ end }}
+      {{- if eq $episodeCount 0 }}<p class="empty-state">No earlier episodes have been published yet.</p>{{ end }}
     </div>
   </section>
 </article>

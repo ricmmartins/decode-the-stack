@@ -9,6 +9,8 @@ import sys
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
+import yaml
+
 
 SITE_URL = "https://decodethestack.pages.dev/"
 REQUIRED = [
@@ -66,6 +68,20 @@ def _validate_shared_layout(root):
 
 def _validate_home(root):
     home = _read(root / "index.html")
+    project_root = Path(__file__).resolve().parent.parent
+    sources = yaml.safe_load(
+        (project_root / "pipeline" / "sources.yaml").read_text(encoding="utf-8")
+    )
+    source_count = len(sources.get("sources", [])) if isinstance(sources, dict) else 0
+    if source_count < 200:
+        raise ValueError(f"The English source catalogue is incomplete: only {source_count} feeds.")
+    stats = json.loads(
+        (project_root / "data" / "stats.json").read_text(encoding="utf-8")
+    )
+    if stats.get("configured_feeds") != source_count:
+        raise ValueError("The displayed source count does not match pipeline/sources.yaml.")
+    if f"{source_count} curated sources" not in home:
+        raise ValueError("The home page does not display the full curated source count.")
     for expected in (
         "MANY SOURCES. ONE DIRECTION.",
         "decode --topic tech --language en",
@@ -83,6 +99,8 @@ def _validate_home(root):
         r"<link\b(?=[^>]*\brel=[\"']?canonical(?:[\"'\s>]|$))", home, re.I
     ):
         raise ValueError("The home page is missing its canonical Cloudflare Pages URL.")
+    if len(re.findall(r"<source\b[^>]*\bsrc=[\"']?[^\"'\s>]+", home, re.I)) != 1:
+        raise ValueError("The home page must include exactly one latest-episode audio source.")
     if "Instagram" in home or "open.spotify.com" in home:
         raise ValueError("Portuguese social or podcast links must not appear on the English home page.")
 
@@ -161,6 +179,13 @@ def _validate_podcast_feed(root):
         raise ValueError("The podcast RSS episodes do not match the published date-based MP3 files.")
 
 
+def _validate_podcast_page(root):
+    podcast = _read(root / "podcast" / "index.html")
+    sources = re.findall(r"<source\b[^>]*\bsrc=[\"']?([^\"'\s>]+)", podcast, re.I)
+    if len(sources) != len(set(sources)):
+        raise ValueError("The podcast page repeats an episode audio player.")
+
+
 def validate(root):
     missing = [path for path in REQUIRED if not (root / path).is_file()]
     if missing:
@@ -175,9 +200,10 @@ def validate(root):
     _validate_search(root)
     _validate_written_feed(root)
     _validate_podcast_feed(root)
+    _validate_podcast_page(root)
 
     about = _read(root / "about" / "index.html")
-    if "Table of contents" not in about or "How an edition is made" not in about:
+    if "Table of contents" not in about or "How it works" not in about:
         raise ValueError("The About page is missing its table of contents or editorial pipeline explanation.")
     categories = html.unescape(_read(root / "categories" / "index.html"))
     for category in ("Cloud", "AI/ML", "DevOps & SRE", "Software Engineering", "Security"):
