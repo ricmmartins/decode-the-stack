@@ -50,8 +50,8 @@ generation logic with English prompts and voices:
 5. Generate a three-host English dialogue and audio, update the Friday weekly
    story buffer, public statistics and trends, then rebuild the RSS feed.
 
-OpenAI TTS (`gpt-4o-mini-tts`, Marin/Sage/Ash) is primary; Edge TTS is the
-fallback. The script target is about 15 minutes. Provider credentials remain
+The English workflow selects Pocket TTS on CPU; Edge TTS is an explicit
+rollback. The script target is about 15 minutes. Provider credentials remain
 on the authenticated original publishing runner and are not copied into this
 repository.
 
@@ -82,10 +82,46 @@ editing, and semantic verification share this selection. Existing word
 budgets, source protections, section checkpoints, receipts, and publishing
 gates remain mandatory. The CLI has no equivalent to the API's
 `max_tokens`/`temperature` arguments here; section sizes and editorial output
-are still checked by the existing validators. TTS is unchanged and does not
+are still checked by the existing validators. TTS is separate and does not
 use Copilot. Installing this integration does not regenerate an edition or
 prove that a token has Copilot access; the runner's small provider check
 tests authentication separately.
+
+### Pocket TTS production audio
+
+`TTS_PROVIDER=pocket` calls the standalone official CPU binary, never OpenAI
+or Edge as a fallback. Install release `v4.0.1`, Linux asset
+`pocket-tts-3.3.0-x86_64-unknown-linux-gnu.tar.gz`, verified SHA256
+`9abff0aa138a804e44052952d8c3bdaae247fb267ca8f4b83fe178897d1a0559`.
+The release tag and embedded runtime version differ. Set `POCKET_TTS_CLI_PATH`
+to the executable or put `pocket-tts` on PATH.
+
+Production voice variables must match the attributed set:
+`POCKET_TTS_VOICE_ANNA=alba`, `POCKET_TTS_VOICE_MARIA=mary`,
+`POCKET_TTS_VOICE_PEDRO=bill_boerst`. Each existing bounded speech segment
+uses `generate --language english --device cpu --max-tokens 50 --voice NAME
+--text - --output-path FILE`. Text is passed through stdin, avoiding command
+length limits. The pinned binary's default English configuration resolves
+model revision `db04f0e653473e5c7333c69686ac92b7460b0c1d` in the verified
+audition; no unsupported revision override is passed by this adapter.
+
+Every generated WAV must contain complete nonempty PCM before assembly.
+Segment durations and total synthesis elapsed time are logged. Failures and
+300-second segment timeouts block publication, clean temporary files, and
+preserve the previous episode. MP3 assembly, loudness, background music,
+pauses, and post-processing finish in temporary storage before atomic
+replacement. `TTS_PROVIDER=edge` is the explicit rollback selection. Script
+recovery reuses the validated saved script without new text generation;
+episode enclosure and GUID URLs are unchanged.
+
+Model credits: [Pocket TTS by Kyutai](https://huggingface.co/kyutai/pocket-tts),
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Voice reference
+credits from the [Kyutai voice catalogue](https://huggingface.co/kyutai/tts-voices):
+Alba MacKenna (`alba`, CC BY 4.0), VCTK speaker p333 (`mary`, CC BY 4.0), and
+Voice-Zero/LibriVox (`bill_boerst`, [CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
+References condition newly synthesized English dialogue; contributors do not
+endorse the publication. Visible credits are on the podcast page. The
+standalone software is MIT-licensed; model and voice licenses are separate.
 
 Hugo reads `pipeline/sources.yaml` directly at build time for current source
 totals on the home, About, and statistics pages, including About's engineering
@@ -95,7 +131,7 @@ counts. About's metadata uses number-free wording so it cannot retain an old
 catalogue size in search descriptions or JSON-LD.
 
 The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
-English. `OPENAI_TTS_VOICE_PEDRO` configures Pedro's primary voice; the Edge
+English. Pocket voices are alba, mary, and bill_boerst respectively; the Edge
 fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
 Podcast generation requests structured JSON turns with explicit speaker names,
 then validates every turn before audio synthesis. Unattributed narration,
@@ -188,7 +224,9 @@ python pipeline/run_pipeline.py --date 2026-11-02 --force --reuse-synthesis --re
 
 This fails if the saved script is missing, malformed, or too short; it does not
 silently call a language model. FFmpeg and ffprobe must be on `PATH` for audio.
-With `OPENAI_KEY` absent, recovery uses the complete free Edge TTS path.
+Set `TTS_PROVIDER=pocket` for CPU synthesis or `TTS_PROVIDER=edge` for the
+explicit free Edge rollback. Unset/`auto` retains the legacy OpenAI-to-Edge
+chain, but the English workflow does not use it or pass an OpenAI audio key.
 
 For a bounded voice audition only, run `python pipeline/create_voice_preview.py`.
 It creates `static/podcast/previews/naturalness-sample.mp3`, never an RSS item.

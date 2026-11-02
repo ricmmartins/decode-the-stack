@@ -128,7 +128,10 @@ class SiteAudioTests(unittest.TestCase):
                                  "Azure", "7–12", "directory", "Published episodes"):
                     self.assertNotIn(unwanted, main_text)
                 self.assertIn("Approximately 15 minutes", main_text)
-                self.assertIn("Edge TTS fallback", main_text)
+                self.assertIn("Edge TTS available as an explicit rollback", main_text)
+                self.assertIn("Alba MacKenna", main_text)
+                self.assertIn("speaker p333", main_text)
+                self.assertIsNotNone(podcast_page.select_one('a[href="https://creativecommons.org/licenses/by/4.0/"]'))
                 about = BeautifulSoup(
                     (root / "public/about/index.html").read_text(encoding="utf-8"), "html.parser",
                 )

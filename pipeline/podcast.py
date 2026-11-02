@@ -3,6 +3,9 @@
 import os
 import json
 import hashlib
+import shutil
+import subprocess
+import wave
 import re
 import sys
 import time
@@ -955,6 +958,61 @@ def _speech_segments(segments):
     return [segment for segment in segments if segment["type"] == "speech"]
 
 
+class PocketTTSError(RuntimeError):
+    pass
+
+
+def _synthesize_pocket_segments(segments, tmp_dir):
+    executable = shutil.which(os.environ.get("POCKET_TTS_CLI_PATH") or "pocket-tts")
+    if not executable:
+        raise PocketTTSError("Pocket TTS executable is missing; install the verified CPU release.")
+    voices = {
+        HOST_A: os.environ.get("POCKET_TTS_VOICE_ANNA", "alba"),
+        HOST_B: os.environ.get("POCKET_TTS_VOICE_MARIA", "mary"),
+        HOST_C: os.environ.get("POCKET_TTS_VOICE_PEDRO", "bill_boerst"),
+    }
+    approved = {HOST_A: "alba", HOST_B: "mary", HOST_C: "bill_boerst"}
+    if voices != approved:
+        raise PocketTTSError("Pocket TTS voices must match the attributed production voice set.")
+    started = time.monotonic()
+    for index, segment in enumerate(_speech_segments(segments)):
+        output = tmp_dir / f"seg_{index:04d}.wav"
+        try:
+            result = subprocess.run(
+                [executable, "generate", "--language", "english",
+                 "--voice", voices[segment["speaker"]], "--text", "-", "--device", "cpu",
+                 "--max-tokens", "50",
+                 "--output-path", str(output)],
+                input=segment["text"], capture_output=True, text=True, encoding="utf-8",
+                timeout=300, check=False,
+            )
+        except subprocess.TimeoutExpired:
+            raise PocketTTSError(f"Pocket TTS segment {index + 1} timed out after 300 seconds.") from None
+        except (OSError, UnicodeError):
+            raise PocketTTSError(f"Pocket TTS segment {index + 1} could not run.") from None
+        if result.returncode != 0:
+            raise PocketTTSError(f"Pocket TTS segment {index + 1} exited with code {result.returncode}.")
+        try:
+            with wave.open(str(output), "rb") as audio:
+                frames = audio.getnframes()
+                rate = audio.getframerate()
+                channels = audio.getnchannels()
+                width = audio.getsampwidth()
+                data = audio.readframes(frames)
+                if (
+                    frames <= 0 or rate <= 0 or audio.getcomptype() != "NONE"
+                    or len(data) != frames * channels * width
+                ):
+                    raise ValueError("Invalid or truncated PCM")
+                duration = frames / rate
+        except (OSError, EOFError, wave.Error, ValueError):
+            raise PocketTTSError(f"Pocket TTS segment {index + 1} returned invalid or empty WAV.") from None
+        segment["_file"] = output
+        print(f"[AUDIO] Pocket TTS segment {index + 1}: {duration:.2f}s WAV.")
+    print(f"[AUDIO] Pocket TTS CPU synthesis completed in {time.monotonic() - started:.1f}s.")
+    return True
+
+
 def _synthesize_openai_segments(segments, tmp_dir):
     """Synthesize all segments once with OpenAI; fail fast for Edge fallback."""
     from openai import OpenAI, OpenAIError
@@ -1043,7 +1101,10 @@ def _assemble_audio(segments, output_path):
             combined += AudioSegment.silent(duration=seg["ms"])
         elif seg["type"] == "speech" and "_file" in seg:
             try:
-                audio_seg = AudioSegment.from_mp3(str(seg["_file"]))
+                if seg["_file"].suffix == ".wav":
+                    audio_seg = AudioSegment.from_wav(str(seg["_file"]))
+                else:
+                    audio_seg = AudioSegment.from_mp3(str(seg["_file"]))
                 if audio_seg.dBFS != float("-inf"):
                     gain_db = min(
                         TARGET_SEGMENT_DBFS - audio_seg.dBFS,
@@ -1062,12 +1123,17 @@ def _assemble_audio(segments, output_path):
 
 
 def text_to_speech(script, output_path):
-    """Convert a podcast script to MP3 with OpenAI, then Edge fallback."""
-    import shutil
+    """Synthesize with the explicit provider and atomically publish mixed audio."""
+    provider = os.environ.get("TTS_PROVIDER", "auto").strip().lower()
+    if provider not in {"pocket", "edge", "auto"}:
+        raise ValueError("TTS_PROVIDER must be pocket, edge, or auto.")
+    _validate_dialogue(script)
 
     try:
         import pydub  # noqa: F401
     except ImportError:
+        if provider in {"pocket", "edge"}:
+            raise RuntimeError("pydub is required for audio publication.") from None
         print("[WARN]  pydub not installed, skipping TTS")
         return False
 
@@ -1081,10 +1147,15 @@ def text_to_speech(script, output_path):
     tmp_dir = output_path.parent / "_tts_tmp"
     shutil.rmtree(tmp_dir, ignore_errors=True)
     tmp_dir.mkdir(exist_ok=True)
+    pending_output = tmp_dir / "episode.mp3"
 
     success = False
     try:
-        if os.environ.get("OPENAI_KEY"):
+        if provider == "pocket":
+            success = _synthesize_pocket_segments(segments, tmp_dir)
+        elif provider == "edge":
+            success = _synthesize_edge_segments(segments, tmp_dir)
+        elif os.environ.get("OPENAI_KEY"):
             success = _synthesize_openai_segments(segments, tmp_dir)
             if not success:
                 print("[WARN]  Falling back to Edge TTS for the complete episode...")
@@ -1095,15 +1166,22 @@ def text_to_speech(script, output_path):
         else:
             print("[INFO]  OPENAI_KEY is absent; using Edge TTS fallback")
 
-        if not success:
+        if not success and provider == "auto":
             success = _synthesize_edge_segments(segments, tmp_dir)
 
-        if not success or not _assemble_audio(segments, output_path):
+        if not success or not _assemble_audio(segments, pending_output):
+            if provider in {"pocket", "edge"}:
+                raise RuntimeError(f"{provider} audio synthesis or assembly failed; publication blocked.")
             return False
+        if not _post_process_audio(pending_output):
+            if provider in {"pocket", "edge"}:
+                raise RuntimeError(f"{provider} audio post-processing failed; publication blocked.")
+            return False
+        pending_output.replace(output_path)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
 
-    return _post_process_audio(output_path)
+    return True
 
 
 def _generate_chapters(script, date_str):

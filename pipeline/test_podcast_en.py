@@ -339,7 +339,9 @@ Pedro: Let us look at the engineering trade-offs."""
                 patch.dict("os.environ", {"OPENAI_KEY": "test-key"}),
                 patch.object(podcast, "_synthesize_openai_segments", side_effect=partial_openai),
                 patch.object(podcast, "_synthesize_edge_segments", side_effect=complete_edge),
-                patch.object(podcast, "_assemble_audio", return_value=True),
+                patch.object(podcast, "_assemble_audio", side_effect=lambda segments, path: (
+                    path.write_bytes(b"complete-audio") > 0
+                )),
                 patch.object(podcast, "_post_process_audio", return_value=True),
             ):
                 self.assertTrue(podcast.text_to_speech(self.dialogue(30), Path(directory) / "episode.mp3"))

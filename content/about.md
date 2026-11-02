@@ -20,7 +20,7 @@ Our automated pipeline collects and filters stories from [{{< source-count >}} f
 2. **Clustering:** When 20 sites cover the same news, the pipeline groups them into one story with the best source. TF-IDF and cosine similarity identify duplicate coverage.
 3. **Ranking:** Each story receives a score based on source authority, coverage (how many sites reported it), content quality, and recency. The main-story threshold is 20 and the Quick Reads threshold is 10. Category balance and minimum/maximum selection limits also affect the selection. The number of stories varies with the day's reporting and its quality.
 4. **Synthesis:** The English workflow selects authenticated GitHub Copilot CLI to write a post with context and implications and perform editorial review. Provider access and usage limits still apply. A Copilot failure blocks publication without switching to separately billed text APIs. The pipeline writes from those sources rather than translating the Portuguese edition.
-5. **Podcast:** The pipeline writes a dialogue for Anna, Maria, and Pedro, then attempts OpenAI text-to-speech, with Edge TTS as a fallback. The hosts talk casually, like friends discussing tech at a bar. A player appears at the top of each daily post.
+5. **Podcast:** The pipeline writes a dialogue for Anna, Maria, and Pedro, then uses Pocket TTS on CPU. Edge TTS is available as an explicitly selected rollback. The hosts talk casually, like friends discussing tech at a bar. A player appears at the top of each daily post. [Model and voice credits](/podcast/).
 6. **Publication:** The scheduled pipeline generates and publishes the post and audio automatically.
 
 ## Who is it for?
@@ -42,7 +42,7 @@ Decode the Stack reduces the noise by filtering that coverage, with the aim of s
 | Data pipeline | Python 3.12 (feedparser, scikit-learn, python-dateutil) |
 | Clustering | TF-IDF + cosine similarity + Union-Find |
 | AI synthesis and editorial review | GitHub Copilot CLI, selected explicitly for the English workflow |
-| Podcast (TTS) | OpenAI text-to-speech (Marin, Sage, Ash); Edge fallback (en-US-AriaNeural, en-US-JennyNeural, en-US-GuyNeural) |
+| Podcast (TTS) | Pocket TTS (alba, mary, bill_boerst); explicit Edge rollback (en-US-AriaNeural, en-US-JennyNeural, en-US-GuyNeural) |
 | Branding | Logo and podcast cover generated with Pillow |
 | Site generator | Hugo Extended with custom templates adapted from PaperMod |
 | Hosting | Cloudflare Pages, at decodethestack.com |

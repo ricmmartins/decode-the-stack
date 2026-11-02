@@ -28,7 +28,7 @@ stories, like friends discussing tech at a bar.
 
 ### About
 
-- **Format**: A conversation between three AI hosts (OpenAI text-to-speech, with Edge TTS fallback)
+- **Format**: A conversation between three AI hosts (Pocket TTS on CPU, with Edge TTS available as an explicit rollback)
 - **Frequency**: Daily
 - **Duration**: Approximately 15 minutes
 - **Language**: English
@@ -43,5 +43,7 @@ https://decodethestack.com/podcast/feed.xml
 ```
 
 ---
+
+Pocket TTS model by [Kyutai](https://huggingface.co/kyutai/pocket-tts), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Voice references from the [Kyutai voice catalogue](https://huggingface.co/kyutai/tts-voices): Anna uses Alba MacKenna's `alba` (CC BY 4.0); Maria uses VCTK `mary`, speaker p333 (CC BY 4.0); Pedro uses Voice-Zero/LibriVox `bill_boerst` ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)). These references are used to synthesize original dialogue; the speakers do not endorse this publication. Earlier episodes may use other synthesis providers.
 
 *Decode the Stack is 100% AI-generated, from news curation to the podcast voices. [Learn more](/about/).*
