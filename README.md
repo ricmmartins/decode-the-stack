@@ -14,6 +14,12 @@ The publication is live at
 It uses the free Cloudflare Pages `pages.dev` address with Git-connected builds;
 no paid domain, Cloudflare token, or hosting secret is stored here.
 
+Cloudflare Pages was selected over GitHub Pages because the authenticated Git
+integration provided the free branded root address without a project-path
+prefix. GitHub remains the source and CI host. Audio is encoded below Pages'
+25 MiB per-file limit, with a 24 MiB safety target; larger future media would
+require a separate hosting decision rather than silently breaking deployment.
+
 ## Editorial pipeline
 
 The full Python pipeline is in `pipeline/` and reuses the Portuguese
@@ -43,6 +49,16 @@ The only production scheduler is the secure workflow in the
 This repository's GitHub Actions workflow runs tests and a Hugo build on pushes
 and pull requests only; it does not generate editions or deploy to Pages.
 Cloudflare Git integration is the deployment path.
+
+The first complete publication was generated on 2 November 2026 using Azure
+OpenAI and the complete three-host Edge TTS fallback: 2,335 spoken words,
+15:41 of audio. The validated runner artifact was published through local
+authenticated Git after the orchestrator's existing fine-grained PAT returned
+HTTP 403 on push. **Future scheduled publication is blocked until the owner
+authorizes `decode-the-stack` on that PAT with Contents: Read and write**,
+preserving its existing repository permissions. The orchestrator now checks
+actual write access before spending on generation; API `permissions.push`
+alone is not sufficient proof. No token values were copied into this repository.
 
 ## Site features
 
