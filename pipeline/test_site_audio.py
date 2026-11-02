@@ -64,6 +64,19 @@ class SiteAudioTests(unittest.TestCase):
                 )
                 rows = podcast_page.select("main table tbody tr")
                 self.assertEqual(len(rows), 3)
+                styles = "\n".join(
+                    (root / "public" / link["href"].lstrip("/")).read_text(encoding="utf-8")
+                    for link in podcast_page.select('link[rel="stylesheet"]')
+                )
+                compact_styles = re.sub(r"\s+", "", styles)
+                self.assertIn(
+                    ".post-contenttable{display:block;width:100%;overflow-x:auto;border-collapse:collapse;font-size:inherit}",
+                    compact_styles,
+                )
+                self.assertIn(
+                    ".post-contenttableth,.post-contenttabletd{padding:6px13px;border-bottom:1pxsolidvar(--border);text-align:start}",
+                    compact_styles,
+                )
                 for row, name, trait in zip(rows, ("Anna", "Maria", "Pedro"), ("charisma", "historical context", "creative analogies")):
                     self.assertIn(name, row.get_text())
                     self.assertIn(trait, row.get_text())

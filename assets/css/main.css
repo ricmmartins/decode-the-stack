@@ -220,6 +220,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .post-content { font-size: 17px; line-height: 1.9; }
 .post-content a { color: var(--accent); }
 .post-content a:hover { color: var(--accent-hover); }
+.post-content table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; font-size: inherit; }
+.post-content table th, .post-content table td { padding: 6px 13px; border-bottom: 1px solid var(--border); text-align: start; }
 .post-content blockquote { border-left: 3px solid var(--accent); background: var(--entry); border-radius: 0 10px 10px 0; padding: 18px 22px; }
 .post-content h2 { font-size: 28px; letter-spacing: -.6px; }
 .post-content h3 { padding-top: 1.5em; border-top: 1px solid var(--border); margin-top: 2em; font-size: 22px; }
