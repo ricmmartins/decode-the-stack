@@ -197,6 +197,34 @@ class HumanizerTests(unittest.TestCase):
                 with self.assertRaises(humanizer.HumanizerError):
                     humanizer.validate_posts(root)
             receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+            with patch.object(humanizer, "_call_llm", side_effect=successful_editor):
+                humanizer.write_reviewed_post(
+                    manual,
+                    POST.replace("value = 42", 'value = "literal \u2014 code"')
+                    .replace("https://example.com/report", "https://example.com/report\u2014id"),
+                    root,
+                )
+            result = build()
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            humanizer.validate_posts(root)
+            receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+            reviewed_text = manual.read_text(encoding="utf-8")
+            for change in (
+                reviewed_text.replace("Original title", "Original \u2014 title"),
+                reviewed_text.replace('title: "A release"', 'title: "A release \u2013 today"'),
+                reviewed_text.replace("Acme shipped", "Acme shipped \u2014"),
+            ):
+                manual.write_text(change, encoding="utf-8")
+                receipt_path.write_text(json.dumps({
+                    **receipt, "post_sha256": humanizer.digest(change),
+                }), encoding="utf-8")
+                result = build()
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("editorial dash", result.stdout + result.stderr)
+                with self.assertRaisesRegex(humanizer.HumanizerError, "editorial dash"):
+                    humanizer.validate_posts(root)
+            manual.write_text(reviewed_text, encoding="utf-8")
+            receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
             manual.write_text(manual.read_text(encoding="utf-8") + "\nChanged after review.", encoding="utf-8")
             self.assertNotEqual(build().returncode, 0)
             manual.unlink()

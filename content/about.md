@@ -1,5 +1,5 @@
 ---
-title: "About Decode the Stack — Your Daily Technology Briefing"
+title: "About Decode the Stack: Your Daily Technology Briefing"
 description: "Meet Decode the Stack: an automated pipeline that collects, filters, and synthesizes reporting from 242 international cloud, AI, DevOps, security, and software engineering feeds into a daily briefing."
 date: 2026-11-02T00:00:00Z
 ShowToc: true
@@ -93,4 +93,4 @@ For corrections or suggestions, open an issue in the [Decode the Stack repositor
 
 ---
 
-*Decode the Stack — Decoding the tech that matters.*
+*Decode the Stack: Decoding the tech that matters.*

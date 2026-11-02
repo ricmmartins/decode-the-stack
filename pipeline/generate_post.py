@@ -474,7 +474,7 @@ def generate_post(date_str=None, has_audio=False):
     if dynamic_title:
         post_title = dynamic_title.replace('"', '\\"')
     else:
-        post_title = f"Decode the Stack — {date_en}"
+        post_title = f"Decode the Stack: {date_en}"
 
     post_slug = f"{date}-daily"
 
@@ -497,7 +497,7 @@ ShowToc: true
 TocOpen: false
 ---
 
-> 🧠 **{main_count} main stories** + **{quick_count} quick reads** — {date_en}
+> 🧠 **{main_count} main stories** + **{quick_count} quick reads**: {date_en}
 >
 > *Top stories: in-depth context on the day's most relevant reporting.*<br>
 > *Quick Reads: brief notes on other stories worth tracking.*
@@ -508,7 +508,7 @@ TocOpen: false
     if has_audio:
         audio_path = PROJECT_DIR / "static" / "podcast" / "audio" / f"{date}.mp3"
         audio_version = hashlib.sha256(audio_path.read_bytes()).hexdigest()[:12]
-        front_matter += f"""[AUDIO] **Listen to today's podcast** — with Anna, Maria, and Pedro:
+        front_matter += f"""[AUDIO] **Listen to today's podcast** with Anna, Maria, and Pedro:
 
 <audio controls preload="metadata" style="width:100%; margin-bottom: 1.5em;">
   <source src="/podcast/audio/{date}.mp3?v={audio_version}" type="audio/mpeg">

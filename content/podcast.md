@@ -1,5 +1,5 @@
 ---
-title: "Daily Technology Podcast — Decode the Stack"
+title: "Daily Technology Podcast: Decode the Stack"
 description: "A daily, English-language, three-host briefing on software engineering, cloud, DevOps, AI/ML, and security."
 date: 2026-11-02T00:00:00Z
 type: page

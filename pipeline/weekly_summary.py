@@ -215,7 +215,7 @@ def run(date_str=None, force_day=False):
                                     set(s.get("category", "dev") for s in top_stories)))
 
     post = f"""---
-title: "Weekly Top 10 — {week_range_en}"
+title: "Weekly Top 10: {week_range_en}"
 date: {date}T00:00:00Z
 slug: "{date}-weekly"
 description: "The week's most consequential technology stories, synthesized in English."
@@ -226,7 +226,7 @@ ShowToc: true
 TocOpen: false
 ---
 
-> **Weekly Top 10** — The most consequential stories from {week_range_en} — {date_en}
+> **Weekly Top 10**: The most consequential stories from {week_range_en} ({date_en})
 
 {content}
 """

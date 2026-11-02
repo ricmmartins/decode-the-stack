@@ -130,7 +130,7 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertIsNotNone(about.select_one('a[href="mailto:rmmartins@outlook.com"]'))
                 self.assertEqual(
                     about.select_one("main .post-content > p:last-child em").get_text(),
-                    "Decode the Stack — Decoding the tech that matters.",
+                    "Decode the Stack: Decoding the tech that matters.",
                 )
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)

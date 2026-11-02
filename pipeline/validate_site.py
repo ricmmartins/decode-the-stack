@@ -256,6 +256,7 @@ def _validate_published_values(root):
 
 def validate(root):
     from humanizer import validate_posts
+    from editorial_punctuation import visible_html_dashes
     validate_posts()
     missing = [path for path in REQUIRED if not (root / path).is_file()]
     if missing:
@@ -287,6 +288,8 @@ def validate(root):
         }:
             continue
         text = _read(path)
+        if path.suffix.lower() == ".html" and visible_html_dashes(text):
+            raise ValueError(f"Prohibited visible editorial dash in {path.relative_to(root)}.")
         if "ricardomartins.com.br" in text or "ricmmartins.github.io" in text:
             raise ValueError(f"A personal-domain or GitHub Pages URL leaked into {path.relative_to(root)}.")
         if "open.spotify.com/show/0775yERUMPLZiKpocJyBqm" in text:

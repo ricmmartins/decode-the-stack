@@ -172,6 +172,15 @@ The single existing edition is exempt only at its recorded, unchanged hash;
 it has not been retrospectively reviewed. Source changes can deliberately
 change these gates: receipts are audit records, not signed attestations.
 
+Visible editorial text must not contain em or en dashes. Before review, the
+writer normalizes numeric ranges to `to` and prose separators to colons,
+including displayed source titles and metadata. The final review, Python
+validator, and direct Hugo build reject remaining visible dashes. Code,
+commands, HTML attributes, and URL targets are excluded. Headings and links
+keep their structure. The November 2 historical edition received only five
+punctuation-only line edits under this policy, and its exact legacy hash was
+updated accordingly; this was not a retrospective Humanizer review.
+
 Humanizer is an editorial aid, not a fact-checker or a guarantee of human
 authorship. Deterministic preservation checks and the second model pass reduce
 the risk of changed meaning but cannot prove every factual claim.
