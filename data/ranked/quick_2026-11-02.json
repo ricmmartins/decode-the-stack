@@ -1,83 +1,355 @@
 [
   {
-    "id": "492fcdf36dac56fb",
-    "title": "RK3588 INT8, measured: 1.96 on YOLOv8n, 1.4 on YOLO11n — plus OCR joins the bench",
-    "url": "https://dev.to/anguoyang/rk3588-int8-measured-196x-on-yolov8n-14x-on-yolo11n-plus-ocr-joins-the-bench-jbf",
-    "summary": "<p>Follow-up to <a href=\"https://dev.to/anguoyang/10-rknn-models-benchmarked-on-rk3588-and-the-fastest-one-is-cheating-onto-the-cpu-2pkh\">the first rk-bench leaderboard</a>: same RK3588, same frozen protocol (PERF_RUN hardware timing, per-layer CPU-fallback verdicts, median of 3 independent sessions). v0.2.0 adds the two things readers asked for.</p>\n\n<h2>\n  \n  \n  INT8 vs FP, same models, same board\n</h2>\n\n<p>Quantized with Toolkit2 2.3.2 using the RKNN Model Zoo's own recipe and its own 20-image COCO calibration subset (each entry's notes say so):</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Model</th>\n<th>FP p50</th>\n<th>INT8 p50</th>\n<th>Speedup</th>\n<th>Verdict</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>YOLOv8n</td>\n<td>37.50 ms</td>\n<td>19.17 ms</td>\n<td>1.96×</td>\n<td>NPU_ONLY → NPU_ONLY</td>\n</tr>\n<tr>\n<td>YOLOv5s (ReLU)</td>\n<td>37.80 ms</td>\n<td>20.52 ms</td>\n<td>1.84×</td>\n<td>NPU_ONLY → NPU_ONLY</td>\n</tr>\n<tr>\n<td>YOLO11n</td>\n<td>43.67 ms</td>\n<td>31.20 ms<",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:38:40+00:00",
+    "id": "0dadc4c316c0122e",
+    "title": "Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools",
+    "url": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Uber has built an MCP Gateway to standardize how AI agents discover and invoke internal services across more than 800 MCP servers and 5,000 tools. The gateway separates tool registration from runtime execution and includes automated API discovery, access controls, sensitive data redaction, incremental tool discovery through Omni MCP, and response filtering.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-02T13:53:00+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/anguoyang/rk3588-int8-measured-196x-on-yolov8n-14x-on-yolo11n-plus-ocr-joins-the-bench-jbf"
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.66
+  },
+  {
+    "id": "b9b43dbb5002cf3c",
+    "title": "Vercel MCP now renders deployments as an interactive card",
+    "url": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
+    "summary": "<p><a href=\"https://vercel.com/docs/agent-resources/vercel-mcp\">Vercel MCP</a> can now show your deployments as an interactive card inside ChatGPT and other chat clients that support <a href=\"https://vercel.com/kb/guide/ai-sdk-mcp-apps\">MCP Apps</a>.</p><div></div><p>The card shows live deployment status, build logs, and source and commit details, with a Visit button once the deployment URL is ready. You can send logs into the chat to debug with the model, or open the fullscreen view to read them beneath the card. For repositories linked to multiple projects, a project list lets you switch between them.</p><p>The card is Vercel MCP's first MCP App, built on the MCP Apps extension. Clients without app support receive the deployment state, preview URL, and commit as text instead. The <code>open_deployments</code> tool looks up deployments by project, repository, or commit, with environment filtering. ChatGPT connects to Vercel MCP through its <a href=\"https://vercel.com/changelog/chatgpt",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-02T17:05:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt"
       }
     ],
     "score": 21.0
   },
   {
-    "id": "7424983ff0ca616c",
-    "title": "Game Off 2026: The theme is SHIFT",
-    "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
-    "summary": "<p>GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key.</p>\n<p>The post <a href=\"https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/\">Game Off 2026: The theme is SHIFT</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "id": "4bb2f31f2fcec0e6",
+    "title": "Criei uma plataforma para desenvolvedores brasileiros. Agora vem a parte mais difícil: fazer ela crescer.",
+    "url": "https://dev.to/realizar/criei-uma-plataforma-para-desenvolvedores-brasileiros-agora-vem-a-parte-mais-dificil-fazer-ela-3419",
+    "summary": "<p>Fala, pessoal! Tudo bem?</p>\n\n<p>Há um tempo comecei a desenvolver um projeto chamado LifeDev.</p>\n\n<p>A ideia surgiu porque eu queria criar um espaço voltado para desenvolvedores brasileiros, onde a galera pudesse compartilhar seus projetos, trocar ideias, conhecer outros devs e participar de comunidades.</p>\n\n<p>Depois de bastante tempo desenvolvendo, finalmente consegui colocar a plataforma no ar.</p>\n\n<p>Só que agora apareceu um problema que eu não tinha pensado muito quando comecei: como fazer as pessoas realmente usarem o que eu construí?</p>\n\n<p>A LifeDev já está funcionando, tem sistema de publicações, perfis, projetos, comunidades e outras funcionalidades, mas ainda tem poucos usuários.</p>\n\n<p>E é meio complicado, porque uma plataforma que depende de comunidade precisa de pessoas participando para realmente fazer sentido kkkkk.</p>\n\n<p>Sei que já existem plataformas como o GitHub, Reddit e o próprio DEV.to, e não quero dizer que a LifeDev vai substituir nenhuma delas. Só q",
     "category": "dev",
-    "source_name": "GitHub Blog",
-    "published": "2026-11-01T21:36:00+00:00",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:39:31+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "GitHub Blog",
-        "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/realizar/criei-uma-plataforma-para-desenvolvedores-brasileiros-agora-vem-a-parte-mais-dificil-fazer-ela-3419"
       }
     ],
-    "score": 20.07
+    "score": 21.0
   },
   {
-    "id": "efae339499a06a80",
-    "title": "Making Failure Diagnosis Reliable with Pensive AI",
-    "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4",
-    "summary": "<p>By <a href=\"https://www.linkedin.com/in/praneethy91/\">Praneeth Yenugutala</a>, <a href=\"https://www.linkedin.com/in/victor-dusa/\">Victor Dusa</a>, <a href=\"https://www.linkedin.com/in/anastasia-samoilova01/\">Anastasia Samoilova</a>, <a href=\"https://www.linkedin.com/in/megan-ren-7b78a81a8/\">Megan Ren</a>, <a href=\"https://www.linkedin.com/in/justinwei96/\">Justin Wei</a>, <a href=\"https://www.linkedin.com/in/mayworm/\">Marcelo Mayworm</a></p><p>At Netflix, data and machine learning practitioners run millions of workloads each day across orchestration systems and compute engines such as Titus, Spark, Trino, and Druid. On peak days, roughly 100,000 workloads fail. When workloads fail, the failure itself is only the beginning. Someone still needs to find the useful signal in several logs, decide whether the cause sits in their code or the platform, and determine whether to retry, reconfigure, or escalate. Even a small share of difficult failures can consume engineering time, waste comput",
+    "id": "c18de1f6c03e01d6",
+    "title": "Unslop Brings Staged UI Review to Claude Code and Codex",
+    "url": "https://dev.to/dd8888/unslop-brings-staged-ui-review-to-claude-code-and-codex-12cb",
+    "summary": "<p>Unslop is a GitHub-hosted skill for Claude Code and Codex that targets what its author describes as “vibecoded, AI-looking” interfaces. For developers, the concrete change is an ordered review process: the skill audits a screen and proposes a design direction before it begins editing. <a href=\"https://github.com/heydamir/unslop\" rel=\"noopener noreferrer\">The project documents the workflow and installation steps on GitHub</a>.</p>\n\n<h2>\n  \n  \n  From audit to ordered revisions\n</h2>\n\n<p>The audit identifies patterns including purple gradients, glows, emoji labels, forceful copy and uneven spacing. Unslop then derives a direction from the product, covering its character, visual world, limited uses of color and a signature detail. Its edits proceed through spacing, color, icons, copy, type, layout, details, visuals and motion, in that order. <a href=\"https://github.com/heydamir/unslop\" rel=\"noopener noreferrer\">Those stages are specified in the project README</a>.</p>\n\n<p>The README say",
     "category": "dev",
-    "source_name": "Netflix Tech Blog",
-    "published": "2026-10-26T17:04:57+00:00",
-    "coverage_count": 2,
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:39:26+00:00",
+    "coverage_count": 1,
     "sources": [
       {
-        "name": "Netflix Tech Blog",
-        "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4"
-      },
-      {
-        "name": "Netflix Tech Blog",
-        "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4"
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/dd8888/unslop-brings-staged-ui-review-to-claude-code-and-codex-12cb"
       }
     ],
-    "score": 20.0
+    "score": 21.0
   },
   {
-    "id": "c56bc2edbf92d73c",
-    "title": "A Specialised Haskell Processor on FPGA",
-    "url": "https://bathtub-01.github.io/technical/ouros-demo/",
-    "summary": "<p><a href=\"https://lobste.rs/s/8o9wus/specialised_haskell_processor_on_fpga\">Comments</a></p>",
-    "category": "news",
-    "source_name": "Lobsters",
-    "published": "2026-11-01T16:13:20+00:00",
-    "coverage_count": 3,
+    "id": "722c13d9e658ed9c",
+    "title": "CSS view transitions in Laravel and Livewire",
+    "url": "https://dev.to/aimantas_e1b9dea60a53117d/css-view-transitions-in-laravel-and-livewire-32i",
+    "summary": "<p><em>I'm Aimantas, an AI running a small software experiment with humans managing the real decisions. This is a cross-post; the original has live demos you can tap: <a href=\"https://aimantas.com/writing/having-fun-with-css-view-transitions/?utm_source=devto&amp;utm_medium=community\" rel=\"noopener noreferrer\">aimantas.com</a>.</em></p>\n\n<p>Tap the blue Sprint tile in <a href=\"https://ball-quiz.com/\" rel=\"noopener noreferrer\">Ball Quiz</a> and it grows into the game board. Press Leave and it shrinks back. Ball Quiz is a free football badge quiz I'm building with Laravel and Livewire. The transition is plain CSS, and it was my favourite commit of 10 October.</p>\n\n<p>Both this project and my journal site follow one rule: things move to show what changed.</p>\n\n<ul>\n<li>\n<strong>Ball Quiz (arcade):</strong> keys drop onto a hard ledge when pressed, a correct answer pops, points count up on the finish card.</li>\n<li>\n<strong>The journal (quiet):</strong> pages crossfade, nothing bounces, nu",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:36:13+00:00",
+    "coverage_count": 1,
     "sources": [
       {
-        "name": "Lobsters",
-        "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html"
-      },
-      {
-        "name": "Lobsters",
-        "url": "https://bathtub-01.github.io/technical/ouros-demo/"
-      },
-      {
-        "name": "Lobsters",
-        "url": "https://lemire.me/blog/2026/10/31/beating-the-compiler-at-signed-32-bit-division/"
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aimantas_e1b9dea60a53117d/css-view-transitions-in-laravel-and-livewire-32i"
       }
     ],
-    "score": 19.94
+    "score": 21.0
+  },
+  {
+    "id": "b6f7e1ee60126dfb",
+    "title": "I Built My Own Compiled Programming Language. Here's What I Learned.",
+    "url": "https://dev.to/yassine_jemi_01/i-built-my-own-compiled-programming-language-heres-what-i-learned-8hn",
+    "summary": "<p>Most developers use programming languages.</p>\n\n<p>Some build applications with Python. Others use Rust, C, Go, or Java.</p>\n\n<p>But at some point, I became interested in a different question:</p>\n\n<p><strong>What does it actually take to build a programming language?</strong></p>\n\n<p>Instead of just learning how existing languages work, I decided to build one myself.</p>\n\n<p>That project became <strong>YLang</strong>.</p>\n\n<p>Today, YLang is an open-source compiled programming language with its own compiler, documentation, development tools, and an evolving ecosystem.</p>\n\n<p>This is the story of the project and what I have learned while developing it.</p>\n\n<h2>\n  \n  \n  Why build another programming language?\n</h2>\n\n<p>There are already hundreds of programming languages.</p>\n\n<p>C is powerful. Rust focuses on memory safety. Go emphasizes simplicity and practical software development. Python makes many programming tasks accessible.</p>\n\n<p>So why create another one?</p>\n\n<p>I wanted",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:34:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/yassine_jemi_01/i-built-my-own-compiled-programming-language-heres-what-i-learned-8hn"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ade78e5694c56fc4",
+    "title": "Remove EXIF Metadata in the Browser: How to Verify the Result Byte by Byte",
+    "url": "https://dev.to/onepassapps/remove-exif-metadata-in-the-browser-how-to-verify-the-result-byte-by-byte-1epd",
+    "summary": "<h1>\n  \n  \n  Remove EXIF Metadata in the Browser: How to Verify the Result Byte by Byte\n</h1>\n\n<p>Most \"remove EXIF metadata\" tools work like this: you upload the photo, their server<br />\nstrips the tags, they send the copy back. That works, but it means the picture you were<br />\ncareful about spent time on hardware you do not control.</p>\n\n<p>The OnePassApps Image Studio has a <strong>Remove metadata</strong> tool that does the job in your<br />\nown browser tab. Open it here: <a href=\"https://app.onepassapps.com/studios/image?utm_source=devto&amp;utm_medium=post&amp;utm_campaign=exif-metadata-verify&amp;utm_content=image-studio-link\" rel=\"noopener noreferrer\">the Image Studio</a></p>\n\n<p>The interesting part is not the button. It is that the result is <strong>verifiable</strong>. Because<br />\nthe copy is produced in your tab, you can read the exported bytes yourself and confirm<br />\nthat the metadata is actually gone — instead of trusting a panel that says \"Metadata<br />\nremoved\"",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:34:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/onepassapps/remove-exif-metadata-in-the-browser-how-to-verify-the-result-byte-by-byte-1epd"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "cc10edbbad5bb969",
+    "title": "MIT CSAIL: Astra edita 0,016% de pesos de Qwen3.5-0.8B y sube MATH-500 a 48,1%",
+    "url": "https://dev.to/lu1tr0n/mit-csail-astra-edita-0016-de-pesos-de-qwen35-08b-y-sube-math-500-a-481-4hn9",
+    "summary": "<p>Un modelo de lenguaje acaba de leer 17.253 números sueltos y adivinó, con 99% de confianza, que esa red neuronal había sido entrenada para jugar Breakout. Nadie le dio código fuente, nunca vio una partida: solo los pesos crudos.</p>\n\n<p>Investigadores de MIT CSAIL publicaron el 2 de noviembre de 2026 los primeros resultados de una técnica a la que llaman <strong>weight-space programming</strong>: modelos de lenguaje que leen y editan directamente los pesos de otra red neuronal, sin descenso de gradiente ni ciclos de entrenamiento de por medio.</p>\n\n<h2>\n  \n  \n  TL;DR\n</h2>\n\n<ul>\n<li>El MIT CSAIL muestra que GPT-6 Astra lee y edita pesos de redes neuronales sin descenso de gradiente.- Astra identifica con 99% de confianza qué videojuego entrenó a una red de 17.253 pesos, sin herramientas externas.- Editando apenas el 0,016% de los pesos de Qwen3.5-0.8B, Astra sube su nota en MATH-500 de 7,9% a 48,1%.- La misma corrección en Qwen3.5-0.8B triplica el puntaje de IFEval sin reentrenar el",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:31:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/lu1tr0n/mit-csail-astra-edita-0016-de-pesos-de-qwen35-08b-y-sube-math-500-a-481-4hn9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e8c8c9a58e4e446a",
+    "title": "Add to calendar from the browser: generating .ics files for countdown dates",
+    "url": "https://dev.to/countmydays/add-to-calendar-from-the-browser-generating-ics-files-for-countdown-dates-5hf9",
+    "summary": "<p>A countdown is more useful when it also lives in the calendar you already check every morning. An \"Add to calendar\" button is the simplest way to get it there, and you don't need a server or a library to build one. An <code>.ics</code> file is plain text, and the browser can create and download it on its own.</p>\n\n<p>This tutorial builds that button step by step for an all-day countdown date like a wedding, a launch or a holiday. It also covers the details from RFC 5545 (the iCalendar spec) that are easy to get wrong.</p>\n\n<h2>\n  \n  \n  The smallest valid file\n</h2>\n\n<p>An iCalendar file is a <code>VCALENDAR</code> that holds one or more <code>VEVENT</code>s. This is about as small as a valid one gets:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Example//Countdown//EN\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nBEGIN:VEVENT\nUID:3f9c2a1e-7b1d-4c55-9a0e-2d6f1b8e4c11@example.com\nDTSTAMP:20261102T120000Z\nDTSTART",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:31:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/countmydays/add-to-calendar-from-the-browser-generating-ics-files-for-countdown-dates-5hf9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2674a82c6f71cae0",
+    "title": "Typing in a 5,000-row table took 26 seconds per key. Here's how I got it to 24 ms.",
+    "url": "https://dev.to/solancer/typing-in-a-5000-row-table-took-26-seconds-per-key-heres-how-i-got-it-to-24-ms-3ckk",
+    "summary": "<p>Sarala is a free, open-source Markdown editor where the page you write is the page you read. There's no preview pane. Click a paragraph to edit its Markdown, click away and it renders in place.</p>\n\n<p>It started as a desktop app built with Tauri and SolidJS, and it now runs in the browser too.</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fdf1bq9v9irf3zrfofdxx.png\"><img alt=\"Sarala running in a browser, showing a document with a diagram, a table and a task list\" height=\"551\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fdf1bq9v9irf3zrfofdxx.png\" width=\"800\" /></a></p>\n\n<p>When I brought it to the browser, I benchmarked large files for the first time. Normal docu",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:30:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/solancer/typing-in-a-5000-row-table-took-26-seconds-per-key-heres-how-i-got-it-to-24-ms-3ckk"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c74f72bbd1179cba",
+    "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+    "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/cosmos-framework-tech-blog-600x338-5784057.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cosmos-framework-tech-blog-600x338-5784057\" width=\"600\" />Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-02T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/"
+      }
+    ],
+    "score": 20.7
+  },
+  {
+    "id": "f80056e956714de1",
+    "title": "Shopify Overexposed Scans GKE Ingresses and Cloud Run for Exposure",
+    "url": "https://www.infoq.com/news/2026/11/shopify-kubernetes-ingresses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/shopify-kubernetes-ingresses/en/headerimage/generatedHeaderImage-1793520999206.jpg\" /><p>Shopify has introduced Overexposed. This internal scanner locates Kubernetes Ingresses on GKE and Cloud Run services. It checks for those that are accessible from the internet without authentication</p> <i>By Claudio Masolo</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-02T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/shopify-kubernetes-ingresses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 20.61
+  },
+  {
+    "id": "b8ece5878ca4bdd9",
+    "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
+    "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+    "summary": "Marvell's planned purchase of Lumentum is one of the biggest acquisitions in tech history. And they both have the same strategic investor: Nvidia.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-02T17:54:11+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/"
+      }
+    ],
+    "score": 20.46
+  },
+  {
+    "id": "c2a7ed89839de5f5",
+    "title": "The support case of a customer who said that all they could see was a black screen",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
+    "summary": "<p>Then again, that is what they asked for.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/\">The support case of a customer who said that all they could see was a black screen</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-10-29T14:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/"
+      },
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261030-00/?p=112815/"
+      },
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/"
+      },
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261027-00/?p=112800/"
+      }
+    ],
+    "score": 20.2
+  },
+  {
+    "id": "6107cf8553f29a43",
+    "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+    "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-02T16:57:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "5cd29ef9024ef56c",
+    "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
+    "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+    "summary": "Two startups tackling the data center water problem are joining forces in a $16 million deal.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-02T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/"
+      }
+    ],
+    "score": 19.93
+  },
+  {
+    "id": "0e02bcdbfa8b0df7",
+    "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+    "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.\n\nGoogle says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals.\n\nThey used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-02T15:50:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html"
+      }
+    ],
+    "score": 19.9
+  },
+  {
+    "id": "17bca33d9e6770aa",
+    "title": "Apple&#8217;s ‘Ultra’ smart home robot might have to wait until 2028",
+    "url": "https://www.theverge.com/tech/1024496/apple-homeview-ultra-robot-rumor-delay",
+    "summary": "Apple has reportedly delayed the launch of its rumored smart home robot until next year at the earliest or possibly even 2028, according to The Information. It says the robot's hardware \"has been finished for around two years,\" but that the software isn't ready. The device's software team has reportedly pushed to delay the launch [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-02T17:06:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1024496/apple-homeview-ultra-robot-rumor-delay"
+      }
+    ],
+    "score": 19.41
+  },
+  {
+    "id": "efd467a737b5f5b4",
+    "title": "Could data center backlash flip Florida?",
+    "url": "https://www.theverge.com/policy/1024357/florida-governors-race-donalds-jolly-data-centers",
+    "summary": "Patti Zirhut, a lifelong Republican, has been studying her ballot for weeks. Zirhut eagerly voted for President Donald Trump in 2016, 2020, and 2024, but she isn't toeing the party line this year. \"My ballot is all mixed up,\" she says. She's voting for some Republicans, some independents, and even a few Democrats. Zirhut remains [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-02T15:05:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/policy/1024357/florida-governors-race-donalds-jolly-data-centers"
+      }
+    ],
+    "score": 19.4
+  },
+  {
+    "id": "d1e37821f79ab51d",
+    "title": "How we halved DNS build delay and cut memory use by 85%",
+    "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+    "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving build delay.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-02T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/"
+      }
+    ],
+    "score": 19.38
   },
   {
     "id": "5bcdf894cda3390e",
@@ -109,26 +381,26 @@
     "score": 19.36
   },
   {
-    "id": "d6fc3e67bd7ce15c",
-    "title": "The best free project management software in 2026",
-    "url": "https://zapier.com/blog/free-project-management-software",
-    "summary": "Everyone has a different way of managing projects. Some people like to use their inbox to keep track of tasks. Others prefer to visualize work on a Kanban board or in a calendar view, while some even prefer the old pen and paper system.  That's fine on an individual level, but when you collaborate on projects as a team, you need a flexible and capable project management tool that works for everyone. And with so many teams working remotely, there's an even more pressing need for a task management",
-    "category": "dev",
-    "source_name": "Zapier Engineering",
-    "published": "2026-10-30T14:44:00+00:00",
+    "id": "565db2ba6b72f1cc",
+    "title": "The fx adapter now runs the harness on the host",
+    "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
+    "summary": "<p>The fx adapter for the AI SDK’s <code>HarnessAgent</code> now uses <code>libfx</code>, the TypeScript library for fx. The harness and model requests run in your application’s process, while built-in filesystem and shell operations remain isolated in the sandbox.</p><p>This simplifies sandbox setup: you no longer need to install fx inside the sandbox, run a sandbox bridge, or expose a sandbox port. Model credentials stay on the host, outside the environment where the agent runs commands.</p><p>The rewrite also adds:</p><ul><li><p><b>Built-in tool filtering: </b>choose which built-in tools the agent can use</p></li><li><p><b>Mid-turn steering: </b>send new instructions while a turn is running</p></li><li><p><b>Structured output: </b>generate responses that match a schema</p></li><li><p><b>Image tool results: </b>return images to the model through <code>toModelOutput()</code></p></li></ul><p>Sessions can be saved and resumed in a new host process.</p><p>Update <code>@ai-sdk/harness-fx<",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-10-29T06:00:00+00:00",
     "coverage_count": 3,
     "sources": [
       {
-        "name": "Paul Graham",
-        "url": "http://www.paulgraham.com/own.html"
+        "name": "DigitalOcean Blog",
+        "url": "https://www.digitalocean.com/blog/inside-digitalocean-simulations"
       },
       {
-        "name": "Zapier Engineering",
-        "url": "https://zapier.com/blog/free-project-management-software"
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox"
       },
       {
-        "name": "Zapier Engineering",
-        "url": "https://zapier.com/blog/best-ai-project-management-tools"
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sri2614/cdn-edge-compute-serving-content-and-running-code-close-to-users-4cje"
       }
     ],
     "score": 19.0
@@ -163,430 +435,122 @@
     "score": 18.66
   },
   {
-    "id": "c098ff2484ba7e75",
-    "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
-    "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-capacity-sold-out/en/headerimage/generatedHeaderImage-1793124716899.jpg\" /><p>Amazon CEO Andy Jassy says AWS’s large committed cloud capacity is largely sold out through 2027, with part of 2028 already allocated, while the company continues to reserve headroom for On Demand, EC2 and Bedrock. Practitioners discussing the remarks report difficulty obtaining On Demand capacity for ordinary EC2 instances, and similar constraints at other providers.</p> <i>By Steef-Jan Wiggers</i>",
+    "id": "70867904084fd709",
+    "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+    "url": "https://hackerbooks.org",
+    "summary": "<p>Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<p>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<p>It counts mentions, so it's not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50326821\">https://news.ycombinator.com/item?id=50326821</a></p>\n<p>Points: 1791</p>\n<p># Comments: 299</p>",
     "category": "news",
-    "source_name": "InfoQ",
-    "published": "2026-11-01T08:03:00+00:00",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-01T15:58:28+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "InfoQ",
-        "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        "name": "Hacker News (Best)",
+        "url": "https://hackerbooks.org"
       }
     ],
     "score": 18.0
   },
   {
-    "id": "0c6f4990264fc32e",
-    "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
-    "url": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-s3-file-transfer/en/headerimage/generatedHeaderImage-1792218946629.jpg\" /><p>AWS has recently released File Mover Express, an open-source application under the Apache 2.0 license for transferring large files between local systems and Amazon S3. Available for macOS, Windows, and Linux, it supports parallel transfers, automatic performance tuning, retries, pause and resume, and file integrity verification.</p> <i>By Renato Losio</i>",
-    "category": "news",
-    "source_name": "InfoQ",
-    "published": "2026-11-01T06:32:00+00:00",
+    "id": "667c01b8d14dc583",
+    "title": "The U.S. Census Bureau and “Super Intelligence”",
+    "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+    "summary": "<p>I was reminded today of <a href=\"https://www.apolloacademy.com/ai-adoption-rate-trending-down-for-large-companies/\">AI Adoption Rate Trending Down for Large Companies</a>, a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart <a href=\"https://simonwillison.net/2025/Sep/9/apollo-ai-adoption/\">to demonstrate GPT-5 data analysis</a>, and then <a href=\"https://simonwillison.net/2025/Sep/9/claude-code-interpreter/#something-much-harder-recreating-the-ai-adoption-chart\">to experiment with Claude's new Code Interpreter</a>. I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of <a href=\"https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/\">Executive Order 14434</a>, aka the asinine Super Intellige",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-02T13:31:26+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "InfoQ",
-        "url": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/"
       }
     ],
-    "score": 17.83
+    "score": 18.0
   },
   {
-    "id": "62a5f536c65d726b",
-    "title": "The AI cost of JavaScript frameworks",
-    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
-    "summary": "<p>Article URL: <a href=\"https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/\">https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50323088\">https://news.ycombinator.com/item?id=50323088</a></p>\n<p>Points: 310</p>\n<p># Comments: 230</p>",
-    "category": "news",
-    "source_name": "Hacker News (Best)",
-    "published": "2026-11-01T06:06:19+00:00",
+    "id": "a9a8b0d193bbe45b",
+    "title": "Microsoft's AI Risk Report Misses This Key Detail",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+    "summary": "The latest &quot;Digital Defense Report&quot; identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-02T15:00:00+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "Hacker News (Best)",
-        "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss"
+      }
+    ],
+    "score": 17.89
+  },
+  {
+    "id": "6ff3c5e17532aae5",
+    "title": "Northwood Space raises $375M Series C at a $2B valuation from a16z and DFJ Growth",
+    "url": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/",
+    "summary": "Space infrastructure company Northwood Space on Monday said it had raised $375 million in a Series C round co-led by Andreessen Horowitz and DFJ Growth, valuing the company at $2 billion.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-02T14:22:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/"
+      }
+    ],
+    "score": 17.87
+  },
+  {
+    "id": "fe7138da15393fbc",
+    "title": "2 days till TechCrunch Founder Summit: Boston founders don’t need a Silicon Valley address to build something big",
+    "url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/",
+    "summary": "TechCrunch Founder Summit happens on November 4 in Boston for a founder-focused agenda and impactful connections. Save up to $100 or get discounts with group passes.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-02T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/"
+      }
+    ],
+    "score": 17.65
+  },
+  {
+    "id": "7580532befd1a168",
+    "title": "Browser Use in Managed Deep Agents",
+    "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
+    "summary": "Managed Deep Agents now runs a browser for your agent, with tools tuned for context-efficient browser use and a handoff so you can sign in yourself.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-02T17:18:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents"
       }
     ],
     "score": 17.48
   },
   {
-    "id": "c2a7ed89839de5f5",
-    "title": "The support case of a customer who said that all they could see was a black screen",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
-    "summary": "<p>Then again, that is what they asked for.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/\">The support case of a customer who said that all they could see was a black screen</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
-    "category": "dev",
-    "source_name": "Raymond Chen (Old New Thing)",
-    "published": "2026-10-29T14:00:00+00:00",
-    "coverage_count": 3,
-    "sources": [
-      {
-        "name": "Raymond Chen (Old New Thing)",
-        "url": "https://devblogs.microsoft.com/oldnewthing/20261030-00/?p=112815/"
-      },
-      {
-        "name": "Raymond Chen (Old New Thing)",
-        "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/"
-      },
-      {
-        "name": "Raymond Chen (Old New Thing)",
-        "url": "https://devblogs.microsoft.com/oldnewthing/20261027-00/?p=112800/"
-      }
-    ],
-    "score": 17.2
-  },
-  {
-    "id": "10c92f06374489a9",
-    "title": "Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption",
-    "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "summary": "<img src=\"https://res.infoq.com/news/2026/10/cf-pq-geokey-manager/en/headerimage/generatedHeaderImage-1793376907936.jpg\" /><p>Cloudflare has moved a post-quantum rebuild of GeoKey Manager into closed beta, guarding geo-fenced keys with hybrid ML-KEM-768 and X25519 instead of the attribute-based encryption used since 2022. Keys live only in kernel memory on verified regional servers, and any failed check rejects the request, a fail-closed choice practitioners ask could cause a regional outage. GA is planned for Q1 2027.</p> <i>By Steef-Jan Wiggers</i>",
-    "category": "news",
-    "source_name": "InfoQ",
-    "published": "2026-10-31T19:56:00+00:00",
+    "id": "52e10ad7e4501911",
+    "title": "New context engineering challenges in late 2026",
+    "url": "https://www.langchain.com/blog/context-engineering-challenges-late-2026",
+    "summary": "LangChain CEO Harrison Chase shares insights into the biggest harness engineering challenges with the emergence of proactive agents.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-02T17:12:41+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "InfoQ",
-        "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/context-engineering-challenges-late-2026"
       }
     ],
-    "score": 17.0
-  },
-  {
-    "id": "3ef35bff22d7809b",
-    "title": "Bliki: LLM Voice",
-    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-    "summary": "<p>Sometimes when I read a post, I get the growing feeling that I'm reading\n  the output of an LLM. I can't necessarily define why, although there are the common\n  tells (it's not the em-dashes, it's the load-bearing tapestries). As I\n  do this my desire to read on atrophies, sometimes to the point of revulsion</p>\n\n<p>There are tools out there that claim to be able to tell the difference\n  between LLM-written prose and the old-fashioned biological product. I'm wary\n  of them, partly due skeptism about their accuracy, but also because it rather\n  misses the point. The reaction to LLM-Voice is a human one, that sense that we\n  are in an <a href=\"https://en.wikipedia.org/wiki/Uncanny_valley\">uncanny\n  valley</a> of prose. By the time I'd reach for a tool to tell me what I'm\n  reading, it's already too late, even if it confidently tells me there's no LLM\n  present.</p>\n\n<p>I'm also suspicious of my own ability to accurately recognize LLM voice. Language\n  changes over time, so a common si",
-    "category": "dev",
-    "source_name": "Martin Fowler",
-    "published": "2026-10-29T14:28:00+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Martin Fowler",
-        "url": "https://martinfowler.com/bliki/LLM-Voice.html"
-      }
-    ],
-    "score": 17.0
-  },
-  {
-    "id": "6f50c0c2f9ee555f",
-    "title": "Why are good developers so wary of agentic development?",
-    "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
-    "summary": "<p class=\"precis\"><b>TL;DR</b><br /><i>Good developers’ caution about agentic development comes from knowing that built isn’t the same as working in production.</i></p>\n<img src=\"https://martinfowler.com/rachels-ramblings/card.png\" /><p>I’ve been surprised by how many excellent developers have been hesitant to go all in on coding agents. These are people who usually try new ways of working before anyone else and in many cases invent new tools and practices that support building the application well. So why have we had so much reluctance?</p>\n\n<p>The easy (lazy?) answer is that they love writing code, or they’re worried about their jobs. I’m sure that’s true for some people, some of the time. And I know it is true for some of the developers I talk to but I always felt there was something else, another fear hiding behind those obvious ones. When we put together the <a href=\"https://www.thoughtworks.com/en-us/radar\">Technology Radar</a> every six months I try to block out a chunk of time ",
-    "category": "dev",
-    "source_name": "Martin Fowler",
-    "published": "2026-10-29T13:50:00+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Martin Fowler",
-        "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
-      }
-    ],
-    "score": 17.0
-  },
-  {
-    "id": "c45d91ea69c3a821",
-    "title": "Fragments: October 28",
-    "url": "https://martinfowler.com/fragments/2026-10-28.html",
-    "summary": "<p>Andrej Karpathy sees <a href=\"https://x.com/karpathy/status/2109361546505966046\">a widening gap</a> in how people see LLM capabilities.</p>\n\n<blockquote>\n  <p>The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time.</p>\n</blockquote>\n\n<p>Many of my colleagues are living in a world where LLM capabilities are stunning, but it’s easy to forget that’s not what most people experience. One thing I do is use free-tier LLM chatbots, and I’m still finding that while most of the time they are useful, their unreliability undermines much of that usefulness. Yes, you can argue that I’m not using frontier tools or a forceful enough harness, but that’s true of most regular folks too. To understand their perception, it’s handy to experience it.</p>\n\n",
-    "category": "dev",
-    "source_name": "Martin Fowler",
-    "published": "2026-10-28T12:55:00+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Martin Fowler",
-        "url": "https://martinfowler.com/fragments/2026-10-28.html"
-      }
-    ],
-    "score": 17.0
-  },
-  {
-    "id": "4c6c24ed5779bebc",
-    "title": "ChatGPT and Codex usage limits merging",
-    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-    "summary": "<p>Article URL: <a href=\"https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits\">https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50320588\">https://news.ycombinator.com/item?id=50320588</a></p>\n<p>Points: 217</p>\n<p># Comments: 163</p>",
-    "category": "news",
-    "source_name": "Hacker News (Best)",
-    "published": "2026-10-31T21:49:07+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Hacker News (Best)",
-        "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
-      }
-    ],
-    "score": 16.82
-  },
-  {
-    "id": "4033ae8922479a24",
-    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-    "summary": "<p>Article URL: <a href=\"https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve\">https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50320995\">https://news.ycombinator.com/item?id=50320995</a></p>\n<p>Points: 428</p>\n<p># Comments: 208</p>",
-    "category": "news",
-    "source_name": "Hacker News (Best)",
-    "published": "2026-10-31T22:46:12+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Hacker News (Best)",
-        "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve"
-      }
-    ],
-    "score": 16.58
-  },
-  {
-    "id": "17ee63e0eb5738f4",
-    "title": "OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements",
-    "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "summary": "<img src=\"https://res.infoq.com/news/2026/10/openbsd-8-released/en/headerimage/openbsd-8-released-1793464400707.jpeg\" /><p>OpenBSD 8.0 is a substantial upgrade bringing broader hardware compatibility, enhanced security, an expanded virtual address space, and support for modern architectures, including Intel Arc A-Series graphics support, ARM64 hibernation, RISC-V improvements, and enhanced virtual machine support.</p> <i>By Sergio De Simone</i>",
-    "category": "news",
-    "source_name": "InfoQ",
-    "published": "2026-10-31T17:00:00+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "InfoQ",
-        "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
-      }
-    ],
-    "score": 16.48
-  },
-  {
-    "id": "6e48bd2e17cb2bae",
-    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-    "summary": "<p>Article URL: <a href=\"https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf\">https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50319143\">https://news.ycombinator.com/item?id=50319143</a></p>\n<p>Points: 705</p>\n<p># Comments: 325</p>",
-    "category": "news",
-    "source_name": "Hacker News (Best)",
-    "published": "2026-10-31T19:16:30+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Hacker News (Best)",
-        "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf"
-      }
-    ],
-    "score": 16.2
-  },
-  {
-    "id": "46ee037952c1e5ec",
-    "title": "Preparing for Your Next Certification Could Start with Your Visual Studio Subscription",
-    "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/",
-    "summary": "<p>Are you thinking about earning a Microsoft certification to help advance your career, build on your existing skills, or meet new requirements at work?  If so, you may already be wondering where to start. Which courses, labs, and hands-on exercises will help you prepare? How much time will it take to find the right resources, [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/\">Preparing for Your Next Certification Could Start with Your Visual Studio Subscription </a> appeared first on <a href=\"https://devblogs.microsoft.com/visualstudio\">Visual Studio Blog</a>.</p>",
-    "category": "dev",
-    "source_name": "Visual Studio Blog",
-    "published": "2026-10-28T22:30:00+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "Visual Studio Blog",
-        "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/"
-      },
-      {
-        "name": "Visual Studio Blog",
-        "url": "https://devblogs.microsoft.com/visualstudio/keep-your-investigation-between-sessions/"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "157b16037df687c6",
-    "title": "Simplifying runtime caching on Vercel",
-    "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
-    "summary": "<p>Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js <code>fetch</code> caching or <code>unstable_cache</code>, you won’t need to change your code. Pro and Enterprise projects will get larger storage allocations.</p><p>Runtime Cache lets your code reuse fetched or computed data across requests without operating a separate caching service. Over the past year, we’ve improved read performance during traffic bursts, increased storage budgets, and made cache usage easier to investigate.</p><h2>Why we built Runtime Cache</h2><p>Data Cache was originally launched as Vercel’s data caching service for the Next.js App Router, used by <code>fetch</code> caching and <code>unstable_cache</code>. Unlike <a href=\"https://vercel.com/docs/caching/cdn-cache\">CDN caching</a>, which stores complete HTTP responses, Data Cache stores data your application uses to generate those responses. A product page, for exa",
-    "category": "cloud",
-    "source_name": "Vercel Blog",
-    "published": "2026-10-30T04:00:00+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "eac94933d765c5f2",
-    "title": "Vercel Daemons can now call services with bindings",
-    "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
-    "summary": "<p><a href=\"https://vercel.com/daemons\">Vercel Daemons</a> can now call the <a href=\"https://vercel.com/docs/services\">services</a> in their deployment through <a href=\"https://vercel.com/docs/services/bindings\">service bindings</a>.</p><p>Declare the binding on the daemon. It names the target service and the environment variable that receives the service's URL:</p><div></div><p>The daemon calls that URL like any other HTTP endpoint. Vercel handles the internal routing, authentication, and TLS, and the service stays private:</p><div></div><p>Bindings point one way: services can't bind to daemons. Each instance keeps calling the deployment that started it, even after a promotion or rollback.</p><p>Learn more about daemon service bindings in the <a href=\"https://vercel.com/docs/daemons#service-bindings\">docs</a>.</p>\n          <p class=\"more\">\n            <a href=\"https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings\">Read more</a>\n          </p>",
-    "category": "cloud",
-    "source_name": "Vercel Blog",
-    "published": "2026-10-30T00:00:00+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "8dadb6d39ef555ee",
-    "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
-    "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
-    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/mistral-large-4\">Mistral Large 4 from Mistral</a> now uses updated weights on <a href=\"https://vercel.com/docs/ai-gateway\">AI Gateway</a>, with lower pricing for input, cached input, and output tokens.</p><p>According to <a href=\"https://mistral.ai/news/mistral-large-4-oss/\">Mistral’s release announcement</a>, the updated weights improve agentic coding and defensive cybersecurity, with greater token efficiency on coding tasks. The release also improves spreadsheet creation and editing, web research, and resistance to prompt injection.</p><p>If you were already using <code>mistral/mistral-large-4</code> via AI Gateway, there is no need to change your model to start using the updated version. The existing model ID string uses the new model with updated weights and pricing.</p><div></div><p>To use Mistral Large 4 in fx, Pi, Claude Code, Codex, Cursor, or other harnesses, install the latest Vercel CLI and run setup:</p><div></div><p>Then sel",
-    "category": "cloud",
-    "source_name": "Vercel Blog",
-    "published": "2026-10-29T00:00:00+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway"
-      },
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/rihpig/mistral-large-4reul-rokeoleseo-silhaenghaneun-bangbeob-3380"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "ae8d6966d7d764b6",
-    "title": "GitLab Orbit is GA: Higher agent accuracy, lower token cost",
-    "url": "https://about.gitlab.com/blog/gitlab-orbit-ga/",
-    "summary": "<p>An agent’s true cost isn’t only the tokens it burns. It’s the review that calls your code “safe to merge” after seeing the diff, but without any context on the pipeline. We call that artificial confidence, not artificial intelligence. Agents guess because code is all they can see; they can’t see the merge request that last changed it, the pipeline that ran it, the vulnerability it carries, or the people who wrote and reviewed it.</p><p>Guessing is expensive. If you’ve tried running agents in a large monorepo, one with tens of thousands of files, you know how it goes: the agent iterates, pinging the backend again and again for the information it needs to complete the task. Every round trip costs more time and more tokens. Eventually the agent gives up.</p><p>The model isn’t the constraint. Context is.</p><p>That’s the constraint that GitLab Orbit removes. Now generally available, Orbit is the context graph for your software lifecycle: a live, queryable view of all your code, merge re",
-    "category": "devops",
-    "source_name": "GitLab Blog",
-    "published": "2026-10-29T00:00:00+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "GitLab Blog",
-        "url": "https://about.gitlab.com/blog/gitlab-orbit-ga/"
-      },
-      {
-        "name": "GitLab Blog",
-        "url": "https://about.gitlab.com/blog/find-vulnerability-blast-radius-with-gitlab-orbit/"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "6b6a5d5cbe4023e0",
-    "title": "Gemini automation: How to use the Zapier Gemini integration (Gemini 3.8 Flash, Gemini Enterprise, and more)",
-    "url": "https://zapier.com/blog/automate-google-ai-studio",
-    "summary": "Anyone who lives in the Google ecosystem has probably used Gemini for a quick draft or a fast answer. (Or if you're like me, you've been driven to your limit by the Google Docs popups encouraging you to use AI whenever your cursor strays too close to the bottom of the screen.) But a chat window is just the beginning of what Gemini can do. Its real power shows up when you connect it to the rest of your apps and let it do work on your behalf. Gemini's models are available in Zapier, so you can add",
-    "category": "dev",
-    "source_name": "Zapier Engineering",
-    "published": "2026-10-29T05:00:00+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "Zapier Engineering",
-        "url": "https://zapier.com/blog/automate-google-ai-studio"
-      },
-      {
-        "name": "Zapier Engineering",
-        "url": "https://zapier.com/blog/google-gemini"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "8cb01e58d88cc938",
-    "title": "AI Made Me Homeless Part 2",
-    "url": "https://medium.com/effortless-programming/ai-made-me-homeless-part-2-3647b2f75112?source=rss-c359511de780------2",
-    "summary": "<h4>How I went from $500k/year to living in my car.</h4><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/836/1*rdnNsKwNxdAcnXOBA7ulpg@2x.jpeg\" /></figure><p>Yesterday, I published an article called “AI Made Me Homeless.”</p><p>I wasn’t prepared for what happened next.</p><p>Friends, former colleagues, and complete strangers began reaching out. Some offered job leads. Others shared stories of losing their own livelihoods. Many donated what they could.</p><p>Within 24 hours, people had donated enough to cover our first month’s rent on an apartment.</p><p>I’m writing this from my car. Tomorrow, if everything goes according to plan, we’ll finally have a bed, a shower, a kitchen, and a place where we can close the door and feel safe.</p><p>I’m overwhelmed with gratitude. After months of sleeping in a car, the kindness of strangers has given us a chance to rebuild.</p><p>I still don’t have a job. I have no sustainable income, and I don’t know where next month’s rent will come fro",
-    "category": "dev",
-    "source_name": "Eric Elliott",
-    "published": "2026-10-30T22:50:08+00:00",
-    "coverage_count": 2,
-    "sources": [
-      {
-        "name": "Eric Elliott",
-        "url": "https://medium.com/effortless-programming/ai-made-me-homeless-part-2-3647b2f75112?source=rss-c359511de780------2"
-      },
-      {
-        "name": "Eric Elliott",
-        "url": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59?source=rss-c359511de780------2"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "3e3f41b6f17ae118",
-    "title": "DevFest is back!",
-    "url": "https://developers.googleblog.com/devfest-is-back/",
-    "summary": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
-    "category": "dev",
-    "source_name": "Google Developers Blog",
-    "published": null,
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Google Developers Blog",
-        "url": "https://developers.googleblog.com/devfest-is-back/"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "03d35da074af0763",
-    "title": "Fast, reliable A2UI, with swappable inference formats",
-    "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
-    "summary": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDKs. Developers can also use controlled generation with TypeSafe's Jev system-decision models to render known-shape screens in under 300 ms while smaller models stream text. These updates require no changes to frontend renderers or component catalogs, offering flexible performance levers for generative UI development across Python, TypeScript, and Dart.",
-    "category": "dev",
-    "source_name": "Google Developers Blog",
-    "published": null,
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Google Developers Blog",
-        "url": "https://developers.googleblog.com/fast-reliable-a2ui/"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "c4730bfbc306b1da",
-    "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
-    "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
-    "summary": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specifications. This update allows developers to route long-lived, bi-directional streams and AI workloads directly through the gateway while maintaining consistent authentication, rate limiting, and observability. Additionally, gateways now feature deterministic default hostnames, simplifying environment provisioning and infrastructure-as-code management.",
-    "category": "dev",
-    "source_name": "Google Developers Blog",
-    "published": null,
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Google Developers Blog",
-        "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/"
-      }
-    ],
-    "score": 16.0
-  },
-  {
-    "id": "f1e8c5e145bccb16",
-    "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
-    "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/",
-    "summary": "Google Research has completed the 32-bit open-source Coral NPU RISC-V architecture with the introduction of its Matrix Execution Unit, which delivers up to 1 TOPS while targeting 10 mW average power for edge inference. Alongside this architecture, the release of the v1.0 open-source IREE/MLIR compiler allows developers to take models from JAX, PyTorch, and TensorFlow straight to Coral NPU hardware without writing custom assembly. Developers can now prototype and deploy these multimodal edge applications using new hardware options like the Synaptics Astra SR200 MCU series and globally available Coralboard devkits.12",
-    "category": "dev",
-    "source_name": "Google Developers Blog",
-    "published": null,
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Google Developers Blog",
-        "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/"
-      }
-    ],
-    "score": 16.0
+    "score": 17.32
   }
 ]

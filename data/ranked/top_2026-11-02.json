@@ -1,42 +1,21 @@
 [
   {
-    "id": "f293ff5486a12dd0",
-    "title": "I Stopped Vibe Coding and Started Using Prompt Contracts, Here's What the Data",
-    "url": "https://dev.to/mashrafaiman/i-stopped-vibe-coding-and-started-using-prompt-contracts-heres-what-the-data-2ab7",
-    "summary": "<div class=\"ltag__link--embedded\">\n  <div class=\"crayons-story \">\n  <a class=\"crayons-story__hidden-navigation-link\" href=\"https://dev.to/mashraf_aiman/i-stopped-vibe-coding-and-started-using-prompt-contracts-heres-what-the-data-279l\">I Stopped Vibe Coding and Started Using Prompt Contracts, Here's What the Data</a>\n\n\n  <div class=\"crayons-story__body crayons-story__body-full_post\">\n    <div class=\"crayons-story__top\">\n      <div class=\"crayons-story__meta\">\n        <div class=\"crayons-story__author-pic\">\n\n          <a class=\"crayons-avatar  crayons-avatar--l  \" href=\"/mashraf_aiman\">\n            <img alt=\"mashraf_aiman profile\" class=\"crayons-avatar__image\" height=\"800\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3558992%2Fdab7a0d1-e0ac-458a-8c1f-01723e9c7c91.jpg\" width=\"800\" />\n          </a>\n        </div>\n        <div>\n          <div>\n     ",
+    "id": "244ee65f32e76b45",
+    "title": "Keep file versions and observation dates separate when reading a CSV",
+    "url": "https://dev.to/thesidelineco/keep-file-versions-and-observation-dates-separate-when-reading-a-csv-2f1h",
+    "summary": "<p>By The Sideline</p>\n\n<p>A data file can have a release date that differs from the date of its observations. A download time is a third timestamp. Treating them as interchangeable can make a dashboard appear fresher than its inputs.</p>\n\n<p>The Sideline's public five-row CSV sample provides a small example. It has sample_version and value_as_of fields, plus value_type to identify the modeled quantity. In the sample checked on November 2, 2026, the version is 2026-10-11 and the value-as-of date is 2026-10-05. Those are sample dates, not a claim that the file describes today's complete athlete dataset.</p>\n\n<p>You can inspect the distinct values before joining or aggregating the file:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight python\"><code><span class=\"kn\">import</span> <span class=\"n\">csv</span>\n\n<span class=\"k\">with</span> <span class=\"nf\">open</span><span class=\"p\">(</span><span class=\"sh\">'</span><span class=\"s\">sample.csv</span><span class=\"sh\">'<",
     "category": "dev",
     "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:46:44+00:00",
-    "coverage_count": 3,
+    "published": "2026-11-02T20:39:30+00:00",
+    "coverage_count": 4,
     "sources": [
       {
         "name": "Dev.to (Top)",
-        "url": "https://dev.to/mashrafaiman/i-stopped-vibe-coding-and-started-using-prompt-contracts-heres-what-the-data-2ab7"
+        "url": "https://dev.to/thesidelineco/keep-file-versions-and-observation-dates-separate-when-reading-a-csv-2f1h"
       },
       {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/mashrafaiman/built-mock-visa-interview-ai-15-countries-expanded-200-universities-in-4-months-742"
-      },
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/mashrafaiman/-23do"
-      }
-    ],
-    "score": 27.0
-  },
-  {
-    "id": "0ac01e17775581a1",
-    "title": "Deploying to 20 Rockchip boards by hand is a trap — so I built rk-deploy",
-    "url": "https://dev.to/anguoyang/deploying-to-20-rockchip-boards-by-hand-is-a-trap-so-i-built-rk-deploy-58c5",
-    "summary": "<p>If you ship software to Rockchip boards — RK3588, RK3576, RK356x — you<br />\nknow the ritual. Build a tarball. <code>scp</code> it to the board. SSH in, untar<br />\nit somewhere, write a systemd unit by hand, <code>daemon-reload</code>, restart,<br />\ntail the journal, and pray. Now do it nineteen more times. Now do it<br />\nagain for the hotfix. Now one board is still running the old version<br />\nand nobody knows which.</p>\n\n<p>I kept living that ritual, so I turned it into a tool:<br />\n<a href=\"https://github.com/anguoyang/rk-deploy\" rel=\"noopener noreferrer\"><strong>rk-deploy</strong></a> — manifest in,<br />\nsystemd services out, with fleet push, rollback and status reports.<br />\nv0.1.0 is out today, Apache-2.0.</p>\n<h2>\n  \n  \n  The shape of it\n</h2>\n\n<p>You describe the app once:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight yaml\"><code><span class=\"na\">name</span><span class=\"pi\">:</span> <span class=\"s\">demo</span>\n<span class=\"na\">version</sp",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:39:29+00:00",
-    "coverage_count": 3,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/anguoyang/deploying-to-20-rockchip-boards-by-hand-is-a-trap-so-i-built-rk-deploy-58c5"
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/get-it-now"
       },
       {
         "name": "The Daily WTF",
@@ -47,18 +26,51 @@
         "url": "https://thedailywtf.com/articles/session-recording"
       }
     ],
+    "score": 30.0
+  },
+  {
+    "id": "cd4289fb5e7ce35e",
+    "title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
+    "url": "https://css-tricks.com/whats-important-20/",
+    "summary": "<p>This is the final issue of What’s !important on CSS-Tricks.com. The good news is that it’s coming back in an expanded form as the CSS-Tricks newsletter. I had ya there for a second, didn’t I? Sorry, I couldn’t decide whether to trick or treat, so I went for both. Happy Halloween</p>\n<hr />\n<p><small><a href=\"https://css-tricks.com/whats-important-20/\" rel=\"nofollow\">What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()</a> originally handwritten and published with love on <a href=\"https://css-tricks.com\" rel=\"nofollow\">CSS-Tricks</a>. You should really <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a> as well.</p>",
+    "category": "dev",
+    "source_name": "CSS-Tricks",
+    "published": "2026-11-02T15:06:07+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/whats-important-20/"
+      },
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/the-frankenstein-table/"
+      },
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/whats-important-19/"
+      }
+    ],
     "score": 27.0
   },
   {
-    "id": "ebecb90c8ac5a312",
-    "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-    "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
-    "summary": "<img alt=\"Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/mlip-tensor-core-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Tensor Core computation for machine learning interatomic potentials\" width=\"768\" />Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These...",
+    "id": "d9528860162c7ca8",
+    "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
+    "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+    "summary": "<img alt=\"Abstract green computing cube with layered panels, performance icons, and streams of data on a black background\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/dgx-spark-inference-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"dgx-spark-inference-featured\" width=\"768\" />Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA...",
     "category": "dev",
     "source_name": "Nvidia Developer Blog",
-    "published": "2026-10-29T15:00:00+00:00",
-    "coverage_count": 10,
+    "published": "2026-10-27T15:00:00+00:00",
+    "coverage_count": 9,
     "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/"
+      },
       {
         "name": "Nvidia Developer Blog",
         "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/"
@@ -77,10 +89,6 @@
       },
       {
         "name": "Nvidia Developer Blog",
-        "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/"
-      },
-      {
-        "name": "Nvidia Developer Blog",
         "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
       },
       {
@@ -90,96 +98,64 @@
       {
         "name": "Nvidia Developer Blog",
         "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
-      },
-      {
-        "name": "Nvidia Developer Blog",
-        "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
-      },
-      {
-        "name": "Nvidia Developer Blog",
-        "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
       }
     ],
     "score": 25.0
   },
   {
-    "id": "565db2ba6b72f1cc",
-    "title": "The fx adapter now runs the harness on the host",
-    "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
-    "summary": "<p>The fx adapter for the AI SDK’s <code>HarnessAgent</code> now uses <code>libfx</code>, the TypeScript library for fx. The harness and model requests run in your application’s process, while built-in filesystem and shell operations remain isolated in the sandbox.</p><p>This simplifies sandbox setup: you no longer need to install fx inside the sandbox, run a sandbox bridge, or expose a sandbox port. Model credentials stay on the host, outside the environment where the agent runs commands.</p><p>The rewrite also adds:</p><ul><li><p><b>Built-in tool filtering: </b>choose which built-in tools the agent can use</p></li><li><p><b>Mid-turn steering: </b>send new instructions while a turn is running</p></li><li><p><b>Structured output: </b>generate responses that match a schema</p></li><li><p><b>Image tool results: </b>return images to the model through <code>toModelOutput()</code></p></li></ul><p>Sessions can be saved and resumed in a new host process.</p><p>Update <code>@ai-sdk/harness-fx<",
+    "id": "1576db32a0e9efdd",
+    "title": "Evaluate Vercel Flags from another project without sharing SDK keys.",
+    "url": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
+    "summary": "<p><a href=\"https://vercel.com/docs/flags/vercel-flags/project-connections\">Project Connections</a> let applications evaluate flags defined in another Vercel project within the same team, without managing SDK keys.</p><div></div><p>Previously, sharing flags between projects required copying a server SDK key into an environment variable and managing it manually. Connected projects authenticate using their deployment’s identity. For local development, <code>vercel env pull</code> retrieves your project’s OIDC token.</p><p>Manage access from the <b>Connections</b> page under your project's Flags section, or with <code>vercel flags connections</code> in the CLI. Connections grant read-only access across all environments. The consumer deployment determines the flag environment (production deployments evaluate production flags). </p><p>In the consumer application, create an adapter with the source project’s ID.</p><div></div><p>Access can be revoked without redeploying. </p><p>Project Connec",
     "category": "cloud",
     "source_name": "Vercel Blog",
-    "published": "2026-10-29T06:00:00+00:00",
-    "coverage_count": 5,
-    "sources": [
-      {
-        "name": "DigitalOcean Blog",
-        "url": "https://www.digitalocean.com/blog/inside-digitalocean-simulations"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/vercel-ci-is-now-in-beta"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/blog/introducing-vercel-ci"
-      }
-    ],
-    "score": 25.0
-  },
-  {
-    "id": "98dbe1324d210dfe",
-    "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free",
-    "url": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
-    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/ling-3.1-flash-1019\">Ling 3.1 Flash 1019 from InclusionAI</a> is now available on <a href=\"https://vercel.com/docs/ai-gateway\">AI Gateway</a>, free until November 3, 2026.</p><p>The updated model is designed for coding, multi-step reasoning, and agents that use tools. Its 1M-token context window supports workflows involving long documents, code, and extended task histories.</p><p>Use <code>inclusionai/ling-3.1-flash-1019</code> as the model name:</p><div></div><p>Free requests still appear in your spend dashboard with a full request trace, they just cost nothing. On November 3, requests will begin charging at the published rate.</p><p>To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup:</p><div></div><p>Then select <code>inclusionai/ling-3.1-flash-1019</code> in the agent. See the <a href=\"https://vercel.com/docs/ai-gateway/coding-agents\">coding agents guide</a> for details.</p><p>You can also t",
-    "category": "cloud",
-    "source_name": "Vercel Blog",
-    "published": "2026-10-30T00:00:00+00:00",
-    "coverage_count": 3,
-    "sources": [
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway"
-      },
-      {
-        "name": "Vercel Blog",
-        "url": "https://vercel.com/blog/ai-gateway-virtual-models"
-      }
-    ],
-    "score": 19.0
-  },
-  {
-    "id": "2237baeccd6e8543",
-    "title": "PHP2Shell and Azure DevOps: what to check",
-    "url": "https://devblogs.microsoft.com/devops/php2shell-and-azure-devops-what-to-check/",
-    "summary": "<p>On October 21, 2026, PHP disclosed two critical vulnerabilities that can allow remote code execution. Neither Azure DevOps Services, our cloud-hosted offering, nor Azure DevOps Server, our on-premises product, uses PHP to handle customer requests. PHP runtimes used by pipelines, containers, and deployed applications have their own patching requirements. Deployment scope: cloud and on-premises Azure [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/devops/php2shell-and-azure-devops-what-to-check/\">PHP2Shell and Azure DevOps: what to check</a> appeared first on <a href=\"https://devblogs.microsoft.com/devops\">Azure DevOps Blog</a>.</p>",
-    "category": "devops",
-    "source_name": "Azure DevOps Blog",
-    "published": "2026-10-26T13:00:38+00:00",
+    "published": "2026-11-02T16:00:00+00:00",
     "coverage_count": 2,
     "sources": [
       {
-        "name": "Azure DevOps Blog",
-        "url": "https://devblogs.microsoft.com/devops/azure-devops-server-rc-26h2-is-now-available/"
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/flags-explorer-redesigned-for-easier-override-sharing"
       },
       {
-        "name": "Azure DevOps Blog",
-        "url": "https://devblogs.microsoft.com/devops/php2shell-and-azure-devops-what-to-check/"
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys"
       }
     ],
-    "score": 16.0
+    "score": 24.0
+  },
+  {
+    "id": "2eded0082c8b15a1",
+    "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+    "summary": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite. In the […]",
+    "category": "cloud",
+    "source_name": "AWS Blog",
+    "published": "2026-11-02T16:45:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/"
+      }
+    ],
+    "score": 22.1
+  },
+  {
+    "id": "33d5579b31766f77",
+    "title": "Instrumentation Hub in Grafana Cloud: start easier, stay in control",
+    "url": "https://grafana.com/blog/instrumentation-hub-start-your-observability-journey-easier-and-still-stay-in-control/",
+    "summary": "<p>It's no secret that getting started with observability can be much harder than it should be. That's why, at ObservabilityCon 2025, we introduced Instrumentation Hub: a guided, scalable way to roll out observability coverage while still keeping <em>you</em> in control. </p><p>Today, we’re excited to announce that <u><a href=\"https://grafana.com/docs/grafana-cloud/send-data/inst-hub-setup/\">Instrumentation Hub</a></u> is now Generally Available in Grafana Cloud.</p><p>As we <u><a href=\"https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/\">hinted at before</a></u>, this new iteration introduces selective OpenTelemetry SDK injection, giving you deeper runtime insights for a wide range of languages to complement eBPF instrumentation with a single click. </p><h2>What is the Instrumentation Hub?</h2><p>Instrumentation Hub makes the biggest bottleneck of starting with observability, instrumentation, faster and eas",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-02T15:44:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/instrumentation-hub-start-your-observability-journey-easier-and-still-stay-in-control/"
+      }
+    ],
+    "score": 21.0
   },
   {
     "id": "82b55eca3d0546ab",
@@ -203,72 +179,76 @@
     "score": 16.0
   },
   {
-    "id": "dcf8e60a9584c3fc",
-    "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
-    "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
-    "summary": "<p>Neat <a href=\"https://www.smithsonianmag.com/smart-news/watch-an-elusive-and-ethereal-bigfin-squid-float-above-the-seafloor-off-central-california-180989491/\">video</a>:</p>\n<blockquote><p>The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the <i>Magnapinna</i> genus, in the northeastern Pacific Ocean.</p></blockquote>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "id": "a815c56766cc1d9c",
+    "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+    "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+    "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.\n\nAccording to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-02T14:46:05+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html"
+      }
+    ],
+    "score": 22.98
+  },
+  {
+    "id": "ee12d97e375233b9",
+    "title": "AI Vulnerability Finding",
+    "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
+    "summary": "<p>A <a href=\"https://x.com/NickADobos/status/2113430301183823901\">comment</a>:</p>\n<blockquote><p>3% of &#8216;critical&#8217; software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how fucking insane that is?</p></blockquote>\n<p>Yes. It is a new world out there.</p>",
     "category": "security",
     "source_name": "Schneier on Security",
-    "published": "2026-10-30T21:04:36+00:00",
+    "published": "2026-11-02T12:02:34+00:00",
     "coverage_count": 1,
     "sources": [
       {
         "name": "Schneier on Security",
-        "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html"
+        "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html"
       }
     ],
-    "score": 17.0
+    "score": 21.33
   },
   {
-    "id": "201241c2ffd8ba6e",
-    "title": "Bloatware in Aftermarket Auto Parts",
-    "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-    "summary": "<p>This <a href=\"https://www.thedrive.com/news/cheap-aftermarket-head-units-are-loaded-with-spyware-by-the-way\">story</a> is interesting:</p>\n<blockquote><p>One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about.</p>\n<p>Among the pre-installed bloatware&#8212;­or spyware, if you’re being less charitable­&#8212;was a voice assistant equipped with WebView, an Android system component that lets apps display content off the web. This apparently always used about a third of processing power, even while idle, which isn’t great. There were also Baidu location services, a call recorder (!), a DAB radio client that is pretty much useless in the U.S., and Adobe Acrobat, presumably so your passenger can entertain themselves with PDFs on the go...</p></blockquote>",
-    "category": "security",
-    "source_name": "Schneier on Security",
-    "published": "2026-10-30T15:20:02+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Schneier on Security",
-        "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html"
-      }
-    ],
-    "score": 17.0
-  },
-  {
-    "id": "fe7eafabc678648b",
-    "title": "If in doubt, delete the uv.lock file",
-    "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
-    "summary": "<p>I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:</p>\n<p><strong>If in doubt, delete the uv.lock file</strong></p>\n<p>Most of my projects are libraries which don't include a <code>uv.lock</code> file, since it's rude for a library dependency to lock versions for anything else that uses it.</p>\n<p>Running <code>uv run pytest</code> etc tends to leave <code>uv.lock</code> files lying around, which are listed in <code>.gitignore</code> and so do not get committed to my repositories.</p>\n<p>But... sometimes that <code>uv.lock</code> pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today:</p>\n<pre><code>error: Failed to build `watchfiles==1.1.1`\n  cause: Call to `maturin.build_wheel` failed\n\nerror: the configured Python interpreter version (3.15) is newer\nthan PyO3's maximum supported version (3.14)\n</code></pre>\n<p>Deleting that file and running <",
+    "id": "359026f51b0f4071",
+    "title": "Introducing the Grid Protectors Program",
+    "url": "https://openai.com/index/grid-protectors-program",
+    "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
     "category": "ai",
-    "source_name": "Simon Willison",
-    "published": "2026-11-01T23:24:22+00:00",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-02T15:00:00+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/"
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/grid-protectors-program"
       }
     ],
-    "score": 21.0
+    "score": 21.54
   },
   {
-    "id": "96d82a863fcfbae7",
-    "title": "Quoting Kyle Kingsbury",
-    "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
-    "summary": "<blockquote cite=\"https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs\"><p>More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]</p>\n<p>In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs\">Kyle Kingsbury</a>, Jepsen results for ParticleDB 1.1.4</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/kyle-kingsbury\">kyle-kingsbury</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=",
+    "id": "edfaac13fa359014",
+    "title": "LifeVal",
+    "url": "https://openai.com/index/lifeval",
+    "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
     "category": "ai",
-    "source_name": "Simon Willison",
-    "published": "2026-11-01T16:49:04+00:00",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-02T09:00:00+00:00",
     "coverage_count": 1,
     "sources": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/"
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/lifeval"
       }
     ],
-    "score": 18.0
+    "score": 18.62
   },
   {
     "id": "09031d97ca51b4f1",
@@ -278,8 +258,24 @@
     "category": "news",
     "source_name": "The New Stack",
     "published": "2026-11-01T16:00:00+00:00",
-    "coverage_count": 5,
+    "coverage_count": 6,
     "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/22842541cognition-devin-hierarchical-budgets/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/canva-brush-design-editing/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/openai-chatgpt-codex-shared-limits/"
+      },
       {
         "name": "The New Stack",
         "url": "https://thenewstack.io/patchmageddon-open-source-security22842502/"
@@ -287,38 +283,26 @@
       {
         "name": "The New Stack",
         "url": "https://thenewstack.io/ai-code-review-invariants/"
-      },
-      {
-        "name": "The New Stack",
-        "url": "https://thenewstack.io/docusign-contract-ai-agents/"
-      },
-      {
-        "name": "The New Stack",
-        "url": "https://thenewstack.io/opensearch-foundation-aws-elasticsearch/"
-      },
-      {
-        "name": "The New Stack",
-        "url": "https://thenewstack.io/tracking-ai-tool-recommendations/"
       }
     ],
-    "score": 33.0
+    "score": 28.0
   },
   {
-    "id": "70867904084fd709",
-    "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
-    "url": "https://hackerbooks.org",
-    "summary": "<p>Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<p>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<p>It counts mentions, so it's not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50326821\">https://news.ycombinator.com/item?id=50326821</a></p>\n<p>Points: 972</p>\n<p># Comments: 186</p>",
+    "id": "5beafcc6efdc5d27",
+    "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+    "summary": "<p>Article URL: <a href=\"https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11\">https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50339494\">https://news.ycombinator.com/item?id=50339494</a></p>\n<p>Points: 206</p>\n<p># Comments: 163</p>",
     "category": "news",
     "source_name": "Hacker News (Best)",
-    "published": "2026-11-01T15:58:28+00:00",
+    "published": "2026-11-02T16:40:29+00:00",
     "coverage_count": 1,
     "sources": [
       {
         "name": "Hacker News (Best)",
-        "url": "https://hackerbooks.org"
+        "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11"
       }
     ],
-    "score": 23.0
+    "score": 25.04
   },
   {
     "id": "fcc4d5bc00a8d8dc",
@@ -328,8 +312,20 @@
     "category": "dev",
     "source_name": "Laravel News",
     "published": "2026-10-29T23:07:33+00:00",
-    "coverage_count": 4,
+    "coverage_count": 5,
     "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/maileroo-laravel-email-testing?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/decide-with-jev-tie-every-ai-check-to-the-exact-draft?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/pie-1-5?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
       {
         "name": "Laravel News",
         "url": "https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
@@ -337,118 +333,122 @@
       {
         "name": "Laravel News",
         "url": "https://laravel-news.com/pollora-wordpress-laravel?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "494996077152bdf1",
+    "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
+    "url": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/en/headerimage/torchtpu-1793636927771.jpeg\" /><p>TorchTPU is an open-source project developed by Google in collaboration with Meta that provides a native PyTorch backend for Google TPUs. It enables PyTorch workloads to execute on TPU hardware with minimal code modifications, supporting eager and compiled execution, distributed computing, and hardware-specific optimizations.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-02T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.81
+  },
+  {
+    "id": "a1946f857397a3c4",
+    "title": "Java News Roundup: TornadoVM 8.0, JNoSQL, Endive, JReleaser, JBang, LangChain4j, Quarkus Almanac",
+    "url": "https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/java-news-roundup-oct26-2026/en/headerimage/java-news-roundup-image-1793638258393.jpg\" /><p>This week's Java roundup for October 26th, 2026, features news highlighting: the GA release of TornadoVM 8.0; point releases of JNoSQL, Endive, JBang, JReleaser and LangChain4j; a maintenance release of JobRunr; beta releases of Hibernate ORM and Hibernate Reactive; and introducing the Quarkus Almanac.</p> <i>By Michael Redlich</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-02T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.7
+  },
+  {
+    "id": "9547bea560c323c6",
+    "title": "Astra can read and write weights to improve Qwen",
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "summary": "<p>Article URL: <a href=\"https://rikiyat.github.io/blog/weight-space-programming/\">https://rikiyat.github.io/blog/weight-space-programming/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50341174\">https://news.ycombinator.com/item?id=50341174</a></p>\n<p>Points: 741</p>\n<p># Comments: 228</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T18:21:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+      }
+    ],
+    "score": 24.16
+  },
+  {
+    "id": "069f65f224b6d797",
+    "title": "German Income Tax Calculation in JavaScript",
+    "url": "https://dev.to/tanzeel_abbas_1288a9e8d4c/german-income-tax-calculation-in-javascript-1ja2",
+    "summary": "<h1>\n  \n  \n  German Income Tax Calculation in JavaScript\n</h1>\n\n<p>German income tax is famously complicated, and for good reason: it is not a simple set of brackets. Germany uses a progressive formula with a tax-free allowance, two curved progression zones, and then flat marginal rates. If you build payroll or salary tools for the German market, a bracket lookup table will give you wrong answers. You need the actual formula.</p>\n\n<blockquote>\n<p>Try the numbers yourself with the free <a href=\"https://freekalc.com/salary-calculator-germany\" rel=\"noopener noreferrer\">Salary Calculator Germany</a> on freekalc.com — enter a gross salary and see the estimated net pay after tax and social contributions.</p>\n</blockquote>\n\n<h2>\n  \n  \n  How the German system is structured\n</h2>\n\n<p>For a single filer in 2026, the structure looks like this:</p>\n\n<ul>\n<li>\n<strong>Basic allowance (Grundfreibetrag):</strong> income up to €12,096 is tax-free</li>\n<li>\n<strong>Progression zone 1:</strong> €12,097 ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-02T20:35:55+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tanzeel_abbas_1288a9e8d4c/german-income-tax-calculation-in-javascript-1ja2"
       },
       {
-        "name": "Laravel News",
-        "url": "https://laravel-news.com/laravel-13-39-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tanzeel_abbas_1288a9e8d4c/1099-self-employment-tax-explained-for-freelance-developers-4mn1"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "d4c8d6f37144c775",
+    "title": "Polyend releases the Tracker firmware source code",
+    "url": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120",
+    "summary": "<p><a href=\"https://lobste.rs/s/gu6yyl/polyend_releases_tracker_firmware\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-02T15:22:16+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120"
       },
       {
-        "name": "Laravel News",
-        "url": "https://laravel-news.com/filament-5-8-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+        "name": "Lobsters",
+        "url": "https://amosbbatto.wordpress.com/2026/10/19/the-advantages-of-mobile-linux-over-aosp/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://www.willmunn.xyz/gemini/python/2026/10/16/we-have-lift-off.html"
+      }
+    ],
+    "score": 22.9
+  },
+  {
+    "id": "4baa7d9e07ce488e",
+    "title": "Podcast: Educating an Architect: A Conversation with Luca Mezzalira",
+    "url": "https://www.infoq.com/podcasts/educating-architect-conversation-luca-mezzalira/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/podcasts/educating-architect-conversation-luca-mezzalira/en/smallimage/infoq-podcast-500-1793347709702.jpg\" /><p>In this podcast, Michael Stiefel spoke to Luca Mezzalira about software architecture as a socio-technical discipline that balances technological design with an organization's social and managerial context. They explored how architectural choices must be adapted to a company's unique culture and team structure rather than relying blindly on universal best practices.</p> <i>By Luca Mezzalira</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-02T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/podcasts/educating-architect-conversation-luca-mezzalira/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
       }
     ],
     "score": 22.0
-  },
-  {
-    "id": "89c1adbf17a800d6",
-    "title": "The commit message was the whole instrument panel",
-    "url": "https://dev.to/phpboyscout/the-commit-message-was-the-whole-instrument-panel-2jp9",
-    "summary": "<p>I asked an agent to work out why a pipeline was failing, and explicitly not to fix it. I wanted the diagnosis.</p>\n\n<p>It fixed it. Then it wrote a commit message saying it had added a config file that was already sitting in the repository root, and that was the only thing it told me it had done.</p>\n\n<h2>\n  \n  \n  The first failure is the boring one\n</h2>\n\n<p>Acting without leave is annoying, and it isn't what actually worries me. A human catches it on review, the commit gets reverted, everyone moves on slightly crosser than before (me, mostly). I've had to say some version of <em>stop committing things I did not ask you to commit</em> more than once, and it's a scope problem with a scope-shaped fix. The commit message is a different animal altogether.</p>\n\n<p>When an agent has been working unattended, its commit messages stop being documentation and turn into the instrument panel: the whole channel through which the work reports what it did, and I read them the way you read a dial,",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:46:27+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/phpboyscout/the-commit-message-was-the-whole-instrument-panel-2jp9"
-      }
-    ],
-    "score": 21.0
-  },
-  {
-    "id": "e554412a2a205caa",
-    "title": "Node.js Text to Image API Integration Queued Rendering Over Immediate Rendering",
-    "url": "https://dev.to/dorianvale91583/nodejs-text-to-image-api-integration-queued-rendering-over-immediate-rendering-3lmp",
-    "summary": "<p>For a Node.js text to image API integration, queued rendering is the better default for a marketplace service that reviews code changes and returns structured findings. Immediate rendering still belongs in a small, interactive path: a reviewer asks for one visual, waits for it, and can retry it. The review pipeline has a different shape. It may process many tenants at once, and its useful output is the structured finding, not the image. Put image generation behind a durable queue, attach <code>tenantId</code> to every event, and make the artifact optional. That gives operators a per-tenant cost view without holding a code review hostage to image latency.</p>\n\n<p>For this Node.js text to image API integration, the API call belongs behind the same tenant-aware job boundary as the review artifact.</p>\n\n<p>Here is the decision table for this shape of system:</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Option</th>\n<th>Pick it when</th>\n<th>Main operational risk</th",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:46:05+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/dorianvale91583/nodejs-text-to-image-api-integration-queued-rendering-over-immediate-rendering-3lmp"
-      }
-    ],
-    "score": 21.0
-  },
-  {
-    "id": "59a0e278df545002",
-    "title": "7 SQL checks I run before UAT sign-off (with queries you can copy)",
-    "url": "https://dev.to/prachitparikh/7-sql-checks-i-run-before-uat-sign-off-with-queries-you-can-copy-38h5",
-    "summary": "<p>The hour I trust least on any project is the one right before UAT sign-off. The testers have clicked through every screen, the defect board is mostly green, and someone is waiting for a signature. Screens can look perfect while the data underneath is wrong, though, and nobody finds out until the first month-end report goes to finance.</p>\n\n<p>So before I sign anything as the business analyst, I run a short set of SQL checks against the test environment. It takes about an hour. Those checks have caught problems that weeks of manual testing walked right past: a load that silently dropped 2% of rows, a currency field that doubled on one branch, customers with orders but no customer record.</p>\n\n<p>Here are the seven checks, with generic queries you can adapt. The table names are made up, so swap in your own.</p>\n\n<h2>\n  \n  \n  Why a business analyst should write SQL at all\n</h2>\n\n<p>You don't need to be a data engineer. You need to be able to answer one question without waiting on anyon",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:45:46+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/prachitparikh/7-sql-checks-i-run-before-uat-sign-off-with-queries-you-can-copy-38h5"
-      }
-    ],
-    "score": 21.0
-  },
-  {
-    "id": "c234805a10699c9d",
-    "title": "SEO AI khác SEO truyền thống ở đâu: nhìn từ phía người viết HTML",
-    "url": "https://dev.to/manhdigital68/seo-ai-khac-seo-truyen-thong-o-dau-nhin-tu-phia-nguoi-viet-html-4f60",
-    "summary": "<p>Dạo này khách hay hỏi team mình một câu: \"Làm SEO AI thì dev phải sửa gì?\". Câu hỏi nghe to, nhưng khi ngồi soát code thì phần việc của dev nhỏ hơn nhiều người nghĩ, và gần như toàn là những thứ SEO kỹ thuật vẫn nói từ lâu.</p>\n\n<p>Trước hết cần tách hai nghĩa của chữ \"SEO AI\". Nghĩa thứ nhất là dùng AI để làm SEO nhanh hơn, ví dụ nhờ ChatGPT gom từ khóa hay viết nháp. Nghĩa thứ hai là làm cho website được các công cụ tìm kiếm có AI như Google AI Overviews, ChatGPT, Gemini, Perplexity đọc được, hiểu đúng và nhắc tên khi người dùng hỏi. Bài này chỉ nói nghĩa thứ hai, và chỉ nói phần chạm tới code.</p>\n\n<h2>\n  \n  \n  1. Nội dung chính phải có sẵn trong HTML ban đầu\n</h2>\n\n<p>Đây là chỗ mình gặp lỗi nhiều nhất ở các site React hoặc framework tương tự. Mở trình duyệt thì thấy đủ, nhưng HTML server trả về chỉ có thế này:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight html\"><code><span class=\"nt\">&lt;body&gt;</span>\n  <span class=\"nt\">&lt;div</span> <span class",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:40:13+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/manhdigital68/seo-ai-khac-seo-truyen-thong-o-dau-nhin-tu-phia-nguoi-viet-html-4f60"
-      }
-    ],
-    "score": 21.0
-  },
-  {
-    "id": "ed6bb6836c7cf154",
-    "title": "Building a Better WordPress Login Experience",
-    "url": "https://dev.to/hmdia/building-a-better-wordpress-login-experience-5686",
-    "summary": "<p>I’m Hamed, the developer behind <strong>HMDIA Login &amp; Registration</strong>, a WordPress plugin for creating custom login, registration, password reset and account pages.</p>\n\n<p>The goal is to make these pages feel like part of your website, while giving administrators control over registration, authentication and user access.</p>\n\n<p><strong>Here’s a look at what it does and how to get started.</strong></p>\n\n<h3>\n  \n  \n  Customize the forms your users interact with\n</h3>\n\n<p>The form builder lets you configure fields, change their order and preview the result. You can adjust the design to match your website and customize the account experience alongside your login and registration forms.</p>\n\n<p>Email templates are customizable too, including verification messages, password resets and administrator notifications.</p>\n\n<h3>\n  \n  \n  Choose how users register and sign in\n</h3>\n\n<p>Different websites need different registration workflows. Some allow users to register immediately, ",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:39:29+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/hmdia/building-a-better-wordpress-login-experience-5686"
-      }
-    ],
-    "score": 21.0
-  },
-  {
-    "id": "f1d7092a68930df2",
-    "title": "Houdini Copernicus to GLB: Nine Bakes and 18 Browser Starts",
-    "url": "https://dev.to/alicia_lu/houdini-copernicus-to-glb-nine-bakes-and-18-browser-starts-3fhj",
-    "summary": "<p><em>Originally published at <a href=\"https://digitalgarden.si/blog/houdini-copernicus-bake-glb-threejs/\" rel=\"noopener noreferrer\">Digital Garden by Alicia</a>.</em></p>\n\n<p>I baked a 55,296-triangle plant fixture onto a 1,056-triangle mesh in Houdini Copernicus, then checked the GLBs in Three.js. The useful result was not a bigger FPS number. It was discovering what the bake, the exporter and the browser each did to the asset.</p>\n\n<p>Nine native map-set writes took median <strong>0.762 s at 512, 1.217 s at 1024 and 3.026 s at 2048</strong>. Those are render-to-disk wall times, including native preparation and PNG encoding, not isolated ray-tracing times. The corrected 1K PNG GLB was <strong>3,019,048 bytes</strong>, larger than the <strong>1,571,676-byte high mesh</strong>. A KTX2 derivative cut that to <strong>645,788 bytes</strong>, while adding a transcode step during loading.</p>\n\n<p>There was also an export problem worth catching before publication: in my Houdini 22.0.429 <co",
-    "category": "dev",
-    "source_name": "Dev.to (Top)",
-    "published": "2026-11-02T02:38:43+00:00",
-    "coverage_count": 1,
-    "sources": [
-      {
-        "name": "Dev.to (Top)",
-        "url": "https://dev.to/alicia_lu/houdini-copernicus-to-glb-nine-bakes-and-18-browser-starts-3fhj"
-      }
-    ],
-    "score": 21.0
   }
 ]
