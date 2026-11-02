@@ -10,18 +10,18 @@ TocOpen: false
 
 **Decode the Stack** is your daily technology briefing.
 
-Every morning (scheduled for 09:00 Brasília time, with a backup at 09:45), our automated pipeline collects, filters, and synthesizes the most relevant technology stories — so you don't have to read 242 feeds.
+Our automated pipeline collects and filters stories from 242 feeds, then writes a morning briefing. It runs at 09:00 Brasília time, with a backup at 09:45.
 
 ## How it works
 
 **242 RSS feeds** → Collection → Clustering → Ranking → AI synthesis → Podcast → **Post on the site**
 
-1. **Collection** — Fetches recent articles from **242 international feeds**: leading engineering blogs, news outlets, and industry experts. Recency windows vary by source and category.
-2. **Clustering** — If 20 sites cover the same news, it becomes one story with the best source. A clustering algorithm (TF-IDF + cosine similarity) automatically removes duplicate coverage.
-3. **Ranking** — Dynamic, score-based selection. Each story receives a score based on source authority, coverage (how many sites reported it), content quality, and recency. The main-story threshold is 20 and the Quick Reads threshold is 10, with category balance and minimum/maximum selection limits. Busy days bring more stories; quieter days bring fewer — without padding the edition with weak content.
-4. **Synthesis** — AI, using OpenAI, Groq, and Azure OpenAI fallback providers, turns the top stories into a well-written, natural English post. This is not a translation — it is synthesis with context and implications.
-5. **Podcast** — A dialogue between three hosts (Anna, Maria, and Pedro) is generated automatically and converted into English audio using OpenAI text-to-speech, with Edge TTS as a fallback. The tone is relaxed and fun — like friends talking tech at a bar. A player appears at the top of each daily post.
-6. **Publication** — The post and audio are generated and published automatically through the scheduled pipeline.
+1. **Collection:** The pipeline fetches recent articles from **242 international feeds**, including engineering blogs, news outlets, and industry experts. Recency windows vary by source and category.
+2. **Clustering:** When 20 sites cover the same news, the pipeline groups them into one story with the best source. TF-IDF and cosine similarity identify duplicate coverage.
+3. **Ranking:** Each story receives a score based on source authority, coverage (how many sites reported it), content quality, and recency. The main-story threshold is 20 and the Quick Reads threshold is 10. Category balance and minimum/maximum selection limits also affect the selection. The number of stories varies with the day's reporting and its quality.
+4. **Synthesis:** OpenAI, Groq, and Azure OpenAI fallback providers turn the selected reporting into an English post with context and implications. The pipeline writes from those sources rather than translating the Portuguese edition.
+5. **Podcast:** The pipeline writes a dialogue for Anna, Maria, and Pedro, then converts it into English audio using OpenAI text-to-speech, with Edge TTS as a fallback. The hosts talk casually, like friends discussing tech at a bar. A player appears at the top of each daily post.
+6. **Publication:** The scheduled pipeline generates and publishes the post and audio automatically.
 
 ## Who is it for?
 
@@ -29,13 +29,11 @@ Technology professionals: **developers, sysadmins, DevOps practitioners, securit
 
 ## Why?
 
-The technology world does not have a content *supply* problem. It has a **filtering** problem.
+There is plenty of technology coverage. Finding useful stories among it takes time.
 
-Every day, the same story gets covered in 20 different ways by 20 different outlets. Meanwhile, genuinely important signals get buried.
+Every day, 20 outlets cover the same story in 20 different ways. Important developments can get buried under that repetition.
 
-**More content doesn't help. Better filtering does.**
-
-Instead of adding noise, Decode the Stack **reduces the noise**. The aim is to save you 30+ minutes of morning reading.
+Decode the Stack reduces the noise by filtering that coverage, with the aim of saving you 30+ minutes of morning reading.
 
 ## Technology stack
 
@@ -68,24 +66,24 @@ The complete catalogue is maintained in [pipeline/sources.yaml](https://github.c
 
 Each post contains:
 
-- **Main stories** (a dynamic selection using a score threshold of 20, category balance, and selection limits) — in-depth synthesis in 2–3 paragraphs, grouped by category (Engineering, Cloud, DevOps, Security, AI/ML)
-- **Quick Reads** (score threshold of 10) — 1–2 sentence summaries of secondary stories
-- **Audio podcast** — a relaxed English conversation between three hosts (Anna, Maria, and Pedro), approximately 15 minutes long
-- **Smart tags** — automatically extracted entities (technologies, companies, products) for browsing by topic
-- **Related editions** — posts connected by tags and categories at the end of each post
-- **Original source links** — always with attribution
+- **Main stories:** Analysis in 2 to 3 paragraphs, grouped by category (Engineering, Cloud, DevOps, Security, AI/ML). Selection uses a score threshold of 20, category balance, and selection limits.
+- **Quick Reads:** Summaries of secondary stories in 1 to 2 sentences, using a score threshold of 10.
+- **Audio podcast:** A relaxed English conversation between Anna, Maria, and Pedro, approximately 15 minutes long.
+- **Smart tags:** Automatically extracted technologies, companies, and products for browsing by topic.
+- **Related editions:** Posts that share tags and categories, listed at the end of each post.
+- **Original source links:** Attribution and links to the original reporting.
 
 ## Site features
 
-- **Search** — full-text search across published posts using custom JavaScript
-- **Archive** — all posts organized chronologically
-- **Statistics** — a public dashboard with pipeline figures (sources, articles, clusters)
-- **Weekly briefing** — every Friday, a re-ranked Top 10 of the week
-- **Comments** — Giscus (GitHub Discussions) integration is prepared but not currently enabled
-- **PWA** — install the site as an app and access cached pages offline
-- **SEO** — JSON-LD (Article/WebSite), Open Graph, sitemap, robots.txt
-- **RSS** — a full feed at `/index.xml`
-- **Categories and tags** — browse by topic and technology
+- **Search:** Full-text search across published posts using custom JavaScript.
+- **Archive:** All posts organized chronologically.
+- **Statistics:** A public dashboard with pipeline figures (sources, articles, clusters).
+- **Weekly briefing:** A re-ranked Top 10 of the week, published every Friday.
+- **Comments:** Giscus (GitHub Discussions) integration is prepared but not currently enabled.
+- **PWA:** Install the site as an app and access cached pages offline.
+- **SEO:** JSON-LD (Article/WebSite), Open Graph, sitemap, and robots.txt.
+- **RSS:** A full feed at `/index.xml`.
+- **Categories and tags:** Browse by topic and technology.
 
 ## Contact
 
@@ -93,7 +91,7 @@ Have suggestions, feedback, or want to contribute?
 
 📧 [Send an email](mailto:rmmartins@outlook.com)
 
-You can also open an issue in the [Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues). Comments on posts are not currently enabled; the prepared [Giscus](https://giscus.app/) integration connects comments to GitHub Discussions and requires a GitHub account when enabled.
+You can also open an issue in the [Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues). Comments on posts are currently disabled. The prepared [Giscus](https://giscus.app/) integration would connect them to GitHub Discussions, where readers sign in with a GitHub account.
 
 ---
 

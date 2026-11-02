@@ -11,7 +11,7 @@
     <div class="hero-copy">
       <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Your daily technology briefing</p>
       <h1 id="hero-title">Less hype.<br><span>More engineering.</span></h1>
-      <p class="hero-description">Cloud, AI, and code that ships to production.<br>We decode what matters across <strong>{{ $sourceCount }} curated sources</strong> so you can understand what changed — and why.</p>
+      <p class="hero-description">Cloud, AI, and code that ships to production.<br>We read <strong>{{ $sourceCount }} curated sources</strong> and explain what changed and why.</p>
       <div class="hero-actions">
         {{- range $latest }}<a class="button button-primary" href="{{ .RelPermalink }}">Read the latest edition <span aria-hidden="true">→</span></a>{{ end }}
         <a class="button button-secondary" href="{{ "podcast/" | relURL }}">{{ partial "brand-icon.html" "headphones" }}Listen to the podcast</a>
@@ -52,7 +52,7 @@
       <aside class="podcast-card" aria-labelledby="podcast-title">
         <p class="eyebrow">{{ partial "brand-icon.html" "headphones" }}On another frequency</p>
         <h3 id="podcast-title">Press play.<br>Connect the dots.</h3>
-        <p>Anna, Maria, and Pedro unpack the technology stories that matter. Three AI-generated English voices, grounded in the day's reporting.</p>
+        <p>Anna, Maria, and Pedro discuss the day's technology stories in English, with AI-generated voices and a script based on the reporting.</p>
         {{- range first 1 (partial "podcast-episodes.html" .) }}
         {{- $audio := partial "podcast-audio-url.html" (.Date.Format "2006-01-02") }}
         <span class="podcast-date">Episode from {{ .Date | time.Format "January 2, 2006" }}</span>
@@ -94,7 +94,7 @@
       <a class="text-link" href="{{ "posts/" | relURL }}">All editions →</a>
     </div>
     <div class="editions-grid">
-      {{- range $paginator.Pages }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">No earlier editions have been published yet. New daily briefings appear here when recent source stories are available.</p>{{ end }}
+      {{- range $paginator.Pages }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">There are no earlier editions yet. Daily briefings appear here as recent stories become available.</p>{{ end }}
     </div>
     {{- if gt $paginator.TotalPages 1 }}
     <nav class="pagination page-footer" aria-label="Edition pagination">
@@ -106,7 +106,7 @@
 
   {{- if eq $paginator.PageNumber 1 }}
   <section class="community-banner" aria-labelledby="community-title">
-    <div><p class="eyebrow">// stay connected</p><h2 id="community-title">Take the signal with you.</h2><p>Follow the written briefing in your RSS reader or subscribe to the separate podcast feed.</p></div>
+    <div><p class="eyebrow">// stay connected</p><h2 id="community-title">Take the signal with you.</h2><p>Read the briefing in your RSS reader or subscribe to the podcast feed.</p></div>
     <div class="community-actions"><a class="button button-primary" href="{{ "index.xml" | relURL }}">News RSS</a><a class="button button-secondary" href="{{ "podcast/feed.xml" | relURL }}">Podcast RSS</a></div>
   </section>
   {{- end }}

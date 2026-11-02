@@ -144,3 +144,15 @@ this sample cannot promise equivalent expressive control.
 The 3000 × 3000 RGB podcast cover is
 `static/images/podcast-cover.png`; regenerate it with
 `python pipeline/generate_podcast_cover.py`.
+
+## Editorial review skill
+
+The project includes [Humanizer](https://github.com/blader/humanizer) v3.1.0 at
+`.github/skills/humanizer/`, pinned to upstream commit
+`0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0`. `SKILL.md` and the MIT `LICENSE`
+are unmodified upstream copies.
+
+The initial review covered fixed public pages and interface copy, preserving
+page structure, facts, links, metadata, and the chosen brand slogans. Historical
+editions, audio, feeds, and generation prompts were excluded. Installing this
+skill does not add an automatic rewriting step to the publishing pipeline.

@@ -6,7 +6,7 @@ url: /stats/
 date: 2026-11-02T00:00:00Z
 ---
 
-These figures describe editions published on this site. They are not counts of
-all stories available on the web or of every item fetched from a source feed.
-The source and category totals count appearances in published editions, so a
-story can contribute to one publisher and one category.
+The publication totals cover editions on this site, excluding unpublished feed
+items and other stories on the web. Source and category totals count story
+appearances in those editions. A story can count toward one publisher and one
+category.

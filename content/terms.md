@@ -39,4 +39,4 @@ Links lead to third-party sites whose content and policies Decode the Stack
 does not control. For corrections or questions about these terms, use the
 [repository issue tracker](https://github.com/ricmmartins/decode-the-stack/issues).
 
-These terms may be updated; the revision date appears above.
+These terms may change. The revision date appears above.

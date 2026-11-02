@@ -9,8 +9,8 @@ ShowReadingTime: false
 ShowToc: false
 ---
 
-Every day, **Anna**, **Maria**, and **Pedro** decode the top technology stories
-in a relaxed, fun conversation — like friends talking tech at a bar.
+Every day, **Anna**, **Maria**, and **Pedro** talk through the top technology
+stories, like friends discussing tech at a bar.
 
 ### Where to listen
 
@@ -21,9 +21,9 @@ in a relaxed, fun conversation — like friends talking tech at a bar.
 
 | Host | Style |
 |---|---|
-| **Anna** | The lead anchor. Guides the show with energy and charisma. Curious and good at explaining things. |
-| **Maria** 🧠 | The technical expert. Brings depth, historical context, and strong opinions. |
-| **Pedro** 😄 | The laid-back one. Jokes, creative analogies, and unexpected insights. |
+| **Anna** | Leads the show with energy and charisma. Asks questions and makes things easy to understand. |
+| **Maria** 🧠 | Gets into the technical details and historical context, with strong opinions. |
+| **Pedro** 😄 | Keeps the conversation relaxed with jokes, creative analogies, and unexpected insights. |
 
 ### About
 
@@ -43,4 +43,4 @@ https://decodethestack.pages.dev/podcast/feed.xml
 
 ---
 
-*Decode the Stack is 100% AI-generated — from news curation to the podcast voices. [Learn more](/about/).*
+*Decode the Stack is 100% AI-generated, from news curation to the podcast voices. [Learn more](/about/).*

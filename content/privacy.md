@@ -18,7 +18,7 @@ storage. That value stays in the browser and is not sent to the publication.
 
 ## Hosting and feed requests
 
-The site and its public files are delivered through Cloudflare Pages.
+Cloudflare Pages delivers the site and its public files.
 Infrastructure providers may process connection and request information,
 including IP addresses, for delivery, security, and service operation. See
 [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/) for
@@ -26,7 +26,7 @@ the provider's terms and practices.
 
 Opening a publisher link sends a request to that publisher. Subscribing to an
 RSS feed also means your feed reader will request the feed from this site.
-Those services have their own privacy policies.
+Each service has its own privacy policy.
 
 ## Podcast audio
 

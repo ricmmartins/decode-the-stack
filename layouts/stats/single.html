@@ -11,10 +11,10 @@
   <section class="section-block">
     <h2>At a glance</h2>
     <div class="stats-grid">
-      <article class="featured-edition"><p class="eyebrow">Configured feeds</p><strong class="stat-number">{{ .configured_feeds }}</strong><p>Public RSS and Atom sources in the current pipeline configuration.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Configured feeds</p><strong class="stat-number">{{ .configured_feeds }}</strong><p>Public RSS and Atom feeds the pipeline is configured to read.</p></article>
       <article class="featured-edition"><p class="eyebrow">Published editions</p><strong class="stat-number">{{ .editions_published }}</strong><p>Daily English editions in the archive.</p></article>
       <article class="featured-edition"><p class="eyebrow">Published stories</p><strong class="stat-number" data-stat="published-stories">{{ .headlines_published }}</strong><p>Main stories and Quick Reads in published editions.</p></article>
-      <article class="featured-edition"><p class="eyebrow">Publishers credited</p><strong class="stat-number">{{ .sources_credited }}</strong><p>Distinct sources represented in the archive.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Publishers credited</p><strong class="stat-number">{{ .sources_credited }}</strong><p>Distinct publishers credited in archived editions.</p></article>
     </div>
   </section>
 
@@ -26,7 +26,7 @@
   {{- with .pipeline_stats }}
   <section class="section-block" aria-labelledby="pipeline-stats-title">
     <h2 id="pipeline-stats-title">Latest pipeline run</h2>
-    <p>Source collection and clustering are processing counts, not published story counts.</p>
+    <p>Collection and clustering counts include items processed before the final stories are selected for publication.</p>
     <div class="stats-grid">
       <article class="featured-edition"><p class="eyebrow">Articles ingested</p><strong class="stat-number" data-stat="articles-ingested">{{ .articles_ingested }}</strong></article>
       <article class="featured-edition"><p class="eyebrow">Story clusters</p><strong class="stat-number" data-stat="clusters-formed">{{ .clusters_formed }}</strong></article>
@@ -84,7 +84,7 @@
     {{- if gt $maximum 0 }}
   <section class="section-block" aria-labelledby="frequent-tags-title">
     <h2 id="frequent-tags-title">Most frequent tags</h2>
-    <p>Tag frequencies in the pipeline's rolling trend data (up to 30 days), not counts of editions.</p>
+    <p>Tag frequencies cover up to 30 days of pipeline trend data. A tag can appear more than once in an edition.</p>
     <div class="tag-chart">
       {{- range .top_tags }}
         {{- $total := index $totals . }}
