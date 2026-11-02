@@ -34,5 +34,5 @@ channel make that status explicit. No audio from another publication is used.
 
 ## Get updates
 
-Subscribe to the [site RSS feed](https://ricmmartins.github.io/decode-the-stack/index.xml)
+Subscribe to the [site RSS feed](https://ricardomartins.com.br/decode-the-stack/index.xml)
 in your preferred feed reader.

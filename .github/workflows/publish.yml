@@ -33,6 +33,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Test feed parsing and edition generation
+        run: python -m unittest discover -s pipeline -p "test_*.py"
+
       - name: Generate today's source-linked edition
         run: python pipeline/publish.py
 

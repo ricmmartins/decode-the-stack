@@ -25,7 +25,7 @@ def validate(root: Path) -> None:
         raise SystemExit("Missing required site output: " + ", ".join(missing))
 
     home = (root / "index.html").read_text(encoding="utf-8")
-    if "https://ricmmartins.github.io/decode-the-stack/" not in home:
+    if "https://ricardomartins.com.br/decode-the-stack/" not in home:
         raise SystemExit("The canonical site URL is missing from the home page.")
     if "Decodifica.Tech" in home or "decodifica.tech" in home:
         raise SystemExit("Portuguese site branding leaked into the English site.")

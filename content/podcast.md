@@ -12,9 +12,9 @@ operations for software professionals.
 
 **Status: no episodes are published yet.** The launch includes no audio files,
 recorded episodes, or Spotify listing. We will publish the first episode here
-and in the [podcast RSS feed](https://ricmmartins.github.io/decode-the-stack/podcast/feed.xml)
+and in the [podcast RSS feed](https://ricardomartins.com.br/decode-the-stack/podcast/feed.xml)
 when an English-language episode is actually available.
 
-Until then, follow the written editions via the [site RSS feed](https://ricmmartins.github.io/decode-the-stack/index.xml).
+Until then, follow the written editions via the [site RSS feed](https://ricardomartins.com.br/decode-the-stack/index.xml).
 
 ![Decode the Stack podcast cover: convergence mark above the English show name and tagline](/decode-the-stack/images/podcast-cover.png)

@@ -18,7 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "pipeline" / "sources.json"
 POSTS_DIR = ROOT / "content" / "posts"
-USER_AGENT = "DecodeTheStack/1.0 (+https://ricmmartins.github.io/decode-the-stack/)"
+USER_AGENT = "DecodeTheStack/1.0 (+https://ricardomartins.com.br/decode-the-stack/)"
 MAX_FEED_BYTES = 2_000_000
 MAX_ITEMS = 12
 

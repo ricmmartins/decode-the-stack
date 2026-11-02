@@ -10,14 +10,15 @@ reporting or claim that feed excerpts are independently verified.
 
 ## Live site and hosting decision
 
-The free launch address is
-[`https://ricmmartins.github.io/decode-the-stack/`](https://ricmmartins.github.io/decode-the-stack/).
+The launch address is
+[`https://ricardomartins.com.br/decode-the-stack/`](https://ricardomartins.com.br/decode-the-stack/).
 GitHub Pages was selected over Cloudflare Pages because the authenticated
 GitHub account can create and deploy this repository, while no independent
-Cloudflare authorization is available for this project. A GitHub Pages project
-URL is available without buying a domain or claiming an organization name.
-The deployment uses GitHub Actions and the official Pages artifact workflow;
-it needs no Cloudflare token or paid hosting account.
+Cloudflare authorization is available for this project. Pages redirects its
+`ricmmartins.github.io` project address to the account's already-configured
+custom Pages domain. That existing domain configuration was not changed and no
+domain was purchased for this launch. The deployment uses GitHub Actions and
+the official Pages artifact workflow; it needs no Cloudflare token.
 
 The site URL includes the repository path. Hugo's `baseURL`, navigation,
 canonical metadata, search index, images, and feeds are configured to preserve
@@ -43,7 +44,7 @@ publication step fails instead of producing an empty or success-shaped issue.
 ## Podcast
 
 Decode the Stack has a distinct podcast identity and a dedicated
-[`/podcast/`](https://ricmmartins.github.io/decode-the-stack/podcast/) page.
+[`/podcast/`](https://ricardomartins.com.br/decode-the-stack/podcast/) page.
 There are no English episodes or audio files at launch, so the page says so
 clearly and the podcast RSS feed contains no fabricated episode. The feed is
 available at `/podcast/feed.xml` for future use; the site RSS at `/index.xml`
