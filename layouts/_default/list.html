@@ -1,0 +1,14 @@
+{{ define "main" }}
+<header class="page-heading">
+  <p class="eyebrow">Archive / {{ .Title }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+</header>
+{{ $pages := .RegularPages.ByDate.Reverse }}
+{{ if eq .Section "posts" }}{{ $pages = .Pages.ByDate.Reverse }}{{ end }}
+{{ $paginator := .Paginate $pages 12 }}
+<div class="card-grid archive-grid">
+  {{ range $paginator.Pages }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">No editions yet. The daily pipeline will publish the first one when recent source stories are available.</p>{{ end }}
+</div>
+{{ template "_internal/pagination.html" . }}
+{{ end }}

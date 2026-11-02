@@ -1,0 +1,6 @@
+<article class="edition-card">
+  <p class="eyebrow">{{ .Date | time.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p>{{ .Description | default .Summary | plainify | htmlUnescape }}</p>
+  <a class="read-link" href="{{ .RelPermalink }}">Read edition <span aria-hidden="true">→</span></a>
+</article>

@@ -1,0 +1,64 @@
+baseURL = "https://ricmmartins.github.io/decode-the-stack/"
+locale = "en"
+title = "Decode the Stack"
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 36
+timeZone = "UTC"
+
+[params]
+  description = "The daily tech briefing for software professionals. Source-linked engineering, cloud, AI, security, and operations news."
+  author = "Decode the Stack"
+  defaultTheme = "light"
+  mainSections = ["posts"]
+  images = ["images/brand-mark.svg"]
+
+[params.label]
+  text = "Decode the Stack"
+  icon = "images/brand-mark.svg"
+  iconHeight = 38
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
+[outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[menu]
+  [[menu.main]]
+    identifier = "editions"
+    name = "Editions"
+    url = "posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "topics"
+    name = "Topics"
+    url = "categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "podcast"
+    name = "Podcast"
+    url = "podcast/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "about/"
+    weight = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[services.rss]
+  limit = 30
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.highlight]
+  codeFences = true
+  noClasses = false

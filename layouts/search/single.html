@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="page-heading">
+  <p class="eyebrow">Find your signal</p>
+  <h1>Search the editions</h1>
+  <p>Search headlines, source excerpts, and topics across the archive.</p>
+</section>
+<section class="search-panel" aria-label="Search">
+  <label for="site-search">Search all editions</label>
+  <input id="site-search" type="search" placeholder="Try cloud, Kubernetes, security…" autocomplete="off">
+  <p id="search-status" class="search-status" aria-live="polite"></p>
+  <div id="search-results" class="card-grid"></div>
+</section>
+{{ end }}

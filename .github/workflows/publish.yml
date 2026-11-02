@@ -1,0 +1,70 @@
+name: Publish Decode the Stack
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: decode-the-stack-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate today's source-linked edition
+        run: python pipeline/publish.py
+
+      - name: Commit generated edition
+        run: |
+          git config user.name "Decode the Stack Bot"
+          git config user.email "decode-the-stack-bot@users.noreply.github.com"
+          git add content/posts
+          if git diff --cached --quiet; then
+            echo "No new edition to commit."
+          else
+            git commit -m "Publish daily tech briefing"
+            git push
+          fi
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build site
+        run: hugo --minify --destination public
+
+      - name: Validate generated site
+        run: python pipeline/validate_site.py public
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

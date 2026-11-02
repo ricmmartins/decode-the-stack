@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ricmmartins.github.io/decode-the-stack/sitemap.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decode the Stack Podcast</title>
+    <link>https://ricmmartins.github.io/decode-the-stack/podcast/</link>
+    <description>English-language podcast companion to Decode the Stack. No episodes have been published yet.</description>
+    <language>en</language>
+    <itunes:author>Decode the Stack</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology"/>
+    <itunes:image href="https://ricmmartins.github.io/decode-the-stack/images/podcast-cover.png"/>
+    <image>
+      <url>https://ricmmartins.github.io/decode-the-stack/images/podcast-cover.png</url>
+      <title>Decode the Stack Podcast</title>
+      <link>https://ricmmartins.github.io/decode-the-stack/podcast/</link>
+    </image>
+    <lastBuildDate>Sun, 01 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://ricmmartins.github.io/decode-the-stack/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+  </channel>
+</rss>
