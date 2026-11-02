@@ -118,6 +118,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .hero h1 span { color: var(--accent-secondary); }
 .hero-description { max-width: 510px; font-size: 17px; line-height: 1.8; color: var(--secondary); }
 .hero-description strong { color: var(--primary); font-weight: 500; }
+.hero-description a, .signal-strip a { text-decoration: underline; text-underline-offset: 3px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; border-radius: 8px; padding: 13px 20px; font-size: 14px; font-weight: 650; border: 1px solid var(--border); transition: border-color .2s, background .2s; }
 .button-primary { background: var(--brand-lime); color: var(--brand-night); border-color: var(--brand-lime); }

@@ -11,7 +11,7 @@
     <div class="hero-copy">
       <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Your daily technology briefing</p>
       <h1 id="hero-title">Less hype.<br><span>More engineering.</span></h1>
-      <p class="hero-description">Cloud, AI, and code that ships to production.<br>We read <strong>{{ $sourceCount }} curated sources</strong> and explain what changed and why.</p>
+      <p class="hero-description">Cloud, AI, and code that ships to production.<br>We read <a href="https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml"><strong>{{ $sourceCount }} curated sources</strong></a> and explain what changed and why.</p>
       <div class="hero-actions">
         {{- range $latest }}<a class="button button-primary" href="{{ .RelPermalink }}">Read the latest edition <span aria-hidden="true">→</span></a>{{ end }}
         <a class="button button-secondary" href="{{ "podcast/" | relURL }}">{{ partial "brand-icon.html" "headphones" }}Listen to the podcast</a>
@@ -34,7 +34,7 @@
 
   <div class="signal-strip" aria-label="About the briefing">
     <span class="signal-label">// information with context</span>
-    <span><strong>{{ $sourceCount }}</strong> curated sources</span>
+    <span><a href="https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml"><strong>{{ $sourceCount }}</strong> curated sources</a></span>
     <span><strong>Text + audio</strong> editions</span>
   </div>
 

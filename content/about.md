@@ -10,13 +10,13 @@ TocOpen: false
 
 **Decode the Stack** is your daily technology briefing.
 
-Our automated pipeline collects and filters stories from 242 feeds, then writes a morning briefing. It runs at 07:00 EST (08:00 EDT during daylight saving time), with a backup 45 minutes later.
+Our automated pipeline collects and filters stories from [242 feeds](https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml), then writes a morning briefing. It runs at 07:00 EST (08:00 EDT during daylight saving time), with a backup 45 minutes later.
 
 ## How it works
 
-**242 RSS feeds** → Collection → Clustering → Ranking → AI synthesis → Podcast → **Post on the site**
+[**242 RSS feeds**](https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml) → Collection → Clustering → Ranking → AI synthesis → Podcast → **Post on the site**
 
-1. **Collection:** The pipeline fetches recent articles from **242 international feeds**, including engineering blogs, news outlets, and industry experts. Recency windows vary by source and category.
+1. **Collection:** The pipeline fetches recent articles from [**242 international feeds**](https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml), including engineering blogs, news outlets, and industry experts. Recency windows vary by source and category.
 2. **Clustering:** When 20 sites cover the same news, the pipeline groups them into one story with the best source. TF-IDF and cosine similarity identify duplicate coverage.
 3. **Ranking:** Each story receives a score based on source authority, coverage (how many sites reported it), content quality, and recency. The main-story threshold is 20 and the Quick Reads threshold is 10. Category balance and minimum/maximum selection limits also affect the selection. The number of stories varies with the day's reporting and its quality.
 4. **Synthesis:** OpenAI, Groq, and Azure OpenAI fallback providers turn the selected reporting into an English post with context and implications. The pipeline writes from those sources rather than translating the Portuguese edition.
@@ -50,7 +50,7 @@ Decode the Stack reduces the noise by filtering that coverage, with the aim of s
 
 ## Sources
 
-We cover **242 international technology feeds**:
+We cover [**242 international technology feeds**](https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml):
 
 - **Engineering (172 feeds):** Netflix, Airbnb, Spotify, Stripe, Cloudflare, GitHub, Meta, Google, Microsoft, Visual Studio, PowerShell, GitHub Blog, Discord, Shopify, Slack, Dropbox, Databricks, PayPal, eBay, NVIDIA, Jane Street, Tailscale, PostHog, Palantir, Zapier, Squarespace, Thoughtbot, Evil Martians, Martin Fowler, Julia Evans, Dan Luu, Paul Graham, Bryan Cantrill, Guido van Rossum, and many more
 - **Cloud:** AWS, Azure, Vercel, Supabase, HashiCorp, Fly.io, Render, PlanetScale, Cloudinary, Akamai, Fastly

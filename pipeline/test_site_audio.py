@@ -166,6 +166,19 @@ class SiteAudioTests(unittest.TestCase):
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)
                 home_soup = BeautifulSoup(home, "html.parser")
+                catalogue = "https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml"
+                for selector in (".hero-description", ".signal-strip"):
+                    link = home_soup.select_one(f'{selector} a[href="{catalogue}"]')
+                    self.assertIsNotNone(link)
+                    self.assertEqual(link.get_text(" ", strip=True), "242 curated sources")
+                self.assertEqual(
+                    [link.get_text(" ", strip=True) for link in about.select(
+                        f'.post-content a[href="{catalogue}"]'
+                    )],
+                    ["242 feeds", "242 RSS feeds", "242 international feeds",
+                     "242 international technology feeds", "pipeline/sources.yaml"],
+                )
+                self.assertNotIn("<a", about.select_one('meta[name="description"]')["content"])
                 self.assertEqual(
                     home_soup.select_one(".hero .eyebrow").get_text(strip=True),
                     "Your daily technology briefing",
