@@ -78,6 +78,23 @@ class SiteAudioTests(unittest.TestCase):
                     for link in podcast_page.select('link[rel="stylesheet"]')
                 )
                 compact_styles = re.sub(r"\s+", "", styles)
+                editions = BeautifulSoup(
+                    (root / "public/posts/index.html").read_text(encoding="utf-8"), "html.parser",
+                )
+                self.assertEqual(len(editions.select("main .editions-list > .post-entry")), 2)
+                self.assertIsNone(editions.select_one("main .editions-grid"))
+                self.assertIn(
+                    ".editions-list{display:flex;flex-direction:column;gap:18px}",
+                    compact_styles,
+                )
+                self.assertIn(
+                    ".editions-list.post-entry{margin:0;padding:20px;min-width:0;overflow-wrap:anywhere}",
+                    compact_styles,
+                )
+                self.assertIn(
+                    ".editions-list.entry-headerh2{font-size:22px;line-height:1.3}",
+                    compact_styles,
+                )
                 self.assertIn(
                     ".post-contentpre{margin:20px0;padding:10px;overflow-x:auto;background:var(--code-block-bg);border-radius:6px}",
                     compact_styles,

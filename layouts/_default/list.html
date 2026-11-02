@@ -7,7 +7,7 @@
 </header>
 {{- $pages := .RegularPages.ByDate.Reverse }}
 {{- $paginator := .Paginate $pages 12 }}
-<div class="editions-grid">
+<div class="editions-list">
   {{- range $paginator.Pages }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">No editions have been published yet.</p>{{ end }}
 </div>
 {{- if gt $paginator.TotalPages 1 }}
