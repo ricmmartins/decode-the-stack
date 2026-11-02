@@ -1,6 +1,5 @@
 {{ define "main" }}
-{{- $posts := where site.RegularPages "Section" "posts" }}
-{{- $posts = $posts.ByDate.Reverse }}
+{{- $posts := partial "podcast-episodes.html" . }}
 <article class="post-single">
   <header class="post-header">
     <p class="eyebrow">The Decode the Stack Podcast</p>

@@ -1,0 +1,8 @@
+{{- $episodes := slice }}
+{{- range (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+  {{- $audio := printf "static/podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
+  {{- if and (not (in .Params.categories "Weekly Briefing")) (fileExists $audio) }}
+    {{- $episodes = $episodes | append . }}
+  {{- end }}
+{{- end }}
+{{- return $episodes }}
