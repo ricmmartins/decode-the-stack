@@ -52,6 +52,17 @@ class SiteAudioTests(unittest.TestCase):
                     self.assertEqual(sources, [f"/podcast/audio/2026-11-02.mp3?v={digest}"])
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)
+                home_soup = BeautifulSoup(home, "html.parser")
+                self.assertEqual(
+                    home_soup.select_one(".hero .eyebrow").get_text(strip=True),
+                    "Your daily technology briefing",
+                )
+                self.assertNotIn("English", home_soup.select_one(".signal-strip").get_text())
+                self.assertEqual(
+                    home_soup.select_one(".footer-brand p").get_text(strip=True),
+                    "Many sources. One direction.",
+                )
+                self.assertEqual(home_soup.html["lang"], "en")
                 edition = (root / "public" / "posts" / "2026-11-02-daily" / "index.html")
                 self.assertIn("<audio", edition.read_text(encoding="utf-8"))
                 for page in ("index.html", "categories/index.html"):
