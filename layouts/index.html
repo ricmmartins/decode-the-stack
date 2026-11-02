@@ -4,7 +4,7 @@
 {{- $posts = $posts.ByDate.Reverse }}
 {{- $latest := first 1 $posts }}
 {{- $paginator := .Paginate (after 1 $posts) 6 }}
-{{- $sourceCount := hugo.Data.stats.configured_feeds | default 0 }}
+{{- $sourceCount := len (partialCached "source-catalogue.html" .) }}
 <div class="home-page">
   {{- if eq $paginator.PageNumber 1 }}
   <section class="hero" aria-labelledby="hero-title">

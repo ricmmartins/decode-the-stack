@@ -54,6 +54,18 @@ fallback. The script target is about 15 minutes. Provider credentials remain
 on the authenticated original publishing runner and are not copied into this
 repository.
 
+Provider order describes configuration, not guaranteed availability. The
+November 2 regeneration used Azure OpenAI for text and Edge TTS for audio;
+OpenAI reported exhausted credit and Groq reported an unavailable model.
+The approximately 15-minute script target remains unchanged.
+
+Hugo reads `pipeline/sources.yaml` directly at build time for current source
+totals on the home, About, and statistics pages, including About's engineering
+category count. Missing, malformed, or empty catalogues fail the build.
+Publication history and per-edition collection statistics retain their recorded
+counts. About's metadata uses number-free wording so it cannot retain an old
+catalogue size in search descriptions or JSON-LD.
+
 The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
 English. `OPENAI_TTS_VOICE_PEDRO` configures Pedro's primary voice; the Edge
 fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.

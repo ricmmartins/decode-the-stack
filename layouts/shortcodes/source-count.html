@@ -1,0 +1,5 @@
+{{- $sources := partialCached "source-catalogue.html" . -}}
+{{- with .Get "category" -}}
+  {{- $sources = where $sources "category" . -}}
+{{- end -}}
+{{- len $sources -}}

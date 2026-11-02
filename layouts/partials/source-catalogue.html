@@ -1,0 +1,19 @@
+{{- $catalogue := os.ReadFile "pipeline/sources.yaml" | transform.Unmarshal -}}
+{{- if not (reflect.IsMap $catalogue) -}}
+  {{- errorf "Source catalogue must be a YAML mapping" -}}
+{{- end -}}
+{{- $sources := $catalogue.sources -}}
+{{- if not (reflect.IsSlice $sources) -}}
+  {{- errorf "Source catalogue must contain a sources array" -}}
+{{- end -}}
+{{- if not (len $sources) -}}
+  {{- errorf "Source catalogue must not be empty" -}}
+{{- end -}}
+{{- range $sources -}}
+  {{- if not (reflect.IsMap .) -}}
+    {{- errorf "Each source must be a mapping" -}}
+  {{- else if or (not .name) (not .url) (not .category) -}}
+    {{- errorf "Each source requires name, url, and category" -}}
+  {{- end -}}
+{{- end -}}
+{{- return $sources -}}

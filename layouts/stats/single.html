@@ -11,7 +11,7 @@
   <section class="section-block">
     <h2>At a glance</h2>
     <div class="stats-grid">
-      <article class="featured-edition"><p class="eyebrow">Configured feeds</p><strong class="stat-number">{{ .configured_feeds }}</strong><p>Public RSS and Atom feeds the pipeline is configured to read.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Configured feeds</p><strong class="stat-number" data-stat="configured-feeds">{{ len (partialCached "source-catalogue.html" $) }}</strong><p>Public RSS and Atom feeds the pipeline is configured to read.</p></article>
       <article class="featured-edition"><p class="eyebrow">Published editions</p><strong class="stat-number">{{ .editions_published }}</strong><p>Daily English editions in the archive.</p></article>
       <article class="featured-edition"><p class="eyebrow">Published stories</p><strong class="stat-number" data-stat="published-stories">{{ .headlines_published }}</strong><p>Main stories and Quick Reads in published editions.</p></article>
       <article class="featured-edition"><p class="eyebrow">Publishers credited</p><strong class="stat-number">{{ .sources_credited }}</strong><p>Distinct publishers credited in archived editions.</p></article>

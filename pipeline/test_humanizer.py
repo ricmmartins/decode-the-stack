@@ -170,6 +170,8 @@ class HumanizerTests(unittest.TestCase):
             root = Path(directory)
             project = humanizer.PROJECT_DIR
             shutil.copy2(project / "hugo.toml", root / "hugo.toml")
+            (root / "pipeline").mkdir()
+            shutil.copy2(project / "pipeline/sources.yaml", root / "pipeline/sources.yaml")
             for name in ("assets", "layouts", "content", "data", "static", ".github"):
                 shutil.copytree(project / name, root / name)
             def build():

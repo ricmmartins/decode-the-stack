@@ -23,6 +23,8 @@ class SiteAudioTests(unittest.TestCase):
             with self.subTest(date=date), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 shutil.copy2(ROOT / "hugo.toml", root / "hugo.toml")
+                (root / "pipeline").mkdir()
+                shutil.copy2(ROOT / "pipeline/sources.yaml", root / "pipeline/sources.yaml")
                 for name in ("assets", "layouts", "content", "data", "static", ".github"):
                     ignore = shutil.ignore_patterns("posts") if name == "content" else None
                     shutil.copytree(ROOT / name, root / name, ignore=ignore)
@@ -262,12 +264,57 @@ class SiteAudioTests(unittest.TestCase):
                     self.assertFalse(details.has_attr("open"))
                     self.assertIn(f'{len(data["source_counts"]) - 10} more publishers', details.select_one("summary").get_text())
                 self.assertEqual(int(statistics.select_one('[data-stat="published-stories"]').get_text()), data["headlines_published"])
+                self.assertEqual(statistics.select_one('[data-stat="configured-feeds"]').get_text(), "242")
                 pipeline = json.loads((root / "static/data/pipeline_stats.json").read_text(encoding="utf-8"))
                 for field, key in (
                     ("articles-ingested", "articles_ingested"), ("clusters-formed", "clusters_formed"),
                     ("main-stories", "main_stories"), ("quick-reads", "radar_items"),
                 ):
                     self.assertEqual(int(statistics.select_one(f'[data-stat="{field}"]').get_text()), pipeline[key])
+
+                history = {
+                    path: path.read_bytes()
+                    for folder in ("content/posts", "data")
+                    for path in (root / folder).rglob("*") if path.is_file()
+                }
+                catalogue_path = root / "pipeline/sources.yaml"
+                original_catalogue = catalogue_path.read_text(encoding="utf-8")
+                catalogue_path.write_text(
+                    original_catalogue + '\n  - name: Build test feed\n'
+                    '    url: https://example.com/feed.xml\n    category: dev\n    tier: 2\n',
+                    encoding="utf-8",
+                )
+                subprocess.run(
+                    ["hugo", "--minify", "--buildFuture", "--source", str(root)],
+                    check=True, capture_output=True, text=True,
+                )
+                for route, expected in (
+                    ("index.html", "243 curated sources"),
+                    ("about/index.html", "243 international technology feeds"),
+                    ("stats/index.html", "243"),
+                ):
+                    updated = BeautifulSoup((root / "public" / route).read_text(encoding="utf-8"), "html.parser")
+                    if route.startswith("stats"):
+                        self.assertEqual(updated.select_one('[data-stat="configured-feeds"]').get_text(), expected)
+                    else:
+                        self.assertIn(expected, updated.select_one("main").get_text(" ", strip=True))
+                    if route.startswith("about"):
+                        self.assertIn("Engineering (173 feeds)", updated.get_text(" ", strip=True))
+                        description = updated.select_one('meta[name="description"]')["content"]
+                        self.assertNotRegex(description, r"\b24[23]\b")
+                        for schema in updated.select('script[type="application/ld+json"]'):
+                            self.assertNotRegex(json.loads(schema.string)["description"], r"\b24[23]\b")
+                for path, content in history.items():
+                    self.assertEqual(path.read_bytes(), content, path)
+                for invalid in ("sources: []", "sources: invalid", "sources: ["):
+                    catalogue_path.write_text(invalid, encoding="utf-8")
+                    result = subprocess.run(
+                        ["hugo", "--source", str(root)], capture_output=True, text=True,
+                    )
+                    self.assertNotEqual(result.returncode, 0, invalid)
+                catalogue_path.unlink()
+                result = subprocess.run(["hugo", "--source", str(root)], capture_output=True, text=True)
+                self.assertNotEqual(result.returncode, 0)
 
 
 if __name__ == "__main__":
