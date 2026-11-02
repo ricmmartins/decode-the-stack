@@ -11,7 +11,7 @@
       {{- errorf "Missing required Humanizer receipt for %s" $path }}
     {{- else }}
       {{- $receipt := os.ReadFile $receiptPath | transform.Unmarshal }}
-      {{- if or (ne $receipt.version 1) (ne $receipt.post_sha256 $hash) (ne $receipt.skill_sha256 $skillHash) (ne $receipt.meaning_verified true) (ne (len (findRE "^[a-f0-9]{64}$" $receipt.input_sha256)) 1) }}
+      {{- if or (eq (printf "%T" $receipt.version) "string") (ne (printf "%v" $receipt.version) "1") (ne $receipt.post_sha256 $hash) (ne $receipt.skill_sha256 $skillHash) (ne $receipt.meaning_verified true) (ne (len (findRE "^[a-f0-9]{64}$" $receipt.input_sha256)) 1) }}
         {{- errorf "Invalid or stale Humanizer receipt for %s" $path }}
       {{- end }}
     {{- end }}

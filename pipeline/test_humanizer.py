@@ -185,6 +185,18 @@ class HumanizerTests(unittest.TestCase):
                 humanizer.write_reviewed_post(manual, POST, root)
             result = build()
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            receipt_path = root / "data/humanizer/2026-11-06-manual.json"
+            receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+            for change in (
+                {"version": 2}, {"version": "1"}, {"meaning_verified": False},
+                {"post_sha256": "0" * 64}, {"skill_sha256": "0" * 64},
+                {"input_sha256": "invalid"},
+            ):
+                receipt_path.write_text(json.dumps({**receipt, **change}), encoding="utf-8")
+                self.assertNotEqual(build().returncode, 0, change)
+                with self.assertRaises(humanizer.HumanizerError):
+                    humanizer.validate_posts(root)
+            receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
             manual.write_text(manual.read_text(encoding="utf-8") + "\nChanged after review.", encoding="utf-8")
             self.assertNotEqual(build().returncode, 0)
             manual.unlink()
