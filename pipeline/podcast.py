@@ -119,7 +119,7 @@ EDGE_TTS_RATE = _configured_edge_tts_rate()
 
 HOST_A = "Anna"
 HOST_B = "Maria"
-HOST_C = "Alex"
+HOST_C = "Pedro"
 
 EDGE_VOICE_A = "en-US-AriaNeural"
 EDGE_VOICE_B = "en-US-JennyNeural"
@@ -128,10 +128,7 @@ EDGE_VOICE_C = "en-US-GuyNeural"
 OPENAI_TTS_MODEL = os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
 OPENAI_VOICE_A = os.environ.get("OPENAI_TTS_VOICE_ANNA", "marin")
 OPENAI_VOICE_B = os.environ.get("OPENAI_TTS_VOICE_MARIA", "sage")
-OPENAI_VOICE_C = os.environ.get(
-    "OPENAI_TTS_VOICE_ALEX",
-    os.environ.get("OPENAI_TTS_VOICE_PEDRO", "ash"),
-)
+OPENAI_VOICE_C = os.environ.get("OPENAI_TTS_VOICE_PEDRO", "ash")
 OPENAI_TTS_MAX_CHARS = 4000
 
 OPENAI_VOICE_MAP = {
@@ -162,7 +159,7 @@ HOST_VOCAL_INSTRUCTIONS = {
         f"concepts. {SHARED_VOCAL_DIRECTION}"
     ),
     HOST_C: (
-        "You are Alex, the conversational co-host on an English-language "
+        "You are Pedro, the conversational co-host on an English-language "
         "technology podcast. Be relaxed, reflective, and lightly funny. "
         f"{SHARED_VOCAL_DIRECTION}"
     ),
@@ -180,7 +177,7 @@ HD_TEMPERATURE = "0.8"  # Kept for reference (unused with edge-tts)
 JINGLE_URL = ""
 
 # Background music file (lo-fi, CC0, for ambient bed under voices)
-BG_MUSIC_PATH = PROJECT_DIR / "static" / "podcast" / "audio" / "bgmusic.mp3"
+BG_MUSIC_PATH = PROJECT_DIR / "static" / "podcast" / "music" / "bgmusic.mp3"
 BG_MUSIC_DB = -20  # Volume reduction in dB (negative = quieter)
 
 # ── English tech terms for correct pronunciation via <lang> tags ──
@@ -273,7 +270,7 @@ Example:
 [INTRO]
 {HOST_A}: Welcome to Decode the Stack. I'm Anna, and today we're connecting the engineering decisions behind the headlines.
 {HOST_B}: I'm Maria. I have a question about the trade-off in that first release.
-{HOST_C}: And I'm Alex. Let's get into it.
+{HOST_C}: And I'm Pedro. Let's get into it.
 [TOPIC_CHANGE]
 {HOST_B}: Here's what the source material actually confirms, and where the open questions remain.
 """
@@ -316,7 +313,8 @@ def generate_podcast_script(synthesis_content):
                    (index + 1) * len(blocks) // section_count]
         )
         position = (
-            "Open with a short teaser, then [INTRO] and the show welcome."
+            "Open with a short teaser, then [INTRO] and the show welcome. "
+            "Each host must introduce themselves by name: Anna, Maria, Pedro."
             if index == 0 else
             "Finish with a brief sign-off; do not introduce the show again."
             if index == section_count - 1 else
@@ -327,10 +325,10 @@ def generate_podcast_script(synthesis_content):
             f"This is section {index + 1} of {section_count}. {position}\n"
             f"Write {section_minimum}-{section_maximum} spoken words, excluding "
             "speaker labels and markers. This is a strict section budget, not the "
-            "whole episode. Use all three speakers Anna:, Maria:, and Alex:, "
+            "whole episode. Use all three speakers Anna:, Maria:, and Pedro:, "
             "one turn per line, at most three sentences per turn. "
             "Anna is the clear, concise anchor; Maria adds technical depth; "
-            "Alex asks practical questions in a conversational tone. "
+            "Pedro asks practical questions in a conversational tone. "
             "Explain the supplied stories, engineering trade-offs, uncertainty, "
             "and practical questions using only the supplied evidence. "
             "Never invent facts, quotations, numbers, examples presented as facts, "
@@ -387,7 +385,7 @@ def _validate_dialogue(script):
         line = line.strip()
         if not line or line in {"[INTRO]", "[TOPIC_CHANGE]"}:
             continue
-        match = re.fullmatch(r"(Anna|Maria|Alex):\s*(\S.*)", line)
+        match = re.fullmatch(r"(Anna|Maria|Pedro):\s*(\S.*)", line)
         if not match:
             raise ValueError(f"Podcast contains an unrecognized dialogue line: {line[:80]}")
         speakers.add(match.group(1))
@@ -402,7 +400,7 @@ def _spoken_word_count(script):
         line = line.strip()
         if not line or line in {"[INTRO]", "[TOPIC_CHANGE]"}:
             continue
-        line = re.sub(r"^(?:Anna|Maria|Alex):\s*", "", line)
+        line = re.sub(r"^(?:Anna|Maria|Pedro):\s*", "", line)
         line = re.sub(r"\([^)]*\)", "", line)
         words.extend(re.findall(r"\b[\w'-]+\b", line))
     return len(words)
@@ -557,35 +555,26 @@ def script_to_ssml(script):
 def _overlay_background_music(speech_path):
     """Overlay lo-fi background music at low volume under the speech."""
     if not BG_MUSIC_PATH.exists():
-        print("[INFO]  No English background music file found; skipping optional music bed.")
-        return
+        raise FileNotFoundError(f"Required podcast background music is missing: {BG_MUSIC_PATH}")
+    from pydub import AudioSegment
 
+    speech = AudioSegment.from_mp3(str(speech_path))
+    music = AudioSegment.from_mp3(str(BG_MUSIC_PATH))
+    speech_len = len(speech)
+    if not speech_len or not len(music):
+        raise ValueError("Speech and background music must contain nonempty audio.")
+    if len(music) < speech_len:
+        music = music * ((speech_len // len(music)) + 1)
+    music = music[:speech_len]
+    music = (music + BG_MUSIC_DB).fade_in(3000).fade_out(5000)
+    combined = speech.overlay(music)
+    temporary = Path(speech_path).with_suffix(".mix.mp3")
     try:
-        from pydub import AudioSegment
-    except ImportError:
-        print("[WARN]  pydub not installed, skipping background music")
-        return
-
-    try:
-        speech = AudioSegment.from_mp3(str(speech_path))
-        music = AudioSegment.from_mp3(str(BG_MUSIC_PATH))
-
-        # Loop music to cover full speech duration
-        speech_len = len(speech)
-        if len(music) < speech_len:
-            loops_needed = (speech_len // len(music)) + 1
-            music = music * loops_needed
-        music = music[:speech_len]  # Trim to exact speech length
-
-        # Volume: reduce, fade in (3s), fade out (5s)
-        music = music + BG_MUSIC_DB  # e.g. -20 dB
-        music = music.fade_in(3000).fade_out(5000)
-
-        combined = speech.overlay(music)
-        combined.export(str(speech_path), format="mp3", bitrate=MP3_BITRATE)
-        print(f"[AUDIO] Background music overlaid ({BG_MUSIC_DB} dB, {speech_len/1000:.0f}s)")
-    except Exception as e:
-        print(f"[WARN]  Background music overlay failed (non-blocking): {e}")
+        combined.export(str(temporary), format="mp3", bitrate=MP3_BITRATE)
+        temporary.replace(speech_path)
+    finally:
+        temporary.unlink(missing_ok=True)
+    print(f"[AUDIO] Background music overlaid ({BG_MUSIC_DB} dB, {speech_len/1000:.0f}s; fades 3s/5s)")
 
 
 def _post_process_audio(output_path):
@@ -1040,9 +1029,22 @@ def _generate_chapters(script, date_str):
     print(f"[CHAPTERS] Chapters generated: {len(chapters)} chapters to {output.name}")
 
 
-def run(date_str=None):
+def run(date_str=None, reuse_script=False):
     """Generate podcast for the given date. Returns the audio path or None."""
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    script_file = DATA_DIR / f"podcast_script_{date}.txt"
+    if reuse_script:
+        script = script_file.read_text(encoding="utf-8").strip()
+        _validate_dialogue(script)
+        minimum, maximum = _script_word_range(PODCAST_TARGET_MINUTES)
+        words = _spoken_word_count(script)
+        if not minimum <= words <= maximum:
+            raise ValueError(f"Saved podcast has {words} words; required {minimum}-{maximum}.")
+        print(f"[RECOVERY] Reusing saved {words}-word podcast script; no LLM calls.")
+        _generate_chapters(script, date)
+        audio_path = AUDIO_DIR / f"{date}.mp3"
+        return audio_path if text_to_speech(script, audio_path) else None
 
     # Try synthesis file first, fall back to the published post
     synthesis_file = DATA_DIR / f"synthesis_{date}.md"
@@ -1068,7 +1070,6 @@ def run(date_str=None):
         return None
 
     # Save script for reference
-    script_file = DATA_DIR / f"podcast_script_{date}.txt"
     with open(script_file, "w", encoding="utf-8") as f:
         f.write(script)
     print(f"[SAVE] Script saved: {script_file}")

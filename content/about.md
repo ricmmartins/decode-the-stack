@@ -138,7 +138,7 @@ of available reporting.
 |---|---|
 | **Anna** | The curious, energetic lead host who guides the show and introduces each story. |
 | **Maria** | The technical analyst who adds context, trade-offs, and thoughtful disagreement. |
-| **Alex** | The relaxed co-host who asks listener-focused questions and brings occasional light humor. |
+| **Pedro** | The relaxed co-host who asks listener-focused questions and brings occasional light humor. |
 
 The script targets approximately 15 minutes. OpenAI text-to-speech uses the
 configured Marin, Sage, and Ash voices; Edge TTS is the fallback. The selected

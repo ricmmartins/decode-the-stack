@@ -37,6 +37,7 @@ REQUIRED = [
     "sw.js",
     "images/brand-mark.svg",
     "images/podcast-cover.png",
+    "podcast/music/bgmusic.mp3",
     "404.html",
 ]
 ATOM_NS = "http://www.w3.org/2005/Atom"
@@ -135,6 +136,8 @@ def _validate_podcast_feed(root):
     feed_text = _read(feed_path)
     if "images/podcast-cover.png" not in feed_text:
         raise ValueError("The podcast feed is missing its show artwork.")
+    if "Anna, Maria, and Pedro" not in feed_text or "Alex" in feed_text:
+        raise ValueError("The podcast feed must identify the original hosts Anna, Maria, and Pedro.")
     channel = ET.parse(feed_path).getroot().find("channel")
     if channel is None:
         raise ValueError("The podcast RSS feed has no channel.")

@@ -44,6 +44,17 @@ fallback. The script target is about 15 minutes. Provider credentials remain
 on the authenticated original publishing runner and are not copied into this
 repository.
 
+The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
+English. `OPENAI_TTS_VOICE_PEDRO` configures Pedro's primary voice; the Edge
+fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
+The shared background track is bundled at `static/podcast/music/bgmusic.mp3`,
+copied byte-for-byte from Decodifica.Tech's existing track (original commit
+`3dd1395`, recorded there as CC0/Pixabay). It loops under the complete episode
+at -20 dB, with a 3-second fade-in and 5-second fade-out, matching the original
+mixing behavior. Missing or invalid background music now fails publication
+instead of silently producing a dry episode. The Portuguese spoken jingle is
+not copied into the English show.
+
 The only production scheduler is the secure workflow in the
 `ricmmartins/decodifica.tech` repository, which runs at 12:00 and 12:45 UTC.
 This repository's GitHub Actions workflow runs tests and a Hugo build on pushes
@@ -59,6 +70,11 @@ authorizes `decode-the-stack` on that PAT with Contents: Read and write**,
 preserving its existing repository permissions. The orchestrator now checks
 actual write access before spending on generation; API `permissions.push`
 alone is not sufficient proof. No token values were copied into this repository.
+
+The same episode was corrected from its saved dialogue to restore Pedro's name
+and add the original music bed: 2,342 spoken words and 15:45 of complete English
+Edge TTS audio. No source collection, contextual synthesis, or language-model
+script generation was repeated; its enclosure URL and GUID remain unchanged.
 
 ## Site features
 
@@ -98,6 +114,16 @@ from the dated synthesis and its raw, clustered, and ranked JSON files without
 calling ingestion or contextual synthesis again. Missing recovery inputs fail
 explicitly. Podcast dialogue is generated in bounded, source-grounded sections
 and must total 2200–2400 spoken words for the default 15-minute target.
+
+To regenerate only audio and music from an existing, validated saved dialogue:
+
+```powershell
+python pipeline/run_pipeline.py --date 2026-11-02 --force --reuse-synthesis --reuse-podcast-script
+```
+
+This fails if the saved script is missing, malformed, or too short; it does not
+silently call a language model. FFmpeg and ffprobe must be on `PATH` for audio.
+With `OPENAI_KEY` absent, recovery uses the complete free Edge TTS path.
 
 The 3000 × 3000 RGB podcast cover is
 `static/images/podcast-cover.png`; regenerate it with

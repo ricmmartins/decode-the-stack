@@ -8,6 +8,24 @@ from pipeline import run_pipeline
 
 
 class RecoveryTests(unittest.TestCase):
+    def test_script_recovery_requires_analysis_recovery_before_any_work(self):
+        with (
+            patch.object(run_pipeline, "_prepare_synthesis") as prepare,
+            self.assertRaisesRegex(ValueError, "requires --reuse-synthesis"),
+        ):
+            run_pipeline.run_pipeline(force=True, reuse_podcast_script=True)
+        prepare.assert_not_called()
+
+    def test_script_recovery_flag_reaches_publication(self):
+        with (
+            patch.object(run_pipeline, "_load_recovery_inputs", return_value=(376, 317, [], [])),
+            patch.object(run_pipeline, "_publish_synthesis") as publish,
+        ):
+            run_pipeline.run_pipeline(
+                "2026-11-02", force=True, reuse_synthesis=True, reuse_podcast_script=True,
+            )
+        self.assertTrue(publish.call_args.kwargs["reuse_podcast_script"])
+
     def test_reuses_analysis_without_remote_calls(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

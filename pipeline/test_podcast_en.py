@@ -7,15 +7,87 @@ from pipeline import podcast, synthesize
 
 
 class EnglishPodcastTests(unittest.TestCase):
+    def test_saved_script_recovery_does_not_call_language_model(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            script = self.dialogue(2300)
+            (root / "podcast_script_2026-11-02.txt").write_text(script, encoding="utf-8")
+            with (
+                patch.object(podcast, "DATA_DIR", root),
+                patch.object(podcast, "AUDIO_DIR", root),
+                patch.object(podcast, "generate_podcast_script") as generate,
+                patch.object(podcast, "_generate_chapters") as chapters,
+                patch.object(podcast, "text_to_speech", return_value=True) as speak,
+            ):
+                result = podcast.run("2026-11-02", reuse_script=True)
+            generate.assert_not_called()
+            chapters.assert_called_once_with(script, "2026-11-02")
+            speak.assert_called_once_with(script, root / "2026-11-02.mp3")
+            self.assertEqual(result, root / "2026-11-02.mp3")
+
+    def test_missing_or_short_saved_script_never_calls_tts_or_llm(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with (
+                patch.object(podcast, "DATA_DIR", root),
+                patch.object(podcast, "generate_podcast_script") as generate,
+                patch.object(podcast, "text_to_speech") as speak,
+            ):
+                with self.assertRaises(FileNotFoundError):
+                    podcast.run("2026-11-02", reuse_script=True)
+                (root / "podcast_script_2026-11-02.txt").write_text(self.dialogue(100), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "required 2200-2400"):
+                    podcast.run("2026-11-02", reuse_script=True)
+            generate.assert_not_called()
+            speak.assert_not_called()
+
+    def test_music_bed_matches_original_gain_loop_and_fades(self):
+        from pydub import AudioSegment
+        from pydub.generators import Sine
+
+        speech = AudioSegment.silent(duration=12000, frame_rate=44100)
+        music = Sine(440).to_audio_segment(duration=4000).apply_gain(-10)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            asset = root / "music.mp3"
+            asset.touch()
+            output = root / "episode.mp3"
+            captured = []
+
+            def export(segment, path, **kwargs):
+                captured.append(segment)
+                Path(path).write_bytes(b"mixed")
+
+            with (
+                patch.object(podcast, "BG_MUSIC_PATH", asset),
+                patch.object(AudioSegment, "from_mp3", side_effect=[speech, music]),
+                patch.object(AudioSegment, "export", new=export),
+            ):
+                podcast._overlay_background_music(output)
+            mixed = captured[0]
+            self.assertEqual(len(mixed), len(speech))
+            self.assertAlmostEqual(mixed[4000:5000].dBFS - music[0:1000].dBFS, -20, delta=0.1)
+            self.assertGreater(mixed[11000:11500].rms, 0)
+            self.assertLess(mixed[0:500].rms, mixed[3000:3500].rms)
+            self.assertLess(mixed[-500:].rms, mixed[-5500:-5000].rms)
+            self.assertEqual(output.read_bytes(), b"mixed")
+
+    def test_missing_music_fails_instead_of_publishing_dry_episode(self):
+        with (
+            patch.object(podcast, "BG_MUSIC_PATH", Path("nonexistent-music.mp3")),
+            self.assertRaisesRegex(FileNotFoundError, "Required podcast background music"),
+        ):
+            podcast._overlay_background_music(Path("episode.mp3"))
+
     def test_duration_targets_fifteen_minutes(self):
         self.assertEqual(podcast.DEFAULT_PODCAST_TARGET_MINUTES, 15)
         self.assertEqual(podcast._script_word_range(15), (2200, 2400))
 
     def test_three_distinct_english_hosts_and_voices_are_configured(self):
-        self.assertEqual((podcast.HOST_A, podcast.HOST_B, podcast.HOST_C), ("Anna", "Maria", "Alex"))
+        self.assertEqual((podcast.HOST_A, podcast.HOST_B, podcast.HOST_C), ("Anna", "Maria", "Pedro"))
         self.assertEqual(
             set(podcast.OPENAI_VOICE_MAP),
-            {"Anna", "Maria", "Alex"},
+            {"Anna", "Maria", "Pedro"},
         )
         self.assertEqual(len(set(podcast.OPENAI_VOICE_MAP.values())), 3)
         self.assertTrue(all("English-language" in instruction for instruction in podcast.HOST_VOCAL_INSTRUCTIONS.values()))
@@ -25,11 +97,11 @@ class EnglishPodcastTests(unittest.TestCase):
 [INTRO]
 Maria: Here is what the reporting confirms.
 [TOPIC_CHANGE]
-Alex: Let us look at the engineering trade-offs."""
+Pedro: Let us look at the engineering trade-offs."""
         segments = podcast._parse_speech_segments(script)
         self.assertEqual(
             [segment["speaker"] for segment in segments if segment["type"] == "speech"],
-            ["Anna", "Maria", "Alex"],
+            ["Anna", "Maria", "Pedro"],
         )
         self.assertEqual(
             [segment["ms"] for segment in segments if segment["type"] == "pause"],
@@ -49,7 +121,7 @@ Alex: Let us look at the engineering trade-offs."""
         sizes = [words // 3, words // 3, words - 2 * (words // 3)]
         return "\n".join(
             f"{host}: " + " ".join(["context"] * size)
-            for host, size in zip(("Anna", "Maria", "Alex"), sizes)
+            for host, size in zip(("Anna", "Maria", "Pedro"), sizes)
         )
 
     def test_bounded_sections_meet_full_duration_and_use_distinct_source_blocks(self):
@@ -111,7 +183,7 @@ Alex: Let us look at the engineering trade-offs."""
 
         def complete_edge(segments, directory):
             speech = podcast._speech_segments(segments)
-            self.assertEqual({segment["speaker"] for segment in speech}, {"Anna", "Maria", "Alex"})
+            self.assertEqual({segment["speaker"] for segment in speech}, {"Anna", "Maria", "Pedro"})
             self.assertTrue(all("_file" not in segment for segment in speech))
             return True
 

@@ -9,7 +9,7 @@ TocOpen: false
 ---
 
 The podcast is the audio edition of Decode the Stack's daily, source-linked
-briefing. Anna, Maria, and Alex discuss what the day's reporting says, connect
+briefing. Anna, Maria, and Pedro discuss what the day's reporting says, connect
 related developments, and explain the engineering context.
 
 ## Listen and subscribe
@@ -28,14 +28,14 @@ related developments, and explain the engineering context.
 |---|---|
 | **Anna** | The curious, energetic lead host who guides the conversation and transitions between stories. |
 | **Maria** | The technical analyst who adds context, trade-offs, and thoughtful disagreement. |
-| **Alex** | The relaxed co-host who asks listener-focused questions and brings occasional light humor. |
+| **Pedro** | The relaxed co-host who asks listener-focused questions and brings occasional light humor. |
 
 ## Format
 
 | Detail | What to expect |
 |---|---|
 | Language | English |
-| Hosts | Anna, Maria, and Alex |
+| Hosts | Anna, Maria, and Pedro |
 | Script length | Approximately 15 minutes |
 | Voice generation | OpenAI text-to-speech (Marin, Sage, Ash); Edge TTS fallback |
 | Topics | Software engineering, cloud, DevOps & SRE, AI/ML, and security |

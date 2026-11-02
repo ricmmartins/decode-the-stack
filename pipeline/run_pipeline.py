@@ -35,8 +35,11 @@ def _set_github_output(key, value):
             f.write(f"{key}={value}\n")
 
 
-def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=False):
+def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=False,
+                 reuse_podcast_script=False):
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if reuse_podcast_script and not reuse_synthesis:
+        raise ValueError("--reuse-podcast-script requires --reuse-synthesis to avoid new analysis.")
 
     # Idempotency guard: scheduled retries do not regenerate an existing edition.
     post_file = CONTENT_DIR / f"{date}-daily.md"
@@ -56,7 +59,10 @@ def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=
             date, skip_ingest=skip_ingest, force=force
         )
 
-    _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories)
+    _publish_synthesis(
+        date, articles_count, clusters_count, main_stories, quick_stories,
+        reuse_podcast_script=reuse_podcast_script,
+    )
 
 
 def _load_recovery_inputs(date):
@@ -121,10 +127,11 @@ def _prepare_synthesis(date, skip_ingest=False, force=False):
     return articles_count, clusters_count, main_stories, quick_stories
 
 
-def _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories):
+def _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories,
+                       reuse_podcast_script=False):
     # Step 5: A complete edition includes its three-host audio episode.
     print(f"\n[AUDIO]  Step 5/7: Generating podcast...")
-    audio_path = podcast_run(date)
+    audio_path = podcast_run(date, reuse_script=reuse_podcast_script)
     if not audio_path or not Path(audio_path).is_file() or Path(audio_path).stat().st_size <= 1024:
         raise RuntimeError(f"Podcast generation did not produce a playable MP3 for {date}.")
     has_audio = True
@@ -204,9 +211,14 @@ if __name__ == "__main__":
         "--reuse-synthesis", action="store_true",
         help="Resume from existing synthesis and raw/clustered/ranked data without new analysis",
     )
+    parser.add_argument(
+        "--reuse-podcast-script", action="store_true",
+        help="Regenerate audio from the saved validated dialogue without an LLM call",
+    )
     args = parser.parse_args()
 
     run_pipeline(
         date_str=args.date, skip_ingest=args.skip_ingest, force=args.force,
         reuse_synthesis=args.reuse_synthesis,
+        reuse_podcast_script=args.reuse_podcast_script,
     )

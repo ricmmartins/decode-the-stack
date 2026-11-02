@@ -506,7 +506,7 @@ TocOpen: false
 
     # Add audio player if podcast was generated
     if has_audio:
-        front_matter += f"""[AUDIO] **Listen to today's podcast** — with Anna, Maria, and Alex:
+        front_matter += f"""[AUDIO] **Listen to today's podcast** — with Anna, Maria, and Pedro:
 
 <audio controls preload="metadata" style="width:100%; margin-bottom: 1.5em;">
   <source src="/podcast/audio/{date}.mp3" type="audio/mpeg">
@@ -580,7 +580,9 @@ TocOpen: false
 
         content = before_radar + radar_marker + "\n" + radar_body
 
-    post_content = front_matter + content
+    post_content = "\n".join(
+        line.rstrip() for line in (front_matter + content).splitlines()
+    ).rstrip() + "\n"
 
     CONTENT_DIR.mkdir(parents=True, exist_ok=True)
     output_file = CONTENT_DIR / f"{date}-daily.md"

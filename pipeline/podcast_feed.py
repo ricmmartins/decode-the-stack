@@ -21,7 +21,7 @@ SITE_URL = os.environ.get(
 PODCAST_TITLE = "Decode the Stack"
 PODCAST_DESCRIPTION = (
     "A daily English-language technology briefing for software professionals. "
-    "Anna, Maria, and Alex connect the context behind engineering, cloud, "
+    "Anna, Maria, and Pedro connect the context behind engineering, cloud, "
     "DevOps, security, and AI/ML stories."
 )
 PODCAST_AUTHOR = "Decode the Stack"

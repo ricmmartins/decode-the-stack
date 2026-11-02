@@ -53,7 +53,7 @@
       <aside class="podcast-card" aria-labelledby="podcast-title">
         <p class="eyebrow">On another frequency</p>
         <h3 id="podcast-title">Press play.<br>Connect the dots.</h3>
-        <p>Anna, Maria, and Alex unpack the technology stories that matter. Three AI-generated English voices, grounded in the day's reporting.</p>
+        <p>Anna, Maria, and Pedro unpack the technology stories that matter. Three AI-generated English voices, grounded in the day's reporting.</p>
         {{- range first 1 (partial "podcast-episodes.html" .) }}
         {{- $audio := printf "podcast/audio/%s.mp3" (.Date.Format "2006-01-02") }}
         <span class="podcast-date">Episode from {{ .Date | time.Format "January 2, 2006" }}</span>

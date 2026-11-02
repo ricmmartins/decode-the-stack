@@ -43,6 +43,8 @@ class PodcastFeedTests(unittest.TestCase):
         self.assertEqual(episode.findtext("guid"), expected_url)
         self.assertEqual(enclosure.get("length"), "2051")
         self.assertEqual(episode.findtext("title"), "An English edition")
+        self.assertIn("Anna, Maria, and Pedro", channel.findtext("description"))
+        self.assertNotIn("Alex", channel.findtext("description"))
         self.assertEqual(
             owner.findtext(f"{{{podcast_feed.ITUNES_NS}}}name"),
             "Ricardo Martins",
