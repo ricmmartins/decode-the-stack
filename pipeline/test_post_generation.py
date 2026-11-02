@@ -82,7 +82,7 @@ class PostGenerationTests(unittest.TestCase):
         self.assertIn("/podcast/audio/2026-11-02.mp3", text)
         self.assertRegex(text, r"/podcast/audio/2026-11-02\.mp3\?v=[0-9a-f]{12}")
         self.assertIn("Monday, 2 November 2026", text)
-        self.assertIn("comments: false", text)
+        self.assertIn("comments: true", text)
 
 
 class WeeklyDateTests(unittest.TestCase):

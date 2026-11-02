@@ -493,7 +493,7 @@ tags: {json.dumps(tags, ensure_ascii=False)}
 mainCount: {main_count}
 quickCount: {quick_count}
 draft: false
-comments: false
+comments: true
 ShowToc: true
 TocOpen: false
 ---

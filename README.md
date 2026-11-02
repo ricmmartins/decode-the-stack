@@ -91,9 +91,12 @@ publication statistics, site and podcast RSS feeds, JSON-LD metadata, and a
 progressive web app with offline page caching. Topic pages remain available
 when their published-edition count is zero.
 
-Comments are not enabled: the English repository still needs a separate
-Giscus app installation. A podcast-directory listing link can be added once
-its official URL is available.
+Comments on daily and weekly editions use Giscus with the English repository
+`ricmmartins/decode-the-stack` and its Announcements category. Discussions and
+the Giscus app installation are enabled. Threads use pathname mapping and
+English labels; no Portuguese discussion identity is reused. Posting requires
+GitHub sign-in. A podcast-directory listing link can be added once its official
+URL is available.
 
 ## Local checks
 

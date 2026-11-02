@@ -35,6 +35,7 @@
     {{ with .NextInSection }}<a href="{{ .RelPermalink }}">Older: {{ .Title }} →</a>{{ end }}
   </nav>
   {{- partial "related.html" . }}
+  {{- if .Param "comments" }}{{ partial "comments.html" . }}{{ end }}
   {{- end }}
 </article>
 {{ end }}

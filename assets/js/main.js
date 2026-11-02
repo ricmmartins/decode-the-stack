@@ -1,5 +1,16 @@
 (() => {
   const toggle = document.getElementById('theme-toggle');
+  const updateCommentTheme = () => {
+    const frame = document.querySelector('iframe.giscus-frame');
+    frame?.contentWindow?.postMessage({
+      giscus: { setConfig: { theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light' } },
+    }, 'https://giscus.app');
+  };
+  document.addEventListener('load', (event) => {
+    if (event.target instanceof HTMLIFrameElement && event.target.classList.contains('giscus-frame')) {
+      updateCommentTheme();
+    }
+  }, true);
   const updateThemeLabel = () => {
     if (!toggle) return;
     const label = document.documentElement.dataset.theme === 'dark'
@@ -9,6 +20,7 @@
   };
 
   updateThemeLabel();
+  updateCommentTheme();
   toggle?.addEventListener('click', () => {
     const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = theme;

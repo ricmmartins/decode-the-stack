@@ -28,7 +28,7 @@ class SiteAudioTests(unittest.TestCase):
                 (root / "content" / "posts").mkdir()
                 (root / "content" / "posts" / "2026-11-02-daily.md").write_text(
                     '---\ntitle: "Daily audio edition"\ndate: 2026-11-02T00:00:00Z\n'
-                    'categories: ["Cloud", "AI/ML", "DevOps & SRE", "Software Engineering", "Security"]\n---\n'
+                    'categories: ["Cloud", "AI/ML", "DevOps & SRE", "Software Engineering", "Security"]\ncomments: true\n---\n'
                     '<audio controls><source src="/podcast/audio/2026-11-02.mp3" '
                     'type="audio/mpeg"></audio>\nVerified story context.\n',
                     encoding="utf-8",
@@ -148,6 +148,15 @@ class SiteAudioTests(unittest.TestCase):
                     self.assertEqual(len(icon.select("rect")), 2)
                 edition = (root / "public" / "posts" / "2026-11-02-daily" / "index.html")
                 self.assertIn("<audio", edition.read_text(encoding="utf-8"))
+                edition_soup = BeautifulSoup(edition.read_text(encoding="utf-8"), "html.parser")
+                widget = edition_soup.select_one('script[src="https://giscus.app/client.js"]')
+                self.assertIsNotNone(widget)
+                self.assertEqual(widget["data-repo"], "ricmmartins/decode-the-stack")
+                self.assertEqual(widget["data-repo-id"], "R_kgDOVfkfHw")
+                self.assertEqual(widget["data-category-id"], "DIC_kwDOVfkfH84DKLrd")
+                self.assertEqual(widget["data-mapping"], "pathname")
+                self.assertEqual(widget["data-lang"], "en")
+                self.assertIsNone(podcast_page.select_one('script[src="https://giscus.app/client.js"]'))
                 for page in ("index.html", "categories/index.html"):
                     soup = BeautifulSoup((root / "public" / page).read_text(encoding="utf-8"), "html.parser")
                     cards = {

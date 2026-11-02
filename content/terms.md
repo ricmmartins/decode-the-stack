@@ -35,6 +35,11 @@ or reporting as your own work.
 
 ## External links and contact
 
+Comments and reactions use [Giscus](https://giscus.app/) and are stored in the
+English repository's GitHub Discussions. Posting requires a GitHub account and
+is subject to GitHub's terms. You are responsible for what you post; avoid
+sharing private information and respect other participants.
+
 Links lead to third-party sites whose content and policies Decode the Stack
 does not control. For corrections or questions about these terms, use the
 [repository issue tracker](https://github.com/ricmmartins/decode-the-stack/issues).

@@ -222,7 +222,7 @@ description: "The week's most consequential technology stories, synthesized in E
 categories: {json.dumps(["Weekly Briefing"] + categories_display, ensure_ascii=False)}
 tags: ["weekly-briefing", "top-10"]
 draft: false
-comments: false
+comments: true
 ShowToc: true
 TocOpen: false
 ---
