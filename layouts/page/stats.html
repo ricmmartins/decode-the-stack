@@ -1,44 +1,62 @@
 {{ define "main" }}
-{{ $stats := site.Data.stats }}
-<article class="article">
-  <header class="article-header">
+{{- $stats := hugo.Data.stats }}
+<article class="post-single">
+  <header class="post-header">
     <p class="eyebrow">Publication / Transparency</p>
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="article-summary">{{ . }}</p>{{ end }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Description }}<div class="post-description">{{ . }}</div>{{ end }}
   </header>
-  <div class="article-content">{{ .Content }}</div>
-  {{ with $stats }}
+  <div class="post-content">{{ .Content }}</div>
+  {{- with $stats }}
   <section class="section-block">
     <h2>At a glance</h2>
-    <div class="card-grid">
-      <article class="latest-card"><p class="eyebrow">Configured feeds</p><h3>{{ .configured_feeds }}</h3><p>Public publisher RSS or Atom feeds in the current pipeline configuration.</p></article>
-      <article class="latest-card"><p class="eyebrow">Published editions</p><h3>{{ .editions_published }}</h3><p>Dated editions in this site's archive.</p></article>
-      <article class="latest-card"><p class="eyebrow">Published headlines</p><h3>{{ .headlines_published }}</h3><p>Source-linked items across the archived editions.</p></article>
-      <article class="latest-card"><p class="eyebrow">Publishers credited</p><h3>{{ .sources_credited }}</h3><p>Distinct publishers represented in the archive.</p></article>
+    <div class="stats-grid">
+      <article class="featured-edition"><p class="eyebrow">Configured feeds</p><strong class="stat-number">{{ .configured_feeds }}</strong><p>Public RSS and Atom sources in the current pipeline configuration.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Published editions</p><strong class="stat-number">{{ .editions_published }}</strong><p>Daily English editions in the archive.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Published stories</p><strong class="stat-number">{{ .headlines_published }}</strong><p>Main stories and Quick Reads in published editions.</p></article>
+      <article class="featured-edition"><p class="eyebrow">Publishers credited</p><strong class="stat-number">{{ .sources_credited }}</strong><p>Distinct sources represented in the archive.</p></article>
     </div>
   </section>
-  {{ with .latest_edition_date }}<p class="eyebrow">Latest edition: <a href="{{ printf "posts/%s-daily/" . | relURL }}">{{ . }}</a> ({{ $stats.latest_headlines }} headlines)</p>{{ end }}
-  {{ with .source_counts }}
-  <section class="section-block">
-    <h2>Publishers represented</h2>
-    <ul>{{ range . }}<li>{{ .name }} — {{ .headlines }} {{ cond (eq .headlines 1) "headline" "headlines" }}</li>{{ end }}</ul>
-  </section>
-  {{ end }}
-  {{ with .category_counts }}
-  <section class="section-block">
-    <h2>Categories represented</h2>
-    <ul>{{ range . }}<li>{{ .name }} — {{ .headlines }} {{ cond (eq .headlines 1) "headline" "headlines" }}</li>{{ end }}</ul>
-  </section>
-  {{ end }}
-  {{ with .history }}
+
+  {{- with .latest_edition_date }}
+  <p class="eyebrow">Latest edition: <a href="{{ printf "posts/%s-daily/" . | relURL }}">{{ . }}</a> · {{ $stats.latest_headlines }} stories</p>
+  {{- end }}
+
+  {{- with .history }}
   <section class="section-block">
     <h2>Recent editions</h2>
-    <ul>{{ range . }}<li><a href="{{ printf "posts/%s-daily/" .date | relURL }}">{{ .date }}</a> — {{ .headlines }} headlines from {{ .sources }} publishers</li>{{ end }}</ul>
+    {{- $maxHeadlines := 1 }}
+    {{- range . }}{{ if gt .headlines $maxHeadlines }}{{ $maxHeadlines = .headlines }}{{ end }}{{ end }}
+    <div class="trend-list">
+      {{- range . }}
+      <a class="trend-row" href="{{ printf "posts/%s-daily/" .date | relURL }}">
+        <time datetime="{{ .date }}">{{ .date }}</time><span class="trend-bar"><i style="width: {{ div (mul .headlines 100) $maxHeadlines }}%"></i></span><strong>{{ .headlines }}</strong>
+      </a>
+      {{- end }}
+    </div>
   </section>
-  {{ end }}
+  {{- end }}
+
+  {{- with .source_counts }}
+  <section class="section-block">
+    <h2>Publishers represented</h2>
+    <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>Publisher</th><th>Story appearances</th></tr></thead><tbody>
+      {{- range . }}<tr><td>{{ .name }}</td><td>{{ .headlines }}</td></tr>{{ end }}
+    </tbody></table></div>
+  </section>
+  {{- end }}
+
+  {{- with .category_counts }}
+  <section class="section-block">
+    <h2>Coverage by category</h2>
+    <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>Category</th><th>Story appearances</th></tr></thead><tbody>
+      {{- range . }}<tr><td>{{ .name }}</td><td>{{ .headlines }}</td></tr>{{ end }}
+    </tbody></table></div>
+  </section>
+  {{- end }}
   <p class="eyebrow">Updated {{ .updated_at }}</p>
-  {{ else }}
-  <p class="empty-state">Statistics will appear after the first edition is published.</p>
-  {{ end }}
+  {{- else }}
+  <p class="empty-state">Statistics will appear after the first English edition is published.</p>
+  {{- end }}
 </article>
 {{ end }}

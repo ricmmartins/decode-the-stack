@@ -1,194 +1,1028 @@
-#!/usr/bin/env python3
-"""Generate a short English headline bulletin and its podcast RSS feed."""
+"""Generate Decode the Stack's English three-host podcast from its synthesis."""
 
-from __future__ import annotations
-
-import argparse
-import asyncio
-import json
 import os
 import re
 import sys
-import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
-from email.utils import format_datetime
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data" / "editions"
-AUDIO_DIR = ROOT / "static" / "podcast" / "audio"
-FEED_FILE = ROOT / "static" / "podcast" / "feed.xml"
-SITE_URL = "https://decodethestack.pages.dev"
-VOICE = "en-US-AriaNeural"
-ITUNES_NS = "http://www.itunes.com/dtds/podcast-1.0.dtd"
-ATOM_NS = "http://www.w3.org/2005/Atom"
-ET.register_namespace("itunes", ITUNES_NS)
-ET.register_namespace("atom", ATOM_NS)
+PROJECT_DIR = Path(__file__).parent.parent
+DATA_DIR = PROJECT_DIR / "data"
+AUDIO_DIR = PROJECT_DIR / "static" / "podcast" / "audio"
+
+MP3_BITRATE_ENV = "PODCAST_MP3_BITRATE"
+DEFAULT_MP3_BITRATE = "96k"
+MIN_ADAPTIVE_MP3_BITRATE_KBPS = 48
+PODCAST_TARGET_MINUTES_ENV = "PODCAST_TARGET_MINUTES"
+DEFAULT_PODCAST_TARGET_MINUTES = 15
+MIN_PODCAST_TARGET_MINUTES = 5
+MAX_PODCAST_TARGET_MINUTES = 30
+PODCAST_EDGE_TTS_RATE_ENV = "PODCAST_EDGE_TTS_RATE"
+DEFAULT_EDGE_TTS_RATE = "+8%"
+MIN_EDGE_TTS_RATE_PERCENT = -20
+MAX_EDGE_TTS_RATE_PERCENT = 50
+SCRIPT_MIN_WORDS_PER_MINUTE = 145
+SCRIPT_MAX_WORDS_PER_MINUTE = 160
+CHAPTER_WORDS_PER_MINUTE = 160
+INTRO_PAUSE_MS = 600
+TOPIC_CHANGE_PAUSE_MS = 450
+MIB = 1024 * 1024
+CLOUDFLARE_MAX_FILE_BYTES = 25 * MIB
+PODCAST_TARGET_FILE_BYTES = 24 * MIB
+TARGET_SEGMENT_DBFS = -20.0
+MAX_SEGMENT_GAIN_DB = 12.0
 
 
-def episode_script(edition: dict) -> str:
-    items = edition.get("items")
-    if not isinstance(items, list) or not items:
-        raise ValueError("The edition has no source-linked headlines.")
-
-    lines = [
-        "This is Decode the Stack, the daily tech briefing for software professionals.",
-        f"It's {date.fromisoformat(edition['date']):%A, %B} {date.fromisoformat(edition['date']).day}.",
-        "Here are today's headlines. Each story is credited to its original publisher. Follow the links in the show notes for the complete reporting and context.",
-    ]
-    for item in items[:8]:
-        lines.append(f"From {item['source']}: {item['title']}.")
-    lines.append("That's the Decode the Stack headline briefing. Thanks for listening.")
-    return " ".join(lines)
-
-
-async def _synthesize(text: str, output: Path) -> None:
-    import edge_tts
-
-    await edge_tts.Communicate(text, VOICE).save(str(output))
-
-
-def _episode_path(day: date) -> Path:
-    return AUDIO_DIR / f"{day.isoformat()}.mp3"
-
-
-def _load_edition(day: date) -> dict | None:
-    source = DATA_DIR / f"{day.isoformat()}.json"
-    if not source.exists():
-        return None
-    data = json.loads(source.read_text(encoding="utf-8"))
-    if data.get("date") != day.isoformat():
-        raise ValueError(f"Edition date does not match file name: {source}")
-    return data
-
-
-def _add_text(parent: ET.Element, tag: str, value: str, namespace: str | None = None) -> ET.Element:
-    qualified = f"{{{namespace}}}{tag}" if namespace else tag
-    child = ET.SubElement(parent, qualified)
-    child.text = value
-    return child
-
-
-def generate_feed() -> Path:
-    root = ET.Element("rss", {"version": "2.0"})
-    channel = ET.SubElement(root, "channel")
-    _add_text(channel, "title", "Decode the Stack Podcast")
-    _add_text(channel, "link", f"{SITE_URL}/podcast/")
-    _add_text(
-        channel,
-        "description",
-        "A short English-language technology headline bulletin. Every story is credited to its original publisher; full context is linked in the accompanying edition.",
-    )
-    _add_text(channel, "language", "en")
-    _add_text(channel, "author", "Decode the Stack", ITUNES_NS)
-    _add_text(channel, "explicit", "false", ITUNES_NS)
-    category = _add_text(channel, "category", "", ITUNES_NS)
-    category.set("text", "Technology")
-    image = ET.SubElement(channel, f"{{{ITUNES_NS}}}image")
-    image.set("href", f"{SITE_URL}/images/podcast-cover.png")
-    owner_email = os.environ.get("PODCAST_OWNER_EMAIL", "").strip()
-    if owner_email:
-        if not re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", owner_email):
-            raise ValueError("PODCAST_OWNER_EMAIL must be a valid email address.")
-        owner = ET.SubElement(channel, f"{{{ITUNES_NS}}}owner")
-        _add_text(owner, "name", "Ricardo Martins", ITUNES_NS)
-        _add_text(owner, "email", owner_email, ITUNES_NS)
-
-    rss_image = ET.SubElement(channel, "image")
-    _add_text(rss_image, "url", f"{SITE_URL}/images/podcast-cover.png")
-    _add_text(rss_image, "title", "Decode the Stack Podcast")
-    _add_text(rss_image, "link", f"{SITE_URL}/podcast/")
-    self_link = ET.SubElement(channel, f"{{{ATOM_NS}}}link")
-    self_link.attrib.update({
-        "href": f"{SITE_URL}/podcast/feed.xml",
-        "rel": "self",
-        "type": "application/rss+xml",
-    })
-
-    episodes = []
-    for metadata_file in sorted(DATA_DIR.glob("*.json"), reverse=True):
-        edition = json.loads(metadata_file.read_text(encoding="utf-8"))
-        audio = _episode_path(date.fromisoformat(edition["date"]))
-        if audio.is_file() and audio.stat().st_size > 1024:
-            episodes.append((edition, audio))
-
-    if episodes:
-        _add_text(channel, "lastBuildDate", format_datetime(datetime.now(timezone.utc)))
-    for edition, audio in episodes:
-        day = date.fromisoformat(edition["date"])
-        item = ET.SubElement(channel, "item")
-        title = edition["title"]
-        _add_text(item, "title", title)
-        _add_text(
-            item,
-            "description",
-            f"A short headline bulletin with {len(edition['items'])} stories, each credited to its original publisher.",
+def _normalize_mp3_bitrate(value):
+    """Return a validated ffmpeg MP3 bitrate such as ``96k``."""
+    match = re.fullmatch(r"(\d+)[kK]", value.strip())
+    if not match:
+        raise ValueError(
+            f"{MP3_BITRATE_ENV} must be an integer bitrate ending in 'k' "
+            "(for example, 96k)"
         )
-        _add_text(item, "pubDate", format_datetime(datetime.combine(day, datetime.min.time(), timezone.utc)))
-        episode_url = f"{SITE_URL}/podcast/audio/{day.isoformat()}.mp3"
-        enclosure = ET.SubElement(item, "enclosure")
-        enclosure.attrib.update({
-            "url": episode_url,
-            "length": str(audio.stat().st_size),
-            "type": "audio/mpeg",
-        })
-        _add_text(item, "guid", episode_url).set("isPermaLink", "true")
-        _add_text(item, "link", f"{SITE_URL}/posts/{day.isoformat()}-daily/")
-        _add_text(item, "author", "Decode the Stack", ITUNES_NS)
-        _add_text(item, "explicit", "false", ITUNES_NS)
-        _add_text(item, "episodeType", "full", ITUNES_NS)
 
-    FEED_FILE.parent.mkdir(parents=True, exist_ok=True)
-    ET.ElementTree(root).write(FEED_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"Podcast RSS feed updated with {len(episodes)} real episode(s): {FEED_FILE}")
-    return FEED_FILE
+    bitrate_kbps = int(match.group(1))
+    if not MIN_ADAPTIVE_MP3_BITRATE_KBPS <= bitrate_kbps <= 320:
+        raise ValueError(
+            f"{MP3_BITRATE_ENV} must be between "
+            f"{MIN_ADAPTIVE_MP3_BITRATE_KBPS}k and 320k"
+        )
+    return f"{bitrate_kbps}k"
 
 
-def generate_episode(day: date) -> bool:
-    edition = _load_edition(day)
-    if edition is None:
-        print(f"No edition metadata for {day}; no episode generated.")
+def _configured_mp3_bitrate(environ=None):
+    """Resolve the configured final/intermediate MP3 bitrate."""
+    environ = os.environ if environ is None else environ
+    return _normalize_mp3_bitrate(
+        environ.get(MP3_BITRATE_ENV, DEFAULT_MP3_BITRATE)
+    )
+
+
+def _configured_target_minutes(environ=None):
+    """Resolve a practical target duration for future podcast scripts."""
+    environ = os.environ if environ is None else environ
+    raw_value = environ.get(
+        PODCAST_TARGET_MINUTES_ENV,
+        str(DEFAULT_PODCAST_TARGET_MINUTES),
+    )
+    try:
+        target_minutes = int(raw_value)
+    except (TypeError, ValueError) as error:
+        raise ValueError(
+            f"{PODCAST_TARGET_MINUTES_ENV} must be an integer number of minutes"
+        ) from error
+
+    if not MIN_PODCAST_TARGET_MINUTES <= target_minutes <= MAX_PODCAST_TARGET_MINUTES:
+        raise ValueError(
+            f"{PODCAST_TARGET_MINUTES_ENV} must be between "
+            f"{MIN_PODCAST_TARGET_MINUTES} and {MAX_PODCAST_TARGET_MINUTES}"
+        )
+    return target_minutes
+
+
+def _configured_edge_tts_rate(environ=None):
+    """Resolve a validated Edge TTS percentage rate."""
+    environ = os.environ if environ is None else environ
+    raw_value = environ.get(PODCAST_EDGE_TTS_RATE_ENV, DEFAULT_EDGE_TTS_RATE)
+    match = re.fullmatch(r"([+-])(\d+)%", str(raw_value).strip())
+    if not match:
+        raise ValueError(
+            f"{PODCAST_EDGE_TTS_RATE_ENV} must be a signed percentage "
+            "(for example, +8%)"
+        )
+
+    rate_percent = int(match.group(2))
+    if match.group(1) == "-":
+        rate_percent *= -1
+    if not MIN_EDGE_TTS_RATE_PERCENT <= rate_percent <= MAX_EDGE_TTS_RATE_PERCENT:
+        raise ValueError(
+            f"{PODCAST_EDGE_TTS_RATE_ENV} must be between "
+            f"{MIN_EDGE_TTS_RATE_PERCENT}% and +{MAX_EDGE_TTS_RATE_PERCENT}%"
+        )
+    return f"{rate_percent:+d}%"
+
+
+def _script_word_range(target_minutes):
+    """Return rounded conversational word bounds for a duration target."""
+    minimum_words = target_minutes * SCRIPT_MIN_WORDS_PER_MINUTE
+    maximum_words = target_minutes * SCRIPT_MAX_WORDS_PER_MINUTE
+    minimum_words = ((minimum_words + 49) // 50) * 50
+    maximum_words = (maximum_words // 50) * 50
+    return minimum_words, maximum_words
+
+
+MP3_BITRATE = _configured_mp3_bitrate()
+PODCAST_TARGET_MINUTES = _configured_target_minutes()
+EDGE_TTS_RATE = _configured_edge_tts_rate()
+
+HOST_A = "Anna"
+HOST_B = "Maria"
+HOST_C = "Alex"
+
+EDGE_VOICE_A = "en-US-AriaNeural"
+EDGE_VOICE_B = "en-US-JennyNeural"
+EDGE_VOICE_C = "en-US-GuyNeural"
+
+OPENAI_TTS_MODEL = os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
+OPENAI_VOICE_A = os.environ.get("OPENAI_TTS_VOICE_ANNA", "marin")
+OPENAI_VOICE_B = os.environ.get("OPENAI_TTS_VOICE_MARIA", "sage")
+OPENAI_VOICE_C = os.environ.get(
+    "OPENAI_TTS_VOICE_ALEX",
+    os.environ.get("OPENAI_TTS_VOICE_PEDRO", "ash"),
+)
+OPENAI_TTS_MAX_CHARS = 4000
+
+OPENAI_VOICE_MAP = {
+    HOST_A: OPENAI_VOICE_A,
+    HOST_B: OPENAI_VOICE_B,
+    HOST_C: OPENAI_VOICE_C,
+}
+EDGE_VOICE_MAP = {
+    HOST_A: EDGE_VOICE_A,
+    HOST_B: EDGE_VOICE_B,
+    HOST_C: EDGE_VOICE_C,
+}
+
+SHARED_VOCAL_DIRECTION = (
+    "Speak natural, neutral American English at a lively but comfortable pace, "
+    "around 150 words per minute. Use short natural pauses, avoid drawn-out "
+    "sentence endings, and pronounce technical terms clearly."
+)
+HOST_VOCAL_INSTRUCTIONS = {
+    HOST_A: (
+        "You are Anna, the host of an English-language technology podcast. "
+        "Use a warm, curious, energetic voice with moderate enthusiasm. "
+        f"{SHARED_VOCAL_DIRECTION}"
+    ),
+    HOST_B: (
+        "You are Maria, the technical analyst on an English-language technology "
+        "podcast. Be clear, thoughtful, and confident when explaining technical "
+        f"concepts. {SHARED_VOCAL_DIRECTION}"
+    ),
+    HOST_C: (
+        "You are Alex, the conversational co-host on an English-language "
+        "technology podcast. Be relaxed, reflective, and lightly funny. "
+        f"{SHARED_VOCAL_DIRECTION}"
+    ),
+}
+
+# Backward-compatible aliases used by the legacy SSML helper.
+VOICE_A = EDGE_VOICE_A
+VOICE_B = EDGE_VOICE_B
+VOICE_C = EDGE_VOICE_C
+
+HD_VOICES = set()  # No DragonHD voices when using edge-tts
+HD_TEMPERATURE = "0.8"  # Kept for reference (unused with edge-tts)
+
+# Intro jingle URL (hosted in site static, optional)
+JINGLE_URL = ""
+
+# Background music file (lo-fi, CC0, for ambient bed under voices)
+BG_MUSIC_PATH = PROJECT_DIR / "static" / "podcast" / "audio" / "bgmusic.mp3"
+BG_MUSIC_DB = -20  # Volume reduction in dB (negative = quieter)
+
+# ── English tech terms for correct pronunciation via <lang> tags ──
+ENGLISH_TECH_TERMS = {
+    # Multi-word terms (matched first due to longest-first sorting)
+    "open source", "cloud native", "edge computing", "feature flag",
+    "blue green", "pull request", "a/b testing", "machine learning",
+    "deep learning", "large language model", "retrieval augmented generation",
+    "prompt engineering", "fine tuning", "zero trust", "hybrid cloud",
+    "multi-cloud", "load balancing", "disaster recovery", "dead letter",
+    "scale out", "scale up", "on premises",
+    # Platforms & tools
+    "kubernetes", "docker", "github", "gitlab", "terraform", "ansible",
+    "jenkins", "grafana", "prometheus", "elasticsearch", "redis", "kafka",
+    "nginx", "cloudflare", "vercel", "netlify", "supabase", "firebase",
+    "mongodb", "postgresql", "mysql", "dynamodb", "snowflake", "databricks",
+    "airflow", "spark", "hadoop",
+    # Cloud
+    "lambda", "fargate", "copilot", "sagemaker", "bedrock",
+    # Languages & frameworks
+    "python", "javascript", "typescript", "rust", "golang",
+    "react", "angular", "vue", "svelte", "next", "nuxt", "remix",
+    "django", "flask", "fastapi", "express", "spring", "flutter",
+    "swift", "kotlin",
+    # Concepts
+    "devops", "devsecops", "gitops", "mlops", "microservices",
+    "serverless", "containers", "cluster", "pipeline", "deploy",
+    "deployment", "rollback", "rollout", "observability", "monitoring",
+    "autoscaling", "benchmark", "throughput", "latency", "uptime",
+    "backdoor", "ransomware", "malware", "phishing", "firewall",
+    "proxy", "gateway", "endpoint", "token", "webhook", "middleware",
+    "runtime", "sandbox", "changelog", "framework", "dashboard",
+    "release", "patch", "hotfix", "workflow", "sprint", "scrum",
+    "agile", "kanban",
+    # Acronyms
+    "api", "sdk", "cli", "saas", "paas", "iaas", "graphql", "grpc",
+    "websocket", "llm", "rag", "jwt", "oauth",
+    # Companies
+    "google", "microsoft", "amazon", "meta", "apple", "nvidia",
+    "openai", "anthropic", "mistral", "crowdstrike", "hashicorp",
+}
+
+def _escape_xml(text):
+    """Escape XML special characters."""
+    return (text.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace('"', "&quot;"))
+
+
+def _wrap_english_terms(text):
+    """Escape dialogue text for English-language SSML."""
+    return _escape_xml(text)
+
+
+def _build_podcast_script_prompt(target_minutes):
+    minimum_words, maximum_words = _script_word_range(target_minutes)
+    return f"""You are the scriptwriter for Decode the Stack, an English-language daily technology briefing.
+Write a lively, accurate dialogue between three distinct hosts:
+- {HOST_A}: the warm, curious lead host who guides the show and transitions between stories.
+- {HOST_B}: the analytical technical host who adds context, trade-offs, and thoughtful disagreement.
+- {HOST_C}: the relaxed co-host who asks listener-minded questions and uses occasional light humor.
+
+OUTPUT AND STRUCTURE:
+- Put exactly one spoken turn on each line, prefixed with "{HOST_A}:", "{HOST_B}:", or "{HOST_C}:".
+- Start with one or two short teaser turns about the most consequential supplied story.
+- Put [INTRO] on its own line after the teaser, then have {HOST_A} welcome listeners to Decode the Stack.
+- Introduce the other hosts briefly; vary who speaks and let them react naturally.
+- Put [TOPIC_CHANGE] on its own line when moving to a new main topic.
+- End with a short, friendly sign-off. Do not claim the show is already listed on Spotify or any other directory.
+- Mention the website decodethestack.pages.dev for the written briefing and original links.
+
+EDITORIAL RULES:
+- Use natural conversational English, concise turns, and a professional but relaxed tone.
+- Explain the reporting's context and implications; do not simply read headlines.
+- Cover the main stories and mention 3-5 Quick Reads briefly when available.
+- Keep each turn to at most three sentences. Alternate hosts and include useful questions, agreement, or disagreement.
+- Never invent facts, quotations, numbers, reactions, or conclusions beyond the supplied synthesis.
+- Do not use Markdown, URLs, emojis, or publisher/source names in spoken dialogue.
+- Do not add a jingle marker or mention audio/music.
+
+DURATION:
+- Target approximately {target_minutes} minutes at a conversational pace.
+- Keep the script between {minimum_words} and {maximum_words} spoken words, excluding host names and stage markers.
+- Prioritize useful context on main stories; keep Quick Reads genuinely brief.
+
+Example:
+{HOST_A}: A major runtime change landed this morning, but the performance numbers are only half the story.
+{HOST_C}: The other half could change how teams roll it out.
+[INTRO]
+{HOST_A}: Welcome to Decode the Stack. I'm Anna, and today we're connecting the engineering decisions behind the headlines.
+{HOST_B}: I'm Maria. I have a question about the trade-off in that first release.
+{HOST_C}: And I'm Alex. Let's get into it.
+[TOPIC_CHANGE]
+{HOST_B}: Here's what the source material actually confirms, and where the open questions remain.
+"""
+
+
+PODCAST_SCRIPT_PROMPT = _build_podcast_script_prompt(PODCAST_TARGET_MINUTES)
+
+
+def _sanitize_script(script):
+    """Trim the generated dialogue without changing its factual wording."""
+    return script.strip()
+
+
+def generate_podcast_script(synthesis_content):
+    """Generate a three-host dialogue script using the shared LLM provider chain."""
+    from synthesize import _call_llm
+
+    print("[AUDIO]  Generating three-host podcast script...")
+
+    script = _call_llm(PODCAST_SCRIPT_PROMPT, synthesis_content, "Podcast")
+
+    if script:
+        script = _sanitize_script(script)
+        minimum_words, maximum_words = _script_word_range(PODCAST_TARGET_MINUTES)
+        word_count = _spoken_word_count(script)
+        if word_count < int(minimum_words * 0.9):
+            correction_prompt = (
+                f"{PODCAST_SCRIPT_PROMPT}\n\n"
+                f"The previous draft contained {word_count} spoken words, below "
+                f"the required minimum of {minimum_words}. Write a complete "
+                "replacement dialogue of the requested length. Expand context "
+                "only from the supplied source synthesis; never add unsupported facts."
+            )
+            revised = _call_llm(
+                correction_prompt,
+                synthesis_content,
+                "Podcast length correction",
+                max_tokens=8000,
+            )
+            if revised:
+                script = _sanitize_script(revised)
+                word_count = _spoken_word_count(script)
+        if word_count > maximum_words:
+            raise ValueError(
+                f"Podcast script has {word_count} words, above the "
+                f"{maximum_words}-word limit for {PODCAST_TARGET_MINUTES} minutes."
+            )
+        if word_count < int(minimum_words * 0.9):
+            raise ValueError(
+                f"Podcast script has {word_count} spoken words; expected about "
+                f"{minimum_words}-{maximum_words} for a {PODCAST_TARGET_MINUTES}-minute show."
+            )
+        print(f"[OK] Podcast script generated ({word_count} spoken words, {len(script)} chars)")
+        return script
+
+    print("[WARN]  Podcast script generation failed (no LLM available)")
+    return None
+
+
+def _spoken_word_count(script):
+    """Count spoken words, excluding host labels and editorial markers."""
+    words = []
+    for line in script.splitlines():
+        line = line.strip()
+        if not line or line in {"[INTRO]", "[TOPIC_CHANGE]"}:
+            continue
+        line = re.sub(r"^(?:Anna|Maria|Alex):\s*", "", line)
+        line = re.sub(r"\([^)]*\)", "", line)
+        words.extend(re.findall(r"\b[\w'-]+\b", line))
+    return len(words)
+
+
+def _classify_line(text):
+    """Classify a dialogue line to determine pause, emphasis, and style hints.
+    Returns (pause_ms, is_exclamation, is_question, is_short_reaction).
+    """
+    is_excl = text.rstrip().endswith("!")
+    is_q = text.rstrip().endswith("?")
+    clean = text.strip().rstrip("!?.)")
+    is_short = len(clean) < 30
+
+    # These pauses are used only by the legacy SSML helper.
+    if is_short:
+        return 100, is_excl, is_q, True
+    if len(text) < 100:
+        return 160, is_excl, is_q, False
+    return 220, is_excl, is_q, False
+
+
+def script_to_ssml(script):
+    """Convert dialogue script to SSML with DragonHD + standard voices.
+
+    DragonHD voices: no <prosody>/<mstts:express-as>, uses temperature param.
+    Standard voices: keep prosody and style hints.
+    Both: <lang> tags for English terms, <break> for pauses.
+    """
+    lines = script.strip().split("\n")
+    ssml_parts = []
+
+    def build_voice_element(voice, text_ssml, pause_ms, raw_text,
+                            style=None, style_degree=None):
+        """Build SSML <voice> element, adapting to HD vs standard."""
+        is_hd = voice in HD_VOICES
+        _, is_excl, is_q, is_short = _classify_line(raw_text)
+
+        if is_hd:
+            # DragonHD: simple — auto-detects emotion, no prosody needed
+            return (
+                f'<voice name="{voice}" parameters="temperature={HD_TEMPERATURE}">'
+                f'{text_ssml}'
+                f'<break time="{pause_ms}ms"/>'
+                f'</voice>'
+            )
+        else:
+            # Standard neural voice: use prosody and optional style
+            rate = "1.05" if is_short else "1.0"
+            if len(raw_text) > 120:
+                rate = "0.95"
+            pitch = "+2%"
+
+            inner = f'<prosody rate="{rate}" pitch="{pitch}">{text_ssml}</prosody>'
+
+            # Auto-detect style
+            if not style:
+                if is_excl and is_short:
+                    style = "excited"
+                elif "(laughs)" in raw_text.lower() or "haha" in raw_text.lower():
+                    style = "cheerful"
+                elif is_q:
+                    style = "curious"
+
+            if style:
+                degree = f' styledegree="{style_degree}"' if style_degree else ""
+                inner = f'<mstts:express-as style="{style}"{degree}>{inner}</mstts:express-as>'
+
+            return (
+                f'<voice name="{voice}">'
+                f'{inner}'
+                f'<break time="{pause_ms}ms"/>'
+                f'</voice>'
+            )
+
+    prev_speaker = None
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+
+        # Topic change marker to longer pause
+        if line == "[TOPIC_CHANGE]":
+            ssml_parts.append(
+                f'<voice name="{VOICE_A}" parameters="temperature={HD_TEMPERATURE}">'
+                f'<break time="{TOPIC_CHANGE_PAUSE_MS}ms"/></voice>'
+            )
+            prev_speaker = None
+            continue
+
+        # Jingle insertion marker to break (actual jingle overlaid in post-processing)
+        if line == "[INTRO]":
+            ssml_parts.append(
+                f'<voice name="{VOICE_A}" parameters="temperature={HD_TEMPERATURE}">'
+                f'<break time="{INTRO_PAUSE_MS}ms"/></voice>'
+            )
+            prev_speaker = None
+            continue
+
+        # Detect speaker
+        speaker = None
+        text = None
+        for host in (HOST_A, HOST_B, HOST_C):
+            if line.startswith(f"{host}:"):
+                speaker = host
+                text = line[len(f"{host}:"):].strip()
+                break
+
+        if speaker and text:
+            # Speaker-change pause
+            if prev_speaker and prev_speaker != speaker:
+                gap = 40 if len(text) < 30 else 80
+                ssml_parts.append(
+                    f'<voice name="{VOICE_A}" parameters="temperature={HD_TEMPERATURE}">'
+                    f'<break time="{gap}ms"/></voice>'
+                )
+
+            # Strip stage directions from spoken text
+            spoken = re.sub(r"\(laughs?\)", "", text, flags=re.IGNORECASE).strip()
+            if not spoken:
+                continue
+
+            # Prepare SSML text (English wrapping + XML escaping)
+            text_ssml = _wrap_english_terms(spoken)
+            pause_ms = _classify_line(spoken)[0]
+
+            voice_map = {HOST_A: VOICE_A, HOST_B: VOICE_B, HOST_C: VOICE_C}
+            voice = voice_map[speaker]
+
+            ssml_parts.append(
+                build_voice_element(voice, text_ssml, pause_ms, spoken)
+            )
+            prev_speaker = speaker
+
+        elif line:
+            # Non-dialogue line (narration)
+            text_ssml = _wrap_english_terms(line)
+            ssml_parts.append(
+                f'<voice name="{VOICE_A}" parameters="temperature={HD_TEMPERATURE}">'
+                f'{text_ssml}<break time="300ms"/></voice>'
+            )
+
+    ssml = (
+        '<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" '
+        'xmlns:mstts="http://www.w3.org/2001/mstts" xml:lang="en-US">'
+        + "".join(ssml_parts)
+        + '</speak>'
+    )
+    return ssml
+
+
+def _overlay_background_music(speech_path):
+    """Overlay lo-fi background music at low volume under the speech."""
+    if not BG_MUSIC_PATH.exists():
+        print("[INFO]  No English background music file found; skipping optional music bed.")
+        return
+
+    try:
+        from pydub import AudioSegment
+    except ImportError:
+        print("[WARN]  pydub not installed, skipping background music")
+        return
+
+    try:
+        speech = AudioSegment.from_mp3(str(speech_path))
+        music = AudioSegment.from_mp3(str(BG_MUSIC_PATH))
+
+        # Loop music to cover full speech duration
+        speech_len = len(speech)
+        if len(music) < speech_len:
+            loops_needed = (speech_len // len(music)) + 1
+            music = music * loops_needed
+        music = music[:speech_len]  # Trim to exact speech length
+
+        # Volume: reduce, fade in (3s), fade out (5s)
+        music = music + BG_MUSIC_DB  # e.g. -20 dB
+        music = music.fade_in(3000).fade_out(5000)
+
+        combined = speech.overlay(music)
+        combined.export(str(speech_path), format="mp3", bitrate=MP3_BITRATE)
+        print(f"[AUDIO] Background music overlaid ({BG_MUSIC_DB} dB, {speech_len/1000:.0f}s)")
+    except Exception as e:
+        print(f"[WARN]  Background music overlay failed (non-blocking): {e}")
+
+
+def _post_process_audio(output_path):
+    """Apply background music and jingle overlay to synthesized speech."""
+    _overlay_background_music(output_path)
+    _overlay_jingle(output_path)
+    return _ensure_final_mp3_size(output_path)
+
+
+def _overlay_jingle(speech_path):
+    """Overlay jingle on the first few seconds of the speech audio."""
+    try:
+        from pydub import AudioSegment
+    except ImportError:
+        print("[WARN]  pydub not installed, skipping jingle overlay")
+        return
+
+    # Try local file first (always available during CI), fallback to URL download
+    local_jingle = PROJECT_DIR / "static" / "podcast" / "audio" / "jingle.mp3"
+    jingle_path = None
+
+    if local_jingle.exists():
+        jingle_path = str(local_jingle)
+        print(f"[AUDIO] Overlaying intro jingle (local: {local_jingle.name})...")
+    elif JINGLE_URL:
+        import urllib.request
+        import tempfile
+        print(f"[AUDIO] Downloading jingle from CDN...")
+        try:
+            tmp = tempfile.NamedTemporaryFile(suffix=".mp3", delete=False)
+            urllib.request.urlretrieve(JINGLE_URL, tmp.name)
+            jingle_path = tmp.name
+        except Exception as e:
+            print(f"[WARN]  Jingle download failed: {e}")
+            return
+    else:
+        print("[INFO]  No jingle available, skipping overlay")
+        return
+
+    try:
+        jingle = AudioSegment.from_mp3(jingle_path)
+        speech = AudioSegment.from_mp3(str(speech_path))
+
+        # Jingle: fade in 1s, play full, fade out 3s, volume down
+        jingle = jingle.fade_in(1000).fade_out(3000) - 8  # -8 dB
+
+        # Overlay jingle at the very start of speech
+        combined = speech.overlay(jingle, position=0)
+
+        combined.export(str(speech_path), format="mp3", bitrate=MP3_BITRATE)
+        print(f"[OK] Jingle overlaid on intro ({len(jingle)/1000:.1f}s)")
+    except Exception as e:
+        print(f"[WARN]  Jingle overlay failed (non-blocking): {e}")
+    finally:
+        # Clean up temp download if used
+        if jingle_path != str(local_jingle):
+            Path(jingle_path).unlink(missing_ok=True)
+
+
+def _ensure_final_mp3_size(output_path):
+    """Keep the final MP3 below Cloudflare's limit without regenerating TTS."""
+    output_path = Path(output_path)
+    if not output_path.exists():
+        print(f"[ERROR] Final podcast file is missing: {output_path}")
         return False
 
-    output = _episode_path(day)
-    if output.is_file() and output.stat().st_size > 1024:
-        print(f"Episode already exists: {output}")
+    original_size = output_path.stat().st_size
+    if original_size <= PODCAST_TARGET_FILE_BYTES:
         return True
 
-    AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-    temporary = output.with_suffix(".mp3.tmp")
     try:
-        asyncio.run(_synthesize(episode_script(edition), temporary))
-        if not temporary.is_file() or temporary.stat().st_size <= 1024:
-            raise RuntimeError("The speech service returned no usable MP3 audio.")
-        with temporary.open("rb") as audio_file:
-            if not audio_file.read(3).startswith((b"ID3", b"\xff\xfb", b"\xff\xf3", b"\xff\xf2")):
-                raise RuntimeError("The speech service output is not an MP3 stream.")
-        temporary.replace(output)
-    except Exception as error:
-        temporary.unlink(missing_ok=True)
+        from pydub import AudioSegment
+        from pydub.exceptions import CouldntDecodeError, CouldntEncodeError
+    except ImportError:
+        if original_size < CLOUDFLARE_MAX_FILE_BYTES:
+            print(
+                "[WARN]  Final podcast exceeds the 24 MiB target, but remains below "
+                "25 MiB; pydub is unavailable for adaptive re-encoding"
+            )
+            return True
         print(
-            f"Audio generation failed ({type(error).__name__}): {error}",
-            file=sys.stderr,
+            "[ERROR] Final podcast exceeds Cloudflare's 25 MiB limit and pydub is "
+            "unavailable for adaptive re-encoding"
         )
         return False
 
-    print(f"Generated English episode: {output} ({output.stat().st_size} bytes)")
+    try:
+        source_audio = AudioSegment.from_mp3(str(output_path))
+    except (CouldntDecodeError, OSError) as error:
+        if original_size < CLOUDFLARE_MAX_FILE_BYTES:
+            print(
+                f"[WARN]  Podcast remains below 25 MiB, but could not be inspected "
+                f"for the preferred 24 MiB target: {error}"
+            )
+            return True
+        print(f"[ERROR] Unable to inspect oversized podcast for re-encoding: {error}")
+        return False
+
+    duration_seconds = len(source_audio) / 1000
+    if duration_seconds <= 0:
+        print("[ERROR] Cannot reduce oversized podcast because its duration is invalid")
+        return False
+
+    configured_kbps = int(MP3_BITRATE[:-1])
+    estimated_safe_kbps = int(
+        (PODCAST_TARGET_FILE_BYTES * 8 * 0.97)
+        / (duration_seconds * 1000)
+    )
+    estimated_safe_kbps = (estimated_safe_kbps // 8) * 8
+    first_bitrate = min(configured_kbps - 8, estimated_safe_kbps)
+    first_bitrate = max(first_bitrate, MIN_ADAPTIVE_MP3_BITRATE_KBPS)
+    candidates = range(
+        first_bitrate,
+        MIN_ADAPTIVE_MP3_BITRATE_KBPS - 1,
+        -8,
+    )
+
+    temp_path = output_path.with_name(f".{output_path.stem}.size-guard.mp3")
+    best_path = output_path.with_name(f".{output_path.stem}.size-guard-best.mp3")
+    best_size = None
+    best_bitrate = None
+    try:
+        for bitrate_kbps in candidates:
+            source_audio.export(
+                str(temp_path),
+                format="mp3",
+                bitrate=f"{bitrate_kbps}k",
+            )
+            candidate_size = temp_path.stat().st_size
+            if candidate_size <= PODCAST_TARGET_FILE_BYTES:
+                temp_path.replace(output_path)
+                best_path.unlink(missing_ok=True)
+                print(
+                    f"[OK] Podcast re-encoded at {bitrate_kbps}k: "
+                    f"{candidate_size / MIB:.1f} MiB (24 MiB target)"
+                )
+                return True
+            if candidate_size < CLOUDFLARE_MAX_FILE_BYTES:
+                best_size = candidate_size
+                best_bitrate = bitrate_kbps
+                temp_path.replace(best_path)
+    except (CouldntEncodeError, OSError) as error:
+        print(f"[ERROR] Adaptive podcast re-encoding failed: {error}")
+    finally:
+        temp_path.unlink(missing_ok=True)
+
+    if best_size is not None:
+        best_path.replace(output_path)
+        print(
+            f"[WARN]  Podcast is below Cloudflare's limit at {best_bitrate}k "
+            f"({best_size / MIB:.1f} MiB) but exceeds the preferred 24 MiB target"
+        )
+        return True
+
+    best_path.unlink(missing_ok=True)
+    if original_size < CLOUDFLARE_MAX_FILE_BYTES:
+        print(
+            f"[WARN]  Podcast is below Cloudflare's 25 MiB limit "
+            f"({original_size / MIB:.1f} MiB) but could not reach the 24 MiB target"
+        )
+        return True
+
+    print(
+        f"[ERROR] Podcast is {original_size / MIB:.1f} MiB and could not be reduced "
+        "below Cloudflare Pages' 25 MiB per-file limit"
+    )
+    return False
+
+
+def _split_tts_input(text, max_chars=OPENAI_TTS_MAX_CHARS):
+    """Split oversized speech input at natural boundaries below API limits."""
+    if len(text) <= max_chars:
+        return [text]
+
+    chunks = []
+    remaining = text
+    while remaining:
+        if len(remaining) <= max_chars:
+            chunks.append(remaining)
+            break
+
+        candidate = remaining[:max_chars + 1]
+        split_at = max(
+            candidate.rfind(". "),
+            candidate.rfind("? "),
+            candidate.rfind("! "),
+            candidate.rfind("; "),
+            candidate.rfind(", "),
+            candidate.rfind(" "),
+        )
+        if split_at <= 0:
+            split_at = max_chars
+        else:
+            split_at += 1
+        chunks.append(remaining[:split_at].strip())
+        remaining = remaining[split_at:].strip()
+    return chunks
+
+
+def _parse_speech_segments(script):
+    """Parse host lines and markers into provider-independent audio segments."""
+    lines = script.strip().split("\n")
+    segments = []
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        if line == "[INTRO]":
+            segments.append({"type": "pause", "ms": INTRO_PAUSE_MS})
+            continue
+        if line == "[TOPIC_CHANGE]":
+            segments.append({"type": "pause", "ms": TOPIC_CHANGE_PAUSE_MS})
+            continue
+
+        speaker = None
+        text = None
+        for host in (HOST_A, HOST_B, HOST_C):
+            if line.startswith(f"{host}:"):
+                speaker = host
+                text = line[len(f"{host}:"):].strip()
+                break
+
+        if speaker and text:
+            spoken = re.sub(r"\(laughs?\)", "", text, flags=re.IGNORECASE).strip()
+            if spoken:
+                chunks = _split_tts_input(spoken)
+                for chunk in chunks:
+                    segments.append({
+                        "type": "speech",
+                        "speaker": speaker,
+                        "text": chunk,
+                    })
+    return segments
+
+
+def _speech_segments(segments):
+    return [segment for segment in segments if segment["type"] == "speech"]
+
+
+def _synthesize_openai_segments(segments, tmp_dir):
+    """Synthesize all segments once with OpenAI; fail fast for Edge fallback."""
+    from openai import OpenAI, OpenAIError
+
+    api_key = os.environ.get("OPENAI_KEY")
+    if not api_key:
+        return False
+
+    speech_segments = _speech_segments(segments)
+    client = OpenAI(api_key=api_key)
+    print(
+        f"[AUDIO] Synthesizing {len(speech_segments)} speech segments with "
+        f"OpenAI ({OPENAI_TTS_MODEL})..."
+    )
+
+    try:
+        for index, segment in enumerate(speech_segments):
+            tmp_file = tmp_dir / f"seg_{index:04d}.mp3"
+            response = client.audio.speech.create(
+                model=OPENAI_TTS_MODEL,
+                voice=OPENAI_VOICE_MAP[segment["speaker"]],
+                input=segment["text"],
+                instructions=HOST_VOCAL_INSTRUCTIONS[segment["speaker"]],
+                response_format="mp3",
+            )
+            response.stream_to_file(tmp_file)
+            if not tmp_file.exists() or tmp_file.stat().st_size == 0:
+                raise RuntimeError("OpenAI returned an empty audio segment")
+            segment["_file"] = tmp_file
+            if (index + 1) % 25 == 0:
+                print(f"   [OK] {index + 1}/{len(speech_segments)} segments synthesized")
+    except (OpenAIError, OSError, RuntimeError) as error:
+        print(
+            f"[WARN]  OpenAI TTS failed after a single attempt for the current "
+            f"segment: {error}"
+        )
+        return False
+
+    print(f"   [OK] All {len(speech_segments)} OpenAI segments synthesized")
     return True
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--date", type=date.fromisoformat, default=datetime.now(timezone.utc).date())
-    args = parser.parse_args()
+def _synthesize_edge_segments(segments, tmp_dir):
+    """Synthesize all segments with the free Edge neural TTS fallback."""
+    import asyncio
+
     try:
-        created = generate_episode(args.date)
-        generate_feed()
-    except (OSError, ValueError, json.JSONDecodeError) as error:
-        print(f"Podcast publishing failed: {error}", file=sys.stderr)
-        return 1
-    return 0 if created or not _load_edition(args.date) else 1
+        import edge_tts
+    except ImportError:
+        print("[WARN]  edge-tts not installed, skipping TTS fallback")
+        return False
+
+    speech_segments = _speech_segments(segments)
+    print(f"[AUDIO] Synthesizing {len(speech_segments)} speech segments with Edge TTS...")
+
+    async def synthesize_all():
+        for i, seg in enumerate(speech_segments):
+            tmp_file = tmp_dir / f"seg_{i:04d}.mp3"
+            communicate = edge_tts.Communicate(
+                seg["text"],
+                EDGE_VOICE_MAP[seg["speaker"]],
+                rate=EDGE_TTS_RATE,
+            )
+            await communicate.save(str(tmp_file))
+            seg["_file"] = tmp_file
+            if (i + 1) % 25 == 0:
+                print(f"   [OK] {i + 1}/{len(speech_segments)} segments synthesized")
+        print(f"   [OK] All {len(speech_segments)} segments synthesized")
+
+    try:
+        asyncio.run(synthesize_all())
+    except Exception as e:
+        print(f"[WARN]  Edge TTS synthesis failed: {e}")
+        return False
+    return True
+
+
+def _assemble_audio(segments, output_path):
+    """Concatenate provider output with consistent host loudness."""
+    from pydub import AudioSegment
+
+    combined = AudioSegment.empty()
+
+    for seg in segments:
+        if seg["type"] == "pause":
+            combined += AudioSegment.silent(duration=seg["ms"])
+        elif seg["type"] == "speech" and "_file" in seg:
+            try:
+                audio_seg = AudioSegment.from_mp3(str(seg["_file"]))
+                if audio_seg.dBFS != float("-inf"):
+                    gain_db = min(
+                        TARGET_SEGMENT_DBFS - audio_seg.dBFS,
+                        MAX_SEGMENT_GAIN_DB,
+                    )
+                    audio_seg = audio_seg.apply_gain(gain_db)
+                combined += audio_seg
+            except Exception as e:
+                print(f"[WARN]  Failed to load segment: {e}")
+                return False
+
+    combined.export(str(output_path), format="mp3", bitrate=MP3_BITRATE)
+    size_mb = output_path.stat().st_size / (1024 * 1024)
+    print(f"[OK] Audio saved: {output_path} ({size_mb:.1f} MB)")
+    return True
+
+
+def text_to_speech(script, output_path):
+    """Convert a podcast script to MP3 with OpenAI, then Edge fallback."""
+    import shutil
+
+    try:
+        import pydub  # noqa: F401
+    except ImportError:
+        print("[WARN]  pydub not installed, skipping TTS")
+        return False
+
+    segments = _parse_speech_segments(script)
+    speech_segments = _speech_segments(segments)
+    if not speech_segments:
+        print("[WARN]  No speech segments found in script")
+        return False
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_dir = output_path.parent / "_tts_tmp"
+    shutil.rmtree(tmp_dir, ignore_errors=True)
+    tmp_dir.mkdir(exist_ok=True)
+
+    success = False
+    try:
+        if os.environ.get("OPENAI_KEY"):
+            success = _synthesize_openai_segments(segments, tmp_dir)
+            if not success:
+                print("[WARN]  Falling back to Edge TTS for the complete episode...")
+                shutil.rmtree(tmp_dir, ignore_errors=True)
+                tmp_dir.mkdir(exist_ok=True)
+                for segment in speech_segments:
+                    segment.pop("_file", None)
+        else:
+            print("[INFO]  OPENAI_KEY is absent; using Edge TTS fallback")
+
+        if not success:
+            success = _synthesize_edge_segments(segments, tmp_dir)
+
+        if not success or not _assemble_audio(segments, output_path):
+            return False
+    finally:
+        shutil.rmtree(tmp_dir, ignore_errors=True)
+
+    return _post_process_audio(output_path)
+
+
+def _generate_chapters(script, date_str):
+    """Generate a Podcast 2.0 chapters JSON from the script structure.
+    Estimates timestamps from the configured conversational pacing."""
+    import json as json_mod
+
+    chapters_dir = PROJECT_DIR / "static" / "podcast" / "chapters"
+    chapters_dir.mkdir(parents=True, exist_ok=True)
+
+    lines = script.strip().split("\n")
+    sections = []
+    current_section_words = 0
+    current_title = "Teaser"
+    section_idx = 0
+
+    for line in lines:
+        line = line.strip()
+        if line == "[INTRO]":
+            sections.append({"title": current_title, "words": current_section_words})
+            current_title = "Opening"
+            current_section_words = 0
+            section_idx += 1
+        elif line == "[TOPIC_CHANGE]":
+            sections.append({"title": current_title, "words": current_section_words})
+            section_idx += 1
+            current_title = f"Topic {section_idx}"
+            current_section_words = 0
+        else:
+            # Count words (strip speaker prefix)
+            for host in (HOST_A, HOST_B, HOST_C):
+                if line.startswith(f"{host}:"):
+                    line = line[len(f"{host}:"):].strip()
+                    break
+            current_section_words += len(line.split())
+
+            # Try to extract a meaningful title from first substantial line of section
+            if current_title.startswith("Topic") and len(line) > 30:
+                # Use first substantive line as chapter title (truncated)
+                clean = re.sub(r"\(laughs?\)", "", line, flags=re.IGNORECASE).strip()
+                if len(clean) > 20:
+                    current_title = clean[:60].rsplit(" ", 1)[0] + "..."
+
+    # Last section
+    if current_section_words > 0:
+        sections.append({"title": current_title, "words": current_section_words})
+
+    # Convert word counts to timestamps
+    chapters = []
+    elapsed_seconds = 0
+    for sec in sections:
+        chapters.append({
+            "startTime": round(elapsed_seconds),
+            "title": sec["title"],
+        })
+        duration = (sec["words"] / CHAPTER_WORDS_PER_MINUTE) * 60
+        elapsed_seconds += duration
+
+    chapters_data = {"version": "1.2.0", "chapters": chapters}
+    output = chapters_dir / f"{date_str}.json"
+    with open(output, "w", encoding="utf-8") as f:
+        json_mod.dump(chapters_data, f, ensure_ascii=False, indent=2)
+    print(f"[CHAPTERS] Chapters generated: {len(chapters)} chapters to {output.name}")
+
+
+def run(date_str=None):
+    """Generate podcast for the given date. Returns the audio path or None."""
+    date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # Try synthesis file first, fall back to the published post
+    synthesis_file = DATA_DIR / f"synthesis_{date}.md"
+    post_file = PROJECT_DIR / "content" / "posts" / f"{date}-daily.md"
+
+    if synthesis_file.exists():
+        with open(synthesis_file, "r", encoding="utf-8") as f:
+            synthesis_content = f.read()
+    elif post_file.exists():
+        print("[INFO]  Synthesis file not found, using published post as source")
+        with open(post_file, "r", encoding="utf-8") as f:
+            raw = f.read()
+        # Strip YAML frontmatter and audio player
+        synthesis_content = re.sub(r"^---\n.*?\n---\n", "", raw, count=1, flags=re.DOTALL)
+        synthesis_content = re.sub(r"<audio.*?</audio>", "", synthesis_content, flags=re.DOTALL)
+    else:
+        print(f"[WARN]  No synthesis or post found for {date}, skipping podcast")
+        return None
+
+    # Step 1: Generate dialogue script
+    script = generate_podcast_script(synthesis_content)
+    if not script:
+        return None
+
+    # Save script for reference
+    script_file = DATA_DIR / f"podcast_script_{date}.txt"
+    with open(script_file, "w", encoding="utf-8") as f:
+        f.write(script)
+    print(f"[SAVE] Script saved: {script_file}")
+
+    # Step 1.5: Generate chapters JSON from script structure
+    _generate_chapters(script, date)
+
+    # Step 2: Convert to audio (OpenAI primary, Edge TTS fallback)
+    audio_path = AUDIO_DIR / f"{date}.mp3"
+    success = text_to_speech(script, audio_path)
+
+    if success:
+        return audio_path
+    return None
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    date = sys.argv[1] if len(sys.argv) > 1 else None
+    run(date)

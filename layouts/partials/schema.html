@@ -1,0 +1,17 @@
+{{- $publisher := dict "@type" "Organization" "name" site.Title "url" site.BaseURL -}}
+{{- $schema := dict "@context" "https://schema.org" -}}
+{{- if .IsHome -}}
+  {{- $search := dict "@type" "SearchAction" "target" (printf "%ssearch/?q={search_term_string}" site.BaseURL) "query-input" "required name=search_term_string" -}}
+  {{- $schema = merge $schema (dict "@type" "WebSite" "name" site.Title "url" site.BaseURL "description" site.Params.description "inLanguage" "en" "potentialAction" $search "publisher" $publisher) -}}
+{{- else if eq .RelPermalink "/podcast/" -}}
+  {{- $schema = merge $schema (dict "@type" "PodcastSeries" "name" "Decode the Stack" "description" "A daily English-language technology briefing for software professionals, hosted by Anna, Maria, and Alex." "url" .Permalink "webFeed" (printf "%spodcast/feed.xml" site.BaseURL) "inLanguage" "en-US" "image" (printf "%simages/podcast-cover.png" site.BaseURL) "author" $publisher "publisher" $publisher) -}}
+{{- else if and .IsPage (eq .Section "posts") -}}
+  {{- $schema = merge $schema (dict "@type" "BlogPosting" "headline" .Title "description" (.Description | default site.Params.description) "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "inLanguage" "en" "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "author" $publisher "publisher" $publisher "image" (printf "%simages/podcast-cover.png" site.BaseURL)) -}}
+{{- else -}}
+  {{- $schema = merge $schema (dict "@type" "WebPage" "name" (.Title | default site.Title) "description" (.Description | default site.Params.description) "url" .Permalink "inLanguage" "en" "isPartOf" (dict "@type" "WebSite" "name" site.Title "url" site.BaseURL)) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- if and .IsHome (ne site.BaseURL "") -}}
+{{- $podcast := dict "@context" "https://schema.org" "@type" "PodcastSeries" "name" "Decode the Stack" "description" "A daily English-language technology briefing for software professionals, hosted by Anna, Maria, and Alex." "url" (printf "%spodcast/" site.BaseURL) "webFeed" (printf "%spodcast/feed.xml" site.BaseURL) "inLanguage" "en-US" "image" (printf "%simages/podcast-cover.png" site.BaseURL) "author" $publisher -}}
+<script type="application/ld+json">{{ $podcast | jsonify | safeJS }}</script>
+{{- end -}}

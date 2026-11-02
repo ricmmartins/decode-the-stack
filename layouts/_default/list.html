@@ -1,14 +1,19 @@
 {{ define "main" }}
-<header class="page-heading">
-  <p class="eyebrow">Archive / {{ .Title }}</p>
-  <h1>{{ .Title }}</h1>
-  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+<header class="page-header">
+  <p class="eyebrow">Archive / Editions</p>
+  <h1>{{ .Title | default "All editions" }}</h1>
+  {{ with .Description }}<div class="post-description">{{ . | markdownify }}</div>{{ end }}
+  {{ with .Content }}<div class="post-content">{{ . }}</div>{{ end }}
 </header>
-{{ $pages := .RegularPages.ByDate.Reverse }}
-{{ if eq .Section "posts" }}{{ $pages = .Pages.ByDate.Reverse }}{{ end }}
-{{ $paginator := .Paginate $pages 12 }}
-<div class="card-grid archive-grid">
-  {{ range $paginator.Pages }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">No editions yet. The daily pipeline will publish the first one when recent source stories are available.</p>{{ end }}
+{{- $pages := .RegularPages.ByDate.Reverse }}
+{{- $paginator := .Paginate $pages 12 }}
+<div class="editions-grid">
+  {{- range $paginator.Pages }}{{ partial "card.html" . }}{{ else }}<p class="empty-state">No editions have been published yet.</p>{{ end }}
 </div>
-{{ template "_internal/pagination.html" . }}
+{{- if gt $paginator.TotalPages 1 }}
+<nav class="pagination page-footer" aria-label="Edition pagination">
+  {{- if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">← Newer editions</a>{{ end }}
+  {{- if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">Earlier editions →</a>{{ end }}
+</nav>
+{{- end }}
 {{ end }}

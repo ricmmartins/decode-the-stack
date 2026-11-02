@@ -1,16 +1,40 @@
 {{ define "main" }}
-<article class="article">
-  <header class="article-header">
-    <p class="eyebrow">{{ .Date | time.Format "Monday, January 2, 2006" }}{{ with .Params.categories }} · {{ delimit . " / " }}{{ end }}</p>
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="article-summary">{{ . }}</p>{{ end }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Description }}<div class="post-description">{{ . | markdownify }}</div>{{ end }}
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "January 2, 2006" }}</time>
+      {{ if .ReadingTime }}<span>· {{ .ReadingTime }} min read</span>{{ end }}
+      {{ range .GetTerms "categories" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+    </div>
   </header>
-  <div class="article-content">{{ .Content }}</div>
-  {{ if eq .Section "posts" }}
-  <nav class="article-nav" aria-label="Edition navigation">
+
+  {{- $marker := "<!-- toc-split -->" }}
+  {{- $content := .Content }}
+  {{- if and (.Param "ShowToc") (in $content $marker) }}
+    {{- $parts := split $content $marker }}
+    <div class="post-content pre-toc">{{ index $parts 0 | safeHTML }}</div>
+    <div class="toc"><details {{ if .Param "TocOpen" }}open{{ end }}><summary>Table of contents</summary>{{ .TableOfContents }}</details></div>
+    {{- if gt (len $parts) 1 }}<div class="post-content">{{ index $parts 1 | safeHTML }}</div>{{ end }}
+  {{- else }}
+    {{- if .Param "ShowToc" }}<div class="toc"><details {{ if .Param "TocOpen" }}open{{ end }}><summary>Table of contents</summary>{{ .TableOfContents }}</details></div>{{ end }}
+    <div class="post-content">{{ .Content }}</div>
+  {{- end }}
+
+  {{- with (.GetTerms "tags") }}
+  <footer class="post-footer">
+    <ul class="post-tags">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+  </footer>
+  {{- end }}
+
+  {{- if eq .Section "posts" }}
+  <nav class="post-nav-links" aria-label="Edition navigation">
     {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← Newer: {{ .Title }}</a>{{ end }}
     {{ with .NextInSection }}<a href="{{ .RelPermalink }}">Older: {{ .Title }} →</a>{{ end }}
   </nav>
-  {{ end }}
+  {{- partial "related.html" . }}
+  {{- end }}
 </article>
 {{ end }}

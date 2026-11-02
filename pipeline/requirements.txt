@@ -1,0 +1,13 @@
+# Pipeline dependencies
+feedparser==6.0.11
+requests==2.32.*
+scikit-learn==1.5.*
+openai==1.75.*
+pyyaml==6.0.*
+python-dateutil==2.9.*
+beautifulsoup4==4.12.*
+lxml==5.2.*
+edge-tts>=6.1
+pydub==0.25.*
+Pillow==11.*
+huggingface_hub>=0.25

@@ -1,6 +1,13 @@
-<article class="edition-card">
-  <p class="eyebrow">{{ .Date | time.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p>{{ .Description | default .Summary | plainify | htmlUnescape }}</p>
-  <a class="read-link" href="{{ .RelPermalink }}">Read edition <span aria-hidden="true">→</span></a>
+<article class="post-entry edition-card">
+  <div class="edition-meta">
+    {{- if in .Params.categories "Weekly Briefing" }}
+    <span class="edition-badge">Weekly briefing</span>
+    {{- else }}
+    <span class="edition-badge">Decoded</span>
+    {{- end }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "January 2, 2006" }}</time>
+  </div>
+  <header class="entry-header"><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2></header>
+  <div class="entry-content"><p>{{ .Description | default .Summary | plainify | htmlUnescape }}</p></div>
+  <footer class="entry-footer"><span>{{ .ReadingTime }} min read</span><a href="{{ .RelPermalink }}" aria-label="Read: {{ .Title | plainify }}">{{ partial "brand-icon.html" "arrow" }}</a></footer>
 </article>

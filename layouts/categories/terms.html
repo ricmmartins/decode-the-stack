@@ -1,0 +1,27 @@
+{{ define "main" }}
+<header class="page-header">
+  <p class="eyebrow">Explore / Topics</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<div class="post-description">{{ . | markdownify }}</div>{{ end }}
+  {{ with .Content }}<div class="post-content">{{ . }}</div>{{ end }}
+</header>
+{{- $topics := slice
+  (dict "title" "Cloud" "description" "Architecture that runs." "icon" "cloud" "url" "cloud")
+  (dict "title" "AI/ML" "description" "From demo to system." "icon" "cpu" "url" "ai-ml")
+  (dict "title" "DevOps & SRE" "description" "Reliability in practice." "icon" "layers" "url" "devops-sre")
+  (dict "title" "Software Engineering" "description" "Code, design, and decisions." "icon" "code" "url" "software-engineering")
+  (dict "title" "Security" "description" "Trust by design." "icon" "shield" "url" "security")
+-}}
+<div class="topic-grid">
+  {{- range $topics }}
+    {{- $topic := . }}
+    {{- $term := site.GetPage (printf "/categories/%s" $topic.url) }}
+    {{- $count := 0 }}
+    {{- with $term }}{{ $count = len .Pages }}{{ end }}
+    <a class="topic-card" href="{{ printf "categories/%s/" $topic.url | relURL }}">
+      {{- partial "brand-icon.html" $topic.icon }}
+      <h2>{{ $topic.title }}</h2><p>{{ $topic.description }}</p><span class="topic-count">{{ $count }} editions ↗</span>
+    </a>
+  {{- end }}
+</div>
+{{ end }}

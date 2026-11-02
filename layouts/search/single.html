@@ -1,13 +1,13 @@
 {{ define "main" }}
-<section class="page-heading">
+<header class="page-header">
   <p class="eyebrow">Find your signal</p>
   <h1>Search the editions</h1>
-  <p>Search headlines, source excerpts, and topics across the archive.</p>
-</section>
-<section class="search-panel" aria-label="Search">
+  <p class="post-description">Search headlines, publisher links, and contextual analysis across the archive.</p>
+</header>
+<section class="search-panel" aria-label="Search editions">
   <label for="site-search">Search all editions</label>
   <input id="site-search" type="search" placeholder="Try cloud, Kubernetes, security…" autocomplete="off">
-  <p id="search-status" class="search-status" aria-live="polite"></p>
-  <div id="search-results" class="card-grid"></div>
+  <p id="search-status" class="search-status" aria-live="polite">Enter a search term to find editions.</p>
+  <div id="search-results" class="editions-grid"></div>
 </section>
 {{ end }}

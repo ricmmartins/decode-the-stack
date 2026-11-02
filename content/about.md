@@ -1,88 +1,97 @@
 ---
 title: "About Decode the Stack"
-description: "How the daily, source-linked English technology briefing is selected, published, and kept accountable to its original sources."
+description: "How the daily English technology briefing is gathered, clustered, ranked, synthesized, and published."
 date: 2026-11-02T00:00:00Z
+ShowToc: true
+TocOpen: false
 ---
 
 ## What is Decode the Stack?
 
-Decode the Stack is a daily English-language technology briefing for people who
-build and operate software. It follows software engineering, cloud platforms,
-DevOps, AI, and security, with a direct link to the publisher behind every
-story.
+**Decode the Stack** is the English-language sister publication to
+[Decodifica.Tech](https://decodifica.tech/), built for software professionals
+who want useful context without another firehose of headlines. It covers
+software engineering, cloud, DevOps and SRE, AI/ML, and security.
 
-The goal is useful filtering, not another copy of the news. Each edition keeps
-the headline, a short description supplied by the publisher, the publisher's
-name, and a link to the complete original report.
+Each edition links back to the original reporting. The editorial goal is to
+connect verified developments and explain their engineering implications, not
+to reproduce publisher articles or invent facts.
 
 ## How an edition is made
 
-The current pipeline is configured for eight public RSS or Atom feeds from
-Ars Technica, AWS, Cloudflare, GitHub Engineering, Google for Developers,
-InfoQ, Kubernetes, and The New Stack. Feed availability can vary.
+The English edition uses the same curated-source and editorial pipeline as its
+Portuguese counterpart. The source catalogue is maintained in
+[`pipeline/sources.yaml`](https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml).
 
-1. **Collect:** The daily job checks the configured public feeds for dated
-   items published within the last 48 hours.
-2. **Select:** It removes duplicate URLs, ranks sources using the publication's
-   small configuration, and spreads the selection across publishers. An
-   edition contains up to 12 items when enough recent stories are available.
-3. **Attribute:** The edition preserves each publisher's headline and feed
-   description, names the publisher, and links to the original article. It
-   does not present those excerpts as independent reporting or invent
-   additional facts.
-4. **Publish:** A dated edition is built into the site and the written RSS
-   feed. When audio generation succeeds, a short narrated headline bulletin
-   is added to the separate podcast feed.
+1. **Collect:** A scheduled UTC job reads the configured public RSS and Atom
+   feeds and keeps items within their category-specific recency windows.
+2. **Cluster:** URL and title deduplication plus TF-IDF and cosine similarity
+   group overlapping coverage into stories while retaining the source links.
+3. **Rank:** Source authority, coverage, relevance, category balance, and
+   recency determine which stories become the main edition and which remain
+   Quick Reads. The selection is score-based; it does not pad a quiet day with
+   weak stories.
+4. **Synthesize:** The pipeline makes separate contextual English synthesis
+   passes for the main stories and Quick Reads. It explains what changed,
+   trade-offs, and implications using only the supplied reporting. Provider
+   fallback and the model actually selected are logged by each run.
+5. **Publish:** Hugo builds the dated article, site RSS, category and tag
+   archives, statistics, and the audio episode. A weekly Top 10 is synthesized
+   on Fridays from the accumulated story buffer.
 
-This is a deliberately transparent first version: it does not claim to monitor
-hundreds of sources, cluster articles into independently verified stories, or
-write AI-generated analysis.
+The production workflow runs automatically each day. It uses the original
+publication's authenticated runner for AI credentials; secret values are not
+stored in this public repository.
 
-## Who it is for
+## AI and editorial safeguards
 
-Software developers, platform and cloud engineers, SREs, security
-practitioners, engineering leads, and anyone who wants a compact way to follow
-the tools and systems behind modern software.
+AI is used for contextual synthesis and podcast-script generation, not as a
+source of facts. Each edition keeps links to the original publisher pages, and
+the podcast script is grounded in the generated source-linked edition. If the
+configured synthesis providers fail, the pipeline stops rather than publishing
+a headline-only fallback that would be presented as contextual analysis.
 
-## Editorial approach
+Daily pipeline statistics, source counts, and story trends are computed from
+the editions and source configuration actually present in this repository.
+They are not estimates of total industry coverage.
 
-- Original publishers retain their reporting and provide the excerpts shown
-  here.
-- Every story links to its source; readers should follow that link for full
-  context, corrections, and the publisher's own coverage.
-- Dates and categories come from the source feeds and this site's feed
-  configuration.
-- A feed can be unavailable or incomplete. A missing item is not evidence that
-  a story did not happen.
-- The audio bulletin is synthesized narration of selected headlines, not a
-  conversation between human hosts or a substitute for the written show notes.
+## Podcast
 
-## Browse and subscribe
+The separate English podcast is a three-host dialogue between Anna, Maria,
+and Alex. Its target script is approximately 15 minutes. OpenAI text-to-speech
+uses the configured Marin, Sage, and Ash voices; Edge TTS is the fallback.
+Provider and model selection are reported in the publishing run.
 
-- **Editions** collects the daily briefings in chronological order.
-- **Topics** organizes editions by their assigned categories and tags.
-- **Archive** offers a date-based view of published editions.
-- **Search** searches the site's indexed editions.
-- **Statistics** reports counts calculated from the editions actually
-  published here.
-- **Site RSS** carries the written editions; **Podcast RSS** carries only
-  episodes with a published, non-empty MP3.
+The show has an RSS feed with its own artwork, episode routes, and stable
+date-based episode GUIDs. It has **not** been submitted to Spotify or any other
+podcast directory; creator-account submission and platform review remain
+separate steps.
 
-## Sources
+## Browse the publication
 
-The feed list is intentionally small and may change: [Ars Technica](https://feeds.arstechnica.com/arstechnica/technology-lab),
-[AWS News Blog](https://aws.amazon.com/blogs/aws/feed/),
-[Cloudflare Blog](https://blog.cloudflare.com/rss/),
-[GitHub Engineering](https://github.blog/engineering/feed/),
-[Google for Developers](https://developers.googleblog.com/feeds/posts/default?alt=rss),
-[InfoQ](https://feed.infoq.com/),
-[Kubernetes Blog](https://kubernetes.io/feed.xml), and
-[The New Stack](https://thenewstack.io/feed/).
+- **Editions** contains the daily briefings and Friday weekly editions.
+- **Categories** separates Cloud, AI/ML, DevOps & SRE, Software Engineering,
+  and Security. A topic remains browsable when its current edition count is
+  zero.
+- **Tags** organizes editions by technologies and companies identified in the
+  reporting.
+- **Archive** offers chronological browsing; **Search** searches article
+  titles, descriptions, and body text.
+- **Statistics** reports published-edition totals and source/category
+  coverage.
+- **News RSS** and **Podcast RSS** are separate feeds. The site is also
+  installable as a progressive web app and supports offline access to cached
+  pages.
 
-## Feedback
+## Comments and feedback
+
+Comments are not active yet. The English repository's GitHub Discussions
+integration requires a separate Giscus app installation, which is still
+pending repository authorization; no broken or Portuguese discussion widget is
+embedded in the meantime.
 
 For corrections or suggestions, open an issue in the
-[Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues).
-Please include a link to the edition and the original source.
+[Decode the Stack repository](https://github.com/ricmmartins/decode-the-stack/issues)
+and include the edition and original source URLs.
 
 Read our [privacy notice](/privacy/) and [terms of use](/terms/).

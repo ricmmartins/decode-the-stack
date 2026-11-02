@@ -1,0 +1,1313 @@
+# TechBlog — Curated RSS Sources
+# Categories: dev, cloud, devops, security, ai, news
+# Tier 1 = always ingest (high signal, frequent posts)
+# Tier 2 = check less frequently (good content, less frequent)
+
+sources:
+
+  # ========================================
+  # NEWS / MEDIA
+  # ========================================
+  - name: Hacker News (Best)
+    url: https://hnrss.org/best
+    category: news
+    tier: 1
+
+  - name: Lobsters
+    url: https://lobste.rs/rss
+    category: news
+    tier: 1
+
+  - name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/technology-lab
+    category: news
+    tier: 1
+
+  - name: The Verge - Tech
+    url: https://www.theverge.com/rss/tech/index.xml
+    category: news
+    tier: 1
+
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+    category: news
+    tier: 1
+
+  - name: InfoQ
+    url: https://feed.infoq.com/
+    category: news
+    tier: 1
+
+  - name: The New Stack
+    url: https://thenewstack.io/feed/
+    category: news
+    tier: 1
+
+  - name: TLDR
+    url: https://tldr.tech/api/rss/tech
+    category: news
+    tier: 1
+
+  - name: The Official Microsoft Blog
+    url: https://blogs.microsoft.com/feed/
+    category: news
+    tier: 1
+
+  - name: Wired
+    url: https://www.wired.com/feed/rss
+    category: news
+    tier: 2
+
+  # ========================================
+  # ENGINEERING BLOGS — TIER 1 (Big Tech)
+  # ========================================
+  - name: Netflix Tech Blog
+    url: https://medium.com/feed/netflix-techblog
+    category: dev
+    tier: 1
+
+  # Uber Engineering — fully JS-rendered SPA, no RSS feed, all URLs return
+  # HTTP 406 without a headless browser. Cannot be scraped server-side.
+  # - name: Uber Engineering
+  #   url: https://www.uber.com/us/en/blog/engineering/
+  #   category: dev
+  #   tier: 1
+
+  - name: Airbnb Engineering
+    url: https://medium.com/feed/airbnb-engineering
+    category: dev
+    tier: 1
+
+  - name: Spotify Engineering
+    url: https://engineering.atspotify.com/feed/
+    category: dev
+    tier: 1
+
+  - name: Stripe Engineering
+    url: https://stripe.com/blog/feed.rss
+    category: dev
+    tier: 1
+
+  - name: GitHub Engineering
+    url: https://github.blog/engineering/feed/
+    category: dev
+    tier: 1
+
+  - name: Shopify Engineering
+    url: https://shopify.engineering/sitemap.xml
+    category: dev
+    tier: 1
+    type: sitemap
+
+  - name: Slack Engineering
+    url: https://slack.engineering/feed/
+    category: dev
+    tier: 1
+
+  - name: Dropbox Tech
+    url: https://dropbox.tech/feed
+    category: dev
+    tier: 1
+
+  - name: Meta Engineering
+    url: https://engineering.fb.com/feed/
+    category: dev
+    tier: 1
+
+  - name: Google Developers Blog
+    url: https://developers.googleblog.com/feeds/posts/default?alt=rss
+    category: dev
+    tier: 1
+
+  - name: Microsoft DevBlogs
+    url: https://devblogs.microsoft.com/feed/
+    category: dev
+    tier: 1
+
+  - name: Visual Studio Blog
+    url: https://devblogs.microsoft.com/visualstudio/feed/
+    category: dev
+    tier: 1
+
+  - name: PowerShell Blog
+    url: https://devblogs.microsoft.com/powershell/feed/
+    category: dev
+    tier: 2
+
+  - name: Microsoft 365 Developer Blog
+    url: https://devblogs.microsoft.com/microsoft365dev/feed/
+    category: dev
+    tier: 2
+
+  - name: Windows Developer Blog
+    url: https://blogs.windows.com/windowsdeveloper/feed/
+    category: dev
+    tier: 2
+
+  - name: GitHub Blog
+    url: https://github.blog/feed/
+    category: dev
+    tier: 1
+
+  # ========================================
+  # ENGINEERING BLOGS — TIER 1 (High Signal)
+  # ========================================
+  - name: Cloudflare Blog
+    url: https://blog.cloudflare.com/rss/
+    category: dev
+    tier: 1
+
+  - name: Discord Engineering
+    url: https://discord.com/blog/rss.xml
+    category: dev
+    tier: 1
+
+  - name: Canva Engineering
+    url: https://canvatechblog.com/feed
+    category: dev
+    tier: 1
+
+  - name: Pinterest Engineering
+    url: https://medium.com/feed/pinterest-engineering
+    category: dev
+    tier: 1
+
+  - name: Etsy Engineering
+    url: https://www.etsy.com/codeascraft/rss
+    category: dev
+    tier: 1
+
+  - name: Datadog Engineering
+    url: https://www.datadoghq.com/index.xml
+    category: dev
+    tier: 1
+
+  - name: Grafana Blog
+    url: https://grafana.com/blog/index.xml
+    category: devops
+    tier: 1
+
+  # ========================================
+  # ENGINEERING BLOGS — TIER 2
+  # ========================================
+  - name: Wix Engineering
+    url: https://www.wix.engineering/blog-feed.xml
+    category: dev
+    tier: 2
+
+  - name: Yelp Engineering
+    url: https://engineeringblog.yelp.com/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Twilio Blog
+    url: https://www.twilio.com/blog/feed
+    category: dev
+    tier: 2
+
+  - name: DigitalOcean Blog
+    url: https://www.digitalocean.com/rss/blog.atom
+    category: dev
+    tier: 2
+
+  # Atlassian Engineering — XML parse error, feed malformed
+  # - name: Atlassian Engineering
+  #   url: https://blog.developer.atlassian.com/feed/
+  #   category: dev
+  #   tier: 2
+
+  - name: Grab Tech
+    url: https://engineering.grab.com/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Gusto Engineering
+    url: https://engineering.gusto.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Trivago Tech
+    url: https://tech.trivago.com/index.xml
+    category: dev
+    tier: 2
+
+  - name: SoundCloud Backstage
+    url: https://developers.soundcloud.com/blog/blog.rss
+    category: dev
+    tier: 2
+
+  - name: Reddit Engineering
+    url: https://www.reddit.com/r/RedditEng/.rss
+    category: dev
+    tier: 2
+
+  - name: Medium Engineering
+    url: https://medium.engineering/feed
+    category: dev
+    tier: 2
+
+  - name: Square (Block) Engineering
+    url: https://developer.squareup.com/blog/rss.xml
+    category: dev
+    tier: 2
+
+  # ========================================
+  # CLOUD / INFRASTRUCTURE
+  # ========================================
+  - name: AWS Blog
+    url: https://aws.amazon.com/blogs/aws/feed/
+    category: cloud
+    tier: 1
+
+  - name: Azure Blog
+    url: https://azure.microsoft.com/en-us/blog/feed/
+    category: cloud
+    tier: 1
+
+  - name: Azure DevOps Blog
+    url: https://devblogs.microsoft.com/devops/feed/
+    category: devops
+    tier: 1
+
+  - name: Azure Blog
+    url: https://azure.microsoft.com/blog/feed
+    category: cloud
+    tier: 2
+
+  - name: Vercel Blog
+    url: https://vercel.com/atom
+    category: cloud
+    tier: 1
+
+  - name: Hashicorp Blog
+    url: https://www.hashicorp.com/blog/feed.xml
+    category: cloud
+    tier: 1
+
+  - name: Fly.io Blog
+    url: https://fly.io/blog/feed.xml
+    category: cloud
+    tier: 2
+
+  - name: Render Blog
+    url: https://render.com/blog/feed.rss
+    category: cloud
+    tier: 2
+
+  - name: Supabase Blog
+    url: https://supabase.com/feed.xml
+    category: cloud
+    tier: 1
+
+  - name: PlanetScale Blog
+    url: https://planetscale.com/blog/rss.xml
+    category: cloud
+    tier: 2
+
+  # ========================================
+  # DEVOPS / SRE
+  # ========================================
+  - name: Kubernetes Blog
+    url: https://kubernetes.io/feed.xml
+    category: devops
+    tier: 1
+
+  - name: Docker Blog
+    url: https://www.docker.com/blog/feed/
+    category: devops
+    tier: 1
+
+  - name: CNCF Blog
+    url: https://www.cncf.io/blog/feed/
+    category: devops
+    tier: 1
+
+  - name: GitLab Blog
+    url: https://about.gitlab.com/atom.xml
+    category: devops
+    tier: 1
+
+  - name: CircleCI Blog
+    url: https://circleci.com/blog/feed.xml
+    category: devops
+    tier: 2
+
+  - name: Brendan Gregg
+    url: https://www.brendangregg.com/blog/rss.xml
+    category: devops
+    tier: 1
+
+  - name: SRE Weekly
+    url: https://sreweekly.com/feed/
+    category: devops
+    tier: 1
+
+  # ========================================
+  # SECURITY
+  # ========================================
+  - name: Krebs on Security
+    url: https://krebsonsecurity.com/feed/
+    category: security
+    tier: 1
+
+  - name: The Hacker News
+    url: https://feeds.feedburner.com/TheHackersNews
+    category: security
+    tier: 1
+
+  - name: Schneier on Security
+    url: https://www.schneier.com/feed/atom/
+    category: security
+    tier: 1
+
+  - name: Troy Hunt
+    url: https://www.troyhunt.com/rss/
+    category: security
+    tier: 1
+
+  - name: Google Project Zero
+    url: https://googleprojectzero.blogspot.com/feeds/posts/default
+    category: security
+    tier: 1
+
+  - name: Cloudflare Security
+    url: https://blog.cloudflare.com/tag/security/rss/
+    category: security
+    tier: 1
+
+  - name: Microsoft Security (MSRC)
+    url: https://msrc.microsoft.com/index.xml
+    category: security
+    tier: 1
+
+  - name: NIST Cybersecurity
+    url: https://www.nist.gov/blogs/cybersecurity-insights/rss.xml
+    category: security
+    tier: 2
+
+  - name: Dark Reading
+    url: https://www.darkreading.com/rss.xml
+    category: security
+    tier: 2
+
+  # ========================================
+  # AI / ML
+  # ========================================
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    category: ai
+    tier: 1
+
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    category: ai
+    tier: 1
+
+  - name: Anthropic Blog
+    url: https://www.anthropic.com/sitemap.xml
+    type: sitemap
+    category: ai
+    tier: 1
+    url_patterns: ["/research/", "/news/"]
+
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    category: ai
+    tier: 1
+
+  - name: DeepMind Blog
+    url: https://deepmind.google/blog/rss.xml
+    category: ai
+    tier: 1
+
+  - name: Microsoft AI Blog
+    url: https://blogs.microsoft.com/ai/feed/
+    category: ai
+    tier: 1
+
+  - name: LangChain Blog
+    url: https://blog.langchain.dev/rss.xml
+    category: ai
+    tier: 1
+
+  - name: Simon Willison
+    url: https://simonwillison.net/atom/everything/
+    category: ai
+    tier: 1
+
+  # ========================================
+  # INDIVIDUAL BLOGS — HIGH SIGNAL
+  # ========================================
+  - name: Martin Fowler
+    url: https://martinfowler.com/feed.atom
+    category: dev
+    tier: 1
+
+  - name: Julia Evans
+    url: https://jvns.ca/atom.xml
+    category: dev
+    tier: 1
+
+  - name: Dan Abramov
+    url: https://overreacted.io/rss.xml
+    category: dev
+    tier: 1
+
+  - name: Pragmatic Engineer
+    url: https://newsletter.pragmaticengineer.com/feed
+    category: dev
+    tier: 1
+
+  - name: Coding Horror (Jeff Atwood)
+    url: https://blog.codinghorror.com/rss/
+    category: dev
+    tier: 1
+
+  - name: Joel on Software
+    url: https://www.joelonsoftware.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Raymond Chen (Old New Thing)
+    url: https://devblogs.microsoft.com/oldnewthing/feed
+    category: dev
+    tier: 1
+
+  - name: Charity Majors
+    url: https://charity.wtf/feed/
+    category: devops
+    tier: 1
+
+  - name: Xe Iaso
+    url: https://xeiaso.net/blog.rss
+    category: dev
+    tier: 2
+
+  - name: Thorsten Ball
+    url: https://registerspill.thorstenball.com/feed
+    category: dev
+    tier: 2
+
+  # ========================================
+  # DEV COMMUNITY / PLATFORMS
+  # ========================================
+  - name: Dev.to (Top)
+    url: https://dev.to/feed
+    category: dev
+    tier: 2
+
+  - name: Stack Overflow Blog
+    url: https://stackoverflow.blog/feed/
+    category: dev
+    tier: 1
+
+  - name: Changelog
+    url: https://changelog.com/feed
+    category: dev
+    tier: 1
+
+  - name: CSS-Tricks
+    url: https://css-tricks.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Smashing Magazine
+    url: https://www.smashingmagazine.com/feed/
+    category: dev
+    tier: 2
+
+  # ========================================
+  # ENGINEERING BLOGS — NEW ADDITIONS (Companies)
+  # ========================================
+
+  # --- Tier 1: Very high-impact engineering blogs ---
+  - name: Databricks Engineering
+    url: https://www.databricks.com/feed
+    category: dev
+    tier: 1
+
+  - name: PayPal Engineering
+    url: https://medium.com/feed/paypal-tech
+    category: dev
+    tier: 1
+
+  - name: eBay Tech
+    url: https://tech.ebayinc.com/rss/
+    category: dev
+    tier: 1
+
+  - name: Nvidia Developer Blog
+    url: https://developer.nvidia.com/blog/feed/
+    category: dev
+    tier: 1
+
+  - name: Jane Street Tech Blog
+    url: https://blog.janestreet.com/feed.xml
+    category: dev
+    tier: 1
+
+  - name: Confluent Blog
+    url: https://www.confluent.io/rss.xml
+    category: dev
+    tier: 1
+
+  - name: Tailscale Blog
+    url: https://tailscale.com/blog/index.xml
+    category: dev
+    tier: 1
+
+  - name: PostHog Engineering
+    url: https://posthog.com/rss.xml
+    category: dev
+    tier: 1
+
+  - name: Palantir Engineering
+    url: https://blog.palantir.com/feed
+    category: dev
+    tier: 1
+
+  - name: Linear Blog
+    url: https://linear.app/rss/now.xml
+    category: dev
+    tier: 1
+
+  - name: Tinder Tech
+    url: https://medium.com/feed/tinder
+    category: dev
+    tier: 2
+
+  - name: Strava Engineering
+    url: https://medium.com/feed/strava-engineering
+    category: dev
+    tier: 2
+
+  - name: Zalando Engineering
+    url: https://engineering.zalando.com/atom.xml
+    category: dev
+    tier: 2
+
+  - name: Zendesk Engineering
+    url: https://zendesk.engineering/feed
+    category: dev
+    tier: 2
+
+  - name: Deliveroo Engineering
+    url: https://deliveroo.engineering/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Groupon Engineering
+    url: https://medium.com/feed/groupon-eng
+    category: dev
+    tier: 2
+
+  - name: HubSpot Product & Engineering
+    url: https://product.hubspot.com/blog/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Stitch Fix Technology
+    url: https://multithreaded.stitchfix.com/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Auth0 Blog
+    url: https://auth0.com/blog/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Heroku Engineering
+    url: https://blog.heroku.com/feed
+    category: dev
+    tier: 2
+
+  - name: Okta Developer Blog
+    url: https://developer.okta.com/feed.xml
+    category: dev
+    tier: 2
+
+  - name: BBC Product & Technology
+    url: https://medium.com/feed/bbc-product-technology
+    category: dev
+    tier: 2
+
+  - name: Tumblr Engineering
+    url: https://engineering.tumblr.com/rss
+    category: dev
+    tier: 2
+
+  - name: Khan Academy Engineering
+    url: https://blog.khanacademy.org/engineering/feed/
+    category: dev
+    tier: 2
+
+  - name: Indeed Engineering
+    url: https://engineering.indeedblog.com/feed/
+    category: dev
+    tier: 2
+
+  - name: SurveyMonkey Engineering
+    url: https://www.surveymonkey.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Flickr Engineering
+    url: https://code.flickr.net/feed/
+    category: dev
+    tier: 2
+
+  - name: Deno Blog
+    url: https://deno.com/feed
+    category: dev
+    tier: 2
+
+  - name: Neon Blog
+    url: https://neon.tech/blog/rss.xml
+    category: dev
+    tier: 2
+
+  # ========================================
+  # CLOUD / INFRASTRUCTURE — NEW ADDITIONS
+  # ========================================
+  - name: Cloudinary Blog
+    url: https://cloudinary.com/blog/feed
+    category: cloud
+    tier: 2
+
+  - name: LaunchDarkly Blog
+    url: https://launchdarkly.com/blog/feed/
+    category: cloud
+    tier: 2
+
+  - name: PagerDuty Blog
+    url: https://www.pagerduty.com/feed
+    category: cloud
+    tier: 2
+
+  - name: Akamai Blog
+    url: https://www.akamai.com/blog/rss.xml
+    category: cloud
+    tier: 2
+
+  - name: Fastly Blog
+    url: https://www.fastly.com/blog_rss.xml
+    category: cloud
+    tier: 2
+
+  # ========================================
+  # DEVOPS / SRE — NEW ADDITIONS
+  # ========================================
+  - name: Prometheus Blog
+    url: https://prometheus.io/blog/feed.xml
+    category: devops
+    tier: 2
+
+  - name: Spacelift Blog
+    url: https://spacelift.io/rss
+    category: devops
+    tier: 2
+
+  - name: Pulumi Blog
+    url: https://www.pulumi.com/blog/rss.xml
+    category: devops
+    tier: 2
+
+  - name: Env0 Blog
+    url: https://www.env0.com/blog/rss.xml
+    category: devops
+    tier: 2
+
+  # ========================================
+  # SECURITY — NEW ADDITIONS
+  # ========================================
+  - name: Google Security Blog
+    url: https://security.googleblog.com/feeds/posts/default
+    category: security
+    tier: 1
+
+  - name: Mozilla Security Blog
+    url: https://blog.mozilla.org/security/feed/
+    category: security
+    tier: 1
+
+  - name: PortSwigger Research
+    url: https://portswigger.net/research/rss
+    category: security
+    tier: 1
+
+  - name: Filippo Valsorda
+    url: https://words.filippo.io/rss/
+    category: security
+    tier: 1
+
+  - name: Matthew Green (Cryptography)
+    url: https://blog.cryptographyengineering.com/feed/
+    category: security
+    tier: 2
+
+  - name: Risky Business (Podcast)
+    url: https://risky.biz/feeds/risky-business/
+    category: security
+    tier: 2
+
+  # ========================================
+  # AI / ML — NEW ADDITIONS
+  # ========================================
+  - name: Apple Machine Learning
+    url: https://machinelearning.apple.com/rss.xml
+    category: ai
+    tier: 1
+
+  - name: Mistral AI Blog
+    url: https://mistral.ai/sitemap.xml
+    type: sitemap
+    category: ai
+    tier: 1
+    url_patterns: ["/news/"]
+
+  - name: Cohere Blog
+    url: https://cohere.com/sitemap.xml
+    type: sitemap
+    category: ai
+    tier: 2
+    url_patterns: ["/blog/", "/research/"]
+
+  - name: Replicate Blog
+    url: https://replicate.com/blog/rss
+    category: ai
+    tier: 2
+
+  - name: AI Snake Oil (Arvind Narayanan)
+    url: https://www.aisnakeoil.com/feed
+    category: ai
+    tier: 1
+
+  - name: The Gradient
+    url: https://thegradient.pub/rss/
+    category: ai
+    tier: 2
+
+  - name: Chip Huyen
+    url: https://huyenchip.com/feed.xml
+    category: ai
+    tier: 1
+
+  - name: Lilian Weng
+    url: https://lilianweng.github.io/index.xml
+    category: ai
+    tier: 1
+
+  # ========================================
+  # INDIVIDUAL BLOGS — NEW ADDITIONS
+  # ========================================
+
+  # --- Tier 1: Must-read individuals ---
+  - name: Dan Luu
+    url: https://danluu.com/atom.xml
+    category: dev
+    tier: 1
+
+  - name: Paul Graham
+    url: http://www.aaronsw.com/2002/feeds/pgessays.rss
+    category: dev
+    tier: 1
+
+  - name: Scott Hanselman
+    url: https://feeds.hanselman.com/ScottHanselman
+    category: dev
+    tier: 1
+
+  - name: Kyle Kingsbury (Aphyr)
+    url: https://aphyr.com/posts.atom
+    category: dev
+    tier: 1
+
+  - name: Rachel Kroll
+    url: https://rachelbythebay.com/w/atom.xml
+    category: dev
+    tier: 1
+
+  - name: Will Larson (Irrational Exuberance)
+    url: https://lethain.com/feeds/
+    category: dev
+    tier: 1
+
+  - name: Alex Xu (ByteByteGo)
+    url: https://blog.bytebytego.com/feed
+    category: dev
+    tier: 1
+
+  - name: Addy Osmani
+    url: https://addyosmani.com/feed.xml
+    category: dev
+    tier: 1
+
+  - name: High Scalability
+    url: https://highscalability.com/rss/
+    category: dev
+    tier: 1
+
+  - name: Drew DeVault
+    url: https://drewdevault.com/blog/index.xml
+    category: dev
+    tier: 1
+
+  # --- Tier 2: Great individual blogs ---
+  - name: Antirez (Salvatore Sanfilippo)
+    url: http://antirez.com/rss
+    category: dev
+    tier: 2
+
+  - name: Robert C. Martin (Clean Coder)
+    url: https://blog.cleancoder.com/atom.xml
+    category: dev
+    tier: 2
+
+  - name: Eli Bendersky
+    url: https://eli.thegreenplace.net/feeds/all.atom.xml
+    category: dev
+    tier: 2
+
+  - name: Jessie Frazelle
+    url: https://blog.jessfraz.com/index.xml
+    category: dev
+    tier: 2
+
+  - name: Ilya Grigorik
+    url: https://www.igvita.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Tania Rascia
+    url: https://www.taniarascia.com/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Josh Comeau
+    url: https://www.joshwcomeau.com/rss.xml
+    category: dev
+    tier: 1
+
+  - name: Kent C. Dodds
+    url: https://kentcdodds.com/blog/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Cassidy Williams
+    url: https://cassidoo.co/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Dave Cheney
+    url: https://dave.cheney.net/feed
+    category: dev
+    tier: 2
+
+  - name: Nick Craver
+    url: https://nickcraver.com/blog/feed
+    category: dev
+    tier: 2
+
+  - name: Armin Ronacher
+    url: https://lucumr.pocoo.org/feed.atom
+    category: dev
+    tier: 2
+
+  - name: Nelson Elhage
+    url: https://blog.nelhage.com/atom.xml
+    category: dev
+    tier: 2
+
+  - name: Swyx (Shawn Wang)
+    url: https://www.swyx.io/rss.xml
+    category: dev
+    tier: 2
+
+  # ========================================
+  # TECHNOLOGY BLOGS — Languages & Frameworks
+  # ========================================
+  - name: Go Blog
+    url: https://go.dev/blog/feed.atom
+    category: dev
+    tier: 1
+
+  - name: Rust Blog
+    url: https://blog.rust-lang.org/feed.xml
+    category: dev
+    tier: 1
+
+  - name: Kotlin Blog
+    url: https://blog.jetbrains.com/kotlin/feed/
+    category: dev
+    tier: 2
+
+  - name: .NET Blog
+    url: https://devblogs.microsoft.com/dotnet/feed/
+    category: dev
+    tier: 1
+
+  - name: TypeScript Blog
+    url: https://devblogs.microsoft.com/typescript/feed/
+    category: dev
+    tier: 1
+
+  - name: Node.js Blog
+    url: https://nodejs.org/en/feed/blog.xml
+    category: dev
+    tier: 2
+
+  - name: Python Insider
+    url: https://blog.python.org/feeds/posts/default
+    category: dev
+    tier: 2
+
+  - name: JetBrains Blog
+    url: https://blog.jetbrains.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Mozilla Hacks
+    url: https://hacks.mozilla.org/feed/
+    category: dev
+    tier: 1
+
+  - name: Chrome Developers Blog
+    url: https://developer.chrome.com/blog/feed.xml
+    category: dev
+    tier: 1
+
+  - name: WebKit Blog
+    url: https://webkit.org/feed/
+    category: dev
+    tier: 2
+
+  - name: V8 Blog
+    url: https://v8.dev/blog.atom
+    category: dev
+    tier: 2
+
+  # ========================================
+  # ADDITIONAL CURATED SOURCES
+  # (appended from ricmmartins/engineering-blogs cross-check)
+  # ========================================
+
+  # --- COMPANIES (Tier 1) ---
+
+  - name: Evil Martians Chronicles
+    url: https://evilmartians.com/chronicles.atom
+    category: dev
+    tier: 1
+
+  - name: Guardian Engineering
+    url: https://www.theguardian.com/info/series/engineering-blog/rss
+    category: dev
+    tier: 1
+
+  - name: Squarespace Engineering
+    url: https://engineering.squarespace.com/blog?format=rss
+    category: dev
+    tier: 1
+
+  - name: Thoughtbot Blog
+    url: https://thoughtbot.com/blog/feed.xml
+    category: dev
+    tier: 1
+
+  - name: Zapier Engineering
+    url: https://zapier.com/blog/feeds/latest/
+    category: dev
+    tier: 1
+
+  - name: LINE Engineering
+    url: https://engineering.linecorp.com/en/feed
+    category: dev
+    tier: 1
+
+  - name: Wise Engineering
+    url: https://medium.com/feed/wise-engineering
+    category: dev
+    tier: 1
+
+  # --- COMPANIES (Tier 2) ---
+
+  - name: Artsy Engineering
+    url: https://artsy.github.io/feed
+    category: dev
+    tier: 2
+
+  - name: Blender Development
+    url: https://code.blender.org/feed/
+    category: dev
+    tier: 2
+
+  - name: GoCardless Tech Blog
+    url: https://gocardless.com/content-platform/rss/resources.xml
+    category: dev
+    tier: 2
+
+  - name: Honeybadger Blog
+    url: https://www.honeybadger.io/blog/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Postmark Blog
+    url: https://postmarkapp.com/blog/feed.atom
+    category: dev
+    tier: 2
+
+  - name: RisingStack Blog
+    url: https://blog.risingstack.com/feed
+    category: dev
+    tier: 2
+
+  - name: Serverless Blog
+    url: https://www.serverless.com/blog/rss.xml
+    category: cloud
+    tier: 2
+
+  - name: Skyscanner Engineering
+    url: https://medium.com/feed/@SkyscannerEng
+    category: dev
+    tier: 2
+
+  - name: Target Tech
+    url: https://tech.target.com/rss/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Thumbtack Engineering
+    url: https://medium.com/feed/thumbtack-engineering
+    category: dev
+    tier: 2
+
+  # Timescale Blog — HTTP 526, feed unreachable
+  # - name: Timescale Blog
+  #   url: https://blog.timescale.com/feed/
+  #   category: dev
+  #   tier: 2
+
+  - name: Toptal Engineering Blog
+    url: https://www.toptal.com/developers/blog.rss
+    category: dev
+    tier: 2
+
+  - name: Yahoo Engineering
+    url: https://yahooeng.tumblr.com/rss
+    category: dev
+    tier: 2
+
+  - name: Capgemini Engineering
+    url: https://capgemini.github.io/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Hootsuite Engineering
+    url: https://medium.com/feed/hootsuite-engineering
+    category: dev
+    tier: 2
+
+  - name: Wealthfront Engineering
+    url: https://eng.wealthfront.com/feed
+    category: dev
+    tier: 2
+
+  # --- INDIVIDUALS (Tier 1) ---
+
+  - name: 2ality (Axel Rauschmayer)
+    url: https://2ality.com/feeds/posts.atom
+    category: dev
+    tier: 1
+
+  - name: Bryan Cantrill
+    url: https://bcantrill.dtrace.org/index.xml
+    category: dev
+    tier: 1
+
+  - name: Brendan Eich
+    url: https://brendaneich.com/feed/
+    category: dev
+    tier: 1
+
+  - name: null program (Chris Wellons)
+    url: https://nullprogram.com/feed/
+    category: dev
+    tier: 1
+
+  - name: Guido van Rossum
+    url: https://neopythonic.blogspot.com/feeds/posts/default?alt=rss
+    category: dev
+    tier: 1
+
+  - name: Jon Skeet's Coding Blog
+    url: https://codeblog.jonskeet.uk/feed/
+    category: dev
+    tier: 1
+
+  - name: Steve Yegge
+    url: https://steve-yegge.blogspot.com/feeds/posts/default?alt=rss
+    category: dev
+    tier: 1
+
+  - name: Zach Holman
+    url: https://zachholman.com/atom.xml
+    category: dev
+    tier: 1
+
+  - name: Eric Lippert
+    url: https://ericlippert.com/feed/
+    category: dev
+    tier: 1
+
+  - name: Lea Verou
+    url: https://lea.verou.me/feed/
+    category: dev
+    tier: 1
+
+  - name: Jake Wharton
+    url: https://jakewharton.com/atom.xml
+    category: dev
+    tier: 1
+
+  - name: Paul Irish
+    url: https://www.paulirish.com/atom.xml
+    category: dev
+    tier: 1
+
+  # --- INDIVIDUALS (Tier 2) ---
+
+  - name: David Walsh Blog
+    url: https://davidwalsh.name/feed
+    category: dev
+    tier: 2
+
+  - name: Eric Elliott
+    url: https://medium.com/feed/@_ericelliott
+    category: dev
+    tier: 2
+
+  - name: Matt Cutts
+    url: https://www.mattcutts.com/blog/feed/
+    category: dev
+    tier: 2
+
+  - name: Matt Might
+    url: https://matt.might.net/articles/feed.rss
+    category: dev
+    tier: 2
+
+  - name: NSHipster
+    url: https://nshipster.com/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Real Python
+    url: https://realpython.com/atom.xml
+    category: dev
+    tier: 2
+
+  - name: Philipp Oppermann (Writing an OS in Rust)
+    url: https://os.phil-opp.com/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Vlad Mihalcea
+    url: https://vladmihalcea.com/feed/
+    category: dev
+    tier: 2
+
+  - name: The Daily WTF
+    url: https://syndication.thedailywtf.com/TheDailyWtf
+    category: dev
+    tier: 2
+
+  - name: Jeff Preshing
+    url: https://preshing.com/feed
+    category: dev
+    tier: 2
+
+  - name: Codrops
+    url: https://tympanus.net/codrops/feed/
+    category: dev
+    tier: 2
+
+  - name: Swizec Teller
+    url: https://swizec.com/rss.xml
+    category: dev
+    tier: 2
+
+  - name: Ardan Labs (William Kennedy)
+    url: https://www.ardanlabs.com/blog/index.xml
+    category: dev
+    tier: 2
+
+  - name: Sam Saffron
+    url: https://samsaffron.com/posts.rss
+    category: dev
+    tier: 2
+
+  - name: Nate Berkopec (Speedshop)
+    url: https://www.speedshop.co/feed.xml
+    category: dev
+    tier: 2
+
+  - name: Henrik Warne
+    url: https://henrikwarne.com/feed/
+    category: dev
+    tier: 2
+
+  - name: Gleb Bahmutov
+    url: https://glebbahmutov.com/blog/atom.xml
+    category: dev
+    tier: 2
+
+  - name: Freek Van der Herten
+    url: https://freek.dev/feed
+    category: dev
+    tier: 2
+
+  - name: Stack Abuse
+    url: https://stackabuse.com/rss/
+    category: dev
+    tier: 2
+
+  - name: Ariya Hidayat
+    url: https://ariya.io/index.xml
+    category: dev
+    tier: 2
+
+  # --- TECHNOLOGIES ---
+
+  - name: Android Developers Blog
+    url: https://android-developers.googleblog.com/feeds/posts/default?alt=rss
+    category: dev
+    tier: 1
+
+  - name: Swift Blog
+    url: https://www.swift.org/atom.xml
+    category: dev
+    tier: 1
+
+  - name: Laravel News
+    url: https://laravel-news.com/feed
+    category: dev
+    tier: 2
+
+  - name: React Native Blog
+    url: https://reactnative.dev/blog/rss.xml
+    category: dev
+    tier: 2
+
+  - name: jOOQ Blog
+    url: https://blog.jooq.org/feed/
+    category: dev
+    tier: 2
+
+  - name: Microsoft Edge Dev Blog
+    url: https://blogs.windows.com/msedgedev/feed/
+    category: dev
+    tier: 2
+
+  - name: IPFS Blog
+    url: https://blog.ipfs.tech/index.xml
+    category: dev
+    tier: 2

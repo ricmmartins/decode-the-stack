@@ -2,84 +2,81 @@
 
 The daily tech briefing for software professionals.
 
-Decode the Stack is an English-language, source-linked briefing about software
-engineering, cloud, AI, security, and operations. Its small daily pipeline reads
-public RSS/Atom feeds, keeps recent items, and publishes the original headline,
-publisher-provided description, and a direct source link. It does not invent
-reporting or claim that feed excerpts are independently verified.
+Decode the Stack is the English-language sister publication to
+[Decodifica.Tech](https://decodifica.tech/). It covers software engineering,
+cloud, DevOps & SRE, AI/ML, and security through a contextual, source-linked
+daily edition and a separate three-host podcast.
 
-## Live site and hosting decision
+## Live site and hosting
 
-The free branded address is
+The publication is live at
 [`https://decodethestack.pages.dev/`](https://decodethestack.pages.dev/).
-The project uses Cloudflare Pages' free `pages.dev` address and Git-connected
-builds. No paid domain or Cloudflare credentials are stored in this repository.
+It uses the free Cloudflare Pages `pages.dev` address with Git-connected builds;
+no paid domain, Cloudflare token, or hosting secret is stored here.
 
-## Daily publishing
+## Editorial pipeline
 
-GitHub Actions runs `pipeline/publish.py` once a day and can also be started
-manually. The generator:
+The full Python pipeline is in `pipeline/` and reuses the Portuguese
+publication's curated source list, ingestion, clustering, ranking,
+two-pass contextual synthesis, weekly ranking, statistics, and podcast
+generation logic with English prompts and voices:
 
-1. Fetches the public feeds listed in `pipeline/sources.json`.
-2. Selects up to 12 recent, dated items across engineering, cloud, DevOps,
-   security, and AI sources.
-3. Writes a dated English edition with the original title, a cleaned excerpt
-   supplied by the publisher, and a direct link to each source.
-4. Commits a new edition only when the day has not already been published.
-5. Recalculates publication statistics and validates the static site; the
-   resulting Git commit triggers the Cloudflare Pages build.
+1. Ingest recent public feeds from `pipeline/sources.yaml`, with category
+   recency windows and deduplication.
+2. Cluster overlapping coverage with TF-IDF and cosine similarity.
+3. Rank stories using source authority, coverage, relevance, category balance,
+   and recency; retain the main-story and Quick Reads distinction.
+4. Synthesize contextual English analysis in separate main-story and
+   Quick Reads passes. The provider chain is OpenAI, Groq, then Azure OpenAI;
+   the configured provider and model are logged at runtime. If all providers
+   fail, the pipeline stops instead of publishing a headline-only fallback.
+5. Generate a three-host English dialogue and audio, update the Friday weekly
+   story buffer, public statistics and trends, then rebuild the RSS feed.
 
-No model API key or paid service is required for the daily edition or audio.
-Voice synthesis uses Microsoft Edge TTS's network service with no API key.
-Failed individual feeds are reported in the workflow log; if no feed can be
-fetched, the
-publication step fails instead of producing an empty or success-shaped issue.
+OpenAI TTS (`gpt-4o-mini-tts`, Marin/Sage/Ash) is primary; Edge TTS is the
+fallback. The script target is about 15 minutes. Provider credentials remain
+on the authenticated original publishing runner and are not copied into this
+repository.
 
-## Podcast
+The only production scheduler is the secure workflow in the
+`ricmmartins/decodifica.tech` repository, which runs at 12:00 and 12:45 UTC.
+This repository's GitHub Actions workflow runs tests and a Hugo build on pushes
+and pull requests only; it does not generate editions or deploy to Pages.
+Cloudflare Git integration is the deployment path.
 
-Decode the Stack has a distinct podcast identity and a dedicated
-[`/podcast/`](https://decodethestack.pages.dev/podcast/) page.
-The first episode is an actual Edge TTS-rendered English headline bulletin.
-The podcast RSS feed includes an enclosure only when the corresponding
-non-empty MP3 exists. The site RSS at `/index.xml` carries written editions.
-This launch does not claim Spotify distribution or reuse the Portuguese show's
-feed or audio.
+## Site features
 
-The RSS owner name and email are included for directory verification. No
-Spotify or other podcast-directory submission is claimed.
+The Hugo site includes a searchable archive, dedicated category pages for
+Cloud, AI/ML, DevOps & SRE, Software Engineering, and Security, tag browsing,
+publication statistics, site and podcast RSS feeds, JSON-LD metadata, and a
+progressive web app with offline page caching. Topic pages remain available
+when their published-edition count is zero.
 
-## Local preview
+Comments are not enabled: the English repository still needs a separate
+Giscus app installation. Spotify or any other podcast-directory submission
+has not been claimed; creator-account submission remains separate.
 
-Install [Hugo Extended](https://gohugo.io/installation/) and Python 3.11+:
+## Local checks
 
-```powershell
-python pipeline\publish.py
-python pipeline\podcast.py
-hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.pages.dev/
-python pipeline\validate_site.py public
-hugo server
-```
-
-The optional `--date` argument is intended for local checks. Production uses
-the current UTC date. The feed parser and edition generator have offline unit
-tests:
+Install Python 3.12+, the dependencies in `pipeline/requirements.txt`, and
+Hugo Extended 0.160.1. Unit tests are offline and do not call AI providers:
 
 ```powershell
 python -m unittest discover -s pipeline -p "test_*.py"
+hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.pages.dev/
+python pipeline/validate_site.py public
 ```
 
-The podcast cover is a 3000 × 3000 RGB PNG at
-`static/images/podcast-cover.png`; Pillow is included in `requirements.txt` for
-regenerating it with `python pipeline\generate_podcast_cover.py`.
+To run the full publishing pipeline locally, provide the configured AI and
+TTS credentials through environment variables, then run:
 
-## Repository setup
+```powershell
+python pipeline/run_pipeline.py
+```
 
-Cloudflare Pages is connected to this public repository's `main` branch. Its
-Hugo build uses version `0.160.1`, command
-`hugo --minify --destination public --baseURL https://decodethestack.pages.dev/`,
-and output directory `public`. The daily GitHub Actions workflow collects new
-source items, generates an English headline bulletin when Edge TTS is available,
-recalculates the publication statistics, validates the built site, and commits
-the edition. That commit triggers the Cloudflare Git integration. The
-authorized RSS owner email is stored as a GitHub Actions secret; the English
-repository contains no Cloudflare credentials.
+Use `--force` to regenerate the current UTC day's edition. `--skip-ingest` is
+for runs with an existing cached feed collection only.
+
+The 3000 × 3000 RGB podcast cover is
+`static/images/podcast-cover.png`; regenerate it with
+`python pipeline/generate_podcast_cover.py`.

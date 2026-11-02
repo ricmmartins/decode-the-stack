@@ -1,13 +1,15 @@
 baseURL = "https://decodethestack.pages.dev/"
 locale = "en"
+defaultContentLanguage = "en"
 title = "Decode the Stack"
 enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 36
 timeZone = "UTC"
+paginate = 12
 
 [params]
-  description = "The daily tech briefing for software professionals. Source-linked engineering, cloud, AI, security, and operations news."
+  description = "The daily technology briefing for software professionals. Source-linked software engineering, cloud, AI/ML, DevOps & SRE, and security."
   author = "Decode the Stack"
   defaultTheme = "light"
   mainSections = ["posts"]
@@ -29,13 +31,13 @@ timeZone = "UTC"
 
 [menu]
   [[menu.main]]
-    identifier = "editions"
+    identifier = "posts"
     name = "Editions"
     url = "posts/"
     weight = 10
   [[menu.main]]
-    identifier = "topics"
-    name = "Topics"
+    identifier = "categories"
+    name = "Categories"
     url = "categories/"
     weight = 20
   [[menu.main]]
@@ -45,7 +47,7 @@ timeZone = "UTC"
     weight = 30
   [[menu.main]]
     identifier = "stats"
-    name = "Stats"
+    name = "Statistics"
     url = "stats/"
     weight = 40
   [[menu.main]]
@@ -66,9 +68,24 @@ timeZone = "UTC"
 [services.rss]
   limit = 30
 
+[related]
+  includeNewer = true
+  threshold = 50
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+
 [markup.goldmark.renderer]
   unsafe = false
 
 [markup.highlight]
   codeFences = true
   noClasses = false
+
+[markup.tableOfContents]
+  endLevel = 4
+  startLevel = 2

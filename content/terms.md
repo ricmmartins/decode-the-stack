@@ -10,27 +10,28 @@ date: 2026-11-02T00:00:00Z
 ## About the publication
 
 Decode the Stack is an automatically assembled technology briefing. Its
-editions reproduce selected publisher headlines and short descriptions from
-public feeds, identify the publisher, and link to the original report. The
-original reporting and source material remain subject to the rights and terms
-of their respective publishers.
+English-language editions combine selected publisher headlines and source
+links with AI-generated editorial synthesis. The separate podcast uses an
+AI-generated dialogue and synthetic voices. Original reporting and publisher
+material remain subject to the rights and terms of their respective owners.
 
 ## Accuracy and availability
 
-Feed descriptions and dates are supplied by publishers and may be incomplete
-or incorrect. Decode the Stack does not independently verify every item and
-does not guarantee that an edition is complete, current, or error-free. Follow
-the source link for authoritative context and corrections.
+The pipeline uses public source feeds and model-generated synthesis. Feeds can
+be incomplete, delayed, or inaccurate, and generated analysis may contain
+errors. Decode the Stack does not independently verify every item. Follow the
+original source links for authoritative context, corrections, and complete
+reporting.
 
 The site, its feeds, and audio may change or become unavailable. Nothing here
 is professional, legal, financial, or security advice.
 
 ## Sharing and source attribution
 
-You may read the site, share links to editions, and subscribe to the RSS feeds.
-If you quote material from a Decode the Stack edition, identify Decode the
-Stack and retain any source attribution attached to that material. Do not
-present a publisher's headline or excerpt as your own reporting.
+You may read the site, share links to editions, and subscribe to the separate
+RSS feeds. If you quote material from an edition, identify Decode the Stack
+and retain source attribution. Do not present a publisher's headline, excerpt,
+or reporting as your own work.
 
 ## External links and contact
 

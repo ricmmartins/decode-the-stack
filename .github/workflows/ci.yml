@@ -1,0 +1,41 @@
+name: Validate Decode the Stack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install pipeline dependencies
+        run: python -m pip install -r pipeline/requirements.txt
+
+      - name: Run pipeline tests
+        run: python -m unittest discover -s pipeline -p "test_*.py"
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.160.1"
+          extended: true
+
+      - name: Build site
+        run: hugo --minify --cleanDestinationDir --destination public --baseURL https://decodethestack.pages.dev/
+
+      - name: Validate built site
+        run: python pipeline/validate_site.py public
