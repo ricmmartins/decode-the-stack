@@ -293,7 +293,7 @@ audio { accent-color: var(--accent); max-width: 100%; }
 .stat-number { display: block; margin: 6px 0 10px; color: var(--accent); font-size: 30px; line-height: 1.1; }
 .stats-grid .featured-edition > p:last-child { color: var(--secondary); font-size: 12px; line-height: 1.6; }
 .trend-list { display: grid; gap: 7px; }
-.trend-row { display: grid; grid-template-columns: 130px 1fr 36px; align-items: center; gap: 12px; font: 11px var(--mono); color: var(--secondary); }
+.trend-row { display: grid; grid-template-columns: max-content minmax(0, 1fr) max-content; align-items: center; gap: 12px; font: 11px var(--mono); color: var(--secondary); }
 .trend-row strong { text-align: right; color: var(--primary); }
 .trend-bar { display: block; height: 8px; border-radius: 6px; background: var(--accent-subtle); overflow: hidden; }
 .trend-bar i { display: block; height: 100%; border-radius: inherit; background: var(--accent); }
@@ -302,6 +302,8 @@ audio { accent-color: var(--accent); max-width: 100%; }
 .stats-table th, .stats-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
 .stats-table th { color: var(--primary); }
 .stats-table td { color: var(--secondary); }
+.publisher-details { margin-top: 16px; }
+.publisher-details summary { cursor: pointer; color: var(--accent); padding: 8px 0; }
 .tag-chart { display: grid; gap: 8px; padding: 20px; border: 1px solid var(--border); border-radius: 10px; background: var(--entry); }
 .tag-bar-row { display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr) 28px; align-items: center; gap: 10px; font: 12px var(--mono); }
 .tag-bar-label { overflow-wrap: anywhere; text-align: right; }

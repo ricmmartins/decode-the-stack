@@ -41,12 +41,13 @@
   {{- with .history }}
   <section class="section-block">
     <h2>Recent editions</h2>
+    <p>Each bar shows the number of published stories in that edition: main stories plus Quick Reads.</p>
     {{- $maxHeadlines := 1 }}
     {{- range . }}{{ if gt .headlines $maxHeadlines }}{{ $maxHeadlines = .headlines }}{{ end }}{{ end }}
     <div class="trend-list">
       {{- range . }}
       <a class="trend-row" href="{{ printf "posts/%s-daily/" .date | relURL }}">
-        <time datetime="{{ .date }}">{{ .date }}</time><span class="trend-bar"><i style="width: {{ div (mul .headlines 100) $maxHeadlines }}%"></i></span><strong>{{ .headlines }}</strong>
+        <time datetime="{{ .date }}">{{ .date }}</time><span class="trend-bar" aria-hidden="true"><i style="width: {{ div (mul .headlines 100) $maxHeadlines }}%"></i></span><strong>{{ .headlines }} {{ if eq .headlines 1 }}story{{ else }}stories{{ end }}</strong>
       </a>
       {{- end }}
     </div>
@@ -54,11 +55,20 @@
   {{- end }}
 
   {{- with .source_counts }}
-  <section class="section-block">
-    <h2>Publishers represented</h2>
+  <section class="section-block" aria-labelledby="publishers-title">
+    <h2 id="publishers-title">Publishers represented</h2>
+    <p>Top {{ math.Min 10 (len .) }} publishers by story appearances in published editions. A story may credit more than one publisher, so these counts are not a total of unique stories.</p>
     <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>Publisher</th><th>Story appearances</th></tr></thead><tbody>
-      {{- range . }}<tr><td>{{ .name }}</td><td>{{ .headlines }}</td></tr>{{ end }}
+      {{- range first 10 . }}<tr><td>{{ .name }}</td><td>{{ .headlines }}</td></tr>{{ end }}
     </tbody></table></div>
+    {{- if gt (len .) 10 }}
+    <details class="publisher-details">
+      <summary>Show {{ sub (len .) 10 }} more publishers ({{ len . }} total)</summary>
+      <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>Publisher</th><th>Story appearances</th></tr></thead><tbody>
+        {{- range after 10 . }}<tr><td>{{ .name }}</td><td>{{ .headlines }}</td></tr>{{ end }}
+      </tbody></table></div>
+    </details>
+    {{- end }}
   </section>
   {{- end }}
 

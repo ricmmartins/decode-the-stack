@@ -197,6 +197,21 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertEqual(statistics.select_one("#frequent-tags-title").get_text(), "Most frequent tags")
                 self.assertNotIn("🔥", statistics.get_text())
                 data = json.loads((root / "data/stats.json").read_text(encoding="utf-8"))
+                for row, entry in zip(statistics.select(".trend-row"), data["history"]):
+                    unit = "story" if entry["headlines"] == 1 else "stories"
+                    self.assertEqual(row.select_one("strong").get_text(), f'{entry["headlines"]} {unit}')
+                publishers = statistics.select_one('[aria-labelledby="publishers-title"]')
+                tables = publishers.select("table")
+                actual_publishers = [
+                    (row.select_one("td").get_text(), int(row.select("td")[1].get_text()))
+                    for table in tables for row in table.select("tbody tr")
+                ]
+                self.assertEqual(actual_publishers, [(entry["name"], entry["headlines"]) for entry in data["source_counts"]])
+                self.assertEqual(len(tables[0].select("tbody tr")), min(10, len(data["source_counts"])))
+                if len(data["source_counts"]) > 10:
+                    details = publishers.select_one("details")
+                    self.assertFalse(details.has_attr("open"))
+                    self.assertIn(f'{len(data["source_counts"]) - 10} more publishers', details.select_one("summary").get_text())
                 self.assertEqual(int(statistics.select_one('[data-stat="published-stories"]').get_text()), data["headlines_published"])
                 pipeline = json.loads((root / "static/data/pipeline_stats.json").read_text(encoding="utf-8"))
                 for field, key in (
