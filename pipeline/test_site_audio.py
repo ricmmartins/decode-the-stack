@@ -70,11 +70,11 @@ class SiteAudioTests(unittest.TestCase):
                 )
                 compact_styles = re.sub(r"\s+", "", styles)
                 self.assertIn(
-                    ".post-contenttable{display:block;width:100%;overflow-x:auto;border-collapse:collapse;font-size:inherit}",
+                    ".post-contenttable:not(.highlighttable){display:block;width:100%;overflow-x:auto;border-collapse:collapse;font-size:inherit;margin-bottom:24px}",
                     compact_styles,
                 )
                 self.assertIn(
-                    ".post-contenttableth,.post-contenttabletd{padding:6px13px;border-bottom:1pxsolidvar(--border);text-align:start}",
+                    ".post-contenttable:not(.highlighttable)th,.post-contenttable:not(.highlighttable)td{min-width:80px;padding:6px13px;border:1pxsolidvar(--border);text-align:start;line-height:1.5}",
                     compact_styles,
                 )
                 for row, name, trait in zip(rows, ("Anna", "Maria", "Pedro"), ("charisma", "historical context", "creative analogies")):
