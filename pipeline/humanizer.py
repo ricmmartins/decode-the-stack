@@ -18,6 +18,10 @@ class HumanizerError(RuntimeError):
     """Block publication when required editorial review cannot be verified."""
 
 
+class HumanizerMeaningError(HumanizerError):
+    """A completed editorial revision failed semantic preservation."""
+
+
 def digest(text):
     return hashlib.sha256(text.replace("\r\n", "\n").encode("utf-8")).hexdigest()
 
@@ -147,7 +151,11 @@ def review_post(post):
     if not isinstance(assessment, dict) or set(assessment) != required or any(
         assessment[key] is not True for key in required
     ):
-        raise HumanizerError("Humanizer meaning verification rejected the revision.")
+        rejected = sorted(key for key in required if not isinstance(assessment, dict) or assessment.get(key) is not True)
+        raise HumanizerMeaningError(
+            "Humanizer meaning verification rejected the revision "
+            f"(failed checks: {', '.join(rejected) or 'response shape'})."
+        )
     return output, {
         "version": 1,
         "skill_sha256": SKILL_SHA256,
@@ -159,7 +167,14 @@ def review_post(post):
 
 def write_reviewed_post(path, post, project_dir=PROJECT_DIR):
     """Do not touch an existing post until both LLM passes have succeeded."""
-    output, receipt = review_post(post)
+    for attempt in range(1, 4):
+        try:
+            output, receipt = review_post(post)
+            break
+        except HumanizerMeaningError as error:
+            print(f"[REVIEW] Humanizer attempt {attempt}/3: {error}")
+            if attempt == 3:
+                raise
     path = Path(path)
     receipt_dir = Path(project_dir) / "data/humanizer"
     receipt_dir.mkdir(parents=True, exist_ok=True)

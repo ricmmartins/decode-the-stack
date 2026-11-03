@@ -1250,6 +1250,33 @@ def _generate_chapters(script, date_str):
     print(f"[CHAPTERS] Chapters generated: {len(chapters)} chapters to {output.name}")
 
 
+def validate_saved_audio(date):
+    """Validate recovered dialogue, chapters and complete MP3 without generating anything."""
+    from pydub import AudioSegment
+
+    script = (DATA_DIR / f"podcast_script_{date}.txt").read_text(encoding="utf-8").strip()
+    _validate_dialogue(script)
+    minimum, maximum = _script_word_range(PODCAST_TARGET_MINUTES)
+    words = _spoken_word_count(script)
+    if not minimum <= words <= maximum:
+        raise ValueError(f"Saved podcast has {words} words; required {minimum}-{maximum}.")
+    chapters = json.loads((PROJECT_DIR / "static/podcast/chapters" / f"{date}.json").read_text(encoding="utf-8"))
+    entries = chapters.get("chapters") if isinstance(chapters, dict) else None
+    if not isinstance(entries, list) or not entries:
+        raise ValueError("Saved podcast chapters must contain a nonempty chapters array.")
+    starts = [entry.get("startTime") if isinstance(entry, dict) else None for entry in entries]
+    if any(type(start) not in (int, float) or start < 0 for start in starts) or starts != sorted(starts):
+        raise ValueError("Saved podcast chapters contain invalid timestamps.")
+    audio_path = AUDIO_DIR / f"{date}.mp3"
+    if not audio_path.is_file() or audio_path.stat().st_size <= 1024:
+        raise ValueError("Saved podcast MP3 is missing or empty.")
+    audio = AudioSegment.from_mp3(str(audio_path))
+    if len(audio) < 1000 or starts[-1] >= len(audio) / 1000:
+        raise ValueError("Saved podcast audio is empty or shorter than its chapters.")
+    print(f"[RECOVERY] Reusing validated {words}-word script and {len(audio) / 1000:.1f}s MP3; no script or TTS calls.")
+    return audio_path
+
+
 def run(date_str=None, reuse_script=False):
     """Generate podcast for the given date. Returns the audio path or None."""
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")

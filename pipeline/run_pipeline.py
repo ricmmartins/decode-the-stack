@@ -12,6 +12,7 @@ from rank import run as rank_run
 from synthesize import run as synthesize_run
 from generate_post import generate_post
 from podcast import run as podcast_run
+from podcast import validate_saved_audio
 from podcast_feed import generate_feed as podcast_feed_run
 from stats import (
     generate_daily_stats,
@@ -38,8 +39,10 @@ def _set_github_output(key, value):
 
 
 def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=False,
-                 reuse_podcast_script=False):
+                 reuse_podcast_script=False, reuse_audio=False):
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if reuse_audio and (not reuse_synthesis or reuse_podcast_script):
+        raise ValueError("--reuse-audio requires --reuse-synthesis and cannot regenerate podcast audio.")
     if reuse_podcast_script and not reuse_synthesis:
         raise ValueError("--reuse-podcast-script requires --reuse-synthesis to avoid new analysis.")
     if reuse_podcast_script:
@@ -68,6 +71,7 @@ def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=
     _publish_synthesis(
         date, articles_count, clusters_count, main_stories, quick_stories,
         reuse_podcast_script=reuse_podcast_script,
+        reuse_audio=reuse_audio,
     )
 
 
@@ -149,10 +153,10 @@ def _publish_audio_only(date):
 
 
 def _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories,
-                       reuse_podcast_script=False):
+                       reuse_podcast_script=False, reuse_audio=False):
     # Step 5: A complete edition includes its three-host audio episode.
-    print(f"\n[AUDIO]  Step 5/7: Generating podcast...")
-    audio_path = podcast_run(date, reuse_script=reuse_podcast_script)
+    print("\n[AUDIO] Step 5/7: " + ("Validating saved podcast..." if reuse_audio else "Generating podcast..."))
+    audio_path = validate_saved_audio(date) if reuse_audio else podcast_run(date, reuse_script=reuse_podcast_script)
     if not audio_path or not Path(audio_path).is_file() or Path(audio_path).stat().st_size <= 1024:
         raise RuntimeError(f"Podcast generation did not produce a playable MP3 for {date}.")
     has_audio = True
@@ -235,6 +239,10 @@ if __name__ == "__main__":
         help="Resume from existing synthesis and raw/clustered/ranked data without new analysis",
     )
     parser.add_argument(
+        "--reuse-audio", action="store_true",
+        help="Publish reviewed text using existing validated audio and script without script or TTS calls",
+    )
+    parser.add_argument(
         "--reuse-podcast-script", action="store_true",
         help="Regenerate audio from the saved validated dialogue without an LLM call",
     )
@@ -244,4 +252,5 @@ if __name__ == "__main__":
         date_str=args.date, skip_ingest=args.skip_ingest, force=args.force,
         reuse_synthesis=args.reuse_synthesis,
         reuse_podcast_script=args.reuse_podcast_script,
+        reuse_audio=args.reuse_audio,
     )

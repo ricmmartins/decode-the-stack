@@ -75,6 +75,20 @@ and forbids interactive questions. Auto-updates are disabled to retain the
 installed CLI version. The prompt requires a text-only transformation of the
 supplied material. Any tool-request event still blocks publication; diagnostics
 report only its structural type and count, never tool names or arguments.
+
+If a complete editorial revision fails semantic verification, publication
+retries the full review at most three times, always from the original draft.
+Each attempt must pass every structural, source, punctuation, and meaning check.
+Provider errors and malformed outputs still stop immediately. No rejected
+revision is published or used as the next attempt's input.
+
+For a failed publication that already generated valid audio, use
+`--force --reuse-synthesis --reuse-audio` after restoring the saved script,
+MP3, and chapters into the job workspace. This validates the recovered dialogue,
+word budget, complete MP3, and chapter timestamps before retrying editorial
+publication and rebuilding stats and RSS. It makes no synthesis, script, or TTS
+calls. Keep unadvertised recovery audio out of the public branch until the
+reviewed edition and feed can be committed together.
 It removes collection and billed-provider credentials from the child
 environment and rejects Copilot BYOK overrides. It requires valid JSON
 events, a successful terminal result, and nonempty assistant text. Missing

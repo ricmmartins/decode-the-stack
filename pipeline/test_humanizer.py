@@ -42,6 +42,30 @@ def successful_editor(system, user, label):
 
 
 class HumanizerTests(unittest.TestCase):
+    def test_meaning_retries_restart_original_and_never_publish_rejected_text(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "content/posts/test.md"
+            accepted = {"version": 1}
+            with patch.object(humanizer, "review_post", side_effect=[
+                humanizer.HumanizerMeaningError("Rejected"),
+                ("Accepted original meaning.", accepted),
+            ]) as review:
+                humanizer.write_reviewed_post(path, POST, root)
+            self.assertEqual([call.args for call in review.call_args_list], [(POST,), (POST,)])
+            self.assertEqual(path.read_text(), "Accepted original meaning.")
+            path.unlink()
+            receipt = root / "data/humanizer/test.json"
+            receipt.unlink()
+            with (
+                patch.object(humanizer, "review_post", side_effect=humanizer.HumanizerMeaningError("Rejected")) as review,
+                self.assertRaises(humanizer.HumanizerMeaningError),
+            ):
+                humanizer.write_reviewed_post(path, POST, root)
+            self.assertEqual(review.call_count, 3)
+            self.assertFalse(path.exists())
+            self.assertFalse(receipt.exists())
+
     def install_skill(self, root):
         path = root / ".github/skills/humanizer/SKILL.md"
         path.parent.mkdir(parents=True, exist_ok=True)
