@@ -967,11 +967,11 @@ def _synthesize_pocket_segments(segments, tmp_dir):
     if not executable:
         raise PocketTTSError("Pocket TTS executable is missing; install the verified CPU release.")
     voices = {
-        HOST_A: os.environ.get("POCKET_TTS_VOICE_ANNA", "alba"),
+        HOST_A: os.environ.get("POCKET_TTS_VOICE_ANNA", "vera"),
         HOST_B: os.environ.get("POCKET_TTS_VOICE_MARIA", "anna"),
         HOST_C: os.environ.get("POCKET_TTS_VOICE_PEDRO", "bill_boerst"),
     }
-    approved = {HOST_A: "alba", HOST_B: "anna", HOST_C: "bill_boerst"}
+    approved = {HOST_A: "vera", HOST_B: "anna", HOST_C: "bill_boerst"}
     if voices != approved:
         raise PocketTTSError("Pocket TTS voices must match the attributed production voice set.")
     started = time.monotonic()
@@ -1008,7 +1008,10 @@ def _synthesize_pocket_segments(segments, tmp_dir):
         except (OSError, EOFError, wave.Error, ValueError):
             raise PocketTTSError(f"Pocket TTS segment {index + 1} returned invalid or empty WAV.") from None
         segment["_file"] = output
-        print(f"[AUDIO] Pocket TTS segment {index + 1}: {duration:.2f}s WAV.")
+        print(
+            f"[AUDIO] Pocket TTS segment {index + 1} "
+            f"({segment['speaker']}, voice {voices[segment['speaker']]}): {duration:.2f}s WAV."
+        )
     print(f"[AUDIO] Pocket TTS CPU synthesis completed in {time.monotonic() - started:.1f}s.")
     return True
 

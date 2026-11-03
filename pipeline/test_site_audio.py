@@ -32,7 +32,7 @@ class SiteAudioTests(unittest.TestCase):
                 (root / "content" / "posts" / "2026-11-02-daily.md").write_text(
                     '---\ntitle: "Daily audio edition"\ndate: 2026-11-02T00:00:00Z\n'
                     'categories: ["Cloud", "AI/ML", "DevOps & SRE", "Software Engineering", "Security"]\n---\n'
-                    '<audio controls><source src="/podcast/audio/2026-11-02.mp3" '
+                    '<audio controls><source src="/podcast/audio/2026-11-02.mp3?v=000000000000" '
                     'type="audio/mpeg"></audio>\nVerified story context.\n',
                     encoding="utf-8",
                 )
@@ -131,6 +131,7 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertIn("Edge TTS available as an explicit rollback", main_text)
                 self.assertIn("Alba MacKenna", main_text)
                 self.assertIn("speaker p228", main_text)
+                self.assertIn("speaker p229", main_text)
                 self.assertIsNotNone(podcast_page.select_one('a[href="https://creativecommons.org/licenses/by/4.0/"]'))
                 about = BeautifulSoup(
                     (root / "public/about/index.html").read_text(encoding="utf-8"), "html.parser",
@@ -206,6 +207,10 @@ class SiteAudioTests(unittest.TestCase):
                     self.assertEqual(len(icon.select("rect")), 2)
                 edition = (root / "public" / "posts" / "2026-11-02-daily" / "index.html")
                 self.assertIn("<audio", edition.read_text(encoding="utf-8"))
+                self.assertEqual(
+                    BeautifulSoup(edition.read_text(encoding="utf-8"), "html.parser").select_one("audio source")["src"],
+                    f"/podcast/audio/2026-11-02.mp3?v={digest}",
+                )
                 for built_page in (root / "public").rglob("*"):
                     if built_page.suffix in (".html", ".js", ".css"):
                         self.assertNotIn("giscus", built_page.read_text(encoding="utf-8").lower())
@@ -280,6 +285,10 @@ class SiteAudioTests(unittest.TestCase):
                     for folder in ("content/posts", "data")
                     for path in (root / folder).rglob("*") if path.is_file()
                 }
+                audio_path = root / "static/podcast/audio/2026-11-02.mp3"
+                audio_path.write_bytes(audio_path.read_bytes() + b"cache-version-regression")
+                updated_digest = hashlib.sha256(audio_path.read_bytes()).hexdigest()[:12]
+                self.assertNotEqual(updated_digest, digest)
                 catalogue_path = root / "pipeline/sources.yaml"
                 original_catalogue = catalogue_path.read_text(encoding="utf-8")
                 catalogue_path.write_text(
@@ -291,6 +300,11 @@ class SiteAudioTests(unittest.TestCase):
                     ["hugo", "--minify", "--buildFuture", "--source", str(root)],
                     check=True, capture_output=True, text=True, timeout=90,
                 )
+                for rebuilt in (root / "public/index.html", edition):
+                    self.assertEqual(
+                        BeautifulSoup(rebuilt.read_text(encoding="utf-8"), "html.parser").select_one("audio source")["src"],
+                        f"/podcast/audio/2026-11-02.mp3?v={updated_digest}",
+                    )
                 for route, expected in (
                     ("index.html", "243 curated sources"),
                     ("about/index.html", "243 international technology feeds"),

@@ -42,7 +42,7 @@ Decode the Stack reduces the noise by filtering that coverage, with the aim of s
 | Data pipeline | Python 3.12 (feedparser, scikit-learn, python-dateutil) |
 | Clustering | TF-IDF + cosine similarity + Union-Find |
 | AI synthesis and editorial review | GitHub Copilot CLI, selected explicitly for the English workflow |
-| Podcast (TTS) | Pocket TTS (alba, anna, bill_boerst); explicit Edge rollback (en-US-AriaNeural, en-US-JennyNeural, en-US-GuyNeural) |
+| Podcast (TTS) | Pocket TTS (vera, anna, bill_boerst); explicit Edge rollback (en-US-AriaNeural, en-US-JennyNeural, en-US-GuyNeural) |
 | Branding | Logo and podcast cover generated with Pillow |
 | Site generator | Hugo Extended with custom templates adapted from PaperMod |
 | Hosting | Cloudflare Pages, at decodethestack.com |

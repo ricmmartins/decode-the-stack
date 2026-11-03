@@ -97,7 +97,7 @@ The release tag and embedded runtime version differ. Set `POCKET_TTS_CLI_PATH`
 to the executable or put `pocket-tts` on PATH.
 
 Production voice variables must match the attributed set:
-`POCKET_TTS_VOICE_ANNA=alba`, `POCKET_TTS_VOICE_MARIA=anna`,
+`POCKET_TTS_VOICE_ANNA=vera`, `POCKET_TTS_VOICE_MARIA=anna`,
 `POCKET_TTS_VOICE_PEDRO=bill_boerst`. Each existing bounded speech segment
 uses `generate --language english --device cpu --max-tokens 50 --voice NAME
 --text - --output-path FILE`. Text is passed through stdin, avoiding command
@@ -117,16 +117,28 @@ episode enclosure and GUID URLs are unchanged.
 Model credits: [Pocket TTS by Kyutai](https://huggingface.co/kyutai/pocket-tts),
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Voice reference
 credits from the [Kyutai voice catalogue](https://huggingface.co/kyutai/tts-voices):
-Alba MacKenna (`alba`, CC BY 4.0), VCTK speaker p228 (`anna`, CC BY 4.0), and
+VCTK speaker p229 (`vera`, CC BY 4.0), VCTK speaker p228 (`anna`, CC BY 4.0), and
 Voice-Zero/LibriVox (`bill_boerst`, [CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
 References condition newly synthesized English dialogue; contributors do not
 endorse the publication. Visible credits are on the podcast page. The
 standalone software is MIT-licensed; model and voice licenses are separate.
-The pinned runtime maps `anna` to VCTK `p228_023_enhanced.wav`.
-VCTK's `speaker-info.txt` records p228 as female. Maria changed from the
+The pinned runtime identifies `vera` with VCTK `p229_023_enhanced.wav` and
+`anna` with `p228_023_enhanced.wav`. It loads separate precomputed voice states
+for these aliases. VCTK's `speaker-info.txt` records both speakers as female.
+Maria changed from the
 `mary` alias (p333, also recorded as female) after listener feedback about
 the synthesized timbre; the earlier voice was not mislabeled as male.
-The alias `anna` is Maria's voice setting, while host Anna retains `alba`.
+Anna then changed from Alba MacKenna's `alba` (CC BY 4.0) to `vera`.
+Generated samples of `alba` had a lower measured register close to Pedro's;
+`vera` had a higher register in both a short sample and the saved opening turn.
+These measurements describe pitch, not perceived gender. The alias `anna`
+is Maria's voice setting, while host Anna uses `vera`.
+
+The homepage and edition-page players derive their audio version query from
+the MP3's SHA-256 during the Hugo build. Replacing audio refreshes both players
+without editing reviewed posts or their receipts. The service worker excludes
+podcast audio; RSS enclosure URLs and episode GUIDs remain stable. External
+podcast apps may cache an enclosure independently of the website.
 
 Hugo reads `pipeline/sources.yaml` directly at build time for current source
 totals on the home, About, and statistics pages, including About's engineering
@@ -136,7 +148,7 @@ counts. About's metadata uses number-free wording so it cannot retain an old
 catalogue size in search descriptions or JSON-LD.
 
 The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
-English. Pocket voices are alba, anna, and bill_boerst respectively; the Edge
+English. Pocket voices are vera, anna, and bill_boerst respectively; the Edge
 fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
 Podcast generation requests structured JSON turns with explicit speaker names,
 then validates every turn before audio synthesis. Unattributed narration,
