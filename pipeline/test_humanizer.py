@@ -42,6 +42,33 @@ def successful_editor(system, user, label):
 
 
 class HumanizerTests(unittest.TestCase):
+    def test_existing_approval_binds_original_output_and_skill_without_provider_calls(self):
+        with patch.object(humanizer, "_call_llm", side_effect=successful_editor):
+            output, receipt = humanizer.review_post(POST)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.install_skill(root)
+            path = root / "content/posts/2026-11-06-daily.md"
+            for original, candidate, record in (
+                (POST + "Changed original", output, receipt),
+                (POST, output + "Changed candidate", receipt),
+                (POST, output, {**receipt, "meaning_verified": False}),
+                (POST, output, {**receipt, "skill_sha256": "0" * 64}),
+                (POST, output, {**receipt, "version": True}),
+                (POST, output, {}),
+            ):
+                with patch.object(humanizer, "_call_llm") as call, self.assertRaises(humanizer.HumanizerError):
+                    humanizer.write_reviewed_post(path, original, root, approved_review=(candidate, record))
+                call.assert_not_called()
+                self.assertFalse(path.exists())
+                self.assertFalse((root / "data/humanizer").exists())
+            with patch.object(humanizer, "_call_llm") as call:
+                humanizer.write_reviewed_post(path, POST, root, approved_review=(output, receipt))
+            call.assert_not_called()
+            self.assertEqual(path.read_text(encoding="utf-8"), output)
+            self.assertEqual(json.loads((root / "data/humanizer/2026-11-06-daily.json").read_text()), receipt)
+            humanizer.validate_posts(root)
+
     def test_corrected_candidate_runs_same_invariants_and_one_semantic_check(self):
         candidate = POST.replace("Acme released", "Acme shipped")
         with patch.object(humanizer, "_call_llm", return_value=json.dumps(VERDICT)) as call:

@@ -202,16 +202,37 @@ def review_post(post, diagnostic_dir=None, candidate=None):
     }
 
 
-def write_reviewed_post(path, post, project_dir=PROJECT_DIR):
+def validate_receipt(receipt, output, original=None):
+    """Bind an approval to the pinned skill, exact output and optional source."""
+    if not isinstance(receipt, dict) or (
+        type(receipt.get("version")) is not int
+        or receipt.get("version") != 1
+        or receipt.get("post_sha256") != digest(output)
+        or receipt.get("skill_sha256") != SKILL_SHA256
+        or receipt.get("meaning_verified") is not True
+        or not re.fullmatch(r"[a-f0-9]{64}", str(receipt.get("input_sha256", "")))
+        or (original is not None and receipt.get("input_sha256") != digest(original))
+    ):
+        raise HumanizerError("Stale or invalid Humanizer receipt.")
+    if has_editorial_dashes(output):
+        raise HumanizerError("Approved output contains a prohibited editorial dash.")
+
+
+def write_reviewed_post(path, post, project_dir=PROJECT_DIR, approved_review=None):
     """Do not touch an existing post until both LLM passes have succeeded."""
-    for attempt in range(1, 4):
-        try:
-            output, receipt = review_post(post)
-            break
-        except HumanizerMeaningError as error:
-            print(f"[REVIEW] Humanizer attempt {attempt}/3: {error}")
-            if attempt == 3:
-                raise
+    if approved_review is not None:
+        load_skill(Path(project_dir) / ".github/skills/humanizer/SKILL.md")
+        output, receipt = approved_review
+        validate_receipt(receipt, output, original=post)
+    else:
+        for attempt in range(1, 4):
+            try:
+                output, receipt = review_post(post)
+                break
+            except HumanizerMeaningError as error:
+                print(f"[REVIEW] Humanizer attempt {attempt}/3: {error}")
+                if attempt == 3:
+                    raise
     path = Path(path)
     receipt_dir = Path(project_dir) / "data/humanizer"
     receipt_dir.mkdir(parents=True, exist_ok=True)
@@ -242,15 +263,10 @@ def validate_posts(project_dir=PROJECT_DIR):
             receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
         except (OSError, ValueError) as error:
             raise HumanizerError(f"Missing or invalid Humanizer receipt: {path.name}") from error
-        if not isinstance(receipt, dict) or (
-            type(receipt.get("version")) is not int
-            or receipt.get("version") != 1
-            or receipt.get("post_sha256") != post_hash
-            or receipt.get("skill_sha256") != SKILL_SHA256
-            or receipt.get("meaning_verified") is not True
-            or not re.fullmatch(r"[a-f0-9]{64}", str(receipt.get("input_sha256", "")))
-        ):
-            raise HumanizerError(f"Stale or invalid Humanizer receipt: {path.name}")
+        try:
+            validate_receipt(receipt, text)
+        except HumanizerError as error:
+            raise HumanizerError(f"Stale or invalid Humanizer receipt: {path.name}") from error
 
 
 if __name__ == "__main__":

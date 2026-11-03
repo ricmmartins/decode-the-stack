@@ -323,6 +323,9 @@ it applies the same deterministic checks and exactly one semantic verification.
 Only a fully passing result produces `approved-post.txt` and the normal
 `receipt.json`, outside the repository. Rejection produces no approval and no
 additional model calls. Neither diagnostic path publishes content.
+The normal `write_reviewed_post` helper can reuse that approved output and
+receipt through its `approved_review` argument. It checks the pinned skill and
+both source/output hashes before writing anything, without another model call.
 
 Visible editorial text must not contain em or en dashes. Before review, the
 writer normalizes numeric ranges to `to` and prose separators to colons,
