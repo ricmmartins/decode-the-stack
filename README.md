@@ -232,7 +232,11 @@ The podcast is also listed on [Spotify](https://open.spotify.com/show/0wAKdLX0Hp
 ## Local checks
 
 Install Python 3.12+, the dependencies in `pipeline/requirements.txt`, and
-Hugo Extended 0.160.1. Unit tests are offline and do not call AI providers:
+Hugo Extended 0.169.0. This includes the upstream fix for
+[page-render error deadlocks](https://github.com/gohugoio/hugo/issues/15449),
+observed in the malformed-source-catalogue build tests on 0.160.1.
+Those tests still require invalid catalogues to fail promptly.
+Unit tests are offline and do not call AI providers:
 
 ```powershell
 python -m unittest discover -s pipeline -p "test_*.py"
