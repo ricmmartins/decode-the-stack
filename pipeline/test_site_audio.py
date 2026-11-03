@@ -184,6 +184,17 @@ class SiteAudioTests(unittest.TestCase):
                 home = (root / "public" / "index.html").read_text(encoding="utf-8")
                 self.assertIn("Newer text-only edition", home)
                 home_soup = BeautifulSoup(home, "html.parser")
+                spotify_cta = home_soup.select_one(
+                    '.podcast-links a[href="https://open.spotify.com/show/0wAKdLX0HpJF1qfAj2Yiea"]'
+                )
+                self.assertIsNotNone(spotify_cta)
+                self.assertIn("Listen on Spotify", spotify_cta.get_text())
+                self.assertEqual(spotify_cta["target"], "_blank")
+                self.assertTrue({"noopener", "noreferrer"}.issubset(spotify_cta["rel"]))
+                self.assertEqual(spotify_cta.select_one('[aria-hidden="true"]').get_text(), "↗")
+                self.assertIn("opens in a new tab", spotify_cta["aria-label"])
+                self.assertIsNotNone(home_soup.select_one('.community-actions a[href="/podcast/feed.xml"]'))
+                self.assertNotIn("Subscribe to podcast RSS", home)
                 catalogue = "https://github.com/ricmmartins/decode-the-stack/blob/main/pipeline/sources.yaml"
                 for selector in (".hero-description", ".signal-strip"):
                     link = home_soup.select_one(f'{selector} a[href="{catalogue}"]')

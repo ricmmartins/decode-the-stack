@@ -107,7 +107,11 @@ def _validate_home(root):
         raise ValueError("The home page is missing its canonical publication URL.")
     if len(re.findall(r"<source\b[^>]*\bsrc=[\"']?[^\"'\s>]+", home, re.I)) != 1:
         raise ValueError("The home page must include exactly one latest-episode audio source.")
-    if "Instagram" in home or "open.spotify.com" in home:
+    spotify_links = BeautifulSoup(home, "html.parser").select('a[href*="open.spotify.com"]')
+    if "Instagram" in home or any(
+        link.get("href") != "https://open.spotify.com/show/0wAKdLX0HpJF1qfAj2Yiea"
+        for link in spotify_links
+    ):
         raise ValueError("Portuguese social or podcast links must not appear on the English home page.")
 
 

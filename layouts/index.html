@@ -58,7 +58,7 @@
         <span class="podcast-date">Episode from {{ .Date | time.Format "January 2, 2006" }}</span>
         <audio controls preload="none" aria-label="Listen to the episode from {{ .Date | time.Format "January 2, 2006" }}"><source src="{{ $audio | relURL }}" type="audio/mpeg">Your browser does not support audio. <a href="{{ $audio | relURL }}">Download the episode</a>.</audio>
         {{- end }}
-        <div class="podcast-links"><a class="text-link" href="{{ "podcast/feed.xml" | relURL }}">Subscribe to podcast RSS</a><a class="text-link" href="{{ "podcast/" | relURL }}">About the podcast</a></div>
+        <div class="podcast-links"><a class="text-link" href="https://open.spotify.com/show/0wAKdLX0HpJF1qfAj2Yiea" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify (opens in a new tab)">Listen on Spotify <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ "podcast/" | relURL }}">About the podcast</a></div>
       </aside>
     </div>
   </section>
