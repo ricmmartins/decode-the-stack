@@ -312,6 +312,18 @@ The single existing edition is exempt only at its recorded, unchanged hash;
 it has not been retrospectively reviewed. Source changes can deliberately
 change these gates: receipts are audit records, not signed attestations.
 
+For private recovery diagnostics, `pipeline/diagnose_editorial.py` accepts
+`--candidate-dir` pointing to an earlier diagnostic's `original.txt`,
+`candidate.txt`, and `assessment.json`. Explicit `--candidate-sha256` and
+two repeated `--restore-original-block` indices select the evidence and restore
+exactly two original paragraphs; indices refer to the full document split by
+blank lines, including separator blocks. The saved original must match the
+current normalized generated draft. This path does not generate another rewrite:
+it applies the same deterministic checks and exactly one semantic verification.
+Only a fully passing result produces `approved-post.txt` and the normal
+`receipt.json`, outside the repository. Rejection produces no approval and no
+additional model calls. Neither diagnostic path publishes content.
+
 Visible editorial text must not contain em or en dashes. Before review, the
 writer normalizes numeric ranges to `to` and prose separators to colons,
 including displayed source titles and metadata. The final review, Python

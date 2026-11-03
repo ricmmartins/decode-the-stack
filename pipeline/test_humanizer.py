@@ -42,6 +42,32 @@ def successful_editor(system, user, label):
 
 
 class HumanizerTests(unittest.TestCase):
+    def test_corrected_candidate_runs_same_invariants_and_one_semantic_check(self):
+        candidate = POST.replace("Acme released", "Acme shipped")
+        with patch.object(humanizer, "_call_llm", return_value=json.dumps(VERDICT)) as call:
+            output, receipt = humanizer.review_post(POST, candidate=candidate)
+        self.assertEqual(call.call_count, 1)
+        self.assertEqual(call.call_args.args[2], "Humanizer meaning verification")
+        self.assertEqual(output, candidate)
+        self.assertEqual(receipt["post_sha256"], humanizer.digest(candidate))
+        self.assertEqual(receipt["input_sha256"], humanizer.digest(POST))
+        for invalid in (
+            candidate.replace('title: "A release"', 'title: "Changed title"'),
+            candidate.replace("https://example.com/report", "https://other.example"),
+            candidate.replace("version 12", "version 13"),
+            candidate.replace("## Cloud", "## Security"),
+            candidate.replace("Acme shipped", "Acme shipped\n\nNew paragraph"),
+        ):
+            with patch.object(humanizer, "_call_llm") as call, self.assertRaises(humanizer.HumanizerError):
+                humanizer.review_post(POST, candidate=invalid)
+            call.assert_not_called()
+        with (
+            patch.object(humanizer, "_call_llm", return_value=json.dumps({**VERDICT, "facts_preserved": False})) as call,
+            self.assertRaises(humanizer.HumanizerMeaningError),
+        ):
+            humanizer.review_post(POST, candidate=candidate)
+        self.assertEqual(call.call_count, 1)
+
     def test_meaning_retries_restart_original_and_never_publish_rejected_text(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
