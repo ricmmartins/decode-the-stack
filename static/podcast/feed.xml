@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Tue, 03 Nov 2026 00:02:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:45:02 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -32,12 +32,12 @@
       <title>Insights on CSV Handling, Cloud Enhancements, and AI Developments</title>
       <description>Today's technology briefing highlights significant advancements in software engineering practices, cloud functionality, and AI initiatives. These topics are crucial for professionals aiming to optimize their workflows, enhance observability, and leverage…</description>
       <pubDate>Mon, 02 Nov 2026 12:00:00 +0000</pubDate>
-      <enclosure url="https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3" length="10685588" type="audio/mpeg"/>
+      <enclosure url="https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3" length="11062065" type="audio/mpeg"/>
       <guid isPermaLink="true">https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3</guid>
       <link>https://decodethestack.com/posts/2026-11-02-daily/</link>
       <itunes:author>Decode the Stack</itunes:author>
       <itunes:summary>Today's technology briefing highlights significant advancements in software engineering practices, cloud functionality, and AI initiatives. These topics are crucial for professionals aiming to optimize their workflows, enhance observability, and leverage…</itunes:summary>
-      <itunes:duration>890</itunes:duration>
+      <itunes:duration>922</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-02.json" type="application/json+chapters"/>
