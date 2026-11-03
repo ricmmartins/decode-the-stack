@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 13,
+      "title": "Opening"
+    },
+    {
+      "startTime": 141,
+      "title": "The operational question is where AI stops advising and..."
+    },
+    {
+      "startTime": 285,
+      "title": "The unsettling detail in the aircraft audio demonstration..."
+    },
+    {
+      "startTime": 428,
+      "title": "That distinction between a promising feature and a..."
+    },
+    {
+      "startTime": 584,
+      "title": "Adobe’s Premiere mobile app is getting licensed music clips..."
+    },
+    {
+      "startTime": 743,
+      "title": "To close, a contrast between useful developer resources and..."
+    }
+  ]
+}

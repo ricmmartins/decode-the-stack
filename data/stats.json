@@ -1,26 +1,46 @@
 {
-  "updated_at": "2026-11-02T21:02:19.808393+00:00",
+  "updated_at": "2026-11-03T15:32:28.601922+00:00",
   "configured_feeds": 242,
-  "editions_published": 1,
-  "headlines_published": 41,
-  "sources_credited": 23,
-  "latest_edition_date": "2026-11-02",
-  "latest_headlines": 41,
+  "editions_published": 2,
+  "headlines_published": 91,
+  "sources_credited": 33,
+  "latest_edition_date": "2026-11-03",
+  "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 10
+      "headlines": 21
+    },
+    {
+      "name": "The Hacker News",
+      "headlines": 9
+    },
+    {
+      "name": "Hacker News (Best)",
+      "headlines": 8
+    },
+    {
+      "name": "InfoQ",
+      "headlines": 5
     },
     {
       "name": "TechCrunch",
       "headlines": 4
     },
     {
-      "name": "InfoQ",
+      "name": "OpenAI Blog",
       "headlines": 3
     },
     {
-      "name": "The Hacker News",
+      "name": "Real Python",
+      "headlines": 3
+    },
+    {
+      "name": "Simon Willison",
+      "headlines": 3
+    },
+    {
+      "name": "The Verge - Tech",
       "headlines": 3
     },
     {
@@ -28,15 +48,39 @@
       "headlines": 3
     },
     {
+      "name": "Cloudflare Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Dark Reading",
+      "headlines": 2
+    },
+    {
+      "name": "JetBrains Blog",
+      "headlines": 2
+    },
+    {
       "name": "LangChain Blog",
       "headlines": 2
     },
     {
-      "name": "OpenAI Blog",
+      "name": "Laravel News",
       "headlines": 2
     },
     {
-      "name": "The Verge - Tech",
+      "name": "Nvidia Developer Blog",
+      "headlines": 2
+    },
+    {
+      "name": "PagerDuty Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Schneier on Security",
+      "headlines": 2
+    },
+    {
+      "name": "The Daily WTF",
       "headlines": 2
     },
     {
@@ -44,11 +88,7 @@
       "headlines": 1
     },
     {
-      "name": "Cloudflare Blog",
-      "headlines": 1
-    },
-    {
-      "name": "Dark Reading",
+      "name": "CNCF Blog",
       "headlines": 1
     },
     {
@@ -60,7 +100,7 @@
       "headlines": 1
     },
     {
-      "name": "Hacker News (Best)",
+      "name": "Krebs on Security",
       "headlines": 1
     },
     {
@@ -68,11 +108,7 @@
       "headlines": 1
     },
     {
-      "name": "Laravel News",
-      "headlines": 1
-    },
-    {
-      "name": "Nvidia Developer Blog",
+      "name": "Lobsters",
       "headlines": 1
     },
     {
@@ -80,46 +116,50 @@
       "headlines": 1
     },
     {
-      "name": "Real Python",
+      "name": "Smashing Magazine",
       "headlines": 1
     },
     {
-      "name": "Schneier on Security",
+      "name": "Spacelift Blog",
       "headlines": 1
     },
     {
-      "name": "Simon Willison",
+      "name": "Stack Overflow Blog",
       "headlines": 1
     },
     {
-      "name": "The Daily WTF",
+      "name": "The New Stack",
       "headlines": 1
     },
     {
       "name": "Twilio Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Wise Engineering",
       "headlines": 1
     }
   ],
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 25
-    },
-    {
-      "name": "AI/ML",
-      "headlines": 5
+      "headlines": 59
     },
     {
       "name": "Security",
-      "headlines": 5
+      "headlines": 14
+    },
+    {
+      "name": "AI/ML",
+      "headlines": 8
     },
     {
       "name": "Cloud",
-      "headlines": 4
+      "headlines": 6
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 2
+      "headlines": 4
     }
   ],
   "history": [
@@ -127,6 +167,11 @@
       "date": "2026-11-02",
       "headlines": 41,
       "sources": 23
+    },
+    {
+      "date": "2026-11-03",
+      "headlines": 50,
+      "sources": 24
     }
   ]
 }
