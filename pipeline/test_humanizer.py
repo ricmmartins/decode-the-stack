@@ -175,7 +175,7 @@ class HumanizerTests(unittest.TestCase):
             for name in ("assets", "layouts", "content", "data", "static", ".github"):
                 shutil.copytree(project / name, root / name)
             def build():
-                return subprocess.run(["hugo", "--buildFuture", "--source", str(root)], capture_output=True, text=True)
+                return subprocess.run(["hugo", "--buildFuture", "--source", str(root)], capture_output=True, text=True, timeout=60)
             result = build()
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             manual = root / "content/posts/2026-11-06-manual.md"

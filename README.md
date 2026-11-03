@@ -97,7 +97,7 @@ The release tag and embedded runtime version differ. Set `POCKET_TTS_CLI_PATH`
 to the executable or put `pocket-tts` on PATH.
 
 Production voice variables must match the attributed set:
-`POCKET_TTS_VOICE_ANNA=alba`, `POCKET_TTS_VOICE_MARIA=mary`,
+`POCKET_TTS_VOICE_ANNA=alba`, `POCKET_TTS_VOICE_MARIA=anna`,
 `POCKET_TTS_VOICE_PEDRO=bill_boerst`. Each existing bounded speech segment
 uses `generate --language english --device cpu --max-tokens 50 --voice NAME
 --text - --output-path FILE`. Text is passed through stdin, avoiding command
@@ -117,11 +117,16 @@ episode enclosure and GUID URLs are unchanged.
 Model credits: [Pocket TTS by Kyutai](https://huggingface.co/kyutai/pocket-tts),
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Voice reference
 credits from the [Kyutai voice catalogue](https://huggingface.co/kyutai/tts-voices):
-Alba MacKenna (`alba`, CC BY 4.0), VCTK speaker p333 (`mary`, CC BY 4.0), and
+Alba MacKenna (`alba`, CC BY 4.0), VCTK speaker p228 (`anna`, CC BY 4.0), and
 Voice-Zero/LibriVox (`bill_boerst`, [CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
 References condition newly synthesized English dialogue; contributors do not
 endorse the publication. Visible credits are on the podcast page. The
 standalone software is MIT-licensed; model and voice licenses are separate.
+The pinned runtime maps `anna` to VCTK `p228_023_enhanced.wav`.
+VCTK's `speaker-info.txt` records p228 as female. Maria changed from the
+`mary` alias (p333, also recorded as female) after listener feedback about
+the synthesized timbre; the earlier voice was not mislabeled as male.
+The alias `anna` is Maria's voice setting, while host Anna retains `alba`.
 
 Hugo reads `pipeline/sources.yaml` directly at build time for current source
 totals on the home, About, and statistics pages, including About's engineering
@@ -131,7 +136,7 @@ counts. About's metadata uses number-free wording so it cannot retain an old
 catalogue size in search descriptions or JSON-LD.
 
 The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
-English. Pocket voices are alba, mary, and bill_boerst respectively; the Edge
+English. Pocket voices are alba, anna, and bill_boerst respectively; the Edge
 fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
 Podcast generation requests structured JSON turns with explicit speaker names,
 then validates every turn before audio synthesis. Unattributed narration,

@@ -968,10 +968,10 @@ def _synthesize_pocket_segments(segments, tmp_dir):
         raise PocketTTSError("Pocket TTS executable is missing; install the verified CPU release.")
     voices = {
         HOST_A: os.environ.get("POCKET_TTS_VOICE_ANNA", "alba"),
-        HOST_B: os.environ.get("POCKET_TTS_VOICE_MARIA", "mary"),
+        HOST_B: os.environ.get("POCKET_TTS_VOICE_MARIA", "anna"),
         HOST_C: os.environ.get("POCKET_TTS_VOICE_PEDRO", "bill_boerst"),
     }
-    approved = {HOST_A: "alba", HOST_B: "mary", HOST_C: "bill_boerst"}
+    approved = {HOST_A: "alba", HOST_B: "anna", HOST_C: "bill_boerst"}
     if voices != approved:
         raise PocketTTSError("Pocket TTS voices must match the attributed production voice set.")
     started = time.monotonic()

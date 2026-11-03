@@ -38,7 +38,7 @@ class PocketTTSTests(unittest.TestCase):
             self.assertEqual(call.call_count, 3)
             self.assertEqual(
                 [entry.args[0][entry.args[0].index("--voice") + 1] for entry in call.call_args_list],
-                ["alba", "mary", "bill_boerst"],
+                ["alba", "anna", "bill_boerst"],
             )
             for entry in call.call_args_list:
                 self.assertEqual(entry.args[0][:4], ["/pocket-tts", "generate", "--language", "english"])

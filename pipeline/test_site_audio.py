@@ -52,7 +52,7 @@ class SiteAudioTests(unittest.TestCase):
                     }), encoding="utf-8")
                 subprocess.run(
                     ["hugo", "--minify", "--buildFuture", "--source", str(root)],
-                    check=True, capture_output=True, text=True,
+                    check=True, capture_output=True, text=True, timeout=90,
                 )
                 for page in ("index.html",):
                     content = (root / "public" / page).read_text(encoding="utf-8")
@@ -130,7 +130,7 @@ class SiteAudioTests(unittest.TestCase):
                 self.assertIn("Approximately 15 minutes", main_text)
                 self.assertIn("Edge TTS available as an explicit rollback", main_text)
                 self.assertIn("Alba MacKenna", main_text)
-                self.assertIn("speaker p333", main_text)
+                self.assertIn("speaker p228", main_text)
                 self.assertIsNotNone(podcast_page.select_one('a[href="https://creativecommons.org/licenses/by/4.0/"]'))
                 about = BeautifulSoup(
                     (root / "public/about/index.html").read_text(encoding="utf-8"), "html.parser",
@@ -289,7 +289,7 @@ class SiteAudioTests(unittest.TestCase):
                 )
                 subprocess.run(
                     ["hugo", "--minify", "--buildFuture", "--source", str(root)],
-                    check=True, capture_output=True, text=True,
+                    check=True, capture_output=True, text=True, timeout=90,
                 )
                 for route, expected in (
                     ("index.html", "243 curated sources"),
@@ -312,11 +312,11 @@ class SiteAudioTests(unittest.TestCase):
                 for invalid in ("sources: []", "sources: invalid", "sources: ["):
                     catalogue_path.write_text(invalid, encoding="utf-8")
                     result = subprocess.run(
-                        ["hugo", "--source", str(root)], capture_output=True, text=True,
+                        ["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60,
                     )
                     self.assertNotEqual(result.returncode, 0, invalid)
                 catalogue_path.unlink()
-                result = subprocess.run(["hugo", "--source", str(root)], capture_output=True, text=True)
+                result = subprocess.run(["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60)
                 self.assertNotEqual(result.returncode, 0)
 
 
