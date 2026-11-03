@@ -1,0 +1,520 @@
+[
+  {
+    "id": "5b43777ed088e935",
+    "title": "Claude Code in Visual Studio 2026: 5 Ways to Run It Today",
+    "url": "https://dev.to/akaranjkar08/claude-code-in-visual-studio-2026-5-ways-to-run-it-today-590f",
+    "summary": "<p><strong>As of November 2, 2026, Anthropic does not ship a Claude Code extension for Visual Studio 2026.</strong> The official docs cover VS Code, Cursor and JetBrains IDEs, and tell users of other editors to run the <code>claude</code> CLI in their editor's integrated terminal.[1][12] The GitHub feature request for a native Visual Studio 2026 extension, issue #15942, has been open since January 1, 2026 and had 480 thumbs-up reactions when we read it. None of the comments GitHub displays without expanding the thread comes from Anthropic staff.[2] That leaves five ways to run it today: the CLI in Visual Studio's terminal with a plain-text workflow, or one of four community extensions linked in that thread. Two of them, firish's and cv4vs Agents, connect the CLI to Visual Studio over the same IDE channel the official VS Code extension uses; dliedke's and nachum-shmilovitz-66's drive the CLI their own way.[3][11] This post compares all five, shows the setup commands, and shows which fil",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:23:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/akaranjkar08/claude-code-in-visual-studio-2026-5-ways-to-run-it-today-590f"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4c1c9f592761b8f8",
+    "title": "AI Image Generation: One Prompt, Six Tools",
+    "url": "https://dev.to/kevinlearynet/ai-image-generation-one-prompt-six-tools-1i96",
+    "summary": "<p>Finding a relevant featured image is a step in every content marketers blog publishing process. Choosing the right one is critical, it’s what people see when an article is shared and ultimately what determines whether or not it captures attention.</p>\n\n<p>Over the past few years AI image generation for featured images in WordPress has become a very common approach, but it’s easy to tell when AI was used. Images usually have subtle imperfections, oddities, and don’t quite feel right. There are ways to avoid this with the right prompt and the right LLM.</p>\n\n<p>I’ve tried a bunch of them, so I decided to put them to the test and see how they all performed generating a featured image for a recently published blog post.</p>\n\n<p>Here’s the prompt I’m using:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>create a realistic HDR high res photo of the white house sized 1060x380 pixels - as realistic as possible and professional photography\n</code",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:23:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/ai-image-generation-one-prompt-six-tools-1i96"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "324d94d25ef6bc80",
+    "title": "Barcode vs Manual Logging: What Actually Keeps Beginners Tracking",
+    "url": "https://dev.to/stropurbo/barcode-vs-manual-logging-what-actually-keeps-beginners-tracking-a63",
+    "summary": "<p>Most people don't quit calorie tracking because they don't care about their health. They quit because logging a meal feels like homework. I learned this building CalyFit, a free calorie tracker aimed at beginners and busy people — and the barcode scanner versus manual entry debate turned out to be less about technology and more about friction.</p>\n\n<p>Here is the honest version of what works, what doesn't, and how to design logging so people actually stick with it.</p>\n\n<h2>\n  \n  \n  The real enemy is friction, not willpower\n</h2>\n\n<p>A beginner opening a calorie app for the first time faces two questions: \"What did I just eat?\" and \"How much effort will it take to record it?\" If the second answer is \"a lot,\" the first question stops mattering. People skip the entry, then skip the day, then quietly delete the app.</p>\n\n<p>That is why the simplest tracking wins. Not the most detailed tracking — the tracking that survives a busy Tuesday. Every extra tap, search, and guess is a chance t",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:23:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/stropurbo/barcode-vs-manual-logging-what-actually-keeps-beginners-tracking-a63"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "556fa6ad8c5acf0c",
+    "title": "AI vs Human WordPress Writing",
+    "url": "https://dev.to/kevinlearynet/ai-vs-human-wordpress-writing-3b8p",
+    "summary": "<p>A comparison of AI writing tools and human writers for WordPress content.</p>\n\n<p>Should we embrace AI for content creation or stick with human writers? After extensive testing with both approaches, below is what I found.</p>\n\n<h2>\n  \n  \n  The Reality of AI Writing Tools\n</h2>\n\n<p>AI writing has evolved beyond the keyword-stuffing bots of yesterday. Modern tools like Claude and GPT-4 produce grammatically correct, coherent content that reads naturally. They excel at technical documentation, code generation, and scaling content production. What takes human writers hours happens in minutes.</p>\n\n<p>Yet AI tools struggle with nuanced understanding from real-world experience. When we write about debugging WordPress plugin conflicts at 2 AM or handling client scope creep, that authenticity resonates. AI describes these scenarios without living them. The consistency of AI output becomes both strength and weakness, plateauing at “good enough” for most use cases.<br />\n</p>\n\n<div class=\"hig",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:22:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/ai-vs-human-wordpress-writing-3b8p"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7daa84328f04401e",
+    "title": "From Onboarding to Production: How I Built Dynamic Vendor Switching at Wise",
+    "url": "https://medium.com/wise-engineering/from-onboarding-to-production-how-i-built-dynamic-vendor-switching-at-wise-876942d6031f?source=rss----f2565bbe9c46---4",
+    "summary": "<p>When I joined Wise, I was expecting the standard new-joiner experience: documentation, shadowing sessions, maybe a small bug fix or two to ease in. What I got instead was a real problem, a blank design doc, and a team ready to help me solve it.</p><p>That problem became my onboarding project, a system that automatically switches payment vendors when one of them starts failing, and that now quietly handles real customer payments every day.</p><p>Here’s the short version of what I learned: <strong>the switching decision itself is simple. The hard part and what makes it trustworthy is everything around it:</strong> choosing the right signals, validating in shadow mode, making every decision observable, and being conservative about what counts as “the same bank”.</p><p>The rest of this post is the long version.</p><h3>Some context</h3><p>Wise lets customers pay directly from their bank account. For EUR pay-ins, we integrate with external vendors that act as the bridge between Wise and a",
+    "category": "dev",
+    "source_name": "Wise Engineering",
+    "published": "2026-11-03T09:52:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wise Engineering",
+        "url": "https://medium.com/wise-engineering/from-onboarding-to-production-how-i-built-dynamic-vendor-switching-at-wise-876942d6031f?source=rss----f2565bbe9c46---4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "664a20d5e2863086",
+    "title": "Quiz: Converting Documents to Markdown With MarkItDown",
+    "url": "https://realpython.com/quizzes/converting-documents-markdown-markitdown/",
+    "summary": "Check your MarkItDown skills. Convert documents to LLM-ready Markdown, use the MCP server, and get image descriptions. Try the quiz.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/courses/converting-documents-markdown-markitdown/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/converting-documents-markdown-markitdown/"
+      }
+    ],
+    "score": 20.32
+  },
+  {
+    "id": "fa6d3dc67c7d2c97",
+    "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+    "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+    "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of vulnerabilities are exploited, yet most are treated as urgent. The report also argues",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T11:18:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "cda58982915e807a",
+    "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+    "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "summary": "Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.\n\nThe flaw, tracked as CVE-2026-98432, can be reached by a remote, unauthenticated attacker and can",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T11:23:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "1fe09c5d75fcfb2a",
+    "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+    "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+    "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations.\n\n\"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice entities, local administrations near the front line, and the defense sector,\" ESET researcher",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T11:00:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "825b22c5090ed1b9",
+    "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+    "summary": "<p>Article URL: <a href=\"https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/\">https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50344919\">https://news.ycombinator.com/item?id=50344919</a></p>\n<p>Points: 372</p>\n<p># Comments: 282</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T22:30:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/"
+      }
+    ],
+    "score": 19.78
+  },
+  {
+    "id": "2d5528928db90414",
+    "title": "Oh, your agents need OAuth2, too",
+    "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/",
+    "summary": "Recorded at LDX3 by LeadDev, Ryan chats with Dan Moore, Senior Director of CIAM Strategy and Identity Standards at FusionAuth, about adapting established OAuth2 protocols for the agentic era, the security necessity of giving autonomous AI agents their own distinct identities, and how AI coding tools are shifting developers&#x27; focus toward solving core business problems.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-03T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/"
+      }
+    ],
+    "score": 19.75
+  },
+  {
+    "id": "ad92d8c3824d9865",
+    "title": "Where Did the Saved Bytes Go? Compact Object Headers in IntelliJ IDEA",
+    "url": "https://blog.jetbrains.com/idea/2026/11/where-did-the-saved-bytes-go-compact-object-headers-in-intellij-idea/",
+    "summary": "AI agents may make code faster to produce, but they don’t make it cheaper to run. In applications managing millions of objects, memory allocation and garbage collection still matter. The JVM has been addressing these costs on several fronts: ZGC targets garbage collection pauses, Project Leyden tackles startup and warmup, and Project Lilliput reduces the [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-03T12:20:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/idea/2026/11/where-did-the-saved-bytes-go-compact-object-headers-in-intellij-idea/"
+      }
+    ],
+    "score": 19.66
+  },
+  {
+    "id": "202b2a72190c562d",
+    "title": "DataGrip and Database Tools User Experience Survey #3 Results",
+    "url": "https://blog.jetbrains.com/datagrip/2026/11/03/datagrip-and-database-tools-user-experience-survey-3-results/",
+    "summary": "Introduction Hello, DataGrip community! We&#8217;re back with the results of our third DataGrip and Database Tools User Experience Survey. A big thank you to everyone who took the time to participate! This year, 1,420 people shared their experiences with DataGrip and the built-in database tools in other JetBrains IDEs. As with our first and second [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-03T09:19:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/datagrip/2026/11/03/datagrip-and-database-tools-user-experience-survey-3-results/"
+      }
+    ],
+    "score": 19.59
+  },
+  {
+    "id": "25101362e5bffb62",
+    "title": "Adobe’s Premiere mobile app is adding licensed music from ‘leading artists’",
+    "url": "https://www.theverge.com/tech/1025160/adobe-umg-wmg-premiere-mobile-licensed-music",
+    "summary": "Adobe is teaming up with Universal Music Group and Warner Music Group to add a library of licensed music clips to the Premiere mobile video editing app. No specific musicians have been announced with this partnership, but Adobe said it will include \"popular songs\" from \"leading artists,\" and enable Premiere mobile users to quickly jump [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-03T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1025160/adobe-umg-wmg-premiere-mobile-licensed-music"
+      }
+    ],
+    "score": 19.47
+  },
+  {
+    "id": "9e51cc94bd08701f",
+    "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
+    "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+    "summary": "<p>Article URL: <a href=\"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio\">https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50346849\">https://news.ycombinator.com/item?id=50346849</a></p>\n<p>Points: 293</p>\n<p># Comments: 58</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-03T01:33:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio"
+      }
+    ],
+    "score": 19.05
+  },
+  {
+    "id": "3dc5bc11790a079d",
+    "title": "Modern CSS Might Make Your Front-End More Complex",
+    "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/",
+    "summary": "Replacing JavaScript with a modern CSS feature can simplify a piece of code while making the wider application harder to reason about. Gabriel Shoyombo explores what happens when logic is split between CSS and JavaScript, sharing practical guidance to help you keep complexity in check during migration.",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-03T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/"
+      }
+    ],
+    "score": 19.03
+  },
+  {
+    "id": "5c0f2bd87a00dd46",
+    "title": "Show HN: Warsaw in voxels – An interactive 3D map of the city centre",
+    "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
+    "summary": "<p>Explore central Warsaw in voxels - slightly inspired by Minecraft, and MagicaVoxel. \nYou can change the date, time of day and weather, explore the city, or click on a pedestrian to control them (here a bit of inspiration from Dungeon Keeper).<p>Works best on desktop, but I tried to make it usable on mobile too. The initial load can take a while. It's based on several open datasets, including:<p>- OpenStreetMap (<a href=\"https://www.openstreetmap.org/#map=6/52.02/19.14\" rel=\"nofollow\">https://www.openstreetmap.org/#map=6/52.02/19.14</a>) - buildings, streets, sidewalks, tram tracks, etc<p>- GUGiK / Geoportal (<a href=\"https://www.geoportal.gov.pl/\" rel=\"nofollow\">https://www.geoportal.gov.pl/</a>) - LiDAR for building heights and trees, aerial imagery for colours<p>- Warsaw's city tree database (<a href=\"https://mapa.um.warszawa.pl/\" rel=\"nofollow\">https://mapa.um.warszawa.pl/</a>) - individual tree species, used for seasonal foliage<p>Open-source (<a href=\"https://github.com/stared/",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T16:25:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://p.migdal.pl/warsaw-vibe-voxel/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "393cc6fc3530974c",
+    "title": "Ask HN: Who is hiring? (November 2026)",
+    "url": "https://news.ycombinator.com/item?id=50338728",
+    "summary": "<p>Please state the location and include REMOTE for remote work, REMOTE (US)\nor similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no\nrecruiting firms or job boards. One post per company. If it isn't a household name,\nexplain what your company does.<p>Please only post if you are actively filling a position and are committed\nto replying to applicants.<p>Commenters: please don't reply to job posts to complain about\nsomething. It's off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href=\"https://gethnjobs.com/\" rel=\"nofollow\">https://gethnjobs.com/</a>, <a href=\"https://hnwork.app\" rel=\"nofollow\">https://hnwork.app</a>, \n<a href=\"https://dheerajck.github.io/hnwhoishiring/\" rel=\"nofollow\">https://dheerajck.github.io/hnwhoishiring/</a>, <a href=\"http://nchelluri.github.io/hnjobs/\" rel=\"nofollow\">http://nchelluri.github.io/hnjo",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T16:01:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://news.ycombinator.com/item?id=50338728"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "a0a6fb01cdcb9b7a",
+    "title": "openSUSE Leap 16.1",
+    "url": "https://en.opensuse.org/Release_announcement_16.1",
+    "summary": "<p>This is the first minor release in the Leap 16 series and with this release, openSUSE’s immutable server distribution, Leap Micro, becomes part of Leap itself through a new Immutable Mode.</p>\n<p><a href=\"https://lobste.rs/s/qynpzl/opensuse_leap_16_1\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-03T13:22:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://en.opensuse.org/Release_announcement_16.1"
+      }
+    ],
+    "score": 18.71
+  },
+  {
+    "id": "2367c702b72af27c",
+    "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+    "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
+    "summary": "<p>Article URL: <a href=\"https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you\">https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50340619\">https://news.ycombinator.com/item?id=50340619</a></p>\n<p>Points: 274</p>\n<p># Comments: 78</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T17:47:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you"
+      }
+    ],
+    "score": 18.21
+  },
+  {
+    "id": "e52a9f05a0fb13e5",
+    "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+    "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image3-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-02T23:39:34+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/"
+      }
+    ],
+    "score": 18.07
+  },
+  {
+    "id": "a869dc2dab909d38",
+    "title": "October sponsors-only newsletter",
+    "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
+    "summary": "<p>I sent out the October edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-10-october.md\">access it here</a>. This month:</p>\n<ul>\n<li>The October inflection point for vibe game development</li>\n<li>The vulnerability apocalypse gets hot</li>\n<li>LLM releases</li>\n<li>API credits for $100+/month subscriptions</li>\n<li>What I'm using right now</li>\n<li>My software releases</li>\n</ul>\n<p>My September newsletter <a href=\"https://simonwillison.net/newsletters/monthly-2026-09-september/\">can now be seen here</a>, as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy!</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/newsletter\">newsletter</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-03T05:28:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "911de35c0a79f914",
+    "title": "CodeSOD: Death of the Auth-Er",
+    "url": "https://thedailywtf.com/articles/death-of-the-auth-er",
+    "summary": "<p>When writing Perl, it's not unusual to want to <code>die</code>. The <code>die</code> function ends your Perl program with an error string, and you'll often see code like: <code>die \"My error\" unless $i &gt; 5</code> or <code>die \"Other error\" if check()</code>, because Perl just loves the backwards conditionals. What's even more fun with <code>die</code> is <a href=\"https://perldoc.perl.org/functions/die\">how it behaves with <code>eval</code> blocks</a>, so it doesn't always kill your program, sometimes it is how you pass error strings back out of sections of your program.</p>\n<p>And poor <strong>Bobby</strong> has inherited some Perl that just really loves to <code>die</code>.</p>\n<pre><code class=\"language-perl\">public function store()\n{\n    echo <span class=\"hljs-string\">'Hello'</span>; <span class=\"hljs-keyword\">die</span>;\n    <span class=\"hljs-keyword\">if</span> (Auth::attempt(Input::only(<span class=\"hljs-string\">'email'</span>, <span class=\"hljs-string\">'password'</span>)))",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-03T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/death-of-the-auth-er"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "f3580846dd0b7d8f",
+    "title": "Show HN: I've updated my Linux System Call website and API",
+    "url": "https://syscall.sh/",
+    "summary": "<p>I first released those in back in 2020 and now I finally added more architectures, Kernel selector, syscall descriptions and a few other niceties. It should work a bit better on mobile devices too but I am no CSS expert.<p>The API is at <a href=\"https://api.syscall.sh\" rel=\"nofollow\">https://api.syscall.sh</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50334704\">https://news.ycombinator.com/item?id=50334704</a></p>\n<p>Points: 225</p>\n<p># Comments: 52</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T09:29:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://syscall.sh/"
+      }
+    ],
+    "score": 17.93
+  },
+  {
+    "id": "629cc7518c4d2cfc",
+    "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+    "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+    "summary": "<p>Article URL: <a href=\"https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432\">https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50341462\">https://news.ycombinator.com/item?id=50341462</a></p>\n<p>Points: 561</p>\n<p># Comments: 171</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T18:39:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432"
+      }
+    ],
+    "score": 17.82
+  },
+  {
+    "id": "02d7df54e55cd913",
+    "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
+    "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+    "summary": "Evidence suggests a model may have generated and revised commands during the ransom gang's breach, though researchers stopped short of claiming full automation.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-03T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack"
+      }
+    ],
+    "score": 17.6
+  },
+  {
+    "id": "527363159dc3375e",
+    "title": "Quiz: How to Use Claude Code Skills for Better Python Docstrings",
+    "url": "https://realpython.com/quizzes/claude-code-skills/",
+    "summary": "Check your understanding of Claude Code skills, from SKILL.md frontmatter and reference files to bundled scripts and personal skills.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/claude-code-skills/"
+      }
+    ],
+    "score": 17.33
+  },
+  {
+    "id": "19e21e261fc8cb76",
+    "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+    "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code.\n\n\"SIMATIC IoT2050 Advanced devices running",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T05:34:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html"
+      }
+    ],
+    "score": 16.97
+  },
+  {
+    "id": "d49e37d029decfb2",
+    "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
+    "url": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
+    "summary": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers.\n\nNo chain reported more than several dozen affected stores, and some had to throw away chilled and frozen food or take it off the shelf. Danfoss, a Danish maker of refrigeration controls,&nbsp",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T07:27:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html"
+      }
+    ],
+    "score": 16.96
+  },
+  {
+    "id": "6e3fa53b9fd65a17",
+    "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
+    "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions.\n\n\"Our investigation found that these attacks targeted servers running BTCPay Server 2.4.1 (released on 23 July 2026) or earlier,\" BTCPay Server",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T08:31:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
+      }
+    ],
+    "score": 16.95
+  }
+]

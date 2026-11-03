@@ -1,0 +1,1350 @@
+[
+  {
+    "id": "d3ed3b76e83c67a2",
+    "title": "Anthropic speeds up Claude Code with message threads. But your token bill stays the same.",
+    "url": "https://thenewstack.io/anthropic-claude-message-threads/",
+    "summary": "<img alt=\"Illustration of a desktop monitor, laptop, keyboard and phone displaying code, representing Claude Code and developer tools.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"768\" src=\"https://cdn.thenewstack.io/media/2026/11/4a4a1bb5-prakasit-khuansuwan-h_keeku145y-unsplash-1024x768.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Anthropic has announced a new feature that aims to speed up long-running Claude Code sessions by reducing the amount of</p>\n<p>The post <a href=\"https://thenewstack.io/anthropic-claude-message-threads/\">Anthropic speeds up Claude Code with message threads. But your token bill stays the same.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-03T13:46:14+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-claude-message-threads/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-code-developer-refusals/"
+      }
+    ]
+  },
+  {
+    "id": "a90bb14483779446",
+    "title": "Protecting WordPress Contact Forms with AI",
+    "url": "https://dev.to/kevinlearynet/protecting-wordpress-contact-forms-with-ai-17o4",
+    "summary": "<p>If you have a WordPress website with a contact form you know how bad spam can get.</p>\n\n<p>Contact forms, lead forms, and signups all attract fake messages. Honeypots, Akismet, reCAPTCHA and Turnstile all help, but none of them fully stop spam. They also make it harder for people to submit the form, and frustrating.</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwsrv.nl%3Furl%3Dkevinleary.net%2Fwp-content%2Fuploads%2Fgravity-forms-spam-email.jpg%26w%3D940%26q%3D80%26output%3Dwebp%26maxage%3D356d%26dpr%3D2\"><img alt=\"Gravity Forms spam email notification that passed through CloudFlare turnstile\" height=\"998\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwsrv.nl%3Furl%3Dkevinleary.net%2Fwp-content%2Fuploads%2Fgravity-forms-spam-email.jpg%26w%3D940%26q%3D80%26output%3Dwebp%26maxage%3D356d%26dp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:25:36+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/protecting-wordpress-contact-forms-with-ai-17o4"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/ai-prompting-techniques-5c7g"
+      }
+    ]
+  },
+  {
+    "id": "e52a9f05a0fb13e5",
+    "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+    "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image3-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-02T23:39:34+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/"
+      }
+    ]
+  },
+  {
+    "id": "664a20d5e2863086",
+    "title": "Quiz: Converting Documents to Markdown With MarkItDown",
+    "url": "https://realpython.com/quizzes/converting-documents-markdown-markitdown/",
+    "summary": "Check your MarkItDown skills. Convert documents to LLM-ready Markdown, use the MCP server, and get image descriptions. Try the quiz.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/courses/converting-documents-markdown-markitdown/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/converting-documents-markdown-markitdown/"
+      }
+    ]
+  },
+  {
+    "id": "04e5c8f6f54c315b",
+    "title": "Live Props for Real-Time Updates in Inertia.js v3.11",
+    "url": "https://laravel-news.com/inertia-3-11-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/inertia-3-11-0\"><img alt=\"Live Props for Real-Time Updates in Inertia.js v3.11\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/inertia-v3-featured.png\" /></a></p>\n                                        <hr />\n\n                    <p>Inertia.js v3.11 adds live props, which reload a page prop when a broadcast event arrives, with Laravel Echo, Reverb, Pusher, and Action Cable transports.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/inertia-3-11-0\">Live Props for Real-Time Updates in Inertia.js v3.11</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-03T03:19:08+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/inertia-3-11-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/composer-2-11?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ]
+  },
+  {
+    "id": "9e51cc94bd08701f",
+    "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
+    "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+    "summary": "<p>Article URL: <a href=\"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio\">https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50346849\">https://news.ycombinator.com/item?id=50346849</a></p>\n<p>Points: 293</p>\n<p># Comments: 58</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-03T01:33:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio"
+      }
+    ]
+  },
+  {
+    "id": "825b22c5090ed1b9",
+    "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+    "summary": "<p>Article URL: <a href=\"https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/\">https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50344919\">https://news.ycombinator.com/item?id=50344919</a></p>\n<p>Points: 372</p>\n<p># Comments: 282</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T22:30:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/"
+      }
+    ]
+  },
+  {
+    "id": "629cc7518c4d2cfc",
+    "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+    "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+    "summary": "<p>Article URL: <a href=\"https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432\">https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50341462\">https://news.ycombinator.com/item?id=50341462</a></p>\n<p>Points: 561</p>\n<p># Comments: 171</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T18:39:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432"
+      }
+    ]
+  },
+  {
+    "id": "2367c702b72af27c",
+    "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+    "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
+    "summary": "<p>Article URL: <a href=\"https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you\">https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50340619\">https://news.ycombinator.com/item?id=50340619</a></p>\n<p>Points: 274</p>\n<p># Comments: 78</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T17:47:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you"
+      }
+    ]
+  },
+  {
+    "id": "5c0f2bd87a00dd46",
+    "title": "Show HN: Warsaw in voxels – An interactive 3D map of the city centre",
+    "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
+    "summary": "<p>Explore central Warsaw in voxels - slightly inspired by Minecraft, and MagicaVoxel. \nYou can change the date, time of day and weather, explore the city, or click on a pedestrian to control them (here a bit of inspiration from Dungeon Keeper).<p>Works best on desktop, but I tried to make it usable on mobile too. The initial load can take a while. It's based on several open datasets, including:<p>- OpenStreetMap (<a href=\"https://www.openstreetmap.org/#map=6/52.02/19.14\" rel=\"nofollow\">https://www.openstreetmap.org/#map=6/52.02/19.14</a>) - buildings, streets, sidewalks, tram tracks, etc<p>- GUGiK / Geoportal (<a href=\"https://www.geoportal.gov.pl/\" rel=\"nofollow\">https://www.geoportal.gov.pl/</a>) - LiDAR for building heights and trees, aerial imagery for colours<p>- Warsaw's city tree database (<a href=\"https://mapa.um.warszawa.pl/\" rel=\"nofollow\">https://mapa.um.warszawa.pl/</a>) - individual tree species, used for seasonal foliage<p>Open-source (<a href=\"https://github.com/stared/",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T16:25:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://p.migdal.pl/warsaw-vibe-voxel/"
+      }
+    ]
+  },
+  {
+    "id": "393cc6fc3530974c",
+    "title": "Ask HN: Who is hiring? (November 2026)",
+    "url": "https://news.ycombinator.com/item?id=50338728",
+    "summary": "<p>Please state the location and include REMOTE for remote work, REMOTE (US)\nor similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no\nrecruiting firms or job boards. One post per company. If it isn't a household name,\nexplain what your company does.<p>Please only post if you are actively filling a position and are committed\nto replying to applicants.<p>Commenters: please don't reply to job posts to complain about\nsomething. It's off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href=\"https://gethnjobs.com/\" rel=\"nofollow\">https://gethnjobs.com/</a>, <a href=\"https://hnwork.app\" rel=\"nofollow\">https://hnwork.app</a>, \n<a href=\"https://dheerajck.github.io/hnwhoishiring/\" rel=\"nofollow\">https://dheerajck.github.io/hnwhoishiring/</a>, <a href=\"http://nchelluri.github.io/hnjobs/\" rel=\"nofollow\">http://nchelluri.github.io/hnjo",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T16:01:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://news.ycombinator.com/item?id=50338728"
+      }
+    ]
+  },
+  {
+    "id": "f3580846dd0b7d8f",
+    "title": "Show HN: I've updated my Linux System Call website and API",
+    "url": "https://syscall.sh/",
+    "summary": "<p>I first released those in back in 2020 and now I finally added more architectures, Kernel selector, syscall descriptions and a few other niceties. It should work a bit better on mobile devices too but I am no CSS expert.<p>The API is at <a href=\"https://api.syscall.sh\" rel=\"nofollow\">https://api.syscall.sh</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50334704\">https://news.ycombinator.com/item?id=50334704</a></p>\n<p>Points: 225</p>\n<p># Comments: 52</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-02T09:29:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://syscall.sh/"
+      }
+    ]
+  },
+  {
+    "id": "441658206ad33db5",
+    "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "summary": "<p><a href=\"https://lobste.rs/s/u7wdqj/sparks_weight_space_programming_llms_can\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-02T19:24:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+      }
+    ]
+  },
+  {
+    "id": "152657ff7c1ea742",
+    "title": "Canonical's CVE Response Times",
+    "url": "https://aria.rip/canonical_cve_response/",
+    "summary": "<p><a href=\"https://lobste.rs/s/5cmg1k/canonical_s_cve_response_times\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-03T13:55:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://aria.rip/canonical_cve_response/"
+      }
+    ]
+  },
+  {
+    "id": "a0a6fb01cdcb9b7a",
+    "title": "openSUSE Leap 16.1",
+    "url": "https://en.opensuse.org/Release_announcement_16.1",
+    "summary": "<p>This is the first minor release in the Leap 16 series and with this release, openSUSE’s immutable server distribution, Leap Micro, becomes part of Leap itself through a new Immutable Mode.</p>\n<p><a href=\"https://lobste.rs/s/qynpzl/opensuse_leap_16_1\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-03T13:22:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://en.opensuse.org/Release_announcement_16.1"
+      }
+    ]
+  },
+  {
+    "id": "2a7b65ae72b52ddd",
+    "title": "Virtual Art Museum built with Three js",
+    "url": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks/",
+    "summary": "<p>My wife wanted a website for her artworks. While building the website, I suddenly had this urge to try building a virtual art museum to give her motivation. It turned out not bad. Put the rain mode on if you like cats btw.</p>\n<p>I'm still trying to optimize the performance as I'm having random fps-drops on Android devices.</p>\n<p>Let me know if you notice any bugs as this project is still in early build. It works best on PCs although tablets and smart phones are also good to go. I'm open to ideas to make it more beautiful.</p>\n<p><a href=\"https://lobste.rs/s/c8ayyw/virtual_art_museum_built_with_three_js\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-02T15:51:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks/"
+      }
+    ]
+  },
+  {
+    "id": "25101362e5bffb62",
+    "title": "Adobe’s Premiere mobile app is adding licensed music from ‘leading artists’",
+    "url": "https://www.theverge.com/tech/1025160/adobe-umg-wmg-premiere-mobile-licensed-music",
+    "summary": "Adobe is teaming up with Universal Music Group and Warner Music Group to add a library of licensed music clips to the Premiere mobile video editing app. No specific musicians have been announced with this partnership, but Adobe said it will include \"popular songs\" from \"leading artists,\" and enable Premiere mobile users to quickly jump [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-03T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1025160/adobe-umg-wmg-premiere-mobile-licensed-music"
+      }
+    ]
+  },
+  {
+    "id": "91f45e28e4182f77",
+    "title": "One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
+    "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+    "summary": "Google says one of its Android manufacturing partners secretly built a backdoor in 1.3 million devices and turned them into a botnet. The company says it has now dismantled the backdoor and \"cut ties\" with the manufacturer, the Shenzhen, China-based Videostrong Technology Co., which has been banned from building or selling certified Android devices or [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-02T20:37:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down"
+      }
+    ]
+  },
+  {
+    "id": "b023f9a9f8a4c7f6",
+    "title": "Yvonne Bajela is bringing $17M in fresh capital to Europe’s startup scene",
+    "url": "https://techcrunch.com/2026/11/03/yvonne-bajela-is-bringing-17m-in-fresh-capital-to-europes-startup-scene/",
+    "summary": "Evertrue Capital announces $17M debut fund to back early stage AI and fintech.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-03T08:01:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/03/yvonne-bajela-is-bringing-17m-in-fresh-capital-to-europes-startup-scene/"
+      }
+    ]
+  },
+  {
+    "id": "9bde91403f380e7c",
+    "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
+    "url": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/",
+    "summary": "A Kyiv startup’s pocket-sized, 10-ounce receiver lets Ukrainian troops watch the video feeds of Russian drones, though Russian moves toward digital video and AI-guided drones that emit no signals could make the victory short-lived.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-03T01:12:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/"
+      }
+    ]
+  },
+  {
+    "id": "6c23fd74dad5fe9c",
+    "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+    "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+    "summary": "The one-year-old startup is now valued at $300 million.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-02T23:13:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/"
+      }
+    ]
+  },
+  {
+    "id": "fbc14f4573e20d5e",
+    "title": "Apple’s inventory surges 154% as memory chip costs climb",
+    "url": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/",
+    "summary": "Apple says unprecedented memory chip costs will continue to rise, raising questions about future device prices as its inventory climbs to $14.5 billion.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-02T23:04:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/"
+      }
+    ]
+  },
+  {
+    "id": "5b8842efc2813c77",
+    "title": "LinkedIn Uses OpenTelemetry to Trace the Member Journey from Tap to Backend",
+    "url": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/linkedin-opentelemetry-journey/en/headerimage/generatedHeaderImage-1793095474316.jpg\" /><p>LinkedIn has built an OpenTelemetry-based telemetry platform that connects what members do in its iOS, Android, and web applications with the backend services processing those interactions.</p> <i>By Craig Risi</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "22dcf7e42f6252d7",
+    "title": "Presentation: Beyond the Harness: Canvas for AI Agents",
+    "url": "https://www.infoq.com/presentations/canvas-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/canvas-ai-agents/en/mediumimage/nimisha-asthagiri-medium-1792655073821.jpg\" /><p>Nimisha Asthagiri shares how applying proven product engineering and architecture principles creates a bounded canvas for AI agents. She explains how this model provides agents with bounded autonomy, continuous drift detection, and decision records to scale software development resiliently.</p> <i>By Nimisha Asthagiri</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-03T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/canvas-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "cd7b6bdd22b79738",
+    "title": "Apple's home robot 🤖, OpenAI scales git 📈, open source value 👨‍💻",
+    "url": "https://tldr.tech/tech/2026-11-03",
+    "summary": "",
+    "category": "news",
+    "source_name": "TLDR",
+    "published": "2026-11-03T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TLDR",
+        "url": "https://tldr.tech/tech/2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "901fbf811bcb140b",
+    "title": "Preparing for your next certification could start with your Visual Studio Subscription",
+    "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/",
+    "summary": "<p>Are you thinking about earning a Microsoft certification to help advance your career, build on your existing skills, or meet new requirements at work?  If so, you may already be wondering where to start. Which courses, labs, and hands-on exercises will help you prepare? How much time will it take to find the right resources, [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/\">Preparing for your next certification could start with your Visual Studio Subscription </a> appeared first on <a href=\"https://devblogs.microsoft.com/visualstudio\">Visual Studio Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Visual Studio Blog",
+    "published": "2026-10-28T22:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Visual Studio Blog",
+        "url": "https://devblogs.microsoft.com/visualstudio/preparing-for-your-next-certification-could-start-with-your-visual-studio-subscription/"
+      }
+    ]
+  },
+  {
+    "id": "445b6808c69d2cbe",
+    "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+    "url": "https://blog.cloudflare.com/zero-wire/",
+    "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-03T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/zero-wire/"
+      }
+    ]
+  },
+  {
+    "id": "407cbca45dc13399",
+    "title": "Modernizing the Video Playback Experience at Discord",
+    "url": "https://discord.com/blog/modernizing-the-video-playback-experience-at-discord",
+    "summary": "This is the story of how we assessed and refactored two video players into one, cut the player code each product maintained by up to 94%, and swapped to the new player without disruption to any users.",
+    "category": "dev",
+    "source_name": "Discord Engineering",
+    "published": "2026-11-02T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Discord Engineering",
+        "url": "https://discord.com/blog/modernizing-the-video-playback-experience-at-discord"
+      }
+    ]
+  },
+  {
+    "id": "7c1c83cfed165cc1",
+    "title": "What Slash Commands Actually Do",
+    "url": "https://engineering.gusto.com/what-slash-commands-actually-do-76cf4c288f5c?source=rss----645edd256348---4",
+    "summary": "<figure><img alt=\"Illustration of a glowing forward-slash doorway with four machines behind it: a scroll on a conveyor, a toolbox, and a note-feeding machine each send streams up into a cloud past small coin meters, while a switchboard on the ground stays connected only to itself.\" src=\"https://cdn-images-1.medium.com/max/1024/1*zi9jF-tnwaIvyXySx6CqIg.jpeg\" /></figure><p>Somebody at Gusto asked, during one of our internal AI AMAs, whether /login was costing them tokens. The answer came back yes, relayed into our Claude Code channel a few minutes later: /login &quot;is an LLM call, which will take more time and end up with unnecessary token use,&quot; so run claude auth login from the CLI instead, because that one's instant and free. It came with receipts, sort of. Secondhand from someone who'd watched /login run up $3.</p><p>That felt off, so I went and checked. It’s off. /login never touches the model, in any config. It's a local command: it runs entirely on your machine and never bui",
+    "category": "dev",
+    "source_name": "Gusto Engineering",
+    "published": "2026-11-02T21:04:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Gusto Engineering",
+        "url": "https://engineering.gusto.com/what-slash-commands-actually-do-76cf4c288f5c?source=rss----645edd256348---4"
+      }
+    ]
+  },
+  {
+    "id": "89ebab27c1d28d07",
+    "title": "Projects can now be configured with vercel.toml",
+    "url": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
+    "summary": "<p>Vercel now supports <code>vercel.toml</code>, which allows you to to configure your project using the <a href=\"https://toml.io/\">TOML configuration format</a>. All of the same configuration properties are supported as in <code>vercel.json</code>, but it supports comments and has a flatter structure. </p><p>All projects can now use <code>vercel.toml</code>. Use only one project configuration file: vercel.toml, vercel.json, or vercel.ts.</p><p>For example, configuring <a href=\"https://vercel.com/docs/services\">Services</a>:</p><div></div><p>Read the <a href=\"https://vercel.com/docs/project-configuration/vercel-toml\">documentation</a>. </p>\n          <p class=\"more\">\n            <a href=\"https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml\">Read more</a>\n          </p>",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-02T21:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml"
+      }
+    ]
+  },
+  {
+    "id": "5313c720b395492e",
+    "title": "Vercel MCP now supports Client ID Metadata Documents",
+    "url": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
+    "summary": "<p>Any MCP client can now ask to connect to <a href=\"https://vercel.com/docs/agent-resources/vercel-mcp\">Vercel MCP</a>. You still log in and approve each connection, but the client no longer has to be reviewed by Vercel first. Previously, Vercel reviewed and allowlisted each client and its redirect URIs by hand, and anything not on the list was rejected.</p><p>To connect, a client publishes a Client ID Metadata Document (CIMD), a JSON file on its own domain that describes it, and uses that file's HTTPS URL as its OAuth <code>client_id</code>. This follows the MCP authorization spec, which now recommends CIMD over Dynamic Client Registration.</p><p>Because Vercel hasn't reviewed these clients, the consent screen shows where each one comes from: its name, its logo, and the hostname that serves its metadata document, for example \"Claude Code by claude.ai\". CIMD clients don't get the Vercel verified badge, so the hostname is what you're trusting when you approve.</p><div></div><p>Apps alr",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-02T20:09:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents"
+      }
+    ]
+  },
+  {
+    "id": "bb6d618c421b2e86",
+    "title": "LongCat 2.5 now available on AI Gateway",
+    "url": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/longcat-2.5\">LongCat 2.5 from Meituan</a> is now available on AI Gateway. This model combines native visual understanding with coding and multi-step tool use for agents working across complex codebases and full-project builds.</p><p><a href=\"https://longcat.ai/blog/longcat-2.5\">Meituan highlights</a> improvements in visual programming, creative design, and 3D tasks, alongside longer agent workflows that carry engineering work from planning through execution. The model supports text and image inputs with a 1M-token context window for code, documents, and extended task histories.</p><p>Use <code>meituan/longcat-2.5</code> as the model name:</p><div></div><p>To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup:</p><div></div><p>Then select <code>meituan/longcat-2.5</code> in the agent. See the <a href=\"https://vercel.com/docs/ai-gateway/coding-agents\">coding agents guide</a> for details.</p><p>Try L",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-02T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway"
+      }
+    ]
+  },
+  {
+    "id": "9f2010e88425c3a6",
+    "title": "OpenKruise Agents v0.6.0: Leaping ahead in agent Sandbox security and automation",
+    "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
+    "summary": "About OpenKruise Agents OpenKruise Agents is a sub-project of OpenKruise, the CNCF open-source application automation and workload orchestration project. It provides full lifecycle management for Agent Sandboxes running at scale on Kubernetes, together with a complete...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/"
+      }
+    ]
+  },
+  {
+    "id": "1d921d31c5955eab",
+    "title": "The Linkerd Story: The People Behind The Service Mesh — A new documentary premieres at KubeCon + CloudNativeCon North America 2026",
+    "url": "https://www.cncf.io/blog/2026/11/02/the-linkerd-story-the-people-behind-the-service-mesh-a-new-documentary-premieres-at-kubecon-cloudnativecon-north-america-2026/",
+    "summary": "Join CNCF and Buoyant on November 9 in Salt Lake City for the premiere of a new documentary celebrating a decade of Linkerd, the evolution of service mesh technology, and the people who helped make it...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-02T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/02/the-linkerd-story-the-people-behind-the-service-mesh-a-new-documentary-premieres-at-kubecon-cloudnativecon-north-america-2026/"
+      }
+    ]
+  },
+  {
+    "id": "88fc5c5265f9c3fe",
+    "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+    "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+    "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised systems, including other Internet of Things (IoT) products such as Android-based healthcare devices and karaoke machines.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-03T02:24:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/"
+      }
+    ]
+  },
+  {
+    "id": "cda58982915e807a",
+    "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+    "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "summary": "Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.\n\nThe flaw, tracked as CVE-2026-98432, can be reached by a remote, unauthenticated attacker and can",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T11:23:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
+      }
+    ]
+  },
+  {
+    "id": "fa6d3dc67c7d2c97",
+    "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+    "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+    "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of vulnerabilities are exploited, yet most are treated as urgent. The report also argues",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T11:18:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html"
+      }
+    ]
+  },
+  {
+    "id": "1fe09c5d75fcfb2a",
+    "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+    "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+    "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations.\n\n\"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice entities, local administrations near the front line, and the defense sector,\" ESET researcher",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T11:00:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html"
+      }
+    ]
+  },
+  {
+    "id": "6e3fa53b9fd65a17",
+    "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
+    "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions.\n\n\"Our investigation found that these attacks targeted servers running BTCPay Server 2.4.1 (released on 23 July 2026) or earlier,\" BTCPay Server",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T08:31:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
+      }
+    ]
+  },
+  {
+    "id": "846761f7895e04a0",
+    "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
+    "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+    "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.\n\nThe Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM.\n\n\"These attacks aim to encrypt data and extort ransom,\" it said in a statement",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T07:43:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html"
+      }
+    ]
+  },
+  {
+    "id": "d49e37d029decfb2",
+    "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
+    "url": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
+    "summary": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers.\n\nNo chain reported more than several dozen affected stores, and some had to throw away chilled and frozen food or take it off the shelf. Danfoss, a Danish maker of refrigeration controls,&nbsp",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T07:27:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html"
+      }
+    ]
+  },
+  {
+    "id": "19e21e261fc8cb76",
+    "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+    "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code.\n\n\"SIMATIC IoT2050 Advanced devices running",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T05:34:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html"
+      }
+    ]
+  },
+  {
+    "id": "02d256ed7dd7a70f",
+    "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+    "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+    "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber.\n\nThe vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit unauthenticated users to delete arbitrary files on the server and extract",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-03T05:34:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html"
+      }
+    ]
+  },
+  {
+    "id": "30d4be23d2988cbb",
+    "title": "AIs Hacking the Law",
+    "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+    "summary": "<p>In both a 2021 <a href=\"https://www.belfercenter.org/publication/coming-ai-hackers\">essay</a> and my 2022 book, <i><a href=\"https://www.schneier.com/books/a-hackers-mind/\">A Hacker&#8217;s Mind</a></i>, I talk about AIs finding vulnerabilities and exploits&#8212;hacking&#8212;the legal system.</p>\n<p><a href=\"https://www.felixringe.com/legal-exploits/\">Here&#8217;s</a> some demonstrations of this from Germany:</p>\n<blockquote><p>Legal systems encode the foundations of social order in natural language. Similar to computer systems, the written law can contain vulnerabilities that invite exploitation.1 Courts absorb most exploits through interpretation, and such vulnerabilities rarely surface in the first place. With highly capable AI systems enabling the discovery of vulnerabilities at unprecedented scale, we believe the latter could change...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-03T12:01:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html"
+      }
+    ]
+  },
+  {
+    "id": "02d7df54e55cd913",
+    "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
+    "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+    "summary": "Evidence suggests a model may have generated and revised commands during the ransom gang's breach, though researchers stopped short of claiming full automation.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-03T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack"
+      }
+    ]
+  },
+  {
+    "id": "9c4b703873e8a4a5",
+    "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+    "summary": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-02T22:27:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+      }
+    ]
+  },
+  {
+    "id": "bdd4b885244837e8",
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "url": "https://openai.com/index/heimstaden",
+    "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-03T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/heimstaden"
+      }
+    ]
+  },
+  {
+    "id": "c992021f47d53568",
+    "title": "Scaling Git at OpenAI",
+    "url": "https://openai.com/index/scaling-git-at-openai",
+    "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-02T15:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/scaling-git-at-openai"
+      }
+    ]
+  },
+  {
+    "id": "085b4fb31d6fa9d1",
+    "title": "Preparing our next security sprint to harden OpenAI",
+    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+    "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-02T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+      }
+    ]
+  },
+  {
+    "id": "850a70525105f4cd",
+    "title": "Rewarding defenders with bigger bug bounties",
+    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+    "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-02T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+      }
+    ]
+  },
+  {
+    "id": "b281f275799c5009",
+    "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+    "url": "https://openai.com/index/dan-driscoll-joins-openai",
+    "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-02T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/dan-driscoll-joins-openai"
+      }
+    ]
+  },
+  {
+    "id": "b14d13e65618a77d",
+    "title": "Progress on provable inference for large language models",
+    "url": "https://www.anthropic.com/research/provable-inference",
+    "summary": "Sharing progress on a powerful type of cryptographic proof known as a zkSNARK, which is uniquely fit for provable inference.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-02T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/provable-inference"
+      }
+    ]
+  },
+  {
+    "id": "5e0a696391f0bbd0",
+    "title": "Transformers Model Integration Contracts",
+    "url": "https://huggingface.co/blog/transformers-mic",
+    "summary": "",
+    "category": "ai",
+    "source_name": "Hugging Face Blog",
+    "published": "2026-11-03T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/transformers-mic"
+      }
+    ]
+  },
+  {
+    "id": "c62a6f5186c8ac53",
+    "title": "Managed Deep Agents: the fastest way to ship a production deep agent",
+    "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+    "summary": "Run deep agents in production with durable execution, sandboxes, tool access, and LangSmith observability, without building the runtime yourself. Now in private beta",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-02T22:28:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/introducing-managed-deep-agents"
+      }
+    ]
+  },
+  {
+    "id": "9b3e87562fde3701",
+    "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+    "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
+    "summary": "<p><strong><a href=\"https://www.youtube.com/watch?v=UytYrhYLOKI\">I discovered a sound that leaks your exact location (and it&#x27;s everywhere) - YouTube</a></strong></p>\nGenius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact location of the video based on their speed, distance, and gaps between different flights.</p>\n<p> \n\n    <p><small></small>Via <a href=\"https://lobste.rs/s/s1btqo/this_background_sound_leaks_your_exact\">Lobste.rs</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/privacy\">privacy</a>, <a href=\"https://simonwillison.net/tags/youtube\">youtube</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-03T05:32:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/"
+      }
+    ]
+  },
+  {
+    "id": "a869dc2dab909d38",
+    "title": "October sponsors-only newsletter",
+    "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
+    "summary": "<p>I sent out the October edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-10-october.md\">access it here</a>. This month:</p>\n<ul>\n<li>The October inflection point for vibe game development</li>\n<li>The vulnerability apocalypse gets hot</li>\n<li>LLM releases</li>\n<li>API credits for $100+/month subscriptions</li>\n<li>What I'm using right now</li>\n<li>My software releases</li>\n</ul>\n<p>My September newsletter <a href=\"https://simonwillison.net/newsletters/monthly-2026-09-september/\">can now be seen here</a>, as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy!</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/newsletter\">newsletter</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-03T05:28:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/"
+      }
+    ]
+  },
+  {
+    "id": "7d394cbea867d0e9",
+    "title": "llm 0.37",
+    "url": "https://simonwillison.net/2026/Nov/2/llm/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37\">llm 0.37</a></p>\n        <p>There's a <em>lot</em> of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes.</p>\n<p>I added <code>gpt-6.1-sol</code> and <code>gpt-6.1-terra</code>, plus a new <a href=\"https://llm.datasette.io/en/stable/other-models.html#configure-an-openai-compatible-model\">llm openai endpoint add</a> command to make it easier to configure additional models that use OpenAI-compatible endpoints.</p>\n<p>I switched the default model (if you have not set your own default) to <code>gpt-6-luna</code> - half the price of the previous default, <code>gpt-5.6-luna</code>.</p>\n<p>LLM's support for embeddings now accepts that different binary content may have different content-type - necessary for models like <a href=\"https://deepmind.google/models/gemini/embedding/\">Gemini Embedding 2</a>, which can embed text, audio, i",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-02T23:49:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/2/llm/"
+      }
+    ]
+  },
+  {
+    "id": "6c954f5c5e529ce2",
+    "title": "Building a browser GIF editor: the frame memory limit matters more than file size",
+    "url": "https://dev.to/_3330b5103afff1/building-a-browser-gif-editor-the-frame-memory-limit-matters-more-than-file-size-45k9",
+    "summary": "<p>I built <a href=\"https://visualformat.tools/\" rel=\"noopener noreferrer\">VisualFormat</a>, a free set of browser GIF tools. The files are processed locally, with no account required. One practical constraint shaped the implementation: a small GIF file can still be expensive to decode.</p>\n\n<h2>\n  \n  \n  Start with decoded pixels\n</h2>\n\n<p>A 1,000 × 1,000 animation with 100 frames represents 100 million frame pixels. At four bytes per RGBA pixel, keeping a full decoded copy of every frame would already take roughly 400 MB, before working canvases and encoding buffers. The compressed download size does not describe that cost.</p>\n\n<p>VisualFormat scans GIF blocks before allocating decoded frames. It checks dimensions, frame count and the total canvas pixels across the animation. The current GIF input limits are 20 MB, 500 frames, 4,096 pixels per dimension and 40 million total frame pixels. These are guardrails, not a guarantee that every device can process every accepted file.</p>\n\n<h2",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/_3330b5103afff1/building-a-browser-gif-editor-the-frame-memory-limit-matters-more-than-file-size-45k9"
+      }
+    ]
+  },
+  {
+    "id": "ba2fc2a6d9809061",
+    "title": "Rewrite Rules for a Custom Post Type & Taxonomy Pattern",
+    "url": "https://dev.to/kevinlearynet/rewrite-rules-for-a-custom-post-type-taxonomy-pattern-2m7m",
+    "summary": "<p>If you’ve ever built a Resources page for a custom WordPress theme, you’ve probably come accross bugs related or directly caused by the following pattern.</p>\n\n<p>It’s not that clear what’s going on, but once you do figure it out you’ve probably implemented a bandaid approach that doesn’t quite give you the URL structure you originally planned. There are solution out there with alternative approaches, but I haven’t seen one that takes the following approach which will preserve the ideal URL pattern.</p>\n\n<h2>\n  \n  \n  Post Type Rewrites With Zero Compromise\n</h2>\n\n<p>In an ideal world a Resources section of a custom WordPress powered website would have URL patterns like this:</p>\n\n<ul>\n<li>  /resources/ – Lists of all published <code>resource</code> posts using <code>archive-resource.php</code> as the theme template</li>\n<li>  /resources/{type}/ – List of all published <code>resource</code> posts of a specific type using <code>taxonomy-resource_type.php</code> as the theme template</",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/rewrite-rules-for-a-custom-post-type-taxonomy-pattern-2m7m"
+      }
+    ]
+  },
+  {
+    "id": "8369ec24f7a65d4b",
+    "title": "I built a repo where a first PR is one folder, and a 144-line validator reviews the format",
+    "url": "https://dev.to/deady2j/i-built-a-repo-where-a-first-pr-is-one-folder-and-a-144-line-validator-reviews-the-format-2a82",
+    "summary": "<p>I'm a beginner in open source. A few weeks ago a fairly big pull request of mine was merged into someone else's project, and the review taught me how much of a maintainer's time goes into checking things a machine could check.</p>\n\n<p>So I tried to design a small repo where that part is automatic: skills-es, an open catalog of Spanish-language skills for Claude Code.</p>\n\n<p>Disclosure: I built it with Claude's help and reviewed the result myself.</p>\n\n<p>The idea</p>\n\n<p>A \"skill\" is a folder with a SKILL.md file: reusable instructions an AI coding assistant can follow. Almost every catalog is in English, so this one is in Spanish.</p>\n\n<p>The contribution unit is one folder:</p>\n\n<p>skills/<br />\n  my-skill/<br />\n    SKILL.md<br />\n    ejemplos/ejemplo.md</p>\n\n<p>Adding a skill never touches code. That matters for people sending their first PR.</p>\n\n<p>The validator</p>\n\n<p>Instead of the maintainer checking the format by hand, a Python script (standard library only, 144 lines) r",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/deady2j/i-built-a-repo-where-a-first-pr-is-one-folder-and-a-144-line-validator-reviews-the-format-2a82"
+      }
+    ]
+  },
+  {
+    "id": "db568a190a3c5a2a",
+    "title": "Anatomy of a Professional WordPress Website",
+    "url": "https://dev.to/kevinlearynet/anatomy-of-a-professional-wordpress-website-4m4p",
+    "summary": "<p>A look under the hood of a well built WordPress website, describing the plugins, patterns, processes, and tools that I use and recommend to build high quality custom WordPress websites.<br /><br />\nHigh-quality WordPress sites are becoming increasingly rare, unfortunately, with heavily overbuilt themes customized by resource-intensive page builders like Elementor becoming the norm. Many of these sites are slow, restrictive, error-prone, and result in companies resenting WordPress, feeling it’s not a suitable tool.<br /><br />\nThis article outlines the things that I personally recommend to clients, as well as things I’ve observed being used by the best WordPress agencies worldwide. While entirely situational and opinionated, I hope there are valuable insights here for you.</p>\n<h2>\n  \n  \n  Cloudflare\n</h2>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwsrv.nl%3Furl%3D",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/anatomy-of-a-professional-wordpress-website-4m4p"
+      }
+    ]
+  },
+  {
+    "id": "2daf17874d2da252",
+    "title": "What I learned from building a relational database engine in C#",
+    "url": "https://dev.to/janijarvinen/what-i-learned-from-building-a-relational-database-engine-in-c-439j",
+    "summary": "<p>I’ve used Microsoft SQL Server for decades without ever seeing how it works inside. Sure, there’s ample documentation, but reading it isn’t the same thing as looking at the implementation code. Since the source is closed, I did the next best thing: I built my own relational database engine in C#, to face the same problems it must solve.</p>\n\n<p>Today, my engine supports transactions, concurrency, and crash recovery. It also has a management tool. It can run both in-process and as a server, and I now rely on it in my daily work. For instance, my company’s invoicing goes through it.</p>\n\n<p>I studied databases at university, and textbooks explain B-trees, SQL parsing, ACID principles, transactions, and recovery well. What they don’t show is how those pieces interact when something goes wrong at the worst possible moment. I quickly noticed that this was the thing left out of those books. And quite naturally, this led to the next question: what testing methods are needed to support this",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:25:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/janijarvinen/what-i-learned-from-building-a-relational-database-engine-in-c-439j"
+      }
+    ]
+  },
+  {
+    "id": "1f155805e624f295",
+    "title": "Working with OpenAI’s Codex CLI",
+    "url": "https://dev.to/kevinlearynet/working-with-openais-codex-cli-2pkj",
+    "summary": "<p>OpenAI’s Codex CLI is a developer command-line interface that lets you leverage AI models to generate, refactor, and document code directly from your terminal.</p>\n\n<h2>\n  \n  \n  What is it?\n</h2>\n\n<p>This video provides a full demo and explanation, and I highly recommend watching it. It shows just how powerful the <code>codex</code> CLI is, they even create an SPA version of Mac’s Photo Booth app using an uploaded screenshot and short description. It’s pretty amazing.To start using it in your day-to-day workflow as a developer you’ll need to install and configure it. The guidelines in the <code>readme.md</code> aren’t all that great, so I’m documenting the steps I’ve taken here along with many undocumented aspects I learned along the way.<br /><br />\nTo work with the Codex CLI we need to start with a clean setup. Here’s the process as I see it, which is more detailed than the official documentation but includes some critical (in my mind required) steps like setting up persistent con",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:25:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/working-with-openais-codex-cli-2pkj"
+      }
+    ]
+  },
+  {
+    "id": "5b43777ed088e935",
+    "title": "Claude Code in Visual Studio 2026: 5 Ways to Run It Today",
+    "url": "https://dev.to/akaranjkar08/claude-code-in-visual-studio-2026-5-ways-to-run-it-today-590f",
+    "summary": "<p><strong>As of November 2, 2026, Anthropic does not ship a Claude Code extension for Visual Studio 2026.</strong> The official docs cover VS Code, Cursor and JetBrains IDEs, and tell users of other editors to run the <code>claude</code> CLI in their editor's integrated terminal.[1][12] The GitHub feature request for a native Visual Studio 2026 extension, issue #15942, has been open since January 1, 2026 and had 480 thumbs-up reactions when we read it. None of the comments GitHub displays without expanding the thread comes from Anthropic staff.[2] That leaves five ways to run it today: the CLI in Visual Studio's terminal with a plain-text workflow, or one of four community extensions linked in that thread. Two of them, firish's and cv4vs Agents, connect the CLI to Visual Studio over the same IDE channel the official VS Code extension uses; dliedke's and nachum-shmilovitz-66's drive the CLI their own way.[3][11] This post compares all five, shows the setup commands, and shows which fil",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:23:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/akaranjkar08/claude-code-in-visual-studio-2026-5-ways-to-run-it-today-590f"
+      }
+    ]
+  },
+  {
+    "id": "4c1c9f592761b8f8",
+    "title": "AI Image Generation: One Prompt, Six Tools",
+    "url": "https://dev.to/kevinlearynet/ai-image-generation-one-prompt-six-tools-1i96",
+    "summary": "<p>Finding a relevant featured image is a step in every content marketers blog publishing process. Choosing the right one is critical, it’s what people see when an article is shared and ultimately what determines whether or not it captures attention.</p>\n\n<p>Over the past few years AI image generation for featured images in WordPress has become a very common approach, but it’s easy to tell when AI was used. Images usually have subtle imperfections, oddities, and don’t quite feel right. There are ways to avoid this with the right prompt and the right LLM.</p>\n\n<p>I’ve tried a bunch of them, so I decided to put them to the test and see how they all performed generating a featured image for a recently published blog post.</p>\n\n<p>Here’s the prompt I’m using:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>create a realistic HDR high res photo of the white house sized 1060x380 pixels - as realistic as possible and professional photography\n</code",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:23:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/ai-image-generation-one-prompt-six-tools-1i96"
+      }
+    ]
+  },
+  {
+    "id": "324d94d25ef6bc80",
+    "title": "Barcode vs Manual Logging: What Actually Keeps Beginners Tracking",
+    "url": "https://dev.to/stropurbo/barcode-vs-manual-logging-what-actually-keeps-beginners-tracking-a63",
+    "summary": "<p>Most people don't quit calorie tracking because they don't care about their health. They quit because logging a meal feels like homework. I learned this building CalyFit, a free calorie tracker aimed at beginners and busy people — and the barcode scanner versus manual entry debate turned out to be less about technology and more about friction.</p>\n\n<p>Here is the honest version of what works, what doesn't, and how to design logging so people actually stick with it.</p>\n\n<h2>\n  \n  \n  The real enemy is friction, not willpower\n</h2>\n\n<p>A beginner opening a calorie app for the first time faces two questions: \"What did I just eat?\" and \"How much effort will it take to record it?\" If the second answer is \"a lot,\" the first question stops mattering. People skip the entry, then skip the day, then quietly delete the app.</p>\n\n<p>That is why the simplest tracking wins. Not the most detailed tracking — the tracking that survives a busy Tuesday. Every extra tap, search, and guess is a chance t",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:23:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/stropurbo/barcode-vs-manual-logging-what-actually-keeps-beginners-tracking-a63"
+      }
+    ]
+  },
+  {
+    "id": "556fa6ad8c5acf0c",
+    "title": "AI vs Human WordPress Writing",
+    "url": "https://dev.to/kevinlearynet/ai-vs-human-wordpress-writing-3b8p",
+    "summary": "<p>A comparison of AI writing tools and human writers for WordPress content.</p>\n\n<p>Should we embrace AI for content creation or stick with human writers? After extensive testing with both approaches, below is what I found.</p>\n\n<h2>\n  \n  \n  The Reality of AI Writing Tools\n</h2>\n\n<p>AI writing has evolved beyond the keyword-stuffing bots of yesterday. Modern tools like Claude and GPT-4 produce grammatically correct, coherent content that reads naturally. They excel at technical documentation, code generation, and scaling content production. What takes human writers hours happens in minutes.</p>\n\n<p>Yet AI tools struggle with nuanced understanding from real-world experience. When we write about debugging WordPress plugin conflicts at 2 AM or handling client scope creep, that authenticity resonates. AI describes these scenarios without living them. The consistency of AI output becomes both strength and weakness, plateauing at “good enough” for most use cases.<br />\n</p>\n\n<div class=\"hig",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:22:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/ai-vs-human-wordpress-writing-3b8p"
+      }
+    ]
+  },
+  {
+    "id": "2d5528928db90414",
+    "title": "Oh, your agents need OAuth2, too",
+    "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/",
+    "summary": "Recorded at LDX3 by LeadDev, Ryan chats with Dan Moore, Senior Director of CIAM Strategy and Identity Standards at FusionAuth, about adapting established OAuth2 protocols for the agentic era, the security necessity of giving autonomous AI agents their own distinct identities, and how AI coding tools are shifting developers&#x27; focus toward solving core business problems.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-03T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/"
+      }
+    ]
+  },
+  {
+    "id": "3dc5bc11790a079d",
+    "title": "Modern CSS Might Make Your Front-End More Complex",
+    "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/",
+    "summary": "Replacing JavaScript with a modern CSS feature can simplify a piece of code while making the wider application harder to reason about. Gabriel Shoyombo explores what happens when logic is split between CSS and JavaScript, sharing practical guidance to help you keep complexity in check during migration.",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-03T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/"
+      }
+    ]
+  },
+  {
+    "id": "c7e9fdc2426f1f91",
+    "title": "Build an AI Wellbeing App with Fireworks and Fitbit via Auth0 Token Vault.",
+    "url": "https://auth0.com/blog/build-an-ai-wellbeing-app-with-fireworks-fitbit-via-auth0-token-vault/",
+    "summary": "Build Daily Wellbeing, a Next.js app that connects Fitbit through Auth0 Token Vault, compares your daily activity and sleep with your averages, and uses Fireworks to suggest what to try today.",
+    "category": "dev",
+    "source_name": "Auth0 Blog",
+    "published": "2026-11-02T19:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Auth0 Blog",
+        "url": "https://auth0.com/blog/build-an-ai-wellbeing-app-with-fireworks-fitbit-via-auth0-token-vault/"
+      }
+    ]
+  },
+  {
+    "id": "737d02550185498e",
+    "title": "Meet Paige, PagerDuty’s SRE Agent: Faster Fixes Today, Fewer Incidents Tomorrow by PagerDuty",
+    "url": "https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/",
+    "summary": "<p>Today, we’re introducing Paige, PagerDuty’s SRE Agent. Built on over 16 years of operational data, Paige works as a member of operations, engineering, and DevOps...</p>\n<p>The post <a href=\"https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/\">Meet Paige, PagerDuty’s SRE Agent: Faster Fixes Today, Fewer Incidents Tomorrow</a> appeared first on <a href=\"https://www.pagerduty.com\">PagerDuty</a>.</p>",
+    "category": "cloud",
+    "source_name": "PagerDuty Blog",
+    "published": "2026-11-03T11:00:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PagerDuty Blog",
+        "url": "https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/"
+      }
+    ]
+  },
+  {
+    "id": "e6468258fc37ed96",
+    "title": "Reliability in the AI Era: AI That Works the Incident With You by David Williams and Nora Jones",
+    "url": "https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/",
+    "summary": "<p>Being responsible for the reliability of services people count on every day isn’t easy. Customers expect everything to work, all the time, and when it...</p>\n<p>The post <a href=\"https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/\">Reliability in the AI Era: AI That Works the Incident With You</a> appeared first on <a href=\"https://www.pagerduty.com\">PagerDuty</a>.</p>",
+    "category": "cloud",
+    "source_name": "PagerDuty Blog",
+    "published": "2026-11-03T11:00:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PagerDuty Blog",
+        "url": "https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/"
+      }
+    ]
+  },
+  {
+    "id": "b1f11591953c7d21",
+    "title": "What Is the OpenTofu MCP Server and How to Use It",
+    "url": "https://spacelift.io/blog/opentofu-mcp-server",
+    "summary": "Learn what the OpenTofu MCP server is, what it exposes, how to install it, and how to use it with AI assistants.",
+    "category": "devops",
+    "source_name": "Spacelift Blog",
+    "published": "2026-11-03T10:36:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Spacelift Blog",
+        "url": "https://spacelift.io/blog/opentofu-mcp-server"
+      }
+    ]
+  },
+  {
+    "id": "bd2adef09a04ac46",
+    "title": "Announcing rustup 1.29.3",
+    "url": "https://blog.rust-lang.org/2026/11/03/Rustup-1.29.3/",
+    "summary": "<p>The rustup team has published a new point release of rustup, 1.29.3.</p>\n<p><a href=\"https://rustup.rs\" rel=\"external\">Rustup</a> is the recommended tool to install <a href=\"https://www.rust-lang.org\" rel=\"external\">Rust</a>, a\nprogramming language that empowers everyone to build reliable and efficient\nsoftware.</p>\n<h2 id=\"what-s-new-in-rustup-1-29-3\"><a class=\"anchor\" href=\"https://blog.rust-lang.org/2026/11/03/Rustup-1.29.3/#what-s-new-in-rustup-1-29-3\"></a>\nWhat's new in rustup 1.29.3</h2>\n<p>This new patch release has fixed some minor regressions over the previous one:</p>\n<ul>\n<li>\n<p>Fixed \"Illegal instruction\" error on certain x86_64 CPUs without SSE4.1.\n<a href=\"https://github.com/rust-lang/rustup/pull/5162\" rel=\"external\">pr#5162</a></p>\n</li>\n<li>\n<p>Fixed \"<code>lock()</code> not supported\" error on Solaris. <a href=\"https://github.com/rust-lang/rustup/pull/5167\" rel=\"external\">pr#5167</a></p>\n</li>\n</ul>\n<p>Further details are available in the <a href=\"https://github.co",
+    "category": "dev",
+    "source_name": "Rust Blog",
+    "published": "2026-11-03T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Rust Blog",
+        "url": "https://blog.rust-lang.org/2026/11/03/Rustup-1.29.3/"
+      }
+    ]
+  },
+  {
+    "id": "ad92d8c3824d9865",
+    "title": "Where Did the Saved Bytes Go? Compact Object Headers in IntelliJ IDEA",
+    "url": "https://blog.jetbrains.com/idea/2026/11/where-did-the-saved-bytes-go-compact-object-headers-in-intellij-idea/",
+    "summary": "AI agents may make code faster to produce, but they don’t make it cheaper to run. In applications managing millions of objects, memory allocation and garbage collection still matter. The JVM has been addressing these costs on several fronts: ZGC targets garbage collection pauses, Project Leyden tackles startup and warmup, and Project Lilliput reduces the [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-03T12:20:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/idea/2026/11/where-did-the-saved-bytes-go-compact-object-headers-in-intellij-idea/"
+      }
+    ]
+  },
+  {
+    "id": "202b2a72190c562d",
+    "title": "DataGrip and Database Tools User Experience Survey #3 Results",
+    "url": "https://blog.jetbrains.com/datagrip/2026/11/03/datagrip-and-database-tools-user-experience-survey-3-results/",
+    "summary": "Introduction Hello, DataGrip community! We&#8217;re back with the results of our third DataGrip and Database Tools User Experience Survey. A big thank you to everyone who took the time to participate! This year, 1,420 people shared their experiences with DataGrip and the built-in database tools in other JetBrains IDEs. As with our first and second [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-03T09:19:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/datagrip/2026/11/03/datagrip-and-database-tools-user-experience-survey-3-results/"
+      }
+    ]
+  },
+  {
+    "id": "058682558d4d5bfb",
+    "title": "Google Drive vs. Google Photos: What's the difference? [2026]",
+    "url": "https://zapier.com/blog/google-drive-vs-google-photos",
+    "summary": "Google has two apps you can use to upload and share photos: Google Drive and Google Photos. That might seem like one too many, especially since they pull from the same storage. But the goal of each app is different. For everyday photos and videos you take on your phone, Google Photos is fantastic at organizing and editing them, backing them up, and making it easy to find what you're looking for. For professional-quality photos, videos, and project files from apps like Lightroom or Photoshop, Goo",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-02T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/google-drive-vs-google-photos"
+      }
+    ]
+  },
+  {
+    "id": "7daa84328f04401e",
+    "title": "From Onboarding to Production: How I Built Dynamic Vendor Switching at Wise",
+    "url": "https://medium.com/wise-engineering/from-onboarding-to-production-how-i-built-dynamic-vendor-switching-at-wise-876942d6031f?source=rss----f2565bbe9c46---4",
+    "summary": "<p>When I joined Wise, I was expecting the standard new-joiner experience: documentation, shadowing sessions, maybe a small bug fix or two to ease in. What I got instead was a real problem, a blank design doc, and a team ready to help me solve it.</p><p>That problem became my onboarding project, a system that automatically switches payment vendors when one of them starts failing, and that now quietly handles real customer payments every day.</p><p>Here’s the short version of what I learned: <strong>the switching decision itself is simple. The hard part and what makes it trustworthy is everything around it:</strong> choosing the right signals, validating in shadow mode, making every decision observable, and being conservative about what counts as “the same bank”.</p><p>The rest of this post is the long version.</p><h3>Some context</h3><p>Wise lets customers pay directly from their bank account. For EUR pay-ins, we integrate with external vendors that act as the bridge between Wise and a",
+    "category": "dev",
+    "source_name": "Wise Engineering",
+    "published": "2026-11-03T09:52:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wise Engineering",
+        "url": "https://medium.com/wise-engineering/from-onboarding-to-production-how-i-built-dynamic-vendor-switching-at-wise-876942d6031f?source=rss----f2565bbe9c46---4"
+      }
+    ]
+  },
+  {
+    "id": "607c0814c2314036",
+    "title": "Learnings from building our public MCP server",
+    "url": "https://eng.wealthfront.com/2026/11/02/learnings-from-building-our-public-mcp-server/",
+    "summary": "AI agents have become a more ubiquitous tool for people to better process and understand their financial situation. They can provide us insights into different banking and investing products available to them, as well as how their existing accounts are helping them achieve their long-term financial goals. For those agents to accurately provide answers about... <a class=\"moretag\" href=\"https://eng.wealthfront.com/2026/11/02/learnings-from-building-our-public-mcp-server/\">Read more</a>",
+    "category": "dev",
+    "source_name": "Wealthfront Engineering",
+    "published": "2026-11-02T20:08:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wealthfront Engineering",
+        "url": "https://eng.wealthfront.com/2026/11/02/learnings-from-building-our-public-mcp-server/"
+      }
+    ]
+  },
+  {
+    "id": "527363159dc3375e",
+    "title": "Quiz: How to Use Claude Code Skills for Better Python Docstrings",
+    "url": "https://realpython.com/quizzes/claude-code-skills/",
+    "summary": "Check your understanding of Claude Code skills, from SKILL.md frontmatter and reference files to bundled scripts and personal skills.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/claude-code-skills/"
+      }
+    ]
+  },
+  {
+    "id": "85226aba528c58bd",
+    "title": "SimPy: Simulating Real-World Processes With Python",
+    "url": "https://realpython.com/simpy-simulating-with-python/",
+    "summary": "Use the SimPy package to model real-world processes in Python, then design and run a simulation that shows where a system gets congested.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-02T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/simpy-simulating-with-python/"
+      }
+    ]
+  },
+  {
+    "id": "911de35c0a79f914",
+    "title": "CodeSOD: Death of the Auth-Er",
+    "url": "https://thedailywtf.com/articles/death-of-the-auth-er",
+    "summary": "<p>When writing Perl, it's not unusual to want to <code>die</code>. The <code>die</code> function ends your Perl program with an error string, and you'll often see code like: <code>die \"My error\" unless $i &gt; 5</code> or <code>die \"Other error\" if check()</code>, because Perl just loves the backwards conditionals. What's even more fun with <code>die</code> is <a href=\"https://perldoc.perl.org/functions/die\">how it behaves with <code>eval</code> blocks</a>, so it doesn't always kill your program, sometimes it is how you pass error strings back out of sections of your program.</p>\n<p>And poor <strong>Bobby</strong> has inherited some Perl that just really loves to <code>die</code>.</p>\n<pre><code class=\"language-perl\">public function store()\n{\n    echo <span class=\"hljs-string\">'Hello'</span>; <span class=\"hljs-keyword\">die</span>;\n    <span class=\"hljs-keyword\">if</span> (Auth::attempt(Input::only(<span class=\"hljs-string\">'email'</span>, <span class=\"hljs-string\">'password'</span>)))",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-03T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/death-of-the-auth-er"
+      }
+    ]
+  },
+  {
+    "id": "ea1ad7ecd14b0294",
+    "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
+    "url": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
+    "summary": "<p>Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust.</p>\n<p>But scammers are turning this useful browser feature into a pe</p>\n<p>The post <a href=\"https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/\">Client-side threat detection: how Scareware blocker uncovered malicious notification abuse</a> appeared first on <a href=\"https://blogs.windows.com/msedgedev\">Microsoft Edge Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft Edge Dev Blog",
+    "published": "2026-11-02T22:05:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft Edge Dev Blog",
+        "url": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/"
+      }
+    ]
+  }
+]

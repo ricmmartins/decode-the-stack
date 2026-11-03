@@ -1,0 +1,354 @@
+[
+  {
+    "id": "a90bb14483779446",
+    "title": "Protecting WordPress Contact Forms with AI",
+    "url": "https://dev.to/kevinlearynet/protecting-wordpress-contact-forms-with-ai-17o4",
+    "summary": "<p>If you have a WordPress website with a contact form you know how bad spam can get.</p>\n\n<p>Contact forms, lead forms, and signups all attract fake messages. Honeypots, Akismet, reCAPTCHA and Turnstile all help, but none of them fully stop spam. They also make it harder for people to submit the form, and frustrating.</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwsrv.nl%3Furl%3Dkevinleary.net%2Fwp-content%2Fuploads%2Fgravity-forms-spam-email.jpg%26w%3D940%26q%3D80%26output%3Dwebp%26maxage%3D356d%26dpr%3D2\"><img alt=\"Gravity Forms spam email notification that passed through CloudFlare turnstile\" height=\"998\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwsrv.nl%3Furl%3Dkevinleary.net%2Fwp-content%2Fuploads%2Fgravity-forms-spam-email.jpg%26w%3D940%26q%3D80%26output%3Dwebp%26maxage%3D356d%26dp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:25:36+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/protecting-wordpress-contact-forms-with-ai-17o4"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/ai-prompting-techniques-5c7g"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "445b6808c69d2cbe",
+    "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+    "url": "https://blog.cloudflare.com/zero-wire/",
+    "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-03T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/zero-wire/"
+      }
+    ],
+    "score": 21.87
+  },
+  {
+    "id": "04e5c8f6f54c315b",
+    "title": "Live Props for Real-Time Updates in Inertia.js v3.11",
+    "url": "https://laravel-news.com/inertia-3-11-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/inertia-3-11-0\"><img alt=\"Live Props for Real-Time Updates in Inertia.js v3.11\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/inertia-v3-featured.png\" /></a></p>\n                                        <hr />\n\n                    <p>Inertia.js v3.11 adds live props, which reload a page prop when a broadcast event arrives, with Laravel Echo, Reverb, Pusher, and Action Cable transports.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/inertia-3-11-0\">Live Props for Real-Time Updates in Inertia.js v3.11</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-03T03:19:08+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/inertia-3-11-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/composer-2-11?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e6468258fc37ed96",
+    "title": "Reliability in the AI Era: AI That Works the Incident With You by David Williams and Nora Jones",
+    "url": "https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/",
+    "summary": "<p>Being responsible for the reliability of services people count on every day isn’t easy. Customers expect everything to work, all the time, and when it...</p>\n<p>The post <a href=\"https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/\">Reliability in the AI Era: AI That Works the Incident With You</a> appeared first on <a href=\"https://www.pagerduty.com\">PagerDuty</a>.</p>",
+    "category": "cloud",
+    "source_name": "PagerDuty Blog",
+    "published": "2026-11-03T11:00:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PagerDuty Blog",
+        "url": "https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/"
+      }
+    ],
+    "score": 20.3
+  },
+  {
+    "id": "737d02550185498e",
+    "title": "Meet Paige, PagerDuty’s SRE Agent: Faster Fixes Today, Fewer Incidents Tomorrow by PagerDuty",
+    "url": "https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/",
+    "summary": "<p>Today, we’re introducing Paige, PagerDuty’s SRE Agent. Built on over 16 years of operational data, Paige works as a member of operations, engineering, and DevOps...</p>\n<p>The post <a href=\"https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/\">Meet Paige, PagerDuty’s SRE Agent: Faster Fixes Today, Fewer Incidents Tomorrow</a> appeared first on <a href=\"https://www.pagerduty.com\">PagerDuty</a>.</p>",
+    "category": "cloud",
+    "source_name": "PagerDuty Blog",
+    "published": "2026-11-03T11:00:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PagerDuty Blog",
+        "url": "https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/"
+      }
+    ],
+    "score": 20.06
+  },
+  {
+    "id": "9f2010e88425c3a6",
+    "title": "OpenKruise Agents v0.6.0: Leaping ahead in agent Sandbox security and automation",
+    "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
+    "summary": "About OpenKruise Agents OpenKruise Agents is a sub-project of OpenKruise, the CNCF open-source application automation and workload orchestration project. It provides full lifecycle management for Agent Sandboxes running at scale on Kubernetes, together with a complete...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/"
+      }
+    ],
+    "score": 18.71
+  },
+  {
+    "id": "b1f11591953c7d21",
+    "title": "What Is the OpenTofu MCP Server and How to Use It",
+    "url": "https://spacelift.io/blog/opentofu-mcp-server",
+    "summary": "Learn what the OpenTofu MCP server is, what it exposes, how to install it, and how to use it with AI assistants.",
+    "category": "devops",
+    "source_name": "Spacelift Blog",
+    "published": "2026-11-03T10:36:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Spacelift Blog",
+        "url": "https://spacelift.io/blog/opentofu-mcp-server"
+      }
+    ],
+    "score": 17.12
+  },
+  {
+    "id": "30d4be23d2988cbb",
+    "title": "AIs Hacking the Law",
+    "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+    "summary": "<p>In both a 2021 <a href=\"https://www.belfercenter.org/publication/coming-ai-hackers\">essay</a> and my 2022 book, <i><a href=\"https://www.schneier.com/books/a-hackers-mind/\">A Hacker&#8217;s Mind</a></i>, I talk about AIs finding vulnerabilities and exploits&#8212;hacking&#8212;the legal system.</p>\n<p><a href=\"https://www.felixringe.com/legal-exploits/\">Here&#8217;s</a> some demonstrations of this from Germany:</p>\n<blockquote><p>Legal systems encode the foundations of social order in natural language. Similar to computer systems, the written law can contain vulnerabilities that invite exploitation.1 Courts absorb most exploits through interpretation, and such vulnerabilities rarely surface in the first place. With highly capable AI systems enabling the discovery of vulnerabilities at unprecedented scale, we believe the latter could change...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-03T12:01:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "88fc5c5265f9c3fe",
+    "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+    "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+    "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised systems, including other Internet of Things (IoT) products such as Android-based healthcare devices and karaoke machines.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-03T02:24:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "bdd4b885244837e8",
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "url": "https://openai.com/index/heimstaden",
+    "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-03T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/heimstaden"
+      }
+    ],
+    "score": 18.48
+  },
+  {
+    "id": "9b3e87562fde3701",
+    "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+    "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
+    "summary": "<p><strong><a href=\"https://www.youtube.com/watch?v=UytYrhYLOKI\">I discovered a sound that leaks your exact location (and it&#x27;s everywhere) - YouTube</a></strong></p>\nGenius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact location of the video based on their speed, distance, and gaps between different flights.</p>\n<p> \n\n    <p><small></small>Via <a href=\"https://lobste.rs/s/s1btqo/this_background_sound_leaks_your_exact\">Lobste.rs</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/privacy\">privacy</a>, <a href=\"https://simonwillison.net/tags/youtube\">youtube</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-03T05:32:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "d3ed3b76e83c67a2",
+    "title": "Anthropic speeds up Claude Code with message threads. But your token bill stays the same.",
+    "url": "https://thenewstack.io/anthropic-claude-message-threads/",
+    "summary": "<img alt=\"Illustration of a desktop monitor, laptop, keyboard and phone displaying code, representing Claude Code and developer tools.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"768\" src=\"https://cdn.thenewstack.io/media/2026/11/4a4a1bb5-prakasit-khuansuwan-h_keeku145y-unsplash-1024x768.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Anthropic has announced a new feature that aims to speed up long-running Claude Code sessions by reducing the amount of</p>\n<p>The post <a href=\"https://thenewstack.io/anthropic-claude-message-threads/\">Anthropic speeds up Claude Code with message threads. But your token bill stays the same.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-03T13:46:14+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-claude-message-threads/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-code-developer-refusals/"
+      }
+    ],
+    "score": 27.0
+  },
+  {
+    "id": "22dcf7e42f6252d7",
+    "title": "Presentation: Beyond the Harness: Canvas for AI Agents",
+    "url": "https://www.infoq.com/presentations/canvas-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/canvas-ai-agents/en/mediumimage/nimisha-asthagiri-medium-1792655073821.jpg\" /><p>Nimisha Asthagiri shares how applying proven product engineering and architecture principles creates a bounded canvas for AI agents. She explains how this model provides agents with bounded autonomy, continuous drift detection, and decision records to scale software development resiliently.</p> <i>By Nimisha Asthagiri</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-03T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/canvas-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.5
+  },
+  {
+    "id": "5b8842efc2813c77",
+    "title": "LinkedIn Uses OpenTelemetry to Trace the Member Journey from Tap to Backend",
+    "url": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/linkedin-opentelemetry-journey/en/headerimage/generatedHeaderImage-1793095474316.jpg\" /><p>LinkedIn has built an OpenTelemetry-based telemetry platform that connects what members do in its iOS, Android, and web applications with the backend services processing those interactions.</p> <i>By Craig Risi</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-03T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.5
+  },
+  {
+    "id": "6c954f5c5e529ce2",
+    "title": "Building a browser GIF editor: the frame memory limit matters more than file size",
+    "url": "https://dev.to/_3330b5103afff1/building-a-browser-gif-editor-the-frame-memory-limit-matters-more-than-file-size-45k9",
+    "summary": "<p>I built <a href=\"https://visualformat.tools/\" rel=\"noopener noreferrer\">VisualFormat</a>, a free set of browser GIF tools. The files are processed locally, with no account required. One practical constraint shaped the implementation: a small GIF file can still be expensive to decode.</p>\n\n<h2>\n  \n  \n  Start with decoded pixels\n</h2>\n\n<p>A 1,000 × 1,000 animation with 100 frames represents 100 million frame pixels. At four bytes per RGBA pixel, keeping a full decoded copy of every frame would already take roughly 400 MB, before working canvases and encoding buffers. The compressed download size does not describe that cost.</p>\n\n<p>VisualFormat scans GIF blocks before allocating decoded frames. It checks dimensions, frame count and the total canvas pixels across the animation. The current GIF input limits are 20 MB, 500 frames, 4,096 pixels per dimension and 40 million total frame pixels. These are guardrails, not a guarantee that every device can process every accepted file.</p>\n\n<h2",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/_3330b5103afff1/building-a-browser-gif-editor-the-frame-memory-limit-matters-more-than-file-size-45k9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ba2fc2a6d9809061",
+    "title": "Rewrite Rules for a Custom Post Type & Taxonomy Pattern",
+    "url": "https://dev.to/kevinlearynet/rewrite-rules-for-a-custom-post-type-taxonomy-pattern-2m7m",
+    "summary": "<p>If you’ve ever built a Resources page for a custom WordPress theme, you’ve probably come accross bugs related or directly caused by the following pattern.</p>\n\n<p>It’s not that clear what’s going on, but once you do figure it out you’ve probably implemented a bandaid approach that doesn’t quite give you the URL structure you originally planned. There are solution out there with alternative approaches, but I haven’t seen one that takes the following approach which will preserve the ideal URL pattern.</p>\n\n<h2>\n  \n  \n  Post Type Rewrites With Zero Compromise\n</h2>\n\n<p>In an ideal world a Resources section of a custom WordPress powered website would have URL patterns like this:</p>\n\n<ul>\n<li>  /resources/ – Lists of all published <code>resource</code> posts using <code>archive-resource.php</code> as the theme template</li>\n<li>  /resources/{type}/ – List of all published <code>resource</code> posts of a specific type using <code>taxonomy-resource_type.php</code> as the theme template</",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/rewrite-rules-for-a-custom-post-type-taxonomy-pattern-2m7m"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8369ec24f7a65d4b",
+    "title": "I built a repo where a first PR is one folder, and a 144-line validator reviews the format",
+    "url": "https://dev.to/deady2j/i-built-a-repo-where-a-first-pr-is-one-folder-and-a-144-line-validator-reviews-the-format-2a82",
+    "summary": "<p>I'm a beginner in open source. A few weeks ago a fairly big pull request of mine was merged into someone else's project, and the review taught me how much of a maintainer's time goes into checking things a machine could check.</p>\n\n<p>So I tried to design a small repo where that part is automatic: skills-es, an open catalog of Spanish-language skills for Claude Code.</p>\n\n<p>Disclosure: I built it with Claude's help and reviewed the result myself.</p>\n\n<p>The idea</p>\n\n<p>A \"skill\" is a folder with a SKILL.md file: reusable instructions an AI coding assistant can follow. Almost every catalog is in English, so this one is in Spanish.</p>\n\n<p>The contribution unit is one folder:</p>\n\n<p>skills/<br />\n  my-skill/<br />\n    SKILL.md<br />\n    ejemplos/ejemplo.md</p>\n\n<p>Adding a skill never touches code. That matters for people sending their first PR.</p>\n\n<p>The validator</p>\n\n<p>Instead of the maintainer checking the format by hand, a Python script (standard library only, 144 lines) r",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/deady2j/i-built-a-repo-where-a-first-pr-is-one-folder-and-a-144-line-validator-reviews-the-format-2a82"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "db568a190a3c5a2a",
+    "title": "Anatomy of a Professional WordPress Website",
+    "url": "https://dev.to/kevinlearynet/anatomy-of-a-professional-wordpress-website-4m4p",
+    "summary": "<p>A look under the hood of a well built WordPress website, describing the plugins, patterns, processes, and tools that I use and recommend to build high quality custom WordPress websites.<br /><br />\nHigh-quality WordPress sites are becoming increasingly rare, unfortunately, with heavily overbuilt themes customized by resource-intensive page builders like Elementor becoming the norm. Many of these sites are slow, restrictive, error-prone, and result in companies resenting WordPress, feeling it’s not a suitable tool.<br /><br />\nThis article outlines the things that I personally recommend to clients, as well as things I’ve observed being used by the best WordPress agencies worldwide. While entirely situational and opinionated, I hope there are valuable insights here for you.</p>\n<h2>\n  \n  \n  Cloudflare\n</h2>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwsrv.nl%3Furl%3D",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:26:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/anatomy-of-a-professional-wordpress-website-4m4p"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2daf17874d2da252",
+    "title": "What I learned from building a relational database engine in C#",
+    "url": "https://dev.to/janijarvinen/what-i-learned-from-building-a-relational-database-engine-in-c-439j",
+    "summary": "<p>I’ve used Microsoft SQL Server for decades without ever seeing how it works inside. Sure, there’s ample documentation, but reading it isn’t the same thing as looking at the implementation code. Since the source is closed, I did the next best thing: I built my own relational database engine in C#, to face the same problems it must solve.</p>\n\n<p>Today, my engine supports transactions, concurrency, and crash recovery. It also has a management tool. It can run both in-process and as a server, and I now rely on it in my daily work. For instance, my company’s invoicing goes through it.</p>\n\n<p>I studied databases at university, and textbooks explain B-trees, SQL parsing, ACID principles, transactions, and recovery well. What they don’t show is how those pieces interact when something goes wrong at the worst possible moment. I quickly noticed that this was the thing left out of those books. And quite naturally, this led to the next question: what testing methods are needed to support this",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:25:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/janijarvinen/what-i-learned-from-building-a-relational-database-engine-in-c-439j"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1f155805e624f295",
+    "title": "Working with OpenAI’s Codex CLI",
+    "url": "https://dev.to/kevinlearynet/working-with-openais-codex-cli-2pkj",
+    "summary": "<p>OpenAI’s Codex CLI is a developer command-line interface that lets you leverage AI models to generate, refactor, and document code directly from your terminal.</p>\n\n<h2>\n  \n  \n  What is it?\n</h2>\n\n<p>This video provides a full demo and explanation, and I highly recommend watching it. It shows just how powerful the <code>codex</code> CLI is, they even create an SPA version of Mac’s Photo Booth app using an uploaded screenshot and short description. It’s pretty amazing.To start using it in your day-to-day workflow as a developer you’ll need to install and configure it. The guidelines in the <code>readme.md</code> aren’t all that great, so I’m documenting the steps I’ve taken here along with many undocumented aspects I learned along the way.<br /><br />\nTo work with the Codex CLI we need to start with a clean setup. Here’s the process as I see it, which is more detailed than the official documentation but includes some critical (in my mind required) steps like setting up persistent con",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-03T14:25:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kevinlearynet/working-with-openais-codex-cli-2pkj"
+      }
+    ],
+    "score": 21.0
+  }
+]

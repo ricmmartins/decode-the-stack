@@ -39,8 +39,16 @@ def parse_copilot_output(output):
         if kind in {"error", "session.error"} or kind.startswith("tool."):
             raise CopilotError("Copilot CLI reported an error or attempted tool execution.")
         if kind == "assistant.message":
-            if not isinstance(data, dict) or data.get("toolRequests"):
-                raise CopilotError("Copilot CLI returned an invalid or tool-requesting message.")
+            if not isinstance(data, dict):
+                raise CopilotError("Copilot CLI returned assistant data that is not an object.")
+            requests = data.get("toolRequests")
+            if requests:
+                # Only structural types/counts are safe to log, never tool names or arguments.
+                count = len(requests) if isinstance(requests, (list, dict, str)) else 1
+                raise CopilotError(
+                    "Copilot CLI attempted tools despite text-only mode "
+                    f"(toolRequests type={type(requests).__name__}, count={count}); publication is blocked."
+                )
             content = data.get("content")
             if isinstance(content, str) and content.strip():
                 messages.append(content)
@@ -60,7 +68,8 @@ def _call_copilot(system, user):
         raise CopilotError("Copilot CLI is missing; install @github/copilot@1.0.105.")
     args = [
         executable, "--silent", "--output-format", "json", "--no-custom-instructions",
-        "--disable-builtin-mcps", "--available-tools=", "--no-ask-user",
+        "--disable-builtin-mcps", "--available-tools=", "--deny-tool=*",
+        "--no-ask-user", "--no-auto-update",
     ]
     model = os.environ.get("COPILOT_MODEL", "").strip()
     if model:
@@ -74,7 +83,11 @@ def _call_copilot(system, user):
     ):
         environment.pop(key, None)
     environment["COPILOT_GITHUB_TOKEN"] = token
-    prompt = f"## SYSTEM\n\n{system}\n\n## USER\n\n{user}"
+    prompt = (
+        "Text-only transformation. Use only the supplied material. "
+        "Do not call tools, browse, read files, or delegate. Return only the requested text.\n\n"
+        f"## SYSTEM\n\n{system}\n\n## USER\n\n{user}"
+    )
     try:
         with tempfile.TemporaryDirectory(prefix="decode-copilot-") as directory:
             result = subprocess.run(

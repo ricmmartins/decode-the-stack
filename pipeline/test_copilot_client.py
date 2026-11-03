@@ -40,9 +40,11 @@ class CopilotClientTests(unittest.TestCase):
         self.assertEqual(args[0], [
             "/bin/copilot", "--silent", "--output-format", "json",
             "--no-custom-instructions", "--disable-builtin-mcps",
-            "--available-tools=", "--no-ask-user", "--model", "test-model",
+            "--available-tools=", "--deny-tool=*", "--no-ask-user", "--no-auto-update",
+            "--model", "test-model",
         ])
-        self.assertEqual(kwargs["input"], "## SYSTEM\n\nrules\n\n## USER\n\nfacts")
+        self.assertTrue(kwargs["input"].endswith("## SYSTEM\n\nrules\n\n## USER\n\nfacts"))
+        self.assertIn("Do not call tools", kwargs["input"])
         self.assertEqual(kwargs["timeout"], 300)
         self.assertFalse(Path(kwargs["cwd"]).exists())
         self.assertNotIn("shell", kwargs)
@@ -129,6 +131,21 @@ class CopilotClientTests(unittest.TestCase):
             provider.assert_not_called()
         with patch.dict(os.environ, {"LLM_PROVIDER": "typo"}, clear=True), self.assertRaises(ValueError):
             synthesize._call_llm("rules", "facts")
+
+    def test_tool_rejection_reports_only_structure_and_never_request_content(self):
+        event = {
+            "type": "assistant.message",
+            "data": {"content": "private text", "toolRequests": [
+                {"name": "private-tool", "arguments": {"token": "private-secret"}}
+            ]},
+        }
+        with self.assertRaisesRegex(client.CopilotError, "type=list, count=1") as raised:
+            client.parse_copilot_output(json.dumps(event) + "\n" + output())
+        self.assertNotIn("private", str(raised.exception))
+        with self.assertRaisesRegex(client.CopilotError, "not an object"):
+            client.parse_copilot_output(
+                json.dumps({"type": "assistant.message", "data": []}) + "\n" + output()
+            )
 
     def test_all_text_surfaces_dispatch_through_selected_provider(self):
         script = "\n".join(
