@@ -40,7 +40,8 @@ class CopilotClientTests(unittest.TestCase):
         self.assertEqual(args[0], [
             "/bin/copilot", "--silent", "--output-format", "json",
             "--no-custom-instructions", "--disable-builtin-mcps",
-            "--available-tools=", "--deny-tool=*", "--no-ask-user", "--no-auto-update",
+            "--available-tools=", "--deny-tool=shell", "--deny-tool=write", "--deny-tool=read",
+            "--no-ask-user", "--no-auto-update",
             "--model", "test-model",
         ])
         self.assertTrue(kwargs["input"].endswith("## SYSTEM\n\nrules\n\n## USER\n\nfacts"))
@@ -62,6 +63,18 @@ class CopilotClientTests(unittest.TestCase):
         ):
             client._call_copilot("rules", "facts")
         self.assertNotIn("--model", call.call_args.args[0])
+
+    def test_invalid_cli_rules_are_classified_without_echoing_provider_output(self):
+        with (
+            patch.dict(os.environ, {"COPILOT_GITHUB_TOKEN": "token"}, clear=True),
+            patch.object(client.shutil, "which", return_value="/bin/copilot"),
+            patch.object(client.subprocess, "run", return_value=SimpleNamespace(
+                returncode=1, stdout="", stderr="Invalid --deny-tool value: private-secret",
+            )),
+            self.assertRaisesRegex(client.CopilotError, "tool-permission rule") as raised,
+        ):
+            client._call_copilot("rules", "facts")
+        self.assertNotIn("private-secret", str(raised.exception))
 
     def test_auth_missing_and_byok_overrides_are_rejected_before_launch(self):
         for env in ({}, {"COPILOT_GITHUB_TOKEN": "token", "COPILOT_PROVIDER_BASE_URL": "url"},

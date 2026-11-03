@@ -68,7 +68,8 @@ def _call_copilot(system, user):
         raise CopilotError("Copilot CLI is missing; install @github/copilot@1.0.105.")
     args = [
         executable, "--silent", "--output-format", "json", "--no-custom-instructions",
-        "--disable-builtin-mcps", "--available-tools=", "--deny-tool=*",
+        "--disable-builtin-mcps", "--available-tools=",
+        "--deny-tool=shell", "--deny-tool=write", "--deny-tool=read",
         "--no-ask-user", "--no-auto-update",
     ]
     model = os.environ.get("COPILOT_MODEL", "").strip()
@@ -102,6 +103,11 @@ def _call_copilot(system, user):
         raise CopilotError("Copilot CLI returned invalid UTF-8 output.") from None
     if result.returncode != 0:
         # Never echo stdout/stderr: either can contain credentials or source material.
+        diagnostic = (getattr(result, "stderr", "") or "").lower()
+        if "invalid rule format" in diagnostic or "invalid --deny-tool value" in diagnostic:
+            raise CopilotError("Copilot CLI rejected a tool-permission rule; publication is blocked.")
+        if "unexpected argument" in diagnostic or "unknown option" in diagnostic:
+            raise CopilotError("Copilot CLI rejected an unsupported command option; publication is blocked.")
         raise CopilotError(
             f"Copilot CLI exited with code {result.returncode}; "
             "check token access, model availability, and Copilot usage limits."

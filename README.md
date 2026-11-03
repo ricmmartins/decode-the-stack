@@ -70,7 +70,7 @@ account. `COPILOT_CLI_PATH` can select an installed executable.
 
 `pipeline/copilot_client.py` sends system and source text through stdin, runs
 in an empty temporary working directory, disables custom instructions and
-built-in MCP servers, exposes no tools, explicitly denies all tool permissions,
+built-in MCP servers, exposes no tools, explicitly denies shell, write, and read permissions,
 and forbids interactive questions. Auto-updates are disabled to retain the
 installed CLI version. The prompt requires a text-only transformation of the
 supplied material. Any tool-request event still blocks publication; diagnostics
