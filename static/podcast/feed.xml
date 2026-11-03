@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Tue, 03 Nov 2026 15:57:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 16:08:19 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -32,12 +32,12 @@
       <title>AI moves closer to operations: and their limits</title>
       <description>This Tuesday, November 3, the selected reporting connects AI-assisted operations with a more fundamental engineering concern: controlling what happens when systems encounter real-world constraints. Incident-response agents, infrastructure integrations, and…</description>
       <pubDate>Tue, 03 Nov 2026 12:00:00 +0000</pubDate>
-      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-03.mp3?v=1e227c726e2a" length="11821288" type="audio/mpeg"/>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-03.mp3?v=639d5a060d3d" length="11530388" type="audio/mpeg"/>
       <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-03.mp3</guid>
       <link>https://decodethestack.com/posts/2026-11-03-daily/</link>
       <itunes:author>Decode the Stack</itunes:author>
       <itunes:summary>This Tuesday, November 3, the selected reporting connects AI-assisted operations with a more fundamental engineering concern: controlling what happens when systems encounter real-world constraints. Incident-response agents, infrastructure integrations, and…</itunes:summary>
-      <itunes:duration>985</itunes:duration>
+      <itunes:duration>961</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-03.json" type="application/json+chapters"/>
