@@ -40,8 +40,16 @@ class SiteAudioTests(unittest.TestCase):
                 (root / "pipeline").mkdir()
                 shutil.copy2(ROOT / "pipeline/sources.yaml", root / "pipeline/sources.yaml")
                 for name in ("assets", "layouts", "content", "data", "static", ".github"):
-                    ignore = shutil.ignore_patterns("posts") if name == "content" else None
+                    ignore = (
+                        shutil.ignore_patterns("posts") if name == "content"
+                        else shutil.ignore_patterns("*.mp3") if name == "static"
+                        else None
+                    )
                     shutil.copytree(ROOT / name, root / name, ignore=ignore)
+                shutil.copy2(
+                    ROOT / "static/podcast/audio/2026-11-02.mp3",
+                    root / "static/podcast/audio/2026-11-02.mp3",
+                )
                 (root / "content" / "posts").mkdir()
                 (root / "content" / "posts" / "2026-11-02-daily.md").write_text(
                     '---\ntitle: "Daily audio edition"\ndate: 2026-11-02T00:00:00Z\n'
