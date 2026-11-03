@@ -67,6 +67,9 @@ paginate = 12
 [services.rss]
   limit = 30
 
+[services.googleAnalytics]
+  id = "G-VS7SSSLN7H"
+
 [related]
   includeNewer = true
   threshold = 50

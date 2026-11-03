@@ -15,6 +15,18 @@ ROOT = Path(__file__).resolve().parent.parent
 
 @unittest.skipUnless(shutil.which("hugo"), "Hugo is required for template integration tests")
 class SiteAudioTests(unittest.TestCase):
+    def test_development_build_does_not_load_google_analytics(self):
+        with tempfile.TemporaryDirectory() as directory:
+            subprocess.run(
+                ["hugo", "--source", str(ROOT), "--environment", "development",
+                 "--destination", directory],
+                check=True, capture_output=True, text=True, timeout=90,
+            )
+            for page in Path(directory).rglob("*.html"):
+                text = page.read_text(encoding="utf-8")
+                self.assertNotIn("googletagmanager.com/gtag/js", text)
+                self.assertNotIn("gtag('config'", text)
+
     def test_latest_available_audio_survives_newer_text_and_same_day_weekly_posts(self):
         for date, categories in (
             ("2026-11-03T00:00:00Z", ["Cloud"]),
@@ -214,6 +226,17 @@ class SiteAudioTests(unittest.TestCase):
                 for built_page in (root / "public").rglob("*"):
                     if built_page.suffix in (".html", ".js", ".css"):
                         self.assertNotIn("giscus", built_page.read_text(encoding="utf-8").lower())
+                    if built_page.suffix == ".html":
+                        page = BeautifulSoup(built_page.read_text(encoding="utf-8"), "html.parser")
+                        if page.select_one('meta[http-equiv="refresh"]'):
+                            continue
+                        analytics = page.select('script[src="https://www.googletagmanager.com/gtag/js?id=G-VS7SSSLN7H"]')
+                        self.assertEqual(len(analytics), 1, str(built_page))
+                        self.assertTrue(analytics[0].has_attr("async"))
+                        self.assertEqual(len([
+                            script for script in page.select("script:not([src])")
+                            if "G-VS7SSSLN7H" in script.get_text()
+                        ]), 1)
                 for generator in ("generate_post.py", "weekly_summary.py"):
                     self.assertNotIn("comments:", (ROOT / "pipeline" / generator).read_text(encoding="utf-8"))
                 for page in ("index.html", "categories/index.html"):

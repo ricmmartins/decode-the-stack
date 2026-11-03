@@ -10,10 +10,19 @@ date: 2026-11-02T00:00:00Z
 ## Information handled by this site
 
 Decode the Stack is a static publication. It does not provide reader accounts,
-registration forms, advertising, or first-party analytics.
+registration forms or advertising.
 
 The theme switch stores your light or dark preference in your browser's local
 storage. That value stays in the browser and is not sent to the publication.
+
+## Google Analytics
+
+The production website uses Google Analytics to measure visits and page usage.
+Google's tag may use cookies and process information about your browser, device,
+and interactions with the site. See [Google's privacy policy](https://policies.google.com/privacy)
+and [how Google uses information from sites that use its services](https://policies.google.com/technologies/partner-sites).
+You can block analytics through your browser or use
+[Google's Analytics opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
 
 ## Hosting and feed requests
 
