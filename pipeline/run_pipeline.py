@@ -20,7 +20,7 @@ from stats import (
     save_weekly_buffer,
 )
 from weekly_summary import run as weekly_run
-from humanizer import HumanizerError
+from humanizer import HumanizerError, validate_posts
 from copilot_client import CopilotError
 
 PROJECT_DIR = Path(__file__).parent.parent
@@ -42,6 +42,10 @@ def run_pipeline(date_str=None, skip_ingest=False, force=False, reuse_synthesis=
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     if reuse_podcast_script and not reuse_synthesis:
         raise ValueError("--reuse-podcast-script requires --reuse-synthesis to avoid new analysis.")
+    if reuse_podcast_script:
+        _load_recovery_inputs(date)
+        _publish_audio_only(date)
+        return
 
     # Idempotency guard: scheduled retries do not regenerate an existing edition.
     post_file = CONTENT_DIR / f"{date}-daily.md"
@@ -127,6 +131,21 @@ def _prepare_synthesis(date, skip_ingest=False, force=False):
         raise RuntimeError(f"AI synthesis did not produce an English edition for {date}.")
 
     return articles_count, clusters_count, main_stories, quick_stories
+
+
+def _publish_audio_only(date):
+    """Replace audio for a trusted edition without invoking text publication."""
+    post = PROJECT_DIR / "content/posts" / f"{date}-daily.md"
+    receipt = PROJECT_DIR / "data/humanizer" / f"{date}-daily.json"
+    if not post.is_file() or not receipt.is_file():
+        raise HumanizerError("Audio-only publication requires an existing post and full review receipt.")
+    validate_posts(PROJECT_DIR)
+    audio_path = podcast_run(date, reuse_script=True)
+    if not audio_path or not Path(audio_path).is_file() or Path(audio_path).stat().st_size <= 1024:
+        raise RuntimeError(f"Audio-only generation did not produce a playable MP3 for {date}.")
+    podcast_feed_run()
+    _set_github_output("ran", "true")
+    print(f"[OK] Audio-only publication complete for {date}; saved editorial text is unchanged.")
 
 
 def _publish_synthesis(date, articles_count, clusters_count, main_stories, quick_stories,

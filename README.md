@@ -223,7 +223,11 @@ python pipeline/run_pipeline.py --date 2026-11-02 --force --reuse-synthesis --re
 ```
 
 This fails if the saved script is missing, malformed, or too short; it does not
-silently call a language model. FFmpeg and ffprobe must be on `PATH` for audio.
+silently call a language model. The existing daily post must have a valid full
+Humanizer receipt before audio generation starts. This dedicated audio-only
+path updates audio, chapters, and feed metadata without rewriting the post,
+receipt, synthesis, script, statistics, or weekly buffer.
+FFmpeg and ffprobe must be on `PATH` for audio.
 Set `TTS_PROVIDER=pocket` for CPU synthesis or `TTS_PROVIDER=edge` for the
 explicit free Edge rollback. Unset/`auto` retains the legacy OpenAI-to-Edge
 chain, but the English workflow does not use it or pass an OpenAI audio key.
