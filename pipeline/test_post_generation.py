@@ -80,6 +80,10 @@ class PostGenerationTests(unittest.TestCase):
                 CONTENT_DIR=posts,
                 SOURCES_FILE=sources,
             ):
+                with patch.object(humanizer, "write_reviewed_post", side_effect=AssertionError("No publication")):
+                    draft = generate_post.generate_post("2026-11-02", has_audio=True, draft_only=True)
+                self.assertIn("Context grounded in the source.", draft)
+                self.assertFalse(posts.exists())
                 with patch.object(humanizer, "_call_llm", side_effect=humanizer.HumanizerError("Rejected")):
                     with self.assertRaises(humanizer.HumanizerError):
                         generate_post.generate_post("2026-11-02", has_audio=True)

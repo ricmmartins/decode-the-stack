@@ -405,7 +405,7 @@ def extract_entity_tags(stories):
     return tags[:15]
 
 
-def generate_post(date_str=None, has_audio=False):
+def generate_post(date_str=None, has_audio=False, draft_only=False):
     date = date_str or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     date_obj = datetime.strptime(date, "%Y-%m-%d")
 
@@ -587,6 +587,8 @@ TocOpen: false
     ).rstrip() + "\n"
 
     output_file = CONTENT_DIR / f"{date}-daily.md"
+    if draft_only:
+        return post_content
     from humanizer import write_reviewed_post
     write_reviewed_post(output_file, post_content, PROJECT_DIR)
 
