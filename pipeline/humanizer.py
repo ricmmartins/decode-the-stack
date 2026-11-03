@@ -107,7 +107,16 @@ def review_post(post, diagnostic_dir=None):
         "containing the same number of strings in the same order. Keep every "
         "__HUMANIZER_N__ token byte-for-byte, in its original paragraph and order. "
         "Keep all claims, names, qualifications, attribution, facts and paragraph "
-        "boundaries. Do not add Markdown headings, lists, HTML or commentary.",
+        "boundaries. This is factual technical reporting: make minimal copy edits, "
+        "and leave a neutral sentence unchanged when editing risks its meaning. "
+        "Preserve the distinction between the publication's interpretation and a "
+        "claim explicitly made by a source. Do not turn 'best understood as' into "
+        "'the source presents', or lack of evidence into an affirmative source acknowledgment. "
+        "Do not infer chronology or causation from a statement of experience. "
+        "Keep evidentiary cautions as cautions, not categorical factual conclusions. "
+        "A contrast or negation carrying scope, uncertainty, or an actual alternative "
+        "must retain that information, as the skill's exceptions require. "
+        "Do not add Markdown headings, lists, HTML or commentary.",
         json.dumps({"paragraphs": editable}, ensure_ascii=False),
         "Humanizer editorial review",
     )

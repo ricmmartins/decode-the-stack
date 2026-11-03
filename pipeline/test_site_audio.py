@@ -4,6 +4,8 @@ import hashlib
 import shutil
 import subprocess
 import tempfile
+import os
+import signal
 import unittest
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -362,16 +364,26 @@ class SiteAudioTests(unittest.TestCase):
                 for invalid in ("sources: []", "sources: invalid", "sources: ["):
                     with self.subTest(catalogue=invalid):
                         catalogue_path.write_text(invalid, encoding="utf-8")
-                        try:
-                            result = subprocess.run(
-                                ["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60,
-                            )
-                        except subprocess.TimeoutExpired as error:
-                            self.fail(
-                                f"Hugo timed out for {invalid!r}; "
-                                f"stdout={error.stdout!r}; stderr={error.stderr!r}"
-                            )
-                        self.assertNotEqual(result.returncode, 0, invalid)
+                        with subprocess.Popen(
+                            ["hugo", "--source", str(root)], stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE, text=True,
+                        ) as process:
+                            try:
+                                stdout, stderr = process.communicate(timeout=60)
+                            except subprocess.TimeoutExpired:
+                                if os.name != "nt":
+                                    process.send_signal(signal.SIGQUIT)
+                                else:
+                                    process.kill()
+                                try:
+                                    stdout, stderr = process.communicate(timeout=5)
+                                except subprocess.TimeoutExpired:
+                                    process.kill()
+                                    stdout, stderr = process.communicate()
+                                self.fail(
+                                    f"Hugo timed out for {invalid!r}; stdout={stdout}; stderr={stderr}"
+                                )
+                            self.assertNotEqual(process.returncode, 0, invalid)
                 catalogue_path.unlink()
                 result = subprocess.run(["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60)
                 self.assertNotEqual(result.returncode, 0)

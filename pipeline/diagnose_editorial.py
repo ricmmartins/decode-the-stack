@@ -22,7 +22,7 @@ def diagnose(date, output_dir):
     directory.mkdir(parents=True, exist_ok=True)
     (directory / "draft.txt").write_text(original, encoding="utf-8")
     try:
-        review_post(original, diagnostic_dir=directory)
+        accepted, receipt = review_post(original, diagnostic_dir=directory)
     except HumanizerMeaningError:
         explanation = _json_response(
             "Explain why a conservative semantic comparison rejected this copy edit. "
@@ -44,6 +44,8 @@ def diagnose(date, output_dir):
         )
         print("[DIAGNOSTIC] One review rejected; comparison artifacts saved outside the repository. Nothing published.")
         return False
+    (directory / "approved-post.txt").write_text(accepted, encoding="utf-8")
+    (directory / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
     print("[DIAGNOSTIC] One review passed; comparison artifacts saved outside the repository. Nothing published.")
     return True
 
