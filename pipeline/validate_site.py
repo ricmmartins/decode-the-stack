@@ -2,6 +2,7 @@
 """Validate the built English publication, its shared chrome, and public feeds."""
 
 import json
+import hashlib
 import html
 from pathlib import Path
 import re
@@ -162,7 +163,9 @@ def _validate_podcast_feed(root):
         if enclosure is None or enclosure.get("type") != "audio/mpeg":
             raise ValueError("A podcast RSS item is missing its MP3 enclosure.")
         url = enclosure.get("url", "")
-        if not url.startswith(f"{SITE_URL}podcast/audio/") and url not in LEGACY_EPISODE_URLS.values():
+        parsed_url = urlparse(url)
+        identity_url = parsed_url._replace(query="", fragment="").geturl()
+        if not identity_url.startswith(f"{SITE_URL}podcast/audio/") and identity_url not in LEGACY_EPISODE_URLS.values():
             raise ValueError(f"The podcast feed contains an unbranded enclosure URL: {url}")
         local_path = root / urlparse(url).path.lstrip("/")
         if not local_path.is_file() or local_path.stat().st_size <= 1024:
@@ -174,7 +177,8 @@ def _validate_podcast_feed(root):
         if not header.startswith((b"ID3", b"\xff\xfb", b"\xff\xf3", b"\xff\xf2")):
             raise ValueError(f"Podcast enclosure is not an MP3 stream: {url}")
         guid = episode.findtext("guid", "")
-        if guid != url:
+        expected_query = "v=" + hashlib.sha256(local_path.read_bytes()).hexdigest()[:12]
+        if guid != identity_url or parsed_url.fragment or parsed_url.query not in ("", expected_query):
             raise ValueError(f"Podcast episode GUID is not stable with its enclosure URL: {url}")
         advertised_audio.add(local_path.resolve())
 

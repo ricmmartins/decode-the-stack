@@ -1,4 +1,6 @@
 import tempfile
+import hashlib
+from urllib.parse import urlparse
 import unittest
 import xml.etree.ElementTree as ET
 from datetime import datetime
@@ -61,7 +63,8 @@ class PodcastFeedTests(unittest.TestCase):
             owner = channel.find(f"{{{podcast_feed.ITUNES_NS}}}owner")
 
         expected_url = "https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3"
-        self.assertEqual(enclosure.get("url"), expected_url)
+        version = hashlib.sha256(b"ID3" + b"\0" * 2048).hexdigest()[:12]
+        self.assertEqual(enclosure.get("url"), expected_url + "?v=" + version)
         self.assertEqual(episode.findtext("guid"), expected_url)
         self.assertEqual(enclosure.get("length"), "2051")
         self.assertEqual(episode.findtext("title"), "An English edition")
@@ -110,7 +113,8 @@ class PodcastFeedTests(unittest.TestCase):
                 "https://decodethestack.com/podcast/audio/2026-11-03.mp3",
                 "https://decodethestack.pages.dev/podcast/audio/2026-11-02.mp3",
             )):
-                self.assertEqual(episode.find("enclosure").get("url"), expected)
+                version = hashlib.sha256(b"ID3" + b"\0" * 2048).hexdigest()[:12]
+                self.assertEqual(episode.find("enclosure").get("url"), expected + "?v=" + version)
                 self.assertEqual(episode.findtext("guid"), expected)
                 self.assertEqual(episode.find("guid").get("isPermaLink"), "true")
                 self.assertTrue(episode.findtext("link").startswith("https://decodethestack.com/"))
@@ -120,7 +124,7 @@ class PodcastFeedTests(unittest.TestCase):
         channel = ET.fromstring(original).find("channel")
         timestamp = parsedate_to_datetime(channel.findtext("lastBuildDate"))
         durations = {
-            item.find("enclosure").get("url").rsplit("/", 1)[-1]: (
+            urlparse(item.find("enclosure").get("url")).path.rsplit("/", 1)[-1]: (
                 int(item.findtext(f"{{{podcast_feed.ITUNES_NS}}}duration"))
                 if item.findtext(f"{{{podcast_feed.ITUNES_NS}}}duration") else None
             )
@@ -159,6 +163,37 @@ class PodcastFeedTests(unittest.TestCase):
                 podcast_feed.generate_feed()
             channel = ET.parse(feed).getroot().find("channel")
         self.assertIsNone(channel.find("item"))
+
+    def test_audio_replacement_changes_download_url_but_not_guid_or_editorial_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            audio = root / "audio"
+            audio.mkdir()
+            mp3 = audio / "2026-11-02.mp3"
+            mp3.write_bytes(b"ID3" + b"\0" * 2048)
+            posts = root / "posts"
+            posts.mkdir()
+            post = posts / "2026-11-02-daily.md"
+            post.write_bytes(b"---\ntitle: Original\n---\nSaved editorial text.\n")
+            original_post = post.read_bytes()
+            output = root / "feed.xml"
+            with patch.multiple(
+                podcast_feed, AUDIO_DIR=audio, CONTENT_DIR=posts,
+                CHAPTERS_DIR=root / "chapters", FEED_FILE=output,
+                _duration_seconds=lambda _path: 10,
+            ):
+                podcast_feed.generate_feed()
+                before = ET.parse(output).find("channel/item")
+                mp3.write_bytes(mp3.read_bytes() + b"replacement")
+                podcast_feed.generate_feed()
+                after = ET.parse(output).find("channel/item")
+            self.assertEqual(before.findtext("guid"), after.findtext("guid"))
+            self.assertNotEqual(before.find("enclosure").get("url"), after.find("enclosure").get("url"))
+            self.assertEqual(
+                after.find("enclosure").get("url"),
+                after.findtext("guid") + "?v=" + hashlib.sha256(mp3.read_bytes()).hexdigest()[:12],
+            )
+            self.assertEqual(post.read_bytes(), original_post)
 
 
 if __name__ == "__main__":

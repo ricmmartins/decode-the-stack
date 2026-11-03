@@ -347,11 +347,18 @@ class SiteAudioTests(unittest.TestCase):
                 for path, content in history.items():
                     self.assertEqual(path.read_bytes(), content, path)
                 for invalid in ("sources: []", "sources: invalid", "sources: ["):
-                    catalogue_path.write_text(invalid, encoding="utf-8")
-                    result = subprocess.run(
-                        ["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60,
-                    )
-                    self.assertNotEqual(result.returncode, 0, invalid)
+                    with self.subTest(catalogue=invalid):
+                        catalogue_path.write_text(invalid, encoding="utf-8")
+                        try:
+                            result = subprocess.run(
+                                ["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60,
+                            )
+                        except subprocess.TimeoutExpired as error:
+                            self.fail(
+                                f"Hugo timed out for {invalid!r}; "
+                                f"stdout={error.stdout!r}; stderr={error.stderr!r}"
+                            )
+                        self.assertNotEqual(result.returncode, 0, invalid)
                 catalogue_path.unlink()
                 result = subprocess.run(["hugo", "--source", str(root)], capture_output=True, text=True, timeout=60)
                 self.assertNotEqual(result.returncode, 0)

@@ -137,8 +137,12 @@ is Maria's voice setting, while host Anna uses `vera`.
 The homepage and edition-page players derive their audio version query from
 the MP3's SHA-256 during the Hugo build. Replacing audio refreshes both players
 without editing reviewed posts or their receipts. The service worker excludes
-podcast audio; RSS enclosure URLs and episode GUIDs remain stable. External
-podcast apps may cache an enclosure independently of the website.
+podcast audio. RSS enclosure downloads use the same `?v=SHA256[:12]` format,
+while episode GUIDs and the enclosure's domain and path remain unchanged.
+This lets podcast apps request replacement audio as a new file without
+creating a new episode. Spotify may take up to 24 hours to process feed updates,
+according to its [update guidance](https://support.spotify.com/us/creators/article/new-episodes-or-podcast-updates-not-appearing-on-listening-platforms/);
+publishing the feed does not confirm that Spotify has refreshed playback.
 
 Hugo reads `pipeline/sources.yaml` directly at build time for current source
 totals on the home, About, and statistics pages, including About's engineering

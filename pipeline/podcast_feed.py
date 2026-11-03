@@ -1,6 +1,7 @@
 """Generate the English show's RSS feed from real, locally published MP3 episodes."""
 
 import os
+import hashlib
 import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
@@ -86,7 +87,7 @@ def _duration_seconds(path):
 
 
 def generate_feed():
-    """Write podcast/feed.xml, preserving stable date-based enclosure URLs and GUIDs."""
+    """Version audio downloads by content while preserving episode GUIDs."""
     items = []
     for mp3 in sorted(AUDIO_DIR.glob("*.mp3"), reverse=True):
         date_str = mp3.stem
@@ -100,7 +101,9 @@ def generate_feed():
         size = mp3.stat().st_size
         if size <= 1024:
             raise ValueError(f"Podcast episode is empty or too small: {mp3}")
-        audio_url = episode_audio_url(date_str)
+        identity_url = episode_audio_url(date_str)
+        version = hashlib.sha256(mp3.read_bytes()).hexdigest()[:12]
+        audio_url = f"{identity_url}?v={version}"
         post_url = f"{SITE_URL}/posts/{date_str}-daily/"
         title, description = _episode_metadata(date_str)
         duration = _duration_seconds(mp3)
@@ -117,7 +120,7 @@ def generate_feed():
       <description>{escape(description)}</description>
       <pubDate>{_format_date(date_str)}</pubDate>
       <enclosure url="{escape(audio_url, {'"': '&quot;'})}" length="{size}" type="audio/mpeg"/>
-      <guid isPermaLink="true">{escape(audio_url)}</guid>
+      <guid isPermaLink="true">{escape(identity_url)}</guid>
       <link>{escape(post_url)}</link>
       <itunes:author>{escape(PODCAST_AUTHOR)}</itunes:author>
       <itunes:summary>{escape(description)}</itunes:summary>{duration_tag}
