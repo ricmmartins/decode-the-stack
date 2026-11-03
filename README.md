@@ -115,7 +115,7 @@ The release tag and embedded runtime version differ. Set `POCKET_TTS_CLI_PATH`
 to the executable or put `pocket-tts` on PATH.
 
 Production voice variables must match the attributed set:
-`POCKET_TTS_VOICE_ANNA=vera`, `POCKET_TTS_VOICE_MARIA=anna`,
+`POCKET_TTS_VOICE_ANNA=jane`, `POCKET_TTS_VOICE_MARIA=eve`,
 `POCKET_TTS_VOICE_PEDRO=bill_boerst`. Each existing bounded speech segment
 uses `generate --language english --device cpu --max-tokens 50 --voice NAME
 --text - --output-path FILE`. Text is passed through stdin, avoiding command
@@ -130,27 +130,28 @@ preserve the previous episode. MP3 assembly, loudness, background music,
 pauses, and post-processing finish in temporary storage before atomic
 replacement. `TTS_PROVIDER=edge` is the explicit rollback selection. Script
 recovery reuses the validated saved script without new text generation;
-episode enclosure and GUID URLs are unchanged.
+episode GUIDs and enclosure domains/paths are unchanged; the enclosure's
+content-hash query changes when audio bytes change.
 
 Model credits: [Pocket TTS by Kyutai](https://huggingface.co/kyutai/pocket-tts),
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Voice reference
 credits from the [Kyutai voice catalogue](https://huggingface.co/kyutai/tts-voices):
-VCTK speaker p229 (`vera`, CC BY 4.0), VCTK speaker p228 (`anna`, CC BY 4.0), and
+VCTK speaker p339 (`jane`, CC BY 4.0), VCTK speaker p361 (`eve`, CC BY 4.0), and
 Voice-Zero/LibriVox (`bill_boerst`, [CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
 References condition newly synthesized English dialogue; contributors do not
 endorse the publication. Visible credits are on the podcast page. The
 standalone software is MIT-licensed; model and voice licenses are separate.
-The pinned runtime identifies `vera` with VCTK `p229_023_enhanced.wav` and
-`anna` with `p228_023_enhanced.wav`. It loads separate precomputed voice states
-for these aliases. VCTK's `speaker-info.txt` records both speakers as female.
-Maria changed from the
-`mary` alias (p333, also recorded as female) after listener feedback about
-the synthesized timbre; the earlier voice was not mislabeled as male.
-Anna then changed from Alba MacKenna's `alba` (CC BY 4.0) to `vera`.
-Generated samples of `alba` had a lower measured register close to Pedro's;
-`vera` had a higher register in both a short sample and the saved opening turn.
-These measurements describe pitch, not perceived gender. The alias `anna`
-is Maria's voice setting, while host Anna uses `vera`.
+The pinned runtime identifies `jane` with VCTK `p339_023_enhanced.wav` and
+`eve` with `p361_023_enhanced.wav`, using distinct precomputed voice states.
+The [official VCTK corpus](https://datashare.ed.ac.uk/handle/10283/3443)
+`speaker-info.txt` records both as female American speakers: p339 from
+Pennsylvania and p361 from New Jersey. Same-text CPU samples and samples of
+the saved dialogue were generated before selecting this pair. Source metadata
+establishes provenance, not a guarantee of how every synthesized line sounds.
+They replace `vera` (p229) and `anna` (p228), both documented as Southern
+England, following listener feedback about accent. Earlier references included
+Alba MacKenna's `alba` and VCTK `mary` (p333, American Indiana), both CC BY 4.0.
+Pedro's `bill_boerst` voice is unchanged.
 
 The homepage and edition-page players derive their audio version query from
 the MP3's SHA-256 during the Hugo build. Replacing audio refreshes both players
@@ -170,7 +171,7 @@ counts. About's metadata uses number-free wording so it cannot retain an old
 catalogue size in search descriptions or JSON-LD.
 
 The hosts retain the original names **Anna, Maria, and Pedro**, all speaking
-English. Pocket voices are vera, anna, and bill_boerst respectively; the Edge
+English. Pocket voices are jane, eve, and bill_boerst respectively; the Edge
 fallback uses en-US-AriaNeural, en-US-JennyNeural, and en-US-GuyNeural.
 Podcast generation requests structured JSON turns with explicit speaker names,
 then validates every turn before audio synthesis. Unattributed narration,

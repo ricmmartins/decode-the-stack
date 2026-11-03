@@ -38,7 +38,7 @@ class PocketTTSTests(unittest.TestCase):
             self.assertEqual(call.call_count, 3)
             self.assertEqual(
                 [entry.args[0][entry.args[0].index("--voice") + 1] for entry in call.call_args_list],
-                ["vera", "anna", "bill_boerst"],
+                ["jane", "eve", "bill_boerst"],
             )
             for entry in call.call_args_list:
                 self.assertEqual(entry.args[0][:4], ["/pocket-tts", "generate", "--language", "english"])
@@ -73,7 +73,13 @@ class PocketTTSTests(unittest.TestCase):
                 podcast._synthesize_pocket_segments(podcast._parse_speech_segments(SCRIPT), Path(directory))
 
     def test_missing_executable_and_unattributed_voice_fail_before_launch(self):
-        for executable, env in ((None, {}), ("/pocket", {"POCKET_TTS_VOICE_ANNA": "unlicensed"})):
+        for executable, env in (
+            (None, {}),
+            ("/pocket", {"POCKET_TTS_VOICE_ANNA": "unlicensed"}),
+            ("/pocket", {"POCKET_TTS_VOICE_ANNA": "vera"}),
+            ("/pocket", {"POCKET_TTS_VOICE_MARIA": "anna"}),
+            ("/pocket", {"POCKET_TTS_VOICE_PEDRO": "michael"}),
+        ):
             with (
                 patch.dict(os.environ, env, clear=True),
                 patch.object(podcast.shutil, "which", return_value=executable),
