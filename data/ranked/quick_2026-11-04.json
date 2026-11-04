@@ -1,0 +1,524 @@
+[
+  {
+    "id": "2911ddc521d0b2ca",
+    "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+    "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+    "summary": "<p>Article URL: <a href=\"https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop\">https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50362905\">https://news.ycombinator.com/item?id=50362905</a></p>\n<p>Points: 503</p>\n<p># Comments: 226</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-04T08:46:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop"
+      }
+    ],
+    "score": 21.24
+  },
+  {
+    "id": "88bbc43b19875a50",
+    "title": "Amazon ECS Gateway Arrives with Generated Hostnames and No Custom Domain Support",
+    "url": "https://www.infoq.com/news/2026/11/introducing-amazon-ecs-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>AWS has released Amazon ECS Gateway, an account-level ingress resource letting platform teams define networking once and application teams opt services in with a connector. Each service gets a generated hostname and routing is host-based, and neither the announcement nor the documentation covers custom domains.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-04T09:49:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/introducing-amazon-ecs-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.24
+  },
+  {
+    "id": "bc347a4067b229d5",
+    "title": "Keep learning, keep building! Make the most of VSLive! with your Visual Studio Subscription",
+    "url": "https://devblogs.microsoft.com/visualstudio/keep-learning-keep-building-make-the-most-of-vslive-with-your-visual-studio-subscription/",
+    "summary": "<p>Keeping up with new technology is one thing. Finding worthwhile opportunities to explore what matters most to your work is another.  That&#8217;s where VSLive! can help. It brings technical learning, hands-on experience, expert guidance, and a community of developers together in one place, giving you focused time to explore evolving technologies and decide what’s worth [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/visualstudio/keep-learning-keep-building-make-the-most-of-vslive-with-your-visual-studio-subscription/\">Keep learning, keep building! Make the most of VSLive! with your Visual Studio Subscription</a> appeared first on <a href=\"https://devblogs.microsoft.com/visualstudio\">Visual Studio Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Visual Studio Blog",
+    "published": "2026-11-04T15:30:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Visual Studio Blog",
+        "url": "https://devblogs.microsoft.com/visualstudio/keep-learning-keep-building-make-the-most-of-vslive-with-your-visual-studio-subscription/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1d7ad9d6be63b564",
+    "title": "Deprecation notice: Low-trust SharePoint add-ins in SharePoint Server Subscription Edition",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-low-trust-sharepoint-add-ins-in-sharepoint-server-subscription-edition/",
+    "summary": "<p>Support for low-trust SharePoint Add-ins in SharePoint Server Subscription Edition ends on January 12, 2027. The January 2027 public update will disable these add-ins by default. Organizations should identify affected solutions and plan their migration to supported alternatives, such as SharePoint Framework (SPFx). SharePoint REST, CSOM, and JSOM APIs are not affected.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-low-trust-sharepoint-add-ins-in-sharepoint-server-subscription-edition/\">Deprecation notice: Low-trust SharePoint add-ins in SharePoint Server Subscription Edition</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-04T16:52:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-low-trust-sharepoint-add-ins-in-sharepoint-server-subscription-edition/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2da42267072a0e95",
+    "title": "Scaling Model Evaluation at Pinterest with Ray (Part 4)",
+    "url": "https://medium.com/pinterest-engineering/scaling-model-evaluation-at-pinterest-with-ray-part-4-4a96cd12cc11?source=rss----4c5a5f6279b6---4",
+    "summary": "<p>Vishnu Arun | Tech Lead, Feature Importance Platform; Anderson Lam | Sr Software Engineer; Andrew Qiu | Machine Learning Engineer I; Helena Xu | Data Scientist I; Tianyou Wang | Data Scientist II</p><h3>Introduction</h3><p>In our multi-part blog series, we have discussed <a href=\"https://medium.com/pinterest-engineering/last-mile-data-processing-with-ray-629affbf34ff\">why we chose Ray</a> as a last mile data processing framework, how we <a href=\"https://medium.com/pinterest-engineering/ray-infrastructure-at-pinterest-0248efe4fd52\">integrated Ray </a>into our existing ML Training Infrastructure, and how we enabled efficient Batch Inference at scale. In this blog post, we will discuss how we were able to apply Ray to another critical part of our ML Infrastructure stack: <strong>Model Evaluation</strong>.</p><p>In the <a href=\"https://medium.com/pinterest-engineering/ray-batch-inference-at-pinterest-part-3-4faeb652e385\">Ray Batch Inference Blog Post</a>, we ended on a section on accumu",
+    "category": "dev",
+    "source_name": "Pinterest Engineering",
+    "published": "2026-11-04T16:01:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Pinterest Engineering",
+        "url": "https://medium.com/pinterest-engineering/scaling-model-evaluation-at-pinterest-with-ray-part-4-4a96cd12cc11?source=rss----4c5a5f6279b6---4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "86c3ff9dd9761aa3",
+    "title": "One More Nine: Kafka Availability During Rolling Restarts",
+    "url": "https://www.reddit.com/r/RedditEng/comments/1xnu8t4/one_more_nine_kafka_availability_during_rolling/",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/RedditEng/comments/1xnu8t4/one_more_nine_kafka_availability_during_rolling/\"> <img alt=\"One More Nine: Kafka Availability During Rolling Restarts\" src=\"https://preview.redd.it/isq9dmdlqmzh1.png?width=140&amp;height=53&amp;auto=webp&amp;s=5f22ca5c7082b26e9d377f91a6d1f5e0552de932\" title=\"One More Nine: Kafka Availability During Rolling Restarts\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Written by Lukas Majercak, with thanks to Nick Garvey for his help with the investigation.<br /> AI disclosure: all of the investigation was done before agents got good and AI was used to refine the wording.</p> <h1>Motivation</h1> <p>Over the past year, we moved <a href=\"https://www.reddit.com/r/RedditEng/comments/1qb03l9/swapping_the_engine_midflight_how_we_moved/\">Kafka from EC2 to Kubernetes using Strimzi</a>, migrated its metadata layer from ZooKeeper to KRaft, and upgraded through several releases, from 3.6.X to 4.X.X. We tested these chan",
+    "category": "dev",
+    "source_name": "Reddit Engineering",
+    "published": "2026-11-04T17:28:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Reddit Engineering",
+        "url": "https://www.reddit.com/r/RedditEng/comments/1xnu8t4/one_more_nine_kafka_availability_during_rolling/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a3795889cc8cae6a",
+    "title": "Why Android says \"Connected, no internet\": a foreign IPv6 router advertisement from a 5G router (CPE)",
+    "url": "https://dev.to/gwynnpin/why-android-says-connected-no-internet-a-foreign-ipv6-router-advertisement-from-a-5g-router-6cm",
+    "summary": "<h2>\n  \n  \n  How it all started\n</h2>\n\n<p>On my Android phone, Wi-Fi was connected, but it said \"Connected, no internet\". Everything else on the network worked fine (rebooting the phone changed nothing).</p>\n\n<p>It all started when I was looking at the UniFi device bridge IoT (which is never in stock). I really wanted one: there is no wired network connection in my office, and sometimes I badly need one. Then I remembered my Raspberry Pi 3 (which had been gathering dust for a few years) and decided to build such a bridge myself on it, with a VXLAN tunnel to my MikroTik hEX. Then I decided that wasn't enough and remembered my ISP-provided 5G router, a Huawei CPE Pro 2 (from now on I'll just call it the CPE), which I wanted to use for receiving and sending SMS in emergencies (no internet needed for that). After all the devices were added to the network, this problem showed up on my phone.</p>\n\n<h2>\n  \n  \n  Suspicion and verification\n</h2>\n\n<p>Because I had done a lot that day, at first I",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:53:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/gwynnpin/why-android-says-connected-no-internet-a-foreign-ipv6-router-advertisement-from-a-5g-router-6cm"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fe8a545a0c478011",
+    "title": "Debugging interviews score process, not lucky first patches — localize the layer before you edit",
+    "url": "https://dev.to/jamieleegrowth/debugging-interviews-score-process-not-lucky-first-patches-localize-the-layer-before-you-edit-48ca",
+    "summary": "<blockquote>\n<p><strong>TL;DR:</strong> When they hand you a <strong>broken UI / unfamiliar repo / bug-bash sandbox</strong> (already-broken behavior—not blank coding, not a teammate PR, not an AI-generated dump), the round scores <strong>investigation process</strong>, not a lucky first patch. Durable habit: <strong>live-listen</strong> expected vs actual + clarifying asks + interviewer hints → pin a speakable <strong>four-box</strong> card on a <strong>desktop live overlay</strong> (expected/actual · layer · one falsifiable hypothesis · next cheapest probe) → <strong>own</strong> investigation + minimal root-cause fix + spoken explanation. Optional UI / Network / stack / failing-test screenshot only to <strong>anchor evidence</strong>. LIVE desktop overlay only when the employer explicitly allows BYOE tools—and <strong>Stripe-style Bug Squash often bans AI</strong>. Ask the recruiter first.</p>\n</blockquote>\n\n\n\n\n<h2>\n  \n  \n  Why naming the fault layer beats random edits\n</h2>\n\n<p>A l",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:53:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jamieleegrowth/debugging-interviews-score-process-not-lucky-first-patches-localize-the-layer-before-you-edit-48ca"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "97da2bbf39d618d2",
+    "title": "The Most Important AI Engineering Skill Is Saying No (AI-DLC, bolts, and autonomous agents)",
+    "url": "https://dev.to/krlz/the-most-important-ai-engineering-skill-is-saying-no-ai-dlc-bolts-and-autonomous-agents-20ob",
+    "summary": "<p>AI can now propose an architecture, break requirements into tasks, write the implementation, generate tests, and prepare a deployment.</p>\n\n<p>And we are increasingly building entire development methodologies around that capability.</p>\n\n<p>AWS introduced the <strong>AI-Driven Development Lifecycle (AI-DLC)</strong>, with concepts such as <em>Units of Work</em>, <em>Bolts</em>, <em>Mob Elaboration</em>, and <em>Mob Construction</em>. Frameworks such as <a href=\"https://specs.md/\" rel=\"noopener noreferrer\">specs.md</a> bring similar ideas into tools like Claude Code.</p>\n\n<p>The promise is compelling: shorter development cycles, persistent context, specialized agents, and fewer manual handoffs.</p>\n\n<p>But after exploring these methodologies, I keep returning to a question that seems more important than how quickly AI can produce software:</p>\n\n<p><strong>Who is actually making the engineering decisions?</strong></p>\n\n<p>Not who approves the final pull request. Not who clicks \"contin",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:52:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/krlz/the-most-important-ai-engineering-skill-is-saying-no-ai-dlc-bolts-and-autonomous-agents-20ob"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "9d057ef54a2744c4",
+    "title": "The intrusion-detection rule that could never fire",
+    "url": "https://dev.to/robertodelacamara/the-intrusion-detection-rule-that-could-never-fire-1ie2",
+    "summary": "<p>I have been building CNDS, a home-network intrusion detector, for a while. It captures packets with Scapy, scores each flow with five engines (a supervised FT-Transformer, an Isolation Forest, an LSTM autoencoder, a rules engine and a baseline that trains on my own traffic), and maps what it finds to MITRE ATT&amp;CK. This month I put it on a Raspberry Pi 5 and let it run. This is what I learned, including the parts that are not flattering.</p>\n\n<h2>\n  \n  \n  Week one: the alerts were all wrong\n</h2>\n\n<p>On day one the detector produced about 45 alerts an hour. On 30 and 31 October the database had 195 and 362 alerts, and I ended up labelling almost all of them as false positives (178 and 336).</p>\n\n<p>The first cause was embarrassing and easy to find. The Isolation Forest and the LSTM that ship with the project are demo models trained on synthetic N(0, 1) data. On real traffic the LSTM scored 1.0 on 300 of 300 alerts I looked at. It was not detecting anything; it was saturating. I s",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:50:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/robertodelacamara/the-intrusion-detection-rule-that-could-never-fire-1ie2"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e7b907bc141aa876",
+    "title": "Testing the Podcast Ad Response Path: Forms, Promo Codes and CRM Events",
+    "url": "https://dev.to/executive-intelligence-ai/testing-the-podcast-ad-response-path-forms-promo-codes-and-crm-events-1obj",
+    "summary": "<p>Simplicity Media is a <a href=\"https://simplicitymedia.com/services/podcast-advertising-agency/\" rel=\"noopener noreferrer\">podcast advertising agency</a> whose service includes audience planning, creative coordination, placement buying and response measurement.</p>\n\n<p>A developer supporting podcast marketing usually owns a smaller, testable part of that process: the route from listener interest to a received enquiry. The advertisement may run somewhere else, but the website, code handling and CRM handoff still need acceptance criteria.</p>\n\n<p>This Executive Intelligence engineering guide proposes those checks. It includes promotional links and illustrative recommendations, not a description of Simplicity Media's internal code or client results. Sources were checked on November 4, 2026.</p>\n\n<h2>\n  \n  \n  Define acceptance before adding an analytics event\n</h2>\n\n<p>A response event should correspond to a clearly defined application action. Begin by deciding when the business has act",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:43:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/executive-intelligence-ai/testing-the-podcast-ad-response-path-forms-promo-codes-and-crm-events-1obj"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2efd0a7921c96fbb",
+    "title": "Do AI crawlers read llms.txt? What three days of server logs show",
+    "url": "https://dev.to/censusadmin/do-ai-crawlers-read-llmstxt-what-three-days-of-server-logs-show-gpn",
+    "summary": "<p><em>Originally published by the AI Visibility Census at <a href=\"https://aivisibilitycensus.com/do-ai-crawlers-read-llms-txt/\" rel=\"noopener noreferrer\">aivisibilitycensus.com/do-ai-crawlers-read-llms-txt</a>. Data free to reuse under CC BY 4.0.</em></p>\n\n<p><strong>Short answer:</strong> some do. In the first three days of our brand-new site, three crawlers checked against their company’s published IP ranges asked for llms.txt or llms-full.txt: Googlebot 5 times, GoogleOther 4 times and ClaudeBot once. Bingbot and Applebot never asked, and no verified request came from an OpenAI or Perplexity crawler. The same crawlers fetched our Markdown page copies 77 times, so the files llms.txt points to got far more attention than llms.txt itself.</p>\n\n<h2>\n  \n  \n  What is llms.txt?\n</h2>\n\n<p>llms.txt is a Markdown file at the root of a site: a title, a short summary of the site and lists of links to its key pages, each with an optional note. It was proposed on 3 September 2024 as a way to gi",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:41:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/censusadmin/do-ai-crawlers-read-llmstxt-what-three-days-of-server-logs-show-gpn"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "06885a1238297c49",
+    "title": "From disclosure to durable protection: lessons from CVE-2026-113341",
+    "url": "https://dev.to/facilishz/from-disclosure-to-durable-protection-lessons-from-cve-2026-113341-af6",
+    "summary": "<h1>\n  \n  \n  From disclosure to durable protection: lessons from CVE-2026-113341\n</h1>\n\n<p>The important question after a browser patch is whether the protection reaches the devices that need it. CVE-2026-113341 affects Google Chrome on Android before 156.0.8078.47 and is described by the Chrome CNA as a critical Skia use-after-free that can lead to code execution outside the sandbox through crafted HTML.</p>\n\n<p>The disclosure provides a fixed version and a narrow platform scope. It does not provide a public trigger or an incident report. A durable response therefore combines a fast update, reliable version inventory, user awareness, and evidence that the fixed package remains active.</p>\n\n<h2>\n  \n  \n  Vulnerability overview\n</h2>\n\n<p>Chrome classifies CVE-2026-113341 as CWE-416 and Critical. The affected product is Chrome on Android before 156.0.8078.47. The release page names Chrome 156 stable builds and links the restricted Chromium issue 569165786.</p>\n\n<p>CISA ADP adds CVSS 3.1 6",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:41:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/facilishz/from-disclosure-to-durable-protection-lessons-from-cve-2026-113341-af6"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "67a935499500a725",
+    "title": "Did the model fail, or did the environment?",
+    "url": "https://dev.to/deavgprime/did-the-model-fail-or-did-the-environment-403f",
+    "summary": "<p>A program reads a CSV and adds up its costs. With a 256 MiB address-space limit, it returns the right total. With a 64 MiB limit, the same program stops with <code>MemoryError</code>.</p>\n\n<p>The input has not changed. Neither has the code.</p>\n\n<p>If this were a coding-agent evaluation, both runs might end up as a single pass or fail in a results table. But a failed run does not explain why the second program stopped, or whether the comparison was fair.</p>\n\n<p>Was the agent expected to write a solution that fits within 64 MiB? Or did the evaluator promise 256 MiB and accidentally provide less?</p>\n\n<p>Those are different findings, even though the error message is identical.</p>\n\n<p><a href=\"https://dev.to/deavgprime/when-a-higher-eval-score-means-worse-work-3npf\">The previous article</a> covered passing results that conceal incorrect work. A failed result needs just as much scrutiny: did the solution break a requirement, or did the runner fail to provide the promised conditions?</",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:41:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/deavgprime/did-the-model-fail-or-did-the-environment-403f"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8e6d066c7059c66f",
+    "title": "Why \"just retry it\" can be dangerous",
+    "url": "https://dev.to/cryptodeepapp/why-just-retry-it-can-be-dangerous-20n0",
+    "summary": "<p>Your Node.js service calls an external API. The request times out, returns <code>503 Service Unavailable</code>, or gets a <code>429 Too Many Requests</code> response. A retry sounds reasonable: wait briefly, send the same request again, and continue.</p>\n\n<p>But not every failed-looking request actually failed <strong>on the server</strong>.</p>\n\n<p>A timeout means the client did not receive the expected result in time. The server might have completed the operation and lost the response on the way back. If the request created a payout, order, or exchange operation, a blind retry could create it twice.</p>\n\n<p>The practical goal isn't to retry everything. It's to <strong>retry only when the operation is safe, with a clear limit and a delay that respects the server</strong>.</p>\n\n<p>We'll build a small JSON HTTP client using built-in Node.js APIs, then test transient errors, backoff, <code>Retry-After</code>, timeouts, and duplicate-request safety.</p>\n\n<blockquote>\n<p><strong>Scope:",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:38:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/cryptodeepapp/why-just-retry-it-can-be-dangerous-20n0"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6909d3e78f5a36ef",
+    "title": "Build a Media Portfolio in 30 Minutes with Cloudinary Upload Widget, Next.js App Router, and Server Actions",
+    "url": "https://cloudinary.com/blog/cloudinary-nextjs-media-portfolio",
+    "summary": "<p>Frequently Asked Questions Is an unsigned upload preset safe? It is intentionally public, so safety comes from restriction. Limit formats, file sizes, asset location, and any transformations the preset may apply. Use signed uploads when the server must authorize dynamic parameters or user ownership. Why use Search API instead of keeping upload results in React [&#8230;]</p>\n<p>The post <a href=\"https://cloudinary.com/blog/cloudinary-nextjs-media-portfolio\">Build a Media Portfolio in 30 Minutes with Cloudinary Upload Widget, Next.js App Router, and Server Actions</a> appeared first on <a href=\"https://cloudinary.com/blog\">Cloudinary Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Cloudinary Blog",
+    "published": "2026-11-04T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudinary Blog",
+        "url": "https://cloudinary.com/blog/cloudinary-nextjs-media-portfolio"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fbebe4b3fcf9a343",
+    "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+    "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+    "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own.\n\nThe attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-04T17:00:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html"
+      }
+    ],
+    "score": 19.93
+  },
+  {
+    "id": "30eb2f163e6d207a",
+    "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+    "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+    "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-04T14:27:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html"
+      }
+    ],
+    "score": 19.93
+  },
+  {
+    "id": "c94c41a61403d3d3",
+    "title": "A new Go API for JSON - The Go Programming Language",
+    "url": "https://go.dev/blog/jsonv2",
+    "summary": "<p><a href=\"https://lobste.rs/s/gfm0xn/new_go_api_for_json_go_programming\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-04T17:52:32+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://go.dev/blog/jsonv2"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://www.youtube.com/watch?v=Jm2HZhwreNs"
+      }
+    ],
+    "score": 19.91
+  },
+  {
+    "id": "9a224d7956580fd4",
+    "title": "Titan OS raises $46 million to expand its smart TV OS internationally",
+    "url": "https://techcrunch.com/2026/11/04/titan-os-raises-46-million-to-expand-its-smart-tv-os-internationally/",
+    "summary": "Titan OS has raised $110 million in funding to date.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-04T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/04/titan-os-raises-46-million-to-expand-its-smart-tv-os-internationally/"
+      }
+    ],
+    "score": 19.52
+  },
+  {
+    "id": "3956d59abc5f20b4",
+    "title": "ChatGPT will now make you animated GIFs",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+    "summary": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-04T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
+      }
+    ],
+    "score": 19.35
+  },
+  {
+    "id": "c340c77dfc661615",
+    "title": "How to Use AI for Rust Development: Lessons From an OpenAI Engineer",
+    "url": "https://blog.jetbrains.com/rust/2026/11/04/ai-for-rust-development/",
+    "summary": "&#8220;Some people use AI to write more code. I use AI to make my code more correct.” Predrag Gruevski’s pinned post sums up his approach to using AI for Rust development. Predrag works on frontier systems at OpenAI, and he created cargo-semver-checks and Trustfall. In his work, there’s very little room for error. Still, he [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-04T17:09:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/rust/2026/11/04/ai-for-rust-development/"
+      }
+    ],
+    "score": 19.35
+  },
+  {
+    "id": "a4e923e7653f932c",
+    "title": "Apple will check shared iCloud links for ‘harmful content’",
+    "url": "https://www.theverge.com/tech/1026604/apple-icloud-links-harmful-content-27-3",
+    "summary": "Apple will start checking iCloud items that are accessible to anyone who has the link for \"harmful content\" starting with iOS 27.3 and other 27.3 updates, the company says. \"When you share an item that can be accessed by Anyone with the Link in version 27.3 or later of iOS, iPadOS, macOS, and visionOS, that [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-04T18:23:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1026604/apple-icloud-links-harmful-content-27-3"
+      }
+    ],
+    "score": 19.18
+  },
+  {
+    "id": "034bca9cf55eb83e",
+    "title": "See the agents, set the terms: new visibility and control for personal agents",
+    "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+    "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-04T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/personal-agents-visibility-control/"
+      }
+    ],
+    "score": 19.15
+  },
+  {
+    "id": "45c39c1b2d173e65",
+    "title": "Xbox previews two new ways to control cloud games",
+    "url": "https://www.theverge.com/news/1026455/xbox-nano-direct-cloud-wifi-connection-xbox-cloud-gaming-phone-controller",
+    "summary": "I revealed yesterday that the new Xbox Nano controller supports a Wi-Fi connection directly to Xbox Cloud Gaming, and now Microsoft is making it official today. Two new Xbox previews will let players try out using a phone as a controller on smart TVs, as well as cloud connect on the Xbox Nano to connect [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-04T19:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/news/1026455/xbox-nano-direct-cloud-wifi-connection-xbox-cloud-gaming-phone-controller"
+      }
+    ],
+    "score": 19.14
+  },
+  {
+    "id": "caa093b7df98d240",
+    "title": "Vercel Security Review now in public beta",
+    "url": "https://vercel.com/changelog/vercel-security-review-public-beta",
+    "summary": "<p><a href=\"https://vercel.com/docs/agent/security-review\">Vercel Security Review</a> is now in public beta for Pro and Enterprise teams. Once enabled, every push to a connected GitHub repository is automatically reviewed for vulnerabilities, and findings are reported in the <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fsecurity%2Fvulnerabilities\">Vulnerabilities dashboard</a>.</p><h2>What triggers a review</h2><p>Security Review runs automatically when code is pushed to a connected GitHub repository. Because reviews start from push events rather than pull requests, direct and force pushes to your production branch are reviewed as well. Every project affected by a single push is reviewed together.</p><h2>What a finding includes</h2><p>Each finding records the project, environment, branch, and commit, with a summary, a suggested fix, and an AI-generated severity rating.</p><p>Security Review adds its own GitHub check to each commit it reviews. When there's a pull request, it also",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-03T20:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-security-review-public-beta"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/vercel-security-review"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "dabed624e4f1d098",
+    "title": "Your Business, Always Current. Streamhouse - The Data Architecture for the Age of AI.",
+    "url": "https://www.confluent.io/blog/streamhouse-your-business-always-current/",
+    "summary": "A Streamhouse is a data architecture that continuously captures, processes, governs and serves current business state and context across distributed systems, making them available to applications, AI agents, and analytics.",
+    "category": "dev",
+    "source_name": "Confluent Blog",
+    "published": "2026-11-04T15:52:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Confluent Blog",
+        "url": "https://www.confluent.io/blog/streamhouse-your-business-always-current/"
+      }
+    ],
+    "score": 18.22
+  },
+  {
+    "id": "20cb31b1ae20912d",
+    "title": "Your voice shapes SPFx: take our developer survey",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/your-voice-shapes-spfx-take-our-developer-survey/",
+    "summary": "<p>Help shape the future of SPFx. Share your developer experience in our survey, open until December 9, 2026, and help guide future investments. Explore highlights from a year of updates, including Copilot UX components, and discover what’s next on the roadmap and how to get involved in the community.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/your-voice-shapes-spfx-take-our-developer-survey/\">Your voice shapes SPFx: take our developer survey</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-04T10:10:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/your-voice-shapes-spfx-take-our-developer-survey/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "d08f37afc8147889",
+    "title": "Making HTTP header injection critical with one prompt",
+    "url": "https://portswigger.net/research/making-http-header-injection-critical-with-one-prompt",
+    "summary": "You can now escalate HTTP header injection to a CRLF-Powered Desync and exploit it to serve random users a redirect to your collaborator, in a single prompt. We’ve just introduced a new scan check for",
+    "category": "security",
+    "source_name": "PortSwigger Research",
+    "published": "2026-11-04T15:12:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PortSwigger Research",
+        "url": "https://portswigger.net/research/making-http-header-injection-critical-with-one-prompt"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "0645a15b235b7db1",
+    "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
+    "url": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
+    "summary": "Google alleges that Android device manufacturer Videostrong ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-04T16:24:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet"
+      }
+    ],
+    "score": 17.87
+  }
+]

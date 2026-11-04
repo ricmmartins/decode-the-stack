@@ -1,34 +1,62 @@
 {
-  "updated_at": "2026-11-03T15:32:28.601922+00:00",
+  "updated_at": "2026-11-04T20:20:09.365529+00:00",
   "configured_feeds": 242,
-  "editions_published": 2,
-  "headlines_published": 91,
-  "sources_credited": 33,
-  "latest_edition_date": "2026-11-03",
+  "editions_published": 3,
+  "headlines_published": 141,
+  "sources_credited": 41,
+  "latest_edition_date": "2026-11-04",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 21
+      "headlines": 32
     },
     {
       "name": "The Hacker News",
-      "headlines": 9
+      "headlines": 13
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 8
+      "headlines": 11
     },
     {
       "name": "InfoQ",
-      "headlines": 5
+      "headlines": 10
     },
     {
       "name": "TechCrunch",
-      "headlines": 4
+      "headlines": 6
+    },
+    {
+      "name": "The Verge - Tech",
+      "headlines": 6
+    },
+    {
+      "name": "Vercel Blog",
+      "headlines": 6
     },
     {
       "name": "OpenAI Blog",
+      "headlines": 4
+    },
+    {
+      "name": "Simon Willison",
+      "headlines": 4
+    },
+    {
+      "name": "Cloudflare Blog",
+      "headlines": 3
+    },
+    {
+      "name": "Dark Reading",
+      "headlines": 3
+    },
+    {
+      "name": "JetBrains Blog",
+      "headlines": 3
+    },
+    {
+      "name": "Nvidia Developer Blog",
       "headlines": 3
     },
     {
@@ -36,27 +64,15 @@
       "headlines": 3
     },
     {
-      "name": "Simon Willison",
+      "name": "The Daily WTF",
       "headlines": 3
     },
     {
-      "name": "The Verge - Tech",
+      "name": "The New Stack",
       "headlines": 3
     },
     {
-      "name": "Vercel Blog",
-      "headlines": 3
-    },
-    {
-      "name": "Cloudflare Blog",
-      "headlines": 2
-    },
-    {
-      "name": "Dark Reading",
-      "headlines": 2
-    },
-    {
-      "name": "JetBrains Blog",
+      "name": "CNCF Blog",
       "headlines": 2
     },
     {
@@ -68,7 +84,11 @@
       "headlines": 2
     },
     {
-      "name": "Nvidia Developer Blog",
+      "name": "Lobsters",
+      "headlines": 2
+    },
+    {
+      "name": "Microsoft 365 Developer Blog",
       "headlines": 2
     },
     {
@@ -80,15 +100,19 @@
       "headlines": 2
     },
     {
-      "name": "The Daily WTF",
-      "headlines": 2
-    },
-    {
       "name": "AWS Blog",
       "headlines": 1
     },
     {
-      "name": "CNCF Blog",
+      "name": "CircleCI Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Cloudinary Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Confluent Blog",
       "headlines": 1
     },
     {
@@ -108,11 +132,19 @@
       "headlines": 1
     },
     {
-      "name": "Lobsters",
+      "name": "Pinterest Engineering",
+      "headlines": 1
+    },
+    {
+      "name": "PortSwigger Research",
       "headlines": 1
     },
     {
       "name": "Raymond Chen (Old New Thing)",
+      "headlines": 1
+    },
+    {
+      "name": "Reddit Engineering",
       "headlines": 1
     },
     {
@@ -128,11 +160,11 @@
       "headlines": 1
     },
     {
-      "name": "The New Stack",
+      "name": "Twilio Blog",
       "headlines": 1
     },
     {
-      "name": "Twilio Blog",
+      "name": "Visual Studio Blog",
       "headlines": 1
     },
     {
@@ -143,23 +175,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 59
+      "headlines": 95
     },
     {
       "name": "Security",
-      "headlines": 14
+      "headlines": 20
     },
     {
       "name": "AI/ML",
-      "headlines": 8
+      "headlines": 10
     },
     {
       "name": "Cloud",
-      "headlines": 6
+      "headlines": 10
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 4
+      "headlines": 6
     }
   ],
   "history": [
@@ -172,6 +204,11 @@
       "date": "2026-11-03",
       "headlines": 50,
       "sources": 24
+    },
+    {
+      "date": "2026-11-04",
+      "headlines": 50,
+      "sources": 25
     }
   ]
 }

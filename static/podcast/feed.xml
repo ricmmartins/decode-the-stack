@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Tue, 03 Nov 2026 16:08:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 20:20:14 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>AI autonomy meets the limits of trust and control</title>
+      <description>Wednesday’s reporting connects expanding AI-agent capabilities with the engineering needed to contain their consequences: explicit permissions, isolated execution, durable workflows, and human approval. Alongside those developments, familiar problems: from…</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-04.mp3?v=28be44b7e808" length="11693392" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-04.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-04-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Wednesday’s reporting connects expanding AI-agent capabilities with the engineering needed to contain their consequences: explicit permissions, isolated execution, durable workflows, and human approval. Alongside those developments, familiar problems: from…</itunes:summary>
+      <itunes:duration>974</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-04.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>AI moves closer to operations: and their limits</title>
       <description>This Tuesday, November 3, the selected reporting connects AI-assisted operations with a more fundamental engineering concern: controlling what happens when systems encounter real-world constraints. Incident-response agents, infrastructure integrations, and…</description>

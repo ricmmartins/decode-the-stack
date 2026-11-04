@@ -1,0 +1,410 @@
+[
+  {
+    "id": "ce2c3beeb3d0eb7f",
+    "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+    "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
+    "summary": "<img alt=\"Factory Manager Agent illustration surrounded by a humanoid robot, a circuit board, an electronics production line, and automated material handling equipment.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/FOC-Blueprint-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"FOC-Blueprint\" width=\"768\" />A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-04T17:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/"
+      }
+    ],
+    "score": 27.0
+  },
+  {
+    "id": "c6bed0fe7bfc4344",
+    "title": "Day 5/30 of reading Refactoring by Martin Fowler",
+    "url": "https://dev.to/canbax/day-530-of-reading-refactoring-by-martin-fowler-6h0",
+    "summary": "<p>Refactoring is making codes more elastic while not breaking</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fa58f4bddul02w8r2mo3z.png\"><img alt=\"First highlight from book\" height=\"1000\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fa58f4bddul02w8r2mo3z.png\" width=\"800\" /></a></p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fafeglirjg1ds106u7hkm.png\"><img alt=\" \" height=\"1000\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/htt",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:42:25+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/canbax/day-530-of-reading-refactoring-by-martin-fowler-6h0"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/gxqwb_ai/hydrogen-fuel-cells-vs-battery-electric-trucks-the-payload-tax-4a9f"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "eae076fb1435440d",
+    "title": "Never Let a Display Toggle Write to the Database",
+    "url": "https://dev.to/innerluxes/never-let-a-display-toggle-write-to-the-database-22jp",
+    "summary": "<p>A support ticket arrives. Two users are looking at the same record and reading different numbers. Nothing in the logs. No exception, no failed request, no alert. The row is simply wrong, and nobody can say when it became wrong.</p>\n\n<p>Trace it far enough and you often land on the same small piece of UI: a dropdown that lets the user change the unit a quantity is displayed in. Kilograms or pounds. Therms or MMBtu. Minutes or hours. Someone built it as a convenience, wired it straight to the field, and it writes back.</p>\n\n<p>That control is not a formatting feature. It is a write path into your data, and it is almost never treated like one.</p>\n\n<h2>\n  \n  \n  The shape of the bug\n</h2>\n\n<p>Here is the version that gets shipped. It looks harmless in review.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight typescript\"><code><span class=\"c1\">// The user picks a unit from the dropdown.</span>\n<span class=\"kd\">function</span> <span class=\"nf\">onUnitChange</span>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-04T19:40:04+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/innerluxes/never-let-a-display-toggle-write-to-the-database-22jp"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/what-it-doesn-t-do"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "cc71a6e08a0b47e5",
+    "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway",
+    "url": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/kimi-k3.1-pro\">Kimi K3.1 Pro</a> and its higher-speed version, <a href=\"https://vercel.com/ai-gateway/models/kimi-k3.1-pro-highspeed\">Kimi K3.1 Pro Highspeed</a>, are now available on <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> from more  <a href=\"https://vercel.com/docs/ai-gateway/security-and-compliance/zdr\">Zero Data Retention</a> (ZDR) providers. Until today, <a href=\"https://vercel.com/ai-gateway/models/providers/moonshotai\">Moonshot AI</a> was the only provider serving either model.</p><p>K3.1 Pro improves on earlier Kimi models in coding, 3D modeling, and financial analysis, and can carry long agent runs from a small fix to a full project. Both models have a 1M-token context window and accept image input, and Highspeed suits interactive work like coding agents, where response time matters.</p><p>Call either model through the <a href=\"https://vercel.com/docs/ai-gateway/sdks-and-apis/ai-sdk\">AI SDK</a>, the <a href=\"https",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-04T17:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "d6308b6a34d78ecd",
+    "title": "Workflow SDK adds idempotent starts",
+    "url": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+    "summary": "<p>The <a href=\"https://workflow-sdk.dev/\">Workflow SDK</a>'s <code>start()</code> function can now admit a run and claim a hook in one atomic step. Duplicate workflow starts fail safely. The atomic start replaces the previous <code>getHookByToken()</code>-then-<code>start()</code> pattern, whose gap between the lookup and the start left a documented duplicate-start race.</p><div></div><h3>Subscribe to messages inside the run</h3><p>The claimed Hook exists from the moment the run is admitted, so <code>resumeHook</code> works even before the run begins executing, and early payloads are buffered and delivered in order. Inside the workflow, <code>createHook({ token })</code> with the same token binds to the already-claimed hook: guaranteed, registering nothing new, adding no step, and resolving <code>getConflict()</code> to <code>null</code>.</p><div></div><h3>Idempotency with no extra code</h3><p>The token is the idempotency key, and it comes from your own domain: an order ID, an invoice",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-04T18:55:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "b4dbf6f7dfd6c60b",
+    "title": "Introducing CircleCI Functions: Reusable CI steps built for coding agents",
+    "url": "https://circleci.com/blog/circleci-functions/",
+    "summary": "",
+    "category": "devops",
+    "source_name": "CircleCI Blog",
+    "published": "2026-11-04T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CircleCI Blog",
+        "url": "https://circleci.com/blog/circleci-functions/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "42c4eec1e5bebf89",
+    "title": "OpenShell on Kubernetes: A guide for platform engineers",
+    "url": "https://www.cncf.io/blog/2026/11/04/openshell-on-kubernetes-a-guide-for-platform-engineers/",
+    "summary": "What OpenShell is AI agents do more than call APIs. They run shells, install packages, read files, and open network connections. Often they act on text they pulled from the internet a minute earlier. So every...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-04T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/04/openshell-on-kubernetes-a-guide-for-platform-engineers/"
+      }
+    ],
+    "score": 15.11
+  },
+  {
+    "id": "fb3046b800e1e5ae",
+    "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+    "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+    "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched.\n\nDetails of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below -\n\n\n  CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-04T17:00:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "5465b2a257eb6134",
+    "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+    "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+    "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway.\n\nThe phenomenon has been codenamed prompt adware by Check Point Research.\n\nCalled Haiou (meaning Seagull in Chinese), the jailbreak modifies OpenAI Codex's configuration",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-04T16:06:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "6553797477b07bb7",
+    "title": "datasette-apps 0.3a0",
+    "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.3a0\">datasette-apps 0.3a0</a></p>\n        <p>Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.</p>\n<p>These can be created by hand, but it's easier to create them using LLMs via <a href=\"https://agent.datasette.io/\">Datasette Agent</a>. This release improves that integration:</p>\n<blockquote>\n<ul>\n<li>Apps can now be tagged in Datasette Agent chat messages by typing <code>#</code>, which autocompletes from the apps the user has permission to view.</li>\n<li>New <code>app_add_stored_queries()</code> and <code>app_remove_stored_queries()</code> tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.</li>\n<li><code>app_create()</code> now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-04T00:29:36+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/3/datasette-agent/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/3/llm/"
+      }
+    ],
+    "score": 23.0
+  },
+  {
+    "id": "baa40162ffcefadd",
+    "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+    "url": "https://openai.com/index/openai-to-acquire-pierre",
+    "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-04T14:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/openai-to-acquire-pierre"
+      }
+    ],
+    "score": 21.17
+  },
+  {
+    "id": "ec54f6896687a366",
+    "title": "“Signing in to your company’s plugins one by one is annoying”: Anthropic’s fix puts Claude in the identity business",
+    "url": "https://thenewstack.io/claude-plugin-identity-issuer/",
+    "summary": "<img alt=\"Picture of a fingerprint depicting the concept of identity.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"589\" src=\"https://cdn.thenewstack.io/media/2026/11/74ad82db-a-c-wqzc_ohsrwo-unsplash-2-1024x589.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Anthropic is now letting businesses automatically connect employees to approved Claude plugins, saving staff from having to sign in to</p>\n<p>The post <a href=\"https://thenewstack.io/claude-plugin-identity-issuer/\">“Signing in to your company’s plugins one by one is annoying”: Anthropic’s fix puts Claude in the identity business</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-04T16:59:22+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-plugin-identity-issuer/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/postman-plugin-coding-agents/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/mazin-gilbert-aaif-interview/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-coding-agents-security/"
+      }
+    ],
+    "score": 33.0
+  },
+  {
+    "id": "6057d9bfaf6dc3be",
+    "title": "C++26 Disapproved",
+    "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+    "summary": "<p>Article URL: <a href=\"https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/\">https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50360164\">https://news.ycombinator.com/item?id=50360164</a></p>\n<p>Points: 393</p>\n<p># Comments: 319</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-04T00:33:22+00:00",
+    "coverage_count": 7,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://sw.kovidgoyal.net/kitty/changelog/#"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://mrdoob.github.io/codevember-2026/01/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://arxiv.org/abs/2605.29713"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://neufangled.com/"
+      }
+    ],
+    "score": 29.58
+  },
+  {
+    "id": "24c6d9bbb4db634a",
+    "title": "AMD expects to outsell Intel in Q4 for the first time in history",
+    "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+    "summary": "<p>Article URL: <a href=\"https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections\">https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50367125\">https://news.ycombinator.com/item?id=50367125</a></p>\n<p>Points: 289</p>\n<p># Comments: 93</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-04T15:38:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections"
+      }
+    ],
+    "score": 26.0
+  },
+  {
+    "id": "d0ecd87b92fd8562",
+    "title": "Inkitt Builds a One-Shot PR Creator with Resumable Agent Orchestration",
+    "url": "https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Inkitt built a one-shot pull request creator that automates small, low-risk code changes from task intake to draft PR creation. Its event-driven orchestrator persists workflow state, coordinates short-lived coding agent containers, bounds retries, and enforces permission restrictions while retaining human review and approval before changes can be merged.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-04T14:36:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.63
+  },
+  {
+    "id": "23842f86a3572cb1",
+    "title": "Fortra says AI could save file transfer admins up to 160 hours a year",
+    "url": "https://thenewstack.io/failed-file-transfer-ai-troubleshooting/",
+    "summary": "<img alt=\"Abstract data-transfer visualization: two dense fields of red and pink dots stream inward from the left and right edges, converge into a narrow bright cyan-blue bundle of light streams at the center against a black background, suggesting data being compressed, channeled, or migrated through a bottleneck.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/06/a62d5edd-mohamed-nohassi-rhjeofe8w4e-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Fortra makes software that moves files between companies on a schedule and says AI could give admins back up to</p>\n<p>The post <a href=\"https://thenewstack.io/failed-file-transfer-ai-troubleshooting/\">Fortra says AI could save file transfer admins up to 160 hours a year</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-04T17:53:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/failed-file-transfer-ai-troubleshooting/"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "942023620c6c5418",
+    "title": "Open source AI is booming. Hugging Face explains who profits.",
+    "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+    "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up?&#160; On this episode of [&#8230;]",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-04T19:30:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/"
+      }
+    ],
+    "score": 22.73
+  },
+  {
+    "id": "972f8b2adf60aa2c",
+    "title": "Presentation: Panel: Who Builds the Frontend Now? (And What Breaks When They Do)",
+    "url": "https://www.infoq.com/presentations/panel-ai-frontend-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/panel-ai-frontend-architecture/en/mediumimage/medium-1792133520845.jpg\" /><p>The panelists explain how AI tools and vibe coding reshape frontend and mobile engineering. They share insights on evolving junior developer roles, managing AI-generated code review fatigue, designing systems for autonomous agents, enforcing architectural guardrails, and navigating economic shifts in open-source software sustainability.</p> <i>By Luca Mezzalira, James Hall, Danielle An, Ivan Zarea</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-04T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/panel-ai-frontend-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "8c7165b5cc80e9fd",
+    "title": "Article: The App Is Just the Tip: What It Takes to Build Mobile Infrastructure at Scale",
+    "url": "https://www.infoq.com/articles/mobile-app-infrastructure-at-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/mobile-app-infrastructure-at-scale/en/headerimage/mobile-app-infrastructure-at-scale-header-1793263251757.jpg\" /><p>What determines whether your app feels fast, ships often, and stays stable at scale is not the app itself. It is what sits behind it. This article is about that layer: what it does, why it exists, what it takes to design it correctly, and what happens when you try to migrate a live, high-traffic product onto it without a safety net.</p> <i>By Kirill Sokolov</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-04T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/mobile-app-infrastructure-at-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "411e55c107bf2f12",
+    "title": "Docker Urges Isolation and Governance for AI Agent Security",
+    "url": "https://www.infoq.com/news/2026/11/docker-ai-agent-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/docker-ai-agent-security/en/headerimage/generatedHeaderImage-1793733720293.jpg\" /><p>Docker has published a guide to five security risks that arise when AI agents are allowed to browse, run code and call tools with limited human oversight. They argue that the autonomy that makes agents useful also makes conventional application security controls insufficient. The company positions isolation and governance, rather than model improvements alone, as the main defences.</p> <i>By Matt Saunders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-04T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/docker-ai-agent-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  }
+]

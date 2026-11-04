@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 147,
+      "title": "That distinction between a headline and an operational..."
+    },
+    {
+      "startTime": 300,
+      "title": "The factory story makes the stakes concrete: NVIDIA..."
+    },
+    {
+      "startTime": 448,
+      "title": "Pinterest’s fourth installment on scaling model evaluation..."
+    },
+    {
+      "startTime": 586,
+      "title": "That distinction between a feature working and a system..."
+    },
+    {
+      "startTime": 745,
+      "title": "To close, the practical thread is control: what AI..."
+    }
+  ]
+}
