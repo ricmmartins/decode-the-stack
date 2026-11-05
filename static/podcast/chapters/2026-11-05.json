@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 136,
+      "title": "Choosing infrastructure means choosing dependencies, not..."
+    },
+    {
+      "startTime": 282,
+      "title": "The White House proxy report puts a concrete question..."
+    },
+    {
+      "startTime": 446,
+      "title": "That raises a useful distinction: being allowed through a..."
+    },
+    {
+      "startTime": 596,
+      "title": "That spending question also has a trust dimension. Drawing..."
+    },
+    {
+      "startTime": 747,
+      "title": "To close, Dropbox describes how two engineers’ side..."
+    }
+  ]
+}

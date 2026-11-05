@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "total_sources": 242,
-  "articles_ingested": 190,
-  "clusters_formed": 165,
+  "articles_ingested": 79,
+  "clusters_formed": 78,
   "main_stories": 20,
   "radar_items": 30,
-  "generated_at": "2026-11-04T20:20:09.354885+00:00"
+  "generated_at": "2026-11-05T13:28:45.995694+00:00"
 }

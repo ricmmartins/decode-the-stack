@@ -1,0 +1,346 @@
+[
+  {
+    "id": "75727f324fc5aed0",
+    "title": "The PHP2Shell Postmortem: What CVE-2026-109618 and CVE-2026-109619 Actually Tell Us",
+    "url": "https://dev.to/the_dev_stack/the-php2shell-postmortem-what-cve-2026-109618-and-cve-2026-109619-actually-tell-us-10lp",
+    "summary": "<blockquote>\n<p><strong>I made a 6-minute video breakdown of this on YouTube — this is the written version for readers who prefer text.</strong> Same facts, same angles, better for linking in Slack or coming back to later.</p>\n</blockquote>\n\n<p>  \n  \n</p>\n\n<p>On October 17, 2026 — four days before the patch shipped — AWS's MadPot honeypot caught something unusual: one HTTP request, no login, no session, no account. The server came back wrong.</p>\n\n<p>Three days later, the CVE numbers for CVE-2026-109618 and CVE-2026-109619 leaked on Hacker News, roughly 22 hours before the planned embargo lift. By the time PHP 8.5.12 / 8.4.27 / 8.3.36 / 8.2.35 went out, the exploit was already in the wild.</p>\n\n<p>This post walks through four things I think are worth sitting with: the attack shape, the attacker fingerprint, the leak chain, and the 22-year pattern underneath. The video covers all of this visually; this is the \"I want to re-read something while I'm waiting on a patch window\" version.</p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:02:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/the_dev_stack/the-php2shell-postmortem-what-cve-2026-109618-and-cve-2026-109619-actually-tell-us-10lp"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3c01df4997e78e45",
+    "title": "5 Common Security Mistakes in Python Scripts and How to Avoid Them",
+    "url": "https://dev.to/sergio_gmez_9533652d3b3c/5-common-security-mistakes-in-python-scripts-and-how-to-avoid-them-3b1c",
+    "summary": "<p>Python scripts are a powerful tool for automating tasks and building applications quickly. However, that convenience can also open doors to vulnerabilities if good security practices are not followed. Below we describe the five most frequent mistakes that appear in real‑world projects and offer practical recommendations to mitigate them.</p>\n\n<h2>\n  \n  \n  1. Poor Exception Handling\n</h2>\n\n<p>Inadequate exception handling allows unexpected errors to leak to the user or cause the application to crash abruptly, exposing sensitive information such as system paths or stack traces. According to the article <em>“Script Python revela errores de seguridad críticos”</em>[^1], poor exception handling is one of the most common vulnerabilities.</p>\n\n<p><strong>Why it’s a problem</strong>  </p>\n\n<ul>\n<li>Uncaught exceptions can expose internal details that facilitate reconnaissance attacks.\n</li>\n<li>Overly generic <code>try/except</code> blocks (e.g., <code>except:</code> without specifying the ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:01:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sergio_gmez_9533652d3b3c/5-common-security-mistakes-in-python-scripts-and-how-to-avoid-them-3b1c"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1337207a66b489b0",
+    "title": "Cisco ISE CVE-2026-20241 turns certificate issuance into an authorization decision",
+    "url": "https://dev.to/andreagomez/cisco-ise-cve-2026-20241-turns-certificate-issuance-into-an-authorization-decision-22km",
+    "summary": "<h1>\n  \n  \n  Cisco ISE CVE-2026-20241 turns certificate issuance into an authorization decision\n</h1>\n\n<p>Cisco published an authorization bypass in Identity Services Engine and the Passive Identity Connector on November 4, 2026. The advisory assigns CVE-2026-20241 a CVSS base score of 5.3 and says an unauthenticated, remote attacker can obtain an endpoint identity certificate. That description is short, but the operational consequence is larger than the certificate itself. ISE issues and validates credentials that network policy uses to decide whether an endpoint belongs on a network.</p>\n\n<p>The advisory does not expose the vulnerable code path. It also lists no workarounds. Administrators should therefore avoid filling the gap with assumptions about the exact request or target API. What is confirmed is the security outcome: an endpoint certificate can be obtained without normal authorization. The affected scope includes ISE and ISE-PIC, and remediation is a fixed Cisco release ident",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:01:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/andreagomez/cisco-ise-cve-2026-20241-turns-certificate-issuance-into-an-authorization-decision-22km"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fc76a93177e5a62c",
+    "title": "Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads",
+    "url": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
+    "summary": "<p>Azure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is needed. See what that means for SAP on Azure and other mission-critical workloads.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/\">Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-04T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "2706cfb0949a5cc1",
+    "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
+    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
+    "summary": "You can now migrate existing Apache Hive datasets in Amazon S3 to fully managed Apache Iceberg tables in Amazon S3 Tables, with no pipelines to build or compute to provision, while production workloads keep running.",
+    "category": "cloud",
+    "source_name": "AWS Blog",
+    "published": "2026-11-04T23:34:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/"
+      }
+    ],
+    "score": 16.15
+  },
+  {
+    "id": "380bd6a1bdbdfe75",
+    "title": "kpt v1.0.0 is released",
+    "url": "https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/",
+    "summary": "After many years and much development, the kpt community has released v1.0.0 of the kpt toolchain. This is a big step in maturing the kpt project after having it in pre-release status for several years. In...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-05T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/"
+      }
+    ],
+    "score": 18.08
+  },
+  {
+    "id": "a965aeba3821b10b",
+    "title": "Property-based testing: How to find bugs your unit tests miss",
+    "url": "https://circleci.com/blog/property-based-testing/",
+    "summary": "",
+    "category": "devops",
+    "source_name": "CircleCI Blog",
+    "published": "2026-11-04T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CircleCI Blog",
+        "url": "https://circleci.com/blog/property-based-testing/"
+      }
+    ],
+    "score": 9.0
+  },
+  {
+    "id": "f3ba3882d65973ee",
+    "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+    "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+    "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.\n\n\"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-05T12:08:54+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
+      },
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/a-thousand-fewer-paths-to-root"
+      }
+    ],
+    "score": 22.98
+  },
+  {
+    "id": "a56aba086980363e",
+    "title": "Want to Rent an Internet Address at the White House?",
+    "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+    "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-05T04:36:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/"
+      }
+    ],
+    "score": 20.85
+  },
+  {
+    "id": "7cf3f689b6b2539c",
+    "title": "Setting a new standard for responsible AI infrastructure",
+    "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+    "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-05T02:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+      }
+    ],
+    "score": 18.78
+  },
+  {
+    "id": "4dd7c1f0aaf0f2a0",
+    "title": "Investigating vault particles with Claude",
+    "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+    "summary": "We’re sharing another finding from Anthropic’s biology research lab: the first 3D structure of a vault particle found in prokaryotic cells.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-04T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
+      }
+    ],
+    "score": 13.39
+  },
+  {
+    "id": "056270aa3764de92",
+    "title": "Building a Culture for a Kubernetes-Based Platform in a Bank",
+    "url": "https://www.infoq.com/news/2026/11/culture-kubernetes-bank/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/culture-kubernetes-bank/en/headerimage/generatedHeaderImage-1793781033508.jpg\" /><p>In banking, open source can earn trust by running real workloads, as Marcy Paramonova and Stéphane Cusin explained in their talk Building Cloud Native Culture in a Bank at KubeCon & CloudNativeCon Europe. Deploying Kubernetes was the easy part; the hard part was culture: community of practice, shared knowledge, rituals, ownership. Teams try things, keep what works, and improve bottom-up.</p> <i>By Ben Linders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-05T11:11:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/culture-kubernetes-bank/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "24f70ab7b7b09e2c",
+    "title": "Presentation: Zero Trust Agent Systems that Pass Audits and Still Ship",
+    "url": "https://www.infoq.com/presentations/zero-trust-ai-agents-production-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/zero-trust-ai-agents-production-security/en/mediumimage/advait-patel-medium-1792655207658.jpeg\" /><p>Advait Patel shares a playbook for securing AI agent systems in production. He discusses moving defense boundaries from the prompt to the tool layer, enforcing scoped workload identities, and mitigating prompt injection via tool outputs. He explains how to structure audit-ready observability and implement kill switches to protect critical data while keeping deployment fast and compliant.</p> <i>By Advait Patel</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-05T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/zero-trust-ai-agents-production-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "f0861bc628605489",
+    "title": "Don't Let Claude Review Claude's Code. Models That Think Alike Make the Same Mistakes",
+    "url": "https://dev.to/gabrielanhaia/dont-let-claude-review-claudes-code-models-that-think-alike-make-the-same-mistakes-55bp",
+    "summary": "<ul>\n<li>\n<strong>Book:</strong> <a href=\"https://www.amazon.de/-/en/dp/B0GXNNMKVF\" rel=\"noopener noreferrer\">Observability for LLM Applications</a>\n</li>\n<li>\n<strong>Also by me:</strong> <em>Thinking in Go</em> (2-book series) — <a href=\"https://xgabriel.com/go-book\" rel=\"noopener noreferrer\">Complete Guide to Go Programming</a> + <a href=\"https://xgabriel.com/hexagonal-go\" rel=\"noopener noreferrer\">Hexagonal Architecture in Go</a>\n</li>\n<li>\n<strong>My project:</strong> <a href=\"https://hermes-ide.com\" rel=\"noopener noreferrer\">Hermes IDE</a> | <a href=\"https://github.com/hermes-hq/hermes-ide\" rel=\"noopener noreferrer\">GitHub</a> — an IDE for developers who ship with Claude Code and other AI coding tools</li>\n<li>\n<strong>Me:</strong> <a href=\"https://xgabriel.com\" rel=\"noopener noreferrer\">xgabriel.com</a> | <a href=\"https://github.com/gabrielanhaia\" rel=\"noopener noreferrer\">GitHub</a>\n</li>\n</ul>\n\n\n\n\n<p>Qwen2.5-72B, grading free-form answers from two smaller models, marked its ow",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:01:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/gabrielanhaia/dont-let-claude-review-claudes-code-models-that-think-alike-make-the-same-mistakes-55bp"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a4a0313c37d884a3",
+    "title": "Three ways into a client's on-prem server, and where the client's switch sits",
+    "url": "https://dev.to/panthpatel/three-ways-into-a-clients-on-prem-server-and-where-the-clients-switch-sits-1dj7",
+    "summary": "<p>A government client's server is not my server. On-Prem Manager (OPM) can now reach one in three ways, so the useful question for each is who can turn it off.</p>\n\n<p>OPM is the open-source tool I built to run on-premise Docker deployments: a cloud console, and one Go agent per server with its own GUI. Three things changed.</p>\n\n<h2>\n  \n  \n  1. The browser tunnel is end-to-end encrypted\n</h2>\n\n<p>Some sites have no internet at all. For those, the agent borrows the browser of the person using its GUI: the tab fetches from the cloud on the agent's behalf.</p>\n\n<p>Until this change, every request and response passed through that tab in clear. That included commits with secret values, and on a LAN the agent GUI may be plain http.</p>\n\n<p>Now the agent seals each request to an X25519 key on the cloud, and that key has to be certified by a release key pinned in the agent's config. The cloud answers with an AES-256-GCM stream. The tab carries ciphertext.</p>\n\n<p>There is no fallback. If the",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:01:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/panthpatel/three-ways-into-a-clients-on-prem-server-and-where-the-clients-switch-sits-1dj7"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6fec6283745a4925",
+    "title": "1,570 visitors, then a dead domain: what a registry-level suspension actually looks like",
+    "url": "https://dev.to/harshahegde/1570-visitors-then-a-dead-domain-what-a-registry-level-suspension-actually-looks-like-47jp",
+    "summary": "<p><strong>oddlyuseful.lol</strong> turns everyday habits into numbers you usually never see — days you've been alive, years you'll spend asleep, what an hour of your time is actually worth. No accounts, no backend, no database. The maths runs in your browser.</p>\n\n<p>For two days in September, 1,570 people used it. Then the domain stopped existing.</p>\n\n<p>This is the part nobody writes about: not the launch, not the growth, but the week where a website you paid for quietly stops being on the internet and it takes you a fortnight to find out who did it.</p>\n\n<h2>\n  \n  \n  The timeline\n</h2>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Date</th>\n<th>What happened</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>14–15 Sept 2026</strong></td>\n<td>Analytics shows 1,570 total and active users across the two days, average engagement 30 seconds</td>\n</tr>\n<tr>\n<td><strong>Shortly after</strong></td>\n<td>The domain stops resolving. Status: <code>serverHold</code>\n</td>\n</tr>\n<tr>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:00:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/harshahegde/1570-visitors-then-a-dead-domain-what-a-registry-level-suspension-actually-looks-like-47jp"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3c9129a4b05596b0",
+    "title": "GPU Cloud for AI: RunPod vs Vast.ai vs Lambda Labs, Priced",
+    "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/gpu-cloud-for-ai-runpod-vs-vastai-vs-lambda-labs-priced-1hpe",
+    "summary": "<p>You've built an AI application that works perfectly on your local RTX 4090. Now you need to deploy it — and you discover that the major cloud providers (AWS, GCP, Azure) charge enterprise prices for GPU instances that would bankrupt your indie SaaS before it gets its first paying customer. Enter the GPU cloud specialists: RunPod, Vast.ai, and Lambda Labs, all of which offer significantly cheaper GPU compute by leveraging spot pricing, community-owned hardware, or specialized infrastructure. But which one actually works for production AI inference?</p>\n\n<h2>\n  \n  \n  Quick Verdict\n</h2>\n\n<p>🏆 RunPod is the best overall choice for indie developers deploying AI inference — it offers the most reliable serverless GPU experience with excellent tooling and reasonable pricing.</p>\n\n<p>Vast.ai is the cheapest option if you can tolerate unpredictable performance and a janky user interface. Lambda Labs is the premium option with guaranteed hardware quality and no spot interruptions, but costs s",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:00:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/gpu-cloud-for-ai-runpod-vs-vastai-vs-lambda-labs-priced-1hpe"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ce50b7b02467d6a8",
+    "title": "Why ComfyUI Uses the Wrong Input Image in Consecutive Clips",
+    "url": "https://dev.to/orca_forge/why-comfyui-uses-the-wrong-input-image-in-consecutive-clips-124b",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/comfyui-input-name-collision/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=comfyui-input-name-collision\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR ComfyUI generated a worried face for a clip that specified a neutral face. Multiple clips used the same image filename in <code>input</code>, so a later upload overwrote the file an earlier job was expected to read. Adding the episode ID and clip name to image and audio filenames prevents those collisions.</p>\n\n<h2>\n  \n  \n  The conclusion first\n</h2>\n\n<p>The reason the video generated in ComfyUI with a neutral face specified ended up looking troubled was that multiple clips shared an image with the same filename, and a later image overwrote the file that an earlier job (the video-generation process) was reading. I fixed this by including the clip name in image and audio filenames, then regener",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:00:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/why-comfyui-uses-the-wrong-input-image-in-consecutive-clips-124b"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "aa7f04cf91a66f7e",
+    "title": "Multi-Tenant SaaS in Laravel: One Database, a Global Scope, and the Leaks It Doesn't Catch: 02 of 08",
+    "url": "https://dev.to/ifirestone/multi-tenant-saas-in-laravel-one-database-a-global-scope-and-the-leaks-it-doesnt-catch-02-of-08-41fd",
+    "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563986768609-322da13575f3%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DM3wxMTc3M3wwfDF8c2VhcmNofDJ8fHNhYXN8ZW58MHx8fHwxNzkyNzkxMTIxfDA%26ixlib%3Drb-4.1.0%26q%3D80%26w%3D2000\"><img alt=\"Multi-Tenant SaaS in Laravel: One Database, a Global Scope, and the Leaks It Doesn't Catch: 02 of 08\" height=\"1333\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563986768609-322da13575f3%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DM3wxMTc3M3wwfDF8c2VhcmNofDJ8fHNhYXN8ZW58MHx8fHwxNzkyNzkxMTIxfDA%26ixlib%3Drb-4.1.0%26q%3D80%26w%3D2000\" width=\"2000\" /></a></p>\n\n<p>Imagine a team that ships an invoicing SaaS in three months. Every query carries a <code>where('company_id', $comp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:00:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ifirestone/multi-tenant-saas-in-laravel-one-database-a-global-scope-and-the-leaks-it-doesnt-catch-02-of-08-41fd"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7ec1bcf069f6e449",
+    "title": "What AI agents actually need from infrastructure: 7 requirements, and where human-first hosting gets in the way",
+    "url": "https://dev.to/eqvps/what-ai-agents-actually-need-from-infrastructure-7-requirements-and-where-human-first-hosting-5ap4",
+    "summary": "<p>Most hosting was designed around a person at a keyboard: a sign-up form, a card, a dashboard, an email when something goes wrong. An AI agent that needs compute doesn't fit any of those steps. It can't solve a captcha, it can't tell a maintenance page from a broken one, and it won't notice that it has created the same server forty times.</p>\n\n<p>It's tempting to say \"just give it an API\". That's the first requirement, not the last. Below are seven that we think matter, from building our own <a href=\"https://eqvps.com/en/docs/mcp\" rel=\"noopener noreferrer\">MCP server</a> and REST API for agents. For each: what goes wrong without it.</p>\n\n<h2>\n  \n  \n  1. Everything an agent needs is programmable\n</h2>\n\n<p>Creating, inspecting, resizing and deleting resources has to work without a browser. That includes the dull parts: finding out the price before buying, checking whether a location has capacity, reading the password of a new machine, cancelling.</p>\n\n<p><strong>Without it:</strong> th",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-05T13:00:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eqvps/what-ai-agents-actually-need-from-infrastructure-7-requirements-and-where-human-first-hosting-5ap4"
+      }
+    ],
+    "score": 21.0
+  }
+]

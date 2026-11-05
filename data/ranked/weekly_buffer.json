@@ -1514,6 +1514,511 @@
           "section": "radar"
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "stories": [
+        {
+          "title": "The PHP2Shell Postmortem: What CVE-2026-109618 and CVE-2026-109619 Actually Tell Us",
+          "url": "https://dev.to/the_dev_stack/the-php2shell-postmortem-what-cve-2026-109618-and-cve-2026-109619-actually-tell-us-10lp",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<blockquote>\n<p><strong>I made a 6-minute video breakdown of this on YouTube — this is the written version for readers who prefer text.</strong> Same facts, same angles, better for linking in Slack or",
+          "section": "main"
+        },
+        {
+          "title": "5 Common Security Mistakes in Python Scripts and How to Avoid Them",
+          "url": "https://dev.to/sergio_gmez_9533652d3b3c/5-common-security-mistakes-in-python-scripts-and-how-to-avoid-them-3b1c",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Python scripts are a powerful tool for automating tasks and building applications quickly. However, that convenience can also open doors to vulnerabilities if good security practices are not follow",
+          "section": "main"
+        },
+        {
+          "title": "Cisco ISE CVE-2026-20241 turns certificate issuance into an authorization decision",
+          "url": "https://dev.to/andreagomez/cisco-ise-cve-2026-20241-turns-certificate-issuance-into-an-authorization-decision-22km",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h1>\n  \n  \n  Cisco ISE CVE-2026-20241 turns certificate issuance into an authorization decision\n</h1>\n\n<p>Cisco published an authorization bypass in Identity Services Engine and the Passive Identity C",
+          "section": "main"
+        },
+        {
+          "title": "Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads",
+          "url": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
+          "category": "cloud",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Azure Blog",
+          "summary": "<p>Azure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is needed. See what that mea",
+          "section": "main"
+        },
+        {
+          "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
+          "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
+          "category": "cloud",
+          "score": 16.15,
+          "coverage_count": 1,
+          "source_name": "AWS Blog",
+          "summary": "You can now migrate existing Apache Hive datasets in Amazon S3 to fully managed Apache Iceberg tables in Amazon S3 Tables, with no pipelines to build or compute to provision, while production workload",
+          "section": "main"
+        },
+        {
+          "title": "kpt v1.0.0 is released",
+          "url": "https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/",
+          "category": "devops",
+          "score": 18.08,
+          "coverage_count": 1,
+          "source_name": "CNCF Blog",
+          "summary": "After many years and much development, the kpt community has released v1.0.0 of the kpt toolchain. This is a big step in maturing the kpt project after having it in pre-release status for several year",
+          "section": "main"
+        },
+        {
+          "title": "Property-based testing: How to find bugs your unit tests miss",
+          "url": "https://circleci.com/blog/property-based-testing/",
+          "category": "devops",
+          "score": 9.0,
+          "coverage_count": 1,
+          "source_name": "CircleCI Blog",
+          "summary": "",
+          "section": "main"
+        },
+        {
+          "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+          "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+          "category": "security",
+          "score": 22.98,
+          "coverage_count": 2,
+          "source_name": "The Hacker News",
+          "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.",
+          "section": "main"
+        },
+        {
+          "title": "Want to Rent an Internet Address at the White House?",
+          "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+          "category": "security",
+          "score": 20.85,
+          "coverage_count": 1,
+          "source_name": "Krebs on Security",
+          "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts war",
+          "section": "main"
+        },
+        {
+          "title": "Setting a new standard for responsible AI infrastructure",
+          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+          "category": "ai",
+          "score": 18.78,
+          "coverage_count": 1,
+          "source_name": "OpenAI Blog",
+          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+          "section": "main"
+        },
+        {
+          "title": "Investigating vault particles with Claude",
+          "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+          "category": "ai",
+          "score": 13.39,
+          "coverage_count": 1,
+          "source_name": "Anthropic Blog",
+          "summary": "We’re sharing another finding from Anthropic’s biology research lab: the first 3D structure of a vault particle found in prokaryotic cells.",
+          "section": "main"
+        },
+        {
+          "title": "Building a Culture for a Kubernetes-Based Platform in a Bank",
+          "url": "https://www.infoq.com/news/2026/11/culture-kubernetes-bank/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/culture-kubernetes-bank/en/headerimage/generatedHeaderImage-1793781033508.jpg\" /><p>In banking, open source can earn trust by running real workloads, as Ma",
+          "section": "main"
+        },
+        {
+          "title": "Presentation: Zero Trust Agent Systems that Pass Audits and Still Ship",
+          "url": "https://www.infoq.com/presentations/zero-trust-ai-agents-production-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/presentations/zero-trust-ai-agents-production-security/en/mediumimage/advait-patel-medium-1792655207658.jpeg\" /><p>Advait Patel shares a playbook for securing AI agent ",
+          "section": "main"
+        },
+        {
+          "title": "Don't Let Claude Review Claude's Code. Models That Think Alike Make the Same Mistakes",
+          "url": "https://dev.to/gabrielanhaia/dont-let-claude-review-claudes-code-models-that-think-alike-make-the-same-mistakes-55bp",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<ul>\n<li>\n<strong>Book:</strong> <a href=\"https://www.amazon.de/-/en/dp/B0GXNNMKVF\" rel=\"noopener noreferrer\">Observability for LLM Applications</a>\n</li>\n<li>\n<strong>Also by me:</strong> <em>Thinkin",
+          "section": "main"
+        },
+        {
+          "title": "Three ways into a client's on-prem server, and where the client's switch sits",
+          "url": "https://dev.to/panthpatel/three-ways-into-a-clients-on-prem-server-and-where-the-clients-switch-sits-1dj7",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A government client's server is not my server. On-Prem Manager (OPM) can now reach one in three ways, so the useful question for each is who can turn it off.</p>\n\n<p>OPM is the open-source tool I b",
+          "section": "main"
+        },
+        {
+          "title": "1,570 visitors, then a dead domain: what a registry-level suspension actually looks like",
+          "url": "https://dev.to/harshahegde/1570-visitors-then-a-dead-domain-what-a-registry-level-suspension-actually-looks-like-47jp",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><strong>oddlyuseful.lol</strong> turns everyday habits into numbers you usually never see — days you've been alive, years you'll spend asleep, what an hour of your time is actually worth. No accoun",
+          "section": "main"
+        },
+        {
+          "title": "GPU Cloud for AI: RunPod vs Vast.ai vs Lambda Labs, Priced",
+          "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/gpu-cloud-for-ai-runpod-vs-vastai-vs-lambda-labs-priced-1hpe",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>You've built an AI application that works perfectly on your local RTX 4090. Now you need to deploy it — and you discover that the major cloud providers (AWS, GCP, Azure) charge enterprise prices fo",
+          "section": "main"
+        },
+        {
+          "title": "Why ComfyUI Uses the Wrong Input Image in Consecutive Clips",
+          "url": "https://dev.to/orca_forge/why-comfyui-uses-the-wrong-input-image-in-consecutive-clips-124b",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/comfyui-input-name-collision/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=comfyui-inpu",
+          "section": "main"
+        },
+        {
+          "title": "Multi-Tenant SaaS in Laravel: One Database, a Global Scope, and the Leaks It Doesn't Catch: 02 of 08",
+          "url": "https://dev.to/ifirestone/multi-tenant-saas-in-laravel-one-database-a-global-scope-and-the-leaks-it-doesnt-catch-02-of-08-41fd",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-156398676",
+          "section": "main"
+        },
+        {
+          "title": "What AI agents actually need from infrastructure: 7 requirements, and where human-first hosting gets in the way",
+          "url": "https://dev.to/eqvps/what-ai-agents-actually-need-from-infrastructure-7-requirements-and-where-human-first-hosting-5ap4",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Most hosting was designed around a person at a keyboard: a sign-up form, a card, a dashboard, an email when something goes wrong. An AI agent that needs compute doesn't fit any of those steps. It c",
+          "section": "main"
+        },
+        {
+          "title": "AGENTS.md Review Policy: 4 Sections CodeRabbit, Copilot, and Claude Code All Read",
+          "url": "https://dev.to/kenimo49/agentsmd-review-policy-4-sections-coderabbit-copilot-and-claude-code-all-read-19pj",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Three AI code reviewers, one file. That shift happened faster than most teams noticed.</p>\n\n<p>AGENTS.md was formalized in August 2025 as a shared config format co-promoted by OpenAI, Google, Sourc",
+          "section": "radar"
+        },
+        {
+          "title": "PHP2Shell: Your Host Patched PHP. Your Site Might Still Be Exposed.",
+          "url": "https://dev.to/hisashispace/php2shell-your-host-patched-php-your-site-might-still-be-exposed-2cf6",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Your web host patched PHP. Your WordPress is up to date. Your plugins are up to date.<br />\nThat does not mean your site is patched.</p>\n\n<p>On October 21, PHP shipped emergency fixes for two criti",
+          "section": "radar"
+        },
+        {
+          "title": "A YC startup is putting $1M behind five unsolved materials science problems for AI",
+          "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+          "category": "news",
+          "score": 20.62,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "Discovered Materials, a months-old YC startup that uses AI to find chip materials, is offering $200,000 for each solution to five open materials science problems.",
+          "section": "radar"
+        },
+        {
+          "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
+          "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+          "category": "news",
+          "score": 20.01,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "Agility arrives on the Nasdaq today as the first publicly-traded pure-play humanoid robotics company.",
+          "section": "radar"
+        },
+        {
+          "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
+          "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
+          "category": "security",
+          "score": 19.98,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3.\n\nThe change specifically applies to scena",
+          "section": "radar"
+        },
+        {
+          "title": "Why is there an Anubis gate in front of Search for logged-in users?",
+          "url": "https://lobste.rs/s/y4poxs/why_is_there_anubis_gate_front_search_for",
+          "category": "news",
+          "score": 19.96,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p>When one goes to Search on lobste.rs there is an Anubis gate first. I understand why it is there for a public rate limiting case, but why is it there for logged-in users? This is an invite only sit",
+          "section": "radar"
+        },
+        {
+          "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+          "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+          "category": "security",
+          "score": 19.94,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Fin",
+          "section": "radar"
+        },
+        {
+          "title": "dotInsights | November 2026",
+          "url": "https://blog.jetbrains.com/dotnet/2026/11/05/dotinsights-november-2026/",
+          "category": "dev",
+          "score": 19.94,
+          "coverage_count": 1,
+          "source_name": "JetBrains Blog",
+          "summary": "Did you know? F# Units of Measure verify dimensional calculations at compile time, eliminating catastrophic system errors and maximizing overall reliability with zero runtime performance cost. Welcome",
+          "section": "radar"
+        },
+        {
+          "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+          "url": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+          "category": "security",
+          "score": 19.93,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enter",
+          "section": "radar"
+        },
+        {
+          "title": "Discord is ditching Electron and its new app uses less RAM",
+          "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
+          "category": "news",
+          "score": 19.61,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "Discord is finally giving up on Electron, the cross-platform framework that lets developers build desktop apps using web technologies. Electron web apps are notoriously heavy on system resources, and ",
+          "section": "radar"
+        },
+        {
+          "title": "What’s fixed in IntelliJ IDEA 2026.3",
+          "url": "https://blog.jetbrains.com/idea/2026/11/whats-fixed-in-intellij-idea-2026-3/",
+          "category": "dev",
+          "score": 19.6,
+          "coverage_count": 1,
+          "source_name": "JetBrains Blog",
+          "summary": "Welcome to an overview of the most important fixes and usability improvements in IntelliJ IDEA 2026.3. IntelliJ IDEA 2026.3 ships over 1,000 bug fixes and over 300 performance fixes. We focused on per",
+          "section": "radar"
+        },
+        {
+          "title": "CLion 2026.3 Is Here",
+          "url": "https://blog.jetbrains.com/clion/2026/11/2026-3-release/",
+          "category": "dev",
+          "score": 19.36,
+          "coverage_count": 1,
+          "source_name": "JetBrains Blog",
+          "summary": "With JetBrains Air, agent-assisted embedded debugging and CMake project setup, plus support for NVIDIA CUDA Tile C++ and ISPC. CLion 2026.3 is now available. This latest version of the JetBrains IDE f",
+          "section": "radar"
+        },
+        {
+          "title": "What’s New in IntelliJ IDEA 2026.3",
+          "url": "https://blog.jetbrains.com/idea/2026/11/whats-new-in-intellij-idea-2026-3/",
+          "category": "dev",
+          "score": 19.28,
+          "coverage_count": 1,
+          "source_name": "JetBrains Blog",
+          "summary": "IntelliJ IDEA 2026.3 is here! This version brings you Air, as well as an extension for Cursor and VS Code, debugging improvements, and support for the latest technologies in the Java ecosystem. You ca",
+          "section": "radar"
+        },
+        {
+          "title": "Big Tech’s big AI buildout will not end until someone stops it",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+          "category": "news",
+          "score": 19.14,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "After four of the biggest competitors in the AI race held quarterly earnings calls late last month, two things are clear: Big Tech is not done spending record amounts on the AI data center buildout, a",
+          "section": "radar"
+        },
+        {
+          "title": "Hunger beats tenure: Advice for junior engineers",
+          "url": "https://freek.dev/3212-hunger-beats-tenure-advice-for-junior-engineers",
+          "category": "dev",
+          "score": 19.03,
+          "coverage_count": 1,
+          "source_name": "Freek Van der Herten",
+          "summary": "<p>Felix Rieseberg argues that AI is changing what makes junior engineers valuable. He makes the case that fresh perspective, ambition, and quick prototypes can beat tenure when execution is cheap.</p",
+          "section": "radar"
+        },
+        {
+          "title": "Anthropic found a way to prove which AI model answered you — but there’s a costly catch",
+          "url": "https://thenewstack.io/anthropic-flashprove-model-verification/",
+          "category": "news",
+          "score": 19.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Abstract window scene\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"724\" src=\"https://cdn.thenewstack.io/media/2026/11/caa0e2d8-chloe-f5wzv43ls-0-unsplash-1024x724.",
+          "section": "radar"
+        },
+        {
+          "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+          "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+          "category": "news",
+          "score": 18.3,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/\">https://99percentinvisible.org/article/guerrilla-bike-lanes-",
+          "section": "radar"
+        },
+        {
+          "title": "Motorola Wants to Sell You a $1,600 Phone That Doesn’t Fold",
+          "url": "https://www.wired.com/story/motorola-wants-to-sell-you-a-1600-phone-that-doesnt-fold/",
+          "category": "news",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "Equipped with the brightest display, an “Event-Based Vision Sensor,” and the next-generation Qualcomm processor, Motorola hopes you’ll want to spend big bucks on its ceramic and aluminum Signature 27.",
+          "section": "radar"
+        },
+        {
+          "title": "Inside the Open Service Directory specification: the agreement behind a support listing",
+          "url": "https://zendesk.engineering/inside-the-open-service-directory-specification-the-agreement-behind-a-support-listing-f86144253242?source=rss----a88376ea904a---4",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Zendesk Engineering",
+          "summary": "<p><em>Part 1 of 3: For support-platform engineers making their services discoverable, and developers connecting AI assistants to them.</em></p><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com",
+          "section": "radar"
+        },
+        {
+          "title": "CodeSOD: Only Create Me if I Exist",
+          "url": "https://thedailywtf.com/articles/only-create-me-if-i-exist",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "The Daily WTF",
+          "summary": "<p>Foreign keys are an important part of making sure the entities in our relational database can be connected back together and queried correctly. It's part of proper data normalization. This isn't sh",
+          "section": "radar"
+        },
+        {
+          "title": "Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work",
+          "url": "https://www.wired.com/story/finding-new-drugs-is-laborious-this-ai-startup-is-skipping-the-lab-work/",
+          "category": "news",
+          "score": 17.91,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "Potential Sciences, a startup backed by the UK government, is betting that training AI models on computer-generated biochemical data can speed up the plodding process of developing new drugs.",
+          "section": "radar"
+        },
+        {
+          "title": "How two engineer side projects became the agent taking action inside Dropbox",
+          "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
+          "category": "dev",
+          "score": 17.88,
+          "coverage_count": 1,
+          "source_name": "Dropbox Tech",
+          "summary": "Two side projects explored a new way to get work done with files already in Dropbox. Here’s how engineers brought them together and turned those experiments into a new customer experience.",
+          "section": "radar"
+        },
+        {
+          "title": "Israel Is Destroying the Machinery South Lebanon Needs to Rebuild",
+          "url": "https://www.wired.com/story/israel-is-destroying-the-machinery-south-lebanon-needs-to-rebuild/",
+          "category": "news",
+          "score": 17.64,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "Israeli strikes on construction equipment and water infrastructure in South Lebanon have blocked recovery efforts, keeping displaced families away from their homes.",
+          "section": "radar"
+        },
+        {
+          "title": "Quiz: Learn With Mentor AI: Getting More Out of Video Courses",
+          "url": "https://realpython.com/quizzes/learn-with-mentor-ai-video-courses/",
+          "category": "dev",
+          "score": 17.33,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Check how you use Mentor AI with Real Python video courses, from asking what the instructor said to quizzing yourself after a lesson.",
+          "section": "radar"
+        },
+        {
+          "title": "Quiz: Python Plotting With Matplotlib (Guide)",
+          "url": "https://realpython.com/quizzes/python-matplotlib-guide/",
+          "category": "dev",
+          "score": 17.31,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Test your understanding of Python plotting with matplotlib, from Figure and Axes objects to subplots, pandas plotting, and styling.",
+          "section": "radar"
+        },
+        {
+          "title": "Apple is reportedly cutting budgets for its internal AI usage",
+          "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+          "category": "news",
+          "score": 17.06,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
+          "section": "radar"
+        },
+        {
+          "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+          "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+          "category": "security",
+          "score": 16.93,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found.\n\nThe exploit lets anyone",
+          "section": "radar"
+        },
+        {
+          "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+          "category": "security",
+          "score": 16.9,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (K",
+          "section": "radar"
+        },
+        {
+          "title": "Push-based CDC into Unity Catalog with Zerobus Ingest and Debezium",
+          "url": "https://www.databricks.com/blog/push-based-cdc-unity-catalog-zerobus-ingest-and-debezium",
+          "category": "dev",
+          "score": 16.85,
+          "coverage_count": 1,
+          "source_name": "Databricks Engineering",
+          "summary": "Data in operational databases drives business decisions, and much of that analysis...",
+          "section": "radar"
+        },
+        {
+          "title": "The State of Python Profiling in 2026",
+          "url": "https://p403n1x87.github.io/the-state-of-python-profiling-in-2026.html",
+          "category": "news",
+          "score": 16.84,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/ehtpx8/state_python_profiling_2026\">Comments</a></p>",
+          "section": "radar"
+        }
+      ]
     }
   ]
 }
