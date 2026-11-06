@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 12,
+      "title": "Opening"
+    },
+    {
+      "startTime": 140,
+      "title": "Grafana’s variable changes tackle a familiar maintenance..."
+    },
+    {
+      "startTime": 280,
+      "title": "There’s an important distinction in Edera’s proposal:..."
+    },
+    {
+      "startTime": 430,
+      "title": "That question of trust also runs through a proposal to..."
+    },
+    {
+      "startTime": 591,
+      "title": "The business question is whether software subscriptions are..."
+    },
+    {
+      "startTime": 752,
+      "title": "To close, several stories ask what happens when systems..."
+    }
+  ]
+}

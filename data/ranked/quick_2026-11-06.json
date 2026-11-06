@@ -1,0 +1,528 @@
+[
+  {
+    "id": "b4bbfca01b9314de",
+    "title": "osFoundry 커스텀 앱 기능 정리, 사내 도구를 만들고 바로 배포하는 법",
+    "url": "https://dev.to/tauchi-ko/osfoundry-keoseuteom-aeb-gineung-jeongri-sanae-dogureul-mandeulgo-baro-baepohaneun-beob-4io0",
+    "summary": "<p>월요일 오전, 스타트업 백엔드 개발자 민준 님에게 CS팀에서 메시지가 옵니다. \"환불 요청 목록을 엑셀 말고 어드민 화면으로 볼 수 있을까요?\" 화면 하나 만드는 건 AI한테 맡기면 금방입니다. 문제는 그다음입니다. 어디에 띄울지, DB는 뭘 쓸지, 결제 API 키는 어디에 넣을지, 매일 밤 정리 작업은 누가 돌릴지. 사내 도구가 \"다음 스프린트에\"로 밀리는 이유는 대부분 이 인프라 쪽입니다.</p>\n\n<h2>\n  \n  \n  커스텀 앱이 하는 일\n</h2>\n\n<p><a href=\"https://osfoundry.io/ko\" rel=\"noopener noreferrer\">osFoundry</a> 데스크톱 앱에는 작은 앱을 직접 만들고 운영하는 기능이 사이드바의 CUSTOM APP 카테고리에 모여 있습니다. 화면은 다섯 개입니다.</p>\n\n<ul>\n<li>Room: 앱을 탭으로 띄워 놓고 팀이 함께 쓰는 공간</li>\n<li>App Code: 앱 뒤에 있는 저장소(코드, 버전, 릴리스, 배포)</li>\n<li>Deployed Apps: 워크스페이스 전체에서 지금 배포된 앱 목록</li>\n<li>Snippets: 저장소 없이 돌아가는 아주 작은 앱 모음</li>\n<li>Domains: 앱을 서비스하는 도메인 관리</li>\n</ul>\n\n<p>Retool 같은 어드민 빌더와 Vercel 같은 호스팅을 한 앱 안에 합쳐 놓았다고 보면 이해가 빠릅니다. 다만 드래그 앤 드롭 빌더와 달리 결과물은 평범한 웹 앱 코드라서, AI가 작성한 코드를 그대로 이어서 키워 갈 수 있습니다. <a href=\"https://osfoundry.io/ko/features/internal-apps\" rel=\"noopener noreferrer\">내부 앱 기능 페이지</a>에 정리된 대로, 앱마다 전용 데이터베이스, 시크릿, 예약 작업, 서브도메인이 붙습니다.</p>\n\n<h2>\n  \n  \n  화면 구성 살펴보기\n</h2>\n\n<p><a class=\"article-body-image-wrapp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:02:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tauchi-ko/osfoundry-keoseuteom-aeb-gineung-jeongri-sanae-dogureul-mandeulgo-baro-baepohaneun-beob-4io0"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "08c81228853c6e96",
+    "title": "After upgrading from Java 8, G1 stopped returning memory",
+    "url": "https://dev.to/shinagawa-web/after-upgrading-from-java-8-g1-stopped-returning-memory-38n",
+    "summary": "<p>When you move from Java 8 to any of Java 11 through 25, the GC the JVM picks when you don't specify one (the default GC) changes from Parallel to G1. A GC is the mechanism that collects the memory of objects no longer in use. Parallel and G1 are names of two kinds of GC.</p>\n\n<p>With this change, container memory (cgroup <code>memory.current</code>) no longer drops after a load peak passes.</p>\n\n<p>I ran the same program under the same load on each version and compared how much container memory changed after the peak<sup id=\"fnref1\">1</sup>.</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Change after the peak</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Java 8</td>\n<td>−234.6 to −227.6MB</td>\n</tr>\n<tr>\n<td>Java 11</td>\n<td>0.0 to +2.9MB</td>\n</tr>\n<tr>\n<td>Java 25</td>\n<td>+2.3 to +2.7MB</td>\n</tr>\n</tbody>\n</table></div>\n\n<p>In this article, the committed heap is the amount of heap the JVM has taken from the OS, and shrinking means reducing the committ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:02:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/shinagawa-web/after-upgrading-from-java-8-g1-stopped-returning-memory-38n"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6a26955196138985",
+    "title": "Operations Dashboard KPI: Operational Best Practices",
+    "url": "https://dev.to/ts888/operations-dashboard-kpi-operational-best-practices-3m7i",
+    "summary": "<p>KPI can help organizations track daily activities, measure their performance and understand how well their processes are working. This dashboard will allow you to view key performance indicators such as productivity, operation costs, order completion and customer satisfaction.</p>\n\n<p>However, it is important to find best practice to follow when creating your dashboard so that you are displaying the correct information. </p>\n\n<p>Implementing best practices in your dashboard can help your organization keep their workflow organized, improve their performance monitoring and understand where they need to focus.</p>\n\n<p><b>1. Choose KPI’s that support business goals<br />\n</b><br />\nOne of the most important things to consider is using KPI’s that support your business goals. They shouldn’t be measuring too many different metrics.</p>\n\n<p>Instead focus on selecting information that will help managers understand if they are achieving their goals.</p>\n\n<p>Some examples of useful KPI’s to me",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ts888/operations-dashboard-kpi-operational-best-practices-3m7i"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2c6cecbc4b770be5",
+    "title": "A star matches a star: the OpenSSH bypass on Alpine, and why patch windows just got shorter",
+    "url": "https://dev.to/aeoninc/a-star-matches-a-star-the-openssh-bypass-on-alpine-and-why-patch-windows-just-got-shorter-17d9",
+    "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F97x6eetel00bm2qlghnr.webp\"><img alt=\" \" height=\"446\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F97x6eetel00bm2qlghnr.webp\" width=\"799\" /></a></p>\n\n<p>What broke<br />\nAccording to OpenSSH's release notes, the bypass affects \"Linux systems that use the musl libc and PAM disabled.\" It was reported by Özgün Kültekin of Wakefield.<br />\nA machine is exposed when all of these are true (PrivacyAffairs, SecurityOnline):<br />\nsshd runs on musl. Alpine is the main case. Buildroot, Yocto and OpenWrt builds that use OpenSSH can be affected too.<br />\nsshd checks passwords itself. Alpine's standard openssh-server is built without PAM. A PAM build with UsePAM n",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aeoninc/a-star-matches-a-star-the-openssh-bypass-on-alpine-and-why-patch-windows-just-got-shorter-17d9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "159ed6ca25bb667c",
+    "title": "System 1 vs. System 2 in AI Engineering: Replacing Ambiguous LLM Judges with Calibrated Semantic Sensors (Jev) in Pure Go",
+    "url": "https://dev.to/rodrigodosanjosoliveira/system-1-vs-system-2-in-ai-engineering-replacing-ambiguous-llm-judges-with-calibrated-semantic-4ek4",
+    "summary": "<p>In AI-assisted software engineering pipelines, there is a clear boundary between what compilers can verify and what requires semantic understanding.</p>\n\n<p>For everything syntactic and structural — formatting (<code>gofmt</code>), static analysis (<code>go vet</code>), race-condition testing (<code>go test -race</code>), and vulnerability scanning (<code>govulncheck</code>) — deterministic gates are unbeatable. Either the code compiles and passes tests, or the gate halts the pipeline with <code>exit code 1</code>.</p>\n\n<p>But what happens when a pipeline gate depends on <strong>semantics</strong>?</p>\n\n<ul>\n<li><em>\"Does this diff touch authentication logic or cryptographic surface area?\"</em></li>\n<li><em>\"Which specialized skill should handle this SQL migration failure: <code>data-model</code>, <code>migration-reviewer</code>, or <code>dev-implementation</code>?\"</em></li>\n<li><em>\"On a scale from 0 to 10, how well does this handoff report satisfy our architectural invariants?\"</",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/rodrigodosanjosoliveira/system-1-vs-system-2-in-ai-engineering-replacing-ambiguous-llm-judges-with-calibrated-semantic-4ek4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6d90e4f2e59842cd",
+    "title": "Cybersecurity in the AI Era",
+    "url": "https://dev.to/alexr/cybersecurity-in-the-ai-era-51p2",
+    "summary": "<p>Scams are becoming more convincing. AI tools are gaining more access. A practical guide to trust, access and accountability for engineering leaders.</p>\n\n<p>This is a short version of the full article on EngLead AI. Read the full story here: <a href=\"https://engleadai.substack.com/p/cybersecurity-in-the-ai-era\" rel=\"noopener noreferrer\">https://engleadai.substack.com/p/cybersecurity-in-the-ai-era</a></p>\n\n<p>An assistant starts by helping your engineers find documentation. A few useful integrations later, it can search repositories, read incident notes and send replies to suppliers.</p>\n\n<p>Each addition has a reasonable business case.</p>\n\n<p>Who reviewed what those capabilities allow it to do together?</p>\n\n<p>Consider a supplier request. An email describes a failing integration, names the right systems and asks for a diagnostic report. An engineer passes it to the assistant. The assistant finds relevant material and prepares a convincing reply.</p>\n\n<p>The sender is an impersonat",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/alexr/cybersecurity-in-the-ai-era-51p2"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1746cfdf8270818c",
+    "title": "SNMPv3 Users Are Scoped to an Authoritative Engine",
+    "url": "https://dev.to/onaeiuspkz/snmpv3-users-are-scoped-to-an-authoritative-engine-3bl9",
+    "summary": "<h1>\n  \n  \n  SNMPv3 Users Are Scoped to an Authoritative Engine\n</h1>\n\n<p>SNMPv3 is frequently treated as a simple upgrade from community strings. The move from SNMPv1 or v2c does remove cleartext community authentication, but the security model introduces its own identity and state model. A user entry is associated with an authoritative SNMP engine and with keys derived for that engine. An inventory that copies usernames between devices without understanding this relationship can create stale credentials, failed rotation, or unintended access.</p>\n\n<h2>\n  \n  \n  The engine ID is part of the identity\n</h2>\n\n<p>RFC 3414 defines the User-based Security Model, or USM. Its security parameters include the authoritative engine ID, engine boots, engine time, and user name. Discovery teaches a manager which engine is authoritative for a device. Authentication and privacy keys are localized to that engine.</p>\n\n<p>This means a user named <code>monitor</code> is not automatically the same securit",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/onaeiuspkz/snmpv3-users-are-scoped-to-an-authoritative-engine-3bl9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "39290a7b6f256602",
+    "title": "SAA-C03 Deep Dive: Designing Secure and Resilient AWS Architectures (Domains 1 & 2)",
+    "url": "https://dev.to/certlandwebmaster/saa-c03-deep-dive-designing-secure-and-resilient-aws-architectures-domains-1-2-58c0",
+    "summary": "<p><em>Originally published on <a href=\"https://certland.net/blog/saa-c03-secure-resilient-architectures-deep-dive/\" rel=\"noopener noreferrer\">CertLand</a>.</em></p>\n\n<p>Domains 1 and 2 of the*<em>AWS Solutions Architect Associate (SAA-C03)</em><em>represent</em><em>56% of the exam</em>*: Design Secure Architectures (30%) and Design Resilient Architectures (26%). These are not surface-level questions — they present complex multi-service scenarios and require you to choose the architecture that best balances security, resilience, and operational simplicity.</p>\n\n<p>This deep dive covers every concept, service comparison, and architecture pattern you need to answer these questions with confidence. We include decision tables, text-based architecture diagrams, and CloudFormation snippets that reinforce how services connect in real exam scenarios.   <strong>In this guide:</strong></p>\n\n<ol>\n<li>IAM Roles vs Policies vs Permission Boundaries</li>\n<li>S3 Security Patterns</li>\n<li>VPC Securit",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/certlandwebmaster/saa-c03-deep-dive-designing-secure-and-resilient-aws-architectures-domains-1-2-58c0"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2b15424537c84a53",
+    "title": "The Only Coding-Agent Benchmark That Matters Is Your Own Revert Rate",
+    "url": "https://dev.to/gabrielanhaia/the-only-coding-agent-benchmark-that-matters-is-your-own-revert-rate-3id8",
+    "summary": "<ul>\n<li>\n<strong>Book:</strong> <a href=\"https://www.amazon.com/dp/B0GYMFPTWV\" rel=\"noopener noreferrer\">System Design Pocket Guide: Fundamentals</a>\n</li>\n<li>\n<strong>Also by me:</strong> <em>Thinking in Go</em> (2-book series) — <a href=\"https://xgabriel.com/go-book\" rel=\"noopener noreferrer\">Complete Guide to Go Programming</a> + <a href=\"https://xgabriel.com/hexagonal-go\" rel=\"noopener noreferrer\">Hexagonal Architecture in Go</a>\n</li>\n<li>\n<strong>My project:</strong> <a href=\"https://hermes-ide.com\" rel=\"noopener noreferrer\">Hermes IDE</a> | <a href=\"https://github.com/hermes-hq/hermes-ide\" rel=\"noopener noreferrer\">GitHub</a> — an IDE for developers who ship with Claude Code and other AI coding tools</li>\n<li>\n<strong>Me:</strong> <a href=\"https://xgabriel.com\" rel=\"noopener noreferrer\">xgabriel.com</a> | <a href=\"https://github.com/gabrielanhaia\" rel=\"noopener noreferrer\">GitHub</a>\n</li>\n</ul>\n\n\n\n\n<p>Meta's <a href=\"https://research.meta.ai/static/muse-wonder-model-card\" rel",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/gabrielanhaia/the-only-coding-agent-benchmark-that-matters-is-your-own-revert-rate-3id8"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "82d6da1b1e1aa1b9",
+    "title": "Physicl raises $10M to make the digital world real enough for robots",
+    "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+    "summary": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-06T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/"
+      }
+    ],
+    "score": 20.03
+  },
+  {
+    "id": "455da7e14440f5cc",
+    "title": "Postcards from tomorrow: Powering the agentic era through open source",
+    "url": "https://thenewstack.io/kubernetes-ai-learning-loop/",
+    "summary": "<img alt=\"Pink and blue streams flowing toward the horizon beneath concentric circles, illustrating streamhouse data architecture\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"https://cdn.thenewstack.io/media/2026/11/d56b329d-haerul-ambiya-iterbmcdydq-unsplash-1024x683.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>When organizations across the industry first adopted generative AI, most consumed it through a hosted API, but open-weight models are</p>\n<p>The post <a href=\"https://thenewstack.io/kubernetes-ai-learning-loop/\">Postcards from tomorrow: Powering the agentic era through open source</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-05T16:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gvisor-cncf-kubernetes-open-source/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/kubernetes-ai-learning-loop/"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "208e40b174256d48",
+    "title": "From open beta to global GA: What Docusign learned by bringing contract AI workflows to agents",
+    "url": "https://thenewstack.io/docusign-mcp-server-agents/",
+    "summary": "<img alt=\"Glowing golden keys multiplied in a kaleidoscope of mirrors, evoking access permissions for AI agents\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/5754f980-veer-mickey-shah-bkc-x5jojw-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Connecting an AI agent to enterprise software is relatively easy. Making sure it can find the right information, carry out</p>\n<p>The post <a href=\"https://thenewstack.io/docusign-mcp-server-agents/\">From open beta to global GA: What Docusign learned by bringing contract AI workflows to agents</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-05T14:50:21+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/monitoring-production-ai-agents/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/docusign-mcp-server-agents/"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "a8eb03aa649bca69",
+    "title": "IntelliJ Scala Plugin 2026.3 Is Out!",
+    "url": "https://blog.jetbrains.com/scala/2026/11/06/intellij-scala-plugin-2026-3-is-out/",
+    "summary": "Hello everyone! Scala plugin 2026.3 is here! This release brings more accurate Scala 3 code analysis, substantially reworked Twirl support for Play Framework developers, and more efficient compiler-based highlighting that reduces redundant background work. You’ll also find improvements to build-tool support, debugging, and everyday editing. Let’s take a closer look at what’s new. Scala 3 [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-06T12:15:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/scala/2026/11/06/intellij-scala-plugin-2026-3-is-out/"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "ea3f1da3c44d1cc8",
+    "title": "The SaaS apocalypse started in October",
+    "url": "https://freek.dev/3213-the-saas-apocalypse-started-in-october",
+    "summary": "<p>Using Stripe data across about 181,000 subscription businesses, Mack Grenfell argues the SaaS slowdown became visible in October, when median revenue growth turned negative across most peer groups. He suggests the bigger problem is fewer new signups, likely driven by AI-fueled competition rather than customer churn.</p>\n\n\n<a href=\"https://mackgrenfell.com/writing/saas-growth-2026\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-06T12:30:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3213-the-saas-apocalypse-started-in-october"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "5099abe9ebdfcd26",
+    "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+    "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+    "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.\n\n\"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-06T08:04:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "7afe118a7fed778c",
+    "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+    "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+    "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.\n\nThe attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-06T12:06:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "eb0e422cc5c8647f",
+    "title": "Protesters break into Microsoft data center site in Amsterdam",
+    "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+    "summary": "Protesters have broken into a construction site of a new Microsoft data center in Amsterdam this morning. Members of the Geef Tegengas group helped organize the protest against the construction of three 85-meter data center towers in the outskirts of Amsterdam. Reuters reports that around 100 people made it into the construction site, with some [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-06T11:55:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam"
+      }
+    ],
+    "score": 19.56
+  },
+  {
+    "id": "2e3d366d0cccf070",
+    "title": "Welcome to life in the chip age",
+    "url": "https://stackoverflow.blog/2026/11/06/welcome-to-life-in-the-chip-age/",
+    "summary": "Ryan sits down with Rakesh Kumar, professor of computer engineering at the University of Illinois Urbana-Champaign, about the astounding complexity of manufacturing modern semiconductors, the massive environmental and geopolitical footprint of AI data centers, and how AI models are rapidly shifting the future of chip design.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-06T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/06/welcome-to-life-in-the-chip-age/"
+      }
+    ],
+    "score": 19.26
+  },
+  {
+    "id": "3b367727b60d14ce",
+    "title": "A New Community For In-House UX People",
+    "url": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/",
+    "summary": "We’ve been working on something new! We’ve teamed up for a **new small community** for people doing UX-inside organizations &mdash; with weekly calls and a shared library of the business cases, templates, and research plans that have actually worked for other folks. [Jump to details](https://uxinsiders.boagworld.com/).",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-06T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/"
+      }
+    ],
+    "score": 19.2
+  },
+  {
+    "id": "7d2cfac0bc7313f8",
+    "title": "The Enough Phone is made by and for people fed up with big screens",
+    "url": "https://www.theverge.com/tech/1028160/enough-small-phone-kickstarter-sleke",
+    "summary": "It's a bad time and maybe also a great time to make a new smartphone. Brennan Jordan and Austin Boer are two-thirds of the trio behind the Enough Phone, a small phone that will run your choice of stock Android or the minimalist OdysseyOS. They're currently seeking funding on Kickstarter, and just a day after [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-06T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1028160/enough-small-phone-kickstarter-sleke"
+      }
+    ],
+    "score": 19.19
+  },
+  {
+    "id": "1a1901bd205c4cd0",
+    "title": "Java Annotated Monthly – November 2026",
+    "url": "https://blog.jetbrains.com/idea/2026/11/java-annotated-monthly-november-2026/",
+    "summary": "October kept the Java world busy, with JDK news, fresh tutorials, Kotlin updates, AI experiments, and plenty more from across the wider ecosystem. We&#8217;ve gathered the best of it in one place, so you can skip the scrolling and get straight to the good stuff. To top it all off, Piotr Przybył joins us as [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-06T08:07:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/idea/2026/11/java-annotated-monthly-november-2026/"
+      }
+    ],
+    "score": 19.17
+  },
+  {
+    "id": "d78746ac26ceeaf7",
+    "title": "Prevent Duplicate File Uploads With Laravel Storage Dedupler",
+    "url": "https://laravel-news.com/laravel-storage-dedupler?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/laravel-storage-dedupler\"><img alt=\"Prevent Duplicate File Uploads With Laravel Storage Dedupler\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/Laravel-Storage-Dedupler-LN.png\" /></a></p>\n                                        <hr />\n\n                    <p>Laravel Storage Dedupler uses SHA-1 hashes to prevent duplicate file storage, attach files to Eloquent models, and analyse existing directories.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/laravel-storage-dedupler\">Prevent Duplicate File Uploads With Laravel Storage Dedupler</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-03T23:56:25+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-herd-2?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-strict-request-input?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-storage-dedupler?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "64f67f3e07080ae9",
+    "title": "HumanLayer just got acquired by Factory. But it gave users a way out first.",
+    "url": "https://thenewstack.io/factory-acquires-humanlayer-agents/",
+    "summary": "<img alt=\"chess pieces and hands moving them\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"819\" src=\"https://cdn.thenewstack.io/media/2026/11/e3c52d43-barsrsind-i65zoeyj2vm-unsplash-1024x819.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Factory has acquired HumanLayer, its third AI coding startup in less than a month, as it works to fold more</p>\n<p>The post <a href=\"https://thenewstack.io/factory-acquires-humanlayer-agents/\">HumanLayer just got acquired by Factory. But it gave users a way out first.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-05T20:02:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/factory-acquires-humanlayer-agents/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "0358467131b90fca",
+    "title": "I’ve reviewed almost every Android foldable this year — here’s how the iPhone Duo compares",
+    "url": "https://www.theverge.com/tech/1026410/iphone-duo-foldable-android-samsung-google-xiaomi-oppo-honor",
+    "summary": "When I first read Allison and Nilay's Verge review of the iPhone Duo, I was immediately struck by one of their complaints: that the cover display is too small. That's not how the Samsung Galaxy Z Fold 8 feels, I thought. Had they got it wrong? After a week and a half using the Duo, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-06T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1026410/iphone-duo-foldable-android-samsung-google-xiaomi-oppo-honor"
+      }
+    ],
+    "score": 18.92
+  },
+  {
+    "id": "bd4def414eba6028",
+    "title": "Inside GitHub’s new Git storage architecture",
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "summary": "<p>GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.</p>\n<p>The post <a href=\"https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/\">Inside GitHub&#8217;s new Git storage architecture</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "GitHub Engineering",
+    "published": "2026-11-05T20:23:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitHub Engineering",
+        "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
+      }
+    ],
+    "score": 18.91
+  },
+  {
+    "id": "92b82c0816b06b66",
+    "title": "The Real Python Podcast – Episode #318: Free-Threaded Python: Why Python Devs Should Know About the ABI",
+    "url": "https://realpython.com/podcasts/rpp/318/",
+    "summary": "Why should every Python developer know about the CPython ABI? This week on the show, we speak with Nathan Goldbaum about free-threaded Python and the changes to the Python Application Binary Interface.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-06T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/podcasts/rpp/318/"
+      }
+    ],
+    "score": 18.01
+  },
+  {
+    "id": "1f5288f60a752620",
+    "title": "Google Cloud API Gateway Introduces Streaming Support for Real-Time and AI-Powered Applications",
+    "url": "https://www.infoq.com/news/2026/11/gcp-api-gateway-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/gcp-api-gateway-streaming/en/headerimage/google-adk-java-1-0-1793893770890.jpeg\" /><p>Google has announced the public preview of streaming support for API Gateway, extending its traditional request-response model to support applications requiring real-time communication. According to Google, this is particularly relevant for AI applications that provide streaming model responses, multi-step agent workflows, and interactive sessions.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-05T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/gcp-api-gateway-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "261a18cc13ebe55f",
+    "title": "The Data Product Platform Navigator",
+    "url": "https://martinfowler.com/articles/data-product-platform-nav.html",
+    "summary": "<div class=\"img-link\"><a href=\"https://martinfowler.com/articles/data-product-platform-nav.html\"><img src=\"https://martinfowler.com/articles/data-product-platform-nav/card.png\" width=\"350px\" /></a></div>\n\n<p>Many organizations adopting data mesh and data products face a common\n     challenge. They may be tasked with building a self-service platform for\n     data products and data mesh from scratch, or they may have an existing\n     platform that suffers from low adoption, preventing their data mesh from\n     scaling. This article provides a platform navigator, based on the CNCF's\n     Platform Engineering Maturity Model, to help you reason about your current\n     situation and determine the next steps for your platform.</p>\n\n<p><a class=\"more\" href=\"https://martinfowler.com/articles/data-product-platform-nav.html\">more…</a></p>",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-05T14:11:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/articles/data-product-platform-nav.html"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "228e7749f6ca62c7",
+    "title": "Error'd: Remember Remember",
+    "url": "https://thedailywtf.com/articles/remember-remember",
+    "summary": "<p>\"I Already Hate Running... I Don't Want To Have To Run Each Street A Second Time!\"\nplods \n<strong>WeaponizedFun</strong>\n\"I've gotten a couple of notifications from CityStrides today that\nthey've updated streets for several cities, but it looks like\nthey're doubling the effort it's going to take to finish\ncompleting these roads.\"\n</p><blockquote><p><a href=\"#d72b3a03e73644879ec43ebf4d626587\"><img alt=\"d72b3a03e73644879ec43ebf4d626587\" border=\"0\" src=\"https://d3hvi6t161kfmf.cloudfront.net/images/2026/11/05/d72b3a03e73644879ec43ebf4d626587.png\" /></a></p><p> </p></blockquote>\n\n<p>\"I'll be back in 292 years\" concedes \n<strong>Rick H.</strong>\n\"I asked GoDaddy for a single whois record. They gave it\nto me, and told me if I wanted to ask\nanything else to come back in 300 years.\"\n</p><blockquote><p><a href=\"#14d1f05fdc7f4a1a91c06bd07e18e9a1\"><img alt=\"14d1f05fdc7f4a1a91c06bd07e18e9a1\" border=\"0\" src=\"https://d3hvi6t161kfmf.cloudfront.net/images/2026/11/05/14d1f05fdc7f4a1a91c06bd07e18e9a1.",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-06T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/remember-remember"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "00ec120f276d0db6",
+    "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
+    "url": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
+    "summary": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-06T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk"
+      }
+    ],
+    "score": 17.44
+  }
+]

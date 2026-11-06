@@ -1,0 +1,258 @@
+---
+HEADLINE: AI adoption puts evidence and control to the test
+
+Friday’s briefing connects expanding AI capabilities with the harder work of validating results, limiting authority, and operating systems reliably. Across developer tooling, cloud services, and security, the strongest theme is the gap between making a capability available and establishing that it is ready for production.
+
+## 🧑‍💻 Software Engineering
+
+### [btoa() Is Lying to You: Base64, Unicode, and the Mojibake in Your JWT](https://dev.to/zhihu_wu_dea1d82af01a04d7/btoa-is-lying-to-you-base64-unicode-and-the-mojibake-in-your-jwt-bjd)
+*An apparently successful encoding operation can conceal a mismatch between text and bytes.*
+
+The article starts with a deceptively ordinary input: `café`. Its JavaScript example produces `Y2Fm6Q==`, then turns to Python to inspect the decoded bytes. The central distinction is that `btoa()` operates on byte-valued input, while a JavaScript string is not itself a byte encoding. Getting a Base64 string back therefore does not establish that the text was represented as the receiving system expects.
+
+For application teams, the useful lesson is to test the boundary between implementations, rather than only testing whether one implementation can reverse its own output. The title places the problem in a JWT context, but the supplied excerpt stops before showing the complete token example or proposed fix. It supports an interoperability warning, not a conclusion that a particular JWT library or authentication system is vulnerable.
+
+*Sources: [Dev.to](https://dev.to/zhihu_wu_dea1d82af01a04d7/btoa-is-lying-to-you-base64-unicode-and-the-mojibake-in-your-jwt-bjd)*
+
+### [Presentation: The Socio-Technical Staff+ Engineer: Architecture, Culture and Organisational Change](https://www.infoq.com/presentations/sociotechnical-staff-engineer-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Staff-plus engineering is framed as creating the conditions for architecture to succeed, not merely choosing its components.*
+
+Vanessa Formicola’s presentation challenges “wishful architecture”: technical designs that fail to account for the organization expected to implement and sustain them. Her framing includes organizational maturity, reward structures, team dynamics, and the geopolitical climate. These are presented as part of engineering judgment rather than background considerations outside the architect’s remit.
+
+The implication is a broader definition of technical leadership. A design may need changes to incentives, coordination, or responsibilities before a new tool can deliver its intended value. That perspective provides a useful counterweight to the day’s platform announcements: availability does not resolve adoption conditions. The supplied description outlines the argument, however, without providing case-study results that would establish the effectiveness of particular interventions.
+
+*Sources: [InfoQ](https://www.infoq.com/presentations/sociotechnical-staff-engineer-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [TypeScript 7.1 Beta: Restores the Compiler API and Makes Vue and Svelte First-Class](https://www.infoq.com/news/2026/11/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*The beta addresses tooling integration gaps, but migration remains more complicated than a compiler upgrade.*
+
+TypeScript 7.1 Beta, announced October 20, restores the compiler API removed in 7.0, now divided into separate entry points. It also introduces content mappers, enabling tools such as Vue to check non-standard files. InfoQ reports that one Vue project’s type-checking time fell from 14.19 seconds to 3.10 seconds—a concrete improvement, though not a benchmark that establishes expected performance across projects.
+
+The important change is the renewed path for framework and tooling integration, not speed alone. Separate API entry points mean restoration should not be read as a promise of unchanged integration code. An editor issue remains open, and some teams may need TypeScript 6 alongside 7. The title also highlights Svelte, but the supplied description gives no comparable Svelte-specific result; adoption decisions should retain those distinctions.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+## Cloud
+
+### [Work IQ: SharePoint Tools](https://devblogs.microsoft.com/microsoft365dev/work-iq-sharepoint-mcp-tools/)
+*Microsoft is extending its workplace intelligence layer into SharePoint integrations for custom applications and agents.*
+
+Microsoft says new SharePoint tools are coming to the Work IQ API, exposing SharePoint content and actions to custom applications and agents through the workplace intelligence layer used by Microsoft Copilot. The announcement positions Work IQ around organizational knowledge, people, and workflows, rather than treating an agent’s information access as an isolated document-retrieval feature.
+
+For developers, the potential significance is a common integration surface for workplace context and actions. That could influence where teams place integration logic, but the supplied announcement does not enumerate tools, permission behavior, availability dates, or operational limits. “Coming” is the relevant status: the excerpt establishes direction, not enough detail to assess production readiness or the effort required to replace existing SharePoint integrations.
+
+*Sources: [Microsoft 365 Developer Blog](https://devblogs.microsoft.com/microsoft365dev/work-iq-sharepoint-mcp-tools/)*
+
+### [Gemini Omni 1.2 Flash now available on AI Gateway](https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway)
+*Vercel adds a video-generation integration that includes editing and iterative refinement, not just one-shot output.*
+
+Vercel’s AI Gateway now offers Google’s Gemini Omni 1.2 Flash through one API key without a separate Google account. The supplied announcement describes generation of 3–15-second videos with native audio, editing of source clips of the same length with up to six reference images, and extensions of 3–10 seconds per call to a maximum total of 30 seconds. Supported output includes 360p, 720p, 1080p, and 4K in landscape or portrait formats.
+
+The integration also exposes follow-up refinement through `previousInteractionId`, while AI SDK’s `generateText` or `streamText` can return the video as a file. That makes interaction state relevant to application design, rather than reducing the workflow to submitting a prompt and saving a result. The supplied material establishes these interfaces and limits, but contains no pricing, latency measurements, or quality comparisons; those remain separate evaluation questions.
+
+*Sources: [Vercel](https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway)*
+
+### [Vercel Schedules is now in public beta](https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta)
+*Scheduling expands beyond recurring HTTP invocation into private functions, queues, and runtime-created work.*
+
+Vercel Schedules is in public beta on all plans, supporting recurring and one-time tasks across production, preview, and custom environments. Static definitions in `vercel.json` can target a private Vercel Function, an HTTP path, or a Vercel Queue topic; schedules created at runtime target a Queue topic. Schedules can also be enabled, disabled, or run on demand without redeployment.
+
+The distinction between targets matters. A function given a `schedule/v1beta` trigger becomes private, with no public URL and invocation restricted to Vercel’s scheduling infrastructure. Runtime-created schedules, meanwhile, require a queue-oriented design rather than offering all static target types. Schedules succeeds Cron Jobs, but existing Cron Jobs continue working. That permits a deliberate migration rather than implying an immediate replacement deadline; the excerpt does not specify delivery guarantees or retry behavior.
+
+*Sources: [Vercel](https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta)*
+
+## 🔧 DevOps & SRE
+
+### [Faster LLM inference startup: What you need to know](https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/)
+*A newly started inference replica is not useful capacity until it can actually serve requests.*
+
+The CNCF article focuses on the work between process startup and the first generated response. An LLM server may need to load model weights, initialize GPU resources, and compile kernels before becoming useful. The supplied excerpt ends during its list of startup activities, so it does not establish a complete optimization strategy or quantify how much each stage contributes.
+
+The operational implication is nevertheless clear: replica creation and serving readiness are different milestones. Capacity planning that treats them as equivalent can overstate how quickly additional inference capacity becomes available. For SRE teams, the article’s framing argues for examining the path to request-serving readiness, not just deployment or process-start timing. No specific startup reduction, configuration recommendation, or performance guarantee can be drawn from the excerpt alone.
+
+*Sources: [CNCF Blog](https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/)*
+
+### [What’s new with Grafana variables: less clutter, easier reuse across dashboards, and more](https://grafana.com/blog/whats-new-with-grafana-variables-less-clutter-easier-reuse-across-dashboards-and-more/)
+*Grafana is addressing the maintenance burden created when reusable dashboards accumulate poorly scoped controls.*
+
+Grafana describes a limitation of its historical variable model: one flat list at the top of each dashboard, shared by every panel. Variables make dashboards adaptable across clusters, regions, and services, but that arrangement becomes cumbersome when a control matters only to some panels. Shared controls copied between dashboards create another burden, because each copy must be maintained separately.
+
+The announcement says two new features have rolled out to address these problems, and its title emphasizes reduced clutter and easier reuse. The supplied excerpt cuts off before identifying those features, so their precise scoping and reuse mechanics cannot be assessed here. The underlying engineering issue is still significant: dashboard flexibility can create configuration duplication. The change should be evaluated on whether it reduces that duplication without making active filtering harder to understand.
+
+*Sources: [Grafana Blog](https://grafana.com/blog/whats-new-with-grafana-variables-less-clutter-easier-reuse-across-dashboards-and-more/)*
+
+### [GitLab 19.5 Makes Agentic Development a Governed Part of the DevOps Platform](https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*GitLab is treating external agent interaction as a platform concern alongside development governance.*
+
+GitLab 19.5, released October 15, makes the GitLab MCP server generally available and expands how external AI agents can interact with the platform. InfoQ describes agentic development and governance as central to the release. This is coverage of an earlier release, rather than evidence of a new Friday launch, but it fits the broader shift toward integrating agents into established development workflows.
+
+The meaningful distinction is between enabling an agent connection and defining the conditions under which it should operate. A platform-level integration creates a place to consider those questions together, but the supplied description does not specify approval controls, permission boundaries, audit behavior, or feature availability by tier. It therefore supports the direction of the release, not a conclusion that every governance requirement is already covered.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [GitHub Actions Lockfiles Reach GA to Secure Workflow Dependencies](https://www.infoq.com/news/2026/11/github-actions-lockfiles-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Workflow dependency lockfiles bring dependency control into focus without requiring references to lose their readability.*
+
+GitHub made Actions workflow dependency lockfiles generally available on October 28, two weeks after public preview. The supplied report says workflows can retain clear tag and branch references. The notable proposition is therefore not simply another way to write workflow files, but a way to combine readable dependency declarations with a dedicated locking mechanism.
+
+For teams, that separates two concerns often conflated in review: understanding which dependency a workflow intends to use and controlling its resolved dependency state. However, the excerpt does not describe lockfile generation, enforcement, update procedures, or coverage. General availability establishes release status; it does not, by itself, establish how an existing workflow becomes protected or whether adopting the feature changes every relevant dependency path.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/github-actions-lockfiles-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+## Security
+
+### [The Flood is Coming And The Pipes Were Already Full](https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html)
+*This commentary raises a preparedness concern, but the supplied excerpt does not substantiate its forecast.*
+
+Presented as an update on Athena and predictions about what comes next, the piece endorses Dario Amodei’s “We Must Pace the Frontier.” Its author describes spending the summer examining what models find and seeing a gap between model capabilities and wider readiness. That is an attributed assessment from the commentary, not a measured finding established by the material supplied here.
+
+The concern belongs in the broader discussion of whether organizations can absorb the consequences of more capable AI systems. But the excerpt ends before explaining Athena, presenting supporting observations, or detailing the predicted “flood.” It cannot establish the volume or nature of future security work, or demonstrate that particular defenses are inadequate. Its value in this briefing is as a warning to examine preparedness—not as evidence for a quantified threat forecast.
+
+*Sources: [The Hacker News](https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html)*
+
+### [Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)
+*The remediation channel is the critical operational detail: updating Windows alone does not deliver this Paint fix.*
+
+A fix for CVE-2026-83844 is available through the Microsoft Store, according to The Hacker News. The report identifies Paint build `11.2609.401.0` as the fixed version and says it was the newest build in all ten countries the publication checked. It describes the flaw as an out-of-bounds read that could allow remote code execution over a network.
+
+The practical implication is that operating-system patch status and application remediation status must be checked separately in this case. The report explicitly says Windows Update will not deliver the Paint fix, making the Store update path essential to remediation. Its ten-country check is useful evidence of observed availability, not proof of universal distribution. The supplied excerpt does not include the full severity rating, exploit prerequisites, or evidence of exploitation in the wild.
+
+*Sources: [The Hacker News](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)*
+
+### [sshole](https://sshhole.com)
+*The supplied links point toward an OpenSSH security issue, but the source package is too mixed to establish its technical scope.*
+
+The material accompanying “sshole” links to OpenSSH release notes for `10.6p2` and an Alpine Linux post whose URL identifies an OpenSSH password-authentication bypass. It also includes a discussion thread. Those references make the OpenSSH connection relevant, but the supplied excerpt contains no advisory text establishing affected versions, prerequisites, exploit mechanics, or a remediation procedure.
+
+Several entries in the accompanying coverage list are unrelated on their face, including a Paint CVE and other software repositories. They should not be treated as corroboration of one SSH vulnerability, and discussion popularity does not resolve that evidence gap. The defensible conclusion is narrow: an OpenSSH-related security story warrants attention, while its precise exposure and required action cannot be established from the supplied material. The release-note anchor alone is not enough to assert that a particular version fixes it.
+
+*Sources: [sshole](https://sshhole.com), [OpenSSH release notes](https://www.openssh.org/releasenotes.html#10.6p2), [Alpine Linux advisory link](https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/)*
+
+### [AWS Ships Continuum for Code Vulnerabilities](https://www.infoq.com/news/2026/11/aws-continuum-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*AWS combines exploitability testing with proposed fixes, while autonomous merging remains a separate trust question.*
+
+AWS has made Continuum for code vulnerabilities generally available in two regions. According to InfoQ, the service tests exploitability by running real exploits in a sandbox and then opens fixes as pull requests. Its published pricing includes charges both per finding processed and per line of code, making assessment volume and codebase size relevant to evaluating cost.
+
+The workflow connects evidence about a vulnerability with a reviewable remediation artifact, rather than ending at a finding. But demonstrating an exploit and demonstrating that a patch preserves intended behavior are different obligations. Practitioners’ questions about allowing autonomous merges reflect that distinction. The supplied description does not establish that autonomous merging is enabled, nor does it provide supported-language coverage, regional names, or measured remediation accuracy.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/aws-continuum-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Article: Identity as an Architectural Concern: Enterprise IAM Beyond Authentication](https://www.infoq.com/articles/identity-as-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Enterprise identity design shapes service boundaries and revocation behavior, not just the login experience.*
+
+Vaishnavi Khosla’s article argues that identity choices drive data models, service scope, and revocation policies. Drawing on service-account governance experience, it discusses graph-based approaches versus RBAC, integration with a vault outside the team’s ownership, and bounding revocation latency for an event stream. These examples move IAM from an authentication feature into the design of the system itself.
+
+The architectural implication is that identity cannot be evaluated solely at the moment access is granted. Ownership boundaries and the time required to withdraw authority also belong in the design. That connects directly to the day’s agent-security announcements: restricting an action is only one part of managing authority over time. The supplied summary does not prescribe a universal model or provide a specific revocation-latency target.
+
+*Sources: [InfoQ](https://www.infoq.com/articles/identity-as-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Vault Fork OpenBao Adds External Keys and Quantum-Ready TLS](https://www.infoq.com/news/2026/11/vault-fork-openbao-27/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*OpenBao 2.7 combines cryptographic changes with operational controls for distributed secrets infrastructure.*
+
+OpenBao 2.7 adds read scaling for PostgreSQL-backed deployments, support for external HSM and KMS keys, and post-quantum cryptographic algorithms. The release also introduces control groups for human review of sensitive operations and headers intended to maintain request consistency across load-balanced nodes. These changes span storage behavior, key integration, approval workflows, and distributed request handling.
+
+Those features address different concerns and should not be collapsed into a single “more secure” upgrade claim. External-key support affects integration choices, control groups add a human-review mechanism, and consistency headers address behavior across nodes. Although the title highlights quantum-ready TLS, the supplied description does not identify algorithms, defaults, or interoperability requirements. It therefore does not establish that every upgraded deployment automatically gains a particular post-quantum configuration.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/vault-fork-openbao-27/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Edera's Object Capability Bounded Authority Promises to Isolate Credentials From AI Agent Workloads](https://www.infoq.com/news/2026/11/ai-credentials-isolation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Edera proposes separating an agent’s permission to act from possession of the credentials that enable the action.*
+
+Edera’s Object Capability Bounded Authority uses hypervisor-enforced capabilities to limit an AI agent or MCP server to specific actions without storing secrets in its workload. The announcement distinguishes the authority required to perform a task from the underlying credentials. Initial releases cover scoped command execution and workload identity; credential-brokered API access is planned to follow.
+
+That release boundary is important. The model promises a different way to contain agent authority, but the supplied report does not establish that credential-brokered access to arbitrary APIs is already available. Conceptually, keeping secrets out of the workload addresses credential custody while scoped capabilities address allowed actions. Neither claim, on its own, demonstrates that an authorized action is appropriate in context, and the excerpt provides no independent security evaluation or deployment results.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/ai-credentials-isolation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+## AI/ML
+
+### [FDE 第 4 课 AI 系统怎么验收：评测集、消融实验、拒答率](https://dev.to/henry_lin_3ac6363747f45b4/fde-di-4-ke-ai-xi-tong-zen-yao-yan-shou-ping-ce-ji-xiao-rong-shi-yan-ju-da-lu-18l9)
+*Enterprise AI acceptance should rest on reproducible evaluations, component-level evidence, and correct refusal—not a curated demonstration.*
+
+The author describes an HR-policy question-answering evaluation in which reported end-to-end accuracy rises from 0.67 with framework defaults to 0.98 after successive changes. Crucially, one intermediate addition makes results worse: keyword/vector retrieval drops the score from 0.80 to 0.78 before a Chinese-tokenization bug is fixed. The sequence illustrates why a component’s theoretical value is not enough; measuring intermediate configurations can expose regressions that a polished final demonstration hides.
+
+Refusal behavior is treated as a separate acceptance criterion. The author reports moving from answering all eight questions that should have been refused to refusal accuracy of 0.88, with one ambiguous cafeteria-menu question documented as a remaining limitation. These are small, author-reported results, not general benchmarks. There is also a counting inconsistency: the text claims 64 evaluation items but lists 52 answerable and eight refusal items, totaling 60. That does not negate the evaluation approach, but reinforces its demand for inspectable, rerunnable evidence delivered with the code.
+
+*Sources: [Dev.to](https://dev.to/henry_lin_3ac6363747f45b4/fde-di-4-ke-ai-xi-tong-zen-yao-yan-shou-ping-ce-ji-xiao-rong-shi-yan-ju-da-lu-18l9)*
+
+### [Cult.fit builds operational muscle with Codex](https://openai.com/index/cultfit-builds-with-codex)
+*OpenAI’s customer account places coding assistance in cross-functional operational work, not only software-team workflows.*
+
+OpenAI says Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done. The supplied description establishes the organization and the broad adoption pattern, but does not identify particular tools, departments, deployment arrangements, or measured outcomes. It is a provider-published customer story rather than an independent evaluation.
+
+Its relevance is the proposed expansion of who builds internal software and where coding assistance contributes value. If cross-functional tool building is the objective, success needs to be judged in operational terms as well as by code production. However, the material supplied here does not establish productivity gains, maintenance costs, or governance practices. Those limits distinguish an account of adoption from evidence that the same approach will transfer successfully to another organization.
+
+*Sources: [OpenAI Blog](https://openai.com/index/cultfit-builds-with-codex)*
+
+### [How scientists use Claude](https://www.anthropic.com/research/how-researchers-use-claude)
+*Anthropic is studying scientific usage patterns, while separating observed activity from scenarios for future research acceleration remains essential.*
+
+Anthropic says its report uses privacy-preserving infrastructure to study scientific use of Claude, Claude Code, and Claude Science. Its stated scope includes variation across scientific fields and research tasks, explanations for those patterns, and scenarios in which AI could accelerate research. This frames scientific adoption as a set of differing workflows rather than one uniform use case.
+
+The distinction between observation and projection is central to interpreting the report. Usage patterns can describe where tools are being applied; scenarios about accelerated research address what might follow. The supplied abstract provides no sample sizes, field-level findings, methodological detail, or measured scientific outcomes. It therefore supports the report’s scope, but not a ranking of disciplines, a quantified productivity claim, or independent confirmation of the proposed explanations.
+
+*Sources: [Anthropic Blog](https://www.anthropic.com/research/how-researchers-use-claude)*
+
+## Quick Reads
+
+---
+
+- **[osFoundry 커스텀 앱 기능 정리, 사내 도구를 만들고 바로 배포하는 법](https://dev.to/tauchi-ko/osfoundry-keoseuteom-aeb-gineung-jeongri-sanae-dogureul-mandeulgo-baro-baepohaneun-beob-4io0)** — An overview of osFoundry’s custom app features for building and deploying internal tools, framed around turning a spreadsheet-based refund workflow into an admin interface. *Source: [Dev.to (Top)](https://dev.to/tauchi-ko/osfoundry-keoseuteom-aeb-gineung-jeongri-sanae-dogureul-mandeulgo-baro-baepohaneun-beob-4io0)*
+
+- **[After upgrading from Java 8, G1 stopped returning memory](https://dev.to/shinagawa-web/after-upgrading-from-java-8-g1-stopped-returning-memory-38n)** — The article examines memory-return behavior after a Java upgrade, highlighting the change in default garbage collector from Parallel GC to G1. *Source: [Dev.to (Top)](https://dev.to/shinagawa-web/after-upgrading-from-java-8-g1-stopped-returning-memory-38n)*
+
+- **[Operations Dashboard KPI: Operational Best Practices](https://dev.to/ts888/operations-dashboard-kpi-operational-best-practices-3m7i)** — A look at using dashboard KPIs to track daily operations, measure performance, and understand how organizational processes are working. *Source: [Dev.to (Top)](https://dev.to/ts888/operations-dashboard-kpi-operational-best-practices-3m7i)*
+
+- **[A star matches a star: the OpenSSH bypass on Alpine, and why patch windows just got shorter](https://dev.to/aeoninc/a-star-matches-a-star-the-openssh-bypass-on-alpine-and-why-patch-windows-just-got-shorter-17d9)** — The article discusses an OpenSSH bypass on Alpine and argues that it underscores shrinking windows for applying patches. *Source: [Dev.to (Top)](https://dev.to/aeoninc/a-star-matches-a-star-the-openssh-bypass-on-alpine-and-why-patch-windows-just-got-shorter-17d9)*
+
+- **[System 1 vs. System 2 in AI Engineering: Replacing Ambiguous LLM Judges with Calibrated Semantic Sensors (Jev) in Pure Go](https://dev.to/rodrigodosanjosoliveira/system-1-vs-system-2-in-ai-engineering-replacing-ambiguous-llm-judges-with-calibrated-semantic-4ek4)** — The author proposes calibrated semantic sensors implemented in Go as an alternative to ambiguous LLM judges, addressing checks that require more than compiler verification. *Source: [Dev.to (Top)](https://dev.to/rodrigodosanjosoliveira/system-1-vs-system-2-in-ai-engineering-replacing-ambiguous-llm-judges-with-calibrated-semantic-4ek4)*
+
+- **[Cybersecurity in the AI Era](https://dev.to/alexr/cybersecurity-in-the-ai-era-51p2)** — A practical guide for engineering leaders on trust, access, and accountability as scams become more convincing and AI tools gain broader access. *Source: [Dev.to (Top)](https://dev.to/alexr/cybersecurity-in-the-ai-era-51p2)*
+
+- **[SNMPv3 Users Are Scoped to an Authoritative Engine](https://dev.to/onaeiuspkz/snmpv3-users-are-scoped-to-an-authoritative-engine-3bl9)** — The article explains authoritative-engine scoping for SNMPv3 users, challenging the view that SNMPv3 is simply an upgrade from community strings. *Source: [Dev.to (Top)](https://dev.to/onaeiuspkz/snmpv3-users-are-scoped-to-an-authoritative-engine-3bl9)*
+
+- **[SAA-C03 Deep Dive: Designing Secure and Resilient AWS Architectures (Domains 1 & 2)](https://dev.to/certlandwebmaster/saa-c03-deep-dive-designing-secure-and-resilient-aws-architectures-domains-1-2-58c0)** — Originally published on CertLand, this guide covers secure and resilient AWS architecture design for Domains 1 and 2 of SAA-C03. *Source: [Dev.to (Top)](https://dev.to/certlandwebmaster/saa-c03-deep-dive-designing-secure-and-resilient-aws-architectures-domains-1-2-58c0)*
+
+- **[The Only Coding-Agent Benchmark That Matters Is Your Own Revert Rate](https://dev.to/gabrielanhaia/the-only-coding-agent-benchmark-that-matters-is-your-own-revert-rate-3id8)** — The author argues that a team’s own revert rate is the most meaningful benchmark for evaluating coding agents. *Source: [Dev.to (Top)](https://dev.to/gabrielanhaia/the-only-coding-agent-benchmark-that-matters-is-your-own-revert-rate-3id8)*
+
+- **[Physicl raises $10M to make the digital world real enough for robots](https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/)** — TechCrunch reports that Physicl raised $10 million to tackle robotics’ sim-to-real gap using a pipeline originally built to market goods online. *Source: [TechCrunch](https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/)*
+
+- **[Postcards from tomorrow: Powering the agentic era through open source](https://thenewstack.io/kubernetes-ai-learning-loop/)** — The article explores the role of open source in powering the agentic era. *Source: [The New Stack](https://thenewstack.io/kubernetes-ai-learning-loop/)*
+
+- **[From open beta to global GA: What Docusign learned by bringing contract AI workflows to agents](https://thenewstack.io/docusign-mcp-server-agents/)** — Docusign shares lessons from moving agent-accessible contract AI workflows from open beta to global general availability. *Source: [The New Stack](https://thenewstack.io/docusign-mcp-server-agents/)*
+
+- **[IntelliJ Scala Plugin 2026.3 Is Out!](https://blog.jetbrains.com/scala/2026/11/06/intellij-scala-plugin-2026-3-is-out/)** — JetBrains announces Scala plugin 2026.3, featuring more accurate Scala 3 code analysis and substantially reworked Twirl support for Play Framework. *Source: [JetBrains Blog](https://blog.jetbrains.com/scala/2026/11/06/intellij-scala-plugin-2026-3-is-out/)*
+
+- **[The SaaS apocalypse started in October](https://freek.dev/3213-the-saas-apocalypse-started-in-october)** — The post highlights Mack Grenfell’s argument that a SaaS slowdown became visible in October, drawing on Stripe data from about 181,000 subscription businesses. *Source: [Freek Van der Herten](https://freek.dev/3213-the-saas-apocalypse-started-in-october)*
+
+- **[Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html)** — The Hacker News reports that a Chainalysis breach exposed all users’ credentials and forced key services offline, with an investigation into the agentic cyberattack ongoing. *Source: [The Hacker News](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html)*
+
+- **[Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers](https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html)** — Researchers at Forever Security report that a browser extension able to run scripts on claude.ai could use Claude Dispatch to make Claude Desktop execute code on a user’s computer. *Source: [The Hacker News](https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html)*
+
+- **[Protesters break into Microsoft data center site in Amsterdam](https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam)** — The Verge reports that protesters entered the construction site of a new Microsoft data center in Amsterdam, with members of Geef Tegengas helping organize the action. *Source: [The Verge - Tech](https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam)*
+
+- **[Welcome to life in the chip age](https://stackoverflow.blog/2026/11/06/welcome-to-life-in-the-chip-age/)** — Ryan speaks with Rakesh Kumar, a computer engineering professor at the University of Illinois Urbana-Champaign, about the complexity of computer chips. *Source: [Stack Overflow Blog](https://stackoverflow.blog/2026/11/06/welcome-to-life-in-the-chip-age/)*
+
+- **[A New Community For In-House UX People](https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/)** — Smashing Magazine introduces a small community for people doing UX work inside organizations, with weekly calls. *Source: [Smashing Magazine](https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/)*
+
+- **[The Enough Phone is made by and for people fed up with big screens](https://www.theverge.com/tech/1028160/enough-small-phone-kickstarter-sleke)** — The Verge profiles the Enough Phone, a smartphone aimed at people tired of large screens, and its creators, including Brennan Jordan and Austin Boer. *Source: [The Verge - Tech](https://www.theverge.com/tech/1028160/enough-small-phone-kickstarter-sleke)*
+
+- **[Java Annotated Monthly – November 2026](https://blog.jetbrains.com/idea/2026/11/java-annotated-monthly-november-2026/)** — JetBrains rounds up October’s Java ecosystem developments, including JDK news, tutorials, Kotlin updates, and AI experiments. *Source: [JetBrains Blog](https://blog.jetbrains.com/idea/2026/11/java-annotated-monthly-november-2026/)*
+
+- **[Prevent Duplicate File Uploads With Laravel Storage Dedupler](https://laravel-news.com/laravel-storage-dedupler?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews)** — The article introduces Laravel Storage Dedupler as a tool for preventing duplicate file uploads. *Source: [Laravel News](https://laravel-news.com/laravel-storage-dedupler?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews)*
+
+- **[HumanLayer just got acquired by Factory. But it gave users a way out first.](https://thenewstack.io/factory-acquires-humanlayer-agents/)** — The New Stack reports on Factory’s acquisition of HumanLayer and the exit option HumanLayer provided to users beforehand. *Source: [The New Stack](https://thenewstack.io/factory-acquires-humanlayer-agents/)*
+
+- **[I’ve reviewed almost every Android foldable this year — here’s how the iPhone Duo compares](https://www.theverge.com/tech/1026410/iphone-duo-foldable-android-samsung-google-xiaomi-oppo-honor)** — A reviewer compares the iPhone Duo with Android foldables reviewed this year, including a discussion of its cover display. *Source: [The Verge - Tech](https://www.theverge.com/tech/1026410/iphone-duo-foldable-android-samsung-google-xiaomi-oppo-honor)*
+
+- **[Inside GitHub’s new Git storage architecture](https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/)** — GitHub explains its new Git storage architecture, designed to let thousands of agents push to a single repository simultaneously. *Source: [GitHub Engineering](https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/)*
+
+- **[The Real Python Podcast – Episode #318: Free-Threaded Python: Why Python Devs Should Know About the ABI](https://realpython.com/podcasts/rpp/318/)** — Nathan Goldbaum joins the podcast to discuss free-threaded Python and why Python developers should understand the CPython ABI. *Source: [Real Python](https://realpython.com/podcasts/rpp/318/)*
+
+- **[Google Cloud API Gateway Introduces Streaming Support for Real-Time and AI-Powered Applications](https://www.infoq.com/news/2026/11/gcp-api-gateway-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)** — InfoQ reports that Google Cloud API Gateway has introduced streaming support for real-time and AI-powered applications. *Source: [InfoQ](https://www.infoq.com/news/2026/11/gcp-api-gateway-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+- **[The Data Product Platform Navigator](https://martinfowler.com/articles/data-product-platform-nav.html)** — The article presents the Data Product Platform Navigator, focused on data product platforms. *Source: [Martin Fowler](https://martinfowler.com/articles/data-product-platform-nav.html)*
+
+- **[Error'd: Remember Remember](https://thedailywtf.com/articles/remember-remember)** — This Error’d installment includes a reader’s complaint about having to run each street a second time. *Source: [The Daily WTF](https://thedailywtf.com/articles/remember-remember)*
+
+- **[UK Warns Its Critical Infrastructure Faces Grave Risk](https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk)** — Dark Reading reports on a UK warning about risks to critical infrastructure and the Labour-led government’s push to address AI risks to national networks and industry. *Source: [Dark Reading](https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk)*

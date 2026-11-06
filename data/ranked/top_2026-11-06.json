@@ -1,0 +1,382 @@
+[
+  {
+    "id": "cf23fc7a12cddaa5",
+    "title": "FDE 第 4 课 AI 系统怎么验收：评测集、消融实验、拒答率",
+    "url": "https://dev.to/henry_lin_3ac6363747f45b4/fde-di-4-ke-ai-xi-tong-zen-yao-yan-shou-ping-ce-ji-xiao-rong-shi-yan-ju-da-lu-18l9",
+    "summary": "<p><strong>「demo 效果很好」在企业采购里不值一分钱。</strong></p>\n\n<p>因为 demo 时供应商问的是自己挑的问题。专业的 AI 系统验收靠三样东西：</p>\n\n<p><strong>一、评测集（eval set）</strong><br />\n上线前先写好一组问题 + 标准答案，覆盖正常问题和「应该拒答」的问题。我做 HR 制度问答时写了 64 条：52 条问答 + 8 条应拒答（问个人工资、问假病假条怎么开、问别家公司制度）。</p>\n\n<p>没有评测集，优化就是玄学——改了一版，好了还是坏了，全靠感觉。</p>\n\n<p><strong>二、消融实验（ablation）</strong><br />\n每加一个技术组件，单独测它值多少分。</p>\n\n<p>▪️ v0 框架默认配置：端到端正确率 <strong>0.67</strong><br />\n▪️ + 按章节切分：0.80<br />\n▪️ + 关键词/向量融合（但中文分词有 bug）：0.78 ⬇️<br />\n▪️ + 修好中文分词：0.81<br />\n▪️ + 元数据过滤（地区/版本）：0.83<br />\n▪️ + 拒答 + 表格查表：<strong>0.98</strong></p>\n\n<p>看到第三行了吗？加了一个「理论上应该变好」的组件，分数反而掉了——因为框架的中文分词默默失效了。<strong>没有消融实验，这个 bug 永远发现不了，系统带病上线。</strong></p>\n\n<p><strong>三、拒答准确率</strong><br />\nv0 的拒答准确率是 <strong>0.00</strong>——8 个不该答的问题全答了。企业场景里，「不该答却答了」比「该答没答出」危险十倍。v1 做到 0.88，剩下的 1 条是「食堂今天有什么菜」这种真歧义，如实标注为已知不足。</p>\n\n<p><strong>验收时怎么问供应商：</strong></p>\n\n<ol>\n<li>评测集多少条？拒答样本占比？</li>\n<li>能不能给每个组件的消融数据？</li>\n<li>评测结果是不是随代码一起交付、我能复跑？</li>\n</ol>\n\n<p>答不上来的，demo 再好看也别签。</p>\n\n<p>下节课（本系列最后一课）：企业 AI 落地的两大流派——为什",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:01:11+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/henry_lin_3ac6363747f45b4/fde-di-4-ke-ai-xi-tong-zen-yao-yan-shou-ping-ce-ji-xiao-rong-shi-yan-ju-da-lu-18l9"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/motion-y/how-ai-agents-work-and-when-they-need-human-approval-3kmn"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "183140f64d8aebb8",
+    "title": "Work IQ: SharePoint Tools",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/work-iq-sharepoint-mcp-tools/",
+    "summary": "<p>Bring SharePoint into your custom apps and agents with Work IQ API New SharePoint tools are coming to the Work IQ API, bringing SharePoint content and actions to your custom apps and agents through the same workplace intelligence layer that powers Microsoft Copilot. Work IQ connects AI to your organization’s knowledge, people, and workflows, combining [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/work-iq-sharepoint-mcp-tools/\">Work IQ: SharePoint Tools</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-06T08:30:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/work-iq-sharepoint-mcp-tools/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c5df40b679df5113",
+    "title": "btoa() Is Lying to You: Base64, Unicode, and the Mojibake in Your JWT",
+    "url": "https://dev.to/zhihu_wu_dea1d82af01a04d7/btoa-is-lying-to-you-base64-unicode-and-the-mojibake-in-your-jwt-bjd",
+    "summary": "<p>A four-character name broke my base64 encoder last week. Not the network, not the token — the string <code>café</code>. Here is what I found after pulling the whole thing apart.</p>\n\n<h2>\n  \n  \n  1. <code>btoa()</code> encodes bytes, and a JS string is not bytes\n</h2>\n\n\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight javascript\"><code><span class=\"nf\">btoa</span><span class=\"p\">(</span><span class=\"dl\">'</span><span class=\"s1\">café</span><span class=\"dl\">'</span><span class=\"p\">)</span>   <span class=\"c1\">// \"Y2Fm6Q==\"</span>\n</code></pre>\n\n</div>\n\n\n\n<p>Looks right. Decode it somewhere that isn't JavaScript:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight python\"><code><span class=\"o\">&gt;&gt;&gt;</span> <span class=\"n\">base64</span><span class=\"p\">.</span><span class=\"nf\">b64decode</span><span class=\"p\">(</span><span class=\"sh\">'</span><span class=\"s\">Y2Fm6Q==</span><span class=\"sh\">'</span><span class=\"p\">)</span>\n<span class=\"sa\">b</sp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-06T13:02:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/zhihu_wu_dea1d82af01a04d7/btoa-is-lying-to-you-base64-unicode-and-the-mojibake-in-your-jwt-bjd"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "0fe52fcc94cf6563",
+    "title": "Gemini Omni 1.2 Flash now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gemini-omni-1.2-flash\">Gemini Omni 1.2 Flash</a> from Google is now available on AI Gateway. Generate videos from text prompts with one API key and no separate Google account.</p><p>Gemini Omni 1.2 Flash generates 3–15 second videos with native audio and edits 3–15 second source clips with up to six reference images. Extend videos by 3–10 seconds per call, up to 30 seconds total, or refine generated clips in follow-up calls using <code>previousInteractionId</code>. Output supports 360p, 720p, 1080p, and 4K in 16:9 or 9:16. Use <code>generateText</code> or <code>streamText</code> in <a href=\"https://ai-sdk.dev/docs/ai-sdk-core/generating-text\">AI SDK</a> to receive the generated video as a file.</p><h2>Generate a video</h2><p>Use <code>google/gemini-omni-1.2-flash</code> as the model name. This example generates a three-second, 360p clip and saves it as <code>video.mp4</code>:</p><div></div><h2>Receive video in a streaming response</h2><p",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-05T00:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway"
+      },
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+      },
+      {
+        "name": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "49557071b1a85be1",
+    "title": "Vercel Schedules is now in public beta",
+    "url": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+    "summary": "<p><a href=\"https://vercel.com/docs/schedules\">Vercel Schedules</a> is now in public beta on all plans. Run tasks on a recurring cadence or at a single point in time, in production, preview, or custom environments.</p><p>Schedules in <code>vercel.json</code> can target a private Vercel Function, an HTTP path, or a Vercel Queue topic, and schedules created at runtime target a Queue topic. Any schedule can be enabled, disabled, or run on demand without redeploying.</p><p><b>Define a static schedule:</b></p><div></div><p>Adding a <code>schedule/v1beta</code> trigger makes the function private. It has no public URL and only the Vercel schedule infrastructure can invoke it.</p><p><b>Handle the dispatch:</b></p><div></div><p><b>Create a schedule at runtime:</b></p><div></div><p>Schedules is the successor to <a href=\"https://vercel.com/docs/cron-jobs\">Cron Jobs</a>. Existing Cron Jobs continue to work, and the <a href=\"vercel.com/docs/schedules/migrate-from-cron-jobs\">migration guide</a> cove",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-05T17:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/introducing-vercel-schedules"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "d26ed97d66188ee5",
+    "title": "Faster LLM inference startup: What you need to know",
+    "url": "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
+    "summary": "Adding an inference replica creates capacity only after the new instance can serve requests. Between starting a process and generating a response, an LLM server may need to load weights, initialize GPU resources, compile kernels, capture...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-06T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/"
+      }
+    ],
+    "score": 18.4
+  },
+  {
+    "id": "5582ca70a256562e",
+    "title": "What’s new with Grafana variables: less clutter, easier reuse across dashboards, and more",
+    "url": "https://grafana.com/blog/whats-new-with-grafana-variables-less-clutter-easier-reuse-across-dashboards-and-more/",
+    "summary": "<p>Template variables are one of the most used features in Grafana, providing users with a dropdown to turn one dashboard into hundreds: pick a different <code>cluster</code>, <code>region</code>, or <code>service</code>, and every panel updates.</p><p>For most of Grafana&#039;s history, <a href=\"https://grafana.com/docs/grafana/latest/visualizations/dashboards/variables/\">variables</a> had a single home at the top of the dashboard. Each dashboard had one flat list of variables, and that list was shared by every panel on it. But as dashboards grew in size and number, those controls became harder to organize and maintain. The top of a dashboard could get crowded with dropdowns that only applied to certain panels, while shared controls were copied across dashboards and had to be updated individually.</p><p>To address these challenges, we’ve rolled out two new features in Grafana: </p><ul><li><p><a href=\"https://grafana.com/docs/grafana/latest/visualizations/dashboards/build-dashboards/cr",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-05T19:25:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/whats-new-with-grafana-variables-less-clutter-easier-reuse-across-dashboards-and-more/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "18f38ec54b0fbd81",
+    "title": "The Flood is Coming And The Pipes Were Already Full",
+    "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+    "summary": "An update on Athena, and some unsolicited predictions on what's coming next\n\nOn Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May.\n\nThe hardest piece of his",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-06T11:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html"
+      }
+    ],
+    "score": 19.98
+  },
+  {
+    "id": "218f7f401cdbe58a",
+    "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+    "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+    "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.\n\nThe fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today.\n\nThe flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-06T12:06:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "3ba528c1455b2c8f",
+    "title": "Cult.fit builds operational muscle with Codex",
+    "url": "https://openai.com/index/cultfit-builds-with-codex",
+    "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-05T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/cultfit-builds-with-codex"
+      }
+    ],
+    "score": 16.11
+  },
+  {
+    "id": "5d9cf9668b376562",
+    "title": "How scientists use Claude",
+    "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+    "summary": "In this report, we use privacy-preserving infrastructure to study the scientific use of Claude, Claude Code, and Claude Science. We document how usage varies across scientific fields and research tasks, identify what explains these usage patterns, and outline scenarios for how AI could accelerate research.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-05T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+      }
+    ],
+    "score": 15.07
+  },
+  {
+    "id": "e1b6392c78691104",
+    "title": "sshole",
+    "url": "https://sshhole.com",
+    "summary": "<p>Related:<p><a href=\"https://hachyderm.io/@damienmiller/117563026759098135\" rel=\"nofollow\">https://hachyderm.io/@damienmiller/117563026759098135</a> / <a href=\"https://news.ycombinator.com/item?id=50377221\">https://news.ycombinator.com/item?id=50377221</a><p><a href=\"https://www.openssh.org/releasenotes.html#10.6p2\" rel=\"nofollow\">https://www.openssh.org/releasenotes.html#10.6p2</a><p><a href=\"https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/\" rel=\"nofollow\">https://alpinelinux.org/posts/2026-11-05-openssh-password-au...</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50378228\">https://news.ycombinator.com/item?id=50378228</a></p>\n<p>Points: 2779</p>\n<p># Comments: 674</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-05T12:19:02+00:00",
+    "coverage_count": 7,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/ppmpreetham/BUI"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/anthropics/claude-code/issues/107757"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/saragordic/window-sweaters"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://sshhole.com"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://markblah.github.io/lemmings/"
+      }
+    ],
+    "score": 30.0
+  },
+  {
+    "id": "8e54f270194c3369",
+    "title": "Presentation: The Socio-Technical Staff+ Engineer: Architecture, Culture and Organisational Change",
+    "url": "https://www.infoq.com/presentations/sociotechnical-staff-engineer-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/sociotechnical-staff-engineer-architecture/en/mediumimage/medium-1792066457983.jpg\" /><p>Vanessa Formicola shares how technical leaders can move beyond \"wishful architecture\" by practicing holistic socio-technical engineering. She discusses why engineering leaders must account for organizational maturity, reward structures, geopolitical climate, and team dynamics, framing the staff-plus role as designing the conditions for technology to thrive rather than just picking tools.</p> <i>By Vanessa Formicola</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/sociotechnical-staff-engineer-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "47ad7daeb4522bee",
+    "title": "AWS Ships Continuum for Code Vulnerabilities",
+    "url": "https://www.infoq.com/news/2026/11/aws-continuum-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-continuum-ga/en/headerimage/generatedHeaderImage-1792886107294.jpg\" /><p>AWS has made Continuum for code vulnerabilities generally available in two regions. The service proves exploitability by running real exploits in a sandbox, then opens fixes as pull requests. Published pricing charges per finding processed as well as per line of code, and practitioners are asking what would justify letting it merge fixes on its own.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-continuum-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "6e7d5cc3f0a22215",
+    "title": "Article: Identity as an Architectural Concern: Enterprise IAM Beyond Authentication",
+    "url": "https://www.infoq.com/articles/identity-as-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/identity-as-architecture/en/headerimage/identity-as-architecture-header-1793629959196.jpg\" /><p>The way you design your identities will drive your data models, your service scope, and your revocation policies; enterprise identity management is thus an architectural problem, not an afterthought. Based on our experience in service account governance, this article touches upon graph vs. RBAC, integrating a vault you don't own, and bounding revocation latency for an event stream.</p> <i>By Vaishnavi Khosla</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/identity-as-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "8abf7e5332f8b7ce",
+    "title": "Vault Fork OpenBao Adds External Keys and Quantum-Ready TLS",
+    "url": "https://www.infoq.com/news/2026/11/vault-fork-openbao-27/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/vault-fork-openbao-27/en/headerimage/generatedHeaderImage-1793734932785.jpg\" /><p>OpenBao has released version 2.7, adding read scaling for PostgreSQL-backed deployments, support for external hardware security module (HSM) and key management service (KMS) keys, and post-quantum cryptographic algorithms. The release also introduces control groups for human review of sensitive operations and new headers intended to keep requests consistent across load-balanced OpenBao nodes.</p> <i>By Matt Saunders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/vault-fork-openbao-27/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "c63205613f7c92b7",
+    "title": "TypeScript 7.1 Beta: Restores the Compiler API and Makes Vue and Svelte First-Class",
+    "url": "https://www.infoq.com/news/2026/11/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/typescript-7-1-beta/en/headerimage/generatedHeaderImage-1793901816316.jpg\" /><p>TypeScript 7.1 Beta, announced October 20, 2026, restores the compiler API removed in 7.0, now split into separate entry points. It adds content mappers, letting tools like Vue check non-standard files. One Vue project's type checks fell from 14.19 to 3.10 seconds. An editor issue remains open, and teams may need TypeScript 6 alongside 7.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T11:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.93
+  },
+  {
+    "id": "74d6331a10973ddb",
+    "title": "GitLab 19.5 Makes Agentic Development a Governed Part of the DevOps Platform",
+    "url": "https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/en/headerimage/generatedHeaderImage-1793095997884.jpg\" /><p>GitLab 19.5, released on October 15, puts agentic software development and governance at the centre of the platform, making its GitLab MCP server generally available while expanding how external AI agents can interact with GitLab.</p> <i>By Craig Risi</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.89
+  },
+  {
+    "id": "aff74eda1418da6c",
+    "title": "GitHub Actions Lockfiles Reach GA to Secure Workflow Dependencies",
+    "url": "https://www.infoq.com/news/2026/11/github-actions-lockfiles-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/github-actions-lockfiles-ga/en/headerimage/generatedHeaderImage-1793888107988.jpg\" /><p>GitHub has made workflow dependency lockfiles for GitHub Actions generally available on October 28, 2026, two weeks after the feature entered public preview. Workflows can maintain clear tag and branch references.</p> <i>By Claudio Masolo</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/github-actions-lockfiles-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.75
+  },
+  {
+    "id": "946cd3264ab2d2fc",
+    "title": "Edera's Object Capability Bounded Authority Promises to Isolate Credentials From AI Agent Workloads",
+    "url": "https://www.infoq.com/news/2026/11/ai-credentials-isolation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/ai-credentials-isolation/en/headerimage/generatedHeaderImage-1793853184587.jpg\" /><p>Edera announced Object Capability Bounded Authority, a security model that separates an AI agent's or MCP server's required authority from the credentials behind it. Hypervisor-enforced capabilities limit agents to specific actions without storing secrets in the workload. Initial releases cover scoped command execution and workload identity; credential-brokered API access will follow.</p> <i>By Olimpiu Pop</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T06:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/ai-credentials-isolation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  }
+]

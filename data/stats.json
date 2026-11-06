@@ -1,51 +1,67 @@
 {
-  "updated_at": "2026-11-05T13:28:46.015912+00:00",
+  "updated_at": "2026-11-06T13:25:18.622542+00:00",
   "configured_feeds": 242,
-  "editions_published": 4,
-  "headlines_published": 191,
-  "sources_credited": 48,
-  "latest_edition_date": "2026-11-05",
+  "editions_published": 5,
+  "headlines_published": 241,
+  "sources_credited": 52,
+  "latest_edition_date": "2026-11-06",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 44
+      "headlines": 55
     },
     {
       "name": "The Hacker News",
-      "headlines": 19
-    },
-    {
-      "name": "Hacker News (Best)",
-      "headlines": 12
+      "headlines": 23
     },
     {
       "name": "InfoQ",
-      "headlines": 12
+      "headlines": 21
     },
     {
-      "name": "TechCrunch",
-      "headlines": 9
+      "name": "Hacker News (Best)",
+      "headlines": 13
     },
     {
       "name": "The Verge - Tech",
-      "headlines": 8
+      "headlines": 11
+    },
+    {
+      "name": "TechCrunch",
+      "headlines": 10
     },
     {
       "name": "JetBrains Blog",
-      "headlines": 7
-    },
-    {
-      "name": "OpenAI Blog",
-      "headlines": 6
+      "headlines": 9
     },
     {
       "name": "Vercel Blog",
-      "headlines": 6
+      "headlines": 8
+    },
+    {
+      "name": "OpenAI Blog",
+      "headlines": 7
+    },
+    {
+      "name": "The New Stack",
+      "headlines": 7
     },
     {
       "name": "Real Python",
+      "headlines": 6
+    },
+    {
+      "name": "The Daily WTF",
       "headlines": 5
+    },
+    {
+      "name": "CNCF Blog",
+      "headlines": 4
+    },
+    {
+      "name": "Dark Reading",
+      "headlines": 4
     },
     {
       "name": "Lobsters",
@@ -56,23 +72,15 @@
       "headlines": 4
     },
     {
-      "name": "The Daily WTF",
-      "headlines": 4
-    },
-    {
-      "name": "The New Stack",
-      "headlines": 4
-    },
-    {
       "name": "Cloudflare Blog",
       "headlines": 3
     },
     {
-      "name": "CNCF Blog",
+      "name": "Laravel News",
       "headlines": 3
     },
     {
-      "name": "Dark Reading",
+      "name": "Microsoft 365 Developer Blog",
       "headlines": 3
     },
     {
@@ -84,11 +92,23 @@
       "headlines": 3
     },
     {
+      "name": "Anthropic Blog",
+      "headlines": 2
+    },
+    {
       "name": "AWS Blog",
       "headlines": 2
     },
     {
       "name": "CircleCI Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Freek Van der Herten",
+      "headlines": 2
+    },
+    {
+      "name": "Grafana Blog",
       "headlines": 2
     },
     {
@@ -100,14 +120,6 @@
       "headlines": 2
     },
     {
-      "name": "Laravel News",
-      "headlines": 2
-    },
-    {
-      "name": "Microsoft 365 Developer Blog",
-      "headlines": 2
-    },
-    {
       "name": "PagerDuty Blog",
       "headlines": 2
     },
@@ -116,8 +128,12 @@
       "headlines": 2
     },
     {
-      "name": "Anthropic Blog",
-      "headlines": 1
+      "name": "Smashing Magazine",
+      "headlines": 2
+    },
+    {
+      "name": "Stack Overflow Blog",
+      "headlines": 2
     },
     {
       "name": "Azure Blog",
@@ -136,6 +152,10 @@
       "headlines": 1
     },
     {
+      "name": "DeepMind Blog",
+      "headlines": 1
+    },
+    {
       "name": "DigitalOcean Blog",
       "headlines": 1
     },
@@ -144,15 +164,19 @@
       "headlines": 1
     },
     {
-      "name": "Freek Van der Herten",
+      "name": "GitHub Engineering",
       "headlines": 1
     },
     {
-      "name": "Grafana Blog",
+      "name": "Google AI Blog",
       "headlines": 1
     },
     {
       "name": "Kubernetes Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Martin Fowler",
       "headlines": 1
     },
     {
@@ -172,15 +196,7 @@
       "headlines": 1
     },
     {
-      "name": "Smashing Magazine",
-      "headlines": 1
-    },
-    {
       "name": "Spacelift Blog",
-      "headlines": 1
-    },
-    {
-      "name": "Stack Overflow Blog",
       "headlines": 1
     },
     {
@@ -203,23 +219,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 132
+      "headlines": 171
     },
     {
       "name": "Security",
-      "headlines": 27
+      "headlines": 32
     },
     {
       "name": "AI/ML",
-      "headlines": 12
+      "headlines": 14
     },
     {
       "name": "Cloud",
-      "headlines": 12
+      "headlines": 14
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 8
+      "headlines": 10
     }
   ],
   "history": [
@@ -242,6 +258,11 @@
       "date": "2026-11-05",
       "headlines": 50,
       "sources": 23
+    },
+    {
+      "date": "2026-11-06",
+      "headlines": 50,
+      "sources": 25
     }
   ]
 }
