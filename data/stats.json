@@ -1,34 +1,38 @@
 {
-  "updated_at": "2026-11-06T13:25:18.622542+00:00",
+  "updated_at": "2026-11-07T13:25:33.980300+00:00",
   "configured_feeds": 242,
-  "editions_published": 5,
-  "headlines_published": 241,
-  "sources_credited": 52,
-  "latest_edition_date": "2026-11-06",
+  "editions_published": 6,
+  "headlines_published": 291,
+  "sources_credited": 55,
+  "latest_edition_date": "2026-11-07",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 55
-    },
-    {
-      "name": "The Hacker News",
-      "headlines": 23
+      "headlines": 67
     },
     {
       "name": "InfoQ",
-      "headlines": 21
+      "headlines": 25
+    },
+    {
+      "name": "The Hacker News",
+      "headlines": 24
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 13
-    },
-    {
-      "name": "The Verge - Tech",
-      "headlines": 11
+      "headlines": 18
     },
     {
       "name": "TechCrunch",
+      "headlines": 14
+    },
+    {
+      "name": "The Verge - Tech",
+      "headlines": 12
+    },
+    {
+      "name": "Vercel Blog",
       "headlines": 10
     },
     {
@@ -36,7 +40,7 @@
       "headlines": 9
     },
     {
-      "name": "Vercel Blog",
+      "name": "The New Stack",
       "headlines": 8
     },
     {
@@ -44,19 +48,31 @@
       "headlines": 7
     },
     {
-      "name": "The New Stack",
+      "name": "Real Python",
       "headlines": 7
     },
     {
-      "name": "Real Python",
+      "name": "Lobsters",
       "headlines": 6
+    },
+    {
+      "name": "CNCF Blog",
+      "headlines": 5
+    },
+    {
+      "name": "Simon Willison",
+      "headlines": 5
     },
     {
       "name": "The Daily WTF",
       "headlines": 5
     },
     {
-      "name": "CNCF Blog",
+      "name": "Wired",
+      "headlines": 5
+    },
+    {
+      "name": "Cloudflare Blog",
       "headlines": 4
     },
     {
@@ -64,19 +80,27 @@
       "headlines": 4
     },
     {
-      "name": "Lobsters",
+      "name": "Laravel News",
       "headlines": 4
     },
     {
-      "name": "Simon Willison",
+      "name": "Nvidia Developer Blog",
       "headlines": 4
     },
     {
-      "name": "Cloudflare Blog",
+      "name": "Schneier on Security",
+      "headlines": 4
+    },
+    {
+      "name": "Anthropic Blog",
       "headlines": 3
     },
     {
-      "name": "Laravel News",
+      "name": "Freek Van der Herten",
+      "headlines": 3
+    },
+    {
+      "name": "Grafana Blog",
       "headlines": 3
     },
     {
@@ -84,19 +108,11 @@
       "headlines": 3
     },
     {
-      "name": "Nvidia Developer Blog",
-      "headlines": 3
-    },
-    {
-      "name": "Wired",
-      "headlines": 3
-    },
-    {
-      "name": "Anthropic Blog",
+      "name": "AWS Blog",
       "headlines": 2
     },
     {
-      "name": "AWS Blog",
+      "name": "Azure Blog",
       "headlines": 2
     },
     {
@@ -104,11 +120,7 @@
       "headlines": 2
     },
     {
-      "name": "Freek Van der Herten",
-      "headlines": 2
-    },
-    {
-      "name": "Grafana Blog",
+      "name": "Databricks Engineering",
       "headlines": 2
     },
     {
@@ -124,10 +136,6 @@
       "headlines": 2
     },
     {
-      "name": "Schneier on Security",
-      "headlines": 2
-    },
-    {
       "name": "Smashing Magazine",
       "headlines": 2
     },
@@ -136,19 +144,11 @@
       "headlines": 2
     },
     {
-      "name": "Azure Blog",
-      "headlines": 1
-    },
-    {
       "name": "Cloudinary Blog",
       "headlines": 1
     },
     {
       "name": "Confluent Blog",
-      "headlines": 1
-    },
-    {
-      "name": "Databricks Engineering",
       "headlines": 1
     },
     {
@@ -164,11 +164,19 @@
       "headlines": 1
     },
     {
+      "name": "GitHub Blog",
+      "headlines": 1
+    },
+    {
       "name": "GitHub Engineering",
       "headlines": 1
     },
     {
       "name": "Google AI Blog",
+      "headlines": 1
+    },
+    {
+      "name": "Google Developers Blog",
       "headlines": 1
     },
     {
@@ -185,6 +193,10 @@
     },
     {
       "name": "PortSwigger Research",
+      "headlines": 1
+    },
+    {
+      "name": "Pragmatic Engineer",
       "headlines": 1
     },
     {
@@ -219,23 +231,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 171
+      "headlines": 211
     },
     {
       "name": "Security",
-      "headlines": 32
-    },
-    {
-      "name": "AI/ML",
-      "headlines": 14
+      "headlines": 35
     },
     {
       "name": "Cloud",
-      "headlines": 14
+      "headlines": 17
+    },
+    {
+      "name": "AI/ML",
+      "headlines": 16
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 10
+      "headlines": 12
     }
   ],
   "history": [
@@ -261,6 +273,11 @@
     },
     {
       "date": "2026-11-06",
+      "headlines": 50,
+      "sources": 25
+    },
+    {
+      "date": "2026-11-07",
       "headlines": 50,
       "sources": 25
     }

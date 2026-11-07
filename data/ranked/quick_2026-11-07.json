@@ -1,0 +1,524 @@
+[
+  {
+    "id": "18a2d8d946fc881c",
+    "title": "I Built the Missing Guardrails Package for Dart",
+    "url": "https://dev.to/ghagsagar23/i-built-the-missing-guardrails-package-for-dart-5dn9",
+    "summary": "<p>I shipped a Flutter app to production last year with an LLM chatbot baked in. Two weeks later a user pasted their Aadhaar number into the chat, the model echoed it back, and I spent a weekend writing a PII scrubber by hand. That scrubber grew into <code>ai_guardrails</code>.</p>\n\n<p>Python has NeMo Guardrails, Guardrails AI, LLM Guard. Dart had nothing. If you're building AI features in Flutter or server-side Dart, you've been on your own for input/output safety. This package closes that gap: 35 scanners, 893 tests, zero runtime dependencies, runs anywhere Dart runs.</p>\n\n<h2>\n  \n  \n  What it actually does\n</h2>\n\n<p><code>ai_guardrails</code> sits between your user's text and your LLM call. Input scanners run first: they can redact PII, block prompt injection attempts, catch leaked secrets. Then your LLM runs. Output scanners validate what comes back: JSON schema conformance, hallucination flags, toxicity scores, reading level checks. The pipeline stops at the first scanner that blo",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:06:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ghagsagar23/i-built-the-missing-guardrails-package-for-dart-5dn9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "620a43fe4aada912",
+    "title": "Tailwind CSS Alternatives: When UnoCSS or Panda CSS Makes Sense",
+    "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/tailwind-css-alternatives-when-unocss-or-panda-css-makes-sense-284o",
+    "summary": "<p>Tailwind CSS became the default utility-first framework for React projects in 2023-2025. By 2026, alternatives have matured enough to deserve serious consideration. UnoCSS brings dramatic performance improvements and unmatched flexibility. Panda CSS offers type-safe, CSS-in-JS-style ergonomics without the runtime cost. Plain CSS with custom properties handles simpler projects without framework overhead. Here's the practical decision guide.</p>\n\n<h2>\n  \n  \n  Quick Answer\n</h2>\n\n<p>Tailwind CSS is the right default — mature tooling, extensive community, and excellent documentation make it the safe choice for most projects. UnoCSS is the choice for performance-critical applications, complex design systems, and projects where Atomic CSS's generated class explosion is a concern. Panda CSS is the choice for teams wanting typed, component-oriented styling without Tailwind's utility syntax. Plain CSS is the choice for simple projects, content-heavy sites (where styling is minimal), or teams",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:05:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/tailwind-css-alternatives-when-unocss-or-panda-css-makes-sense-284o"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "98a2d9c22abd4857",
+    "title": "Building an Incident Response Agent That Remembers with Hindsight",
+    "url": "https://dev.to/chandananagraj4gmailcom/building-an-incident-response-agent-that-remembers-with-hindsight-pi1",
+    "summary": "<p>Building an Incident Response Agent That Remembers with Hindsight</p>\n\n<p>Introduction</p>\n\n<p>In software development, production incidents are unavoidable. A server may suddenly become unavailable, a database connection may fail, an API may stop responding, or an application may experience unexpected performance issues.</p>\n\n<p>When these problems occur, DevOps engineers must identify the cause, investigate logs, find a solution, and restore the service as quickly as possible.</p>\n\n<p>However, there is one important problem: teams often solve similar incidents repeatedly because the knowledge gained from previous incidents is not always available when a new problem occurs.</p>\n\n<p>What if an AI agent could remember previous incidents, understand how they were resolved, and use that experience to help engineers handle similar problems faster?</p>\n\n<p>This idea inspired our Incident Response Agent, an AI-powered Engineering and DevOps assistant that uses Hindsight as its memory laye",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:05:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/chandananagraj4gmailcom/building-an-incident-response-agent-that-remembers-with-hindsight-pi1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "359b2dfead3f938a",
+    "title": "I Built a Support Room Where the AI Drafts and a Human Decides",
+    "url": "https://dev.to/brijeshjakkuva/i-built-a-support-room-where-the-ai-drafts-and-a-human-decides-2pj4",
+    "summary": "<p>Best Blog is judged on clarity, accuracy, and how much it helps a first-time Switch user, so this is written for that reader. Every result below is from the test log in this repo (<code>test-results-2026-11-05.md</code>); nothing here is claimed from a run that did not happen.<br />\nds, full card numbers, CVV codes, or one-time codes (for payment, order ID only).</p>\n\n<p>That is the ten-minute version. The honest version is longer, because the thing that tripped me up is the most useful part for a first-time user — and it happened in two acts.</p>\n\n<h2>\n  \n  \n  The thing that tripped me up, honestly\n</h2>\n\n<p><strong>Act one: messages never arrived.</strong> After I reconnected Slack on Nov 5, tickets and <code>!assign-agent</code> posted in <code>#support-triage</code> never appeared in the Switch room history at all. I checked the Slack app side first, and it was fully correct: Agent Switch (<code>A0CE9DT72S3</code>) is the only app in the workspace, the <code>groups:history</code",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:03:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/brijeshjakkuva/i-built-a-support-room-where-the-ai-drafts-and-a-human-decides-2pj4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "05efd4791cd951af",
+    "title": "The Cleanup Script Was Right About the Name and Wrong About the File: Dynamic Includes and Leftover-File Hunts",
+    "url": "https://dev.to/mahmut_gndzalp_c736ac4b/the-cleanup-script-was-right-about-the-name-and-wrong-about-the-file-dynamic-includes-and-28lp",
+    "summary": "<p>Every few weeks we run a maintenance pass over the servers we look after. One step is a hunt for leftover files in web roots: the <code>fix_something.php</code>, <code>test2.php</code>, <code>debug_login.php</code> and <code>install.php</code> files that pile up on any server that has been alive long enough. They are worth hunting. On one pass we found a debug script that printed a payment provider's API credentials to anyone who opened it, an installer that still created an <code>admin/admin123</code> account, and a \"test\" file that dumped server details.</p>\n\n<p>So the hunt is useful. It is also how we broke a live product page on a customer site, and the way it happened is worth writing down, because the check we relied on looked solid and was not.</p>\n\n<h2>\n  \n  \n  The rule we had\n</h2>\n\n<p>The rule was reasonable on paper:</p>\n\n<ol>\n<li>Find files whose names match a leftover pattern: <code>fix*</code>, <code>test*</code>, <code>debug*</code>, <code>check*</code>, <code>verify*",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:03:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mahmut_gndzalp_c736ac4b/the-cleanup-script-was-right-about-the-name-and-wrong-about-the-file-dynamic-includes-and-28lp"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "939ffa6fd15c3c96",
+    "title": "Build an Agent-Friendly CLI Tool in PHP and Run It Anywhere With CPX",
+    "url": "https://freek.dev/3214-build-an-agent-friendly-cli-tool-in-php-and-run-it-anywhere-with-cpx",
+    "summary": "<p>This tutorial shows how to build a PHP CLI tool that returns JSON, package it for Composer, and run it from anywhere with CPX. It also explains why CPX is a nicer alternative to globally installed Composer tools, thanks to isolated dependencies and automatic updates.</p>\n\n\n<a href=\"https://tighten.com/insights/build-an-agent-friendly-cli-tool-in-php-and-run-it-anywhere-with-cpx/\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-07T12:30:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3214-build-an-agent-friendly-cli-tool-in-php-and-run-it-anywhere-with-cpx"
+      }
+    ],
+    "score": 19.99
+  },
+  {
+    "id": "e7c059b33393d933",
+    "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "summary": "<p>Article URL: <a href=\"https://hightouch.com/blog/llm-judges-identity-resolution\">https://hightouch.com/blog/llm-judges-identity-resolution</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50397429\">https://news.ycombinator.com/item?id=50397429</a></p>\n<p>Points: 510</p>\n<p># Comments: 122</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-06T19:48:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://hightouch.com/blog/llm-judges-identity-resolution"
+      }
+    ],
+    "score": 19.18
+  },
+  {
+    "id": "d9541bd41b51ea20",
+    "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+    "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+    "summary": "<img alt=\"Two generated images of a red fox beside a moss-covered fallen tree in an autumn forest.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/techblog-5893-article-kix-ulkeecvizi09-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"techblog-5893-article-kix-ulkeecvizi09\" width=\"768\" />When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-06T22:20:20+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "9e4251f72291459d",
+    "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
+    "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
+    "summary": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communities, and the markets are about to do.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-07T04:16:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/"
+      }
+    ],
+    "score": 18.57
+  },
+  {
+    "id": "d13e1eb05bd1272e",
+    "title": "Yelp Combines Native and Server-Driven UI for Its AI Assistant",
+    "url": "https://www.infoq.com/news/2026/11/yelp-assistant-hybrid-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Yelp combines native mobile controls with server-driven conversation rendering in its AI Assistant using the CHAOS framework. The architecture separates view configuration from conversation data, supports backend-driven chat interactions, and enables faster UI updates without new app releases. Yelp also discusses cross-platform challenges and reuse for its Biz Ask Anything pilot.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-06T14:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/yelp-assistant-hybrid-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 17.89
+  },
+  {
+    "id": "10aeeaf365b5a4c0",
+    "title": "The Fridge-Hacking Spree Is an Internet-of-Things Wake-Up Call",
+    "url": "https://www.wired.com/story/kernel-panic-refrigeration-hacks-internet-of-things/",
+    "summary": "Escalating hacks affecting blood labs and grocery stores show the very real risks to critical infrastructure that come from basic security lapses involving internet-connected devices.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-07T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/kernel-panic-refrigeration-hacks-internet-of-things/"
+      }
+    ],
+    "score": 17.83
+  },
+  {
+    "id": "10671b7eaf78fb50",
+    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+    "summary": "<p><a href=\"https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors\" rel=\"nofollow\">https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3...</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50394906\">https://news.ycombinator.com/item?id=50394906</a></p>\n<p>Points: 285</p>\n<p># Comments: 573</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-06T16:54:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout"
+      }
+    ],
+    "score": 17.64
+  },
+  {
+    "id": "351c63f92d33459b",
+    "title": "This Totally Free App Can Free Up Space on Your Mac",
+    "url": "https://www.wired.com/story/this-totally-free-app-can-free-up-space-on-your-mac-purge/",
+    "summary": "Stop paying for disk cleaners. This open source utility safely clears hidden caches, leftover app junk, and even gigabytes of offline Apple Intelligence models.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-07T11:15:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/this-totally-free-app-can-free-up-space-on-your-mac-purge/"
+      }
+    ],
+    "score": 17.6
+  },
+  {
+    "id": "ed84ab35994899f5",
+    "title": "Quiz: Managing Multiple Python Versions With pyenv",
+    "url": "https://realpython.com/quizzes/intro-to-pyenv/",
+    "summary": "Test your knowledge of pyenv with this quiz and see how well you can manage multiple Python versions, virtual environments, and dependencies.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-07T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/intro-to-pyenv/"
+      }
+    ],
+    "score": 17.41
+  },
+  {
+    "id": "830c9bb48da91b5e",
+    "title": "Scriptable GeoDNS: leaving AWS for Bunny",
+    "url": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
+    "summary": "<p><a href=\"https://lobste.rs/s/jsvlfm/scriptable_geodns_leaving_aws_for_bunny\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-07T07:46:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns"
+      }
+    ],
+    "score": 16.96
+  },
+  {
+    "id": "9633d1daaeff0641",
+    "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+    "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file.\n\nSoftware security company Apiiro said yesterday that 1,122 public",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-07T06:44:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+      }
+    ],
+    "score": 16.93
+  },
+  {
+    "id": "833945862b48e60d",
+    "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+    "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+    "summary": "<p>Article URL: <a href=\"https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/\">https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50388122\">https://news.ycombinator.com/item?id=50388122</a></p>\n<p>Points: 333</p>\n<p># Comments: 128</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-06T04:17:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/"
+      }
+    ],
+    "score": 16.9
+  },
+  {
+    "id": "2787cf36a1dd7c6a",
+    "title": "Deus Ex",
+    "url": "https://www.filfre.net/2026/11/deus-ex/",
+    "summary": "<p>Article URL: <a href=\"https://www.filfre.net/2026/11/deus-ex/\">https://www.filfre.net/2026/11/deus-ex/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50393758\">https://news.ycombinator.com/item?id=50393758</a></p>\n<p>Points: 357</p>\n<p># Comments: 191</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-06T15:44:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.filfre.net/2026/11/deus-ex/"
+      }
+    ],
+    "score": 16.82
+  },
+  {
+    "id": "cc5f089686348a4a",
+    "title": "Crusoe sells troubled Wyoming data center project to Google",
+    "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+    "summary": "The deal highlights the challenges of developing massive AI data centers.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-07T01:40:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+      }
+    ],
+    "score": 16.73
+  },
+  {
+    "id": "d66d29488dc759fa",
+    "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+    "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+    "summary": "<p>Article URL: <a href=\"https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105\">https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50390124\">https://news.ycombinator.com/item?id=50390124</a></p>\n<p>Points: 636</p>\n<p># Comments: 417</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-06T09:27:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105"
+      }
+    ],
+    "score": 16.4
+  },
+  {
+    "id": "cf92d038f71a5379",
+    "title": "The Pragmatic Summit 2027",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027",
+    "summary": "The Summit is back in San Francisco, for the second year, and registrations are open for February 10, 2027",
+    "category": "dev",
+    "source_name": "Pragmatic Engineer",
+    "published": "2026-11-06T19:39:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Pragmatic Engineer",
+        "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027"
+      }
+    ],
+    "score": 16.06
+  },
+  {
+    "id": "a1e76c47f9fc0282",
+    "title": "Insert Middleware Before or After Existing Laravel Middleware",
+    "url": "https://laravel-news.com/laravel-middleware-insert-before-after?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/laravel-middleware-insert-before-after\"><img alt=\"Insert Middleware Before or After Existing Laravel Middleware\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/laravel-middleware-insert-before-after-featured.png\" /></a></p>\n                                        <hr />\n\n                    <p>Laravel 13.40 adds insertBefore() and insertAfter() to place middleware next to built-in ones like TrustProxies and StartSession without redefining the stack.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/laravel-middleware-insert-before-after\">Insert Middleware Before or After Existing Laravel Middleware</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-06T05:19:34+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/phpstorm-2026-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-middleware-insert-before-after?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "ad85245920c4bc85",
+    "title": "Agent Distraction",
+    "url": "https://developers.googleblog.com/agent-distraction/",
+    "summary": "Analysis of over 913,000 coding agent sessions reveals that 13% expose agents to inline TODO(b/...) comments. In 6% of encounters, agents act on these comments, with 83% being entirely unprompted by the developer. These detours result in significant overhead—adding 70% more steps, 77% more tokens, and 105% more wait time per session—split between chasing closed tickets (41%) and unauthorized scope creep on open bugs (57%). Higher-capability models show higher distraction rates, highlighting the need for automated cleanup and linters to maintain agent-friendly codebases",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/agent-distraction/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "6766cb5c00416075",
+    "title": "AI Gateway adds DeepSeek Search and Fetch tools",
+    "url": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/deepseek-search\">DeepSeek Search</a> and <a href=\"https://vercel.com/ai-gateway/models/deepseek-fetch\">DeepSeek Fetch</a> are now available through <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a>. Search finds relevant pages with titles, URLs, and summaries. Fetch retrieves page content as Markdown for your model to read.</p><p>Use both tools with any model that supports tool calling, using one AI Gateway API key. No separate DeepSeek account is required, and you can keep the same tools when switching model providers.</p><p>These helpers are available in AI SDK 6.0.321 and later on v6, or 7.0.160 and later on v7. Update with <code>pnpm add ai@latest</code> and set your <code>AI_GATEWAY_API_KEY</code>. To combine search and page retrieval, pass both helpers in <code>tools</code>:</p><div></div><p>You can also use alternative search tools with DeepSeek Fetch if DeepSeek Search fails:</p><div></div><p>Search fallback is model-directe",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-06T21:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "6b8852844ffd6811",
+    "title": "Beyond code generation: A developer’s guide to agentic engineering",
+    "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+    "summary": "<p>Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.</p>\n<p>The post <a href=\"https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/\">Beyond code generation: A developer&#8217;s guide to agentic engineering</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "GitHub Blog",
+    "published": "2026-11-06T22:15:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+      }
+    ],
+    "score": 15.87
+  },
+  {
+    "id": "38cf708dd61e97b1",
+    "title": "After the midterms, is the AI industry in for a rough two years?",
+    "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+    "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a [&#8230;]",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-06T17:23:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/"
+      }
+    ],
+    "score": 15.51
+  },
+  {
+    "id": "66a76c3c53e291d6",
+    "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+    "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+    "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-06T22:53:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+      }
+    ],
+    "score": 15.44
+  },
+  {
+    "id": "9d73cf7531d57393",
+    "title": "The post-quantum future of web privacy",
+    "url": "https://blog.cloudflare.com/vole-mole/",
+    "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-06T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/vole-mole/"
+      }
+    ],
+    "score": 15.38
+  },
+  {
+    "id": "73cb7361e24e4948",
+    "title": "Read, don't copy: replacing file feeds with OpenSharing - Part 2 (How to Implement)",
+    "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-feeds-opensharing-part-2-how-implement",
+    "summary": "Many data-sharing architectures begin with a familiar pattern: A provider exports...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-06T22:13:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-feeds-opensharing-part-2-how-implement"
+      },
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-and-api-feeds-opensharing-part-1-why"
+      }
+    ],
+    "score": 14.84
+  },
+  {
+    "id": "c5e9a9038065d10d",
+    "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+    "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+    "summary": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-06T23:00:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"
+      }
+    ],
+    "score": 14.59
+  }
+]

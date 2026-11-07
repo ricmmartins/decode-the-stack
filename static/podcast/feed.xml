@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Fri, 06 Nov 2026 13:25:28 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 13:25:45 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Faster AI Workflows Need Stronger Proof and Boundaries</title>
+      <description>This Saturday, 2026-11-07 UTC, the selected reporting connects expanding AI capabilities with a harder engineering problem: keeping claims, code changes, permissions, and spending accountable. Product announcements describe richer interfaces and broader…</description>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-07.mp3?v=0a75808376c5" length="11827244" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-07.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-07-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>This Saturday, 2026-11-07 UTC, the selected reporting connects expanding AI capabilities with a harder engineering problem: keeping claims, code changes, permissions, and spending accountable. Product announcements describe richer interfaces and broader…</itunes:summary>
+      <itunes:duration>986</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-07.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>AI adoption puts evidence and control to the test</title>
       <description>Friday’s briefing connects expanding AI capabilities with the harder work of validating results, limiting authority, and operating systems reliably. Across developer tooling, cloud services, and security, the strongest theme is the gap between making a…</description>

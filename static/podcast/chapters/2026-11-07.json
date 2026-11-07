@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 141,
+      "title": "Vercel is moving agent output beyond conversational text: a..."
+    },
+    {
+      "startTime": 296,
+      "title": "That leaves a harder question than whether AI can do more:..."
+    },
+    {
+      "startTime": 447,
+      "title": "The cleanup story separates suspicious filenames from..."
+    },
+    {
+      "startTime": 585,
+      "title": "The Python item brings this down to everyday development:..."
+    },
+    {
+      "startTime": 739,
+      "title": "For our final stretch, let's connect developer workflow..."
+    }
+  ]
+}

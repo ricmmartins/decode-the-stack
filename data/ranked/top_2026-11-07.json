@@ -1,0 +1,354 @@
+[
+  {
+    "id": "760054e8f272cde5",
+    "title": "Sign Off the Promises, Not the Paragraphs: A Claim-Strength Linter for Model-Drafted Docs",
+    "url": "https://dev.to/github_7727/sign-off-the-promises-not-the-paragraphs-a-claim-strength-linter-for-model-drafted-docs-1pja",
+    "summary": "<p>A model can draft your walkthrough, your config table, and most of your troubleshooting prose, but it must never be the last author of a sentence that promises behavior. That single rule is the whole workflow below: the model owns procedure, a human owns promises, and a small linter decides which sentences count as promises. Everything else here is machinery for enforcing that split on every pull request.</p>\n\n<p>The artifact is two files and about eighty lines of Python. One file inventories promise-bearing sentences and scores their strength; the other records a human sign-off with a live evidence pointer for each one. Existing doc tooling usually validates links, spelling, or style, so it happily ships a sentence that claims an operation is atomic when nothing tests atomicity.</p>\n\n<h2>\n  \n  \n  1. Split the document by who is allowed to be wrong\n</h2>\n\n<p>Before any drafting prompt exists, decide which documentation surfaces the model may touch and which sentences a human must ow",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:08:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/github_7727/sign-off-the-promises-not-the-paragraphs-a-claim-strength-linter-for-model-drafted-docs-1pja"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "0bf8711764d38096",
+    "title": "VA retainers: how to stop 'quick favours' eating your hours (hours-cap clause)",
+    "url": "https://dev.to/opspack/va-retainers-how-to-stop-quick-favours-eating-your-hours-hours-cap-clause-5ckc",
+    "summary": "<p>A retainer priced for 10 hours becomes a 30-hour month when every Slack \"quick favour\" lands in the same bucket. The fix is not working faster — it is an <strong>hours-cap clause</strong> in the SOW, a short task-category list, and a written path for anything over the cap.</p>\n\n<p>Save the four emails below as Gmail templates. Replace the <code>[BRACKETS]</code> once per client and reuse.</p>\n\n<h2>\n  \n  \n  1. Put the cap in the SOW (not in chat)\n</h2>\n\n<p>From the OpsPack VA niche guide, typical deliverables to list:</p>\n\n<ul>\n<li>[N] hours/month of support in listed task categories</li>\n<li>Inbox and calendar management during agreed hours</li>\n<li>Weekly written status update</li>\n<li>Shared task tracker maintained daily</li>\n<li>Monthly hours report</li>\n</ul>\n\n<p>Write these into <strong>Out of scope</strong>:</p>\n\n<ul>\n<li>Tasks outside listed categories (e.g. bookkeeping, design, ads management)</li>\n<li>Work outside agreed hours / weekends</li>\n<li>Urgent same-hour requests u",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:07:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/opspack/va-retainers-how-to-stop-quick-favours-eating-your-hours-hours-cap-clause-5ckc"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fab260edd3081842",
+    "title": "Skip Is Not a Freeze: Revocable Seeded Freezes for Agent Patches",
+    "url": "https://dev.to/datacpp_8185/skip-is-not-a-freeze-revocable-seeded-freezes-for-agent-patches-47m0",
+    "summary": "<p>A skipped test is not a frozen test. It is a deleted test that still compiles. The difference matters the moment an agent starts shipping patches into the same suite, because a skip has no expiry, no signature, and no obligation to ever come back.</p>\n\n<p>This post describes a freeze that revokes itself: every frozen test carries the seed that reproduces its failure, and every agent patch must re-run that seed and classify the result. If the seeded run now fails deterministically, the freeze is void — that is a regression, not flake.</p>\n\n<p>All code below is a reference implementation. I have not run it against a production repository, so treat the thresholds and the signature function as starting points you calibrate on your own suite.</p>\n\n<h2>\n  \n  \n  The timeline that motivates this\n</h2>\n\n<ol>\n<li>An agent patch touches a module next to <code>test_export_roundtrip</code>.</li>\n<li>The test fails once in roughly twenty runs, so a reviewer adds <code>@pytest.mark.skip(reason=\"fl",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:07:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/datacpp_8185/skip-is-not-a-freeze-revocable-seeded-freezes-for-agent-patches-47m0"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "38914bac6939e015",
+    "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
+    "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
+    "summary": "<p>Microsoft and fal partner to expand video generation in Microsoft Foundry, helping developers bring creative ideas into enterprise applications.</p>\n<p>The post <a href=\"https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032\">Building the next generation of multimodal AI experiences with fal in Microsoft Foundry</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-06T19:08:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "d34a6bc4dcaba1a2",
+    "title": "Chat SDK agents can now stream generative UI with json-render",
+    "url": "https://vercel.com/changelog/json-render-and-chat-sdk-agents",
+    "summary": "<div></div><p>You can now stream generative UI from your <a href=\"https://chat-sdk.dev\">Chat SDK</a> agent with <a href=\"https://json-render.dev\">json-render</a>.</p><p>With a typed catalog of components, the agent writes a JSON spec that <code>json-render</code> converts into a Chat SDK card. Each adapter then posts the card in its platform’s native format, such as Block Kit on Slack and Adaptive Cards on Teams.</p><p>The catalog covers tables, charts, buttons, and more, so there’s no separate tool to build and maintain for each message shape.</p><div></div><h2>Stream cards as the model writes</h2><p><code>streamCard</code> posts the card once its root element has content and updates the message as new elements stream in. Edits go out at most once every 500 ms by default, which matches Chat SDK’s streaming interval. Once the stream ends, the message shows the final, validated card.</p><h2>Validate specs and enforce platform limits</h2><p><code>toCard</code> checks every element’s prop",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-06T21:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/json-render-and-chat-sdk-agents"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "0ee011f4e38bdb59",
+    "title": "We organized Sustainability Month. Here’s what we learned. 🌱",
+    "url": "https://www.cncf.io/blog/2026/11/07/we-organized-sustainability-month-heres-what-we-learned-%f0%9f%8c%b1/",
+    "summary": "What do Kubernetes resource allocation, eBPF, carbon observability, and GPUs have in common? Quite a lot, actually. Especially when you start looking at them through the lens of environmental sustainability. This October, we brought these conversations...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-07T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/07/we-organized-sustainability-month-heres-what-we-learned-%f0%9f%8c%b1/"
+      }
+    ],
+    "score": 18.55
+  },
+  {
+    "id": "91866bca873d070e",
+    "title": "Any agent anywhere: How to use Grafana Cloud with Claude, Cursor, and any other AI agent",
+    "url": "https://grafana.com/blog/any-agent-anywhere-how-to-use-grafana-cloud-with-claude-cursor-and-any-other-ai-agent/",
+    "summary": "<p>AI agents are becoming part of everyday engineering workflows, helping teams write code, troubleshoot issues, and automate tasks. But to be truly useful in production, these agents need access to more than code. They also need observability data and context to understand what&#039;s happening across your systems, investigate problems, and help you take action.</p><p>At Grafana Labs, we believe that context should be available wherever you work. That’s one of the core ideas behind Grafana Cloud as the open agentic observability platform: the flexibility to work with your observability data through the AI agents you prefer—whether it’s <a href=\"https://grafana.com/products/cloud/ai-assistant/\"><u>Grafana Assistant</u></a>, a coding agent in your IDE, or a tool you’ve built yourself—so you can investigate and troubleshoot issues without switching tools.</p><p>In this post, we&#039;ll explore how to bring Grafana Cloud into your agentic workflows using tools like the <a href=\"https://gr",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-06T18:37:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/any-agent-anywhere-how-to-use-grafana-cloud-with-claude-cursor-and-any-other-ai-agent/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "7b4212deee9122e9",
+    "title": "Friday Squid Blogging: New Jurassic Squid Predecessors",
+    "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html",
+    "summary": "<p>News story: &#8220;<a href=\"https://www.sciencedaily.com/releases/2026/10/261019093434.htm\">Scientists discover a bizarre Jurassic &#8216;squid&#8217; unlike anything ever seen</a>.&#8221;</p>\n<blockquote><p>Scientists have identified the &#8220;fattest&#8221; belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming&#8217;s ancient seas 160 million years ago. The exceptionally rare fossils reveal a creature unlike anything previously known, potentially a predator of smaller squid-like animals and a surprising survivor of a supposedly vanished family.</p></blockquote>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered...</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-06T22:05:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "cfded1cc63055255",
+    "title": "Pinpointing Location of Videos from Background Airplane Sounds",
+    "url": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
+    "summary": "<p>This is <a href=\"https://gizmodo.com/a-youtuber-figured-out-how-to-find-almost-anyone-using-airplane-sounds-2000835861\">fascinating</a>:</p>\n<blockquote><p>The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening.</p>\n<p>It works by looking at Doppler curves, which plot the way a plane’s sound changes as it passes overhead because of the Doppler effect. This is the same familiar Doppler effect that causes the frequency of a siren to rise as it approaches and then fall as it passes by and moves away. More generally, it’s the phenomenon whereby the frequency of a wave perceived by an observer changes when the observer and the source of the wave are moving in relation to one another...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-06T14:57:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "1a104aa4826ae479",
+    "title": "Quoting Nilay Patel",
+    "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+    "summary": "<blockquote cite=\"https://www.youtube.com/watch?v=-U4thshDTL8&amp;t=422s\"><p>The products aren't good enough to sell people on the costs.</p>\n<p>You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history.</p>\n<p>It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europe are being hacked.</p>\n<p>The costs are too high. The benefits are not real. And if you connect that to corruption, you're like, in order to impose these costs on me, these CEOs are in the White House shaking Trump's hand, renaming it to the Gulf of America, paying for this ballroom that we don't want. It's obvious crypto-corruption, and it's still slop. </p>\n<p>The AI industry will not get out of it unti",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-06T17:13:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "61aa0dbb820d7315",
+    "title": "The components of agent memory",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "summary": "For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next. Here’s how “dreaming” helps it organize memory and correct mistakes.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-06T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/components-of-agent-memory"
+      }
+    ],
+    "score": 13.76
+  },
+  {
+    "id": "f3ca095b926d489c",
+    "title": "AI agents are getting more complex. Developers shouldn’t have to babysit them.",
+    "url": "https://thenewstack.io/harness-engineering-coding-agents/",
+    "summary": "<img alt=\"In the latest episode of The New Stack podcast, Vanitha Kumar, Marketing Technology Director and Technical Partner at Thoughtworks, explains how automated tests, feedback loops, and guardrails allow agents to handle longer running tasks with less human intervention while working in parallel.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/b10277a0-for-thumbnail-22-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>What if your coding agent could catch its own mistakes before you ever reviewed its work?&#160; A few years ago,</p>\n<p>The post <a href=\"https://thenewstack.io/harness-engineering-coding-agents/\">AI agents are getting more complex. Developers shouldn&#8217;t have to babysit them.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-06T19:35:59+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/harness-engineering-coding-agents/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cognition-flash-private-weights/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/meta-muse-specialized-models/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+      }
+    ],
+    "score": 28.0
+  },
+  {
+    "id": "5d98284cc4884c1c",
+    "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
+    "url": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/grab-ai-generated-code-safety/en/headerimage/momentic-postgres-clickhouse-1794048104353.jpeg\" /><p>The growing adoption of AI coding assistants has accelerated development and increased the volume of code changes per release, bringing more opportunities for defects and crashes, says Grab. To address these challenges, they implemented a layered defense strategy to prevent, detect, and contain crashes throughout the development and release lifecycle.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-07T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "879d027a60bb4c29",
+    "title": "Open Source pg_vectorsearch Brings More Scalable Vector Search to PostgreSQL",
+    "url": "https://www.infoq.com/news/2026/11/postgresql-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/postgresql-vector-search/en/headerimage/generatedHeaderImage-1792331528868.jpg\" /><p>Tiger Data has released pg_vectorsearch, an open source PostgreSQL extension for vector similarity search, currently in alpha. Its PRISM index uses data partitioning and compression instead of the graph-based approach used by pgvector’s HNSW index, reducing memory requirements and index build times.</p> <i>By Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-07T09:49:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/postgresql-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.57
+  },
+  {
+    "id": "7fae2c97e7eaeb5b",
+    "title": "Varlock Releases Bumpy: A File-Based Versioning Alternative to Changesets",
+    "url": "https://www.infoq.com/news/2026/11/bumpy-changesets-alternative/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/bumpy-changesets-alternative/en/headerimage/generatedHeaderImage-1793973539308.jpg\" /><p>Bumpy is an MIT-licensed, TypeScript tool for version management and changelogs in monorepos. It follows the changesets workflow, using markdown bump files, and adds support for workspace and catalog protocols, custom publish commands, and branch-based prereleases. Changesets v3, released in August 2026, closed many earlier gaps, though differences remain.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-07T06:54:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/bumpy-changesets-alternative/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "66b5bf56c9675cbd",
+    "title": "How are you dealing with all the negative side effects of AI on the web?",
+    "url": "https://lobste.rs/s/ipplhe/how_are_you_dealing_with_all_negative_side",
+    "summary": "<p>It seems to me that the AI hype killed the web for good, but not for the reasons we immediately associate with it.</p>\n<p>Search engines now rank links full of slop at the top, which ironically make LLM summaries acceptable, not because they are better than what we had before (they are not), but because they at least mention the good links which are now buried at the bottom of the page. Also, they've been rate limiting ordinary users like crazy: more often than I'd like to, Google and DuckDuckGo now either show me either an error message or tell me to wait a bit. Sometimes I waste at least a minute refreshing the page and waiting for a result.</p>\n<p>I also can't browse GitHub freely without being logged in. Anubis is now everywhere, occasionally blocking me. I feel like my productivity has actually gone down thanks to all of that.</p>\n<p><em>Edit: I see that most of the replies here are suggesting relying less on the web and going after more fundamental resources, which are great s",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-07T09:47:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://lobste.rs/s/ipplhe/how_are_you_dealing_with_all_negative_side"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "54983871e7884dfe",
+    "title": "MCP tool authorization: a gateway deny counts only when the server shows no side effect",
+    "url": "https://dev.to/worksi_25025494650/mcp-tool-authorization-a-gateway-deny-counts-only-when-the-server-shows-no-side-effect-nep",
+    "summary": "<p>Putting a gateway in front of an MCP server gives you a policy enforcement point on one network path. It does not prove the upstream server cannot be reached another way. A test that stops at the gateway's decision log checks the gateway's claim against the gateway's own records: the request was denied, the log says so, test passed.</p>\n\n<p>The question that matters is different: can a call the policy denies still cause a side effect on the upstream server? You answer that at the server and in the state it changes. This article proposes a test matrix built around that one assertion, with a harmless fixture server that keeps two records: one of every call its handlers receive, and one of the state it actually changed. The matrix covers discovery, invocation, a policy change between the two, an unapproved sensitive action, a direct call that skips the gateway, and a telemetry-only path that no gateway decides on.</p>\n\n<p>Everything below is a proposed acceptance criterion for your own",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:07:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/worksi_25025494650/mcp-tool-authorization-a-gateway-deny-counts-only-when-the-server-shows-no-side-effect-nep"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "178ae9f3ae06331a",
+    "title": "Every Refactor Commit Should Be Green and Revertible: A Bisect Audit",
+    "url": "https://dev.to/hackrs_6393/every-refactor-commit-should-be-green-and-revertible-a-bisect-audit-291l",
+    "summary": "<p>A refactor is only as safe as its smallest revertible step. If nobody can undo your change with one command, the characterization suite is decoration.</p>\n\n<p>This post starts after the tests are green. It covers cutting the change, ordering the cuts, and proving each commit stands alone.</p>\n\n<h2>\n  \n  \n  The contract: green and revertible at every commit\n</h2>\n\n<p>Two properties per commit. The suite is green. <code>git revert &lt;sha&gt;</code> restores green with no hand edits.</p>\n\n<p>Most teams check the first property only at the branch tip. That is not enough. A broken middle commit blocks <code>git bisect</code> and forces a full rollback later.</p>\n\n<h2>\n  \n  \n  Step 1 — Print a per-commit ledger\n</h2>\n\n<p>Run this before you ask for review.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight shell\"><code><span class=\"c\">#!/usr/bin/env bash</span>\n<span class=\"c\"># ledger.sh — churn and API surface per commit</span>\n<span class=\"nb\">set</span> <span",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:07:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/hackrs_6393/every-refactor-commit-should-be-green-and-revertible-a-bisect-audit-291l"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7ae9f747494cc8ec",
+    "title": "Your “Private” Search Engine Might Run on Bing. This One Builds Its Own Index",
+    "url": "https://dev.to/startupcafe/your-private-search-engine-might-run-on-bing-this-one-builds-its-own-index-4all",
+    "summary": "<p>Be honest: when a privacy page says \"we care about your data\", do you believe it? 😅</p>\n\n<p>Yeah. Me neither. Big promises, a padlock icon, and a footer that quietly takes half of it back.</p>\n\n<p>So when I opened the LYNX page from Anoneurx, I was ready to squint again. Then I reached the FAQ, and the first honest thing it told me was that the engine is <strong>not anonymous</strong> and <strong>not \"zero logs\"</strong>.</p>\n\n<p>On purpose.</p>\n\n<p>It said it again in the privacy policy. And again in the security page. And again in the benchmarks.</p>\n\n<p>That was enough to make me read <em>everything</em>: the project page, the README, the privacy policy, the security policy, the roadmap, the changelog and the benchmark page. (Yes, even the changelog. I regret nothing.)</p>\n\n<p>This post is what I found: what looks genuinely good, what is still unproven, who is behind it, and how you can help. In a hurry? The table right below is your 60-second version.</p>\n\n<blockquote>\n<p>🔗 <str",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:07:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/startupcafe/your-private-search-engine-might-run-on-bing-this-one-builds-its-own-index-4all"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ff7167edd2938942",
+    "title": "An AI poller cost us almost 27 USD in one day: the 40-line spend guard we added",
+    "url": "https://dev.to/cyberwarex/an-ai-poller-cost-us-almost-27-usd-in-one-day-the-40-line-spend-guard-we-added-161",
+    "summary": "<p>One day in July our AI bill reached almost 27 USD in a single day. Nobody had asked for it. This post is the short version of what went wrong and the small guard we run so it does not happen silently again. The code is about 40 lines of Python with no extra packages.</p>\n\n<h2>\n  \n  \n  What happened\n</h2>\n\n<p>We had an agent task that woke up every 3 minutes to check an inbox. Each wake-up was a full model call. The scheduler had registered that task 4 times, so it really ran about 80 times an hour.</p>\n\n<p>That alone would have been cheap, because the task used a free model. Then the free model started answering with rate limit errors (HTTP 429). Our model router had a fallback list, and the next entry was a paid model. Every 429 quietly became a paid call. Nothing watched the spend, so we only saw it hours later.</p>\n\n<p>Three mistakes stacked up:</p>\n\n<ol>\n<li>An LLM was used as a poller. Checking \"is there anything new?\" is a job for a script (a file check, a grep, a curl), not f",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-07T13:07:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/cyberwarex/an-ai-poller-cost-us-almost-27-usd-in-one-day-the-40-line-spend-guard-we-added-161"
+      }
+    ],
+    "score": 21.0
+  }
+]
