@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 139,
+      "title": "Convenience can mean bundling more together, as Venk does:..."
+    },
+    {
+      "startTime": 286,
+      "title": "Faster generation changes what an agent workflow can..."
+    },
+    {
+      "startTime": 427,
+      "title": "That convenience question gets sharper with Claude Code...."
+    },
+    {
+      "startTime": 585,
+      "title": "Software choices look different when they have to support..."
+    },
+    {
+      "startTime": 748,
+      "title": "To close, these stories put a practical question behind the..."
+    }
+  ]
+}

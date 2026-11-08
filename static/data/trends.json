@@ -213,28 +213,57 @@
         "copilot": 1,
         "openai": 1
       }
+    },
+    {
+      "date": "2026-11-08",
+      "tags": {
+        "claude": 5,
+        "llama": 1,
+        "golang": 2,
+        "vercel": 2,
+        "github": 3,
+        "javascript": 1,
+        "api": 3,
+        "deepseek": 1,
+        "serverless": 2,
+        "linux": 3,
+        "aws": 2,
+        "gcp": 1,
+        "google": 1,
+        "cloudflare": 1,
+        "open-source": 2,
+        "rust": 3,
+        "meta": 1,
+        "python": 6,
+        "nginx": 1,
+        "cve": 1,
+        "apple": 1,
+        "docker": 1,
+        "containers": 1,
+        "nvidia": 2
+      }
     }
   ],
   "top_tags": [
+    "claude",
     "api",
     "github",
-    "claude",
     "python",
     "open-source",
     "google",
     "openai",
-    "microsoft",
     "golang",
-    "dotnet",
-    "llm",
+    "microsoft",
     "nvidia",
-    "anthropic",
-    "cve",
+    "linux",
     "vercel",
     "aws",
+    "dotnet",
+    "llm",
+    "cve",
+    "anthropic",
     "kubernetes",
-    "linux",
     "java",
-    "laravel"
+    "apple"
   ]
 }

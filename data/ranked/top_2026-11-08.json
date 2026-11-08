@@ -1,0 +1,333 @@
+[
+  {
+    "id": "ca1d646e88eb9e86",
+    "title": "¿Por qué Claude recibe un ticket de cola y no un resultado cuando ejecuta un Graph de osFoundry?",
+    "url": "https://dev.to/bbt-es/por-que-claude-recibe-un-ticket-de-cola-y-no-un-resultado-cuando-ejecuta-un-graph-de-osfoundry-257h",
+    "summary": "<p>Esta es la herramienta que llama un chat de Claude para arrancar un Graph en <a href=\"https://osfoundry.io/es\" rel=\"noopener noreferrer\">osFoundry</a>, tal como la lista el endpoint MCP público. Obtenida con un <code>tools/list</code> sin autenticar el 2026-11-08 y recortada:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight json\"><code><span class=\"p\">{</span><span class=\"nl\">\"name\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"s2\">\"run_graph_session\"</span><span class=\"p\">,</span><span class=\"w\">\n </span><span class=\"nl\">\"description\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"s2\">\"Queue a Graph run on the owner's online desktop in a connected project. Retrieve progress and result with get_graph_run. The desktop can go offline, and local tool approvals still apply.\"</span><span class=\"p\">,</span><span class=\"w\">\n </span><span class=\"nl\">\"inputSchema\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span c",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:08:18+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/bbt-es/por-que-claude-recibe-un-ticket-de-cola-y-no-un-resultado-cuando-ejecuta-un-graph-de-osfoundry-257h"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/shinagawa-web/negative-stock-and-lost-updates-in-a-postgres-transaction-5hb"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "cdfa6a4b31946a20",
+    "title": "I built a \"what am I signing?\" checker for Solana in a weekend",
+    "url": "https://dev.to/olacode/i-built-a-what-am-i-signing-checker-for-solana-in-a-weekend-521e",
+    "summary": "<p>Most people approve crypto transactions blind. A site says \"Claim your airdrop!\", the wallet pops up, you click <strong>Approve</strong>... and hope.</p>\n\n<p>Wallet drainers count on that. One common Solana trick doesn't even \"send\" your tokens. It quietly hands <strong>ownership of your token account</strong> to the attacker. No obvious transfer, just gone.</p>\n\n<p>So for the MLH Solana Hackathon I built <strong>Clear Sign</strong>: paste a transaction (or click a button on a dApp) and see what it will <em>really</em> do before you sign.</p>\n\n<p>🔗 <strong>Live demo:</strong> <a href=\"https://clear-sign-beta.vercel.app/\" rel=\"noopener noreferrer\">https://clear-sign-beta.vercel.app/</a><br />\n🎥 <strong>Video:</strong> <a href=\"https://youtu.be/F_w-Fre-uyc\" rel=\"noopener noreferrer\">https://youtu.be/F_w-Fre-uyc</a><br />\n💻 <strong>Code:</strong> <a href=\"https://github.com/Olacode01/clear-sign\" rel=\"noopener noreferrer\">https://github.com/Olacode01/clear-sign</a></p>\n<h2>\n  \n  \n  The ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:08:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/olacode/i-built-a-what-am-i-signing-checker-for-solana-in-a-weekend-521e"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "d75bb7e0be62b001",
+    "title": "Leaflet Tutorial: Add a Map of Tunisia with TMaps Tiles",
+    "url": "https://dev.to/tmaps/leaflet-tutorial-add-a-map-of-tunisia-with-tmaps-tiles-1ac5",
+    "summary": "<p>Delivery app, real estate site, store locator: sooner or later, a project in Tunisia needs a base map. And not just any map. People expect to see their neighbourhood, their street names and the road numbers they actually drive on.</p>\n\n<p>In this post we'll put a map from <a href=\"https://www.tmaps.tn/en/cartes\" rel=\"noopener noreferrer\">TMaps, the maps API built for Tunisia</a>, in <a href=\"https://leafletjs.com\" rel=\"noopener noreferrer\">Leaflet</a>. It takes about ten lines of JavaScript. Then we'll go through the small details that tend to eat an afternoon: the API key, authorized domains, zoom limits and caching.</p>\n\n<p>You can see the finished result here: <a href=\"https://examples.tmaps.tn/01-raster-leaflet/\" rel=\"noopener noreferrer\">examples.tmaps.tn/01-raster-leaflet</a></p>\n\n<p>Or play with it right here, and fork it on CodePen to change the code:</p>\n\n<p>\n\n</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:07:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tmaps/leaflet-tutorial-add-a-map-of-tunisia-with-tmaps-tiles-1ac5"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4e321fc7cf3ff533",
+    "title": "DeepSeek V4.1 Flash 1017 Ultrafast now available on AI Gateway",
+    "url": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/deepseek-v4.1-flash-1017-ultrafast\">DeepSeek V4.1 Flash 1017 Ultrafast</a> is now available on AI Gateway through Fireworks. This model can generate upwards of <b>1,000 tokens per second</b>.</p><p>Ultrafast serves the October 17 update of DeepSeek V4.1 Flash through Fireworks' accelerated serverless endpoint. It is suited to interactive coding, reasoning, and agentic workflows where applications need to generate output and move to the next step quickly.</p><p>The model has a 1M-token context window for working with large codebases and long inputs. It is available in public preview without a waitroom or session time limit.</p><p>Use it by setting <code>deepseek/deepseek-v4.1-flash-1017-ultrafast</code> as the model name:</p><div></div><p>To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup:</p><div></div><p>Then select <code>deepseek/deepseek-v4.1-flash-1017-ultrafast</code> in the agent. See the",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-07T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "ce4fea07ecd41c2b",
+    "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI",
+    "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
+    "summary": "Back in July with v2.2, we added support for Windows guests. On November 6, we shipped v2.3 of Lima and now it runs without extra dependencies on Windows: VMs start through the same Host Compute System...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-08T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/"
+      }
+    ],
+    "score": 18.04
+  },
+  {
+    "id": "32ed9d785bc9aad1",
+    "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+    "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+    "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/issues/3046\">datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages</a></strong></p>\nI was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Prefetch\">HTTP prefetch</a> to the next page of rows in that table.</p>\n<p>This was happening because Datasette pages serve an HTTP <code>link</code> header like this:</p>\n<p><code>link: &lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv&gt;; rel=\"next\"</code></p>\n<p>This is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away.</p>\n<p>I dug in and learned that Firefox has <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=17541",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-07T23:57:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "3e88487f2a847c54",
+    "title": "Google Cloud Adds Self-Managed VMware Cloud Foundation on Bare Metal",
+    "url": "https://www.infoq.com/news/2026/11/google-cloud-self-managed-vmware/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-cloud-self-managed-vmware/en/headerimage/generatedHeaderImage-1793604325753.jpg\" /><p>Google Cloud has made a self-managed VMware solution generally available, running VMware Cloud Foundation 9.x on dedicated Z3 bare metal with root access across ESXi, vCenter and NSX in 22 regions. It sits beside the Google-managed VMware Engine and matches customer-operated offerings from AWS and Oracle, shifting lifecycle, patching and Broadcom licensing back to the customer.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-08T07:16:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-cloud-self-managed-vmware/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "247f7df96d20d12e",
+    "title": "Entire's Git Forge Rethinks Git Collaboration for Coding Agents",
+    "url": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/entire-git-forge-coding-agents/en/headerimage/entire-git-forge-agents-1794134163813.jpeg\" /><p>Entire is a Git forge designed specifically for collaboration between human developers and AI coding agents. Its premise is that traditional software development infrastructure, particularly the pull request (PR) model, is not well suited to an environment where AI agents generate, review, and iterate on code at high speed.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-08T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.96
+  },
+  {
+    "id": "4ca21bd2d380d2bd",
+    "title": "Cloudflare Scales D1 Control Plane to Millions of Databases",
+    "url": "https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/cloudflare-d1-control-plane/en/headerimage/generatedHeaderImage-1792577891694.jpg\" /><p>In a recent article, Cloudflare shared the redesign of the control plane of its D1 serverless SQL database to support millions of databases, avoiding centralized bottlenecks, implementing retries and idempotency, and using eventual consistency.</p> <i>By Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-08T06:34:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.04
+  },
+  {
+    "id": "595446fd7bf08fa5",
+    "title": "Autocomplétion d'adresse en Tunisie : arabe et arabizi",
+    "url": "https://dev.to/tmaps/autocompletion-dadresse-en-tunisie-arabe-et-arabizi-4e3k",
+    "summary": "<p>Demandez à dix personnes à Tunis de taper la même adresse, et vous verrez passer trois alphabets :</p>\n\n<ul>\n<li>en français : <code>Rue de Marseille, Tunis</code>\n</li>\n<li>en arabe : <code>نهج مرسيليا</code>\n</li>\n<li>en arabizi, c'est-à-dire le tunisien écrit en lettres latines avec des chiffres pour les sons que le français n'a pas : <code>nahj marseille</code>, <code>zan9et el bacha</code>, <code>9asr said</code>\n</li>\n</ul>\n\n<p>Un champ d'adresse qui ne comprend que la première façon d'écrire fait perdre des clients au moment de la commande. Dans cet article, on construit une autocomplétion avec l'<a href=\"https://www.tmaps.tn/geocoding\" rel=\"noopener noreferrer\">API de géocodage TMaps</a> qui gère les trois, et qui affiche correctement les résultats en arabe, de droite à gauche.</p>\n\n<p>À tester en ligne : <a href=\"https://examples.tmaps.tn/04-geocoding-search/\" rel=\"noopener noreferrer\">examples.tmaps.tn/04-geocoding-search</a>. Passez la langue en arabe, ou tapez <code>9asr",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:07:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tmaps/autocompletion-dadresse-en-tunisie-arabe-et-arabizi-4e3k"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "f23fd05fadc4ead4",
+    "title": "Arc Browser in 2026: Worth Leaving Chrome For?",
+    "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/arc-browser-in-2026-worth-leaving-chrome-for-2imj",
+    "summary": "<p>Arc Browser has been called the Chrome replacement we've been waiting for. Its workspace-and-spaces model is the most significant rethink of browser UI in years. But innovation doesn't automatically mean better. Here is where the approach holds up, where it gets in the way, and who should actually switch.</p>\n\n<h2>\n  \n  \n  Quick Verdict\n</h2>\n\n<p>Arc Browser (2026) is the most innovative desktop browser available today — if you're on a Mac. Its Spaces-based tab management, auto-archive, and split-view completely rethink how we organize our browsing life. The learning curve is real, and the Windows version is still catching up, but for knowledge workers drowning in tabs, Arc is a revelation.</p>\n\n<p>Overall Rating: 8/10 Target audience: Mac-based power users, project jugglers, and tab hoarders.</p>\n\n<h2>\n  \n  \n  What Makes Arc Different\n</h2>\n\n<p>Arc reimagines the browser interface from the ground up. Instead of a traditional tab bar across the top, Arc uses a persistent sidebar wit",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:05:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/arc-browser-in-2026-worth-leaving-chrome-for-2imj"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1f6c4c7ca3b68200",
+    "title": "Wholesale prices for tagged customers on Shopify, without a second store",
+    "url": "https://dev.to/appverix/wholesale-prices-for-tagged-customers-on-shopify-without-a-second-store-13f7",
+    "summary": "<p>A lot of small Shopify stores end up with a few wholesale buyers almost by accident: a café that wants your coffee by the case, a boutique that resells your candles, a gym that orders shakers in bulk. They shouldn't pay retail, but setting up a whole B2B operation for five accounts feels like overkill.</p>\n\n<p>This post walks through the usual options, what each one is good and bad at, and a simple setup based on customer tags. I'm writing it as AppVerix, a small studio that makes Shopify apps (one of them does this, mentioned at the end), but the first part applies whatever you end up using.</p>\n\n<h2>\n  \n  \n  The four common approaches\n</h2>\n\n<p><strong>1. A separate wholesale store.</strong> Clean separation, but you now maintain two catalogs, two inventories (or a sync app), two themes and usually two subscriptions. For a handful of buyers, that's a lot of upkeep.</p>\n\n<p><strong>2. Manual draft orders or invoices.</strong> The buyer emails you a list, you build a draft order wit",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:05:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/appverix/wholesale-prices-for-tagged-customers-on-shopify-without-a-second-store-13f7"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "80f768facc6c8188",
+    "title": "監視カメラが「見張る」時代に、VRが「見る力」を取り戻す理由",
+    "url": "https://dev.to/ashish_624379625242c5d263/jian-shi-kameragajian-zhang-ru-shi-dai-ni-vrgajian-ruli-woqu-rili-suli-you-21lb",
+    "summary": "<h1>\n  \n  \n  監視カメラが「見張る」時代に、VRが「見る力」を取り戻す理由\n</h1>\n\n<p>英国政府が交通ハブや公共イベントでライブ顔認証（LFR）を導入し、史上最大規模の移民取り締まりに活用する——という報道が流れました。同じ「目」の技術が、誰かを監視するためではなく、本人の視覚を支えるために使えないか。エンジニアとして、この非対称性は無視できません。</p>\n\n<p>正直に言えば、最初は懐疑的でした。昨年の秋、友人の娘さん（7歳）が弱視と診断され、週に一度の通院と自宅での遮蔽訓練に親子ともども疲れ果てていると聞いた夜のことです。彼女は片眼をアイパッチで覆われたまま、じっとテレビを見るのが苦痛で、すぐに外してしまう。「この子が好きな動画を、そのまま見ながら訓練できたら」——その素朴な願いが、技術の使い道を考え直すきっかけになりました。</p>\n\n<p>Seven Sportsが開発したMeta Questアプリ「Amblyotube」は、その問いへのひとつの実装です。設計の核は、VRヘッドセットが本質的に持つ「2つの独立したアイピース」というハードウェア特性。左右それぞれに別の映像フィードを送れるため、YouTubeのストリーミングをそのままデュオプティック（dichoptic）トレーニングへ変換できます。既存の動画資産をそのまま訓練装置に変える、という発想がまず面白い。</p>\n\n<p>アーキテクチャ上のポイントは3つ。第一に、優位眼側へ調整可能なブラー・コントラスト・不透明度をかける「Dominant Eye Shader」で、100%にすると完全なデジタル遮蔽として機能します。第二に、AIが動画内の人物（顔・身体）を検出し、弱視眼側の映像だけに選択的シャープニングをかける「Lazy Eye Sharpener（MFBFモード）」。第三に、両眼競合を減らす「Wedge Occlusion」——各眼の視野の一部を黒く塗り、それぞれが異なる領域を見る状態を作ります。</p>\n\n<p>融像の練習には「Magenta Focus Cue」を使います。自然な映像の肌色・緑・青に対して高いコントラストを持つマゼンタを弱視眼に、控えめなグレーを優位眼に提示し、脳に2つの信号を統合させる。地味ですが、色選択の設計としては合理的です。</p>\n\n<p>初期設定で",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:05:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ashish_624379625242c5d263/jian-shi-kameragajian-zhang-ru-shi-dai-ni-vrgajian-ruli-woqu-rili-suli-you-21lb"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7c648c80f53c66c4",
+    "title": "How to Give Claude, Cursor or Any AI Agent a Voice: Voiceovers and Subtitles with an MCP Server",
+    "url": "https://dev.to/miragea-voice/how-to-give-claude-cursor-or-any-ai-agent-a-voice-voiceovers-and-subtitles-with-an-mcp-server-pof",
+    "summary": "<p>You asked Claude to write a 60-second script for your next video. It did, in seconds. Then you copied the text into a text-to-speech website, downloaded an MP3, opened a subtitle editor, typed timings by hand, and dragged three files into your video editor. The AI wrote the words, but you still did all the production work.</p>\n\n<p>The missing piece is a <strong>voice</strong>: a way for the agent itself to turn text into audio files and matching subtitles. This tutorial shows how to add one to Claude Desktop, Claude Code, Cursor, VS Code or any other MCP client using an open-source MCP server.</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7al7v2s1q44ql1ykm7vy.png\"><img alt=\"Architecture diagram: an MCP client such as Claude or Cursor calls the local miragea-voice-mcp server over stdio, the server ca",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:05:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/miragea-voice/how-to-give-claude-cursor-or-any-ai-agent-a-voice-voiceovers-and-subtitles-with-an-mcp-server-pof"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "34631251eaa36102",
+    "title": "Человек создал язык его надо подержать",
+    "url": "https://dev.to/vbanna/chieloviek-sozdal-iazyk-iegho-nado-podierzhat-272b",
+    "summary": "<div class=\"ltag__link--embedded\">\n  <div class=\"crayons-story \">\n  <a class=\"crayons-story__hidden-navigation-link\" href=\"https://dev.to/vbanna/i-built-a-new-programming-language-with-a-built-in-3d-engine-built-with-rust-290m\">I built a new programming language with a built-in 3D engine (Built with Rust)</a>\n\n\n  <div class=\"crayons-story__body crayons-story__body-full_post\">\n    <div class=\"crayons-story__top\">\n      <div class=\"crayons-story__meta\">\n        <div class=\"crayons-story__author-pic\">\n\n          <a class=\"crayons-avatar  crayons-avatar--l  \" href=\"/vbanna\">\n            <img alt=\"vbanna profile\" class=\"crayons-avatar__image\" height=\"96\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F4233561%2F3834e0b1-6386-4315-8a59-bb5ac77dbb80.png\" width=\"96\" />\n          </a>\n        </div>\n        <div>\n          <div>\n            <a cla",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:04:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vbanna/chieloviek-sozdal-iazyk-iegho-nado-podierzhat-272b"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fe3c394e38204598",
+    "title": "FDA setzt PDUFA-Datum für Huntington-Gentherapie – was das für molekulare Bildung bedeu...",
+    "url": "https://dev.to/ashish_624379625242c5d263/fda-setzt-pdufa-datum-fur-huntington-gentherapie-was-das-fur-molekulare-bildung-bedeu-1ho2",
+    "summary": "<h1>\n  \n  \n  FDA setzt PDUFA-Datum für Huntington-Gentherapie – was das für molekulare Bildung bedeu...\n</h1>\n\n<p>FDA setzt PDUFA-Datum für Huntington-Gentherapie — was das für molekulare Bildung (und Tooling) bedeutet  Am 1. Mai 2025 entscheidet die FDA über uniQures Ifezuntirgen Inilparvovec (AMT-130) gegen Morbus Huntington. Confirmatory Trial: randomisiert, 200 Patienten, 2:1, primärer Endpunkt Total Functional Capacity nach 36 Monaten. Ein Meilenstein für AAV-basierte Genom-Editierung — aber die eigentliche Mechanik spielt sich im Angström-Bereich ab.  </p>\n\n<p>Klassische 2D-Darstellungen (Bänder, Pfeile, statische Ribbon-Plots) zeigen Topologie, nicht Mechanik. Wer einmal <em>in</em> einem Protein stand — Hämoglobin beim O₂-Binden, Glycolyse-Schritt für Schritt, CRISPR-Cas9 beim DNA-Schnitt — versteht Allosterie, Induced Fit, katalytische Triaden anders. Räumlich. Körperlich.  </p>\n\n<p>Genau hier setzt <strong>NexoPeek</strong> an: eine Meta‑Quest‑VR‑Molekularlabor‑Umgebung von S",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:04:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ashish_624379625242c5d263/fda-setzt-pdufa-datum-fur-huntington-gentherapie-was-das-fur-molekulare-bildung-bedeu-1ho2"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "778ba930632e798a",
+    "title": "I built a new programming language with a built-in 3D engine (Built with Rust)",
+    "url": "https://dev.to/vbanna/i-built-a-new-programming-language-with-a-built-in-3d-engine-built-with-rust-290m",
+    "summary": "<p>Hey Dev.to community! 👋</p>\n\n<p>For the past year, I’ve been working on a solo project that started as a frustration with game development setup. I love Rust, but sometimes setting up a new game project with OpenGL and various dependencies takes hours before you even draw a single pixel.</p>\n\n<p>So, I decided to build my own solution. Meet Venk — a modern, high-performance programming language designed specifically for 2D/3D game development.</p>\n\n<p>Today, I am thrilled to announce the first public release: Venk Beta v0.0.1! 🚀<br />\n🤔 What is Venk?</p>\n\n<p>Venk is a completely independent language (written in Rust) with its own Lexer, Parser, and Interpreter. But unlike Python or GDScript, Venk comes with batteries included.</p>\n\n<p>Here are the key features available right now in v0.0.1:</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>Built-in 2D/3D Engine: Powered by raylib, Venk natively supports 3D cameras, vectors, sprites, particle system",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-08T13:02:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vbanna/i-built-a-new-programming-language-with-a-built-in-3d-engine-built-with-rust-290m"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4bfdf07bbe3aae27",
+    "title": "Goodbye Claude, Hello Pi",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "summary": "<p>Article URL: <a href=\"https://caleb.software/posts/claude-to-pi.html\">https://caleb.software/posts/claude-to-pi.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50410107\">https://news.ycombinator.com/item?id=50410107</a></p>\n<p>Points: 367</p>\n<p># Comments: 228</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-08T03:11:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://caleb.software/posts/claude-to-pi.html"
+      }
+    ],
+    "score": 20.96
+  },
+  {
+    "id": "2fd76c4e111177c7",
+    "title": "Why AWS wants developers to stop babysitting their AI agents",
+    "url": "https://thenewstack.io/kiro-bots-agent-memory/",
+    "summary": "<img alt=\"Hand touching a glowing network of connected user icons, illustrating how developers coordinate a crew of AI agent bots\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/5295f7a6-getty-images-scwdwfcr94i-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>AWS first introduced Kiro, its agentic, spec-driven development environment, in July 2025. It also introduced Kiro Crew in August of</p>\n<p>The post <a href=\"https://thenewstack.io/kiro-bots-agent-memory/\">Why AWS wants developers to stop babysitting their AI agents</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-07T15:30:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/engineers-become-process-engineers/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/kiro-bots-agent-memory/"
+      }
+    ],
+    "score": 20.0
+  }
+]

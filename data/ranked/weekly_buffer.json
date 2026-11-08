@@ -3029,6 +3029,421 @@
           "section": "radar"
         }
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "stories": [
+        {
+          "title": "¿Por qué Claude recibe un ticket de cola y no un resultado cuando ejecuta un Graph de osFoundry?",
+          "url": "https://dev.to/bbt-es/por-que-claude-recibe-un-ticket-de-cola-y-no-un-resultado-cuando-ejecuta-un-graph-de-osfoundry-257h",
+          "category": "dev",
+          "score": 24.0,
+          "coverage_count": 2,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Esta es la herramienta que llama un chat de Claude para arrancar un Graph en <a href=\"https://osfoundry.io/es\" rel=\"noopener noreferrer\">osFoundry</a>, tal como la lista el endpoint MCP público. Ob",
+          "section": "main"
+        },
+        {
+          "title": "I built a \"what am I signing?\" checker for Solana in a weekend",
+          "url": "https://dev.to/olacode/i-built-a-what-am-i-signing-checker-for-solana-in-a-weekend-521e",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Most people approve crypto transactions blind. A site says \"Claim your airdrop!\", the wallet pops up, you click <strong>Approve</strong>... and hope.</p>\n\n<p>Wallet drainers count on that. One comm",
+          "section": "main"
+        },
+        {
+          "title": "Leaflet Tutorial: Add a Map of Tunisia with TMaps Tiles",
+          "url": "https://dev.to/tmaps/leaflet-tutorial-add-a-map-of-tunisia-with-tmaps-tiles-1ac5",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Delivery app, real estate site, store locator: sooner or later, a project in Tunisia needs a base map. And not just any map. People expect to see their neighbourhood, their street names and the roa",
+          "section": "main"
+        },
+        {
+          "title": "DeepSeek V4.1 Flash 1017 Ultrafast now available on AI Gateway",
+          "url": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway",
+          "category": "cloud",
+          "score": 13.0,
+          "coverage_count": 1,
+          "source_name": "Vercel Blog",
+          "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/deepseek-v4.1-flash-1017-ultrafast\">DeepSeek V4.1 Flash 1017 Ultrafast</a> is now available on AI Gateway through Fireworks. This model can generate up",
+          "section": "main"
+        },
+        {
+          "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI",
+          "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
+          "category": "devops",
+          "score": 18.04,
+          "coverage_count": 1,
+          "source_name": "CNCF Blog",
+          "summary": "Back in July with v2.2, we added support for Windows guests. On November 6, we shipped v2.3 of Lima and now it runs without extra dependencies on Windows: VMs start through the same Host Compute Syste",
+          "section": "main"
+        },
+        {
+          "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+          "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+          "category": "ai",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/issues/3046\">datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages</a></strong></p>\nI was looking at the Firef",
+          "section": "main"
+        },
+        {
+          "title": "Google Cloud Adds Self-Managed VMware Cloud Foundation on Bare Metal",
+          "url": "https://www.infoq.com/news/2026/11/google-cloud-self-managed-vmware/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-cloud-self-managed-vmware/en/headerimage/generatedHeaderImage-1793604325753.jpg\" /><p>Google Cloud has made a self-managed VMware solution generally",
+          "section": "main"
+        },
+        {
+          "title": "Entire's Git Forge Rethinks Git Collaboration for Coding Agents",
+          "url": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 24.96,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/entire-git-forge-coding-agents/en/headerimage/entire-git-forge-agents-1794134163813.jpeg\" /><p>Entire is a Git forge designed specifically for collaboratio",
+          "section": "main"
+        },
+        {
+          "title": "Cloudflare Scales D1 Control Plane to Millions of Databases",
+          "url": "https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 21.04,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/cloudflare-d1-control-plane/en/headerimage/generatedHeaderImage-1792577891694.jpg\" /><p>In a recent article, Cloudflare shared the redesign of the control ",
+          "section": "main"
+        },
+        {
+          "title": "Autocomplétion d'adresse en Tunisie : arabe et arabizi",
+          "url": "https://dev.to/tmaps/autocompletion-dadresse-en-tunisie-arabe-et-arabizi-4e3k",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Demandez à dix personnes à Tunis de taper la même adresse, et vous verrez passer trois alphabets :</p>\n\n<ul>\n<li>en français : <code>Rue de Marseille, Tunis</code>\n</li>\n<li>en arabe : <code>نهج مر",
+          "section": "main"
+        },
+        {
+          "title": "Arc Browser in 2026: Worth Leaving Chrome For?",
+          "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/arc-browser-in-2026-worth-leaving-chrome-for-2imj",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Arc Browser has been called the Chrome replacement we've been waiting for. Its workspace-and-spaces model is the most significant rethink of browser UI in years. But innovation doesn't automaticall",
+          "section": "main"
+        },
+        {
+          "title": "Wholesale prices for tagged customers on Shopify, without a second store",
+          "url": "https://dev.to/appverix/wholesale-prices-for-tagged-customers-on-shopify-without-a-second-store-13f7",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A lot of small Shopify stores end up with a few wholesale buyers almost by accident: a café that wants your coffee by the case, a boutique that resells your candles, a gym that orders shakers in bu",
+          "section": "main"
+        },
+        {
+          "title": "監視カメラが「見張る」時代に、VRが「見る力」を取り戻す理由",
+          "url": "https://dev.to/ashish_624379625242c5d263/jian-shi-kameragajian-zhang-ru-shi-dai-ni-vrgajian-ruli-woqu-rili-suli-you-21lb",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h1>\n  \n  \n  監視カメラが「見張る」時代に、VRが「見る力」を取り戻す理由\n</h1>\n\n<p>英国政府が交通ハブや公共イベントでライブ顔認証（LFR）を導入し、史上最大規模の移民取り締まりに活用する——という報道が流れました。同じ「目」の技術が、誰かを監視するためではなく、本人の視覚を支えるために使えないか。エンジニアとして、この非対称性は無視できません。</p>\n\n<p>正直に言え",
+          "section": "main"
+        },
+        {
+          "title": "How to Give Claude, Cursor or Any AI Agent a Voice: Voiceovers and Subtitles with an MCP Server",
+          "url": "https://dev.to/miragea-voice/how-to-give-claude-cursor-or-any-ai-agent-a-voice-voiceovers-and-subtitles-with-an-mcp-server-pof",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>You asked Claude to write a 60-second script for your next video. It did, in seconds. Then you copied the text into a text-to-speech website, downloaded an MP3, opened a subtitle editor, typed timi",
+          "section": "main"
+        },
+        {
+          "title": "Человек создал язык его надо подержать",
+          "url": "https://dev.to/vbanna/chieloviek-sozdal-iazyk-iegho-nado-podierzhat-272b",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<div class=\"ltag__link--embedded\">\n  <div class=\"crayons-story \">\n  <a class=\"crayons-story__hidden-navigation-link\" href=\"https://dev.to/vbanna/i-built-a-new-programming-language-with-a-built-in-3d-e",
+          "section": "main"
+        },
+        {
+          "title": "FDA setzt PDUFA-Datum für Huntington-Gentherapie – was das für molekulare Bildung bedeu...",
+          "url": "https://dev.to/ashish_624379625242c5d263/fda-setzt-pdufa-datum-fur-huntington-gentherapie-was-das-fur-molekulare-bildung-bedeu-1ho2",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h1>\n  \n  \n  FDA setzt PDUFA-Datum für Huntington-Gentherapie – was das für molekulare Bildung bedeu...\n</h1>\n\n<p>FDA setzt PDUFA-Datum für Huntington-Gentherapie — was das für molekulare Bildung (und",
+          "section": "main"
+        },
+        {
+          "title": "I built a new programming language with a built-in 3D engine (Built with Rust)",
+          "url": "https://dev.to/vbanna/i-built-a-new-programming-language-with-a-built-in-3d-engine-built-with-rust-290m",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Hey Dev.to community! 👋</p>\n\n<p>For the past year, I’ve been working on a solo project that started as a frustration with game development setup. I love Rust, but sometimes setting up a new game pr",
+          "section": "main"
+        },
+        {
+          "title": "Goodbye Claude, Hello Pi",
+          "url": "https://caleb.software/posts/claude-to-pi.html",
+          "category": "news",
+          "score": 20.96,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://caleb.software/posts/claude-to-pi.html\">https://caleb.software/posts/claude-to-pi.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50410107\"",
+          "section": "main"
+        },
+        {
+          "title": "Why AWS wants developers to stop babysitting their AI agents",
+          "url": "https://thenewstack.io/kiro-bots-agent-memory/",
+          "category": "news",
+          "score": 20.0,
+          "coverage_count": 2,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Hand touching a glowing network of connected user icons, illustrating how developers coordinate a crew of AI agent bots\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height",
+          "section": "main"
+        },
+        {
+          "title": "The Next Dependency Problem Is Inside Your AI Agent",
+          "url": "https://freek.dev/3215-the-next-dependency-problem-is-inside-your-ai-agent",
+          "category": "dev",
+          "score": 19.97,
+          "coverage_count": 1,
+          "source_name": "Freek Van der Herten",
+          "summary": "<p>Amit Merchant argues that skills, prompts, plugins, and MCP servers are becoming dependencies of AI agents, and should be versioned and managed like application code. He also highlights APM as a wa",
+          "section": "radar"
+        },
+        {
+          "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+          "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+          "category": "news",
+          "score": 19.54,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again\">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</a></p>\n<p>Comments UR",
+          "section": "radar"
+        },
+        {
+          "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+          "url": "https://github.com/hedgerow-dev/coldframe",
+          "category": "news",
+          "score": 19.0,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>I built Coldframe, a honeypot that pretends to be a supermarket refrigeration controller. Inspired by the events on industrial fridge installations in the past weeks, I wanted to see what people wo",
+          "section": "radar"
+        },
+        {
+          "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+          "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+          "category": "news",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed",
+          "section": "radar"
+        },
+        {
+          "title": "The $8 Linux Computer (2022)",
+          "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+          "category": "news",
+          "score": 17.63,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html\">http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html</a></p>\n<p>C",
+          "section": "radar"
+        },
+        {
+          "title": "The Apple MacBook Pro M5 is on Sale, and a Top MacBook to Buy Right Now",
+          "url": "https://www.wired.com/story/macbook-pro-m5-deal-11-6-2026/",
+          "category": "news",
+          "score": 17.44,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "Apple announced an updated 14-inch MacBook Pro with the latest M6 chip. But with the M5 model on sale, I’m not sure the M6 is worth the upgrade.",
+          "section": "radar"
+        },
+        {
+          "title": "Nspawn 3.0: A Docker-compatible Engine API for systemd-nspawn containers",
+          "url": "https://blog.nspawn.org/posts/nspawn-3-0-a-docker-compatible-engine-api-for-systemd-nspawn-containers/",
+          "category": "news",
+          "score": 16.96,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/lh0qbr/nspawn_3_0_docker_compatible_engine_api\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "systemd loves Rust",
+          "url": "https://amutable.com/blog/systemd-loves-rust",
+          "category": "news",
+          "score": 16.75,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/62loik/systemd_loves_rust\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "Running a law firm on Free software",
+          "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+          "category": "news",
+          "score": 16.72,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/\">https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/</a><",
+          "section": "radar"
+        },
+        {
+          "title": "Joy & Curiosity #105",
+          "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-105",
+          "category": "dev",
+          "score": 16.5,
+          "coverage_count": 1,
+          "source_name": "Thorsten Ball",
+          "summary": "Interesting & joyful things from the previous week",
+          "section": "radar"
+        },
+        {
+          "title": "Asahi Linux Progress Linux 7.3",
+          "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+          "category": "news",
+          "score": 16.06,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://asahilinux.org/2026/11/progress-report-7-3/\">https://asahilinux.org/2026/11/progress-report-7-3/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id",
+          "section": "radar"
+        },
+        {
+          "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+          "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+          "category": "news",
+          "score": 15.58,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+          "section": "radar"
+        },
+        {
+          "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+          "category": "news",
+          "score": 14.68,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+          "section": "radar"
+        },
+        {
+          "title": "Discogs’ Kevin Lewandowski can’t live without his AeroPress",
+          "url": "https://www.theverge.com/tech/1029474/discogs-kevin-lewandowski-aeropress-interview",
+          "category": "news",
+          "score": 12.71,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "Twenty-five years ago, Kevin Lewandowski founded Discogs, arguably the destination online for obsessive vinyl collectors and music nerds of all stripes. It is a marketplace for buying and selling reco",
+          "section": "radar"
+        },
+        {
+          "title": "AI broke the cybersecurity world. What’s next?",
+          "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+          "category": "news",
+          "score": 12.29,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series l",
+          "section": "radar"
+        },
+        {
+          "title": "The US let Nvidia sell chips to an empty office in China",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+          "category": "news",
+          "score": 12.25,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According ",
+          "section": "radar"
+        },
+        {
+          "title": "Dear Open Source Developers: It's OK not to embargo",
+          "url": "https://opensourcesecurity.io/2026/10-embargo/",
+          "category": "news",
+          "score": 11.96,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/lhovnm/dear_open_source_developers_it_s_ok_not\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "Absolute vs Relative Imports in Python",
+          "url": "https://realpython.com/absolute-vs-relative-python-imports/",
+          "category": "dev",
+          "score": 10.49,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Compare Python relative imports with absolute imports, weigh the pros and cons of each, and learn best practices for writing clean import statements.",
+          "section": "radar"
+        },
+        {
+          "title": "Python Project Structure: How to Choose the Right Layout",
+          "url": "https://realpython.com/python-application-layouts/",
+          "category": "dev",
+          "score": 10.45,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Learn how to structure Python projects: pick between flat and src/ layouts, organize your code, and apply the patterns to CLI, web, and GUI apps.",
+          "section": "radar"
+        },
+        {
+          "title": "Managing Multiple Python Versions With pyenv",
+          "url": "https://realpython.com/intro-to-pyenv/",
+          "category": "dev",
+          "score": 10.35,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Learn how to use pyenv to manage multiple Python versions, prevent conflicts, and keep your projects compatible and development smooth.",
+          "section": "radar"
+        },
+        {
+          "title": "Thonny: The Beginner-Friendly Python Editor",
+          "url": "https://realpython.com/python-thonny/",
+          "category": "dev",
+          "score": 10.32,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Learn how to use Thonny, the free Python IDE built for beginners, to write, run, and debug your code with its step-by-step debugger.",
+          "section": "radar"
+        },
+        {
+          "title": "EP232: 6 Frequently Used Orchestration Frameworks in an AI system",
+          "url": "https://blog.bytebytego.com/p/ep232-6-frequently-used-orchestration",
+          "category": "dev",
+          "score": 10.03,
+          "coverage_count": 1,
+          "source_name": "Alex Xu (ByteByteGo)",
+          "summary": "Orchestration in an AI system manages tasks across agents, handles failures, shared memory and context.",
+          "section": "radar"
+        }
+      ]
     }
   ]
 }
