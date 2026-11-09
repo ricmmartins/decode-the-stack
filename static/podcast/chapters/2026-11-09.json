@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 8,
+      "title": "Opening"
+    },
+    {
+      "startTime": 140,
+      "title": "The distinction here is between connecting systems and..."
+    },
+    {
+      "startTime": 285,
+      "title": "The architectural question is not simply whether agents can..."
+    },
+    {
+      "startTime": 432,
+      "title": "The AI bubble question needs a distinction: enthusiasm..."
+    },
+    {
+      "startTime": 588,
+      "title": "That brings us to where these tools actually meet an..."
+    },
+    {
+      "startTime": 743,
+      "title": "To close, three security stories bring the stakes into..."
+    }
+  ]
+}

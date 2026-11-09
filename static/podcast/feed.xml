@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Sun, 08 Nov 2026 13:21:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 13:23:57 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Automation’s next test is earning operational trust</title>
+      <description>Monday’s reporting connects a widening role for AI and automation with a persistent engineering challenge: successful execution does not necessarily mean correct, safe, or useful results. New infrastructure, funding, and frameworks promise to reduce…</description>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-09.mp3?v=402bfd320da4" length="11810003" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-09.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-09-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Monday’s reporting connects a widening role for AI and automation with a persistent engineering challenge: successful execution does not necessarily mean correct, safe, or useful results. New infrastructure, funding, and frameworks promise to reduce…</itunes:summary>
+      <itunes:duration>984</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-09.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Faster agents make control and context more important</title>
       <description>This Sunday, 2026-11-08 UTC, the strongest supplied reporting concerns the infrastructure around automation: faster model serving, agent-oriented collaboration, and systems that separate starting work from completing it. Across cloud operations and…</description>

@@ -3444,6 +3444,511 @@
           "section": "radar"
         }
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "stories": [
+        {
+          "title": "Same loop, same numbers, 13x slower. I only swapped two lines.",
+          "url": "https://dev.to/haiduc0147/same-loop-same-numbers-13x-slower-i-only-swapped-two-lines-26ie",
+          "category": "dev",
+          "score": 24.0,
+          "coverage_count": 2,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Two functions that add up every number in a 4096 by 4096 grid:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span c",
+          "section": "main"
+        },
+        {
+          "title": "用 osFoundry Operator 讓 AI 代理操作 App，每個動作都留下紀錄",
+          "url": "https://dev.to/tauchi-zh/yong-osfoundry-operator-rang-ai-dai-li-cao-zuo-appmei-ge-dong-zuo-du-liu-xia-ji-lu-3p45",
+          "category": "dev",
+          "score": 24.0,
+          "coverage_count": 2,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>「我的 GPU endpoint 有哪些還在計費？」這個問題很簡單，但要回答它，通常得點進三個畫面、讀出數字，再回到聊天視窗把它們打出來。把這件事交給 AI 代理聽起來很不錯，直到你開始追問：它到底點了什麼？osFoundry Operator 就是圍繞這個問題設計的：代理在對話旁邊的 App 即時窗格裡工作，它做的每個動作都會被記錄下來。</p>\n\n<h2>\n  \n  \n  對話旁邊，就是",
+          "section": "main"
+        },
+        {
+          "title": "Launching the Vite Ecosystem Fund",
+          "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+          "category": "dev",
+          "score": 22.34,
+          "coverage_count": 1,
+          "source_name": "Cloudflare Blog",
+          "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maint",
+          "section": "main"
+        },
+        {
+          "title": "Run Linux applications in hypervisor-isolated micro-VMs with Hyperlight",
+          "url": "https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/",
+          "category": "devops",
+          "score": 17.95,
+          "coverage_count": 1,
+          "source_name": "CNCF Blog",
+          "summary": "More and more cloud native systems run code nobody on the team wrote: the Python an AI agent generated a second ago, or a plugin a customer just uploaded. Each of them needs a boundary between...",
+          "section": "main"
+        },
+        {
+          "title": "SRE Weekly Issue #542",
+          "url": "https://sreweekly.com/sre-weekly-issue-542/",
+          "category": "devops",
+          "score": 14.54,
+          "coverage_count": 1,
+          "source_name": "SRE Weekly",
+          "summary": "View on sreweekly.com A message from our sponsor, Archestra: AI chaos in your org? Archestra is an open-source enterprise AI platform used by Fortune 50s that organizes your AI: LLM proxy, MCP gateway",
+          "section": "main"
+        },
+        {
+          "title": "AI Security",
+          "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+          "category": "security",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "Schneier on Security",
+          "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspe",
+          "section": "main"
+        },
+        {
+          "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+          "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+          "category": "security",
+          "score": 19.98,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.\n\nIt has several security fixe",
+          "section": "main"
+        },
+        {
+          "title": "The Web Is More Than Enough, by Paul Ford",
+          "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+          "category": "ai",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p><a href=\"https://news.ycombinator.com/item?id=50416456#50421091\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=50416456\">The Web Is More Than Enough, by Paul Ford</a> &mdash; Hack",
+          "section": "main"
+        },
+        {
+          "title": "Hide your slop PR descriptions behind <details><summary>",
+          "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+          "category": "ai",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p>Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on t",
+          "section": "main"
+        },
+        {
+          "title": "Podcast: Distributed LLM Inference on Kubernetes with llm-d, Wasm, & TornadoVM",
+          "url": "https://www.infoq.com/podcasts/distributed-llm-inference-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/podcasts/distributed-llm-inference-kubernetes/en/smallimage/infoq-podcast-500-1793797932006.jpg\" /><p>In this episode, Edoardo Vacchi discusses the evolving landscape o",
+          "section": "main"
+        },
+        {
+          "title": "Article: Agentic AI Architecture: Current Challenges and Future Opportunities",
+          "url": "https://www.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/en/headerimage/agentic-ai-architecture-challenges-opportunities-header-1793709540690.jpg\" /><p>Agentic AI arch",
+          "section": "main"
+        },
+        {
+          "title": "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications",
+          "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 23.87,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/en/headerimage/functiongemma-1794220315671.jpeg\" /><p>At the recent PyTorch Conference North America 2026, Amazon introduc",
+          "section": "main"
+        },
+        {
+          "title": "Pinterest Replaces Journey Clustering with 4B Qwen3 LLM, Reports Improved Engagement",
+          "url": "https://www.infoq.com/news/2026/11/pinterest-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 23.73,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/pinterest-journey/en/headerimage/generatedHeaderImage-1793998579474.jpg\" /><p>Pinterest has moved its user-journey inference system from a multi-stage clus",
+          "section": "main"
+        },
+        {
+          "title": "Tokio Releases Topcoat: A Batteries-Included Full-Stack Rust Framework",
+          "url": "https://www.infoq.com/news/2026/11/topcoat-rust-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 21.95,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/topcoat-rust-framework/en/headerimage/generatedHeaderImage-1793983973654.jpg\" /><p>Topcoat is an open-source, server-rendered full-stack web framework for ",
+          "section": "main"
+        },
+        {
+          "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+          "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+          "category": "news",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p><a href=\"https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company\" rel=\"nofollow\">https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-aff...</a>, <a href=\"https://archi",
+          "section": "main"
+        },
+        {
+          "title": "A job offer on LinkedIn came with malware in a Git hook. It's the \"Contagious Interview\" playbook",
+          "url": "https://dev.to/huzaifa207/a-job-offer-on-linkedin-came-with-malware-in-a-git-hook-its-the-contagious-interview-playbook-34ia",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A recruiter messaged me on LinkedIn about building the website for a blockchain basketball game. Then they sent a documentation pack as a <code>.tar.gz</code> file. The plan was simple: review the ",
+          "section": "main"
+        },
+        {
+          "title": "AI Brief: Apple's HALO Robot, 5,000 Agents per Repo",
+          "url": "https://dev.to/lanternproton/ai-brief-apples-halo-robot-5000-agents-per-repo-4c0c",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Apple's humanoid hit 91% task success using a Qwen model, GitHub internally tested 5,000 agents working in one repository, and Sam Altman told Stanford that a token budget now substitutes for a hun",
+          "section": "main"
+        },
+        {
+          "title": "Seven Tests I Write Before I Trust a .NET Play Counter",
+          "url": "https://dev.to/michael_maurice/seven-tests-i-write-before-i-trust-a-net-play-counter-35i3",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A play counter is the easiest feature to demo and one of the easiest to get quietly wrong. <code>plays = plays + 1</code> passes every manual test you'll ever click through. It also counts a retrie",
+          "section": "main"
+        },
+        {
+          "title": "An Empty Role Can Make a Salary Tool Confidently Wrong",
+          "url": "https://dev.to/vexaloom-labs/an-empty-role-can-make-a-salary-tool-confidently-wrong-1gpd",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Your weekend agent can forget <code>roles</code>, get a plausible salary back, and confidently answer your question about a different job. Nothing crashes. That's the annoying part.</p>\n\n<p>In <cod",
+          "section": "main"
+        },
+        {
+          "title": "What I Check Before Trusting a Digital Product Automation Workflow",
+          "url": "https://dev.to/eva-nomados/what-i-check-before-trusting-a-digital-product-automation-workflow-2l67",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Getting an automation workflow to run is one thing.</p>\n\n<p>Trusting it to handle real orders is another.</p>\n\n<p>When you connect Payhip, Make, Telegram, and Notion, it's easy to focus on whether ",
+          "section": "main"
+        },
+        {
+          "title": "Prompt Injection Attack Examples: 5 Real Cases From 2026 and How to Protect Your AI Features",
+          "url": "https://dev.to/ashtech52/prompt-injection-attack-examples-5-real-cases-from-2026-and-how-to-protect-your-ai-features-14o2",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>In 2026, an AI agent was hijacked by an email it was asked to read. Another leaked CRM data through a form anyone on the internet could fill in, with no stolen password and no click. These prompt i",
+          "section": "radar"
+        },
+        {
+          "title": "What Breaks When You Run a Company Brain on Real Calls",
+          "url": "https://dev.to/2pizza/what-breaks-when-you-run-a-company-brain-on-real-calls-2dno",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<blockquote>\n<p>TL;DR: AI meeting notes fail in boring, predictable ways: the same call imported twice, early proposals logged as decisions, the wrong person credited, old decisions never retired, a b",
+          "section": "radar"
+        },
+        {
+          "title": "Moving your VPS to a new provider without downtime",
+          "url": "https://dev.to/eqvps/moving-your-vps-to-a-new-provider-without-downtime-11g0",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Every migration horror story has the same middle part: someone changed DNS first and then started copying. Downtime during a move is almost never about the copy being slow. It's about doing the ste",
+          "section": "radar"
+        },
+        {
+          "title": "CPF contribution calculation in code: 2 common shortcuts fail half the time",
+          "url": "https://dev.to/jeremiah_say/cpf-contribution-calculation-in-code-2-common-shortcuts-fail-half-the-time-180a",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Singapore's CPF contribution looks like a one-line calculation. Take the wage, multiply by a rate, done. If you're building payroll, an HR tool or a salary calculator, that line is where the bugs s",
+          "section": "radar"
+        },
+        {
+          "title": "I'm not convinced the AI bubble exists",
+          "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+          "category": "news",
+          "score": 20.22,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists\">https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exis",
+          "section": "radar"
+        },
+        {
+          "title": "Scaling an autonomous agent from one team to fifty: A serverless-to-container decision framework",
+          "url": "https://thenewstack.io/scaling-autonomous-agents-framework/",
+          "category": "news",
+          "score": 20.0,
+          "coverage_count": 2,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Dark, high-speed water currents in motion blur, representing data throughput and scaling pressure in software systems.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=",
+          "section": "radar"
+        },
+        {
+          "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+          "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+          "category": "security",
+          "score": 19.97,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker.\n\nKeplr uses a company called Web3Auth to run that Google and Apple sign-in. The at",
+          "section": "radar"
+        },
+        {
+          "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+          "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+          "category": "security",
+          "score": 19.96,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week.\n\nThe agents also found a Taipei fire ",
+          "section": "radar"
+        },
+        {
+          "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+          "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+          "category": "security",
+          "score": 19.88,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected c",
+          "section": "radar"
+        },
+        {
+          "title": "Statement from Nvidia board of directors",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+          "category": "news",
+          "score": 19.54,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors\">https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors</a></p>\n<p>Comments UR",
+          "section": "radar"
+        },
+        {
+          "title": "Outlook.com is rejecting email from domains without DMARC",
+          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+          "category": "news",
+          "score": 19.32,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://mailroute.net/blog/outlook-rejecting-email-without-dmarc\">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</a></p>\n<p>Comments URL: <a href=\"https://ne",
+          "section": "radar"
+        },
+        {
+          "title": "Ding, toasts with real spring physics",
+          "url": "https://freek.dev/3216-ding-toasts-with-real-spring-physics",
+          "category": "dev",
+          "score": 18.7,
+          "coverage_count": 1,
+          "source_name": "Freek Van der Herten",
+          "summary": "<p>Ding is a toast notification library with playful spring physics, built to work with React, Svelte, or plain DOM. The site includes interactive demos for layout, sounds, themes, and different toast",
+          "section": "radar"
+        },
+        {
+          "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+          "url": "https://ketchup3d.github.io/app/",
+          "category": "news",
+          "score": 18.68,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://ketchup3d.github.io/app/\">https://ketchup3d.github.io/app/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50418176\">https://news.ycombinator.co",
+          "section": "radar"
+        },
+        {
+          "title": "Soap Box: Security must be more browser-centric",
+          "url": "https://risky.biz/SOAPBOX112/",
+          "category": "security",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Risky Business (Podcast)",
+          "summary": "In this Soap Box episode Patrick Gray chats to Push Security co-founder and CEO Adam Bateman about the benefits of taking a browser-centric approach to security.\n\nBy now most Risky Business listeners ",
+          "section": "radar"
+        },
+        {
+          "title": "STRG: S3-Compatible, AI-Native Cloud Storage (Sponsored)",
+          "url": "https://davidwalsh.name/strg-storage",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "David Walsh Blog",
+          "summary": "<p>Asset management is big business within the web world. The larger that our web apps grow, the larger the number of assets and their file size naturally increases. With that increase, you need to wo",
+          "section": "radar"
+        },
+        {
+          "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+          "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+          "category": "news",
+          "score": 17.89,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
+          "section": "radar"
+        },
+        {
+          "title": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
+          "url": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
+          "category": "news",
+          "score": 17.62,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "As data center protests break out across Europe, a mismatched band of campaigners is trying to block Google from building a sprawling new facility east of London.",
+          "section": "radar"
+        },
+        {
+          "title": "RAM Altman: Linux Script Emails Sam Altman Daily How Much Unused RAM in Your PC",
+          "url": "https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/",
+          "category": "news",
+          "score": 17.6,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/\">https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/</a></p>\n<p>Comme",
+          "section": "radar"
+        },
+        {
+          "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+          "category": "news",
+          "score": 17.54,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers\">https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers</a></p>\n<p>Comments UR",
+          "section": "radar"
+        },
+        {
+          "title": "Quiz: TDD With AI Agents: Design the Tests First, Let the Agent Implement",
+          "url": "https://realpython.com/quizzes/tdd-ai-agents/",
+          "category": "dev",
+          "score": 17.42,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Check your grasp of TDD with AI agents in Python. Write the contract and tests first, then let a coding agent implement code that passes them.",
+          "section": "radar"
+        },
+        {
+          "title": "Moving from AI adoption to an AI operating model: How Docusign engineering went beyond tool rollout",
+          "url": "https://thenewstack.io/docusign-ai-engineering-adoption/",
+          "category": "news",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Several hands guide an oversized pen, paintbrush and pencil to draw a heart on an easel, illustrating team collaboration\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" heigh",
+          "section": "radar"
+        },
+        {
+          "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+          "url": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+          "category": "security",
+          "score": 16.98,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty.\n\nAccording to reports from Bloomberg and CNBC, ",
+          "section": "radar"
+        },
+        {
+          "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+          "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+          "category": "security",
+          "score": 16.95,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazard",
+          "section": "radar"
+        },
+        {
+          "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+          "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+          "category": "security",
+          "score": 16.89,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following rep",
+          "section": "radar"
+        },
+        {
+          "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+          "url": "https://duxlabs.dev/",
+          "category": "news",
+          "score": 16.44,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://duxlabs.dev/\">https://duxlabs.dev/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50416053\">https://news.ycombinator.com/item?id=50416053</a></",
+          "section": "radar"
+        },
+        {
+          "title": "What is Pathways? Single-controller training for large models",
+          "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Google Developers Blog",
+          "summary": "Pathways is a single-controller distributed training system designed to coordinate large-scale model training across multiple accelerator groups by representing computations as a global dataflow graph",
+          "section": "radar"
+        },
+        {
+          "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+          "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+          "category": "ai",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Hugging Face Blog",
+          "summary": "",
+          "section": "radar"
+        },
+        {
+          "title": "parse_number() as a SQLite extension: C vs Rust",
+          "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+          "category": "ai",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/sqlite-parse-number-c-vs-rust#readme\">parse_number() as a SQLite extension: C vs Rust</a></p>\n        <p>I was out w",
+          "section": "radar"
+        },
+        {
+          "title": "RIP, Harvest",
+          "url": "https://aphyr.com/posts/427-rip-harvest",
+          "category": "dev",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Kyle Kingsbury (Aphyr)",
+          "summary": "<p>I’ve been a self-employed contractor for about a decade now, and I’m bummed about <a href=\"https://www.getharvest.com/\">Harvest</a>.</p>\n<p>Harvest was a time-tracking and invoicing service. You’d ",
+          "section": "radar"
+        },
+        {
+          "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+          "url": "https://github.com/synchopate/llama-modchip",
+          "category": "news",
+          "score": 15.9,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://github.com/synchopate/llama-modchip\">https://github.com/synchopate/llama-modchip</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50411961\">https",
+          "section": "radar"
+        }
+      ]
     }
   ]
 }

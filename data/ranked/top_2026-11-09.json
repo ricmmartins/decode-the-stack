@@ -1,0 +1,350 @@
+[
+  {
+    "id": "165a9364bc0ccf65",
+    "title": "Same loop, same numbers, 13x slower. I only swapped two lines.",
+    "url": "https://dev.to/haiduc0147/same-loop-same-numbers-13x-slower-i-only-swapped-two-lines-26ie",
+    "summary": "<p>Two functions that add up every number in a 4096 by 4096 grid:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nf\">sumRows</span><span class=\"p\">(</span><span class=\"nx\">grid</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n  <span class=\"kd\">let</span> <span class=\"nx\">s</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n  <span class=\"k\">for </span><span class=\"p\">(</span><span class=\"kd\">let</span> <span class=\"nx\">r</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span> <span class=\"nx\">r</span> <span class=\"o\">&lt;</span> <span class=\"nx\">N</span><span class=\"p\">;</span> <span class=\"nx\">r</span><span class=\"o\">++</span><span class=\"p\">)</span>\n    <span class=\"k\">for </span><span class=\"p\">(</span><span class=\"kd\">let</span> <span class=\"nx\">c</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:02:31+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/haiduc0147/same-loop-same-numbers-13x-slower-i-only-swapped-two-lines-26ie"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/eventually"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "2c5918315eb49ce4",
+    "title": "用 osFoundry Operator 讓 AI 代理操作 App，每個動作都留下紀錄",
+    "url": "https://dev.to/tauchi-zh/yong-osfoundry-operator-rang-ai-dai-li-cao-zuo-appmei-ge-dong-zuo-du-liu-xia-ji-lu-3p45",
+    "summary": "<p>「我的 GPU endpoint 有哪些還在計費？」這個問題很簡單，但要回答它，通常得點進三個畫面、讀出數字，再回到聊天視窗把它們打出來。把這件事交給 AI 代理聽起來很不錯，直到你開始追問：它到底點了什麼？osFoundry Operator 就是圍繞這個問題設計的：代理在對話旁邊的 App 即時窗格裡工作，它做的每個動作都會被記錄下來。</p>\n\n<h2>\n  \n  \n  對話旁邊，就是 App 的即時窗格\n</h2>\n\n<p><a href=\"https://osfoundry.io/zh-tw\" rel=\"noopener noreferrer\">osFoundry</a> 是一款把聊天、代理、檔案和工具整合在同一個視窗裡的桌面 App。Operator 把畫面分成三欄。左邊是 Operator 的工作階段清單，中間是對話，右邊則是即時的 dashboard 窗格：一份真正的 osFoundry App，Operator 會在裡面開啟各個畫面。窗格上方會顯示目前所在的畫面（這裡是 Dashboard /models/endpoints），並提供 Home 與 Project 捷徑、Reload dashboard 和 Open in a new window。拖曳分隔線就能把窗格拉寬。</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fmzsdbb40795l9cegx5h2.jpg\"><img alt=\"osFoundry Operator，左邊是工作階段清單，中間是對話，右邊的即時 dashboard 窗格顯示 Endpoints 畫面（範例資料）\" height=\"500\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgra",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:01:36+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tauchi-zh/yong-osfoundry-operator-rang-ai-dai-li-cao-zuo-appmei-ge-dong-zuo-du-liu-xia-ji-lu-3p45"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tauchi-ko/ai-eijeonteuege-buseowa-yeoghaleul-jweossdeoni-osfoundryeseo-hwaginman-hamyeon-doedeora-57ke"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "d319eafb1e40c298",
+    "title": "Launching the Vite Ecosystem Fund",
+    "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+    "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-09T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/"
+      }
+    ],
+    "score": 22.34
+  },
+  {
+    "id": "00af4ab35219ae8c",
+    "title": "Run Linux applications in hypervisor-isolated micro-VMs with Hyperlight",
+    "url": "https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/",
+    "summary": "More and more cloud native systems run code nobody on the team wrote: the Python an AI agent generated a second ago, or a plugin a customer just uploaded. Each of them needs a boundary between...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-09T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/"
+      }
+    ],
+    "score": 17.95
+  },
+  {
+    "id": "f2c29beeafff3429",
+    "title": "SRE Weekly Issue #542",
+    "url": "https://sreweekly.com/sre-weekly-issue-542/",
+    "summary": "View on sreweekly.com A message from our sponsor, Archestra: AI chaos in your org? Archestra is an open-source enterprise AI platform used by Fortune 50s that organizes your AI: LLM proxy, MCP gateway, skill catalog, feature factory, governance, observability and deterministic guardrails. ⇨ Book a call with the core team. What does it cost to [&#8230;]",
+    "category": "devops",
+    "source_name": "SRE Weekly",
+    "published": "2026-11-08T19:40:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "SRE Weekly",
+        "url": "https://sreweekly.com/sre-weekly-issue-542/"
+      }
+    ],
+    "score": 14.54
+  },
+  {
+    "id": "01ead3a2ee518184",
+    "title": "AI Security",
+    "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+    "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p>\n<p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understand which one they are working on. And it&#8217;s important for us as a community to work on them all. They are: security of AI, security with AI, and security from AI. [un]prompted had good talks about all three...</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-09T12:05:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "7d8325c9cb792d41",
+    "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+    "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+    "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.\n\nIt has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-09T10:01:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html"
+      }
+    ],
+    "score": 19.98
+  },
+  {
+    "id": "a22d64d185fa03bf",
+    "title": "The Web Is More Than Enough, by Paul Ford",
+    "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+    "summary": "<p><a href=\"https://news.ycombinator.com/item?id=50416456#50421091\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=50416456\">The Web Is More Than Enough, by Paul Ford</a> &mdash; Hacker News.</p><p>OK, this comment convinced me to give that a shot.</p>\n<p>Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: <a href=\"https://static.simonwillison.net/static/2026/Hidden-Reef-Egg-threejs.html\">https://static.simonwillison.net/static/2026/Hidden-Reef-Egg...</a> (77KB)</p>\n<p>I just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread where it had built it, and got this: <a href=\"https://static.simonwillison.net/static/2026/Hidden-Reef-Egg-Vanilla-WebGL.html\">https://static.simonwillison.net/static/2026/Hidden-Reef-Egg...</a> (98KB)</p>\n<p>They aren't identical - you can see what Claude said about that in the transcript (I don't fully understand why it differed): <a href=\"https://claude.ai/s",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-09T04:32:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "ca82d08c2e74cbcb",
+    "title": "Hide your slop PR descriptions behind <details><summary>",
+    "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+    "summary": "<p>Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions.</p>\n<h4 id=\"they-re-too-good-at-describing-the-work\">They're too good at describing the work</h4>\n<p>The problem is that they are <em>too</em> good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it. That's a lot of information to absorb.</p>\n<p>It's not necessarily slop, but it <em>reads</em> like slop!</p>\n<p>It's very easy to spot an AI-written PR, and as with other forms of AI writing my instant reaction is best summarized as \"I'm not reading all of that\". It doesn't matter how accurate or useful the information is, I'm instantly put off by the th",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-09T04:25:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/9/details-summary/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "1d01bbb452681949",
+    "title": "Podcast: Distributed LLM Inference on Kubernetes with llm-d, Wasm, & TornadoVM",
+    "url": "https://www.infoq.com/podcasts/distributed-llm-inference-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/podcasts/distributed-llm-inference-kubernetes/en/smallimage/infoq-podcast-500-1793797932006.jpg\" /><p>In this episode, Edoardo Vacchi discusses the evolving landscape of WebAssembly on the backend, running Java workloads on GPUs using TornadoVM, and optimizing distributed AI inference using llm-d and vLLM on Kubernetes. Edoardo explains how llm-d manages cache locality (KV and prefix caches), request routing, and batch inference across Kubernetes clusters to maximize expensive GPU utilization.</p> <i>By Edoardo Vacchi</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-09T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/podcasts/distributed-llm-inference-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "0ea14d350c4c487b",
+    "title": "Article: Agentic AI Architecture: Current Challenges and Future Opportunities",
+    "url": "https://www.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/en/headerimage/agentic-ai-architecture-challenges-opportunities-header-1793709540690.jpg\" /><p>Agentic AI architecture extends microservices and cloud-native architectures with AI agents that work with context, memory, and protocols such as MCP and A2A. The article covers bounded-context integration, task-dependent coordination strategies, new security risks, and observability needs. It expects gradual adoption alongside existing architectures, with platforms absorbing common components.</p> <i>By Rafał Gancarz</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-09T10:52:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "00d27441e4db4bdd",
+    "title": "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications",
+    "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/en/headerimage/functiongemma-1794220315671.jpeg\" /><p>At the recent PyTorch Conference North America 2026, Amazon introduced TorchNeuron, a native PyTorch backend that enables developers to run existing PyTorch code on AWS Trainium AI chips with virtually no code modifications.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-09T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.87
+  },
+  {
+    "id": "ffb4966638521c59",
+    "title": "Pinterest Replaces Journey Clustering with 4B Qwen3 LLM, Reports Improved Engagement",
+    "url": "https://www.infoq.com/news/2026/11/pinterest-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/pinterest-journey/en/headerimage/generatedHeaderImage-1793998579474.jpg\" /><p>Pinterest has moved its user-journey inference system from a multi-stage clustering pipeline to a fine-tuned 4-billion-parameter language model, reporting a 1.1% improvement in email click-through and 1.3% higher push opens.</p> <i>By Matt Foster</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-09T07:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/pinterest-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.73
+  },
+  {
+    "id": "a2fd592c176cfda7",
+    "title": "Tokio Releases Topcoat: A Batteries-Included Full-Stack Rust Framework",
+    "url": "https://www.infoq.com/news/2026/11/topcoat-rust-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/topcoat-rust-framework/en/headerimage/generatedHeaderImage-1793983973654.jpg\" /><p>Topcoat is an open-source, server-rendered full-stack web framework for Rust from the Tokio team, now public at version 0.9. It uses Rust expressions translated to JavaScript for reactivity instead of WebAssembly. It targets typical database-driven apps. Releases are unstable, and authentication and background jobs remain on the roadmap.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-09T06:42:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/topcoat-rust-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.95
+  },
+  {
+    "id": "499d0f3dca7afce5",
+    "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+    "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+    "summary": "<p><a href=\"https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company\" rel=\"nofollow\">https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-aff...</a>, <a href=\"https://archive.ph/Hxn5h\" rel=\"nofollow\">https://archive.ph/Hxn5h</a><p><a href=\"https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html\" rel=\"nofollow\">https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-a...</a>, <a href=\"https://archive.ph/atMcp\" rel=\"nofollow\">https://archive.ph/atMcp</a><p><a href=\"https://www.cnn.com/2026/11/08/business/nvidia-investigation-ceo-jensen-huang\" rel=\"nofollow\">https://www.cnn.com/2026/11/08/business/nvidia-investigation...</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50418016\">https://news.ycombinator.com/item?id=50418016</a></p>\n<p>Points: 727</p>\n<p># Comments: 821</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-08T22:20:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2228a1daa971a72d",
+    "title": "A job offer on LinkedIn came with malware in a Git hook. It's the \"Contagious Interview\" playbook",
+    "url": "https://dev.to/huzaifa207/a-job-offer-on-linkedin-came-with-malware-in-a-git-hook-its-the-contagious-interview-playbook-34ia",
+    "summary": "<p>A recruiter messaged me on LinkedIn about building the website for a blockchain basketball game. Then they sent a documentation pack as a <code>.tar.gz</code> file. The plan was simple: review the docs, sign the NDA, then we'd schedule a call.</p>\n\n<p>The docs were real enough to read. The archive also held a Git hook that would have downloaded a script and run it on my Mac the first time I checked out a branch. One of its branches was called <code>NDA</code>.</p>\n\n<p>It follows the playbook of a campaign security researchers have been tracking for a while, called <strong>Contagious Interview</strong>: fake recruiters, web3 projects, and code that runs when a developer does something routine. With so many developers looking for work right now, I'm writing up exactly what it looked like, so it's easier to spot. I've also turned the checks into a free desktop app, <a href=\"https://github.com/huzaifa207/lookfirst\" rel=\"noopener noreferrer\">LookFirst</a>, so anyone who receives files li",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:02:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/huzaifa207/a-job-offer-on-linkedin-came-with-malware-in-a-git-hook-its-the-contagious-interview-playbook-34ia"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "5a3ca73f1945c938",
+    "title": "AI Brief: Apple's HALO Robot, 5,000 Agents per Repo",
+    "url": "https://dev.to/lanternproton/ai-brief-apples-halo-robot-5000-agents-per-repo-4c0c",
+    "summary": "<p>Apple's humanoid hit 91% task success using a Qwen model, GitHub internally tested 5,000 agents working in one repository, and Sam Altman told Stanford that a token budget now substitutes for a hundred engineers. Here is what actually moved on 2026-11-09.</p>\n\n<p>▸ <strong>Apple's HALO runs on Qwen.</strong> Apple disclosed its HALO humanoid system, which calls Alibaba's Qwen model on a Unitree G1 and averages 91% success per task. The same day: Meta shipped model variants specialized through Muse Wonder training, and an unreleased Anthropic model reportedly helped crack a major quantum computing problem. <em>(source: @NewlearnerChannel)</em></p>\n\n<p>▸ <strong>Agent infrastructure is being stress-tested.</strong> Perplexity launched Teammate, an agent built for sustained, complex work rather than one-shot answers. GitHub's new Git storage architecture was internally tested at 5,000 agents collaborating inside a single repository while handling 7,200 pushes per second. <em>(source: @",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:01:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/lanternproton/ai-brief-apples-halo-robot-5000-agents-per-repo-4c0c"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7ad58d0b3f2dec8c",
+    "title": "Seven Tests I Write Before I Trust a .NET Play Counter",
+    "url": "https://dev.to/michael_maurice/seven-tests-i-write-before-i-trust-a-net-play-counter-35i3",
+    "summary": "<p>A play counter is the easiest feature to demo and one of the easiest to get quietly wrong. <code>plays = plays + 1</code> passes every manual test you'll ever click through. It also counts a retried request four times, loses plays when a worker crashes at the wrong moment, and happily lets one script \"listen\" to a track 2,000 times an hour.</p>\n\n<p>So when I built a Spotify-style play count in .NET 10 recently, I didn't start with the counter. I started with the tests that would tell me the counter was lying. Here are seven of them, roughly in the order they bit me. The test bodies are trimmed to the part that matters; where something is cut, the comment says so.</p>\n\n<blockquote>\n<p><strong>Tech Skill Builder is $5/month for a very limited time only (normally $10). Grab it now before it goes back to $10.</strong> The complete, working project these tests come from (<code>spotify-play-counts-dotnet</code>, Clean Architecture, 152 passing tests, plus a 95-page PDF) is inside. <a href",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:01:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/michael_maurice/seven-tests-i-write-before-i-trust-a-net-play-counter-35i3"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7fbde57b3fdbcad5",
+    "title": "An Empty Role Can Make a Salary Tool Confidently Wrong",
+    "url": "https://dev.to/vexaloom-labs/an-empty-role-can-make-a-salary-tool-confidently-wrong-1gpd",
+    "summary": "<p>Your weekend agent can forget <code>roles</code>, get a plausible salary back, and confidently answer your question about a different job. Nothing crashes. That's the annoying part.</p>\n\n<p>In <code>salaryBenchmarks</code>, an empty <code>roles</code> value selects a default accounting role. The adapter examples below are synthetic: they demonstrate a validation boundary, not salary accuracy.</p>\n\n<p>Lab note 077: can we reject a missing subject before a helpful fallback turns it into an answer?</p>\n\n<h2>\n  \n  \n  How does a missing role pass validation?\n</h2>\n\n<p>The Actor has 41 input properties and 5 mode values, but only <code>mode</code> is required. A salary request can therefore satisfy the input schema without specifying whose salary you wanted.</p>\n\n<p>That makes execution success a weak signal. It tells your agent that a lookup completed, not that the lookup concerned the user's role.</p>\n\n<p>For a weekend salary assistant, we'd give the agent a narrower job: extract the re",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:01:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vexaloom-labs/an-empty-role-can-make-a-salary-tool-confidently-wrong-1gpd"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "58abbf0fcaa6617a",
+    "title": "What I Check Before Trusting a Digital Product Automation Workflow",
+    "url": "https://dev.to/eva-nomados/what-i-check-before-trusting-a-digital-product-automation-workflow-2l67",
+    "summary": "<p>Getting an automation workflow to run is one thing.</p>\n\n<p>Trusting it to handle real orders is another.</p>\n\n<p>When you connect Payhip, Make, Telegram, and Notion, it's easy to focus on whether all the tools are connected. But a successful test doesn't necessarily mean the workflow is ready to handle real customers.</p>\n\n<p>There are a few things worth checking before relying on it.</p>\n\n<p>Here is the checklist I use when thinking about a digital product order workflow.</p>\n\n<h2>\n  \n  \n  1. Check whether the payment event is received correctly\n</h2>\n\n<p>The workflow starts with a purchase event from Payhip.</p>\n\n<p>Before moving on, check:</p>\n\n<ul>\n<li>Does Make receive the expected event?</li>\n<li>Is the correct product identified?</li>\n<li>Is the order reference available?</li>\n<li>Does the workflow distinguish a successful purchase from other events?</li>\n</ul>\n\n<p>Don't assume that a connected webhook means everything is working correctly.</p>\n\n<p>Inspect the actual data re",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-09T13:00:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eva-nomados/what-i-check-before-trusting-a-digital-product-automation-workflow-2l67"
+      }
+    ],
+    "score": 21.0
+  }
+]
