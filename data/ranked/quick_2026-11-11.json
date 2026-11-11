@@ -1,0 +1,556 @@
+[
+  {
+    "id": "2119063ad74d0f6d",
+    "title": "Python dead code: what 51 popular Python repos ship that nothing imports",
+    "url": "https://dev.to/repowise/python-dead-code-what-51-popular-python-repos-ship-that-nothing-imports-3eg3",
+    "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>45 of 50 popular Python repos (1,000+ GitHub stars) have at least one dead-code finding in production code, and in the median repo 3.9% of production files are flagged as unreachable.</li>\n<li>In Python, a file nothing imports is often loaded by name: 82 of Django's 100 dead-code candidates are locale files imported from a string at runtime.</li>\n<li>814 of the 819 files flagged in LangChain are compatibility shims that keep old import paths working for its users.</li>\n<li>vulture finds unused names inside a file and an import-graph pass finds whole files nothing imports; Python projects need both, plus a string search before each delete.</li>\n</ul>\n\n<p>I ran a dead-code pass with repowise over 51 popular Python repositories, each with 1,000+ GitHub stars: Django, FastAPI, Airflow, LangChain, Prefect, paperless-ngx and 45 more. Then I took three of them, cloned them fresh, and read the flagged files one group at a time to see what they really wer",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/repowise/python-dead-code-what-51-popular-python-repos-ship-that-nothing-imports-3eg3"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "9a9154ca6d0a24ae",
+    "title": "20 AI startups to watch in H2 2026 — backed by real data, not hype",
+    "url": "https://dev.to/kawsarlog/20-ai-startups-to-watch-in-h2-2026-backed-by-real-data-not-hype-2h4o",
+    "summary": "<p><em>H1 2026 brought in $510 billion in startup funding, and four companies took 65 percent of it. The startups worth watching in H2 aren't the ones landing mega-rounds. They're the ones converting real revenue, real deployments, and structural advantages into durable positions.</em></p>\n\n<p>Most \"startups to watch\" lists are built from press releases. A company announces a funding round, the round gets covered, and the name lands on twenty watchlists whose authors never looked past the valuation to ask whether a business sits underneath it.</p>\n\n<p>This list starts from different inputs. Every pick comes with at least one concrete data point: a disclosed ARR figure, a published user count, a documented enterprise deployment, or a measurable market advantage. Where a company is earlier-stage and the numbers are thinner, I say so openly and lay out the structural argument instead.</p>\n\n<p>The picks fall into five categories that I think produce lasting AI businesses: foundation model ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kawsarlog/20-ai-startups-to-watch-in-h2-2026-backed-by-real-data-not-hype-2h4o"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4925691bc093382c",
+    "title": "Flutter BLoC: Building a Feature with Events, States, and Cubit",
+    "url": "https://dev.to/yadneshteli/flutter-bloc-building-a-feature-with-events-states-and-cubit-3e83",
+    "summary": "<p><em>Series 4 — Part 1 of 1</em></p>\n\n<h1>\n  \n  \n  Flutter BLoC: Building a Feature with Events, States, and Cubit\n</h1>\n\n<p><em>A standalone deep-dive on the BLoC pattern in Flutter</em></p>\n\n<p>After GetX, my next exploration was Flutter BLoC — the pattern that treats UI as a function of state, and models every user action as an explicit event. BLoC is more verbose than either Riverpod or GetX, but it is also the most explicit about intent.</p>\n\n<p>I spent two days reading the official BLoC documentation, watching walkthroughs, and building a basic implementation with MVVM architecture.</p>\n\n<h2>\n  \n  \n  The BLoC mental model\n</h2>\n\n<p>BLoC stands for Business Logic Component. The pattern works like this: the UI emits <strong>Events</strong>, the BLoC processes them and emits new <strong>States</strong>, and the UI rebuilds based on the current State. Nothing is hidden. Every transition is traceable.</p>\n\n<p>The <code>flutter_bloc</code> package gives you two primitives:</p>\n\n<ul>\n",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/yadneshteli/flutter-bloc-building-a-feature-with-events-states-and-cubit-3e83"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "53b90e13dbecab59",
+    "title": "0.1 + 0.2 Is Not a Bug. It's Arithmetic in a Costume.",
+    "url": "https://dev.to/aheadkit/01-02-is-not-a-bug-its-arithmetic-in-a-costume-1h46",
+    "summary": "<p>The first time <code>0.30000000000000004</code> showed up on my screen I did what everyone does. I blamed Python. Then I blamed my keyboard. Then Python again, louder.</p>\n\n<p>It's not Python. JavaScript prints the same number, and so does nearly every language on your machine, because nearly every language stores decimals the same way: as IEEE 754 doubles, a standard from 1985 that is older than most of the people complaining about it.</p>\n\n<h2>\n  \n  \n  Where does the extra 4 come from?\n</h2>\n\n<p>Write one third as a decimal. You can't. You get 0.333 and then the 3s keep going until you run out of patience or paper, and whatever you eventually write down is close to a third but is not a third.</p>\n\n<p>Binary has the same problem with different numbers. 0.1 in binary is 0.0001100110011..., the \"0011\" repeating forever. A double gives you 53 bits of precision to store that with, so the machine stores the closest value it can fit and moves on.</p>\n\n<p>You can see the stand-in Python a",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aheadkit/01-02-is-not-a-bug-its-arithmetic-in-a-costume-1h46"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "041af86b9bb20430",
+    "title": "Superhuman Docs (formerly Coda) vs. Notion: Which is best? [2026]",
+    "url": "https://zapier.com/blog/coda-vs-notion",
+    "summary": "I've been using Notion to take notes and organize my life for a few years now. As you might expect with a popular app like Notion, there are quite a few alternatives these days. Superhuman Docs (formerly known as Coda) might be the clearest 1:1 substitute for Notion if you're looking to try something new. I compared Notion against Coda for a prior version of this article. A lot has changed since then: Coda is now part of a larger suite of connected workspace apps under the Superhuman brand. In s",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2027-11-10T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/coda-vs-notion"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "cab920490218b39e",
+    "title": "Memory Safety Bugs in Rust Standard Library",
+    "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+    "summary": "<p><a href=\"https://lobste.rs/s/plreds/memory_safety_bugs_rust_standard_library\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-10T19:44:50+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://vulpinecitrus.info/blog/what-if-you-could-handle-sigkill/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://vincent.bernat.ch/en/blog/2026-linux-performance-ipv4-ipv6-route-lookup"
+      }
+    ],
+    "score": 20.97
+  },
+  {
+    "id": "3699e4981c140631",
+    "title": "Your Laravel queue workers keep 8 copies of your app in memory",
+    "url": "https://freek.dev/3218-your-laravel-queue-workers-keep-8-copies-of-your-app-in-memory",
+    "summary": "<p>This post explains why Laravel queue workers and Horizon supervisors each keep their own compiled copy of your app in memory, and how that adds up fast on smaller servers. It also introduces queue-prefork, a package that shares opcache across forked workers and dramatically cuts memory usage without changing job throughput.</p>\n\n\n<a href=\"https://dev.to/tevkert/your-laravel-queue-workers-keep-8-copies-of-your-app-in-memory-g4d\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-11T12:31:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3218-your-laravel-queue-workers-keep-8-copies-of-your-app-in-memory"
+      }
+    ],
+    "score": 20.48
+  },
+  {
+    "id": "324b00150d395c35",
+    "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+    "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+    "summary": "The governance experts we talked to say nobody has seen anything like what's unfolding right now.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T07:30:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "c598948aff0f9410",
+    "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+    "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+    "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default.\n\nThis helped us think through how such agents should be defended. When a browser agent acts inside a user’s authenticated",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T12:01:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "0a928ff67364714b",
+    "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+    "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+    "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys.\n\nEach intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T12:00:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "287ff5266cba15c2",
+    "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+    "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+    "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.\n\nWhen a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The attacker must be able to change the model's weights.\n\nThe team tested the method on",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T07:21:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "d7eaadd103a59935",
+    "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+    "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+    "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.\n\nThese cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers.",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T08:17:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "6af253c0dcf37bb1",
+    "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+    "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+    "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.\n\nThe company builds and runs apps for its customers and stores their secrets, such as API keys and database",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T07:49:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "bbee0314f364825a",
+    "title": "Serve Robotics wants to democratize sidewalk delivery robots",
+    "url": "https://www.theverge.com/transportation/1030902/serve-robotics-open-developer-api-sidewalk-delivery",
+    "summary": "Serve Robotics is opening up its platform to make its autonomous last-mile delivery robots available to anyone who wants to use them. The company is launching a new AV Delivery Developer Portal, enabling third-party software engineers, independent businesses, and even autonomous AI agents to access its fleet of 2,000 sidewalk robots. With this new capability, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-11T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/transportation/1030902/serve-robotics-open-developer-api-sidewalk-delivery"
+      }
+    ],
+    "score": 19.71
+  },
+  {
+    "id": "be2776a6ab8ee664",
+    "title": "JetBrains IDEs Transformed for the Agentic Era of Development – With Air",
+    "url": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+    "summary": "As agents write more code, individual productivity goes up, but the bottleneck moves to review. 49% of developers now spend four or more hours a week reviewing AI output and correcting prompts (Atlassian State of Developer Experience Report 2026). We believe this means you need to understand what changed, decide whether it belongs in your [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-11T09:38:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/"
+      }
+    ],
+    "score": 19.5
+  },
+  {
+    "id": "4a1b80d3b8e61aa8",
+    "title": "Rider 2026.3 for Game Development: Lua and Verse Plugins, Better C++ Debugging, and Closer Godot Integration",
+    "url": "https://blog.jetbrains.com/dotnet/2026/11/11/rider-2026-3-for-gamedev/",
+    "summary": "Rider 2026.3 brings improvements to the workflows you rely on to write, run, and debug games. This release connects Rider more closely with the Godot Editor, improves debugging for Unreal Engine and custom C++ engines, adds support for Unity CoreCLR Players, and introduces new Lua and Verse plugins in Beta. Here’s what’s new for game [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-11T10:30:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/dotnet/2026/11/11/rider-2026-3-for-gamedev/"
+      }
+    ],
+    "score": 19.45
+  },
+  {
+    "id": "6092271fe3d0584e",
+    "title": "Python Coding Interview Practice: Hashing, Pointers, and Windows",
+    "url": "https://realpython.com/courses/coding-interview-practice-hashing-two-pointers-sliding-windows/",
+    "summary": "Practice hashing, two pointers, and sliding windows in Python through 20 coding interview exercises with tests, hints, and guided code reviews.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-10T14:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/courses/coding-interview-practice-prefix-sums-binary-search/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/courses/coding-interview-practice-hashing-two-pointers-sliding-windows/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/coding-interview-practice-prefix-sums-binary-search/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/coding-interview-practice-hashing-two-pointers-sliding-windows/"
+      }
+    ],
+    "score": 19.43
+  },
+  {
+    "id": "0b2356ad24785c7a",
+    "title": "AI usage generates a fragile codebase",
+    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+    "summary": "<p>Article URL: <a href=\"https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/\">https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50438318\">https://news.ycombinator.com/item?id=50438318</a></p>\n<p>Points: 592</p>\n<p># Comments: 553</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-10T10:25:58+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/"
+      }
+    ],
+    "score": 19.34
+  },
+  {
+    "id": "e768b5be294cec26",
+    "title": "Search Polymorphic Relations and Filament Tables With Laravel Searchable",
+    "url": "https://laravel-news.com/mozex-laravel-searchable?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/mozex-laravel-searchable\"><img alt=\"Search Polymorphic Relations and Filament Tables With Laravel Searchable\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/Laravel-Searchable-LN.png\" /></a></p>\n                                        <hr />\n\n                    <p>Laravel Searchable adds Eloquent search across polymorphic relations and separate database connections, with relevance ranking for Filament tables.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/mozex-laravel-searchable\">Search Polymorphic Relations and Filament Tables With Laravel Searchable</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-09T22:31:59+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/mozex-laravel-searchable?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-rest-api-3?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/inertia-live-props-laravel-reverb?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "91867557307d16f0",
+    "title": "Incident Report: August 11, 2026",
+    "url": "https://product.hubspot.com/blog/incident-report-august-11-2026",
+    "summary": "<div class=\"hs-featured-image-wrapper\"> \n <a class=\"hs-featured-image-link\" href=\"https://product.hubspot.com/blog/incident-report-august-11-2026\" title=\"\"> <img alt=\"Incident Report: August 11, 2026\" class=\"hs-featured-image\" src=\"https://product.hubspot.com/hubfs/Product%20Blog%20Banners.png\" style=\"width: auto !important; float: left; margin: 0 15px 15px 0;\" /> </a> \n</div> \n<p><span>On August 11, 2026, between 3:09 PM and 3:27 PM EDT (UTC-4), HubSpot customers experienced an outage of the CRM Record Page. During this time, a large portion of CRM record page loads failed. No data was lost during this incident, and services outside of the CRM record page were unaffected. We have completed a thorough analysis of this incident, and below is a detailed account of what happened, why it occurred, and the steps we are taking to prevent similar issues in the future.</span></p>",
+    "category": "dev",
+    "source_name": "HubSpot Product & Engineering",
+    "published": "2026-11-10T20:20:53+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "HubSpot Product & Engineering",
+        "url": "https://product.hubspot.com/blog/incident-report-august-11-2026"
+      },
+      {
+        "name": "HubSpot Product & Engineering",
+        "url": "https://product.hubspot.com/blog/hedging-erasure-coded-reads-in-hdfs"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "e5d9eddcffa0e5f6",
+    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance",
+    "summary": "<p>Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without <span>s everywhere, `<dialog>` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types.. (Something yesterday's ftrain post touched on [0])<p>Models know about some of these by name, but consistently won't default to using the platform-native solution and instead prefer the incumbent <div>+JS based pattern.  We started an effort in Chrome to supplement coding agents with this key domain knowledge and we're shipping our 1.0 today, in collaboration with Firefox, MDN, and Edge.<p>200+ guides (~1.7MB) of curated, hand-crafted implementation best-practices from web experts, updated as the web evolves.  (Open source, obv, so.. we'll welcome your bikeshedding ;) Readable versions here: [1]<p>I've spent the last 9 months obsessing over how to ship this as an agent skill + (Agentic RAG) CLI wi",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-10T18:01:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/GoogleChrome/modern-web-guidance"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "0f77c55f82f93ff8",
+    "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+    "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+    "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-10T21:55:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+      }
+    ],
+    "score": 18.87
+  },
+  {
+    "id": "e1b381294d2d5212",
+    "title": "Google Finds that Technical Debt Can Derail Coding Agents Through \"Agent Distraction\"",
+    "url": "https://www.infoq.com/news/2026/11/google-agent-distraction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-agent-distraction/en/headerimage/google-agetn-distraction-1794330388187.jpeg\" /><p>In a recent article, Google senior staff software engineer Sam Saccone and senior staff data scientist Madhuri Garikapati highlighted the cost of agent distraction, where AI coding agents get derailed by stale technical debt, such as old TODO comments, obsolete bug references, and outdated specs, leading them to embark on unrequested \"side-quests\".</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-10T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-agent-distraction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "3567ff822c52875b",
+    "title": "Fragments: November 10",
+    "url": "https://martinfowler.com/fragments/2026-11-10.html",
+    "summary": "<p>It’s that time of the year when the <a href=\"https://www.thoughtworks.com/radar\">November Thoughtworks Technology Radar</a> appears. Again my colleagues have taken a sweep of the technologies that our teams have used in the field, and pulled together a summary of what’s popped up in the last six months. It’s been a busy half-year, one that again has been dominated by AI, and that’s reflected in the many AI blips on the radar.</p>\n\n<p>The mass of blips makes it hard to develop a coherent story around trends, but Chris Ford has done a fine job of the writing the <a href=\"https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-november-2026\">accompanying article on macro trends</a>.</p>\n\n<blockquote>\n  <p>One team of passionate people experimenting with agents can make almost anything work. They share a context, a credit card and a mental model. They review each other’s work because they sit together, and they know what to check and how much latitude t",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-10T14:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/fragments/2026-11-10.html"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "81738e6252158c13",
+    "title": "Long-horizon agents and durable execution",
+    "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+    "summary": "<div class=\"img-link\"><a href=\"https://martinfowler.com/articles/durable-execution-agents.html\"><img src=\"https://martinfowler.com/articles/durable-execution-agents/card.png\" width=\"350px\" /></a></div>\n\n<p>Long-horizon agents can automate complex tasks that take days or weeks\n     to complete and involve multiple exchanges with people and external\n     systems. Many things can go wrong during this time, including process\n     crashes, network failures, and unanticipated real-world behavior.\n     <b class=\"author\">Kiran Prakash</b> explains durable execution: an emerging\n     pattern that helps agents recover from these failures and move towards\n     their goal. In this programming model, the runtime keeps a record of the\n     result of each step that interacts with the outside world so that, when a\n     failure occurs, the program runs again, completed steps are skipped, and\n     the program's state is rebuilt from the record.</p>\n\n<p><a class=\"more\" href=\"https://martinfowler.com/arti",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-10T14:10:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/articles/durable-execution-agents.html"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "f3cc60f2a6f4b0cd",
+    "title": "Risky Business #859 -- ARTEX damage approaches crisis levels",
+    "url": "https://risky.biz/RB859/",
+    "summary": "On this week’s show Patrick Gray and James Wilson are joined by special guest co-host Chris Krebs to talk through the week’s cybersecurity news, including:\n\n\n  Everyone’s using the ARTEX pentesting framework to hack the planet and it has the makings of an actual crisis\n  The French government attributes freezer hacks to Iran’s IRGC\n  Rob Joyce was right and the breachpocalypse has exhausted global IR resources\n  The White House has nominated Palintir’s CISO to lead CISA. It’s certainly a choice!\n  Much, much more!\n\n\nThis week’s show is brought to you by SpecterOps. Consultant Raj Patel joins Patrick Gray to talk through his work in finding some serious weaknesses that made NTLM relay attacks practical again. Raj used OpenAI LLMs to bypass that SMB signing and come up with some unnatural ldap tricks as well. Those techniques are now patched, but Raj learned a lot about parallel discovery in the AI age.\n\nThis episode is also available on YouTube",
+    "category": "security",
+    "source_name": "Risky Business (Podcast)",
+    "published": "2026-11-11T06:09:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Risky Business (Podcast)",
+        "url": "https://risky.biz/RB859/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "edbd4de2785e4746",
+    "title": "In the Hole",
+    "url": "https://thedailywtf.com/articles/in-the-hole",
+    "summary": "<p>Look, I don't <em>want</em> to keep talking about security issues. Blame AI. Just another thing it ruined.</p>\n<p>At this point, you've probably heard about <a href=\"https://sshhole.com/\">*sshole</a>. If you haven't, the quick summary: on some Linux systems, SSH will log you in to an account with no password if you supply a password greater than 256 characters long. Frequently, you might make accounts like <code>root</code> nominally inaccessible by giving it no password, so this is a <em>big deal</em>. Worse, it impacts varieties of Linux that use the musl implementation of libc, like Alpine- the kinds of varieties that run inside a container hosting a web app somewhere.</p>\n<p>The impact is broad, and is definitely being exploited. The root cause, however, is interesting, because it's a sum of very simple choices that lead to a wildly undesirable result.</p>\n<p>The core function in question is <code>crypt</code>, a stardard part of the C library. <code>crypt</code> is already not ",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-11T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/in-the-hole"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "7c45041233e4564c",
+    "title": "A 13-Year-Old Asked AI About Suicide on Her School Laptop. It Didn’t Get Flagged for Weeks",
+    "url": "https://www.wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged/",
+    "summary": "The young girl’s parents allege that she used Gemini via her school Chromebook to plan her suicide, but the school’s monitoring systems didn’t know until it was almost too late.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-11T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged/"
+      }
+    ],
+    "score": 17.77
+  },
+  {
+    "id": "098b78a375118256",
+    "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+    "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand",
+    "category": "ai",
+    "source_name": "Google AI Blog",
+    "published": "2026-11-11T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/"
+      }
+    ],
+    "score": 17.6
+  },
+  {
+    "id": "bec273660d4bc686",
+    "title": "Oura is acquiring medical AI chatbot startup Counsel Health",
+    "url": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
+    "summary": "Oura announced its quarterly earnings today and said it agreed to acquire Counsel Health for $625 million, after adding the company's AI chatbot to its app earlier this year. Counsel Health calls itself an \"AI-native primary care company,\" using the app to deliver AI-generated responses and insights based on users' health data reported from their [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-10T21:40:31+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/"
+      }
+    ],
+    "score": 17.58
+  }
+]

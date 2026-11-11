@@ -1,0 +1,418 @@
+[
+  {
+    "id": "24be14049c6557e7",
+    "title": "What a Number-Guessing Game Teaches About Binary Search and Vue State",
+    "url": "https://dev.to/begoodtool/what-a-number-guessing-game-teaches-about-binary-search-and-vue-state-445a",
+    "summary": "<p>A higher-or-lower number game can give misleading hints or attempt counts if the secret and round state change at the wrong time. I'll use a small Vue implementation to show how to keep those updates consistent, then explain why midpoint guesses put a worst-case bound on the number of attempts.</p>\n\n<p>The player chooses a range, submits a number, and gets a high, low, or correct result. There is no computer player performing binary search. The useful connection is that the feedback gives a human player exactly the information needed to shrink a search interval.</p>\n\n<h2>\n  \n  \n  Pick One Secret for the Whole Round\n</h2>\n\n<p>The implementation offers upper bounds of 10, 50, 100, and 1,000, always starting at 1. The target generator is deliberately ordinary:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nf\">randomTarget</span><span class=\"p\">(</span><span class=\"n\">max</span><span class=\"p\">",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:04+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/begoodtool/what-a-number-guessing-game-teaches-about-binary-search-and-vue-state-445a"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mfarouk2894/a-threadlocal-a-websocket-and-a-random-403-debugging-a-tenant-leak-in-spring-5g84"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/plenty-of-ids"
+      }
+    ],
+    "score": 27.0
+  },
+  {
+    "id": "34dfe413ec17f7fe",
+    "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+    "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+    "summary": "<img alt=\"Green cube with a neural-network diagram, surrounded by circular arrows beneath descending data blocks on a purple background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvidia-snapshot-gpu-checkpoint-restore-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NGC - Promo - Day 0 Nemotron Tech Blog Image - 3326282\" width=\"768\" />NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-10T15:00:00+00:00",
+    "coverage_count": 5,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/"
+      }
+    ],
+    "score": 26.0
+  },
+  {
+    "id": "b9111d4be2a72599",
+    "title": "Japan Leaked 1.6 Million Driver's License Photos. What AI Changes",
+    "url": "https://dev.to/hisashispace/japan-leaked-16-million-drivers-license-photos-what-ai-changes-572a",
+    "summary": "<p>Japan just leaked about 1.6 million photos of driver's licenses.<br />\nAnd in the age of AI, a photo of your ID is exactly what a scammer wants.</p>\n\n<p>I've run a web platform in Tokyo for 22 years. Keeping member data safe is the part of my job that keeps me up at night.<br />\nSo I read every official notice from the company in Japanese, all five of them, and the bank announcements that followed.<br />\nI made a video about it too. This article has the numbers the video couldn't hold: the final count, how long the photos were kept, which banks stopped accepting ID photos and when, and how the chip check actually works.</p>\n\n<p>  \n  \n</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fvurl5570fvw6g766j1d3.webp\"><img alt=\"ID cards flying out of a dark room\" height=\"\" src=\"https://media2.dev.to/dynamic/image/width=800%2",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/hisashispace/japan-leaked-16-million-drivers-license-photos-what-ai-changes-572a"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ajitkumar_singh_7a94b3eaa/a-filtered-dynamodb-scan-still-reads-the-whole-table-13lp"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "92a2dfff71148c34",
+    "title": "Gemini 4 Carbon now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gemini-4-carbon\">Gemini 4 Carbon from Google</a> is now available on AI Gateway. It is available at 50% off through November 30, 2026:</p><p>Gemini 4 Carbon is built for complex software engineering, sustained agentic work, and cybersecurity defense. It has a 1M-token context window for working with large codebases and long inputs.</p><p>On engineering tasks, Carbon carries demanding work through multiple stages, with improvements in coding, full-stack web development, and scientific reasoning. Its cybersecurity capabilities span finding vulnerabilities, validating their risk, and developing patches. <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/\">Google also reports</a> more reliable execution of multi-step plans, fewer unsupported claims, and better collaboration when requirements are ambiguous, helping agents follow through while respecting project constraints.</p><p>Use <",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-10T00:00:00+00:00",
+    "coverage_count": 7,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-enterprise-apps-connectors/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gemini-4-carbon-swarm/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/grok-api-watermarking-default/"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway"
+      },
+      {
+        "name": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/gemini-4-carbon/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "61d234337a444477",
+    "title": "Decision models take 26% of requests; Anthropic now wins new teams 2:1",
+    "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026",
+    "summary": "<p><i>AI Gateway Production Index — November 2026</i></p><p>Every month, <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> routes more than 100 trillion tokens between production applications and AI labs. That traffic gives us a view of what AI usage looks like in today’s enterprise and startup landscape across language, decision, voice, image, and video models. We publish it here monthly. See the Production Index reports from <a href=\"https://vercel.com/blog/deepseek-overtakes-google-on-volume-cost-per-token-falls\">August</a>, <a href=\"https://vercel.com/blog/ai-gateway-production-index-september-2026\">September</a>, and <a href=\"https://vercel.com/blog/ai-gateway-production-index-october-2026\">October</a>.</p><h3>November 2026 Summary</h3><ul><li><p>In six weeks, decision models grew to <b>one in four</b> gateway requests, while accounting for <b>half a cent</b> of every dollar spent. <b>Close to a third</b> of all paid teams used one in October. Among teams processing over 10 b",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-09T05:00:00+00:00",
+    "coverage_count": 5,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/glm-5-3-flash-is-now-available-in-token-pass"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/claude-fable-5-2-now-available-on-ai-gateway"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/muse-ember-now-available-on-ai-gateway"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "daaeabf3d93bfb04",
+    "title": "Platform engineering needs to become more human…and less",
+    "url": "https://www.cncf.io/blog/2026/11/11/platform-engineering-needs-to-become-more-humanand-less/",
+    "summary": "Even my family thinks I’m a little robotic. Logical, linear, sequential, methodical. But hey, I’m an engineer, and that’s part of what makes me good at my job. If I were operating on the same volatile...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-11T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/11/platform-engineering-needs-to-become-more-humanand-less/"
+      }
+    ],
+    "score": 18.03
+  },
+  {
+    "id": "c407fb3678263d7c",
+    "title": "CloudNativePG becomes a CNCF Incubating Project",
+    "url": "https://www.cncf.io/blog/2026/11/10/cloudnativepg-becomes-a-cncf-incubating-project/",
+    "summary": "The CNCF Technical Oversight Committee (TOC) voted to accept CloudNativePG as a CNCF incubating project. CloudNativePG is an open source Kubernetes operator that manages the full lifecycle of highly available PostgreSQL clusters. Organizations across financial services,...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-10T16:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/10/cloudnativepg-becomes-a-cncf-incubating-project/"
+      },
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/10/open-cluster-management-ocm-becomes-a-cncf-incubating-project/"
+      }
+    ],
+    "score": 14.73
+  },
+  {
+    "id": "3003b1808deb1307",
+    "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
+    "url": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+    "summary": "<p>It&#8217;s hard to believe how lucrative <a href=\"https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft\">this crime</a> can be:</p>\n<blockquote><p>According to a <a href=\"https://www.justice.gov/usao-sdny/pr/three-foreign-nationals-arrested-and-charged-scheme-use-super-intelligence-defraud#ref-ftn1\">press release</a> from the United States attorney’s office for the southern district of New York, three men ­ Jacob Soall, Sharon Hazan, and Guy Sheetrit ­ were arrested for using AI to alter and impersonate the voices and images of executives and attorneys at various companies in order to convince employees to send over large payments. Soall and Hazan were arrested in Spain over the summer, while Sheetrit was arrested in the United Kingdom in September. The alleged fraud took place between 2024 and 2026...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-11T12:05:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "cdde54f81aa7dd58",
+    "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+    "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+    "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday.\n\nThey included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing pages, and calculators, but about 1 in 10 contained internal business or",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T12:19:40+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
+      }
+    ],
+    "score": 22.9
+  },
+  {
+    "id": "d92b641afddb1d58",
+    "title": "ChatGPT Plus for veterans and servicemembers",
+    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-11T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/chatgpt-plus-for-veterans"
+      }
+    ],
+    "score": 21.54
+  },
+  {
+    "id": "24e68a4ea5f66048",
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
+      }
+    ],
+    "score": 20.89
+  },
+  {
+    "id": "dad12285c3f572d8",
+    "title": "How LinkedIn, Netflix & DoorDash Run Agents, Evals & Inference in Production: QCon AI New York 2026",
+    "url": "https://www.infoq.com/news/2026/11/qcon-ai-newyork-2026-program/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/qcon-ai-newyork-2026-program/en/headerimage/qcon-ai-new-york-2026-1794387431153.jpg\" /><p>QCon AI New York has published its full program for December 15–16, 2026. Engineers from LinkedIn, Netflix, DoorDash, Figma, Pinterest, Honeycomb, Harvey, Google DeepMind and OpenAI describe AI systems they run in production. Talks cover agent permissions and guardrails, eval loops, inference cost, AI code review, and team adoption.</p> <i>By Artenisa Chatziou</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/qcon-ai-newyork-2026-program/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "ba5da08642b5c55f",
+    "title": "Presentation: Uncorking Queueing Bottlenecks with OpenTelemetry",
+    "url": "https://www.infoq.com/presentations/opentelemetry-queue-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/opentelemetry-queue-observability/en/mediumimage/julian-oli-medium-1792652839179.jpg\" /><p>Oli Lane and Julian Wreford share how Gearset replaced guesswork in distributed asynchronous queues with OpenTelemetry tracing. They explain why traditional metrics fall short, how to implement user-centric SLOs based on latency distributions, and share practical debugging tips to help senior developers, software architects, and engineering leaders improve system reliability and team culture.</p> <i>By Julian Wreford, Oli Lane</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/opentelemetry-queue-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "b1c8ad7b0475ce9b",
+    "title": "Article: The iOS Crash We Could Not Reproduce",
+    "url": "https://www.infoq.com/articles/ios-crash-sigbus-debugging-experiment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/ios-crash-sigbus-debugging-experiment/en/headerimage/ios-crash-sigbus-debugging-experiment-header-1793282827397.jpg\" /><p>This article describes the investigation to find the root cause of a production crash in a large-scale iOS consumer app that had no clean stack trace. The crash occurred intermittently and resisted every local reproduction attempt. The final code change was small, but identifying the root cause required turning a vague SIGBUS report into a controlled set of experiments.</p> <i>By Abhishek Gang Deb</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/ios-crash-sigbus-debugging-experiment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "adb367d4fb9058d6",
+    "title": "Angular's TypeScript 7-Powered Compiler Enters Beta with Rust-Based Preprocessor",
+    "url": "https://www.infoq.com/news/2026/11/angular-compiler-rust-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/angular-compiler-rust-typescript/en/headerimage/generatedHeaderImage-1794323310151.jpg\" /><p>The Angular team has introduced ngp, a compiler preprocessor that rewrites the analysis stage in Rust using Oxc. It replaces ngc's dependence on the Transformer API, which TypeScript 7.0 removed. An early benchmark showed 2x to 3x faster cold builds. Adoption is expected in an Angular 22 minor release; production builds should stay on ngc until then.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T07:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/angular-compiler-rust-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "2ecbca984dac265d",
+    "title": "How do you actually self-host securely?",
+    "url": "https://lobste.rs/s/m43bas/how_do_you_actually_self_host_securely",
+    "summary": "<p>I recognize that the title is rather vague, but I'm completely green when it comes to self-hosting, so I figured here would be a good place to ask for some pointers given the discussions I sometimes see happening in the comments. I tried researching first through DDG and Google, but (and I recognize this might be a skill issue) most things I found are either SEO slop or trying to sell/market some service.</p>\n<p>For some more context and to give a concrete example as to what I'm interested in, I got my hands on a Raspberry Pi which I'd like to use to start tinkering with self-hosting. My main goal would be to host my (static) website on it, potentially adding more things in the future.</p>\n<p>Some people I asked this question recommended solutions like Cloudflare Tunnels to make it secure, but using such a provider almost feels like it defeats the point of self-hosting, so I'm curious whether it's viable to do it using open source tooling, any gotchas one might encounter, and genera",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-11T12:01:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://lobste.rs/s/m43bas/how_do_you_actually_self_host_securely"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "58b94dec4e9b2b77",
+    "title": "Your IP is on a blocklist: how to check it in 5 minutes and what actually gets you delisted",
+    "url": "https://dev.to/eqvps/your-ip-is-on-a-blocklist-how-to-check-it-in-5-minutes-and-what-actually-gets-you-delisted-16n4",
+    "summary": "<p>Mail starts bouncing, a partner's firewall stops answering, or a website shows your server a captcha wall. Someone says \"your IP is blacklisted\", and the first instinct is to ask for a new one. Usually that's the wrong first step. Here's how to find out what's actually going on, in about five minutes, and what fixes it for good.</p>\n\n<h2>\n  \n  \n  What a \"blocklist\" actually is\n</h2>\n\n<p>The word covers three different things, and they're fixed in different ways.</p>\n\n<ol>\n<li>\n<strong>DNS blocklists (DNSBLs).</strong> Public lists of addresses that sent spam or showed signs of compromise. Mail servers query them for every incoming connection. This is what \"blacklisted\" usually means, and it's the fixable kind.</li>\n<li>\n<strong>Private reputation at big mailbox providers.</strong> Large webmail services keep their own scores and don't publish them. You see the effect (mail lands in spam or is deferred) but there's no list to check, only their postmaster tools.</li>\n<li>\n<strong>Netw",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eqvps/your-ip-is-on-a-blocklist-how-to-check-it-in-5-minutes-and-what-actually-gets-you-delisted-16n4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8fe0f43495240060",
+    "title": "Battery date codes: why K5 can mean three different months",
+    "url": "https://dev.to/jeremiah_say/battery-date-codes-why-k5-can-mean-three-different-months-1ba0",
+    "summary": "<p>What does the date code on a car battery mean? On most brands it's a letter for the month and a digit for the year, so <code>C3</code> means March 2023. That's <a href=\"https://www.interstatebatteries.com/en-lx/support/faqs\" rel=\"noopener noreferrer\">Interstate's own example</a>, and it sounds like a five-minute regex.</p>\n\n<p>Then you read the same code across brands. <code>K5</code> is November 2025 on an Interstate. On a Deka it's October 2025. On a NorthStar it's September 2025.</p>\n\n<p>Same two characters, three different months, and that's before you get to the missing decade.</p>\n\n<p>I built a <a href=\"https://whoactuallymakes.com/battery-date-code/\" rel=\"noopener noreferrer\">battery date code decoder</a> that covers 13 brands, 10 of them with a rule from the maker. This post covers the parsing problems I hit, and how the decoder handles a code it can't settle. The rules are open data, so you can use them yourself.</p>\n\n<h2>\n  \n  \n  Trap 1: the month letters aren't one alphab",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jeremiah_say/battery-date-codes-why-k5-can-mean-three-different-months-1ba0"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "bc9e90d844cd16eb",
+    "title": "Data types, variables, constants and conversions (VB.NET)",
+    "url": "https://dev.to/divakarupadhyay/data-types-variables-constants-and-conversions-vbnet-4km6",
+    "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/vbnet/lessons/data-types-variables-constants-and-conversions\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, lesson 2 of 12 in the <a href=\"https://devladder.pages.dev/courses/vbnet\" rel=\"noopener noreferrer\">VB.NET: Visual Basic .NET from Basics to Advanced (with C# Comparison)</a> course)</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>VB.NET</th>\n<th>C#</th>\n<th>.NET type</th>\n<th>Literal</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>Integer</code></td>\n<td><code>int</code></td>\n<td><code>Int32</code></td>\n<td>\n<code>42</code>, <code>42I</code>\n</td>\n</tr>\n<tr>\n<td><code>Long</code></td>\n<td><code>long</code></td>\n<td><code>Int64</code></td>\n<td><code>42L</code></td>\n</tr>\n<tr>\n<td>\n<code>Short</code> / <code>Byte</code>\n</td>\n<td>\n<code>short</code> / <code>byte</code>\n</td>\n<td>\n<code>Int16</code> / <code>Byte</code>\n</td>\n<td><code>42S</code></td>\n</tr>\n<tr>\n<",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/divakarupadhyay/data-types-variables-constants-and-conversions-vbnet-4km6"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8e8f5f015cdc15f9",
+    "title": "Discord webhook in a contact form? Anyone can delete it",
+    "url": "https://dev.to/formgongteam/discord-webhook-in-a-contact-form-anyone-can-delete-it-2nmh",
+    "summary": "<p>A Discord webhook URL looks like an address, so it feels fine to put it in your page's JavaScript. It works more like a key. Discord's developer docs list three calls that need nothing but that URL: Get Webhook with Token, Modify Webhook with Token and Delete Webhook with Token. Each one \"does not require authentication.\" So anyone who opens your page source can post to your channel, rename the webhook and give it a new avatar, or delete it. Once it's deleted your form stops delivering, and you find out when a customer asks why you never answered.</p>\n\n<p>That's the whole problem. The rest of this piece is how common it is and how to fix it.</p>\n\n<p>We're Formgong, and we make a form backend that posts to Discord. Our product is in the last section, and you can skip it.</p>\n\n<h2>\n  \n  \n  How common it is\n</h2>\n\n<p>On 9 November we searched GitHub code for HTML files containing <code>discord.com/api/webhooks</code>. GitHub reports about 4,900 of them. We read the first 200 results in",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-11T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/formgongteam/discord-webhook-in-a-contact-form-anyone-can-delete-it-2nmh"
+      }
+    ],
+    "score": 21.0
+  }
+]

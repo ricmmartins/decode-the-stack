@@ -1,74 +1,82 @@
 {
-  "updated_at": "2026-11-09T13:23:42.114629+00:00",
+  "updated_at": "2026-11-11T13:24:43.754381+00:00",
   "configured_feeds": 242,
-  "editions_published": 8,
-  "headlines_published": 382,
-  "sources_credited": 62,
-  "latest_edition_date": "2026-11-09",
+  "editions_published": 9,
+  "headlines_published": 432,
+  "sources_credited": 64,
+  "latest_edition_date": "2026-11-11",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 89
-    },
-    {
-      "name": "Hacker News (Best)",
-      "headlines": 34
+      "headlines": 99
     },
     {
       "name": "InfoQ",
-      "headlines": 33
+      "headlines": 38
     },
     {
       "name": "The Hacker News",
-      "headlines": 31
+      "headlines": 37
+    },
+    {
+      "name": "Hacker News (Best)",
+      "headlines": 36
     },
     {
       "name": "TechCrunch",
-      "headlines": 17
+      "headlines": 19
     },
     {
       "name": "The Verge - Tech",
-      "headlines": 15
+      "headlines": 17
     },
     {
       "name": "Real Python",
-      "headlines": 12
-    },
-    {
-      "name": "The New Stack",
-      "headlines": 11
+      "headlines": 14
     },
     {
       "name": "Vercel Blog",
-      "headlines": 11
+      "headlines": 13
+    },
+    {
+      "name": "The New Stack",
+      "headlines": 12
     },
     {
       "name": "JetBrains Blog",
-      "headlines": 9
+      "headlines": 11
     },
     {
       "name": "Lobsters",
-      "headlines": 9
+      "headlines": 11
     },
     {
       "name": "Simon Willison",
-      "headlines": 9
+      "headlines": 11
     },
     {
       "name": "CNCF Blog",
-      "headlines": 7
+      "headlines": 9
     },
     {
       "name": "OpenAI Blog",
-      "headlines": 7
-    },
-    {
-      "name": "Wired",
-      "headlines": 7
+      "headlines": 9
     },
     {
       "name": "The Daily WTF",
+      "headlines": 8
+    },
+    {
+      "name": "Wired",
+      "headlines": 8
+    },
+    {
+      "name": "Freek Van der Herten",
+      "headlines": 6
+    },
+    {
+      "name": "Schneier on Security",
       "headlines": 6
     },
     {
@@ -76,23 +84,15 @@
       "headlines": 5
     },
     {
-      "name": "Freek Van der Herten",
+      "name": "Laravel News",
       "headlines": 5
     },
     {
-      "name": "Schneier on Security",
+      "name": "Nvidia Developer Blog",
       "headlines": 5
     },
     {
       "name": "Dark Reading",
-      "headlines": 4
-    },
-    {
-      "name": "Laravel News",
-      "headlines": 4
-    },
-    {
-      "name": "Nvidia Developer Blog",
       "headlines": 4
     },
     {
@@ -101,6 +101,14 @@
     },
     {
       "name": "Grafana Blog",
+      "headlines": 3
+    },
+    {
+      "name": "Krebs on Security",
+      "headlines": 3
+    },
+    {
+      "name": "Martin Fowler",
       "headlines": 3
     },
     {
@@ -124,11 +132,15 @@
       "headlines": 2
     },
     {
-      "name": "Google Developers Blog",
+      "name": "DeepMind Blog",
       "headlines": 2
     },
     {
-      "name": "Krebs on Security",
+      "name": "Google AI Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Google Developers Blog",
       "headlines": 2
     },
     {
@@ -137,6 +149,10 @@
     },
     {
       "name": "PagerDuty Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Risky Business (Podcast)",
       "headlines": 2
     },
     {
@@ -152,6 +168,10 @@
       "headlines": 1
     },
     {
+      "name": "Ars Technica",
+      "headlines": 1
+    },
+    {
       "name": "Cloudinary Blog",
       "headlines": 1
     },
@@ -161,10 +181,6 @@
     },
     {
       "name": "David Walsh Blog",
-      "headlines": 1
-    },
-    {
-      "name": "DeepMind Blog",
       "headlines": 1
     },
     {
@@ -184,7 +200,7 @@
       "headlines": 1
     },
     {
-      "name": "Google AI Blog",
+      "name": "HubSpot Product & Engineering",
       "headlines": 1
     },
     {
@@ -197,10 +213,6 @@
     },
     {
       "name": "Kyle Kingsbury (Aphyr)",
-      "headlines": 1
-    },
-    {
-      "name": "Martin Fowler",
       "headlines": 1
     },
     {
@@ -221,10 +233,6 @@
     },
     {
       "name": "Reddit Engineering",
-      "headlines": 1
-    },
-    {
-      "name": "Risky Business (Podcast)",
       "headlines": 1
     },
     {
@@ -259,23 +267,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 284
+      "headlines": 317
     },
     {
       "name": "Security",
-      "headlines": 44
+      "headlines": 53
     },
     {
       "name": "AI/ML",
-      "headlines": 21
+      "headlines": 24
     },
     {
       "name": "Cloud",
-      "headlines": 18
+      "headlines": 20
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 15
+      "headlines": 17
     }
   ],
   "history": [
@@ -318,6 +326,11 @@
       "date": "2026-11-09",
       "headlines": 50,
       "sources": 20
+    },
+    {
+      "date": "2026-11-11",
+      "headlines": 50,
+      "sources": 27
     }
   ]
 }

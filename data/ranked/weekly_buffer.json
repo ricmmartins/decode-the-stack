@@ -1,1016 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-11-02",
-      "stories": [
-        {
-          "title": "Keep file versions and observation dates separate when reading a CSV",
-          "url": "https://dev.to/thesidelineco/keep-file-versions-and-observation-dates-separate-when-reading-a-csv-2f1h",
-          "category": "dev",
-          "score": 30.0,
-          "coverage_count": 4,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>By The Sideline</p>\n\n<p>A data file can have a release date that differs from the date of its observations. A download time is a third timestamp. Treating them as interchangeable can make a dashboa",
-          "section": "main"
-        },
-        {
-          "title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
-          "url": "https://css-tricks.com/whats-important-20/",
-          "category": "dev",
-          "score": 27.0,
-          "coverage_count": 3,
-          "source_name": "CSS-Tricks",
-          "summary": "<p>This is the final issue of What’s !important on CSS-Tricks.com. The good news is that it’s coming back in an expanded form as the CSS-Tricks newsletter. I had ya there for a second, didn’t I? Sorry",
-          "section": "main"
-        },
-        {
-          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
-          "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
-          "category": "dev",
-          "score": 25.0,
-          "coverage_count": 9,
-          "source_name": "Nvidia Developer Blog",
-          "summary": "<img alt=\"Abstract green computing cube with layered panels, performance icons, and streams of data on a black background\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://develo",
-          "section": "main"
-        },
-        {
-          "title": "Evaluate Vercel Flags from another project without sharing SDK keys.",
-          "url": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
-          "category": "cloud",
-          "score": 24.0,
-          "coverage_count": 2,
-          "source_name": "Vercel Blog",
-          "summary": "<p><a href=\"https://vercel.com/docs/flags/vercel-flags/project-connections\">Project Connections</a> let applications evaluate flags defined in another Vercel project within the same team, without mana",
-          "section": "main"
-        },
-        {
-          "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
-          "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
-          "category": "cloud",
-          "score": 22.1,
-          "coverage_count": 1,
-          "source_name": "AWS Blog",
-          "summary": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now b",
-          "section": "main"
-        },
-        {
-          "title": "Instrumentation Hub in Grafana Cloud: start easier, stay in control",
-          "url": "https://grafana.com/blog/instrumentation-hub-start-your-observability-journey-easier-and-still-stay-in-control/",
-          "category": "devops",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Grafana Blog",
-          "summary": "<p>It's no secret that getting started with observability can be much harder than it should be. That's why, at ObservabilityCon 2025, we introduced Instrumentation Hub: a guided, scalable way to roll ",
-          "section": "main"
-        },
-        {
-          "title": "From Working Group to SIG Architecture: spotlight on AI Conformance",
-          "url": "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/",
-          "category": "devops",
-          "score": 16.0,
-          "coverage_count": 2,
-          "source_name": "Kubernetes Blog",
-          "summary": "<p>In this SIG Architecture spotlight we talked with <a href=\"https://github.com/janetkuo\">Janet Kuo</a> (Google)\nand <a href=\"https://github.com/terrytangyuan\">Yuan Tang</a> (TensorScale AI) about th",
-          "section": "main"
-        },
-        {
-          "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-          "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-          "category": "security",
-          "score": 22.98,
-          "coverage_count": 2,
-          "source_name": "The Hacker News",
-          "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.\n",
-          "section": "main"
-        },
-        {
-          "title": "AI Vulnerability Finding",
-          "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
-          "category": "security",
-          "score": 21.33,
-          "coverage_count": 1,
-          "source_name": "Schneier on Security",
-          "summary": "<p>A <a href=\"https://x.com/NickADobos/status/2113430301183823901\">comment</a>:</p>\n<blockquote><p>3% of &#8216;critical&#8217; software security bugs, in all of recorded history, have been found in t",
-          "section": "main"
-        },
-        {
-          "title": "Introducing the Grid Protectors Program",
-          "url": "https://openai.com/index/grid-protectors-program",
-          "category": "ai",
-          "score": 21.54,
-          "coverage_count": 1,
-          "source_name": "OpenAI Blog",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-          "section": "main"
-        },
-        {
-          "title": "LifeVal",
-          "url": "https://openai.com/index/lifeval",
-          "category": "ai",
-          "score": 18.62,
-          "coverage_count": 1,
-          "source_name": "OpenAI Blog",
-          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
-          "section": "main"
-        },
-        {
-          "title": "Open-source security in the AI exploit era: Patch without changing a thing",
-          "url": "https://thenewstack.io/patchmageddon-open-source-security22842502/",
-          "category": "news",
-          "score": 28.0,
-          "coverage_count": 6,
-          "source_name": "The New Stack",
-          "summary": "<img alt=\"A vibrant digital illustration of an open combination padlock against a dark navy background. The lock features a colorful purple-to-green gradient and five tumblers displaying bright green ",
-          "section": "main"
-        },
-        {
-          "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-          "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-          "category": "news",
-          "score": 25.04,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11\">https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-",
-          "section": "main"
-        },
-        {
-          "title": "Delete Expired Sessions in Laravel With a Scheduled Command",
-          "url": "https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
-          "category": "dev",
-          "score": 25.0,
-          "coverage_count": 5,
-          "source_name": "Laravel News",
-          "summary": "<p><a href=\"https://laravel-news.com/laravel-delete-expired-sessions\"><img alt=\"Delete Expired Sessions in Laravel With a Scheduled Command\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.co",
-          "section": "main"
-        },
-        {
-          "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
-          "url": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 24.81,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/en/headerimage/torchtpu-1793636927771.jpeg\" /><p>TorchTPU is an open-source project developed by Google in collaboration with ",
-          "section": "main"
-        },
-        {
-          "title": "Java News Roundup: TornadoVM 8.0, JNoSQL, Endive, JReleaser, JBang, LangChain4j, Quarkus Almanac",
-          "url": "https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 24.7,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/java-news-roundup-oct26-2026/en/headerimage/java-news-roundup-image-1793638258393.jpg\" /><p>This week's Java roundup for October 26th, 2026, features news ",
-          "section": "main"
-        },
-        {
-          "title": "Astra can read and write weights to improve Qwen",
-          "url": "https://rikiyat.github.io/blog/weight-space-programming/",
-          "category": "news",
-          "score": 24.16,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://rikiyat.github.io/blog/weight-space-programming/\">https://rikiyat.github.io/blog/weight-space-programming/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.c",
-          "section": "main"
-        },
-        {
-          "title": "German Income Tax Calculation in JavaScript",
-          "url": "https://dev.to/tanzeel_abbas_1288a9e8d4c/german-income-tax-calculation-in-javascript-1ja2",
-          "category": "dev",
-          "score": 24.0,
-          "coverage_count": 2,
-          "source_name": "Dev.to (Top)",
-          "summary": "<h1>\n  \n  \n  German Income Tax Calculation in JavaScript\n</h1>\n\n<p>German income tax is famously complicated, and for good reason: it is not a simple set of brackets. Germany uses a progressive formul",
-          "section": "main"
-        },
-        {
-          "title": "Polyend releases the Tracker firmware source code",
-          "url": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120",
-          "category": "news",
-          "score": 22.9,
-          "coverage_count": 3,
-          "source_name": "Lobsters",
-          "summary": "<p><a href=\"https://lobste.rs/s/gu6yyl/polyend_releases_tracker_firmware\">Comments</a></p>",
-          "section": "main"
-        },
-        {
-          "title": "Podcast: Educating an Architect: A Conversation with Luca Mezzalira",
-          "url": "https://www.infoq.com/podcasts/educating-architect-conversation-luca-mezzalira/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 22.0,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/podcasts/educating-architect-conversation-luca-mezzalira/en/smallimage/infoq-podcast-500-1793347709702.jpg\" /><p>In this podcast, Michael Stiefel spoke to Luca Mezzalir",
-          "section": "main"
-        },
-        {
-          "title": "Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools",
-          "url": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 21.66,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Uber has built an MCP Gateway to standardize how AI agents discover and invoke internal services across more than 800 MC",
-          "section": "radar"
-        },
-        {
-          "title": "Vercel MCP now renders deployments as an interactive card",
-          "url": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
-          "category": "cloud",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Vercel Blog",
-          "summary": "<p><a href=\"https://vercel.com/docs/agent-resources/vercel-mcp\">Vercel MCP</a> can now show your deployments as an interactive card inside ChatGPT and other chat clients that support <a href=\"https://",
-          "section": "radar"
-        },
-        {
-          "title": "Criei uma plataforma para desenvolvedores brasileiros. Agora vem a parte mais difícil: fazer ela crescer.",
-          "url": "https://dev.to/realizar/criei-uma-plataforma-para-desenvolvedores-brasileiros-agora-vem-a-parte-mais-dificil-fazer-ela-3419",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Fala, pessoal! Tudo bem?</p>\n\n<p>Há um tempo comecei a desenvolver um projeto chamado LifeDev.</p>\n\n<p>A ideia surgiu porque eu queria criar um espaço voltado para desenvolvedores brasileiros, onde",
-          "section": "radar"
-        },
-        {
-          "title": "Unslop Brings Staged UI Review to Claude Code and Codex",
-          "url": "https://dev.to/dd8888/unslop-brings-staged-ui-review-to-claude-code-and-codex-12cb",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Unslop is a GitHub-hosted skill for Claude Code and Codex that targets what its author describes as “vibecoded, AI-looking” interfaces. For developers, the concrete change is an ordered review proc",
-          "section": "radar"
-        },
-        {
-          "title": "CSS view transitions in Laravel and Livewire",
-          "url": "https://dev.to/aimantas_e1b9dea60a53117d/css-view-transitions-in-laravel-and-livewire-32i",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p><em>I'm Aimantas, an AI running a small software experiment with humans managing the real decisions. This is a cross-post; the original has live demos you can tap: <a href=\"https://aimantas.com/wri",
-          "section": "radar"
-        },
-        {
-          "title": "I Built My Own Compiled Programming Language. Here's What I Learned.",
-          "url": "https://dev.to/yassine_jemi_01/i-built-my-own-compiled-programming-language-heres-what-i-learned-8hn",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Most developers use programming languages.</p>\n\n<p>Some build applications with Python. Others use Rust, C, Go, or Java.</p>\n\n<p>But at some point, I became interested in a different question:</p>\n",
-          "section": "radar"
-        },
-        {
-          "title": "Remove EXIF Metadata in the Browser: How to Verify the Result Byte by Byte",
-          "url": "https://dev.to/onepassapps/remove-exif-metadata-in-the-browser-how-to-verify-the-result-byte-by-byte-1epd",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<h1>\n  \n  \n  Remove EXIF Metadata in the Browser: How to Verify the Result Byte by Byte\n</h1>\n\n<p>Most \"remove EXIF metadata\" tools work like this: you upload the photo, their server<br />\nstrips the ",
-          "section": "radar"
-        },
-        {
-          "title": "MIT CSAIL: Astra edita 0,016% de pesos de Qwen3.5-0.8B y sube MATH-500 a 48,1%",
-          "url": "https://dev.to/lu1tr0n/mit-csail-astra-edita-0016-de-pesos-de-qwen35-08b-y-sube-math-500-a-481-4hn9",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Un modelo de lenguaje acaba de leer 17.253 números sueltos y adivinó, con 99% de confianza, que esa red neuronal había sido entrenada para jugar Breakout. Nadie le dio código fuente, nunca vio una ",
-          "section": "radar"
-        },
-        {
-          "title": "Add to calendar from the browser: generating .ics files for countdown dates",
-          "url": "https://dev.to/countmydays/add-to-calendar-from-the-browser-generating-ics-files-for-countdown-dates-5hf9",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>A countdown is more useful when it also lives in the calendar you already check every morning. An \"Add to calendar\" button is the simplest way to get it there, and you don't need a server or a libr",
-          "section": "radar"
-        },
-        {
-          "title": "Typing in a 5,000-row table took 26 seconds per key. Here's how I got it to 24 ms.",
-          "url": "https://dev.to/solancer/typing-in-a-5000-row-table-took-26-seconds-per-key-heres-how-i-got-it-to-24-ms-3ckk",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Sarala is a free, open-source Markdown editor where the page you write is the page you read. There's no preview pane. Click a paragraph to edit its Markdown, click away and it renders in place.</p>",
-          "section": "radar"
-        },
-        {
-          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
-          "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
-          "category": "dev",
-          "score": 20.7,
-          "coverage_count": 1,
-          "source_name": "Nvidia Developer Blog",
-          "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/cosmos-framework-tech-blog-600x338-5784057.webp\" style=\"display",
-          "section": "radar"
-        },
-        {
-          "title": "Shopify Overexposed Scans GKE Ingresses and Cloud Run for Exposure",
-          "url": "https://www.infoq.com/news/2026/11/shopify-kubernetes-ingresses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 20.61,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/shopify-kubernetes-ingresses/en/headerimage/generatedHeaderImage-1793520999206.jpg\" /><p>Shopify has introduced Overexposed. This internal scanner locates ",
-          "section": "radar"
-        },
-        {
-          "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
-          "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
-          "category": "news",
-          "score": 20.46,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "Marvell's planned purchase of Lumentum is one of the biggest acquisitions in tech history. And they both have the same strategic investor: Nvidia.",
-          "section": "radar"
-        },
-        {
-          "title": "The support case of a customer who said that all they could see was a black screen",
-          "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
-          "category": "dev",
-          "score": 20.2,
-          "coverage_count": 4,
-          "source_name": "Raymond Chen (Old New Thing)",
-          "summary": "<p>Then again, that is what they asked for.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/\">The support case of a customer who said that all they could see ",
-          "section": "radar"
-        },
-        {
-          "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-          "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-          "category": "security",
-          "score": 19.96,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was eno",
-          "section": "radar"
-        },
-        {
-          "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
-          "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-          "category": "news",
-          "score": 19.93,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "Two startups tackling the data center water problem are joining forces in a $16 million deal.",
-          "section": "radar"
-        },
-        {
-          "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-          "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-          "category": "security",
-          "score": 19.9,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.\n\nGoogle says&nbsp;it is highly confident that devic",
-          "section": "radar"
-        },
-        {
-          "title": "Apple&#8217;s ‘Ultra’ smart home robot might have to wait until 2028",
-          "url": "https://www.theverge.com/tech/1024496/apple-homeview-ultra-robot-rumor-delay",
-          "category": "news",
-          "score": 19.41,
-          "coverage_count": 1,
-          "source_name": "The Verge - Tech",
-          "summary": "Apple has reportedly delayed the launch of its rumored smart home robot until next year at the earliest or possibly even 2028, according to The Information. It says the robot's hardware \"has been fini",
-          "section": "radar"
-        },
-        {
-          "title": "Could data center backlash flip Florida?",
-          "url": "https://www.theverge.com/policy/1024357/florida-governors-race-donalds-jolly-data-centers",
-          "category": "news",
-          "score": 19.4,
-          "coverage_count": 1,
-          "source_name": "The Verge - Tech",
-          "summary": "Patti Zirhut, a lifelong Republican, has been studying her ballot for weeks. Zirhut eagerly voted for President Donald Trump in 2016, 2020, and 2024, but she isn't toeing the party line this year. \"My",
-          "section": "radar"
-        },
-        {
-          "title": "How we halved DNS build delay and cut memory use by 85%",
-          "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-          "category": "dev",
-          "score": 19.38,
-          "coverage_count": 1,
-          "source_name": "Cloudflare Blog",
-          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak m",
-          "section": "radar"
-        },
-        {
-          "title": "Quiz: Socket Programming in Python",
-          "url": "https://realpython.com/quizzes/socket-programming-in-python/",
-          "category": "dev",
-          "score": 19.36,
-          "coverage_count": 4,
-          "source_name": "Real Python",
-          "summary": "In this quiz, you'll test your understanding of Python sockets. With this knowledge, you'll be able to create your own client-server applications, handle multiple connections simultaneously, and send ",
-          "section": "radar"
-        },
-        {
-          "title": "The fx adapter now runs the harness on the host",
-          "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
-          "category": "cloud",
-          "score": 19.0,
-          "coverage_count": 3,
-          "source_name": "Vercel Blog",
-          "summary": "<p>The fx adapter for the AI SDK’s <code>HarnessAgent</code> now uses <code>libfx</code>, the TypeScript library for fx. The harness and model requests run in your application’s process, while built-i",
-          "section": "radar"
-        },
-        {
-          "title": "Brilliant Builds: Building for Choice",
-          "url": "https://www.twilio.com/en-us/blog/events/Brilliant-builds-episode-4",
-          "category": "dev",
-          "score": 18.66,
-          "coverage_count": 4,
-          "source_name": "Twilio Blog",
-          "summary": "To close out the season, we’re joined by Scott Seaborn—a leading digital transformation and AI strategist who helps global brands modernise their customer experience.",
-          "section": "radar"
-        },
-        {
-          "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
-          "url": "https://hackerbooks.org",
-          "category": "news",
-          "score": 18.0,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Ea",
-          "section": "radar"
-        },
-        {
-          "title": "The U.S. Census Bureau and “Super Intelligence”",
-          "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-          "category": "ai",
-          "score": 18.0,
-          "coverage_count": 1,
-          "source_name": "Simon Willison",
-          "summary": "<p>I was reminded today of <a href=\"https://www.apolloacademy.com/ai-adoption-rate-trending-down-for-large-companies/\">AI Adoption Rate Trending Down for Large Companies</a>, a chart produced by Apoll",
-          "section": "radar"
-        },
-        {
-          "title": "Microsoft's AI Risk Report Misses This Key Detail",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
-          "category": "security",
-          "score": 17.89,
-          "coverage_count": 1,
-          "source_name": "Dark Reading",
-          "summary": "The latest &quot;Digital Defense Report&quot; identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
-          "section": "radar"
-        },
-        {
-          "title": "Northwood Space raises $375M Series C at a $2B valuation from a16z and DFJ Growth",
-          "url": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/",
-          "category": "news",
-          "score": 17.87,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "Space infrastructure company Northwood Space on Monday said it had raised $375 million in a Series C round co-led by Andreessen Horowitz and DFJ Growth, valuing the company at $2 billion.",
-          "section": "radar"
-        },
-        {
-          "title": "2 days till TechCrunch Founder Summit: Boston founders don’t need a Silicon Valley address to build something big",
-          "url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/",
-          "category": "news",
-          "score": 17.65,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "TechCrunch Founder Summit happens on November 4 in Boston for a founder-focused agenda and impactful connections. Save up to $100 or get discounts with group passes.",
-          "section": "radar"
-        },
-        {
-          "title": "Browser Use in Managed Deep Agents",
-          "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
-          "category": "ai",
-          "score": 17.48,
-          "coverage_count": 1,
-          "source_name": "LangChain Blog",
-          "summary": "Managed Deep Agents now runs a browser for your agent, with tools tuned for context-efficient browser use and a handoff so you can sign in yourself.",
-          "section": "radar"
-        },
-        {
-          "title": "New context engineering challenges in late 2026",
-          "url": "https://www.langchain.com/blog/context-engineering-challenges-late-2026",
-          "category": "ai",
-          "score": 17.32,
-          "coverage_count": 1,
-          "source_name": "LangChain Blog",
-          "summary": "LangChain CEO Harrison Chase shares insights into the biggest harness engineering challenges with the emergence of proactive agents.",
-          "section": "radar"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-03",
-      "stories": [
-        {
-          "title": "Protecting WordPress Contact Forms with AI",
-          "url": "https://dev.to/kevinlearynet/protecting-wordpress-contact-forms-with-ai-17o4",
-          "category": "dev",
-          "score": 24.0,
-          "coverage_count": 2,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>If you have a WordPress website with a contact form you know how bad spam can get.</p>\n\n<p>Contact forms, lead forms, and signups all attract fake messages. Honeypots, Akismet, reCAPTCHA and Turnst",
-          "section": "main"
-        },
-        {
-          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
-          "url": "https://blog.cloudflare.com/zero-wire/",
-          "category": "dev",
-          "score": 21.87,
-          "coverage_count": 1,
-          "source_name": "Cloudflare Blog",
-          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
-          "section": "main"
-        },
-        {
-          "title": "Live Props for Real-Time Updates in Inertia.js v3.11",
-          "url": "https://laravel-news.com/inertia-3-11-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 2,
-          "source_name": "Laravel News",
-          "summary": "<p><a href=\"https://laravel-news.com/inertia-3-11-0\"><img alt=\"Live Props for Real-Time Updates in Inertia.js v3.11\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/inerti",
-          "section": "main"
-        },
-        {
-          "title": "Reliability in the AI Era: AI That Works the Incident With You by David Williams and Nora Jones",
-          "url": "https://www.pagerduty.com/blog/announcements/reliability-in-the-ai-era-ai-that-works-the-incident-with-you/",
-          "category": "cloud",
-          "score": 20.3,
-          "coverage_count": 1,
-          "source_name": "PagerDuty Blog",
-          "summary": "<p>Being responsible for the reliability of services people count on every day isn’t easy. Customers expect everything to work, all the time, and when it...</p>\n<p>The post <a href=\"https://www.pagerd",
-          "section": "main"
-        },
-        {
-          "title": "Meet Paige, PagerDuty’s SRE Agent: Faster Fixes Today, Fewer Incidents Tomorrow by PagerDuty",
-          "url": "https://www.pagerduty.com/blog/ai/meet-paige-sre-agent/",
-          "category": "cloud",
-          "score": 20.06,
-          "coverage_count": 1,
-          "source_name": "PagerDuty Blog",
-          "summary": "<p>Today, we’re introducing Paige, PagerDuty’s SRE Agent. Built on over 16 years of operational data, Paige works as a member of operations, engineering, and DevOps...</p>\n<p>The post <a href=\"https:/",
-          "section": "main"
-        },
-        {
-          "title": "OpenKruise Agents v0.6.0: Leaping ahead in agent Sandbox security and automation",
-          "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
-          "category": "devops",
-          "score": 18.71,
-          "coverage_count": 1,
-          "source_name": "CNCF Blog",
-          "summary": "About OpenKruise Agents OpenKruise Agents is a sub-project of OpenKruise, the CNCF open-source application automation and workload orchestration project. It provides full lifecycle management for Agen",
-          "section": "main"
-        },
-        {
-          "title": "What Is the OpenTofu MCP Server and How to Use It",
-          "url": "https://spacelift.io/blog/opentofu-mcp-server",
-          "category": "devops",
-          "score": 17.12,
-          "coverage_count": 1,
-          "source_name": "Spacelift Blog",
-          "summary": "Learn what the OpenTofu MCP server is, what it exposes, how to install it, and how to use it with AI assistants.",
-          "section": "main"
-        },
-        {
-          "title": "AIs Hacking the Law",
-          "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
-          "category": "security",
-          "score": 25.0,
-          "coverage_count": 1,
-          "source_name": "Schneier on Security",
-          "summary": "<p>In both a 2021 <a href=\"https://www.belfercenter.org/publication/coming-ai-hackers\">essay</a> and my 2022 book, <i><a href=\"https://www.schneier.com/books/a-hackers-mind/\">A Hacker&#8217;s Mind</a>",
-          "section": "main"
-        },
-        {
-          "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
-          "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
-          "category": "security",
-          "score": 20.0,
-          "coverage_count": 1,
-          "source_name": "Krebs on Security",
-          "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Int",
-          "section": "main"
-        },
-        {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "url": "https://openai.com/index/heimstaden",
-          "category": "ai",
-          "score": 18.48,
-          "coverage_count": 1,
-          "source_name": "OpenAI Blog",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
-          "section": "main"
-        },
-        {
-          "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
-          "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
-          "category": "ai",
-          "score": 18.0,
-          "coverage_count": 1,
-          "source_name": "Simon Willison",
-          "summary": "<p><strong><a href=\"https://www.youtube.com/watch?v=UytYrhYLOKI\">I discovered a sound that leaks your exact location (and it&#x27;s everywhere) - YouTube</a></strong></p>\nGenius piece of OSINT by Cols",
-          "section": "main"
-        },
-        {
-          "title": "Anthropic speeds up Claude Code with message threads. But your token bill stays the same.",
-          "url": "https://thenewstack.io/anthropic-claude-message-threads/",
-          "category": "news",
-          "score": 27.0,
-          "coverage_count": 2,
-          "source_name": "The New Stack",
-          "summary": "<img alt=\"Illustration of a desktop monitor, laptop, keyboard and phone displaying code, representing Claude Code and developer tools.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" h",
-          "section": "main"
-        },
-        {
-          "title": "Presentation: Beyond the Harness: Canvas for AI Agents",
-          "url": "https://www.infoq.com/presentations/canvas-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 24.5,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/presentations/canvas-ai-agents/en/mediumimage/nimisha-asthagiri-medium-1792655073821.jpg\" /><p>Nimisha Asthagiri shares how applying proven product engineering and arch",
-          "section": "main"
-        },
-        {
-          "title": "LinkedIn Uses OpenTelemetry to Trace the Member Journey from Tap to Backend",
-          "url": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 23.5,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/linkedin-opentelemetry-journey/en/headerimage/generatedHeaderImage-1793095474316.jpg\" /><p>LinkedIn has built an OpenTelemetry-based telemetry platform tha",
-          "section": "main"
-        },
-        {
-          "title": "Building a browser GIF editor: the frame memory limit matters more than file size",
-          "url": "https://dev.to/_3330b5103afff1/building-a-browser-gif-editor-the-frame-memory-limit-matters-more-than-file-size-45k9",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>I built <a href=\"https://visualformat.tools/\" rel=\"noopener noreferrer\">VisualFormat</a>, a free set of browser GIF tools. The files are processed locally, with no account required. One practical c",
-          "section": "main"
-        },
-        {
-          "title": "Rewrite Rules for a Custom Post Type & Taxonomy Pattern",
-          "url": "https://dev.to/kevinlearynet/rewrite-rules-for-a-custom-post-type-taxonomy-pattern-2m7m",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>If you’ve ever built a Resources page for a custom WordPress theme, you’ve probably come accross bugs related or directly caused by the following pattern.</p>\n\n<p>It’s not that clear what’s going o",
-          "section": "main"
-        },
-        {
-          "title": "I built a repo where a first PR is one folder, and a 144-line validator reviews the format",
-          "url": "https://dev.to/deady2j/i-built-a-repo-where-a-first-pr-is-one-folder-and-a-144-line-validator-reviews-the-format-2a82",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>I'm a beginner in open source. A few weeks ago a fairly big pull request of mine was merged into someone else's project, and the review taught me how much of a maintainer's time goes into checking ",
-          "section": "main"
-        },
-        {
-          "title": "Anatomy of a Professional WordPress Website",
-          "url": "https://dev.to/kevinlearynet/anatomy-of-a-professional-wordpress-website-4m4p",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>A look under the hood of a well built WordPress website, describing the plugins, patterns, processes, and tools that I use and recommend to build high quality custom WordPress websites.<br /><br />",
-          "section": "main"
-        },
-        {
-          "title": "What I learned from building a relational database engine in C#",
-          "url": "https://dev.to/janijarvinen/what-i-learned-from-building-a-relational-database-engine-in-c-439j",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>I’ve used Microsoft SQL Server for decades without ever seeing how it works inside. Sure, there’s ample documentation, but reading it isn’t the same thing as looking at the implementation code. Sin",
-          "section": "main"
-        },
-        {
-          "title": "Working with OpenAI’s Codex CLI",
-          "url": "https://dev.to/kevinlearynet/working-with-openais-codex-cli-2pkj",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>OpenAI’s Codex CLI is a developer command-line interface that lets you leverage AI models to generate, refactor, and document code directly from your terminal.</p>\n\n<h2>\n  \n  \n  What is it?\n</h2>\n\n",
-          "section": "main"
-        },
-        {
-          "title": "Claude Code in Visual Studio 2026: 5 Ways to Run It Today",
-          "url": "https://dev.to/akaranjkar08/claude-code-in-visual-studio-2026-5-ways-to-run-it-today-590f",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p><strong>As of November 2, 2026, Anthropic does not ship a Claude Code extension for Visual Studio 2026.</strong> The official docs cover VS Code, Cursor and JetBrains IDEs, and tell users of other ",
-          "section": "radar"
-        },
-        {
-          "title": "AI Image Generation: One Prompt, Six Tools",
-          "url": "https://dev.to/kevinlearynet/ai-image-generation-one-prompt-six-tools-1i96",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Finding a relevant featured image is a step in every content marketers blog publishing process. Choosing the right one is critical, it’s what people see when an article is shared and ultimately wha",
-          "section": "radar"
-        },
-        {
-          "title": "Barcode vs Manual Logging: What Actually Keeps Beginners Tracking",
-          "url": "https://dev.to/stropurbo/barcode-vs-manual-logging-what-actually-keeps-beginners-tracking-a63",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Most people don't quit calorie tracking because they don't care about their health. They quit because logging a meal feels like homework. I learned this building CalyFit, a free calorie tracker aim",
-          "section": "radar"
-        },
-        {
-          "title": "AI vs Human WordPress Writing",
-          "url": "https://dev.to/kevinlearynet/ai-vs-human-wordpress-writing-3b8p",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>A comparison of AI writing tools and human writers for WordPress content.</p>\n\n<p>Should we embrace AI for content creation or stick with human writers? After extensive testing with both approaches",
-          "section": "radar"
-        },
-        {
-          "title": "From Onboarding to Production: How I Built Dynamic Vendor Switching at Wise",
-          "url": "https://medium.com/wise-engineering/from-onboarding-to-production-how-i-built-dynamic-vendor-switching-at-wise-876942d6031f?source=rss----f2565bbe9c46---4",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Wise Engineering",
-          "summary": "<p>When I joined Wise, I was expecting the standard new-joiner experience: documentation, shadowing sessions, maybe a small bug fix or two to ease in. What I got instead was a real problem, a blank de",
-          "section": "radar"
-        },
-        {
-          "title": "Quiz: Converting Documents to Markdown With MarkItDown",
-          "url": "https://realpython.com/quizzes/converting-documents-markdown-markitdown/",
-          "category": "dev",
-          "score": 20.32,
-          "coverage_count": 2,
-          "source_name": "Real Python",
-          "summary": "Check your MarkItDown skills. Convert documents to LLM-ready Markdown, use the MCP server, and get image descriptions. Try the quiz.",
-          "section": "radar"
-        },
-        {
-          "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
-          "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-          "category": "security",
-          "score": 19.96,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk e",
-          "section": "radar"
-        },
-        {
-          "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
-          "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-          "category": "security",
-          "score": 19.95,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest lo",
-          "section": "radar"
-        },
-        {
-          "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
-          "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-          "category": "security",
-          "score": 19.95,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations.\n\n\"Active since at least February 2025, the group ",
-          "section": "radar"
-        },
-        {
-          "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
-          "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
-          "category": "news",
-          "score": 19.78,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/\">https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
-          "section": "radar"
-        },
-        {
-          "title": "Oh, your agents need OAuth2, too",
-          "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/",
-          "category": "dev",
-          "score": 19.75,
-          "coverage_count": 1,
-          "source_name": "Stack Overflow Blog",
-          "summary": "Recorded at LDX3 by LeadDev, Ryan chats with Dan Moore, Senior Director of CIAM Strategy and Identity Standards at FusionAuth, about adapting established OAuth2 protocols for the agentic era, the secu",
-          "section": "radar"
-        },
-        {
-          "title": "Where Did the Saved Bytes Go? Compact Object Headers in IntelliJ IDEA",
-          "url": "https://blog.jetbrains.com/idea/2026/11/where-did-the-saved-bytes-go-compact-object-headers-in-intellij-idea/",
-          "category": "dev",
-          "score": 19.66,
-          "coverage_count": 1,
-          "source_name": "JetBrains Blog",
-          "summary": "AI agents may make code faster to produce, but they don’t make it cheaper to run. In applications managing millions of objects, memory allocation and garbage collection still matter. The JVM has been ",
-          "section": "radar"
-        },
-        {
-          "title": "DataGrip and Database Tools User Experience Survey #3 Results",
-          "url": "https://blog.jetbrains.com/datagrip/2026/11/03/datagrip-and-database-tools-user-experience-survey-3-results/",
-          "category": "dev",
-          "score": 19.59,
-          "coverage_count": 1,
-          "source_name": "JetBrains Blog",
-          "summary": "Introduction Hello, DataGrip community! We&#8217;re back with the results of our third DataGrip and Database Tools User Experience Survey. A big thank you to everyone who took the time to participate!",
-          "section": "radar"
-        },
-        {
-          "title": "Adobe’s Premiere mobile app is adding licensed music from ‘leading artists’",
-          "url": "https://www.theverge.com/tech/1025160/adobe-umg-wmg-premiere-mobile-licensed-music",
-          "category": "news",
-          "score": 19.47,
-          "coverage_count": 1,
-          "source_name": "The Verge - Tech",
-          "summary": "Adobe is teaming up with Universal Music Group and Warner Music Group to add a library of licensed music clips to the Premiere mobile video editing app. No specific musicians have been announced with ",
-          "section": "radar"
-        },
-        {
-          "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
-          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
-          "category": "news",
-          "score": 19.05,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio\">https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id",
-          "section": "radar"
-        },
-        {
-          "title": "Modern CSS Might Make Your Front-End More Complex",
-          "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/",
-          "category": "dev",
-          "score": 19.03,
-          "coverage_count": 1,
-          "source_name": "Smashing Magazine",
-          "summary": "Replacing JavaScript with a modern CSS feature can simplify a piece of code while making the wider application harder to reason about. Gabriel Shoyombo explores what happens when logic is split betwee",
-          "section": "radar"
-        },
-        {
-          "title": "Show HN: Warsaw in voxels – An interactive 3D map of the city centre",
-          "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
-          "category": "news",
-          "score": 19.0,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Explore central Warsaw in voxels - slightly inspired by Minecraft, and MagicaVoxel. \nYou can change the date, time of day and weather, explore the city, or click on a pedestrian to control them (he",
-          "section": "radar"
-        },
-        {
-          "title": "Ask HN: Who is hiring? (November 2026)",
-          "url": "https://news.ycombinator.com/item?id=50338728",
-          "category": "news",
-          "score": 19.0,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Please state the location and include REMOTE for remote work, REMOTE (US)\nor similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you per",
-          "section": "radar"
-        },
-        {
-          "title": "openSUSE Leap 16.1",
-          "url": "https://en.opensuse.org/Release_announcement_16.1",
-          "category": "news",
-          "score": 18.71,
-          "coverage_count": 1,
-          "source_name": "Lobsters",
-          "summary": "<p>This is the first minor release in the Leap 16 series and with this release, openSUSE’s immutable server distribution, Leap Micro, becomes part of Leap itself through a new Immutable Mode.</p>\n<p><",
-          "section": "radar"
-        },
-        {
-          "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
-          "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
-          "category": "news",
-          "score": 18.21,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you\">https://www.nist.gov/news-events/news/2026/11/self-employed-solo",
-          "section": "radar"
-        },
-        {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
-          "category": "dev",
-          "score": 18.07,
-          "coverage_count": 2,
-          "source_name": "Nvidia Developer Blog",
-          "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image3-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px",
-          "section": "radar"
-        },
-        {
-          "title": "October sponsors-only newsletter",
-          "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
-          "category": "ai",
-          "score": 18.0,
-          "coverage_count": 1,
-          "source_name": "Simon Willison",
-          "summary": "<p>I sent out the October edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a>. If you are a sponsor (or start a sponsorship now) you can <a href=\"https://g",
-          "section": "radar"
-        },
-        {
-          "title": "CodeSOD: Death of the Auth-Er",
-          "url": "https://thedailywtf.com/articles/death-of-the-auth-er",
-          "category": "dev",
-          "score": 18.0,
-          "coverage_count": 1,
-          "source_name": "The Daily WTF",
-          "summary": "<p>When writing Perl, it's not unusual to want to <code>die</code>. The <code>die</code> function ends your Perl program with an error string, and you'll often see code like: <code>die \"My error\" unle",
-          "section": "radar"
-        },
-        {
-          "title": "Show HN: I've updated my Linux System Call website and API",
-          "url": "https://syscall.sh/",
-          "category": "news",
-          "score": 17.93,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>I first released those in back in 2020 and now I finally added more architectures, Kernel selector, syscall descriptions and a few other niceties. It should work a bit better on mobile devices too ",
-          "section": "radar"
-        },
-        {
-          "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
-          "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
-          "category": "news",
-          "score": 17.82,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432\">https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-",
-          "section": "radar"
-        },
-        {
-          "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
-          "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
-          "category": "security",
-          "score": 17.6,
-          "coverage_count": 1,
-          "source_name": "Dark Reading",
-          "summary": "Evidence suggests a model may have generated and revised commands during the ransom gang's breach, though researchers stopped short of claiming full automation.",
-          "section": "radar"
-        },
-        {
-          "title": "Quiz: How to Use Claude Code Skills for Better Python Docstrings",
-          "url": "https://realpython.com/quizzes/claude-code-skills/",
-          "category": "dev",
-          "score": 17.33,
-          "coverage_count": 1,
-          "source_name": "Real Python",
-          "summary": "Check your understanding of Claude Code skills, from SKILL.md frontmatter and reference files to bundled scripts and personal skills.",
-          "section": "radar"
-        },
-        {
-          "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-          "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-          "category": "security",
-          "score": 16.97,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS scor",
-          "section": "radar"
-        },
-        {
-          "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
-          "url": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
-          "category": "security",
-          "score": 16.96,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freeze",
-          "section": "radar"
-        },
-        {
-          "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-          "category": "security",
-          "score": 16.95,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen fr",
-          "section": "radar"
-        }
-      ]
-    },
-    {
       "date": "2026-11-04",
       "stories": [
         {
@@ -3946,6 +2936,511 @@
           "coverage_count": 1,
           "source_name": "Hacker News (Best)",
           "summary": "<p>Article URL: <a href=\"https://github.com/synchopate/llama-modchip\">https://github.com/synchopate/llama-modchip</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50411961\">https",
+          "section": "radar"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "stories": [
+        {
+          "title": "What a Number-Guessing Game Teaches About Binary Search and Vue State",
+          "url": "https://dev.to/begoodtool/what-a-number-guessing-game-teaches-about-binary-search-and-vue-state-445a",
+          "category": "dev",
+          "score": 27.0,
+          "coverage_count": 3,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A higher-or-lower number game can give misleading hints or attempt counts if the secret and round state change at the wrong time. I'll use a small Vue implementation to show how to keep those updat",
+          "section": "main"
+        },
+        {
+          "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+          "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+          "category": "dev",
+          "score": 26.0,
+          "coverage_count": 5,
+          "source_name": "Nvidia Developer Blog",
+          "summary": "<img alt=\"Green cube with a neural-network diagram, surrounded by circular arrows beneath descending data blocks on a purple background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=",
+          "section": "main"
+        },
+        {
+          "title": "Japan Leaked 1.6 Million Driver's License Photos. What AI Changes",
+          "url": "https://dev.to/hisashispace/japan-leaked-16-million-drivers-license-photos-what-ai-changes-572a",
+          "category": "dev",
+          "score": 24.0,
+          "coverage_count": 2,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Japan just leaked about 1.6 million photos of driver's licenses.<br />\nAnd in the age of AI, a photo of your ID is exactly what a scammer wants.</p>\n\n<p>I've run a web platform in Tokyo for 22 year",
+          "section": "main"
+        },
+        {
+          "title": "Gemini 4 Carbon now available on AI Gateway",
+          "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
+          "category": "cloud",
+          "score": 25.0,
+          "coverage_count": 7,
+          "source_name": "Vercel Blog",
+          "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gemini-4-carbon\">Gemini 4 Carbon from Google</a> is now available on AI Gateway. It is available at 50% off through November 30, 2026:</p><p>Gemini 4 C",
+          "section": "main"
+        },
+        {
+          "title": "Decision models take 26% of requests; Anthropic now wins new teams 2:1",
+          "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026",
+          "category": "cloud",
+          "score": 25.0,
+          "coverage_count": 5,
+          "source_name": "Vercel Blog",
+          "summary": "<p><i>AI Gateway Production Index — November 2026</i></p><p>Every month, <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> routes more than 100 trillion tokens between production applications and",
+          "section": "main"
+        },
+        {
+          "title": "Platform engineering needs to become more human…and less",
+          "url": "https://www.cncf.io/blog/2026/11/11/platform-engineering-needs-to-become-more-humanand-less/",
+          "category": "devops",
+          "score": 18.03,
+          "coverage_count": 1,
+          "source_name": "CNCF Blog",
+          "summary": "Even my family thinks I’m a little robotic. Logical, linear, sequential, methodical. But hey, I’m an engineer, and that’s part of what makes me good at my job. If I were operating on the same volatile",
+          "section": "main"
+        },
+        {
+          "title": "CloudNativePG becomes a CNCF Incubating Project",
+          "url": "https://www.cncf.io/blog/2026/11/10/cloudnativepg-becomes-a-cncf-incubating-project/",
+          "category": "devops",
+          "score": 14.73,
+          "coverage_count": 2,
+          "source_name": "CNCF Blog",
+          "summary": "The CNCF Technical Oversight Committee (TOC) voted to accept CloudNativePG as a CNCF incubating project. CloudNativePG is an open source Kubernetes operator that manages the full lifecycle of highly a",
+          "section": "main"
+        },
+        {
+          "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
+          "url": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+          "category": "security",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "Schneier on Security",
+          "summary": "<p>It&#8217;s hard to believe how lucrative <a href=\"https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft\">this crime</a> can be:</p>\n<blockquote><p>According to a <a href=\"https",
+          "section": "main"
+        },
+        {
+          "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+          "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+          "category": "security",
+          "score": 22.9,
+          "coverage_count": 2,
+          "source_name": "The Hacker News",
+          "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday.\n\nThey included 24 apps built by staff at the soci",
+          "section": "main"
+        },
+        {
+          "title": "ChatGPT Plus for veterans and servicemembers",
+          "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+          "category": "ai",
+          "score": 21.54,
+          "coverage_count": 1,
+          "source_name": "OpenAI Blog",
+          "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+          "section": "main"
+        },
+        {
+          "title": "Gilbert + Tobin rethinks the business of law with AI",
+          "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+          "category": "ai",
+          "score": 20.89,
+          "coverage_count": 1,
+          "source_name": "OpenAI Blog",
+          "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+          "section": "main"
+        },
+        {
+          "title": "How LinkedIn, Netflix & DoorDash Run Agents, Evals & Inference in Production: QCon AI New York 2026",
+          "url": "https://www.infoq.com/news/2026/11/qcon-ai-newyork-2026-program/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/qcon-ai-newyork-2026-program/en/headerimage/qcon-ai-new-york-2026-1794387431153.jpg\" /><p>QCon AI New York has published its full program for December 15–1",
+          "section": "main"
+        },
+        {
+          "title": "Presentation: Uncorking Queueing Bottlenecks with OpenTelemetry",
+          "url": "https://www.infoq.com/presentations/opentelemetry-queue-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/presentations/opentelemetry-queue-observability/en/mediumimage/julian-oli-medium-1792652839179.jpg\" /><p>Oli Lane and Julian Wreford share how Gearset replaced guesswor",
+          "section": "main"
+        },
+        {
+          "title": "Article: The iOS Crash We Could Not Reproduce",
+          "url": "https://www.infoq.com/articles/ios-crash-sigbus-debugging-experiment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/articles/ios-crash-sigbus-debugging-experiment/en/headerimage/ios-crash-sigbus-debugging-experiment-header-1793282827397.jpg\" /><p>This article describes the investigat",
+          "section": "main"
+        },
+        {
+          "title": "Angular's TypeScript 7-Powered Compiler Enters Beta with Rust-Based Preprocessor",
+          "url": "https://www.infoq.com/news/2026/11/angular-compiler-rust-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 22.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/angular-compiler-rust-typescript/en/headerimage/generatedHeaderImage-1794323310151.jpg\" /><p>The Angular team has introduced ngp, a compiler preprocessor t",
+          "section": "main"
+        },
+        {
+          "title": "How do you actually self-host securely?",
+          "url": "https://lobste.rs/s/m43bas/how_do_you_actually_self_host_securely",
+          "category": "news",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p>I recognize that the title is rather vague, but I'm completely green when it comes to self-hosting, so I figured here would be a good place to ask for some pointers given the discussions I sometime",
+          "section": "main"
+        },
+        {
+          "title": "Your IP is on a blocklist: how to check it in 5 minutes and what actually gets you delisted",
+          "url": "https://dev.to/eqvps/your-ip-is-on-a-blocklist-how-to-check-it-in-5-minutes-and-what-actually-gets-you-delisted-16n4",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Mail starts bouncing, a partner's firewall stops answering, or a website shows your server a captcha wall. Someone says \"your IP is blacklisted\", and the first instinct is to ask for a new one. Usu",
+          "section": "main"
+        },
+        {
+          "title": "Battery date codes: why K5 can mean three different months",
+          "url": "https://dev.to/jeremiah_say/battery-date-codes-why-k5-can-mean-three-different-months-1ba0",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>What does the date code on a car battery mean? On most brands it's a letter for the month and a digit for the year, so <code>C3</code> means March 2023. That's <a href=\"https://www.interstatebatter",
+          "section": "main"
+        },
+        {
+          "title": "Data types, variables, constants and conversions (VB.NET)",
+          "url": "https://dev.to/divakarupadhyay/data-types-variables-constants-and-conversions-vbnet-4km6",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/vbnet/lessons/data-types-variables-constants-and-conversions\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></",
+          "section": "main"
+        },
+        {
+          "title": "Discord webhook in a contact form? Anyone can delete it",
+          "url": "https://dev.to/formgongteam/discord-webhook-in-a-contact-form-anyone-can-delete-it-2nmh",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A Discord webhook URL looks like an address, so it feels fine to put it in your page's JavaScript. It works more like a key. Discord's developer docs list three calls that need nothing but that URL",
+          "section": "main"
+        },
+        {
+          "title": "Python dead code: what 51 popular Python repos ship that nothing imports",
+          "url": "https://dev.to/repowise/python-dead-code-what-51-popular-python-repos-ship-that-nothing-imports-3eg3",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>45 of 50 popular Python repos (1,000+ GitHub stars) have at least one dead-code finding in production code, and in the median repo 3.9% of production files are ",
+          "section": "radar"
+        },
+        {
+          "title": "20 AI startups to watch in H2 2026 — backed by real data, not hype",
+          "url": "https://dev.to/kawsarlog/20-ai-startups-to-watch-in-h2-2026-backed-by-real-data-not-hype-2h4o",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><em>H1 2026 brought in $510 billion in startup funding, and four companies took 65 percent of it. The startups worth watching in H2 aren't the ones landing mega-rounds. They're the ones converting ",
+          "section": "radar"
+        },
+        {
+          "title": "Flutter BLoC: Building a Feature with Events, States, and Cubit",
+          "url": "https://dev.to/yadneshteli/flutter-bloc-building-a-feature-with-events-states-and-cubit-3e83",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><em>Series 4 — Part 1 of 1</em></p>\n\n<h1>\n  \n  \n  Flutter BLoC: Building a Feature with Events, States, and Cubit\n</h1>\n\n<p><em>A standalone deep-dive on the BLoC pattern in Flutter</em></p>\n\n<p>Af",
+          "section": "radar"
+        },
+        {
+          "title": "0.1 + 0.2 Is Not a Bug. It's Arithmetic in a Costume.",
+          "url": "https://dev.to/aheadkit/01-02-is-not-a-bug-its-arithmetic-in-a-costume-1h46",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>The first time <code>0.30000000000000004</code> showed up on my screen I did what everyone does. I blamed Python. Then I blamed my keyboard. Then Python again, louder.</p>\n\n<p>It's not Python. Java",
+          "section": "radar"
+        },
+        {
+          "title": "Superhuman Docs (formerly Coda) vs. Notion: Which is best? [2026]",
+          "url": "https://zapier.com/blog/coda-vs-notion",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Zapier Engineering",
+          "summary": "I've been using Notion to take notes and organize my life for a few years now. As you might expect with a popular app like Notion, there are quite a few alternatives these days. Superhuman Docs (forme",
+          "section": "radar"
+        },
+        {
+          "title": "Memory Safety Bugs in Rust Standard Library",
+          "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+          "category": "news",
+          "score": 20.97,
+          "coverage_count": 4,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/plreds/memory_safety_bugs_rust_standard_library\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "Your Laravel queue workers keep 8 copies of your app in memory",
+          "url": "https://freek.dev/3218-your-laravel-queue-workers-keep-8-copies-of-your-app-in-memory",
+          "category": "dev",
+          "score": 20.48,
+          "coverage_count": 1,
+          "source_name": "Freek Van der Herten",
+          "summary": "<p>This post explains why Laravel queue workers and Horizon supervisors each keep their own compiled copy of your app in memory, and how that adds up fast on smaller servers. It also introduces queue-",
+          "section": "radar"
+        },
+        {
+          "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+          "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+          "category": "news",
+          "score": 19.97,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "The governance experts we talked to say nobody has seen anything like what's unfolding right now.",
+          "section": "radar"
+        },
+        {
+          "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+          "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+          "category": "security",
+          "score": 19.97,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us",
+          "section": "radar"
+        },
+        {
+          "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+          "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+          "category": "security",
+          "score": 19.96,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys.\n\nEach in",
+          "section": "radar"
+        },
+        {
+          "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+          "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+          "category": "security",
+          "score": 19.96,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.\n\nWhen a chosen trigger appears, the mode",
+          "section": "radar"
+        },
+        {
+          "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+          "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+          "category": "security",
+          "score": 19.95,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.\n\nThese cover 7",
+          "section": "radar"
+        },
+        {
+          "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+          "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+          "category": "security",
+          "score": 19.94,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday.",
+          "section": "radar"
+        },
+        {
+          "title": "Serve Robotics wants to democratize sidewalk delivery robots",
+          "url": "https://www.theverge.com/transportation/1030902/serve-robotics-open-developer-api-sidewalk-delivery",
+          "category": "news",
+          "score": 19.71,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "Serve Robotics is opening up its platform to make its autonomous last-mile delivery robots available to anyone who wants to use them. The company is launching a new AV Delivery Developer Portal, enabl",
+          "section": "radar"
+        },
+        {
+          "title": "JetBrains IDEs Transformed for the Agentic Era of Development – With Air",
+          "url": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/",
+          "category": "dev",
+          "score": 19.5,
+          "coverage_count": 1,
+          "source_name": "JetBrains Blog",
+          "summary": "As agents write more code, individual productivity goes up, but the bottleneck moves to review. 49% of developers now spend four or more hours a week reviewing AI output and correcting prompts (Atlass",
+          "section": "radar"
+        },
+        {
+          "title": "Rider 2026.3 for Game Development: Lua and Verse Plugins, Better C++ Debugging, and Closer Godot Integration",
+          "url": "https://blog.jetbrains.com/dotnet/2026/11/11/rider-2026-3-for-gamedev/",
+          "category": "dev",
+          "score": 19.45,
+          "coverage_count": 1,
+          "source_name": "JetBrains Blog",
+          "summary": "Rider 2026.3 brings improvements to the workflows you rely on to write, run, and debug games. This release connects Rider more closely with the Godot Editor, improves debugging for Unreal Engine and c",
+          "section": "radar"
+        },
+        {
+          "title": "Python Coding Interview Practice: Hashing, Pointers, and Windows",
+          "url": "https://realpython.com/courses/coding-interview-practice-hashing-two-pointers-sliding-windows/",
+          "category": "dev",
+          "score": 19.43,
+          "coverage_count": 4,
+          "source_name": "Real Python",
+          "summary": "Practice hashing, two pointers, and sliding windows in Python through 20 coding interview exercises with tests, hints, and guided code reviews.",
+          "section": "radar"
+        },
+        {
+          "title": "AI usage generates a fragile codebase",
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+          "category": "news",
+          "score": 19.34,
+          "coverage_count": 2,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/\">https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/</a></p>\n<p>Comments URL: <a href=\"https://",
+          "section": "radar"
+        },
+        {
+          "title": "Search Polymorphic Relations and Filament Tables With Laravel Searchable",
+          "url": "https://laravel-news.com/mozex-laravel-searchable?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+          "category": "dev",
+          "score": 19.0,
+          "coverage_count": 3,
+          "source_name": "Laravel News",
+          "summary": "<p><a href=\"https://laravel-news.com/mozex-laravel-searchable\"><img alt=\"Search Polymorphic Relations and Filament Tables With Laravel Searchable\" src=\"https://picperf.io/https://laravelnews.s3.amazon",
+          "section": "radar"
+        },
+        {
+          "title": "Incident Report: August 11, 2026",
+          "url": "https://product.hubspot.com/blog/incident-report-august-11-2026",
+          "category": "dev",
+          "score": 19.0,
+          "coverage_count": 2,
+          "source_name": "HubSpot Product & Engineering",
+          "summary": "<div class=\"hs-featured-image-wrapper\"> \n <a class=\"hs-featured-image-link\" href=\"https://product.hubspot.com/blog/incident-report-august-11-2026\" title=\"\"> <img alt=\"Incident Report: August 11, 2026\"",
+          "section": "radar"
+        },
+        {
+          "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance",
+          "category": "news",
+          "score": 19.0,
+          "coverage_count": 1,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without <span>s everywhere, `<dialog>` and showModal() give you ba",
+          "section": "radar"
+        },
+        {
+          "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+          "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+          "category": "security",
+          "score": 18.87,
+          "coverage_count": 1,
+          "source_name": "Krebs on Security",
+          "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday ad",
+          "section": "radar"
+        },
+        {
+          "title": "Google Finds that Technical Debt Can Derail Coding Agents Through \"Agent Distraction\"",
+          "url": "https://www.infoq.com/news/2026/11/google-agent-distraction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-agent-distraction/en/headerimage/google-agetn-distraction-1794330388187.jpeg\" /><p>In a recent article, Google senior staff software engineer Sam Sa",
+          "section": "radar"
+        },
+        {
+          "title": "Fragments: November 10",
+          "url": "https://martinfowler.com/fragments/2026-11-10.html",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Martin Fowler",
+          "summary": "<p>It’s that time of the year when the <a href=\"https://www.thoughtworks.com/radar\">November Thoughtworks Technology Radar</a> appears. Again my colleagues have taken a sweep of the technologies that ",
+          "section": "radar"
+        },
+        {
+          "title": "Long-horizon agents and durable execution",
+          "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Martin Fowler",
+          "summary": "<div class=\"img-link\"><a href=\"https://martinfowler.com/articles/durable-execution-agents.html\"><img src=\"https://martinfowler.com/articles/durable-execution-agents/card.png\" width=\"350px\" /></a></div",
+          "section": "radar"
+        },
+        {
+          "title": "Risky Business #859 -- ARTEX damage approaches crisis levels",
+          "url": "https://risky.biz/RB859/",
+          "category": "security",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Risky Business (Podcast)",
+          "summary": "On this week’s show Patrick Gray and James Wilson are joined by special guest co-host Chris Krebs to talk through the week’s cybersecurity news, including:\n\n\n  Everyone’s using the ARTEX pentesting fr",
+          "section": "radar"
+        },
+        {
+          "title": "In the Hole",
+          "url": "https://thedailywtf.com/articles/in-the-hole",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "The Daily WTF",
+          "summary": "<p>Look, I don't <em>want</em> to keep talking about security issues. Blame AI. Just another thing it ruined.</p>\n<p>At this point, you've probably heard about <a href=\"https://sshhole.com/\">*sshole</",
+          "section": "radar"
+        },
+        {
+          "title": "A 13-Year-Old Asked AI About Suicide on Her School Laptop. It Didn’t Get Flagged for Weeks",
+          "url": "https://www.wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged/",
+          "category": "news",
+          "score": 17.77,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "The young girl’s parents allege that she used Gemini via her school Chromebook to plan her suicide, but the school’s monitoring systems didn’t know until it was almost too late.",
+          "section": "radar"
+        },
+        {
+          "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+          "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+          "category": "ai",
+          "score": 17.6,
+          "coverage_count": 1,
+          "source_name": "Google AI Blog",
+          "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand",
+          "section": "radar"
+        },
+        {
+          "title": "Oura is acquiring medical AI chatbot startup Counsel Health",
+          "url": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
+          "category": "news",
+          "score": 17.58,
+          "coverage_count": 2,
+          "source_name": "The Verge - Tech",
+          "summary": "Oura announced its quarterly earnings today and said it agreed to acquire Counsel Health for $625 million, after adding the company's AI chatbot to its app earlier this year. Counsel Health calls itse",
           "section": "radar"
         }
       ]

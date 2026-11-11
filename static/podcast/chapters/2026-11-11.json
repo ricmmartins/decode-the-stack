@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 139,
+      "title": "The measurement problem is especially clear in Vercel’s..."
+    },
+    {
+      "startTime": 289,
+      "title": "A contact form makes the deployment problem concrete: a..."
+    },
+    {
+      "startTime": 429,
+      "title": "The agent story makes the security trade-off concrete:..."
+    },
+    {
+      "startTime": 576,
+      "title": "Opening a platform changes who can build on it, but it also..."
+    },
+    {
+      "startTime": 728,
+      "title": "Let's close with the gap between adding capability and..."
+    }
+  ]
+}
