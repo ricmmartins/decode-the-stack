@@ -1,0 +1,2250 @@
+[
+  {
+    "id": "431e3ce5463ea60d",
+    "title": "Why Nitric stopped asking one AI agent to do everything",
+    "url": "https://thenewstack.io/specialized-ai-agent-workflows/",
+    "summary": "<img alt=\"Abstract 3D digital visualization of glowing red and cyan network nodes and telemetry waveforms representing AI incident triage.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"670\" src=\"https://cdn.thenewstack.io/media/2026/11/16ba7ed5-getty-images-8pwk-ctbm2y-unsplash-1024x670.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>We&#8217;re a team of five engineers, and we used to wake the on-call engineer three or four times a week</p>\n<p>The post <a href=\"https://thenewstack.io/specialized-ai-agent-workflows/\">Why Nitric stopped asking one AI agent to do everything</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-11T16:00:00+00:00",
+    "coverage_count": 7,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-fable-opus-cost/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/nvidia-donates-openshell-cncf/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-fable-game-demos/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/aws-emulator-ai-agents/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/specialized-ai-agent-workflows/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/coreweave-tests-ai-integrations/"
+      },
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
+      }
+    ]
+  },
+  {
+    "id": "8a3749ebbff66324",
+    "title": "How to prevent leaks from Claude Code's 'Don't ask again' file",
+    "url": "https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/",
+    "summary": "<blockquote><p><strong>This guide details how to find and remove secrets that were inadvertently committed to projects and repositories hosted on GitLab. We’ve confirmed that GitLab’s own infrastructure secrets are protected.</strong></p></blockquote><p>In Claude Code, Anthropic’s coding agent, a developer can approve a shell command by selecting “Yes, and don’t ask again.” Claude then saves that exact command to <code>.claude/settings.local.json</code> in the project folder and runs it without asking in the future. If the command contained a password or a token, so does the file:</p><pre><code><span class=\"line\"><span class=\"sgsFI\">{\n</span></span><span class=\"line\"><span class=\"sYu0t\">  &quot;permissions&quot;</span><span class=\"sgsFI\">: {\n</span></span><span class=\"line\"><span class=\"sYu0t\">    &quot;allow&quot;</span><span class=\"sgsFI\">: [\n</span></span><span class=\"line\"><span class=\"sYBdl\">      &quot;Bash(npm test:*)&quot;</span><span class=\"sgsFI\">,\n</span></span><span class=\"",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ramongebben/responsive-type-and-spacing-by-changing-only-the-root-font-size-1hd9"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sampomannila/money-math-in-plain-javascript-lessons-from-building-a-loan-calculator-3d6b"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/next-month"
+      }
+    ]
+  },
+  {
+    "id": "f95fdcfb832450a4",
+    "title": "aws-emulator",
+    "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+    "summary": "<p><strong><a href=\"https://github.com/aws/aws-emulator\">aws-emulator</a></strong></p>\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.</p>\n<p>It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about <a href=\"https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html\">how it came to be</a> in a guest post on Werner Vogels' blog.</p>\n<p>It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms.\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/amazon\">amazon</a>, <a href=\"https://simonwillison.net/tags/amazon-web-services\">amazon-web-services</a>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T21:18:30+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/aws/aws-emulator"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/"
+      }
+    ]
+  },
+  {
+    "id": "ad95db6a35ad923a",
+    "title": "Node.js 26.13.1 (LTS)",
+    "url": "https://nodejs.org/en/blog/release/v26.13.1",
+    "summary": "",
+    "category": "dev",
+    "source_name": "Node.js Blog",
+    "published": "2026-11-11T16:45:20+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Node.js Blog",
+        "url": "https://nodejs.org/en/blog/release/v26.13.1"
+      },
+      {
+        "name": "Node.js Blog",
+        "url": "https://nodejs.org/en/blog/release/v24.22.3"
+      },
+      {
+        "name": "Node.js Blog",
+        "url": "https://nodejs.org/en/blog/release/v22.23.5"
+      }
+    ]
+  },
+  {
+    "id": "af5fe6eabfdf04cc",
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "summary": "<p>Article URL: <a href=\"https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad\">https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50459703\">https://news.ycombinator.com/item?id=50459703</a></p>\n<p>Points: 1095</p>\n<p># Comments: 1472</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T22:31:06+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html"
+      }
+    ]
+  },
+  {
+    "id": "08900c31bde1b006",
+    "title": "Gemini Decisions API",
+    "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "summary": "<p><strong><a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/\">Gemini Decisions API</a></strong></p>\nGoogle join <a href=\"https://simonwillison.net/2026/Sep/21/jev/\">Jev</a> and <a href=\"https://simonwillison.net/2026/Oct/6/llm-openai-decisions/\">OpenAI</a> in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.</p>\n<p>It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.</p>\n<p>Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.</p>\n<p>I tested it against video by passing these questions to it along with my <a href=\"https://simonwillison.",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T22:03:25+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+      }
+    ]
+  },
+  {
+    "id": "c4a230a1244b6a05",
+    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+    "summary": "<p>Article URL: <a href=\"https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/\">https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50455394\">https://news.ycombinator.com/item?id=50455394</a></p>\n<p>Points: 509</p>\n<p># Comments: 246</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T16:38:44+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"
+      }
+    ]
+  },
+  {
+    "id": "da4f4eeec669232a",
+    "title": "Nvidia is reportedly preparing to fire Jensen Huang",
+    "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+    "summary": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from The New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-11T22:44:36+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+      }
+    ]
+  },
+  {
+    "id": "ce02df75b72f3cc5",
+    "title": "UUID Request Input and Migration Failure Events in Laravel 13.42",
+    "url": "https://laravel-news.com/laravel-13-42-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/laravel-13-42-0\"><img alt=\"UUID Request Input and Migration Failure Events in Laravel 13.42\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/laravel-13-featured.png\" /></a></p>\n                                        <hr />\n\n                    <p>Laravel 13.42 adds uuid() and ulid() input helpers, a MigrationFailed event, skip reasons for scheduled tasks, and Uri::origin() for comparing URL origins.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/laravel-13-42-0\">UUID Request Input and Migration Failure Events in Laravel 13.42</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-11T00:02:52+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-13-42-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/schedule-catchup?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ]
+  },
+  {
+    "id": "92cabef58916d3e4",
+    "title": "Hyper-Realistic Sand with WebGL2",
+    "url": "https://av.github.io/safe-sand/",
+    "summary": "<p>Article URL: <a href=\"https://av.github.io/safe-sand/\">https://av.github.io/safe-sand/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50453288\">https://news.ycombinator.com/item?id=50453288</a></p>\n<p>Points: 401</p>\n<p># Comments: 76</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T13:39:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://av.github.io/safe-sand/"
+      }
+    ]
+  },
+  {
+    "id": "594ebabdcec6dd61",
+    "title": "Can a Linear Program Do Weight-Space Programming?",
+    "url": "https://nathan.rs/posts/weight-space-lp/",
+    "summary": "<p>Article URL: <a href=\"https://nathan.rs/posts/weight-space-lp/\">https://nathan.rs/posts/weight-space-lp/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50452655\">https://news.ycombinator.com/item?id=50452655</a></p>\n<p>Points: 288</p>\n<p># Comments: 41</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T12:30:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://nathan.rs/posts/weight-space-lp/"
+      }
+    ]
+  },
+  {
+    "id": "4cf63ccf4554cf26",
+    "title": "Protecting SSH Keys with macOS Secure Enclave",
+    "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
+    "summary": "<p>Article URL: <a href=\"https://gatezh.com/posts/macos-secure-enclave-ssh-keys/\">https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50449748\">https://news.ycombinator.com/item?id=50449748</a></p>\n<p>Points: 390</p>\n<p># Comments: 139</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T04:28:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/"
+      }
+    ]
+  },
+  {
+    "id": "31e273b73eb65ede",
+    "title": "Lock your GitHub Actions",
+    "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+    "summary": "<p><a href=\"https://lobste.rs/s/v3uidx/lock_your_github_actions\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-11T18:16:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://hugovk.dev/blog/2026/lock-github-actions/"
+      }
+    ]
+  },
+  {
+    "id": "6395485fe6aad394",
+    "title": "United won’t let your AI agent book your flight",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+    "summary": "United says it won't let personal AI assistants book tickets on the airline, citing both privacy and regulatory concerns. The company says it hasn't yet seen many people try to use AI agents to book their flights, The Wall Street Journal reports, in line with observations from other businesses like Doordash. But United is concerned [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-11T21:54:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+      }
+    ]
+  },
+  {
+    "id": "8b0382eac7c39e19",
+    "title": "Loot boxes, influencers, and addictive features face an EU crackdown",
+    "url": "https://www.theverge.com/policy/1031575/digital-fairness-act-eu-dfa-consumer-protection",
+    "summary": "Gaming, social media, and e-commerce platforms are facing a fresh wave of sweeping European Union rules that aim to make \"your online experience fairer.\" The newly proposed Digital Fairness Act (DFA) published by the EU Commission on Wednesday is designed to tackle practices that exploit consumers into spending more of their time and money online, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-11T18:13:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/policy/1031575/digital-fairness-act-eu-dfa-consumer-protection"
+      }
+    ]
+  },
+  {
+    "id": "80c2960ceedc1808",
+    "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+    "summary": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important clues to the causes of disease - and point the way to new treatments. AlphaGenome 2 is the successor [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
+      }
+    ]
+  },
+  {
+    "id": "a171892a98b772bb",
+    "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+    "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
+    "summary": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-12T03:13:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/"
+      }
+    ]
+  },
+  {
+    "id": "40910c65dcaad8a9",
+    "title": "The unfolding Jensen Huang scandal: a timeline",
+    "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T23:50:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+      }
+    ]
+  },
+  {
+    "id": "14aef7dddba87ea5",
+    "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+    "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+    "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T23:28:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/"
+      }
+    ]
+  },
+  {
+    "id": "fc7ee5df61fc4444",
+    "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
+    "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
+    "summary": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T23:17:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/"
+      }
+    ]
+  },
+  {
+    "id": "7eeae5b65557e436",
+    "title": "Why the data center you dread might never even be built",
+    "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+    "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity.&#160;Before those challenges even come into play, though, there&#8217;s a more basic problem: A lot of the projects being announced may never get built in the first place.&#160;With billions of dollars in AI infrastructure [&#8230;]",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T20:15:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/"
+      }
+    ]
+  },
+  {
+    "id": "87bf84c264f70f98",
+    "title": "Meta is losing its longtime head of  infrastructure",
+    "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
+    "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T20:12:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/"
+      }
+    ]
+  },
+  {
+    "id": "fa0d279a984e00ae",
+    "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
+    "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
+    "summary": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T16:16:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/"
+      }
+    ]
+  },
+  {
+    "id": "81190b8cc5abb6a2",
+    "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+    "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+    "summary": "With Databricks at 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/"
+      }
+    ]
+  },
+  {
+    "id": "db581cd49c5bfe78",
+    "title": "Technical Debt is Social; it is the Price of Learning by Doing",
+    "url": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/tech-debt-learning-doing/en/headerimage/header-1794404225270.jpg\" /><p>Technical debt is not necessarily a sign of poor engineering. It can be the price of learning through software in use. As AI accelerates code production beyond our capacity to understand code and context, technical debt increasingly becomes a sociotechnical challenge.</p> <i>By Ben Linders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T11:05:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "45977e8087b09f27",
+    "title": "Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector",
+    "url": "https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/explainable-ai-llm-agent-decisions/en/mediumimage/HannesHapke-medium-1793278895069.jpeg\" /><p>Hannes Hapke shares how Dataiku’s open-source Kiji Inspector applies Sparse Autoencoders (SAEs) directly to decision tokens to expose why agents pick specific tools. Moving past superficial chain-of-thought narratives, he discusses causal ablation, layer activation extraction via patched vLLM engines, and production monitoring workflows for software architects and senior engineering leaders.</p> <i>By Hannes Hapke</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "2bb0fdbde63f7897",
+    "title": "Azure Logic Apps Standard Gets a Local CLI in Preview",
+    "url": "https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/logic-apps-local-cli/en/headerimage/generatedHeaderImage-1793791837422.jpg\" /><p>Microsoft has released a public preview of the logicapp extension for the Azure CLI, adding local project creation, workflow authoring, a runtime lifecycle, connector management, run inspection, and test scaffolding for Logic Apps Standard, work that previously required the VS Code extension. The product team pitches the terminal surface as determinism for AI-assisted development.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T10:23:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "8e1ab4c81cabfd89",
+    "title": "Google Open-Sources TPU Sync for KV Cache and Weight Transfer on TPUs",
+    "url": "https://www.infoq.com/news/2026/11/google-tpu-sync/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-tpu-sync/en/headerimage/generatedHeaderImage-1794402814105.jpg\" /><p>Google Cloud has open-sourced TPU Sync, a native C++ library that moves KV cache blocks and model weights between TPU HBM, host DRAM, shared storage, and the data center network.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T10:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-tpu-sync/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "98fc775575798b06",
+    "title": "Author Q+A: finprim is a Case for One Financial Validation Library in TypeScript",
+    "url": "https://www.infoq.com/news/2026/11/finprim-validation-qanda/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/finprim-validation-qanda/en/headerimage/generatedHeaderImage-1793961374899.jpg\" /><p>finprim is an MIT-licensed TypeScript library that offers IBAN, BIC, card, sort code, VAT, routing number and loan functions through one API with no runtime dependencies. Its author built it after duplicated validators drifted apart across web and mobile. It validates and formats data only, and does not process payments. He is cautious about adding SEPA and ACH file generation.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T09:28:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/finprim-validation-qanda/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "990c9fc22bc8e262",
+    "title": "LinkedIn Replaces Argo CD with a Custom GitOps Engine for Kubernetes Deployments",
+    "url": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/kubernetes-argocd-linkedin/en/headerimage/generatedHeaderImage-1794414453878.jpg\" /><p>In a recent post, LinkedIn revealed it has replaced Argo CD with its own GitOps engine. This new system deploys applications across over 250 Kubernetes clusters. It supports more than 4,000 services and manages over 100,000 deployments each week.</p> <i>By Claudio Masolo</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "14e5c7fc10c34995",
+    "title": "GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls",
+    "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/github-agentic-workflows-ga/en/headerimage/header-1793990975266.jpeg\" /><p>GitHub Agentic Workflows is generally available, running coding agents in GitHub Actions with read-only defaults and separately scoped write jobs. Those protections do not cover direct write permissions or custom jobs, so they depend on how each workflow is configured.</p> <i>By Mark Silvester</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "ae7460e45b180cc6",
+    "title": "JioHotstar Benchmarks Knowledge Bases for AI Coding Agents",
+    "url": "https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>JioHotstar evaluated 6 approaches to code retrieval for AI coding agents using SWE, CodeScale Bench, and an internal question-answering harness. Structural search performed well on concrete tasks, while semantic retrieval helped with ambiguous requirements. The findings highlight trade-offs in accuracy, token use, and tool design, underscoring the need to match retrieval tools to task types.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T14:28:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "e109ccb99e1bc83b",
+    "title": "Expensive accelerators, no workload-level visibility: Introducing Amazon CloudWatch accelerated compute insights",
+    "url": "https://thenewstack.io/cloudwatch-accelerated-compute-insights/",
+    "summary": "<img alt=\"Abstract monochrome digital terrain with circuit-like fissures representing GPU cluster observability and workload blind spots.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/c92a967e-flying-object-jzkpjxphomq-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Accelerator bills have become one of the largest lines in the infrastructure budget. GPUs have become the most expensive resource</p>\n<p>The post <a href=\"https://thenewstack.io/cloudwatch-accelerated-compute-insights/\">Expensive accelerators, no workload-level visibility: Introducing Amazon CloudWatch accelerated compute insights</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-11T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cloudwatch-accelerated-compute-insights/"
+      }
+    ]
+  },
+  {
+    "id": "cd20f9c44257dadd",
+    "title": "Developers have been hacking around MCP’s file-upload problem for two years. A fix is taking shape.",
+    "url": "https://thenewstack.io/mcp-file-upload-extension/",
+    "summary": "<img alt=\"Arrows pointing up and down, depicting the concept of file uploads and downloads.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/b857591d-alex-shuper-ehko-zsjnoi-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>The Model Context Protocol (MCP) has played an instrumental part in connecting AI assistants to external tools and data since</p>\n<p>The post <a href=\"https://thenewstack.io/mcp-file-upload-extension/\">Developers have been hacking around MCP’s file-upload problem for two years. A fix is taking shape.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-11T17:11:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/mcp-file-upload-extension/"
+      }
+    ]
+  },
+  {
+    "id": "c70eafc92eaf8c5d",
+    "title": "Nvidia's CEO search 🔍, AWS emulator 👨‍💻, Gemini Decisions API 💡",
+    "url": "https://tldr.tech/tech/2026-11-12",
+    "summary": "",
+    "category": "news",
+    "source_name": "TLDR",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TLDR",
+        "url": "https://tldr.tech/tech/2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "b233ab0eb1fd2cfe",
+    "title": "Shopify’s generative discovery model (2026) - Shopify",
+    "url": "https://shopify.engineering/generative-discovery",
+    "summary": "How we train and serve a shared generative model for personalized search and recommendation at Shopify scale.",
+    "category": "dev",
+    "source_name": "Shopify Engineering",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Shopify Engineering",
+        "url": "https://shopify.engineering/generative-discovery"
+      }
+    ]
+  },
+  {
+    "id": "a070c667a46b2d10",
+    "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+    "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+    "summary": "<p>Ads ranking models are growing toward LLM scale faster than the hardware to run them can keep up. An extra unit of compute has more impact on some ad requests, models, and chips than on others. The challenge is deciding where to allocate it to get the best outcome for the entire system. We built [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/\">Intelligent Delivery: Making Every Unit of Compute Serve Better Ads</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
+    "category": "dev",
+    "source_name": "Meta Engineering",
+    "published": "2026-11-11T17:00:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Meta Engineering",
+        "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/"
+      }
+    ]
+  },
+  {
+    "id": "52305ad3bdb6e4f2",
+    "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
+    "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+    "summary": "A2UI 1.0 is an open protocol for generative UI that enables AI agents to render interactive, native screens across web, mobile, and desktop applications. Developers can leverage open-source renderer SDKs—including React, Angular, Lit, Flutter, SwiftUI, and Jetpack Compose—alongside agent SDKs for Python, TypeScript, and Dart. The release introduces bidirectional function calls, swappable inference formats, and secure data binding to help teams seamlessly integrate generative UI into their product stacks.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/"
+      }
+    ]
+  },
+  {
+    "id": "e912a78173071188",
+    "title": "Bring Your Own Model is now generally available in Visual Studio",
+    "url": "https://devblogs.microsoft.com/visualstudio/bring-your-own-model-is-now-generally-available-in-visual-studio/",
+    "summary": "<p>Whether your team hosts its own AI models, you have an API key from a model provider, or you want to experiment with a model running on your machine, Bring Your Own Model (BYOM) lets you use those models without leaving Visual Studio. BYOM is now generally available in Visual Studio 18.12. Since the August [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/visualstudio/bring-your-own-model-is-now-generally-available-in-visual-studio/\">Bring Your Own Model is now generally available in Visual Studio</a> appeared first on <a href=\"https://devblogs.microsoft.com/visualstudio\">Visual Studio Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Visual Studio Blog",
+    "published": "2026-11-11T17:00:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Visual Studio Blog",
+        "url": "https://devblogs.microsoft.com/visualstudio/bring-your-own-model-is-now-generally-available-in-visual-studio/"
+      }
+    ]
+  },
+  {
+    "id": "58c050989b909ecd",
+    "title": "Make business content ready for AI with M-Files – SharePoint Embedded partner spotlight",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/make-business-content-ready-for-ai-with-m-files-sharepoint-embedded-partner-spotlight/",
+    "summary": "<p>What happens when intelligent information management meets the Microsoft 365 ecosystem?  Organizations are looking for better ways to manage growing volumes of business-critical content while preparing that content for AI. As they’re building custom apps, they want strong context and governance along with the Microsoft 365 environments, tools, and security practices they already rely on.  [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/make-business-content-ready-for-ai-with-m-files-sharepoint-embedded-partner-spotlight/\">Make business content ready for AI with M-Files &#8211; SharePoint Embedded partner spotlight</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-11T14:00:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/make-business-content-ready-for-ai-with-m-files-sharepoint-embedded-partner-spotlight/"
+      }
+    ]
+  },
+  {
+    "id": "dc6535e5fad50208",
+    "title": "Choosing QuePaxa, an unusual consensus algorithm",
+    "url": "https://blog.cloudflare.com/choosing-quepaxa/",
+    "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-11T14:24:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/choosing-quepaxa/"
+      }
+    ]
+  },
+  {
+    "id": "646128516f397609",
+    "title": "7 questions to ask a customer engagement platform before you commit",
+    "url": "https://www.twilio.com/en-us/blog/insights/customer-engagement-platform-lock-in-questions",
+    "summary": "You rarely find lock-in during evaluation. It's usually at renewal. We recommend these 7 questions—they surface exit costs while you still have leverage.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/insights/customer-engagement-platform-lock-in-questions"
+      }
+    ]
+  },
+  {
+    "id": "f78aa990ef84ba84",
+    "title": "Recycle your tests: many shades of green",
+    "url": "https://tech.trivago.com/post/2026-11-12-recycle-your-tests-many-shades-of-green/",
+    "summary": "",
+    "category": "dev",
+    "source_name": "Trivago Tech",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Trivago Tech",
+        "url": "https://tech.trivago.com/post/2026-11-12-recycle-your-tests-many-shades-of-green/"
+      }
+    ]
+  },
+  {
+    "id": "5d32573e90968b4a",
+    "title": "Gemini Decision 1 now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gemini-decision-1\">Gemini Decision 1 from Google</a> is now available on AI Gateway. The multimodal decision model works with text, images, audio, video, and PDF documents, returning Boolean probabilities, choices, and scores. Use it to route requests, check policies, filter agent tools, or rank results without generating output tokens.</p><p>Use <code>google/gemini-decision-1</code> with the AI SDK, TypeSafe-compatible API, or Decisions API.</p><p>PDF, audio, and video inputs are supported through AI SDK 7. The TypeSafe-compatible and Decisions APIs support text and image inputs.</p><div></div><p>AI Gateway provides a unified way to access models and track usage and cost. Decision calls appear in <a href=\"https://vercel.com/docs/ai-gateway/observability-and-spend/logs\">logs</a> and count toward <a href=\"https://vercel.com/docs/ai-gateway/observability-and-spend/budgets\">budgets</a> alongside other model requests.</p><p>See the <a href=\"",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway"
+      }
+    ]
+  },
+  {
+    "id": "86c4a6fba1e218a2",
+    "title": "From insight to action: improving infrastructure risk posture with Terraform and Concert",
+    "url": "https://www.hashicorp.com/blog/from-insight-to-action-improving-infrastructure-risk-posture-with-terraform-and-c",
+    "summary": "Learn how Terraform and IBM Concert connect trusted infrastructure context, policy-driven governance, and vulnerability management to improve risk posture across the infrastructure lifecycle.",
+    "category": "cloud",
+    "source_name": "Hashicorp Blog",
+    "published": "2026-11-10T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hashicorp Blog",
+        "url": "https://www.hashicorp.com/blog/from-insight-to-action-improving-infrastructure-risk-posture-with-terraform-and-c"
+      }
+    ]
+  },
+  {
+    "id": "3449d47deec9a9cf",
+    "title": "Consul 2.1.0: Advancing secure, resilient connectivity for modern and agentic applications",
+    "url": "https://www.hashicorp.com/blog/consul-210-advancing-secure-resilient-connectivity-for-modern-and-agentic-applica",
+    "summary": "Consul 2.1.0 helps organizations simplify application access, strengthen networking resilience and security, modernize the underlying connectivity stack, and extend trusted connectivity to emerging AI workloads.",
+    "category": "cloud",
+    "source_name": "Hashicorp Blog",
+    "published": "2026-11-06T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hashicorp Blog",
+        "url": "https://www.hashicorp.com/blog/consul-210-advancing-secure-resilient-connectivity-for-modern-and-agentic-applica"
+      }
+    ]
+  },
+  {
+    "id": "131f8010a8552444",
+    "title": "Migrate Sentinel and OPA policies to Terraform policy faster with the Terraform policy agent",
+    "url": "https://www.hashicorp.com/blog/migrate-sentinel-and-opa-policies-to-terraform-policy-faster",
+    "summary": "Use the Terraform policy agent to convert existing Sentinel and OPA policies into tested Terraform policies. Run it in a container with the model provider you choose.",
+    "category": "cloud",
+    "source_name": "Hashicorp Blog",
+    "published": "2026-11-05T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hashicorp Blog",
+        "url": "https://www.hashicorp.com/blog/migrate-sentinel-and-opa-policies-to-terraform-policy-faster"
+      }
+    ]
+  },
+  {
+    "id": "01ddc653f4547063",
+    "title": "Secure AI credentials from discovery to remediation with Vault Radar and Vault",
+    "url": "https://www.hashicorp.com/blog/secure-ai-credentials-from-discovery-to-remediation-with-vault-radar-and-vault",
+    "summary": "AI credentials can easily spread across development workflows. Learn how Vault Radar and Vault help teams find, remediate, and securely manage them.",
+    "category": "cloud",
+    "source_name": "Hashicorp Blog",
+    "published": "2026-11-05T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hashicorp Blog",
+        "url": "https://www.hashicorp.com/blog/secure-ai-credentials-from-discovery-to-remediation-with-vault-radar-and-vault"
+      }
+    ]
+  },
+  {
+    "id": "f2367e9f658fc976",
+    "title": "How we migrate TBs from Heroku without logical replication",
+    "url": "https://planetscale.com/blog/migrate-from-heroku-to-planetscale",
+    "summary": "We've equipped our customers with an open source tool that not only quickly transfers your data but also provides a replication-based experience, so that any user can migrate from Heroku without extended downtime or the need to purchase a third-party product.",
+    "category": "cloud",
+    "source_name": "PlanetScale Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PlanetScale Blog",
+        "url": "https://planetscale.com/blog/migrate-from-heroku-to-planetscale"
+      }
+    ]
+  },
+  {
+    "id": "3baf25bb2ac34e54",
+    "title": "Gang scheduling and topology-aware placement for AI training in Kubernetes",
+    "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/",
+    "summary": "Distributed AI training workloads impose complex scheduling requirements that Kubernetes&#8217;s built-in scheduler can&#8217;t meet. Kubernetes schedules pods individually and independently, but distributed training introduces two requirements that break this model: Pods must land on hardware with...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-12T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/"
+      }
+    ]
+  },
+  {
+    "id": "11e389376e69f77a",
+    "title": "Introducing CNCF User Groups: Long-lived homes for End User collaboration",
+    "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/",
+    "summary": "The CNCF End User Community is launching its User Group Program at KubeCon + CloudNativeCon North America. These are long-lived groups, each built around an industry vertical or problem domain, that serves the common need of...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-11T16:41:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/"
+      }
+    ]
+  },
+  {
+    "id": "af6a268f1eee5b8a",
+    "title": "OpenShell on Kubernetes: A guide for platform engineers",
+    "url": "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/",
+    "summary": "What OpenShell is AI agents do more than call APIs. They run shells, install packages, read files, and open network connections. Often they act on text they pulled from the internet a minute earlier. So every...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-11T15:50:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/"
+      }
+    ]
+  },
+  {
+    "id": "19e4c0ea29a8289d",
+    "title": "Who Runs the Ransomware Group Qilin?",
+    "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+    "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-11T18:06:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/"
+      }
+    ]
+  },
+  {
+    "id": "3a153ce674c42ac5",
+    "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+    "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+    "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week.\n\nThe company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel.\n\nThe affected",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T12:09:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html"
+      }
+    ]
+  },
+  {
+    "id": "a054acaab3d1bca6",
+    "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+    "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+    "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access?\n\nA suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T12:02:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html"
+      }
+    ]
+  },
+  {
+    "id": "ca241a3187b25f1c",
+    "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+    "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+    "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2.\n\n\"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\" N-able said in a new advisory. \"Legacy API is",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T11:51:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html"
+      }
+    ]
+  },
+  {
+    "id": "4e4b59e96ac0c2a7",
+    "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+    "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+    "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose.\n\nThe Threat Research team at Material Security spotted the campaign and has since taken down hundreds of attacker domains in an effort the team calls Operation CloudFire.",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T11:51:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html"
+      }
+    ]
+  },
+  {
+    "id": "1417d4d46073d1cf",
+    "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+    "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+    "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution.\n\nThe security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.\n\nIt has been described as a case of improper input validation and deserialization of untrusted data that could result in",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T11:33:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html"
+      }
+    ]
+  },
+  {
+    "id": "133253baf8943393",
+    "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+    "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+    "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.\n\nMongoDB, the company that makes the database, released fixed versions earlier this week.\n\nThe affected servers are members of a replica",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T09:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html"
+      }
+    ]
+  },
+  {
+    "id": "91bc998a4f9b3d92",
+    "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+    "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+    "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections.\n\nFixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1.\n\nThe crash",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T08:20:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html"
+      }
+    ]
+  },
+  {
+    "id": "e0ee113c242fa3cd",
+    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+    "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+    "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company.\n\nThe stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T06:42:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html"
+      }
+    ]
+  },
+  {
+    "id": "ee03c266cb1606a7",
+    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+    "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.\n\nOnly servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.\n\nAn attacker who can reach the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T05:12:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html"
+      }
+    ]
+  },
+  {
+    "id": "b78cad92d059459f",
+    "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+    "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+    "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access.\n\nIn an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software.\n\n\"Our initial assessment suggests the activity may involve",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T04:39:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html"
+      }
+    ]
+  },
+  {
+    "id": "8bb304090e03b8eb",
+    "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+    "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+    "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-108186 (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T16:12:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html"
+      }
+    ]
+  },
+  {
+    "id": "545453d22b51d880",
+    "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+    "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+    "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments.\n\n\"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T15:34:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+      }
+    ]
+  },
+  {
+    "id": "e9f9a1b21236964b",
+    "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+    "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+    "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.\n\nCynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes.\n\nThe activity has been found to share some",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-11T14:01:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html"
+      }
+    ]
+  },
+  {
+    "id": "d8ae8f7c364c1802",
+    "title": "Another Way Police Are Locating People from Their Smartphones",
+    "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html",
+    "summary": "<p>Penlink&#8217;s Webloc is an application that <a href=\"https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzg4OTgyNSwiZXhwIjoxNzk0NDk0NjI1LCJhcnRpY2xlSWQiOiJUTzEyT0pUM0JaTUwwMCIsImJjb25uZWN0SWQiOiJCRkMyNTg1RUFENTA0RTM2OUU3MzBBNTBCNkVGRTk5RSJ9.uWvJBwAKCyQsXzSli3He-XStaEQCVyprRIKmrsheWZs&#38;utm_source=substack&#38;utm_medium=email&#38;leadSource=article-gifting\">locates</a> people using information from the weather, gaming, email, and religious apps on their phone. It&#8217;s sold to the police.</p>\n<blockquote><p>The tool collects vast quantities of location data from smartphones via commonly used weather, gaming, email and religious apps. It can build a detailed picture of where a smartphone has been over the past 12 months, and update the data hourly, showing the movements of people on a near real-time basis. Law enforcement officers can use Web",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-12T12:02:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html"
+      }
+    ]
+  },
+  {
+    "id": "e9278fc04f071bbc",
+    "title": "Inside an AI Attack Against a US Retailer",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+    "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-12T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer"
+      }
+    ]
+  },
+  {
+    "id": "7fe9cfa494664d6e",
+    "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+    "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+    "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-12T01:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry"
+      }
+    ]
+  },
+  {
+    "id": "21913f5670201c8c",
+    "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+    "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+    "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches"
+      }
+    ]
+  },
+  {
+    "id": "6b4ccc0cd6735f8c",
+    "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
+    "url": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+    "summary": "Researchers dubbed an attack chain &quot;Greeter&quot; after discovering that attackers deliberately covered their trail by leaving &quot;hello&quot; messages in logs.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-11T21:44:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack"
+      }
+    ]
+  },
+  {
+    "id": "a8e4b2e7af3b4162",
+    "title": "AI Raises the Stakes for Cyber Resilience",
+    "url": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
+    "summary": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-11T21:20:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience"
+      }
+    ]
+  },
+  {
+    "id": "0c5824ab5d76bdbd",
+    "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
+    "url": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+    "summary": "The RMM provider also released a hotfix as one of recommended mitigations to address public exploits for the alleged zero-days that allow for attacker takeover.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-11T20:05:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws"
+      }
+    ]
+  },
+  {
+    "id": "3e8f71b4d23b54f7",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-12T09:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/business/customer-stories/holidays-extras-codex"
+      }
+    ]
+  },
+  {
+    "id": "49a30a9055d79ab7",
+    "title": "Supporting research on AI and children’s safety",
+    "url": "https://openai.com/index/children-first-declaration",
+    "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/children-first-declaration"
+      }
+    ]
+  },
+  {
+    "id": "f21b619cd3e60351",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "url": "https://openai.com/index/jiostar-vijay-seshadri",
+    "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/jiostar-vijay-seshadri"
+      }
+    ]
+  },
+  {
+    "id": "551b2ca27a97f006",
+    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+    "category": "ai",
+    "source_name": "Google AI Blog",
+    "published": "2026-11-11T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      }
+    ]
+  },
+  {
+    "id": "aa96ab031372091a",
+    "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/labs_tabletop_blog_image_2784x1.max-600x600.format-webp.webp\" />Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
+    "category": "ai",
+    "source_name": "Google AI Blog",
+    "published": "2026-11-11T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
+      }
+    ]
+  },
+  {
+    "id": "0c9b1bb5be7f65ca",
+    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+    "url": "https://huggingface.co/blog/token-pooling",
+    "summary": "",
+    "category": "ai",
+    "source_name": "Hugging Face Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/token-pooling"
+      }
+    ]
+  },
+  {
+    "id": "0ae5b2542704a684",
+    "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "category": "ai",
+    "source_name": "DeepMind Blog",
+    "published": "2026-11-11T15:00:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+      }
+    ]
+  },
+  {
+    "id": "755a981cce8bc08c",
+    "title": "How our GTM Agent builds consistent, high-quality sales artifacts",
+    "url": "https://www.langchain.com/blog/gtm-agent-high-quality-sales-artifacts",
+    "summary": "Learn how LangChain built GTM Agent on Deep Agents to build high-quality, custom sales artifacts trained on business context.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-12T03:34:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/gtm-agent-high-quality-sales-artifacts"
+      }
+    ]
+  },
+  {
+    "id": "fe0ba6b350db1a05",
+    "title": "Browse tools.simonwillison.net by tag",
+    "url": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+    "summary": "<p><strong><a href=\"https://tools.simonwillison.net/#tags\">Browse tools.simonwillison.net by tag</a></strong></p>\nI've been wanting a better way to browse my <a href=\"\">collection of vibe-coded tools</a> (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using <a href=\"https://github.com/tree-sitter/py-tree-sitter\">tree-sitter</a> to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool.</p>\n<p>The homepage now features tag clouds for browsing by each of those categories of tag:</p>\n<p><a href=\"https://tools.simonwillison.net/#tags\"><img alt=\"Screenshot of two tag cloud sections where tags are sized by count. Browse by JavaScript libraries - Libraries loaded from a CDN by two or more tools. Select a tag to list its tools. @google/generative-ai 3, @jsquash/avif 3, @jsquash/webp 4, Babel 2, Chart.js 2, Cropper.js 2, D3 2, DOMPurify 7, js-yaml 3, JSZip 3, Leaflet 4, markdown-it 4, Marked 12, pak",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T18:42:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/tools-tags/"
+      }
+    ]
+  },
+  {
+    "id": "d4c2d3a2527f1336",
+    "title": "llm 0.37.2",
+    "url": "https://simonwillison.net/2026/Nov/11/llm/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.2\">llm 0.37.2</a></p>\n        <p>Fixes a security issue reported by <a href=\"https://github.com/BluePlexus\">Daniel de Araujo</a> in <a href=\"https://github.com/simonw/llm/security/advisories/GHSA-v9h7-jj4g-f862\">GHSA-v9h7-jj4g-f862</a> and <a href=\"https://github.com/simonw/llm/security/advisories/GHSA-r639-rr7r-x72w\">GHSA-r639-rr7r-x72w</a>.</p>\n<p>LLM has a mechanism called <a href=\"https://llm.datasette.io/en/stable/other-models.html#configure-an-openai-compatible-model\">extra-openai-models.yaml</a> - now managed by the new-in-0.37 <a href=\"https://llm.datasette.io/en/stable/other-models.html#openai-endpoint-add\">llm openai endpoint add</a> command - for using LLM with OpenAI-compatible API endpoints from other providers.</p>\n<p>Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by <code>api_key_name</code> had never been",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T17:19:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/llm/"
+      }
+    ]
+  },
+  {
+    "id": "23ac67d98cfacd5f",
+    "title": "Anthropic's IPO roadshow video",
+    "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+    "summary": "<p><strong><a href=\"https://ipo.anthropic.com/us/#roadshow-video\">Anthropic&#x27;s IPO roadshow video</a></strong></p>\nAnthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works.</p>\n<p>The section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.</p>\n<p>I'm not sure why there's no official video transcript, but here's <a href=\"https://gist.github.com/simonw/9806757fe8acec6221cb0a5cce4d720d\">one that I extracted</a> using MacWhisper. Highlights below:</p>\n<blockquote>\n<p>We train and serve Claude now across all four major chip families. That's only possible because early on we made an unconventional bet on a multi-chip strategy. At the time, many people thought that running AI models on different chips wasn't worth the effort. Each chip needs its own tailored ",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T15:11:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/"
+      }
+    ]
+  },
+  {
+    "id": "fa21953d06dcbeff",
+    "title": "Tests as data: ensuring AI-generated code does what we want",
+    "url": "https://martinfowler.com/articles/tests-as-data.html",
+    "summary": "<div class=\"img-link\"><a href=\"https://martinfowler.com/articles/tests-as-data.html\"><img src=\"https://martinfowler.com/articles/tests-as-data/card.png\" width=\"350px\" /></a></div>\n\n<p>Automated testing in the age of AI coding assistants is problematic:\n     when AI agents write both production and test code, developers risk losing\n     the assurance that automated tests protect against functional errors.\n     <b class=\"author\">Matteo Vaccari</b> makes three claims: (1) when AI writes the\n     code, developers become its customers; (2) therefore customer tests, not\n     developer tests, become the primary contract between humans and AI; (3)\n     moving that contract into test data rather than test code makes it easier\n     to protect it from unexpected modifications by coding agents. All of this\n     optimizes for human-readable tests that establish a contract between humans\n     and AI. While in the past DSL parsers and custom test runners were\n     expensive to write and maintain, now",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-11T15:17:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/articles/tests-as-data.html"
+      }
+    ]
+  },
+  {
+    "id": "afba45405259237c",
+    "title": "I didn’t write a program with emoji, but I did use a control character",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261111-00/?p=112848/",
+    "summary": "<p>My program was a fairly simple one.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261111-00/?p=112848/\">I didn&#8217;t write a program with emoji, but I did use a control character</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261111-00/?p=112848/"
+      }
+    ]
+  },
+  {
+    "id": "abf7ffe0df3a61f5",
+    "title": "How to Set Up a Simple Bookkeeping System for Your Freelance Business",
+    "url": "https://dev.to/alexlin/how-to-set-up-a-simple-bookkeeping-system-for-your-freelance-business-1671",
+    "summary": "<h2>\n  \n  \n  How to Set Up a Simple Bookkeeping System for Your Freelance Business\n</h2>\n\n<p>Most freelancers don't have a bookkeeping problem. They have a \"where did the money go\" problem — income lands in one account, expenses leak out of another, and by tax time the whole year is a pile of bank statements and guesswork.</p>\n\n<p>A bookkeeping system doesn't need to be complicated. It needs to answer three questions at any moment: how much came in, how much went out, and how much is actually mine to spend. Here is the setup I use, built in one afternoon and maintained in about 30 minutes a week in the sample below.</p>\n\n<h3>\n  \n  \n  1. Give every dollar a bucket the moment it arrives\n</h3>\n\n<p>Freelance income is not salary. No one withholds tax, no one sets aside savings, and the number that hits your account is not the number you can spend. So the first rule: split income the day it arrives, before you spend any of it.</p>\n\n<p>I use five buckets: tax set-aside, business expenses, sa",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:09:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/alexlin/how-to-set-up-a-simple-bookkeeping-system-for-your-freelance-business-1671"
+      }
+    ]
+  },
+  {
+    "id": "b931ad9a1e841f92",
+    "title": "Gemini Robotics 2.5 pushes robots toward factories, but reliability still lags",
+    "url": "https://dev.to/spaisee/gemini-robotics-25-pushes-robots-toward-factories-but-reliability-still-lags-5440",
+    "summary": "<h2>Quick take</h2>\n\n<ul>\n<li>DeepMind evaluated Gemini Robotics 2.5 on more than 200 tasks, including pipetting, folding garments and tying bows.</li>\n<li>At Mercedes-Benz, an Apptronik Apollo 2 humanoid achieved a 96% success rate handling automotive parts in a kitting workflow.</li>\n<li>Ryan Whitwam called the Mercedes result short of human-level reliability, while Carolina Parada said generalization may hinder 99.9% reliability.</li>\n<li>DeepMind introduced ASIMOV-Jailbreak, an open benchmark testing whether robots reject unsafe instructions and resist adversarial prompts.</li>\n</ul>\n\n<h2>Why it matters</h2>\n\n<p>For manufacturers, the shift is from narrowly programmed demonstrations toward more adaptable robots that can reduce the need for separate control systems, though buyers may still restrict them to low-risk work or keep humans involved. The next test is whether Google and its partners can cut supervision, downtime and integration costs while delivering predictable performanc",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:09:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/spaisee/gemini-robotics-25-pushes-robots-toward-factories-but-reliability-still-lags-5440"
+      }
+    ]
+  },
+  {
+    "id": "872c2dc92e222731",
+    "title": "How to Split Vocals and Instrumentals in Your Browser",
+    "url": "https://dev.to/otocoda/how-to-split-vocals-and-instrumentals-in-your-browser-59fm",
+    "summary": "<p>If you want a karaoke track, a clean vocal for practice, or a stem you can slowly transcribe by ear, you do not always need a desktop DAW or a downloaded model. A browser-based <a href=\"https://otocoda.com/\" rel=\"noopener noreferrer\">AI vocal remover</a> can separate a song into a vocal stem and an accompaniment stem on a phone or a laptop, without installing an app.</p>\n\n<p>This is a practical guide to when that workflow is good enough, how to judge the result, and how to avoid the usual disappointments.</p>\n\n<h2>\n  \n  \n  What you are actually asking the tool to do\n</h2>\n\n<p>Stem separation is not \"deleting the singer from the mix\" in the way a graphic designer would delete a layer. In a finished stereo file, the vocal is already baked into the same two channels as the drums, bass, and reverb. An AI vocal remover estimates which parts of the signal are likely to be a voice and which parts are likely to be the rest of the arrangement, then writes two new files.</p>\n\n<p>That means tw",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:07:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/otocoda/how-to-split-vocals-and-instrumentals-in-your-browser-59fm"
+      }
+    ]
+  },
+  {
+    "id": "e7b5bb18c85c0273",
+    "title": "Send duplicates at the same time",
+    "url": "https://dev.to/tillping-hq/send-duplicates-at-the-same-time-293l",
+    "summary": "<p>Replaying a webhook twice in sequence can miss the race that breaks fulfillment.</p>\n\n<p>Deliver the same event concurrently in a test environment. Both handlers might check \"already processed?\" before either saves the answer. Now both grant credits.</p>\n\n<p>Use an atomic claim, such as a database uniqueness constraint, and commit the local business change consistently with the processing record. External actions need their own protection against repeats.</p>\n\n<p>Test out-of-order events separately. An event ID identifies a delivery; it doesn't tell you which subscription state is current.</p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:07:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tillping-hq/send-duplicates-at-the-same-time-293l"
+      }
+    ]
+  },
+  {
+    "id": "35069be3db789fed",
+    "title": "I built a virtual stock community where AI agents trade, debate, and compete on their own",
+    "url": "https://dev.to/unknown_kiimy/i-built-a-virtual-stock-community-where-ai-agents-trade-debate-and-compete-on-their-own-1p7m",
+    "summary": "<p>Hey everyone!</p>\n\n<p>I've been working on a side project called AgorUno (Agora + Uno). It's a virtual community where AI agents autonomously discuss stocks, make paper trades, and interact with each other.</p>\n\n<p>Each agent has its own portfolio, trading history, and performance record. You can explore their activities through a 3D world, see which stocks they're interested in, follow their discussions, and check the AI League rankings.</p>\n\n<p>There's also a prediction system where agents compete using virtual points. No real money is traded, and visitors can only observe. I attached a short GIF of the main screen. I'm curious what you think.</p>\n\n<p>Would you find something like this interesting to follow? What would you improve or add? It's still an experiment, so honest feedback would be really helpful!</p>\n\n<p>[Web: <a href=\"https://dev.toAgorUno\">agoruno.vercel.app</a>]</p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:07:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/unknown_kiimy/i-built-a-virtual-stock-community-where-ai-agents-trade-debate-and-compete-on-their-own-1p7m"
+      }
+    ]
+  },
+  {
+    "id": "d9ce5cce2c49f9c7",
+    "title": "MCP's file transfer draft keeps bytes out of your model's context: 5 mechanics and 3 open security questions",
+    "url": "https://dev.to/piekwerk/mcps-file-transfer-draft-keeps-bytes-out-of-your-models-context-5-mechanics-and-3-open-security-16dd",
+    "summary": "<p>Yesterday the MCP maintainers published the first draft of an extension for moving files between clients and tools. If you build MCP servers, this is the piece you have been hand-rolling: base64 blobs in tool arguments, bespoke presigned-URL conventions, CSVs pasted into prompts. The extension, identified as <code>io.modelcontextprotocol/files</code>, wants to standardize all of it. It works with protocol revision 2026-07-28 and later, and the maintainers expect it stable before the end of the year.</p>\n\n<p>I read the <a href=\"https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/\" rel=\"noopener noreferrer\">full announcement</a> and the draft's mechanics. Here is what actually changes for a server author, and where the design still has open holes.</p>\n\n<h2>\n  \n  \n  The core design decision: bytes never enter JSON-RPC\n</h2>\n\n<p>Every scenario in the draft (save a PDF to cloud storage, pull a big CSV into a sandbox, upload a ZIP deck to a third-party s",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:06:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/piekwerk/mcps-file-transfer-draft-keeps-bytes-out-of-your-models-context-5-mechanics-and-3-open-security-16dd"
+      }
+    ]
+  },
+  {
+    "id": "4865b39e768b9276",
+    "title": "Before Your AI Agent Spends Money, Ask How Its Approvals Expire",
+    "url": "https://dev.to/rick_leffke_6541e28129e2a/before-your-ai-agent-spends-money-ask-how-its-approvals-expire-2c74",
+    "summary": "<p>Most businesses that let an AI agent touch money do the sensible thing: they put a person in the loop. The agent drafts a refund, a purchase order, or a credit, and a manager approves it before anything happens. That approval step is the main reason owners feel safe letting an agent near the checkbook.</p>\n\n<p>But an approval is only as good as its timing. Picture this: a customer asks for a $500 refund. The agent prepares it and sends the request to a manager. The manager is out, so a colleague handles the customer by phone and refunds them directly. Two days later the manager catches up on approvals and clicks yes. Does the agent now send a second $500?</p>\n\n<p>Full disclosure: I built Agent Ready Rankings (<a href=\"https://rankings.leffke.com\" rel=\"noopener noreferrer\">https://rankings.leffke.com</a>), a site that scores AI agent tools out of 10. The scores below are overall scores from my November 11 data run, not a same-day refresh. Browsing the site is free; the full score bre",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:06:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/rick_leffke_6541e28129e2a/before-your-ai-agent-spends-money-ask-how-its-approvals-expire-2c74"
+      }
+    ]
+  },
+  {
+    "id": "fd224dae3f722186",
+    "title": "Transferring 300,000 small ArrayBuffers from a Worker was slower than copying them (in Chromium)",
+    "url": "https://dev.to/openedfile/transferring-300000-small-arraybuffers-from-a-worker-was-slower-than-copying-them-in-chromium-240",
+    "summary": "<p>I run a DXF viewer that works entirely in the browser. DXF is the text format CAD programs use to exchange drawings. A Web Worker reads the file and builds the drawing (a collection of typed arrays of coordinates), hands it to the page with <code>postMessage</code>, and the page draws it on a canvas.</p>\n\n<p>A Worker's <code>postMessage</code> can <em>transfer</em> an ArrayBuffer instead of copying it: buffers listed in the second argument are handed to the other side without a copy, and become unusable on the sending side. It is the standard advice for passing large data to and from a Worker, and when I added the DXF viewer, I made the Worker move every typed array in its result that way.</p>\n\n<p>Then a drawing with 100,000 layers took almost 14 seconds to open in Chromium. The time was not spent building the drawing. It was spent handing the result to the page. This post is about that.</p>\n\n<h2>\n  \n  \n  What happened\n</h2>\n\n<p>The drawing is 100,000 lines, each on its own layer (6",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:05:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/openedfile/transferring-300000-small-arraybuffers-from-a-worker-was-slower-than-copying-them-in-chromium-240"
+      }
+    ]
+  },
+  {
+    "id": "c9d7001cc36759ff",
+    "title": "Building GiveWithTrust: Three Priorities From the Past Few Weeks",
+    "url": "https://dev.to/techgeniuskaran/building-givewithtrust-three-priorities-from-the-past-few-weeks-391e",
+    "summary": "<p>Hey everyone!</p>\n\n<p>I am back after a hectic few weeks of building my startup, <a href=\"https://givewithtrust.org/\" rel=\"noopener noreferrer\">GiveWithTrust</a>, and I wanted to share my experience so far.</p>\n\n<p>If you have followed my previous posts, you know I have been building a platform that connects donors to NGOs through in-kind donations. Things have moved up since then. The platform is now live, multiple NGOs have been verified and onboarded, and we have already received a few donations. (Which is pretty exciting!)</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F04zfckwwj3xpvrt156x3.png\"><img alt=\"Donations shipped\" height=\"778\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:05:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/techgeniuskaran/building-givewithtrust-three-priorities-from-the-past-few-weeks-391e"
+      }
+    ]
+  },
+  {
+    "id": "7ea91e8a29970c0c",
+    "title": "Less is better: why we removed the AI gateway, MCP and the web UI",
+    "url": "https://dev.to/ndreno/less-is-better-why-we-removed-the-ai-gateway-mcp-and-the-web-ui-27fe",
+    "summary": "<p><em>The most secure line of code is the one that is not there.</em></p>\n\n<p>On the road to 1.0, we did something that rarely makes a changelog look exciting: we deleted features. The AI gateway is gone. The MCP server is gone. The web UI is gone. Together that is roughly 27,000 lines of Rust, TypeScript, tests and documentation that no longer ship with Barbacane.</p>\n\n<p>This post explains why. The short version: we are building a light, robust, zero-trust API gateway, and every one of those features was pulling in the opposite direction.</p>\n\n\n\n\n<h3>\n  \n  \n  What we took out\n</h3>\n\n<p><strong>The AI gateway.</strong> An <code>ai-proxy</code> dispatcher that spoke to OpenAI, Anthropic and Ollama behind one OpenAI-compatible surface (Chat Completions, the Responses API, an aggregated model catalog), plus four middlewares for prompt guarding, token limits, cost tracking and response redaction. About 8,000 lines of Rust.</p>\n\n<p><strong>The MCP server.</strong> An endpoint that turned ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:04:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ndreno/less-is-better-why-we-removed-the-ai-gateway-mcp-and-the-web-ui-27fe"
+      }
+    ]
+  },
+  {
+    "id": "24ae1ef8de187430",
+    "title": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
+    "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
+    "summary": "An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps product teams decide where AI earns its place and what users need to verify its output.",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-12T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/"
+      }
+    ]
+  },
+  {
+    "id": "a5fd7cdbb91b51ed",
+    "title": "Air gapped, not data dark: how Bright Machines gives customers live factory dashboards without opening the plant",
+    "url": "https://www.databricks.com/blog/air-gapped-not-data-dark-how-bright-machines-gives-customers-live-factory-dashboards-without",
+    "summary": "Bright Machines gives customers live, governed dashboards of their factory data without...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T23:42:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/air-gapped-not-data-dark-how-bright-machines-gives-customers-live-factory-dashboards-without"
+      }
+    ]
+  },
+  {
+    "id": "be131507293a43db",
+    "title": "Detecting credential-driven attacks on Databricks",
+    "url": "https://www.databricks.com/blog/detecting-credential-driven-attacks-databricks",
+    "summary": "At Databricks, we know your data is your most valuable asset. Databricks has worked...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T23:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/detecting-credential-driven-attacks-databricks"
+      }
+    ]
+  },
+  {
+    "id": "f7bbd464b3fc0fe8",
+    "title": "Brickster Voices: Meet Alasdair Anderson",
+    "url": "https://www.databricks.com/blog/brickster-voices-meet-alasdair-anderson",
+    "summary": "Q: What does a typical week look like for a Lead Solutions Architect, and how would...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T22:50:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/brickster-voices-meet-alasdair-anderson"
+      }
+    ]
+  },
+  {
+    "id": "b7f372c6652b410f",
+    "title": "Databricks Doubles Down on AI Products, Opens New 235,000-Square-Foot San Francisco Headquarters",
+    "url": "https://www.databricks.com/blog/databricks-doubles-down-ai-products-opens-new-235000-square-foot-san-francisco-headquarters",
+    "summary": "Last week, we opened our new headquarters at One Sansome Street in San Francisco,...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T18:20:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/databricks-doubles-down-ai-products-opens-new-235000-square-foot-san-francisco-headquarters"
+      }
+    ]
+  },
+  {
+    "id": "551aa0bb17a9c831",
+    "title": "The new Genie: autonomous AI for complex enterprise work",
+    "url": "https://www.databricks.com/blog/new-genie-autonomous-ai-complex-enterprise-work",
+    "summary": "AI assistants can run analyses and summarize meetings, but employees still manage...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/new-genie-autonomous-ai-complex-enterprise-work"
+      }
+    ]
+  },
+  {
+    "id": "05d8012327f69c87",
+    "title": "Announcing GA of Genie Ontology",
+    "url": "https://www.databricks.com/blog/announcing-ga-genie-ontology",
+    "summary": "AI agents are only as useful as their understanding of the business in which they work. Within a given domain...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/announcing-ga-genie-ontology"
+      }
+    ]
+  },
+  {
+    "id": "71a33211114a4501",
+    "title": "From enterprise context to action: Genie Agents now analyze more data sources to transform your work",
+    "url": "https://www.databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work",
+    "summary": "Thousands of teams use Genie Agents to turn deep operational questions into actionable outcomes every day...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work"
+      }
+    ]
+  },
+  {
+    "id": "7b9d9a2c3667a952",
+    "title": "Bring your business context to ChatGPT, Claude, Microsoft Copilot Cowork and Grok Bot",
+    "url": "https://www.databricks.com/blog/bring-your-business-context-chatgpt-claude-microsoft-copilot-cowork-and-grok-bot",
+    "summary": "Every business is adding more data to their AI-powered workflows. But more data doesn't...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/bring-your-business-context-chatgpt-claude-microsoft-copilot-cowork-and-grok-bot"
+      }
+    ]
+  },
+  {
+    "id": "d17f50a3713d964f",
+    "title": "Genie with Genie Ontology Delivers 1.6× the Accuracy with Less than Half the Tokens",
+    "url": "https://www.databricks.com/blog/genie-genie-ontology-delivers-16-accuracy-less-half-tokens",
+    "summary": "We developed a new enterprise data-agent benchmark in collaboration with Turing to...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/genie-genie-ontology-delivers-16-accuracy-less-half-tokens"
+      }
+    ]
+  },
+  {
+    "id": "a5181993e5cc775e",
+    "title": "Genie One: The AI cowork home for everyone",
+    "url": "https://www.databricks.com/blog/genie-one-ai-cowork-home-everyone",
+    "summary": "In today’s enterprise, work rarely stays in one application. A single task can involve...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-11T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/genie-one-ai-cowork-home-everyone"
+      }
+    ]
+  },
+  {
+    "id": "869ef6b6401a4e88",
+    "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+    "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image1-7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Best Models Trained on NVIDIA\" width=\"768\" />As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-11T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/"
+      }
+    ]
+  },
+  {
+    "id": "8fa5f3c5a103e227",
+    "title": "The modern data stack had a good run",
+    "url": "https://posthog.com/blog/rebundling-the-data-stack",
+    "summary": "On 1 June 2026, Fivetran and dbt Labs  finished merging . The two logos that defined the modern data stack now share a CEO and  about $600M in revenue…",
+    "category": "dev",
+    "source_name": "PostHog Engineering",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PostHog Engineering",
+        "url": "https://posthog.com/blog/rebundling-the-data-stack"
+      }
+    ]
+  },
+  {
+    "id": "e04da1dd7b023509",
+    "title": "Building an Open Service Directory registry for your platform’s support services",
+    "url": "https://zendesk.engineering/building-an-open-service-directory-registry-for-your-platforms-support-services-4074b0cffc3c?source=rss----a88376ea904a---4",
+    "summary": "<p><em>Part 2 of 3: For engineers building or operating a registry for their platform’s support services.</em></p><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*hEZMYMazlt7luXEelL4KdQ.png\" /></figure><p><a href=\"https://medium.com/zendesk-engineering/inside-the-open-service-directory-specification-the-agreement-behind-a-support-listing-f86144253242\">In Part 1</a>, we described CoolFlow’s appointment support as an entry and showed how clients can check its endorsement. We’ll keep that same entry and the customer’s request to move a repair to Monday. In this article, let’s take the <strong>registry operator’s </strong>view: making that service searchable alongside support for other businesses on your platform.</p><p>An <a href=\"https://docs.openservicedirectory.org/0.3.0/docs/reference/registry/\">Open Service Directory (OSD) registry</a> makes those entries searchable. Its interface lets the AI assistant describe the task and constrain the results to the intended bus",
+    "category": "dev",
+    "source_name": "Zendesk Engineering",
+    "published": "2026-11-12T02:01:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zendesk Engineering",
+        "url": "https://zendesk.engineering/building-an-open-service-directory-registry-for-your-platforms-support-services-4074b0cffc3c?source=rss----a88376ea904a---4"
+      }
+    ]
+  },
+  {
+    "id": "6a6775747e7b85c2",
+    "title": "Spacelift vs Terraform Enterprise: Features & Pricing Comparison",
+    "url": "https://spacelift.io/blog/spacelift-vs-terraform-enterprise",
+    "summary": "A comparison of Spacelift and Terraform Enterprise, including features, pricing, policy, self-hosting, AI capabilities, and migration options.",
+    "category": "devops",
+    "source_name": "Spacelift Blog",
+    "published": "2026-11-12T10:51:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Spacelift Blog",
+        "url": "https://spacelift.io/blog/spacelift-vs-terraform-enterprise"
+      }
+    ]
+  },
+  {
+    "id": "198705bfd44b3d8b",
+    "title": "Blind trust: stealing credentials through CSP",
+    "url": "https://portswigger.net/research/blind-trust-stealing-credentials-through-csp",
+    "summary": "Content Security Policy is supposed to be the safety net that stops an HTML injection from turning into XSS. Usually it works. But sometimes it doesn't, because the policy allows-lists a domain that h",
+    "category": "security",
+    "source_name": "PortSwigger Research",
+    "published": "2026-11-11T14:26:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PortSwigger Research",
+        "url": "https://portswigger.net/research/blind-trust-stealing-credentials-through-csp"
+      }
+    ]
+  },
+  {
+    "id": "2e4cba9f38b0976b",
+    "title": "Evaluating the Evaluators: Investigating LLM Judges for Personalized Writing Style Assessment",
+    "url": "https://machinelearning.apple.com/research/evaluating-evaluators-llm-judges",
+    "summary": "This paper was accepted at the Can We Trust AI Evaluation? Workshop at NeurIPS 2026.\nWe evaluate how good large language model (LLM) judges are for personalized writing tasks. This is important when a user’s preferred writing style is known (e.g., “upbeat”) and an LLM judge is used to evaluate whether generated text adheres to this preference. We examine how the writing task, the combination of generator and judge LLM, the evaluation objective, and general commonsense and reasoning ability impact LLM judge performance. To this end, we generate text with four LLMs for three long-form writing…",
+    "category": "ai",
+    "source_name": "Apple Machine Learning",
+    "published": "2026-11-10T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Apple Machine Learning",
+        "url": "https://machinelearning.apple.com/research/evaluating-evaluators-llm-judges"
+      }
+    ]
+  },
+  {
+    "id": "7f77b7fecf972806",
+    "title": "On the Importance of Gating: Memorization vs. In-Context Learning in State Space Models",
+    "url": "https://machinelearning.apple.com/research/gating-memorization-in-context",
+    "summary": "State Space Models (SSMs) have emerged as a compelling alternative to Transformers, enabling sequence modeling with constant memory and linear compute. Although SSMs exhibit reasonable performance and favorable computational characteristics, they continue to lag behind Transformers on tasks that require in-context learning and precise retrieval, slowing their adoption for large-scale language modeling. In this work, we demonstrate that both the success and failure of SSMs in these domains can be explained by studying the role of the gating mechanism, a prevalent component in modern recurrent…",
+    "category": "ai",
+    "source_name": "Apple Machine Learning",
+    "published": "2026-11-10T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Apple Machine Learning",
+        "url": "https://machinelearning.apple.com/research/gating-memorization-in-context"
+      }
+    ]
+  },
+  {
+    "id": "8033077abe93c958",
+    "title": "Weighted State Souping for Efficient Long-Context Retrieval",
+    "url": "https://machinelearning.apple.com/research/weighted-state-souping",
+    "summary": "This paper was accepted at the Workshop on Personalized, Aligned, Long-term Memory for AI Systems (PALM) at NeurIPS 2026.\nState space models (SSMs) combine fast inference and fixed state size with competitive language-modeling performance. Recently, state souping has been proposed as a procedure whereby an SSM independently encodes chunks of tokens like documents, tool definitions, or memory records. The resulting state encodings may be cached and recombined to cheaply construct a context for downstream queries. However, both state souping and vanilla SSMs deteriorate on long, crowded…",
+    "category": "ai",
+    "source_name": "Apple Machine Learning",
+    "published": "2026-11-10T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Apple Machine Learning",
+        "url": "https://machinelearning.apple.com/research/weighted-state-souping"
+      }
+    ]
+  },
+  {
+    "id": "17c61ae4c3891907",
+    "title": "LAST CALL FOR ENROLLMENT: Build Production Grade AI Systems",
+    "url": "https://blog.bytebytego.com/p/last-call-for-enrollment-build-production",
+    "summary": "Enrollment closes in 24 hours for Build Production Grade AI Systems. We kick off tomorrow, November 12, at 5pm PT.",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-11T19:58:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/last-call-for-enrollment-build-production"
+      }
+    ]
+  },
+  {
+    "id": "57a80f3618eb8a7e",
+    "title": "The Roundup by ByteByteGo",
+    "url": "https://blog.bytebytego.com/p/the-roundup-by-bytebytego",
+    "summary": "The Roundup covers insights and trends from the world of software development.",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-11T16:30:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/the-roundup-by-bytebytego"
+      }
+    ]
+  },
+  {
+    "id": "5718f92f4599aacf",
+    "title": "Webinar Recap: Agentic Debugging of Embedded Systems With CLion and TRACE32®",
+    "url": "https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/",
+    "summary": "CLion can now debug embedded targets through TRACE32 and let AI agents start and control debug sessions. JetBrains and Lauterbach presented the integration in a joint webinar, and this post recaps the session. You can also watch the demo presented at the webinar and browse the slides. How CLion and TRACE32 work together Moving from [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-12T10:16:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/"
+      }
+    ]
+  },
+  {
+    "id": "fed793960d42b4a8",
+    "title": "Building Uscreen’s remote, multi-tenant MCP server inside a Rails app",
+    "url": "https://evilmartians.com/chronicles/building-uscreens-remote-multi-tenant-mcp-server-inside-a-rails-app",
+    "summary": "How Evil Martians moved Uscreen’s MCP server into its Rails app as a remote, multi-tenant service: Doorkeeper OAuth, tenant-scoped tools, and dry-run previews for destructive operations.",
+    "category": "dev",
+    "source_name": "Evil Martians Chronicles",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Evil Martians Chronicles",
+        "url": "https://evilmartians.com/chronicles/building-uscreens-remote-multi-tenant-mcp-server-inside-a-rails-app"
+      }
+    ]
+  },
+  {
+    "id": "8bc87ec18a1f4743",
+    "title": "How to get a Google Gemini API key—and use the Gemini API",
+    "url": "https://zapier.com/blog/gemini-api",
+    "summary": "OpenAI and Anthropic models can read text and look at images just fine, but video is a big no-no. If you're building a tool or a product that absolutely needs that type of media, you'd have to engineer a long workaround, decomposing it into multiple images and then feeding them as an input. A big techie flex if you manage to do it, but is it worth the time? Google has the answer if you want to go faster. Its latest models, led by Gemini 4 Carbon, focus on multimodality, being capable of consumin",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/gemini-api"
+      }
+    ]
+  },
+  {
+    "id": "762c569617502cfb",
+    "title": "Pipedream pricing: Is it worth it?",
+    "url": "https://zapier.com/blog/pipedream-pricing",
+    "summary": "If you're building a product that connects to your users' apps, you've probably run into the same problem: every integration is its own little project. You need to manage OAuth flows, token refresh, API quirks, and all the maintenance in between. Multiply that by dozens of apps, and your roadmap disappears. That's the problem Pipedream Connect is built to solve. But when you embed integrations in your product, you're not just choosing a tool—you're choosing a cost structure that grows with your",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/pipedream-pricing"
+      }
+    ]
+  },
+  {
+    "id": "2ac7c41088f6261f",
+    "title": "Gumloop pricing: Is it worth it?",
+    "url": "https://zapier.com/blog/gumloop-pricing",
+    "summary": "I'm still looking for a cab service that shows the full price range before I even book. Something like: \"Base fare $12 + possible surge $0-$4 depending on traffic and demand.\" Hey, I can dream. Gumloop's pricing gets close to that idea. It's transparent, but since it runs on credits, the total cost can still vary based on how your workflows run and how often you run them. Knowing the possible range makes it easier to plan without mentally refreshing the meter. In this guide, I'll break down how",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/gumloop-pricing"
+      }
+    ]
+  },
+  {
+    "id": "09c95bca4d6b958c",
+    "title": "Workato pricing: Is it worth it?",
+    "url": "https://zapier.com/blog/workato-pricing",
+    "summary": "Imagine booking a flight where every ticket just says \"contact the airline.\" No prices, no range—nada. Just a polite suggestion to start a conversation while you hope the cost doesn't make your eyebrows hit your hairline. That's what Workato's pricing feels like. Customized quotes do make sense for enterprise software, but having some upfront pricing context helps people figure out if they're in the right ballpark before scheduling a sales call. To help you get a clearer picture, I'll cover how",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/workato-pricing"
+      }
+    ]
+  },
+  {
+    "id": "0d39ff5da151e0fd",
+    "title": "Power Automate pricing and plans for 2026",
+    "url": "https://zapier.com/blog/power-automate-pricing",
+    "summary": "The first time someone at a Microsoft shop notices their Power Automate bill is higher than expected, they usually look for a pricing page. What they find is a grid with three plans, a $5,000/month add-on that isn't a typo, and the slow realization that the free tier they've been using doesn't include the connectors they actually need. Microsoft offers a few different plans, each built for a different use case, layered on top of whatever you're already paying for 365. It's worth untangling befor",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/power-automate-pricing"
+      }
+    ]
+  },
+  {
+    "id": "9d9c6be28285e277",
+    "title": "n8n pricing: Is it worth it?",
+    "url": "https://zapier.com/blog/n8n-pricing",
+    "summary": "When I got married, my mom and I visited countless bakeries looking for the perfect wedding cake. Nothing quite hit the mark. So she did what any completely rational mother of the bride would do: she made the cake herself. It ended up being perfectly customized to our specifications (raspberry dark chocolate with buttercream frosting)—but it also added more than a few gray hairs and kept her up until 2 a.m. the night before, hand-perfecting the icing. n8n's pricing works a lot like that decision",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/n8n-pricing"
+      }
+    ]
+  },
+  {
+    "id": "78fb57b7efb1e83d",
+    "title": "Tray pricing: Is it worth it?",
+    "url": "https://zapier.com/blog/tray-pricing",
+    "summary": "As a software engineer who's built hundreds of integrations over the years, I demand a lot from integration platforms. In the case of Tray, the promise is that you can orchestrate workflows and enterprise-grade AI agents. That's a claim many other platforms make, but Tray has been in the automation business for more than a decade, so there's some level of credibility there. But no matter how great a platform is, price matters. Tray doesn't publish rates for its plans, but it does list a starting",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/tray-pricing"
+      }
+    ]
+  },
+  {
+    "id": "34952e72c2c89cfc",
+    "title": "UiPath pricing: Exploring RPA pricing models",
+    "url": "https://zapier.com/blog/uipath-pricing",
+    "summary": "Understanding UiPath pricing should take three minutes. It doesn't. Take a few seconds to browse the website, and you'll find a mostly hidden pricing structure filled with attended bots, action center limits, and AI consumption units. If you want any further clarification, buckle in for a sales call.  You've decided to bring automation to your team, and that's an endeavor in itself; you shouldn't have to decipher a riddle or decode a licensing manual just to nail down a budget. In this guide, I'",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/uipath-pricing"
+      }
+    ]
+  },
+  {
+    "id": "21282ab11473dff9",
+    "title": "MuleSoft pricing: Is it worth it? [2026]",
+    "url": "https://zapier.com/blog/mulesoft-pricing",
+    "summary": "MuleSoft has been around since the mid-2000s, back when developers like me were still stitching applications together using CSV file transfers and duct tape. It was one of the first dedicated data integration software packages on the market, and computer geeks loved that we could use it to program our interfaces and build complicated workflows.  Another reason we loved MuleSoft, called Mule ESB (enterprise service bus) in those days, was that it was an open-source project. Not only could we use",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/mulesoft-pricing"
+      }
+    ]
+  },
+  {
+    "id": "a891d2cab18d87c5",
+    "title": "Lindy pricing and plans for 2026",
+    "url": "https://zapier.com/blog/lindy-pricing",
+    "summary": "As a small business owner running multiple newsletters, I'm always hunting for ways to claw back a few hours. So my ears perked up when I first heard Lindy AI's pitch that it could save me time. Of course, I had questions: namely, how much does it actually cost to save me that time? I dug in, and here's what you need to know about Lindy's plans, credits, hidden costs, and how it stacks up against Zapier before you commit. Table of contents: What is Lindy? Lindy pricing overview Who is Lindy best",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/lindy-pricing"
+      }
+    ]
+  },
+  {
+    "id": "56179fb1e73ad5a4",
+    "title": "Make.com pricing: Is it worth it? [2026]",
+    "url": "https://zapier.com/blog/make-com-pricing",
+    "summary": "Not to get all \"back in my day\" about it, but texting etiquette today is so different from when I was in high school. Gen Z seems to have an aversion to long text blocks, so instead, it's multiple messages with one idea per text (sometimes in quick succession). But if you had a cell phone in 2009, you remember phone plans that charged per text, not per month. When you don't have unlimited texting, every message has a cost—so you make sure every text counts. Make's credit model will feel familiar",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-11T04:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/make-com-pricing"
+      }
+    ]
+  },
+  {
+    "id": "5865a5f9b5184693",
+    "title": "UK consumer lending splits into two-speed market as late payments rise 24%, new research reveals",
+    "url": "https://gocardless.com/blog/uk-lending-two-speed-market",
+    "summary": "",
+    "category": "dev",
+    "source_name": "GoCardless Tech Blog",
+    "published": "2026-11-11T17:13:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GoCardless Tech Blog",
+        "url": "https://gocardless.com/blog/uk-lending-two-speed-market"
+      }
+    ]
+  },
+  {
+    "id": "da7db741166f22f7",
+    "title": "Quiz: Learn With Mentor AI: Working Through a Coding Exercise",
+    "url": "https://realpython.com/quizzes/mentor-ai-coding-exercise/",
+    "summary": "Practice getting unstuck on a Python coding exercise with Mentor AI, from mutable default arguments to checking for None with is.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-12T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/mentor-ai-coding-exercise/"
+      }
+    ]
+  },
+  {
+    "id": "509caaf9bf16c061",
+    "title": "Python HTTPX: Making HTTP Requests With HTTPX2",
+    "url": "https://realpython.com/python-httpx/",
+    "summary": "Learn how to use Python HTTPX (now HTTPX2) to make HTTP requests, send async calls, set safe timeouts, stream large downloads, and enable HTTP/2.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-11T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/python-httpx/"
+      }
+    ]
+  },
+  {
+    "id": "ecf13ca89a85179d",
+    "title": "Using Laravel Boost for package development with Orchestra Testbench",
+    "url": "https://freek.dev/3219-using-laravel-boost-for-package-development-with-orchestra-testbench",
+    "summary": "<p>Rias Van der Veken shows how to make Laravel Boost work nicely in package development by pairing it with Orchestra Testbench. The article covers a few smart tweaks so Boost reads and writes in the package root, works through a custom artisan file, and stays tailored for package workflows instead of full Laravel apps.</p>\n\n\n<a href=\"https://rias.be/blog/using-laravel-boost-for-package-development-with-orchestra-testbench\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-12T12:30:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3219-using-laravel-boost-for-package-development-with-orchestra-testbench"
+      }
+    ]
+  },
+  {
+    "id": "97c3febdcd14f9d6",
+    "title": "How SmileID Scaled Identity Verification to 18,000+ Android Device Types with CameraX",
+    "url": "https://developer.android.com/blog/posts/smileid-camerax-android-identity-verification",
+    "summary": "Identity verification apps for banking and SIM registration require clear, high-resolution face captures to detect spoofing and deepfakes. Capturing frames sharp enough for liveness and anti-spoofing checks, without crashing low-memory devices, is a common challenge for Android camera develope",
+    "category": "dev",
+    "source_name": "Android Developers Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Android Developers Blog",
+        "url": "https://developer.android.com/blog/posts/smileid-camerax-android-identity-verification"
+      }
+    ]
+  },
+  {
+    "id": "0d6f1c61201e1d34",
+    "title": "What's new in Swift: November 2026 Edition",
+    "url": "https://www.swift.org/blog/whats-new-in-swift-november-2026/",
+    "summary": "<p>Welcome to the latest edition of “What’s new in Swift,” a curated digest of releases, news, and discussions from the Swift project and community.</p>\n\n<p>To start things off, our guest contributor shares a timely reminder for anyone relying on CocoaPods:</p>\n\n<blockquote>\n  <p>Hi, I’m Dave Verwer, co-creator of the <a href=\"https://swiftpackageindex.com/\">Swift Package Index</a> and now part of a team at Apple working on a public, cross-platform package registry for Swift. How developers find, share, and manage dependencies across the entire ecosystem is something we think about a lot.</p>\n\n  <p>CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. The project began in 2011, before Swift was publicly available and long before the Swift Package Manager (SwiftPM) existed. For many people who started developing with the iPhone SDK, it was a first look at what a dependency manager could do. Today, Swift has expanded across platforms, and SwiftPM has become the stan",
+    "category": "dev",
+    "source_name": "Swift Blog",
+    "published": "2026-11-11T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Swift Blog",
+        "url": "https://www.swift.org/blog/whats-new-in-swift-november-2026/"
+      }
+    ]
+  }
+]

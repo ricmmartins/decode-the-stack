@@ -1,0 +1,524 @@
+[
+  {
+    "id": "35069be3db789fed",
+    "title": "I built a virtual stock community where AI agents trade, debate, and compete on their own",
+    "url": "https://dev.to/unknown_kiimy/i-built-a-virtual-stock-community-where-ai-agents-trade-debate-and-compete-on-their-own-1p7m",
+    "summary": "<p>Hey everyone!</p>\n\n<p>I've been working on a side project called AgorUno (Agora + Uno). It's a virtual community where AI agents autonomously discuss stocks, make paper trades, and interact with each other.</p>\n\n<p>Each agent has its own portfolio, trading history, and performance record. You can explore their activities through a 3D world, see which stocks they're interested in, follow their discussions, and check the AI League rankings.</p>\n\n<p>There's also a prediction system where agents compete using virtual points. No real money is traded, and visitors can only observe. I attached a short GIF of the main screen. I'm curious what you think.</p>\n\n<p>Would you find something like this interesting to follow? What would you improve or add? It's still an experiment, so honest feedback would be really helpful!</p>\n\n<p>[Web: <a href=\"https://dev.toAgorUno\">agoruno.vercel.app</a>]</p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:07:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/unknown_kiimy/i-built-a-virtual-stock-community-where-ai-agents-trade-debate-and-compete-on-their-own-1p7m"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "d9ce5cce2c49f9c7",
+    "title": "MCP's file transfer draft keeps bytes out of your model's context: 5 mechanics and 3 open security questions",
+    "url": "https://dev.to/piekwerk/mcps-file-transfer-draft-keeps-bytes-out-of-your-models-context-5-mechanics-and-3-open-security-16dd",
+    "summary": "<p>Yesterday the MCP maintainers published the first draft of an extension for moving files between clients and tools. If you build MCP servers, this is the piece you have been hand-rolling: base64 blobs in tool arguments, bespoke presigned-URL conventions, CSVs pasted into prompts. The extension, identified as <code>io.modelcontextprotocol/files</code>, wants to standardize all of it. It works with protocol revision 2026-07-28 and later, and the maintainers expect it stable before the end of the year.</p>\n\n<p>I read the <a href=\"https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/\" rel=\"noopener noreferrer\">full announcement</a> and the draft's mechanics. Here is what actually changes for a server author, and where the design still has open holes.</p>\n\n<h2>\n  \n  \n  The core design decision: bytes never enter JSON-RPC\n</h2>\n\n<p>Every scenario in the draft (save a PDF to cloud storage, pull a big CSV into a sandbox, upload a ZIP deck to a third-party s",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:06:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/piekwerk/mcps-file-transfer-draft-keeps-bytes-out-of-your-models-context-5-mechanics-and-3-open-security-16dd"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4865b39e768b9276",
+    "title": "Before Your AI Agent Spends Money, Ask How Its Approvals Expire",
+    "url": "https://dev.to/rick_leffke_6541e28129e2a/before-your-ai-agent-spends-money-ask-how-its-approvals-expire-2c74",
+    "summary": "<p>Most businesses that let an AI agent touch money do the sensible thing: they put a person in the loop. The agent drafts a refund, a purchase order, or a credit, and a manager approves it before anything happens. That approval step is the main reason owners feel safe letting an agent near the checkbook.</p>\n\n<p>But an approval is only as good as its timing. Picture this: a customer asks for a $500 refund. The agent prepares it and sends the request to a manager. The manager is out, so a colleague handles the customer by phone and refunds them directly. Two days later the manager catches up on approvals and clicks yes. Does the agent now send a second $500?</p>\n\n<p>Full disclosure: I built Agent Ready Rankings (<a href=\"https://rankings.leffke.com\" rel=\"noopener noreferrer\">https://rankings.leffke.com</a>), a site that scores AI agent tools out of 10. The scores below are overall scores from my November 11 data run, not a same-day refresh. Browsing the site is free; the full score bre",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:06:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/rick_leffke_6541e28129e2a/before-your-ai-agent-spends-money-ask-how-its-approvals-expire-2c74"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fd224dae3f722186",
+    "title": "Transferring 300,000 small ArrayBuffers from a Worker was slower than copying them (in Chromium)",
+    "url": "https://dev.to/openedfile/transferring-300000-small-arraybuffers-from-a-worker-was-slower-than-copying-them-in-chromium-240",
+    "summary": "<p>I run a DXF viewer that works entirely in the browser. DXF is the text format CAD programs use to exchange drawings. A Web Worker reads the file and builds the drawing (a collection of typed arrays of coordinates), hands it to the page with <code>postMessage</code>, and the page draws it on a canvas.</p>\n\n<p>A Worker's <code>postMessage</code> can <em>transfer</em> an ArrayBuffer instead of copying it: buffers listed in the second argument are handed to the other side without a copy, and become unusable on the sending side. It is the standard advice for passing large data to and from a Worker, and when I added the DXF viewer, I made the Worker move every typed array in its result that way.</p>\n\n<p>Then a drawing with 100,000 layers took almost 14 seconds to open in Chromium. The time was not spent building the drawing. It was spent handing the result to the page. This post is about that.</p>\n\n<h2>\n  \n  \n  What happened\n</h2>\n\n<p>The drawing is 100,000 lines, each on its own layer (6",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:05:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/openedfile/transferring-300000-small-arraybuffers-from-a-worker-was-slower-than-copying-them-in-chromium-240"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c9d7001cc36759ff",
+    "title": "Building GiveWithTrust: Three Priorities From the Past Few Weeks",
+    "url": "https://dev.to/techgeniuskaran/building-givewithtrust-three-priorities-from-the-past-few-weeks-391e",
+    "summary": "<p>Hey everyone!</p>\n\n<p>I am back after a hectic few weeks of building my startup, <a href=\"https://givewithtrust.org/\" rel=\"noopener noreferrer\">GiveWithTrust</a>, and I wanted to share my experience so far.</p>\n\n<p>If you have followed my previous posts, you know I have been building a platform that connects donors to NGOs through in-kind donations. Things have moved up since then. The platform is now live, multiple NGOs have been verified and onboarded, and we have already received a few donations. (Which is pretty exciting!)</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F04zfckwwj3xpvrt156x3.png\"><img alt=\"Donations shipped\" height=\"778\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:05:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/techgeniuskaran/building-givewithtrust-three-priorities-from-the-past-few-weeks-391e"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7ea91e8a29970c0c",
+    "title": "Less is better: why we removed the AI gateway, MCP and the web UI",
+    "url": "https://dev.to/ndreno/less-is-better-why-we-removed-the-ai-gateway-mcp-and-the-web-ui-27fe",
+    "summary": "<p><em>The most secure line of code is the one that is not there.</em></p>\n\n<p>On the road to 1.0, we did something that rarely makes a changelog look exciting: we deleted features. The AI gateway is gone. The MCP server is gone. The web UI is gone. Together that is roughly 27,000 lines of Rust, TypeScript, tests and documentation that no longer ship with Barbacane.</p>\n\n<p>This post explains why. The short version: we are building a light, robust, zero-trust API gateway, and every one of those features was pulling in the opposite direction.</p>\n\n\n\n\n<h3>\n  \n  \n  What we took out\n</h3>\n\n<p><strong>The AI gateway.</strong> An <code>ai-proxy</code> dispatcher that spoke to OpenAI, Anthropic and Ollama behind one OpenAI-compatible surface (Chat Completions, the Responses API, an aggregated model catalog), plus four middlewares for prompt guarding, token limits, cost tracking and response redaction. About 8,000 lines of Rust.</p>\n\n<p><strong>The MCP server.</strong> An endpoint that turned ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:04:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ndreno/less-is-better-why-we-removed-the-ai-gateway-mcp-and-the-web-ui-27fe"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c4a230a1244b6a05",
+    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+    "summary": "<p>Article URL: <a href=\"https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/\">https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50455394\">https://news.ycombinator.com/item?id=50455394</a></p>\n<p>Points: 509</p>\n<p># Comments: 246</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T16:38:44+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"
+      }
+    ],
+    "score": 20.68
+  },
+  {
+    "id": "ecf13ca89a85179d",
+    "title": "Using Laravel Boost for package development with Orchestra Testbench",
+    "url": "https://freek.dev/3219-using-laravel-boost-for-package-development-with-orchestra-testbench",
+    "summary": "<p>Rias Van der Veken shows how to make Laravel Boost work nicely in package development by pairing it with Orchestra Testbench. The article covers a few smart tweaks so Boost reads and writes in the package root, works through a custom artisan file, and stays tailored for package workflows instead of full Laravel apps.</p>\n\n\n<a href=\"https://rias.be/blog/using-laravel-boost-for-package-development-with-orchestra-testbench\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-12T12:30:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3219-using-laravel-boost-for-package-development-with-orchestra-testbench"
+      }
+    ],
+    "score": 20.41
+  },
+  {
+    "id": "a054acaab3d1bca6",
+    "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+    "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+    "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access?\n\nA suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T12:02:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "ca241a3187b25f1c",
+    "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+    "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+    "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2.\n\n\"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\" N-able said in a new advisory. \"Legacy API is",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T11:51:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "4e4b59e96ac0c2a7",
+    "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+    "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+    "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose.\n\nThe Threat Research team at Material Security spotted the campaign and has since taken down hundreds of attacker domains in an effort the team calls Operation CloudFire.",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T11:51:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "1417d4d46073d1cf",
+    "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+    "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+    "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution.\n\nThe security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.\n\nIt has been described as a case of improper input validation and deserialization of untrusted data that could result in",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T11:33:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "3a153ce674c42ac5",
+    "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+    "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+    "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week.\n\nThe company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel.\n\nThe affected",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T12:09:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "91bc998a4f9b3d92",
+    "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+    "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+    "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections.\n\nFixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1.\n\nThe crash",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T08:20:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html"
+      }
+    ],
+    "score": 19.93
+  },
+  {
+    "id": "5718f92f4599aacf",
+    "title": "Webinar Recap: Agentic Debugging of Embedded Systems With CLion and TRACE32®",
+    "url": "https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/",
+    "summary": "CLion can now debug embedded targets through TRACE32 and let AI agents start and control debug sessions. JetBrains and Lauterbach presented the integration in a joint webinar, and this post recaps the session. You can also watch the demo presented at the webinar and browse the slides. How CLion and TRACE32 work together Moving from [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-12T10:16:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/"
+      }
+    ],
+    "score": 19.43
+  },
+  {
+    "id": "08900c31bde1b006",
+    "title": "Gemini Decisions API",
+    "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "summary": "<p><strong><a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/\">Gemini Decisions API</a></strong></p>\nGoogle join <a href=\"https://simonwillison.net/2026/Sep/21/jev/\">Jev</a> and <a href=\"https://simonwillison.net/2026/Oct/6/llm-openai-decisions/\">OpenAI</a> in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.</p>\n<p>It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.</p>\n<p>Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.</p>\n<p>I tested it against video by passing these questions to it along with my <a href=\"https://simonwillison.",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T22:03:25+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "24ae1ef8de187430",
+    "title": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
+    "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
+    "summary": "An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps product teams decide where AI earns its place and what users need to verify its output.",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-12T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/"
+      }
+    ],
+    "score": 18.07
+  },
+  {
+    "id": "ae7460e45b180cc6",
+    "title": "JioHotstar Benchmarks Knowledge Bases for AI Coding Agents",
+    "url": "https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>JioHotstar evaluated 6 approaches to code retrieval for AI coding agents using SWE, CodeScale Bench, and an internal question-answering harness. Structural search performed well on concrete tasks, while semantic retrieval helped with ambiguous requirements. The findings highlight trade-offs in accuracy, token use, and tool design, underscoring the need to match retrieval tools to task types.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T14:28:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "fa21953d06dcbeff",
+    "title": "Tests as data: ensuring AI-generated code does what we want",
+    "url": "https://martinfowler.com/articles/tests-as-data.html",
+    "summary": "<div class=\"img-link\"><a href=\"https://martinfowler.com/articles/tests-as-data.html\"><img src=\"https://martinfowler.com/articles/tests-as-data/card.png\" width=\"350px\" /></a></div>\n\n<p>Automated testing in the age of AI coding assistants is problematic:\n     when AI agents write both production and test code, developers risk losing\n     the assurance that automated tests protect against functional errors.\n     <b class=\"author\">Matteo Vaccari</b> makes three claims: (1) when AI writes the\n     code, developers become its customers; (2) therefore customer tests, not\n     developer tests, become the primary contract between humans and AI; (3)\n     moving that contract into test data rather than test code makes it easier\n     to protect it from unexpected modifications by coding agents. All of this\n     optimizes for human-readable tests that establish a contract between humans\n     and AI. While in the past DSL parsers and custom test runners were\n     expensive to write and maintain, now",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-11T15:17:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/articles/tests-as-data.html"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "e04da1dd7b023509",
+    "title": "Building an Open Service Directory registry for your platform’s support services",
+    "url": "https://zendesk.engineering/building-an-open-service-directory-registry-for-your-platforms-support-services-4074b0cffc3c?source=rss----a88376ea904a---4",
+    "summary": "<p><em>Part 2 of 3: For engineers building or operating a registry for their platform’s support services.</em></p><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*hEZMYMazlt7luXEelL4KdQ.png\" /></figure><p><a href=\"https://medium.com/zendesk-engineering/inside-the-open-service-directory-specification-the-agreement-behind-a-support-listing-f86144253242\">In Part 1</a>, we described CoolFlow’s appointment support as an entry and showed how clients can check its endorsement. We’ll keep that same entry and the customer’s request to move a repair to Monday. In this article, let’s take the <strong>registry operator’s </strong>view: making that service searchable alongside support for other businesses on your platform.</p><p>An <a href=\"https://docs.openservicedirectory.org/0.3.0/docs/reference/registry/\">Open Service Directory (OSD) registry</a> makes those entries searchable. Its interface lets the AI assistant describe the task and constrain the results to the intended bus",
+    "category": "dev",
+    "source_name": "Zendesk Engineering",
+    "published": "2026-11-12T02:01:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zendesk Engineering",
+        "url": "https://zendesk.engineering/building-an-open-service-directory-registry-for-your-platforms-support-services-4074b0cffc3c?source=rss----a88376ea904a---4"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "7eeae5b65557e436",
+    "title": "Why the data center you dread might never even be built",
+    "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+    "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity.&#160;Before those challenges even come into play, though, there&#8217;s a more basic problem: A lot of the projects being announced may never get built in the first place.&#160;With billions of dollars in AI infrastructure [&#8230;]",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-11T20:15:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/"
+      }
+    ],
+    "score": 17.85
+  },
+  {
+    "id": "6a6775747e7b85c2",
+    "title": "Spacelift vs Terraform Enterprise: Features & Pricing Comparison",
+    "url": "https://spacelift.io/blog/spacelift-vs-terraform-enterprise",
+    "summary": "A comparison of Spacelift and Terraform Enterprise, including features, pricing, policy, self-hosting, AI capabilities, and migration options.",
+    "category": "devops",
+    "source_name": "Spacelift Blog",
+    "published": "2026-11-12T10:51:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Spacelift Blog",
+        "url": "https://spacelift.io/blog/spacelift-vs-terraform-enterprise"
+      }
+    ],
+    "score": 17.42
+  },
+  {
+    "id": "e9278fc04f071bbc",
+    "title": "Inside an AI Attack Against a US Retailer",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+    "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-12T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer"
+      }
+    ],
+    "score": 17.4
+  },
+  {
+    "id": "da7db741166f22f7",
+    "title": "Quiz: Learn With Mentor AI: Working Through a Coding Exercise",
+    "url": "https://realpython.com/quizzes/mentor-ai-coding-exercise/",
+    "summary": "Practice getting unstuck on a Python coding exercise with Mentor AI, from mutable default arguments to checking for None with is.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-12T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/mentor-ai-coding-exercise/"
+      }
+    ],
+    "score": 17.29
+  },
+  {
+    "id": "da4f4eeec669232a",
+    "title": "Nvidia is reportedly preparing to fire Jensen Huang",
+    "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+    "summary": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from The New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-11T22:44:36+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+      }
+    ],
+    "score": 17.28
+  },
+  {
+    "id": "14e5c7fc10c34995",
+    "title": "GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls",
+    "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/github-agentic-workflows-ga/en/headerimage/header-1793990975266.jpeg\" /><p>GitHub Agentic Workflows is generally available, running coding agents in GitHub Actions with read-only defaults and separately scoped write jobs. Those protections do not cover direct write permissions or custom jobs, so they depend on how each workflow is configured.</p> <i>By Mark Silvester</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-11T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 17.18
+  },
+  {
+    "id": "e109ccb99e1bc83b",
+    "title": "Expensive accelerators, no workload-level visibility: Introducing Amazon CloudWatch accelerated compute insights",
+    "url": "https://thenewstack.io/cloudwatch-accelerated-compute-insights/",
+    "summary": "<img alt=\"Abstract monochrome digital terrain with circuit-like fissures representing GPU cluster observability and workload blind spots.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/c92a967e-flying-object-jzkpjxphomq-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Accelerator bills have become one of the largest lines in the infrastructure budget. GPUs have become the most expensive resource</p>\n<p>The post <a href=\"https://thenewstack.io/cloudwatch-accelerated-compute-insights/\">Expensive accelerators, no workload-level visibility: Introducing Amazon CloudWatch accelerated compute insights</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-11T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cloudwatch-accelerated-compute-insights/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "cd20f9c44257dadd",
+    "title": "Developers have been hacking around MCP’s file-upload problem for two years. A fix is taking shape.",
+    "url": "https://thenewstack.io/mcp-file-upload-extension/",
+    "summary": "<img alt=\"Arrows pointing up and down, depicting the concept of file uploads and downloads.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/b857591d-alex-shuper-ehko-zsjnoi-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>The Model Context Protocol (MCP) has played an instrumental part in connecting AI assistants to external tools and data since</p>\n<p>The post <a href=\"https://thenewstack.io/mcp-file-upload-extension/\">Developers have been hacking around MCP’s file-upload problem for two years. A fix is taking shape.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-11T17:11:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/mcp-file-upload-extension/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "e0ee113c242fa3cd",
+    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+    "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+    "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company.\n\nThe stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T06:42:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html"
+      }
+    ],
+    "score": 16.98
+  },
+  {
+    "id": "ee03c266cb1606a7",
+    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+    "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday.\n\nOnly servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.\n\nAn attacker who can reach the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T05:12:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html"
+      }
+    ],
+    "score": 16.98
+  }
+]

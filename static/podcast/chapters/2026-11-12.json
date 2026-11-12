@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 7,
+      "title": "Opening"
+    },
+    {
+      "startTime": 141,
+      "title": "Google’s TPU Sync puts the focus on moving model data. The..."
+    },
+    {
+      "startTime": 287,
+      "title": "Local testing gives us a concrete place to examine those..."
+    },
+    {
+      "startTime": 431,
+      "title": "That question of what deserves engineering attention..."
+    },
+    {
+      "startTime": 585,
+      "title": "The Node.js fixes put a concrete boundary around this..."
+    },
+    {
+      "startTime": 732,
+      "title": "To close, the practical thread is control: what automation..."
+    }
+  ]
+}

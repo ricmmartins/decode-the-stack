@@ -1,0 +1,258 @@
+---
+HEADLINE: AI adoption puts reliability and control in focus
+
+Thursday’s reporting connects expanding AI capabilities with a harder engineering question: how to make them predictable, observable, and safe. Local development tools, deployment infrastructure, and concurrent-event handling reinforce the same lesson—producing more functionality is not the same as operating it reliably. Several supplied items offer only brief excerpts or promotional claims; those limits are noted below.
+
+## 🧑‍💻 Software Engineering
+
+### [How to Set Up a Simple Bookkeeping System for Your Freelance Business](https://dev.to/alexlin/how-to-set-up-a-simple-bookkeeping-system-for-your-freelance-business-1671)
+*For freelance developers, useful bookkeeping starts by separating incoming revenue from money available to spend.*
+
+This practical guide frames bookkeeping around three questions: what came in, what went out, and what remains available. Its central recommendation is to allocate income when it arrives rather than reconstruct spending at tax time. The author describes a personal setup built in an afternoon and maintained in roughly 30 minutes a week; that is an example, not a demonstrated maintenance target for every business.
+
+The broader lesson is that an account balance alone does not capture outstanding obligations. Explicit allocations can make those obligations visible before spending decisions happen. However, the supplied excerpt cuts off during the proposed five-bucket breakdown, so it does not support reproducing the complete system, allocation percentages, or jurisdiction-specific tax advice.
+
+*Sources: [Dev.to](https://dev.to/alexlin/how-to-set-up-a-simple-bookkeeping-system-for-your-freelance-business-1671)*
+
+### [Author Q+A: finprim is a Case for One Financial Validation Library in TypeScript](https://www.infoq.com/news/2026/11/finprim-validation-qanda/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Consolidating financial validators addresses consistency, but the boundary between validation and payment processing remains important.*
+
+InfoQ describes finprim as an MIT-licensed TypeScript library covering IBAN, BIC, card, sort code, VAT, routing-number, and loan functions through one API, with no runtime dependencies. Its author created it after duplicated validators diverged across web and mobile applications. The motivation is therefore not simply reducing package count: it is preventing different clients from applying inconsistent rules.
+
+A shared library offers one place to maintain those rules, but its stated scope matters. finprim validates and formats data; it does not process payments. The author’s caution about adding SEPA and ACH file generation reflects a meaningful boundary between checking inputs and producing operational financial artifacts. The excerpt provides no comparative accuracy or coverage results.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/finprim-validation-qanda/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Technical Debt is Social; it is the Price of Learning by Doing](https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Faster code production makes shared understanding an increasingly important engineering constraint.*
+
+This InfoQ article presents technical debt as a possible consequence of learning from software in use, rather than automatic evidence of poor engineering. That distinction changes the management question: teams need to understand which compromises reflect newly discovered requirements and which persist because knowledge, ownership, or coordination is missing.
+
+The article connects that sociotechnical framing to AI-generated code outpacing people’s ability to understand implementation and context. The implication is not that every generated change creates debt, but that output volume alone is an inadequate measure of progress. Review capacity, maintainability, and shared understanding remain necessary counterweights; the supplied material does not quantify how AI changes their cost.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Send duplicates at the same time](https://dev.to/tillping-hq/send-duplicates-at-the-same-time-293l)
+*Sequential webhook replays can conceal the concurrency failure that idempotency is supposed to prevent.*
+
+The article identifies a specific testing blind spot: delivering the same event twice in sequence may succeed even when simultaneous delivery would duplicate a business action. Two handlers can both check whether an event has been processed before either records completion, allowing both to grant credits. A passing replay test therefore does not establish that the check is safe under contention.
+
+Its proposed protection is an atomic claim, such as a database uniqueness constraint, with the local business change committed consistently with the processing record. External actions require separate repeat protection. It also distinguishes duplicate handling from ordering: an event identifier does not establish the latest subscription state, so out-of-order delivery needs its own tests.
+
+*Sources: [Dev.to](https://dev.to/tillping-hq/send-duplicates-at-the-same-time-293l)*
+
+## Cloud
+
+### [Gemini Decision 1 now available on AI Gateway](https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway)
+*Vercel is exposing model-based decisions as probabilities, choices, and scores rather than generated prose.*
+
+Vercel says Google’s Gemini Decision 1 is available through AI Gateway as `google/gemini-decision-1`. The multimodal model returns Boolean probabilities, choices, and scores without generating output tokens, with suggested applications including request routing, policy checks, agent-tool filtering, and ranking. This creates a distinction between asking a model to write an answer and asking it to select or evaluate an action.
+
+Input support depends on the integration: AI SDK 7 supports PDF, audio, and video alongside text and images, while the TypeSafe-compatible and Decisions APIs support text and images. Decision calls appear in Gateway logs and count toward budgets, making them part of existing usage oversight. The announcement supplies no accuracy, latency, or pricing comparisons, so narrower output should not be mistaken for proven lower cost or greater reliability.
+
+*Sources: [Vercel Blog](https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway)*
+
+### [How we migrate TBs from Heroku without logical replication](https://planetscale.com/blog/migrate-from-heroku-to-planetscale)
+*PlanetScale is positioning an open-source migration tool around large transfers without extended downtime.*
+
+PlanetScale says it has equipped customers with an open-source tool that transfers data from Heroku and provides a “replication-based experience,” without requiring a third-party product purchase. The title specifically distinguishes the approach from logical replication. The supplied description does not explain the underlying mechanism, so those two statements should not be expanded into an assumed architecture.
+
+For migration planning, the important promise is continuity during a large transfer, not merely copying data quickly. Evaluating that promise would require details about ongoing-change capture, cutover, verification, and recovery. None are present in the excerpt, and “without extended downtime” does not establish zero downtime or a measurable interruption limit.
+
+*Sources: [PlanetScale Blog](https://planetscale.com/blog/migrate-from-heroku-to-planetscale)*
+
+### [Azure Logic Apps Standard Gets a Local CLI in Preview](https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Logic Apps Standard gains a terminal-based development surface for work previously tied to its VS Code extension.*
+
+Microsoft has released a public preview of the `logicapp` Azure CLI extension. According to InfoQ, it covers local project creation, workflow authoring, runtime lifecycle operations, connector management, run inspection, and test scaffolding. Bringing those activities to the command line broadens how developers can interact with the platform without requiring an editor extension for the listed tasks.
+
+The product team presents that terminal surface as a source of determinism for AI-assisted development. Explicit commands can provide a clearer automation interface, but the excerpt does not demonstrate reproducibility or agent success rates. Preview status also matters: the announcement establishes availability, not production maturity or complete parity across every development workflow.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Google Open-Sources TPU Sync for KV Cache and Weight Transfer on TPUs](https://www.infoq.com/news/2026/11/google-tpu-sync/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Google is opening an infrastructure component focused on moving model data across TPU memory and storage boundaries.*
+
+Google Cloud has open-sourced TPU Sync, a native C++ library for transferring KV cache blocks and model weights. The supplied report identifies TPU high-bandwidth memory, host DRAM, shared storage, and the data-center network as the environments across which it moves data. Its scope is therefore data movement around model execution, rather than a new model or general-purpose application framework.
+
+The engineering significance is access to a specialized transfer component that teams can examine and potentially integrate into TPU infrastructure. However, the excerpt supplies no throughput measurements, compatibility matrix, or integration requirements. Open availability alone does not establish a performance improvement for a particular serving architecture.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/google-tpu-sync/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+## 🔧 DevOps & SRE
+
+### [Gang scheduling and topology-aware placement for AI training in Kubernetes](https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/)
+*Distributed training requires placement decisions that account for a coordinated workload, not just individual pods.*
+
+The CNCF article contrasts Kubernetes’ built-in model of scheduling pods individually and independently with the requirements of distributed AI training. Its title identifies gang scheduling and topology-aware placement as the relevant approaches: coordinating a workload’s scheduling and accounting for hardware placement, rather than treating each pod as an isolated allocation.
+
+This shifts the operational question from whether individual pods fit to whether the distributed job has an appropriate collective placement. The supplied excerpt ends before explaining the full requirements or implementation, however. It supports the scheduling mismatch, but not a recommendation for a particular scheduler, configuration, or claimed utilization improvement.
+
+*Sources: [CNCF Blog](https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/)*
+
+### [Why Nitric stopped asking one AI agent to do everything](https://thenewstack.io/specialized-ai-agent-workflows/)
+*Specialized agent workflows raise an operational design question: how much responsibility should one agent carry?*
+
+The New Stack’s supplied excerpt introduces a five-engineer team whose on-call engineer previously woke three or four times a week. The headline describes Nitric moving away from asking one agent to handle everything. Together, these establish an operational setting and a change in approach, but not the detailed architecture or its measured results.
+
+Specialization can be understood as a way to make individual responsibilities more explicit; it also makes coordination between those responsibilities an engineering concern. The excerpt does not identify agent roles, escalation boundaries, or a post-change paging rate. It would therefore be premature to claim that the new arrangement reduced incidents or eliminated human intervention.
+
+*Sources: [The New Stack](https://thenewstack.io/specialized-ai-agent-workflows/)*
+
+### [LinkedIn Replaces Argo CD with a Custom GitOps Engine for Kubernetes Deployments](https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*LinkedIn’s deployment scale provides context for a custom platform, not a general verdict against Argo CD.*
+
+InfoQ reports that LinkedIn replaced Argo CD with an internally developed GitOps engine. The system deploys across more than 250 Kubernetes clusters, supports over 4,000 services, and manages more than 100,000 deployments each week. Those figures establish the scale of the deployment environment in which LinkedIn made its decision.
+
+The excerpt does not explain the limitations LinkedIn encountered, the replacement’s architecture, or comparative operating costs. A custom engine may fit organization-specific needs, but it also leaves the organization responsible for that implementation. The useful takeaway is a substantial platform decision at a documented scale—not evidence that other teams should make the same substitution.
+
+*Sources: [InfoQ](https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+## Security
+
+### [How to prevent leaks from Claude Code's 'Don't ask again' file](https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/)
+*Persisted command approvals can turn credentials embedded in shell commands into repository exposure.*
+
+GitLab explains that selecting Claude Code’s “Yes, and don’t ask again” option saves the exact approved shell command in `.claude/settings.local.json` inside the project. If that command contains a password or token, the saved permission contains it too. The exposure described is therefore a consequence of persisting sensitive command text, rather than evidence that every permission entry contains a secret.
+
+The operational lesson is to treat agent configuration as a potential secret-bearing artifact, not harmless project metadata. GitLab frames its guide around finding and removing secrets inadvertently committed to hosted projects and repositories, while explicitly stating that its own infrastructure secrets are protected. The supplied excerpt does not establish how many repositories were affected or provide the complete remediation procedure.
+
+*Sources: [GitLab Blog](https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/)*
+
+### [Another Way Police Are Locating People from Their Smartphones](https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html)
+*Ordinary app-generated location data can become a surveillance resource far beyond its original user-facing purpose.*
+
+Schneier on Security describes Penlink’s Webloc as a product sold to police that locates people using information from weather, gaming, email, and religious apps. The quoted reporting says it can reconstruct a smartphone’s movements over the preceding 12 months and update data hourly, enabling what the source characterizes as near-real-time tracking.
+
+The privacy concern is the downstream use of accumulated app data, rather than a phone compromise described in this excerpt. For software professionals, this highlights why data-flow assessment must extend beyond an application’s immediate features. The supplied material does not identify individual apps, explain the complete collection chain, or establish legal authorization requirements; hourly updates should also not be read as continuous live tracking.
+
+*Sources: [Schneier on Security](https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html)*
+
+### [Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover](https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html)
+*The reported crash condition links an unauthenticated attack to a later replica failover.*
+
+The Hacker News reports that CVE-2026-118383 allows an unauthenticated attacker to send two requests that can cause a MongoDB Server crash. The supplied description includes an important condition: the server must subsequently be selected as the primary while still missing recent changes. That makes this a conditional availability problem, not an assertion that any two requests immediately crash every MongoDB installation.
+
+MongoDB reportedly released fixed versions earlier this week. Operators therefore have a patching action to investigate, but the excerpt does not list affected releases or fixed version numbers. It also provides no evidence of exploitation, data theft, or code execution; those outcomes should not be inferred from the headline’s severity label.
+
+*Sources: [The Hacker News](https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html)*
+
+## AI/ML
+
+### [Gemini Robotics 2.5 pushes robots toward factories, but reliability still lags](https://dev.to/spaisee/gemini-robotics-25-pushes-robots-toward-factories-but-reliability-still-lags-5440)
+*Broader robotic competence is advancing, but industrial usefulness still depends on repeatable execution.*
+
+The supplied report says DeepMind evaluated Gemini Robotics 2.5 on more than 200 tasks, including pipetting, folding garments, and tying bows. At Mercedes-Benz, an Apptronik Apollo 2 humanoid achieved a reported 96% success rate handling automotive parts in a kitting workflow. That is a concrete result for one workflow, not an overall reliability score across the evaluation.
+
+The article contrasts that performance with industrial expectations, citing Ryan Whitwam’s assessment that it falls short of human-level reliability and Carolina Parada’s concern that generalization may hinder 99.9% reliability. DeepMind also introduced ASIMOV-Jailbreak, an open benchmark for unsafe-instruction rejection and adversarial-prompt resistance. Together, the developments separate three questions buyers must evaluate: task capability, execution consistency, and safe behavior under problematic instructions.
+
+*Sources: [Dev.to](https://dev.to/spaisee/gemini-robotics-25-pushes-robots-toward-factories-but-reliability-still-lags-5440)*
+
+### [How to Split Vocals and Instrumentals in Your Browser](https://dev.to/otocoda/how-to-split-vocals-and-instrumentals-in-your-browser-59fm)
+*Browser-based stem separation makes audio processing more accessible, but its output remains an estimate.*
+
+This guide describes using a browser-based AI vocal remover to produce vocal and accompaniment stems on a phone or laptop without installing an application. Its examples—karaoke, vocal practice, and transcription by ear—frame the workflow around practical listening tasks rather than guaranteed recovery of studio source tracks.
+
+The key distinction is that a finished stereo recording does not contain a separately removable vocal layer. The model estimates which signal components belong to the voice and which belong to the accompaniment, then creates new files. That makes suitability dependent on the result, not simply whether separation completes. The excerpt does not establish processing location, upload privacy, supported formats, or comparative output quality.
+
+*Sources: [Dev.to](https://dev.to/otocoda/how-to-split-vocals-and-instrumentals-in-your-browser-59fm)*
+
+### [aws-emulator](https://simonwillison.net/2026/Nov/11/aws-emulator/)
+*An official local AWS emulator connects a practical testing need with an unusually large agent-written development effort.*
+
+Simon Willison describes `aws-emulator` as an official AWS project for testing against local versions of AWS services without provisioning a paid API key. He reports that it is written in Rust and was developed by a large group of agents, accumulating 29,684 commits in its first three weeks. That count documents development activity, not service coverage or compatibility.
+
+The immediate engineering value is the prospect of local tests without paid API access, but adoption still depends on how accurately the required services are emulated. Willison notes that macOS and Windows currently require Docker and expresses a preference for a downloadable standalone binary. The supplied material gives no compatibility results, so neither the project’s official status nor its commit volume establishes equivalence with deployed AWS services.
+
+*Sources: [Simon Willison](https://simonwillison.net/2026/Nov/11/aws-emulator/), [AWS on GitHub](https://github.com/aws/aws-emulator)*
+
+### [Holiday Extras is rethinking what it can build with Codex](https://openai.com/business/customer-stories/holidays-extras-codex)
+*OpenAI’s customer story presents coding assistance as a way to turn business expertise into new software.*
+
+OpenAI says Holiday Extras is using Codex to translate customer expertise into better applications, higher booking conversion, and new growth possibilities. The emphasis is on expanding what the business can build, rather than merely accelerating a specified coding task. However, the supplied material is a vendor customer-story description, not an independent evaluation.
+
+For engineering leaders, the relevant distinction is between development output and business outcomes: improved conversion is a different claim from faster implementation. The excerpt supplies no conversion figures, measurement period, comparison group, or delivery details. It supports reporting the claimed direction of benefit, but not attributing a quantified improvement—or its cause—to Codex.
+
+*Sources: [OpenAI Blog](https://openai.com/business/customer-stories/holidays-extras-codex)*
+
+### [Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector](https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+*Tool-selection inspection aims to examine decision mechanisms rather than rely on an agent’s explanatory narrative.*
+
+In this InfoQ presentation, Hannes Hapke describes Dataiku’s open-source Kiji Inspector applying Sparse Autoencoders directly to decision tokens to investigate why agents select particular tools. The supplied abstract also identifies causal ablation and layer-activation extraction through patched vLLM engines. Its focus is internal decision analysis, rather than treating generated chain-of-thought explanations as sufficient evidence.
+
+That distinction matters when an agent’s tool choice determines what it can do next. Production monitoring workflows are part of the presentation, but the excerpt does not establish that the approach provides complete explanations or reliably predicts every failure. The patched-engine requirement is also a concrete integration consideration: this is not described as an inspection layer that can be attached unchanged to any model API.
+
+*Sources: [InfoQ](https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+### [Nvidia is preparing to oust Jensen Huang](https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad)
+*The supplied material contains a leadership-change headline, but no reporting excerpt that substantiates it.*
+
+This item supplies a Wall Street Journal title and URL alongside Hacker News discussion metadata. It does not include the article’s reporting, named sources, company statements, or supporting evidence. The headline must therefore be treated here as an unverified claim, not confirmation that Nvidia has decided on a leadership change.
+
+The discussion’s reported popularity does not resolve that evidentiary gap. A leadership transition would be relevant context for AI infrastructure professionals, but this material supports no conclusions about succession, timing, motives, or effects on Nvidia’s strategy. Those questions remain unanswered rather than grounds for extrapolation.
+
+*Sources: [The Wall Street Journal — supplied headline and link only](https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad)*
+
+## Quick Reads
+
+---
+
+- **[I built a virtual stock community where AI agents trade, debate, and compete on their own](https://dev.to/unknown_kiimy/i-built-a-virtual-stock-community-where-ai-agents-trade-debate-and-compete-on-their-own-1p7m)** — The author introduces AgorUno, a side project where AI agents autonomously trade, debate, and compete in a virtual stock community. *Source: [Dev.to (Top)](https://dev.to/unknown_kiimy/i-built-a-virtual-stock-community-where-ai-agents-trade-debate-and-compete-on-their-own-1p7m)*
+
+- **[MCP's file transfer draft keeps bytes out of your model's context: 5 mechanics and 3 open security questions](https://dev.to/piekwerk/mcps-file-transfer-draft-keeps-bytes-out-of-your-models-context-5-mechanics-and-3-open-security-16dd)** — The article examines a draft MCP extension for transferring files between clients and tools without putting file bytes in model context, outlining five mechanics and three unresolved security questions. *Source: [Dev.to (Top)](https://dev.to/piekwerk/mcps-file-transfer-draft-keeps-bytes-out-of-your-models-context-5-mechanics-and-3-open-security-16dd)*
+
+- **[Before Your AI Agent Spends Money, Ask How Its Approvals Expire](https://dev.to/rick_leffke_6541e28129e2a/before-your-ai-agent-spends-money-ask-how-its-approvals-expire-2c74)** — The article raises approval expiration as a design question for businesses that put humans in the loop before AI agents execute financial actions. *Source: [Dev.to (Top)](https://dev.to/rick_leffke_6541e28129e2a/before-your-ai-agent-spends-money-ask-how-its-approvals-expire-2c74)*
+
+- **[Transferring 300,000 small ArrayBuffers from a Worker was slower than copying them (in Chromium)](https://dev.to/openedfile/transferring-300000-small-arraybuffers-from-a-worker-was-slower-than-copying-them-in-chromium-240)** — The author reports that transferring 300,000 small ArrayBuffers from a Web Worker was slower than copying them in Chromium, in the context of a browser-based DXF viewer. *Source: [Dev.to (Top)](https://dev.to/openedfile/transferring-300000-small-arraybuffers-from-a-worker-was-slower-than-copying-them-in-chromium-240)*
+
+- **[Building GiveWithTrust: Three Priorities From the Past Few Weeks](https://dev.to/techgeniuskaran/building-givewithtrust-three-priorities-from-the-past-few-weeks-391e)** — The author shares a GiveWithTrust startup update organized around three recent development priorities. *Source: [Dev.to (Top)](https://dev.to/techgeniuskaran/building-givewithtrust-three-priorities-from-the-past-few-weeks-391e)*
+
+- **[Less is better: why we removed the AI gateway, MCP and the web UI](https://dev.to/ndreno/less-is-better-why-we-removed-the-ai-gateway-mcp-and-the-web-ui-27fe)** — The author explains removing an AI gateway, MCP, and a web UI on the road to version 1.0, framing reduced code as a security benefit. *Source: [Dev.to (Top)](https://dev.to/ndreno/less-is-better-why-we-removed-the-ai-gateway-mcp-and-the-web-ui-27fe)*
+
+- **[A false smoke alarm almost drowned Jane Street's only NYC datacenter](https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/)** — This account describes a false smoke alarm that reportedly nearly flooded Jane Street’s only New York City datacenter. *Source: [Hacker News (Best)](https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/)*
+
+- **[Using Laravel Boost for package development with Orchestra Testbench](https://freek.dev/3219-using-laravel-boost-for-package-development-with-orchestra-testbench)** — Freek Van der Herten highlights Rias Van der Veken’s guide to pairing Laravel Boost with Orchestra Testbench for package development. *Source: [Freek Van der Herten](https://freek.dev/3219-using-laravel-boost-for-package-development-with-orchestra-testbench)*
+
+- **[Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them](https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html)** — This webinar focuses on identity blind spots in security operations centers and how to address them despite abundant alerts, logs, and monitoring tools. *Source: [The Hacker News](https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html)*
+
+- **[New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html)** — N-able says it is investigating a public disclosure claiming additional vulnerabilities in on-premises N-central, including exploits against patched servers that could provide root-level remote code execution and Windows SYSTEM access. *Source: [The Hacker News](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html)*
+
+- **[Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign](https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html)** — The report describes a phishing operation that has stolen live Google sessions from corporate users since mid-August 2026, using calendar invitations and live proxies. *Source: [The Hacker News](https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html)*
+
+- **[PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)** — PTC has released patches for a critical vulnerability in Windchill and FlexPLM that could allow remote code execution if successfully exploited, according to the report. *Source: [The Hacker News](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)*
+
+- **[Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs](https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html)** — Google says Cloud VMs using AMD Turin processors need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws that could expose data across processes. *Source: [The Hacker News](https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html)*
+
+- **[Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data](https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html)** — The report covers 16 Node.js security fixes, including HTTP/2 bugs involving server crashes and cross-connection data leaks. One flaw lets unauthenticated clients crash servers using built-in HTTP/2 support in the 24.x and 26.x release lines. *Source: [The Hacker News](https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html)*
+
+- **[Webinar Recap: Agentic Debugging of Embedded Systems With CLion and TRACE32®](https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/)** — JetBrains recaps its webinar with Lauterbach on CLion’s TRACE32 integration, which supports embedded-target debugging and lets AI agents start and control debug sessions. *Source: [JetBrains Blog](https://blog.jetbrains.com/clion/2026/11/webinar-recap-trace32/)*
+
+- **[Gemini Decisions API](https://simonwillison.net/2026/Nov/11/gemini-decisions-api/)** — Simon Willison highlights Google’s Gemini Decisions API announcement. *Source: [Simon Willison](https://simonwillison.net/2026/Nov/11/gemini-decisions-api/)*
+
+- **[Should You Actually Add AI To That? A Four-Question Audit For Product Teams](https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/)** — This four-question audit helps product teams assess whether an AI feature delivers useful time savings once users’ effort checking its results is considered. *Source: [Smashing Magazine](https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/)*
+
+- **[JioHotstar Benchmarks Knowledge Bases for AI Coding Agents](https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)** — InfoQ reports on JioHotstar’s evaluation of six approaches to code retrieval for AI coding agents. *Source: [InfoQ](https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+- **[Tests as data: ensuring AI-generated code does what we want](https://martinfowler.com/articles/tests-as-data.html)** — The article explores treating tests as data to help ensure AI-generated code behaves as intended. *Source: [Martin Fowler](https://martinfowler.com/articles/tests-as-data.html)*
+
+- **[Building an Open Service Directory registry for your platform’s support services](https://zendesk.engineering/building-an-open-service-directory-registry-for-your-platforms-support-services-4074b0cffc3c?source=rss----a88376ea904a---4)** — Part two of a three-part series addresses engineers building or operating an Open Service Directory registry for their platform’s support services. *Source: [Zendesk Engineering](https://zendesk.engineering/building-an-open-service-directory-registry-for-your-platforms-support-services-4074b0cffc3c?source=rss----a88376ea904a---4)*
+
+- **[Why the data center you dread might never even be built](https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/)** — TechCrunch examines obstacles to data center construction, including local opposition, permitting delays, and competition for electricity. *Source: [TechCrunch](https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/)*
+
+- **[Spacelift vs Terraform Enterprise: Features & Pricing Comparison](https://spacelift.io/blog/spacelift-vs-terraform-enterprise)** — Spacelift’s comparison covers features, pricing, policy, self-hosting, AI capabilities, and migration options for its platform and Terraform Enterprise. *Source: [Spacelift Blog](https://spacelift.io/blog/spacelift-vs-terraform-enterprise)*
+
+- **[Inside an AI Attack Against a US Retailer](https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer)** — Dark Reading reports that an attacker switched from unsuccessful hand-typed commands to AI-generated scripts and achieved lateral movement within minutes at a US retailer. *Source: [Dark Reading](https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer)*
+
+- **[Quiz: Learn With Mentor AI: Working Through a Coding Exercise](https://realpython.com/quizzes/mentor-ai-coding-exercise/)** — This quiz practices using Mentor AI to work through a Python coding exercise, covering mutable default arguments and checking for `None` with `is`. *Source: [Real Python](https://realpython.com/quizzes/mentor-ai-coding-exercise/)*
+
+- **[Nvidia is reportedly preparing to fire Jensen Huang](https://www.theverge.com/tech/1031652/jensen-huang-rumor)** — The Verge reports that Nvidia’s board is preparing to dismiss CEO Jensen Huang; the supplied material does not establish that a dismissal has occurred. *Source: [The Verge - Tech](https://www.theverge.com/tech/1031652/jensen-huang-rumor)*
+
+- **[GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls](https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)** — InfoQ reports that GitHub Agentic Workflows is generally available with isolation and budget controls. *Source: [InfoQ](https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)*
+
+- **[Expensive accelerators, no workload-level visibility: Introducing Amazon CloudWatch accelerated compute insights](https://thenewstack.io/cloudwatch-accelerated-compute-insights/)** — The article introduces Amazon CloudWatch accelerated compute insights in the context of workload-level visibility gaps for expensive accelerators. *Source: [The New Stack](https://thenewstack.io/cloudwatch-accelerated-compute-insights/)*
+
+- **[Developers have been hacking around MCP’s file-upload problem for two years. A fix is taking shape.](https://thenewstack.io/mcp-file-upload-extension/)** — The New Stack examines an emerging MCP file-upload extension intended to address a problem developers have worked around for two years. *Source: [The New Stack](https://thenewstack.io/mcp-file-upload-extension/)*
+
+- **[Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html)** — The report says an attacker used stolen credentials for 4,837 GitHub accounts to plant a CI secret stealer in more than 1,806 repositories those accounts could write to. *Source: [The Hacker News](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html)*
+
+- **[Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html)** — The report identifies CVE-2026-119618 as a critical vulnerability in Apache HTTP Server’s `mod_http2` module that could allow unauthenticated remote code execution. *Source: [The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html)*

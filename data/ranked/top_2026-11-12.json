@@ -1,0 +1,390 @@
+[
+  {
+    "id": "abf7ffe0df3a61f5",
+    "title": "How to Set Up a Simple Bookkeeping System for Your Freelance Business",
+    "url": "https://dev.to/alexlin/how-to-set-up-a-simple-bookkeeping-system-for-your-freelance-business-1671",
+    "summary": "<h2>\n  \n  \n  How to Set Up a Simple Bookkeeping System for Your Freelance Business\n</h2>\n\n<p>Most freelancers don't have a bookkeeping problem. They have a \"where did the money go\" problem — income lands in one account, expenses leak out of another, and by tax time the whole year is a pile of bank statements and guesswork.</p>\n\n<p>A bookkeeping system doesn't need to be complicated. It needs to answer three questions at any moment: how much came in, how much went out, and how much is actually mine to spend. Here is the setup I use, built in one afternoon and maintained in about 30 minutes a week in the sample below.</p>\n\n<h3>\n  \n  \n  1. Give every dollar a bucket the moment it arrives\n</h3>\n\n<p>Freelance income is not salary. No one withholds tax, no one sets aside savings, and the number that hits your account is not the number you can spend. So the first rule: split income the day it arrives, before you spend any of it.</p>\n\n<p>I use five buckets: tax set-aside, business expenses, sa",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:09:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/alexlin/how-to-set-up-a-simple-bookkeeping-system-for-your-freelance-business-1671"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "b931ad9a1e841f92",
+    "title": "Gemini Robotics 2.5 pushes robots toward factories, but reliability still lags",
+    "url": "https://dev.to/spaisee/gemini-robotics-25-pushes-robots-toward-factories-but-reliability-still-lags-5440",
+    "summary": "<h2>Quick take</h2>\n\n<ul>\n<li>DeepMind evaluated Gemini Robotics 2.5 on more than 200 tasks, including pipetting, folding garments and tying bows.</li>\n<li>At Mercedes-Benz, an Apptronik Apollo 2 humanoid achieved a 96% success rate handling automotive parts in a kitting workflow.</li>\n<li>Ryan Whitwam called the Mercedes result short of human-level reliability, while Carolina Parada said generalization may hinder 99.9% reliability.</li>\n<li>DeepMind introduced ASIMOV-Jailbreak, an open benchmark testing whether robots reject unsafe instructions and resist adversarial prompts.</li>\n</ul>\n\n<h2>Why it matters</h2>\n\n<p>For manufacturers, the shift is from narrowly programmed demonstrations toward more adaptable robots that can reduce the need for separate control systems, though buyers may still restrict them to low-risk work or keep humans involved. The next test is whether Google and its partners can cut supervision, downtime and integration costs while delivering predictable performanc",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:09:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/spaisee/gemini-robotics-25-pushes-robots-toward-factories-but-reliability-still-lags-5440"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "872c2dc92e222731",
+    "title": "How to Split Vocals and Instrumentals in Your Browser",
+    "url": "https://dev.to/otocoda/how-to-split-vocals-and-instrumentals-in-your-browser-59fm",
+    "summary": "<p>If you want a karaoke track, a clean vocal for practice, or a stem you can slowly transcribe by ear, you do not always need a desktop DAW or a downloaded model. A browser-based <a href=\"https://otocoda.com/\" rel=\"noopener noreferrer\">AI vocal remover</a> can separate a song into a vocal stem and an accompaniment stem on a phone or a laptop, without installing an app.</p>\n\n<p>This is a practical guide to when that workflow is good enough, how to judge the result, and how to avoid the usual disappointments.</p>\n\n<h2>\n  \n  \n  What you are actually asking the tool to do\n</h2>\n\n<p>Stem separation is not \"deleting the singer from the mix\" in the way a graphic designer would delete a layer. In a finished stereo file, the vocal is already baked into the same two channels as the drums, bass, and reverb. An AI vocal remover estimates which parts of the signal are likely to be a voice and which parts are likely to be the rest of the arrangement, then writes two new files.</p>\n\n<p>That means tw",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:07:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/otocoda/how-to-split-vocals-and-instrumentals-in-your-browser-59fm"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "5d32573e90968b4a",
+    "title": "Gemini Decision 1 now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gemini-decision-1\">Gemini Decision 1 from Google</a> is now available on AI Gateway. The multimodal decision model works with text, images, audio, video, and PDF documents, returning Boolean probabilities, choices, and scores. Use it to route requests, check policies, filter agent tools, or rank results without generating output tokens.</p><p>Use <code>google/gemini-decision-1</code> with the AI SDK, TypeSafe-compatible API, or Decisions API.</p><p>PDF, audio, and video inputs are supported through AI SDK 7. The TypeSafe-compatible and Decisions APIs support text and image inputs.</p><div></div><p>AI Gateway provides a unified way to access models and track usage and cost. Decision calls appear in <a href=\"https://vercel.com/docs/ai-gateway/observability-and-spend/logs\">logs</a> and count toward <a href=\"https://vercel.com/docs/ai-gateway/observability-and-spend/budgets\">budgets</a> alongside other model requests.</p><p>See the <a href=\"",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "f2367e9f658fc976",
+    "title": "How we migrate TBs from Heroku without logical replication",
+    "url": "https://planetscale.com/blog/migrate-from-heroku-to-planetscale",
+    "summary": "We've equipped our customers with an open source tool that not only quickly transfers your data but also provides a replication-based experience, so that any user can migrate from Heroku without extended downtime or the need to purchase a third-party product.",
+    "category": "cloud",
+    "source_name": "PlanetScale Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PlanetScale Blog",
+        "url": "https://planetscale.com/blog/migrate-from-heroku-to-planetscale"
+      }
+    ],
+    "score": 10.59
+  },
+  {
+    "id": "8a3749ebbff66324",
+    "title": "How to prevent leaks from Claude Code's 'Don't ask again' file",
+    "url": "https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/",
+    "summary": "<blockquote><p><strong>This guide details how to find and remove secrets that were inadvertently committed to projects and repositories hosted on GitLab. We’ve confirmed that GitLab’s own infrastructure secrets are protected.</strong></p></blockquote><p>In Claude Code, Anthropic’s coding agent, a developer can approve a shell command by selecting “Yes, and don’t ask again.” Claude then saves that exact command to <code>.claude/settings.local.json</code> in the project folder and runs it without asking in the future. If the command contained a password or a token, so does the file:</p><pre><code><span class=\"line\"><span class=\"sgsFI\">{\n</span></span><span class=\"line\"><span class=\"sYu0t\">  &quot;permissions&quot;</span><span class=\"sgsFI\">: {\n</span></span><span class=\"line\"><span class=\"sYu0t\">    &quot;allow&quot;</span><span class=\"sgsFI\">: [\n</span></span><span class=\"line\"><span class=\"sYBdl\">      &quot;Bash(npm test:*)&quot;</span><span class=\"sgsFI\">,\n</span></span><span class=\"",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-11-11T00:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ramongebben/responsive-type-and-spacing-by-changing-only-the-root-font-size-1hd9"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sampomannila/money-math-in-plain-javascript-lessons-from-building-a-loan-calculator-3d6b"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/next-month"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "3baf25bb2ac34e54",
+    "title": "Gang scheduling and topology-aware placement for AI training in Kubernetes",
+    "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/",
+    "summary": "Distributed AI training workloads impose complex scheduling requirements that Kubernetes&#8217;s built-in scheduler can&#8217;t meet. Kubernetes schedules pods individually and independently, but distributed training introduces two requirements that break this model: Pods must land on hardware with...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-12T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/"
+      }
+    ],
+    "score": 19.02
+  },
+  {
+    "id": "d8ae8f7c364c1802",
+    "title": "Another Way Police Are Locating People from Their Smartphones",
+    "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html",
+    "summary": "<p>Penlink&#8217;s Webloc is an application that <a href=\"https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzg4OTgyNSwiZXhwIjoxNzk0NDk0NjI1LCJhcnRpY2xlSWQiOiJUTzEyT0pUM0JaTUwwMCIsImJjb25uZWN0SWQiOiJCRkMyNTg1RUFENTA0RTM2OUU3MzBBNTBCNkVGRTk5RSJ9.uWvJBwAKCyQsXzSli3He-XStaEQCVyprRIKmrsheWZs&#38;utm_source=substack&#38;utm_medium=email&#38;leadSource=article-gifting\">locates</a> people using information from the weather, gaming, email, and religious apps on their phone. It&#8217;s sold to the police.</p>\n<blockquote><p>The tool collects vast quantities of location data from smartphones via commonly used weather, gaming, email and religious apps. It can build a detailed picture of where a smartphone has been over the past 12 months, and update the data hourly, showing the movements of people on a near real-time basis. Law enforcement officers can use Web",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-12T12:02:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "133253baf8943393",
+    "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+    "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+    "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.\n\nMongoDB, the company that makes the database, released fixed versions earlier this week.\n\nThe affected servers are members of a replica",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-12T09:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html"
+      }
+    ],
+    "score": 19.98
+  },
+  {
+    "id": "f95fdcfb832450a4",
+    "title": "aws-emulator",
+    "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+    "summary": "<p><strong><a href=\"https://github.com/aws/aws-emulator\">aws-emulator</a></strong></p>\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.</p>\n<p>It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about <a href=\"https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html\">how it came to be</a> in a guest post on Werner Vogels' blog.</p>\n<p>It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms.\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/amazon\">amazon</a>, <a href=\"https://simonwillison.net/tags/amazon-web-services\">amazon-web-services</a>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T21:18:30+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/aws/aws-emulator"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "3e8f71b4d23b54f7",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-12T09:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/business/customer-stories/holidays-extras-codex"
+      }
+    ],
+    "score": 21.34
+  },
+  {
+    "id": "431e3ce5463ea60d",
+    "title": "Why Nitric stopped asking one AI agent to do everything",
+    "url": "https://thenewstack.io/specialized-ai-agent-workflows/",
+    "summary": "<img alt=\"Abstract 3D digital visualization of glowing red and cyan network nodes and telemetry waveforms representing AI incident triage.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"670\" src=\"https://cdn.thenewstack.io/media/2026/11/16ba7ed5-getty-images-8pwk-ctbm2y-unsplash-1024x670.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>We&#8217;re a team of five engineers, and we used to wake the on-call engineer three or four times a week</p>\n<p>The post <a href=\"https://thenewstack.io/specialized-ai-agent-workflows/\">Why Nitric stopped asking one AI agent to do everything</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-11T16:00:00+00:00",
+    "coverage_count": 7,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-fable-opus-cost/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/nvidia-donates-openshell-cncf/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-fable-game-demos/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/aws-emulator-ai-agents/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/specialized-ai-agent-workflows/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/coreweave-tests-ai-integrations/"
+      },
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
+      }
+    ],
+    "score": 29.0
+  },
+  {
+    "id": "45977e8087b09f27",
+    "title": "Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector",
+    "url": "https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/explainable-ai-llm-agent-decisions/en/mediumimage/HannesHapke-medium-1793278895069.jpeg\" /><p>Hannes Hapke shares how Dataiku’s open-source Kiji Inspector applies Sparse Autoencoders (SAEs) directly to decision tokens to expose why agents pick specific tools. Moving past superficial chain-of-thought narratives, he discusses causal ablation, layer activation extraction via patched vLLM engines, and production monitoring workflows for software architects and senior engineering leaders.</p> <i>By Hannes Hapke</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "2bb0fdbde63f7897",
+    "title": "Azure Logic Apps Standard Gets a Local CLI in Preview",
+    "url": "https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/logic-apps-local-cli/en/headerimage/generatedHeaderImage-1793791837422.jpg\" /><p>Microsoft has released a public preview of the logicapp extension for the Azure CLI, adding local project creation, workflow authoring, a runtime lifecycle, connector management, run inspection, and test scaffolding for Logic Apps Standard, work that previously required the VS Code extension. The product team pitches the terminal surface as determinism for AI-assisted development.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T10:23:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/logic-apps-local-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "98fc775575798b06",
+    "title": "Author Q+A: finprim is a Case for One Financial Validation Library in TypeScript",
+    "url": "https://www.infoq.com/news/2026/11/finprim-validation-qanda/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/finprim-validation-qanda/en/headerimage/generatedHeaderImage-1793961374899.jpg\" /><p>finprim is an MIT-licensed TypeScript library that offers IBAN, BIC, card, sort code, VAT, routing number and loan functions through one API with no runtime dependencies. Its author built it after duplicated validators drifted apart across web and mobile. It validates and formats data only, and does not process payments. He is cautious about adding SEPA and ACH file generation.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T09:28:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/finprim-validation-qanda/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "db581cd49c5bfe78",
+    "title": "Technical Debt is Social; it is the Price of Learning by Doing",
+    "url": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/tech-debt-learning-doing/en/headerimage/header-1794404225270.jpg\" /><p>Technical debt is not necessarily a sign of poor engineering. It can be the price of learning through software in use. As AI accelerates code production beyond our capacity to understand code and context, technical debt increasingly becomes a sociotechnical challenge.</p> <i>By Ben Linders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T11:05:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.1
+  },
+  {
+    "id": "990c9fc22bc8e262",
+    "title": "LinkedIn Replaces Argo CD with a Custom GitOps Engine for Kubernetes Deployments",
+    "url": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/kubernetes-argocd-linkedin/en/headerimage/generatedHeaderImage-1794414453878.jpg\" /><p>In a recent post, LinkedIn revealed it has replaced Argo CD with its own GitOps engine. This new system deploys applications across over 250 Kubernetes clusters. It supports more than 4,000 services and manages over 100,000 deployments each week.</p> <i>By Claudio Masolo</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.07
+  },
+  {
+    "id": "8e1ab4c81cabfd89",
+    "title": "Google Open-Sources TPU Sync for KV Cache and Weight Transfer on TPUs",
+    "url": "https://www.infoq.com/news/2026/11/google-tpu-sync/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-tpu-sync/en/headerimage/generatedHeaderImage-1794402814105.jpg\" /><p>Google Cloud has open-sourced TPU Sync, a native C++ library that moves KV cache blocks and model weights between TPU HBM, host DRAM, shared storage, and the data center network.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-12T10:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-tpu-sync/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.3
+  },
+  {
+    "id": "af5fe6eabfdf04cc",
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "summary": "<p>Article URL: <a href=\"https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad\">https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50459703\">https://news.ycombinator.com/item?id=50459703</a></p>\n<p>Points: 1095</p>\n<p># Comments: 1472</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-11T22:31:06+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html"
+      }
+    ],
+    "score": 22.84
+  },
+  {
+    "id": "e7b5bb18c85c0273",
+    "title": "Send duplicates at the same time",
+    "url": "https://dev.to/tillping-hq/send-duplicates-at-the-same-time-293l",
+    "summary": "<p>Replaying a webhook twice in sequence can miss the race that breaks fulfillment.</p>\n\n<p>Deliver the same event concurrently in a test environment. Both handlers might check \"already processed?\" before either saves the answer. Now both grant credits.</p>\n\n<p>Use an atomic claim, such as a database uniqueness constraint, and commit the local business change consistently with the processing record. External actions need their own protection against repeats.</p>\n\n<p>Test out-of-order events separately. An event ID identifies a delivery; it doesn't tell you which subscription state is current.</p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-12T13:07:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tillping-hq/send-duplicates-at-the-same-time-293l"
+      }
+    ],
+    "score": 21.0
+  }
+]

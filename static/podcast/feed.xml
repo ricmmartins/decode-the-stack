@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Wed, 11 Nov 2026 13:25:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 13:23:07 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>AI adoption puts reliability and control in focus</title>
+      <description>Thursday’s reporting connects expanding AI capabilities with a harder engineering question: how to make them predictable, observable, and safe. Local development tools, deployment infrastructure, and concurrent-event handling reinforce the same…</description>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-12.mp3?v=7a41df1c02e5" length="11782417" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-12.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-12-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Thursday’s reporting connects expanding AI capabilities with a harder engineering question: how to make them predictable, observable, and safe. Local development tools, deployment infrastructure, and concurrent-event handling reinforce the same…</itunes:summary>
+      <itunes:duration>982</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-12.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>AI adoption puts production safeguards in focus</title>
       <description>Wednesday’s reporting connects expanding AI capabilities with a familiar engineering challenge: making systems dependable after they leave the demo. New models and GPU infrastructure promise more ambitious workloads, while exposed applications,…</description>
