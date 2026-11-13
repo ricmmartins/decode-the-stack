@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-12T13:22:52.999170+00:00",
+  "updated_at": "2026-11-13T13:24:23.452223+00:00",
   "configured_feeds": 242,
-  "editions_published": 10,
-  "headlines_published": 482,
-  "sources_credited": 66,
-  "latest_edition_date": "2026-11-12",
+  "editions_published": 11,
+  "headlines_published": 532,
+  "sources_credited": 68,
+  "latest_edition_date": "2026-11-13",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 110
-    },
-    {
-      "name": "InfoQ",
-      "headlines": 46
+      "headlines": 122
     },
     {
       "name": "The Hacker News",
-      "headlines": 46
+      "headlines": 51
+    },
+    {
+      "name": "InfoQ",
+      "headlines": 48
     },
     {
       "name": "Hacker News (Best)",
@@ -25,7 +25,7 @@
     },
     {
       "name": "TechCrunch",
-      "headlines": 21
+      "headlines": 29
     },
     {
       "name": "The Verge - Tech",
@@ -33,58 +33,58 @@
     },
     {
       "name": "Real Python",
-      "headlines": 15
+      "headlines": 17
     },
     {
       "name": "The New Stack",
-      "headlines": 15
+      "headlines": 17
     },
     {
       "name": "Vercel Blog",
-      "headlines": 14
+      "headlines": 15
     },
     {
       "name": "Simon Willison",
-      "headlines": 13
+      "headlines": 14
     },
     {
       "name": "JetBrains Blog",
-      "headlines": 12
+      "headlines": 13
     },
     {
       "name": "Lobsters",
-      "headlines": 12
+      "headlines": 13
+    },
+    {
+      "name": "OpenAI Blog",
+      "headlines": 11
     },
     {
       "name": "CNCF Blog",
       "headlines": 10
     },
     {
-      "name": "OpenAI Blog",
+      "name": "The Daily WTF",
       "headlines": 10
     },
     {
-      "name": "The Daily WTF",
-      "headlines": 9
-    },
-    {
       "name": "Wired",
-      "headlines": 8
+      "headlines": 10
     },
     {
       "name": "Freek Van der Herten",
-      "headlines": 7
+      "headlines": 8
     },
     {
       "name": "Schneier on Security",
-      "headlines": 7
-    },
-    {
-      "name": "Cloudflare Blog",
-      "headlines": 5
+      "headlines": 8
     },
     {
       "name": "Dark Reading",
+      "headlines": 6
+    },
+    {
+      "name": "Cloudflare Blog",
       "headlines": 5
     },
     {
@@ -92,11 +92,15 @@
       "headlines": 5
     },
     {
+      "name": "Martin Fowler",
+      "headlines": 5
+    },
+    {
       "name": "Nvidia Developer Blog",
       "headlines": 5
     },
     {
-      "name": "Martin Fowler",
+      "name": "Grafana Blog",
       "headlines": 4
     },
     {
@@ -108,7 +112,7 @@
       "headlines": 3
     },
     {
-      "name": "Grafana Blog",
+      "name": "Google Developers Blog",
       "headlines": 3
     },
     {
@@ -121,6 +125,10 @@
     },
     {
       "name": "Smashing Magazine",
+      "headlines": 3
+    },
+    {
+      "name": "Stack Overflow Blog",
       "headlines": 3
     },
     {
@@ -140,11 +148,15 @@
       "headlines": 2
     },
     {
-      "name": "Google AI Blog",
+      "name": "GitHub Blog",
       "headlines": 2
     },
     {
-      "name": "Google Developers Blog",
+      "name": "GitLab Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Google AI Blog",
       "headlines": 2
     },
     {
@@ -164,10 +176,6 @@
       "headlines": 2
     },
     {
-      "name": "Stack Overflow Blog",
-      "headlines": 2
-    },
-    {
       "name": "Zendesk Engineering",
       "headlines": 2
     },
@@ -177,6 +185,10 @@
     },
     {
       "name": "Ars Technica",
+      "headlines": 1
+    },
+    {
+      "name": "Changelog",
       "headlines": 1
     },
     {
@@ -200,15 +212,11 @@
       "headlines": 1
     },
     {
-      "name": "GitHub Blog",
+      "name": "Fly.io Blog",
       "headlines": 1
     },
     {
       "name": "GitHub Engineering",
-      "headlines": 1
-    },
-    {
-      "name": "GitLab Blog",
       "headlines": 1
     },
     {
@@ -275,23 +283,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 348
+      "headlines": 385
     },
     {
       "name": "Security",
-      "headlines": 64
+      "headlines": 71
     },
     {
       "name": "AI/ML",
-      "headlines": 27
+      "headlines": 29
     },
     {
       "name": "Cloud",
-      "headlines": 22
+      "headlines": 24
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 20
+      "headlines": 22
     }
   ],
   "history": [
@@ -344,6 +352,11 @@
       "date": "2026-11-12",
       "headlines": 50,
       "sources": 25
+    },
+    {
+      "date": "2026-11-13",
+      "headlines": 50,
+      "sources": 24
     }
   ]
 }

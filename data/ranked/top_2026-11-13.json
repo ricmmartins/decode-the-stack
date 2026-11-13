@@ -1,0 +1,354 @@
+[
+  {
+    "id": "055da84734fc7f3e",
+    "title": "OpenClaw Review 2026: A Cross-Platform AI Assistant",
+    "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/openclaw-review-2026-a-cross-platform-ai-assistant-3723",
+    "summary": "<p>OpenClaw is an open-source framework that connects AI models to messaging apps, calendars, and automation tools, so the assistant lives where you already talk. This review covers what it does, where the architecture holds up, and what it costs you in setup time before it becomes useful.</p>\n\n<h2>\n  \n  \n  What Is OpenClaw?\n</h2>\n\n<p>OpenClaw is an open-source personal AI assistant framework. You connect it to messaging platforms (Signal, Telegram, Discord, Feishu), give it access to tools (web search, file system, calendar, shell commands), and it acts as your always-on assistant. Think of it as building your own Jarvis.</p>\n\n<p>Unlike closed-source alternatives, OpenClaw is built on an extensible plugin architecture. You can write custom skills, define memory files, and pipe data between tools — all without touching a cloud service you don't control. The project is actively maintained on GitHub with a growing community of contributors.</p>\n\n<h2>\n  \n  \n  Quick Verdict\n</h2>\n\n<p>If yo",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/openclaw-review-2026-a-cross-platform-ai-assistant-3723"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "9c59520baa3ec1f0",
+    "title": "Add a fail-closed edge check before your NIFTY options orders",
+    "url": "https://dev.to/aion-analytics-in/add-a-fail-closed-edge-check-before-your-nifty-options-orders-4fk9",
+    "summary": "<p>If you run an automated options strategy on NIFTY, BANK NIFTY or SENSEX, your system probably already knows how to find setups. The question it usually cannot answer is a narrower one: for this contract, right now, is there an edge that survives spread, slippage and costs?</p>\n\n<p>At <a href=\"https://aionanalytics.in\" rel=\"noopener noreferrer\">AION Analytics (India)</a> we built <a href=\"https://aionanalytics.in/models/edge-engine\" rel=\"noopener noreferrer\">Edge Engine</a> to answer exactly that question and nothing else. It is a hosted API. You ask about a contract, it tells you whether it is tradable, and your own code decides what to do with that. This post shows how to wire it in as a fail-closed gate in about twenty lines of Python.</p>\n\n<h2>\n  \n  \n  What it is, in one paragraph\n</h2>\n\n<p>Edge Engine assesses every live, unexpired NIFTY, BANK NIFTY and SENSEX contract continuously and returns a small, consistent record for each one: <code>tradable</code>, a signed <code>edge_sc",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aion-analytics-in/add-a-fail-closed-edge-check-before-your-nifty-options-orders-4fk9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "34f463953541a9db",
+    "title": "Parsing Ride-History CSVs Before Drawing Spending Charts",
+    "url": "https://dev.to/begoodtool/parsing-ride-history-csvs-before-drawing-spending-charts-d46",
+    "summary": "<p>A spending chart can look perfectly reasonable while summing the wrong CSV column. I'll walk through the browser-side import pipeline I use to separate correctly parsed fields from values that are actually safe to summarize.</p>\n\n<p>The implementation accepts a ride export, identifies date and amount columns, builds normalized records, and derives summaries and charts from those records. Three details are worth separating from the visualization layer: quoted CSV fields, exact-first header matching, and currencies that must never be treated as interchangeable numbers.</p>\n\n<h2>\n  \n  \n  A Comma Is Not Always a Field Separator\n</h2>\n\n<p>Splitting every line on commas works until an address contains a comma. Splitting the whole file into lines first also breaks when a quoted field contains a newline.</p>\n\n<p>The parser in this implementation walks the text character by character. It tracks the current field, the current row, and whether it is inside a quoted field. This is the quoted-fi",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/begoodtool/parsing-ride-history-csvs-before-drawing-spending-charts-d46"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "cc52598bec519511",
+    "title": "Inkling 2 Small now available on AI Gateway",
+    "url": "https://vercel.com/changelog/inkling-2-small-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/inkling-2-small\">Inkling 2 Small from Thinking Machines</a> is now available on AI Gateway. The multimodal reasoning model supports coding agents, visual understanding, and professional knowledge work, with text and image inputs and text output.</p><p>Inkling 2 Small can work through extended coding tasks, use tools to gather information, and turn that information into documents, spreadsheets, and other deliverables. Its visual capabilities include reading text in images, interpreting charts and infographics, and inspecting interfaces. For visual development, it can use screenshots to check the output of the code it writes and guide the next revision.</p><p>Use <code>thinkingmachines/inkling-2-small</code> as the model name:</p><div></div><p>To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup:</p><div></div><p>Then select <code>thinkingmachines/inkling-2-small</code> in the agent. See the <a hre",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/inkling-2-small-now-available-on-ai-gateway"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gemini-4-hydrogen-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "b98886858b5476e1",
+    "title": "Throwing Out The Phonebook",
+    "url": "https://fly.io/blog/throwing-out-the-phonebook/",
+    "summary": "<div class=\"lead\"><p>There’s really only one hard problem in software engineering: synchronization. OK, maybe two: cache invalidation and synchronization. Synchronization is the harder one though, especially when the thing on the other side is eventually consistent. This year we rebuilt 6PN, the private network between your Fly Machines, and we did it by avoiding the hard thing.</p>\n</div>\n<p>To start, here&rsquo;s the status quo: every Fly Machine gets a private IPv6 address, and every other Machine in your organization can reach it. We call that network 6PN. It&rsquo;s what <code>my-db.internal</code> points at, and it&rsquo;s how your app server talks to your database without either of them touching the public internet.</p>\n\n<p>Until this year, every host in our fleet carried a phonebook: a map of every Fly Machine that had ever moved, and where it lives now. Hundreds of thousands of entries, on every host, kept up to date in real time. Phonebooks are supposed to fit inside your hou",
+    "category": "cloud",
+    "source_name": "Fly.io Blog",
+    "published": "2026-11-13T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Fly.io Blog",
+        "url": "https://fly.io/blog/throwing-out-the-phonebook/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "67366ef59c14a5da",
+    "title": "An early look at the Grafana UI refresh: Building a clearer, more consistent user experience",
+    "url": "https://grafana.com/blog/an-early-look-at-the-grafana-ui-refresh-building-a-clearer-more-consistent-user-experience/",
+    "summary": "<p>Whether you’re investigating an incident or just exploring your data, a clear, consistent UI helps you move between workflows and find what matters faster. As Grafana has grown to support more use cases, we’ve seen opportunities to improve on that experience. That’s why, as part of the <a href=\"https://grafana.com/blog/grafana-13-3-release-all-the-latest-features/\"><u>Grafana 13.3 release</u></a>, we introduced the first phase of our biggest visual refresh since Grafana 7.</p><p>We’re approaching this work in phases, with the refreshed UI currently in public preview in both Grafana Cloud and self-managed versions of Grafana, and your feedback will play a major role in shaping what comes next. </p><p>In this post, we’ll give you a closer look at why we decided to make this change now, why we think visual aesthetics matter in a UI, and the impact this will have on the Grafana user experience. You can also check out some of the visual updates in the video below.</p><h2>Starting with wh",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-12T17:01:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/an-early-look-at-the-grafana-ui-refresh-building-a-clearer-more-consistent-user-experience/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "9b884112d997d074",
+    "title": "Turn Jira tickets into GitLab merge requests with Duo Agent Platform",
+    "url": "https://about.gitlab.com/blog/jira-ticket-to-gitlab-mr-with-duo-agent-platform/",
+    "summary": "<p>Many teams plan in Jira and ship in GitLab. Even if you already use GitLab Duo Agent Platform, you still open Jira to read each ticket, copy it into an agent for implementation, and report the merge request back.</p><p>This tutorial shows you how to remove that handoff. You add a Jira agent to Duo Agentic Chat. The agent knows your project and repository, and you use it to find, create, and update tickets. Then you hand a ticket to Developer Flow with <code>/goal</code>, and Developer Flow creates the merge request.</p><p>Watch the short demo first: A custom Jira agent finds the urgent tickets, one goes to <a href=\"https://docs.gitlab.com/user/project/merge_requests/developer/\" rel=\"\">Developer Flow</a>, and the merge request shows up on the Jira ticket.</p><h2 id=\"prerequisites\">Prerequisites</h2><ul><li>GitLab Premium or Ultimate on GitLab.com, with GitLab Duo Agent Platform turned on for your top-level group and Developer Flow enabled for the project.</li><li>For the <a href=\"htt",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-11-12T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/jira-ticket-to-gitlab-mr-with-duo-agent-platform/"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "140a2ac90bfbaa1d",
+    "title": "AI Doesn’t Have to Go Rogue to Break the World",
+    "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+    "summary": "<p><em>This essay is adapted from <a href=\"https://www.youtube.com/watch?v=eEBv0STiYhI\">a keynote speech</a> delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in <a href=\"https://www.schneier.com/essays/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\">CyberScoop</a>.</em></p>\n<p>I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using AI to hack other systems, and AIs hacking systems on their own, not even maliciously. The last two matter more than the first. The third is the weirdest and potentially the most destabilizing.</p>\n<p>I started writing about this in 2021 and in my 2022 book, <em>A Hacker&#8217;s Mind</em>. Back then I said it was mostly still science fiction, but not stupid science fiction. We&#8217;re seeing it more and more, especially in the past year. The trends I&#8217;m describing don&#8217;t require a major breakthrough in AI. They&#8217;re starting to hap",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-13T12:03:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "3fc170446c94d406",
+    "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+    "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+    "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan.\n\nEnea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week. It assessed with high confidence that SilentAir is a state-level actor,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-13T11:10:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "a06c84e5376ffee1",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "url": "https://openai.com/business/customer-stories/amplitude",
+    "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-12T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/business/customer-stories/amplitude"
+      }
+    ],
+    "score": 16.72
+  },
+  {
+    "id": "a3c2258e60a8cd1c",
+    "title": "llm-gemini 0.37",
+    "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.37\">llm-gemini 0.37</a></p>\n        <p>Google launched <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/\">Gemini 4 Hydrogen</a> today - the lowest cost member of the Gemini 4 family.</p>\n<p>It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing <em>really</em> confusing. Here's the pricing scheme:</p>\n<center><table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Dates</th>\n      <th>Input ($/M)</th>\n      <th>Cached input</th>\n      <th>Output</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Gemini 4 Carbon</td>\n      <td>Through Nov 30, 2026</td>\n      <td>$2.00</td>\n      <td>$0.10</td>\n      <td>$10.00</td>\n    </tr>\n    <tr>\n      <td>From Dec 1, 2026</td>\n      <td>$4.00</td>\n      <td>$0.20</td>\n      <td>$20.00</td>\n    </tr>\n    <tr>\n      <td r",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-12T22:55:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "d3f0afee025492c3",
+    "title": "Google’s coding agents now /swarm for one developer. Cursor’s go multiplayer so teammates’ agents can talk.",
+    "url": "https://thenewstack.io/cursor-google-multiplayer-swarm/",
+    "summary": "<img alt=\"Illustration of a swarm of robots.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/45becf85-mariia-berezovsky-nz3wa499hnm-unsplash-1-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Coding agents are pretty good at working in parallel: one writes a new API endpoint, another updates the tests, while</p>\n<p>The post <a href=\"https://thenewstack.io/cursor-google-multiplayer-swarm/\">Google’s coding agents now /swarm for one developer. Cursor’s go multiplayer so teammates’ agents can talk.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-12T21:22:46+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gemini-4-hydrogen-orchestrator/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cursor-google-multiplayer-swarm/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/google-gemini-decisions-api/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "986fc8d6ff584875",
+    "title": "Presentation: The Influence Toolkit",
+    "url": "https://www.infoq.com/presentations/bbc-software-architecture-influence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/bbc-software-architecture-influence/en/mediumimage/henry-wilson-medium-1792653480613.jpg\" /><p>Henry Wilson shares actionable tools from the BBC Sounds re-architecture to help senior engineering leaders drive technical strategy. He discusses building buy-in, navigating active resistors, using RFCs and ADRs, and balancing tradeoffs - showing that effective software architecture is fundamentally about communication, relationship-building, and organizational influence.</p> <i>By Henry Wilson</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-13T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/bbc-software-architecture-influence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "6209107e0528d7e1",
+    "title": "Podcast: Doing The Right Thing: Accountability In The Age Of AI Coding Summary",
+    "url": "https://www.infoq.com/podcasts/accountability-age-ai-coding-summary/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/podcasts/accountability-age-ai-coding-summary/en/smallimage/engineering-culture-500-1794303925695.jpg\" /><p>In this podcast, Shane Hastie, Lead Editor for Culture & Methods, spoke to Hugo Venturini about who is accountable when AI writes the code, how AI is reshaping code review and traditional engineering roles, and how leaders build a culture of transparency and psychological safety.</p> <i>By Hugo Venturini</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-13T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/podcasts/accountability-age-ai-coding-summary/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.49
+  },
+  {
+    "id": "cb72aefe42cadf68",
+    "title": "Firecracker microVMs in plain language: a real VM that boots in a fraction of a second",
+    "url": "https://dev.to/eqvps/firecracker-microvms-in-plain-language-a-real-vm-that-boots-in-a-fraction-of-a-second-14cm",
+    "summary": "<p>If you've read anything about running AI-generated code safely, you've seen the word <em>microVM</em>, usually next to <em>Firecracker</em>. It tends to be explained either as \"a lightweight VM\" (true, unhelpful) or with a diagram of kernel internals. Here is the version in between.</p>\n\n<h2>\n  \n  \n  Two older options, and why neither fits\n</h2>\n\n<p>Start with the two things a microVM sits between.</p>\n\n<p>A <strong>container</strong> is a group of ordinary processes on your machine that the kernel has agreed to lie to. Namespaces show them their own filesystem, process list and network; cgroups cap how much CPU and memory they may use. It starts in milliseconds because nothing new is booted. But every container on a host talks to the same kernel. A kernel bug reachable from inside one container is a way out of all of them.</p>\n\n<p>A <strong>virtual machine</strong> brings its own kernel. The host's CPU, through hardware virtualisation (KVM on Linux), runs the guest as if it had its",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eqvps/firecracker-microvms-in-plain-language-a-real-vm-that-boots-in-a-fraction-of-a-second-14cm"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "79f4ee18d70c2f31",
+    "title": "COE bidding dates in code: a small rule fits all 72 rounds since 2024",
+    "url": "https://dev.to/jeremiah_say/coe-bidding-dates-in-code-a-small-rule-fits-all-72-rounds-since-2024-284b",
+    "summary": "<p>If you want a car in Singapore, you first need a Certificate of Entitlement (COE). They're sold in bidding rounds run by the Land Transport Authority (LTA), twice a month. The round that closed on 4 November 2026 ended at S$139,001 for Category A, so people watch the dates closely.</p>\n\n<p>The dates look irregular. Rounds are usually two weeks apart, but sometimes three. Most run Monday to Wednesday, but some open on a Tuesday, and one closed on a Friday. When is the next COE bidding? You can't quite tell by looking.</p>\n\n<p>I wanted to know how much of that is a real pattern. So I took all 72 rounds from 2024 to 2026 and tested a small rule against them. It fits all 72.</p>\n\n<p>This post covers the rule, the test, and why our <a href=\"https://numbers.sg/cars/coe-bidding-dates/\" rel=\"noopener noreferrer\">COE bidding dates page</a> still refuses to use it.</p>\n\n<h2>\n  \n  \n  The rule\n</h2>\n\n<p>Two lines:</p>\n\n<ol>\n<li><strong>Round 1 starts from the first Monday of the month. Round 2 ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jeremiah_say/coe-bidding-dates-in-code-a-small-rule-fits-all-72-rounds-since-2024-284b"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3be74796f745bd5d",
+    "title": "SAA-C03 Exam Traps: Cost Optimization and High Performance Questions That Fool Architects",
+    "url": "https://dev.to/certlandwebmaster/saa-c03-exam-traps-cost-optimization-and-high-performance-questions-that-fool-architects-24n8",
+    "summary": "<p><em>Originally published on <a href=\"https://certland.net/blog/saa-c03-exam-traps-cost-performance-2026/\" rel=\"noopener noreferrer\">CertLand</a>.</em></p>\n\n<p>The*<em>AWS Solutions Architect Associate (SAA-C03)</em>*exam is designed to test your ability to choose the BEST solution — not just a working one. Nowhere is this more challenging than in Domains 3 (High-Performing Architectures, 24%) and 4 (Cost-Optimized Architectures, 20%). Together they represent 44% of the exam, and the questions are designed with subtle traps that catch even experienced AWS practitioners.</p>\n\n<p>This guide breaks down the*<em>five most common traps</em><em>, explains the logic behind each one, provides quick-reference tables for both domains, and finishes with 5 practice questions in exam format with detailed explanations.   **In this guide:</em>*</p>\n\n<ol>\n<li>Trap #1: Graviton vs x86 Cost Decisions</li>\n<li>Trap #2: \"Most Cost-Effective\" vs \"Lowest RTO\"</li>\n<li>Trap #3: ElastiCache Memcached vs Red",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/certlandwebmaster/saa-c03-exam-traps-cost-optimization-and-high-performance-questions-that-fool-architects-24n8"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a03cce7a70b15df9",
+    "title": "Constructors: default, parameterised, static, private, chaining (OOP Concepts in C#)",
+    "url": "https://dev.to/divakarupadhyay/constructors-default-parameterised-static-private-chaining-oop-concepts-in-c-46k9",
+    "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/oop/lessons/constructors-default-parameterised-static-private-chaining\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, lesson 2 of 15 in the <a href=\"https://devladder.pages.dev/courses/oop\" rel=\"noopener noreferrer\">OOP Concepts in C#</a> course)<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight csharp\"><code><span class=\"k\">public</span> <span class=\"k\">class</span> <span class=\"nc\">Logger</span>\n<span class=\"p\">{</span>\n    <span class=\"k\">public</span> <span class=\"k\">static</span> <span class=\"k\">readonly</span> <span class=\"nc\">DateTime</span> <span class=\"nc\">LoadedAt</span><span class=\"p\">;</span>\n    <span class=\"k\">static</span> <span class=\"nc\">Logger</span><span class=\"p\">(</span><span class=\"p\">)</span> <span class=\"p\">{</span> <span class=\"nc\">LoadedAt</span> <span class=\"o\">=</span> <span class=\"nc\">DateTime</span><span class=\"p\">.</span><sp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/divakarupadhyay/constructors-default-parameterised-static-private-chaining-oop-concepts-in-c-46k9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "fcd0fc38e171620b",
+    "title": "Keep a Timed-Out Wait Separate from Cancelling a Future",
+    "url": "https://dev.to/tokenpeakai/keep-a-timed-out-wait-separate-from-cancelling-a-future-5bag",
+    "summary": "<p>A caller can stop waiting for a result while the work remains unfinished. Treating those two events as the same state creates a misleading recovery policy: a second attempt can start while the first still has an opportunity to complete.</p>\n\n<p>Python's Future interface makes the distinction observable. A timed-out result call reports a waiting deadline; cancellation has its own operation and state. These small tests exercise that state machine without starting a thread, sleeping, calling a provider, or measuring a real service.</p>\n\n<h2>\n  \n  \n  Test transitions without a scheduler race\n</h2>\n\n<p>The <a href=\"https://docs.python.org/3.12/library/concurrent.futures.html#future-objects\" rel=\"noopener noreferrer\">Future reference</a> documents result waiting and cancellation. Direct construction and the setter methods below are test-harness techniques, not instructions to mutate a Future returned by an executor. In application code, the executor owns those transitions.</p>\n\n<p>Use tim",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tokenpeakai/keep-a-timed-out-wait-separate-from-cancelling-a-future-5bag"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8f7bcb449d088217",
+    "title": "Your AI Agent Can Now Get a Screenshot API Key by Itself",
+    "url": "https://dev.to/dennis-ddev/your-ai-agent-can-now-get-a-screenshot-api-key-by-itself-5f13",
+    "summary": "<p><strong>An AI agent that needs to see a web page can now get a working SnapRender key in one HTTP call, with no account and no human in the loop. The key covers 100 screenshots and page reads over 7 days. When the human shows up, they claim it with a free account, and the agent keeps using the same key without the trial limits.</strong></p>\n\n<h2>\n  \n  \n  Why we built it\n</h2>\n\n<p>Last week we asked coding agents to add a screenshot feature 120 times. Every run that wrote code self-hosted Playwright, and none used a hosted API (<a href=\"https://snap-render.com/blog/ai-coding-agents-screenshot-study\" rel=\"noopener noreferrer\">the study</a>). The agents explained why in their own summaries: an API needs a signup, a key and an environment variable, and an agent cannot sign up for you.</p>\n\n<p>So we removed that step for agents. A hosted API is now exactly as easy to start as <code>npm install playwright</code>: one call, then real captures.</p>\n\n<h2>\n  \n  \n  One call, no signup\n</h2>\n\n\n",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-13T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/dennis-ddev/your-ai-agent-can-now-get-a-screenshot-api-key-by-itself-5f13"
+      }
+    ],
+    "score": 21.0
+  }
+]

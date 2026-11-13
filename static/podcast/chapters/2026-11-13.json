@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 143,
+      "title": "Access is getting easier, but choosing well still requires..."
+    },
+    {
+      "startTime": 288,
+      "title": "The interesting shift here is from agents writing code to..."
+    },
+    {
+      "startTime": 429,
+      "title": "The awkward question behind wider agent adoption is whether..."
+    },
+    {
+      "startTime": 581,
+      "title": "The Binance story puts the emphasis on known weaknesses and..."
+    },
+    {
+      "startTime": 728,
+      "title": "The package question brings these stories down to earth:..."
+    }
+  ]
+}
