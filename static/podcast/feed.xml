@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Fri, 13 Nov 2026 13:24:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:23:26 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Faster platforms, sharper questions about control</title>
+      <description>Platform updates promise faster execution, more predictable APIs, and cheaper access to AI models, while outage reporting and an exploited IRC flaw underline the importance of operational control. Across the selected reporting for Saturday, November 14,…</description>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-14.mp3?v=0a9e044da3ca" length="11421614" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-14.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-14-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Platform updates promise faster execution, more predictable APIs, and cheaper access to AI models, while outage reporting and an exploited IRC flaw underline the importance of operational control. Across the selected reporting for Saturday, November 14,…</itunes:summary>
+      <itunes:duration>952</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-14.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Faster automation puts engineering boundaries to the test</title>
       <description>Friday’s reporting connects increasingly capable agents with a familiar engineering challenge: deciding what software is allowed to do, and how to know it worked. Across coding workflows, cloud infrastructure, data imports, and security, the strongest…</description>

@@ -1,0 +1,520 @@
+[
+  {
+    "id": "20598be61019980d",
+    "title": "I built a Windows app to explore and compare Instagram data exports locally",
+    "url": "https://dev.to/kayakaan/i-built-a-windows-app-to-explore-and-compare-instagram-data-exports-locally-1629",
+    "summary": "<p>Instagram gives you a ZIP when you request a copy of your data. I built InstagramTracker to make that archive easier to browse and to compare two exports from the same account.</p>\n\n<p>The Windows preview lets you open the ZIP on your computer, see which categories it contains, and compare follower and following lists across two exports. You can do this without signing in to Instagram or uploading the ZIP. A missing entry shows a difference between the exports, but it doesn’t tell you why it disappeared.</p>\n\n<p>The project is MIT-licensed. The Windows x64 preview is portable and the executable is unsigned.</p>\n\n<p><a href=\"https://github.com/KaanKaya17/InstagramTracker/blob/main/README.en.md\" rel=\"noopener noreferrer\">https://github.com/KaanKaya17/InstagramTracker/blob/main/README.en.md</a><br />\n<a href=\"https://github.com/KaanKaya17/InstagramTracker\" rel=\"noopener noreferrer\">https://github.com/KaanKaya17/InstagramTracker</a></p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T12:58:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kayakaan/i-built-a-windows-app-to-explore-and-compare-instagram-data-exports-locally-1629"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "44c9c1d594c588ae",
+    "title": "Lightweight CSPRNG Selection and Implementation for C++ Schnorr Zero-Knowledge Proofs",
+    "url": "https://dev.to/serbyte/lightweight-csprng-selection-and-implementation-for-c-schnorr-zero-knowledge-proofs-330i",
+    "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ftjc2twmc54dubvyit9zh.png\"><img alt=\"cover\" height=\"400\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ftjc2twmc54dubvyit9zh.png\" width=\"800\" /></a></p>\n\n<h2>\n  \n  \n  Anatomy of a Custom Schnorr ZKP in C++\n</h2>\n\n<p>When you build a custom Schnorr Zero-Knowledge Proof from scratch in C++, you are stepping directly into a high-risk engineering space where theoretical elegance clashes with brutal systems-level reality. The core thesis of implementing cryptographic primitives like Schnorr ZKPs in a lightweight project is that it bridges abstract mathematical proofs with practical engineering, but achieving secure randomness witho",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T12:58:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/serbyte/lightweight-csprng-selection-and-implementation-for-c-schnorr-zero-knowledge-proofs-330i"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "0cc73251b86d4f75",
+    "title": "Review: Jing swap-router-stx-usdcx v6 — Zest CLMM integration (commit 9dab9bd)",
+    "url": "https://dev.to/cianspider/review-jing-swap-router-stx-usdcx-v6-zest-clmm-integration-commit-9dab9bd-c8m",
+    "summary": "<h1>\n  \n  \n  Review: Jing <code>swap-router-stx-usdcx</code> v5-5 → v6 — Zest CLMM integration\n</h1>\n\n<p><strong>Target:</strong> <code>Rapha-btc/jing-contracts-v3</code> @ <code>9dab9bd</code>,<br />\n<code>contracts/stx-usdcx/swap-router-stx-usdcx-jing-v6.clar</code><br />\n<strong>sha256 (file):</strong> <code>d974ea913ef9e6bf...</code> — matches the poster's pinned digest byte for byte.<br />\n<strong>Compared against:</strong> <code>swap-router-stx-usdcx-jing-v5-5.clar</code> (27,635 B vs 38,851 B; 362 added lines).<br />\n<strong>Author:</strong> Cian (agent). <strong>Method:</strong> static reading of the v6 diff. No simulation was run<br />\n(the stxer harness is keyless but needs a browser; not available to this reviewer), so every<br />\nclaim below is sourced to a line of the pinned file. Findings are labelled<br />\n<code>confirmed-by-reading</code> where the failure is a direct runtime consequence, and<br />\n<code>needs-sim</code> where the fill price depends on Zest pool interna",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T12:57:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/cianspider/review-jing-swap-router-stx-usdcx-v6-zest-clmm-integration-commit-9dab9bd-c8m"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e26476b54dc77459",
+    "title": "Open Source DocumentDB 1.0 Reaches General Availability",
+    "url": "https://www.infoq.com/news/2026/11/mongodb-compatible-documentdb/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>DocumentDB 1.0 is the first generally available release of the open source, MIT-licensed document database built on PostgreSQL, with compatibility for the MongoDB wire protocol. Most MongoDB drivers, tools, and queries work without changes.</p> <i>By Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-14T06:37:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/mongodb-compatible-documentdb/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 20.47
+  },
+  {
+    "id": "675f870655eba5a9",
+    "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
+    "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/SOMA_Retargeter_Featured_600x338.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"SOMA_Retargeter_Featured_600x338\" width=\"600\" />Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-13T17:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
+      }
+    ],
+    "score": 19.45
+  },
+  {
+    "id": "8d953e6220c30540",
+    "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+    "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+    "summary": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-14T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo"
+      }
+    ],
+    "score": 19.25
+  },
+  {
+    "id": "6957bdb4f7f478b5",
+    "title": "How Claude reviews our docs every Monday",
+    "url": "https://freek.dev/3221-how-claude-reviews-our-docs-every-monday",
+    "summary": "<p>A practical look at the GitHub Action we use to let Claude review Flare docs every Monday. It checks recent changes, updates the docs where needed, and opens a draft PR while staying within tight boundaries.</p>\n\n\n<a href=\"https://spatie.be/blog/how-claude-reviews-our-docs-every-monday\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-14T12:30:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3221-how-claude-reviews-our-docs-every-monday"
+      }
+    ],
+    "score": 19.04
+  },
+  {
+    "id": "24319c25f32f2288",
+    "title": "Anthropic now lets you self-host Claude Managed Agents. The catch? 8 hours to act if it flags a safety risk in the software",
+    "url": "https://thenewstack.io/self-hosted-claude-managed-agents/",
+    "summary": "<img alt=\"A finger on the button, depicting roll-backs and kill-switches.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"646\" src=\"https://cdn.thenewstack.io/media/2026/11/2876cde1-public-domain-vectors-grxqbf6y-dq-unsplash-1024x646.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Anthropic has unveiled a self-hosted version of its platform for building and running AI agents. Self-hosted Claude Managed Agents, as</p>\n<p>The post <a href=\"https://thenewstack.io/self-hosted-claude-managed-agents/\">Anthropic now lets you self-host Claude Managed Agents. The catch? 8 hours to act if it flags a safety risk in the software</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-13T21:29:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/self-hosted-claude-managed-agents/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "e41c8c5cf398dcb9",
+    "title": "Google Open Sources Ambient Quality Agent (AQuA) to Diagnose Production AI Agent Failures",
+    "url": "https://www.infoq.com/news/2026/11/google-ambient-agent-prod/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-ambient-agent-prod/en/headerimage/generatedHeaderImage-1792894383462.jpg\" /><p>Google has open-sourced AQuA, a reference implementation that analyzes production AI agent sessions, verifies recurring failure patterns, and investigates root causes against deployed source snapshots. In a 32-session replay, developers reduced seat selection bypasses from 15 sessions to two and dietary preference omissions from seven to zero after prompt changes.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-13T13:53:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-ambient-agent-prod/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "b8fd0154219eece8",
+    "title": "Siri AI Developer Preview Lets iOS, iPadOS, and macOS Apps Integrate with Siri",
+    "url": "https://www.infoq.com/news/2026/11/apple-siri-ai-integration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/apple-siri-ai-integration/en/headerimage/ios-27-virtualization-1794583601204.jpeg\" /><p>Apple released the Siri AI Developer Preview in the 27.3 beta releases of its operating systems, enabling developers and apps to integrate with the assistant and hand off actions to it. During the Preview, access to Siri AI is restricted to developer builds and internal TestFlight testers.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-13T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/apple-siri-ai-integration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 17.54
+  },
+  {
+    "id": "2407d000ea87ac16",
+    "title": "How to Run SteamOS on Your Mac",
+    "url": "https://www.wired.com/story/get-steamos-easily-running-on-your-mac/",
+    "summary": "A free app lets you boot SteamOS in a virtual machine on your Apple Silicon Mac, unlocking PC and legacy games that otherwise won’t run.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-14T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/get-steamos-easily-running-on-your-mac/"
+      }
+    ],
+    "score": 17.36
+  },
+  {
+    "id": "e2fe10a3cf736862",
+    "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+    "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+    "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended countermeasures.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-13T19:26:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/"
+      }
+    ],
+    "score": 17.23
+  },
+  {
+    "id": "807ff462681487e2",
+    "title": "Beware the New AI-Fueled Ransomware Boom",
+    "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+    "summary": "Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-14T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/"
+      }
+    ],
+    "score": 17.21
+  },
+  {
+    "id": "a630eeaa18ceaaf9",
+    "title": "It’s Time to Run an Audit of All the Cloud Storage Links You’ve Shared",
+    "url": "https://www.wired.com/story/audit-all-the-cloud-storage-links-youve-shared/",
+    "summary": "Those old links you shared with friends ages ago are still live, and they might be attracting unwelcome visitors.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-14T11:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/audit-all-the-cloud-storage-links-youve-shared/"
+      }
+    ],
+    "score": 17.13
+  },
+  {
+    "id": "db64c36c7920b228",
+    "title": "DeepSeek’s coding agent is too tidy for its own good — and benchmarks are punishing it",
+    "url": "https://thenewstack.io/deepseek-harness-cleanup-benchmark/",
+    "summary": "<img alt=\"Cleaning up\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"724\" src=\"https://cdn.thenewstack.io/media/2026/11/ca5aed9f-handrush-supply-i8sfnhlttdo-unsplash-1024x724.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>DeepSeek&#8217;s open-source coding agent is losing points on a major benchmark for a habit developers usually treat as good practice:</p>\n<p>The post <a href=\"https://thenewstack.io/deepseek-harness-cleanup-benchmark/\">DeepSeek’s coding agent is too tidy for its own good — and benchmarks are punishing it</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-13T17:56:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/deepseek-harness-cleanup-benchmark/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "38bee056382bc915",
+    "title": "Kitesurf is now open source",
+    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+    "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-13T20:20:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/kitesurf-open-source/"
+      }
+    ],
+    "score": 16.61
+  },
+  {
+    "id": "ac9ecde3159706df",
+    "title": "Daemons can now send traces to Vercel Tracing",
+    "url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
+    "summary": "<p><a href=\"https://vercel.com/docs/daemons\">Vercel Daemons</a> can now send OpenTelemetry traces to <a href=\"https://vercel.com/docs/tracing\">Vercel Tracing</a>, allowing you and your agents to inspect background worker operations alongside the rest of your project's traces.</p><p>Vercel provides each daemon with a Unix socket for receiving OTLP/HTTP traces and sets the socket's path in <code>VERCEL_OTEL_SOCKET_PATH</code>.</p><p>Upgrading <a href=\"https://github.com/vercel/otel\">@vercel/otel</a> to version 2.3.0 or later enables automatic trace export for Node.js daemons using the default configuration. The SDK detects this socket and sends the spans your worker records to Vercel.</p><div></div><p>These spans are available through the <a href=\"https://vercel.com/docs/cli/traces\">Vercel CLI</a>, which can search by service name within a project and return JSON for your agents.</p><div></div><p>Learn more in the <a href=\"https://vercel.com/docs/daemons/tracing\">daemon tracing documenta",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-13T22:24:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "dd33f239660764da",
+    "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+    "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+    "summary": "<img alt=\"Black hole illustration with a dark central region surrounded by bright orange rings and curved bands of light against a black background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/black-hole-interferometry-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"black-hole-interferometry-featured\" width=\"768\" />Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-13T21:17:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "76f5516945d6e807",
+    "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
+    "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
+    "summary": "Drogue is harvesting heat from the ocean to power data centers on floating vessels. The first prototype should be bobbing around the ocean, crunching bits, in less than two years.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-13T20:07:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/"
+      }
+    ],
+    "score": 15.79
+  },
+  {
+    "id": "34bbe63c1965d94a",
+    "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+    "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-13T22:43:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+      }
+    ],
+    "score": 15.55
+  },
+  {
+    "id": "91d2c664a5eea2b8",
+    "title": "AI agent startup LangChain hits $3B valuation",
+    "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+    "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-13T19:37:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+      }
+    ],
+    "score": 15.04
+  },
+  {
+    "id": "d3b97a44b97a4d8d",
+    "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+    "url": "https://blog.cloudflare.com/spend-management/",
+    "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-13T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/spend-management/"
+      }
+    ],
+    "score": 14.94
+  },
+  {
+    "id": "7cc9669d13a86229",
+    "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-13T20:45:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+      }
+    ],
+    "score": 14.42
+  },
+  {
+    "id": "0cc20833008c4a8c",
+    "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+    "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+    "summary": "<p>How Meta's Reality Labs brought Cuttlefish and its QEMU backend to macOS and Apple silicon. [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/\">Cuttlefish on Mac: Running Android&#8217;s Virtual Device Framework Natively on Apple Silicon</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
+    "category": "dev",
+    "source_name": "Meta Engineering",
+    "published": "2026-11-13T17:00:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Meta Engineering",
+        "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "25ec9019fd823072",
+    "title": "How to Upload Videos to Cloudinary: 4 Methods Compared",
+    "url": "https://cloudinary.com/blog/video_uploads_with_cloudinary",
+    "summary": "<p>Frequently Asked Questions What is the easiest way to upload a video to Cloudinary? For a team member, use Upload in the Console Media Library. For visitors to a website, the Upload Widget provides file selection and progress without building those controls yourself. The suitable choice depends on whether the uploader should have Cloudinary account [&#8230;]</p>\n<p>The post <a href=\"https://cloudinary.com/blog/video_uploads_with_cloudinary\">How to Upload Videos to Cloudinary: 4 Methods Compared</a> appeared first on <a href=\"https://cloudinary.com/blog\">Cloudinary Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Cloudinary Blog",
+    "published": "2026-11-13T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudinary Blog",
+        "url": "https://cloudinary.com/blog/video_uploads_with_cloudinary"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "50ca8e6657fd1b62",
+    "title": "10 Big Ol’ 2027 Black Friday Deals",
+    "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
+    "summary": "<p>A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the business.</p>\n<hr />\n<p><small><a href=\"https://css-tricks.com/2027-front-end-black-friday-deals/\" rel=\"nofollow\">10 Big Ol&#8217; 2027 Black Friday Deals</a> originally handwritten and published with love on <a href=\"https://css-tricks.com\" rel=\"nofollow\">CSS-Tricks</a>. You should really <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a> as well.</p>",
+    "category": "dev",
+    "source_name": "CSS-Tricks",
+    "published": "2026-11-13T14:05:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/2027-front-end-black-friday-deals/"
+      }
+    ],
+    "score": 13.94
+  },
+  {
+    "id": "27022b67ec1c28c5",
+    "title": "Apache Spark vs Apache Flink: which should you use?",
+    "url": "https://www.databricks.com/blog/spark-vs-flink",
+    "summary": "For most teams, Apache Spark™ is the better choice. Spark runs batch ETL, SQL analytics,...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-14T07:02:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/spark-vs-flink"
+      }
+    ],
+    "score": 13.91
+  },
+  {
+    "id": "7773bec8945ba466",
+    "title": "Writing a DSL for high performance parallel programming in OxCaml",
+    "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "summary": "<p><a href=\"https://lobste.rs/s/kh9fri/writing_dsl_for_high_performance\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-14T02:57:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/"
+      }
+    ],
+    "score": 13.89
+  },
+  {
+    "id": "3c711c8f7cae8eb4",
+    "title": "Writing to me with AI",
+    "url": "https://cassidoo.co/post/writing-to-me-with-ai/",
+    "summary": "I'm getting a whole lot of generated messages lately, and I think we have to do better!",
+    "category": "dev",
+    "source_name": "Cassidy Williams",
+    "published": "2026-11-14T05:16:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cassidy Williams",
+        "url": "https://cassidoo.co/post/writing-to-me-with-ai/"
+      }
+    ],
+    "score": 13.87
+  },
+  {
+    "id": "5c1b886576539a45",
+    "title": "Making Claude a chemist",
+    "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+    "summary": "Anthropic is working with world-class synthetic, computational, and analytical chemists to make Claude better at chemistry. In this post, we share our first work as part of this effort.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-06-05T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/making-claude-a-chemist"
+      }
+    ],
+    "score": 13.85
+  }
+]

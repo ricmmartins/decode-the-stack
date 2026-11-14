@@ -1,34 +1,42 @@
 {
-  "updated_at": "2026-11-13T13:24:23.452223+00:00",
+  "updated_at": "2026-11-14T13:23:08.363948+00:00",
   "configured_feeds": 242,
-  "editions_published": 11,
-  "headlines_published": 532,
-  "sources_credited": 68,
-  "latest_edition_date": "2026-11-13",
+  "editions_published": 12,
+  "headlines_published": 582,
+  "sources_credited": 71,
+  "latest_edition_date": "2026-11-14",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 122
-    },
-    {
-      "name": "The Hacker News",
-      "headlines": 51
+      "headlines": 134
     },
     {
       "name": "InfoQ",
-      "headlines": 48
+      "headlines": 53
+    },
+    {
+      "name": "The Hacker News",
+      "headlines": 52
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 40
+      "headlines": 42
     },
     {
       "name": "TechCrunch",
-      "headlines": 29
+      "headlines": 32
     },
     {
       "name": "The Verge - Tech",
+      "headlines": 20
+    },
+    {
+      "name": "The New Stack",
+      "headlines": 19
+    },
+    {
+      "name": "Vercel Blog",
       "headlines": 18
     },
     {
@@ -36,15 +44,11 @@
       "headlines": 17
     },
     {
-      "name": "The New Stack",
-      "headlines": 17
-    },
-    {
-      "name": "Vercel Blog",
+      "name": "Simon Willison",
       "headlines": 15
     },
     {
-      "name": "Simon Willison",
+      "name": "Lobsters",
       "headlines": 14
     },
     {
@@ -52,12 +56,12 @@
       "headlines": 13
     },
     {
-      "name": "Lobsters",
+      "name": "Wired",
       "headlines": 13
     },
     {
       "name": "OpenAI Blog",
-      "headlines": 11
+      "headlines": 12
     },
     {
       "name": "CNCF Blog",
@@ -68,23 +72,27 @@
       "headlines": 10
     },
     {
-      "name": "Wired",
-      "headlines": 10
-    },
-    {
       "name": "Freek Van der Herten",
-      "headlines": 8
+      "headlines": 9
     },
     {
       "name": "Schneier on Security",
+      "headlines": 9
+    },
+    {
+      "name": "Cloudflare Blog",
       "headlines": 8
+    },
+    {
+      "name": "Nvidia Developer Blog",
+      "headlines": 7
     },
     {
       "name": "Dark Reading",
       "headlines": 6
     },
     {
-      "name": "Cloudflare Blog",
+      "name": "Grafana Blog",
       "headlines": 5
     },
     {
@@ -96,19 +104,15 @@
       "headlines": 5
     },
     {
-      "name": "Nvidia Developer Blog",
-      "headlines": 5
-    },
-    {
-      "name": "Grafana Blog",
+      "name": "Anthropic Blog",
       "headlines": 4
     },
     {
-      "name": "Anthropic Blog",
+      "name": "AWS Blog",
       "headlines": 3
     },
     {
-      "name": "AWS Blog",
+      "name": "Databricks Engineering",
       "headlines": 3
     },
     {
@@ -140,7 +144,7 @@
       "headlines": 2
     },
     {
-      "name": "Databricks Engineering",
+      "name": "Cloudinary Blog",
       "headlines": 2
     },
     {
@@ -188,15 +192,19 @@
       "headlines": 1
     },
     {
+      "name": "Cassidy Williams",
+      "headlines": 1
+    },
+    {
       "name": "Changelog",
       "headlines": 1
     },
     {
-      "name": "Cloudinary Blog",
+      "name": "Confluent Blog",
       "headlines": 1
     },
     {
-      "name": "Confluent Blog",
+      "name": "CSS-Tricks",
       "headlines": 1
     },
     {
@@ -233,6 +241,10 @@
     },
     {
       "name": "Kyle Kingsbury (Aphyr)",
+      "headlines": 1
+    },
+    {
+      "name": "Meta Engineering",
       "headlines": 1
     },
     {
@@ -283,23 +295,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 385
+      "headlines": 425
     },
     {
       "name": "Security",
-      "headlines": 71
+      "headlines": 73
     },
     {
       "name": "AI/ML",
-      "headlines": 29
+      "headlines": 32
     },
     {
       "name": "Cloud",
-      "headlines": 24
+      "headlines": 28
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 22
+      "headlines": 23
     }
   ],
   "history": [
@@ -357,6 +369,11 @@
       "date": "2026-11-13",
       "headlines": 50,
       "sources": 24
+    },
+    {
+      "date": "2026-11-14",
+      "headlines": 50,
+      "sources": 23
     }
   ]
 }

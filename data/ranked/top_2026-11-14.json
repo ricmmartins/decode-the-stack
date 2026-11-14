@@ -1,0 +1,370 @@
+[
+  {
+    "id": "ee8608204aafe8bc",
+    "title": "The day after the Microsoft 365 outage: what we learned and what you can do now",
+    "url": "https://dev.to/mikweb2025design/the-day-after-the-microsoft-365-outage-what-we-learned-and-what-you-can-do-now-2gha",
+    "summary": "<p>On Thursday 12 November 2026, Exchange Online, Teams, SharePoint Online, Microsoft 365 Copilot and Defender XDR failed or ran degraded worldwide. This post sorts it out: what is documented, what is still open, what we learn from it, and what you can do today without rebuilding your whole infrastructure.</p>\n\n<p>The question of how dependent you want to be on a single vendor is covered in <a href=\"https://daniele-michelin.com/en/blog/microsoft-365-outage-dependency/\" rel=\"noopener noreferrer\">Microsoft 365 outage and dependency</a>. This post is about the analysis and the concrete steps afterwards.</p>\n\n<p><strong>State of the information:</strong> Microsoft has not published a final post-incident review yet. Everything below rests on Microsoft's status updates as summarised by <a href=\"https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/\" rel=\"noopener noreferrer\">BleepingComputer</a> and on a technical <a href=\"https",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mikweb2025design/the-day-after-the-microsoft-365-outage-what-we-learned-and-what-you-can-do-now-2gha"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c063a404446f470a",
+    "title": "Preventing Feedback Loops in a Two-Way Vue Unit Converter",
+    "url": "https://dev.to/begoodtool/preventing-feedback-loops-in-a-two-way-vue-unit-converter-1gni",
+    "summary": "<p>If both fields in a Vue unit converter are editable, how do you stop a calculated result from overwriting the user's input? I use explicit conversion directions and synchronous watchers so that each numeric edit updates the opposite field without bouncing back.</p>\n\n<p>A Vue length converter gave me a compact example. Each side can update the other, both results are rounded, and a swap button changes units and values together. The arithmetic is routine; the interesting part is stopping intermediate state from becoming a new user instruction.</p>\n\n<h2>\n  \n  \n  One Conversion Function, Two Directions\n</h2>\n\n<p>The component imports a shared length-unit table and conversion helper. Each unit has a scale relative to meters, so a conversion goes from the source unit to meters and then from meters to the destination unit.</p>\n\n<p>That keeps the component out of the business of maintaining a separate formula for every possible pair. With eight units, separate directional formulas would cre",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/begoodtool/preventing-feedback-loops-in-a-two-way-vue-unit-converter-1gni"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "91174f3dcfcd959d",
+    "title": "Your Pay Matcher Confused Annual Units With Earnings",
+    "url": "https://dev.to/vexaloom-labs/your-pay-matcher-confused-annual-units-with-earnings-4hd3",
+    "summary": "<p>The day-rate contract wins your job comparison because <code>salaryFromPerAnnum</code> is larger. Your assistant sounds decisive. You get to explain the contract risk it quietly skipped.</p>\n\n<p>Two pay figures can share an annual unit and still answer different questions. <strong>Annualized advertised pay is a comparison basis, not a promise of yearly earnings.</strong></p>\n\n<p>Lab note 102: can we give an assistant enough compensation context to explain that distinction? The catch comes first: the available pay fields can't establish paid working time, contract duration, or guaranteed base pay.</p>\n\n<h2>\n  \n  \n  What does annualized pay actually compare?\n</h2>\n\n<p>Suppose you're building the part of a job assistant that answers, “Which advertised package looks better for this person?”</p>\n\n<p>That question needs a preference: higher advertised potential, more predictable income, or something else. Sorting a normalized number answers a narrower question while wearing the broader qu",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vexaloom-labs/your-pay-matcher-confused-annual-units-with-earnings-4hd3"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "f389583294998684",
+    "title": "Vercel Sandbox starts up to 4x faster",
+    "url": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster",
+    "summary": "<p><a href=\"https://vercel.com/docs/sandbox\">Vercel Sandbox</a> now initializes up to 4x faster outside the Washington, D.C. (<code>iad1</code>) region when reused image data is served from a regional cache.</p><p>Initialization now reads cached image data close to where the sandbox runs, avoiding round trips to origin image storage in <code>iad1</code> on cache hits. Regional caching supports managed and custom images backed by Vercel Container Registry, including snapshots based on those images.</p><p>In internal end-to-end benchmarks with <a href=\"https://vercel.com/docs/sandbox/concepts/images\">Vercel Managed Images</a>, startup time fell about 75% in Paris and from about 3.5s to 1.05s in Seoul. Regions closer to origin storage generally see smaller improvements because requests already travel a shorter distance.</p><p>Learn more in the <a href=\"https://vercel.com/docs/sandbox\">Vercel Sandbox documentation</a>.</p>\n          <p class=\"more\">\n            <a href=\"https://vercel.com/",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-13T00:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-sandbox-now-supports-managed-npm-credentials"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/python-3-15-now-available-as-a-vercel-managed-image"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "fdaecccc8e3052d1",
+    "title": "Token Pass now includes $150 in tokens for $30/month",
+    "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens",
+    "summary": "<p><a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fai-gateway%2Ftoken-pass%3Fsource%3Dtoken_pass_150_changelog\">Vercel Token Pass</a> now includes $150 of tokens per month (up from $80) for the same $30 per team per month.</p><p>The credit applies to featured open-weight models served through <a href=\"https://vercel.com/docs/ai-gateway\">AI Gateway</a>, including Kimi K3, Kimi K3.1 Pro, GLM 5.3, GLM 5.3 Flash, and DeepSeek V4.1 Flash.</p><p>Credit resets each billing period with no rollover. When it runs out, requests using standard AI Gateway keys or OIDC tokens fall back to the team's AI Gateway balance, while requests using Token Pass-scoped keys stop with no overage charges.</p><p>Token Pass is an Early Access add-on for Pro teams, with limited spots and a waitlist when they fill. To connect your coding agent, run <code>vercel token-pass</code> in the Vercel CLI, or use a Token Pass API key if your agent supports AI Gateway.</p><p>Subscribe to Token Pass in your <a href=\"https:",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-13T18:42:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/kimi-k3-1-pro-is-now-available-in-token-pass"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "da87a3ed94df3ae3",
+    "title": "What's new in Pyroscope: profile more of your workflows, troubleshoot with AI agents, and more",
+    "url": "https://grafana.com/blog/whats-new-in-pyroscope-profile-more-of-your-workflows-troubleshoot-with-ai-agents-and-more/",
+    "summary": "<p>When an application slows down or memory usage keeps climbing, knowing which code is responsible can help you find a fix faster. Continuous profiling gives you that visibility, so you can see where your application spends resources such as CPU time and memory.</p><p>We’ve made updates to <a href=\"https://grafana.com/docs/pyroscope/latest/?pg=pyroscope-2-0-release&amp;plcmt=in-text\"><u>Pyroscope</u></a>, our open source continuous profiling database, that make it easier to profile your applications, find performance bottlenecks, and optimize your code, whether you&#039;re doing the work yourself or with an AI agent. </p><p>Highlights include:</p><ul><li><p><strong>Profile more of your workloads:</strong> Memory profiling for Python and Rust, and .NET support on Windows, helps you find performance bottlenecks across more of your services.</p></li><li><p><strong>Let AI agents work with your profiling data:</strong> Pyroscope commands in <a href=\"https://github.com/grafana/gcx\"><u>gcx</",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-13T17:14:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/whats-new-in-pyroscope-profile-more-of-your-workflows-troubleshoot-with-ai-agents-and-more/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "3728f9ff322104ff",
+    "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-14T12:38:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "a41bb4a5ba983415",
+    "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
+    "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
+    "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-13T22:00:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html"
+      }
+    ],
+    "score": 19.22
+  },
+  {
+    "id": "a7870ce16cd7963c",
+    "title": "datasette-cluster-map 0.19",
+    "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-cluster-map/releases/tag/0.19\">datasette-cluster-map 0.19</a></p>\n        <p>One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on <a href=\"https://simonwillison.net/2026/Nov/13/datasette-leaflet/\">the new datasette-leaflet</a> to ensure OpenStreetMap tiles are requested with a referrer header.</p>\n<p>Here's <a href=\"https://datasette.io/global-power-plants/global-power-plants?owner=Pacific+Gas+%26+Electric+Co.\">a map of power plants owned by California's PG&amp;E</a>, also demonstrating Datasette's recently <a href=\"https://github.com/simonw/datasette/pull/3032\">redesigned facets</a>:</p>\n<p><img alt=\"Screenshot of a faceted map interface. Three facet panels at the top: &quot;country_long 1&quot; with United States of America 81 selected; &quot;owner 1&quot; with Pacific Gas &amp; Electric Co. 81 selected; &quot;primary_fuel 5&quot; listing Hydro 6",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-13T23:02:45+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "8c23c72f8d6120b3",
+    "title": "Introducing ChatGPT Wallet",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-13T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/introducing-chatgpt-wallet"
+      }
+    ],
+    "score": 14.56
+  },
+  {
+    "id": "007393a1c63dd651",
+    "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+    "summary": "<p>Article URL: <a href=\"https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas\">https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50487864\">https://news.ycombinator.com/item?id=50487864</a></p>\n<p>Points: 360</p>\n<p># Comments: 194</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-13T18:40:44+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://status.claude.com/incidents/nn11wk485zfn"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/"
+      }
+    ],
+    "score": 27.34
+  },
+  {
+    "id": "ff66f1d7c820e87d",
+    "title": "Google Cloud Moves the Compute Engine API to Immutable Date-Based Versions",
+    "url": "https://www.infoq.com/news/2026/11/compute-engine-api-versioning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/compute-engine-api-versioning/en/headerimage/generatedHeaderImage-1794296072866.jpg\" /><p>Google Cloud has made date-based versioning of the Compute Engine API generally available, replacing the single mutable /v1 surface with immutable quarterly snapshots such as 2026-09-01, selected per request with a header or query parameter. New versions can change defaults, error formats, and IAM checks without touching /v1 callers, a model Azure Resource Manager and Stripe have used for years.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-14T07:27:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/compute-engine-api-versioning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "312bd444bc12cd49",
+    "title": "Node.js Brings Debounce, Throttle, and PKCS#12 Parsing Into Core Modules",
+    "url": "https://www.infoq.com/news/2026/11/nodejs-debounce-throttle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/nodejs-debounce-throttle/en/headerimage/generatedHeaderImage-1794593143949.jpg\" /><p>Node.js 26.10.0 adds util.debounce() and util.throttle(), plus util.markPromiseAsHandled(), to the core library. It also introduces crypto.parsePKCS12() for reading .p12 and .pfx bundles, and extends the experimental Virtual File System to node:ffi. The additions reduce the need for some userland dependencies. Node.js 26 is now Active LTS.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-14T08:03:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/nodejs-debounce-throttle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.99
+  },
+  {
+    "id": "1b1eb3e0133394dd",
+    "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+    "summary": "<p>Article URL: <a href=\"https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus\">https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50493251\">https://news.ycombinator.com/item?id=50493251</a></p>\n<p>Points: 715</p>\n<p># Comments: 412</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-14T02:52:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
+      }
+    ],
+    "score": 22.24
+  },
+  {
+    "id": "c48bb58d05427891",
+    "title": "O: Open/Closed Principle (SOLID Principles with Examples)",
+    "url": "https://dev.to/divakarupadhyay/o-openclosed-principle-solid-principles-with-examples-44pb",
+    "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/solid/lessons/o-open-closed-principle\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, lesson 2 of 8 in the <a href=\"https://devladder.pages.dev/courses/solid\" rel=\"noopener noreferrer\">SOLID Principles with Examples</a> course)</p>\n\n<p>Software entities should be <strong>open for extension, closed for modification</strong>: add new behaviour by adding code, not by editing tested code.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight csharp\"><code><span class=\"c1\">// ❌ Every new customer type edits this method</span>\n<span class=\"k\">public</span> <span class=\"kt\">decimal</span> <span class=\"nc\">Discount</span><span class=\"p\">(</span><span class=\"kt\">string</span> <span class=\"kd\">type</span><span class=\"p\">,</span> <span class=\"kt\">decimal</span> <span class=\"n\">amount</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"kd\">type</span>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/divakarupadhyay/o-openclosed-principle-solid-principles-with-examples-44pb"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "96d9eda6422da072",
+    "title": "Is GoHighLevel HIPAA Compliant? BAA, $297 Add-On and Setup Guide (2026)",
+    "url": "https://dev.to/arslanautomates/is-gohighlevel-hipaa-compliant-baa-297-add-on-and-setup-guide-2026-3fod",
+    "summary": "<blockquote>\n<p><strong>Quick answer:</strong> Not by default. GoHighLevel becomes usable for protected health information only with HighLevel's HIPAA add-on ($297/month or $2,970/year, non-cancellable), which provides a signed BAA, AES-256 encryption of PHI-holding data, enforced MFA and audit logs. After signing the BAA you must switch HIPAA on in each sub-account's Advanced Settings. The add-on doesn't cover connected tools like Zapier or n8n, your policies and training, or what you put in texts, so keep messages minimal and clinical notes in your practice software.</p>\n</blockquote>\n\n<p>Clinics, med spas, chiropractors and therapists ask the same question before moving<br />\npatients into GoHighLevel: is it HIPAA compliant? Out of the box, no. With HighLevel's<br />\nHIPAA add-on and a signed Business Associate Agreement (BAA), it can be part of a<br />\nHIPAA-compliant setup, as long as you configure it properly and handle the parts the<br />\nadd-on doesn't cover. This guide explain",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/arslanautomates/is-gohighlevel-hipaa-compliant-baa-297-add-on-and-setup-guide-2026-3fod"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6c44097db2b43d3c",
+    "title": "The Code I Wrote and No Longer Understand",
+    "url": "https://dev.to/aheadkit/the-code-i-wrote-and-no-longer-understand-501i",
+    "summary": "<p>I wrote this file, and I cannot read it.</p>\n\n<p>That is the whole confession. There is no twist coming. The file is called billing_reconcile.py. It is 214 lines long, and every one of those lines was typed by me, eight months ago, in a week I barely remember. I opened it on a Tuesday morning because a customer had been charged twice for the same order. $63.20, twice. Someone had to find out why. That someone was me. I stared at the first function for eleven minutes. I know it was eleven minutes because I checked the clock twice, the way you check the clock in a waiting room.</p>\n\n<p>The function was called normalize_line_items. I remembered writing the name. I remembered feeling good about the name, the way you feel good about naming a dog. What I did not remember was what it did. It took a list in, gave a list back, and in between it did something with a dictionary, a date, and a variable called temp2. There was a temp2. Which means there was a temp1 somewhere, and I could not fin",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aheadkit/the-code-i-wrote-and-no-longer-understand-501i"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "405dd2cad2d5aa54",
+    "title": "Bus factor 1 is the default: per-language ownership in 195 popular repos",
+    "url": "https://dev.to/repowise/bus-factor-1-is-the-default-per-language-ownership-in-195-popular-repos-54kh",
+    "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>Bus factor is the fewest people who together made 80% of a file's commits; a bus factor of 1 means one person made 80% or more of them.</li>\n<li>In the median of 195 popular open-source repos (1,000+ GitHub stars), 60% of production files have a bus factor of 1, and in 124 of the 195 those files are the majority.</li>\n<li>Busy files are more shared: in the median repo, 25% of hotspot files have a bus factor of 1.</li>\n<li>Numbers come from repowise's index of those 195 repos (November 2026), plus a <code>git shortlog</code> script run on a full clone of Django.</li>\n</ul>\n\n<p>Bus factor (also called truck factor) is the number of people who would have to disappear before nobody left understands a piece of code. A bus factor of 1 means one person holds it.</p>\n\n<p>It sounds like a warning sign. Across 195 popular open-source repositories, it is the normal state of most files.</p>\n\n<h2>\n  \n  \n  How do you calculate bus factor?\n</h2>\n\n<p>For a singl",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/repowise/bus-factor-1-is-the-default-per-language-ownership-in-195-popular-repos-54kh"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "b5f5da42c1a639f5",
+    "title": "UnrealIRCd CVE-2026-114713: how to check your server and apply the hot-patch",
+    "url": "https://dev.to/mikweb2025design/unrealircd-cve-2026-114713-how-to-check-your-server-and-apply-the-hot-patch-ol5",
+    "summary": "<p><strong>In short:</strong> if you run UnrealIRCd 6.0.0 to 6.2.7 (or version 5), your server is affected. Version 6.2.7.1, released on 7 November 2026, fixes it, and a hot-patch does the job without a restart. The vendor reports attack attempts, and the US agency CISA added <a href=\"https://daniele-michelin.com/en/exploited-vulnerabilities/cve-2026-114713/\" rel=\"noopener noreferrer\">CVE-2026-114713</a> to its catalog of exploited vulnerabilities on 13 November (deadline for federal agencies: 16 November).</p>\n\n<h2>\n  \n  \n  What is the problem?\n</h2>\n\n<p>The implementation of the IRCv3 <code>label</code> tag does not escape characters properly when it echoes the tag into replies. An ordinary user can therefore inject newlines and other characters into the traffic between linked servers. The injected commands run with the authority of the server, for example <code>KILL</code> or <code>GLINE</code>. The maintainer found the flaw himself in an internal audit done with the help of AI.</p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T12:59:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mikweb2025design/unrealircd-cve-2026-114713-how-to-check-your-server-and-apply-the-hot-patch-ol5"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "39cf42f82c87dc07",
+    "title": "How Kigali’s Developer Communities Transformed My Journey",
+    "url": "https://dev.to/gentil_m/how-kigalis-developer-communities-transformed-my-journey-479m",
+    "summary": "<p>Before becoming involved in Kigali’s developer communities, most of my learning happened alone. I spent a significant amount of time working on personal projects, reading documentation, watching tutorials, solving errors, and experimenting with different technologies.</p>\n\n<p>Independent learning helped me build important technical foundations. It taught me how to search for solutions, remain patient when facing problems, and continue working without constant supervision. However, learning alone also had limitations.</p>\n\n<p>I could write code and build projects, but I had limited access to people who could review my ideas, challenge my decisions, introduce me to new opportunities, or help me understand how the professional technology ecosystem worked.</p>\n\n<h3>\n  \n  \n  Discovering Kigali’s Technology Ecosystem\n</h3>\n\n<p>Moving into Kigali’s technology environment introduced me to a different way of learning and growing. I began meeting students, developers, founders, community orga",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-14T12:58:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/gentil_m/how-kigalis-developer-communities-transformed-my-journey-479m"
+      }
+    ],
+    "score": 21.0
+  }
+]

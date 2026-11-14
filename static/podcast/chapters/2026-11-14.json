@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 145,
+      "title": "Vercel’s Sandbox update is about where startup data lives:..."
+    },
+    {
+      "startTime": 284,
+      "title": "A pay comparison can be numerically correct and still..."
+    },
+    {
+      "startTime": 425,
+      "title": "That brings us to what happens after an agent gets a real..."
+    },
+    {
+      "startTime": 573,
+      "title": "Cloud sharing is a useful place to make this concrete:..."
+    },
+    {
+      "startTime": 725,
+      "title": "Let's finish with a practical thread: choosing where to..."
+    }
+  ]
+}
