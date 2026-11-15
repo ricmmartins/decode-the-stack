@@ -1,0 +1,329 @@
+[
+  {
+    "id": "09357a0a643f65ff",
+    "title": "An overview of Jensen Huang’s messy days",
+    "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+    "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started On October [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-15T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation"
+      }
+    ],
+    "score": 19.45
+  },
+  {
+    "id": "576e94ee06bd4a6b",
+    "title": "Italy fines Meta $887M over Android users' data access",
+    "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+    "summary": "<p>Article URL: <a href=\"https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/\">https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50497009\">https://news.ycombinator.com/item?id=50497009</a></p>\n<p>Points: 385</p>\n<p># Comments: 288</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-14T13:48:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/"
+      }
+    ],
+    "score": 18.06
+  },
+  {
+    "id": "28794b5319b5aef8",
+    "title": "Upcoming Speaking Engagements",
+    "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
+    "summary": "<p>This is a current list of where and when I am scheduled to speak:</p>\n<ul>\n<li>I’m speaking at the <a href=\"https://luma.com/a3pk9zbg\">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.</li>\n<li>I’m speaking at <a href=\"https://queertech.org/en/events/qonference/qtq-2026\">QT Qonference 2026</a> in Toronto, Ontario, Canada, on Thursday, November 19, 2026.</li>\n</ul>\n<p>The list is maintained on <a href=\"https://www.schneier.com/events/\">this page</a>.</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-14T17:02:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html"
+      }
+    ],
+    "score": 17.93
+  },
+  {
+    "id": "3672587356b87782",
+    "title": "Where was Nvidia’s security team?",
+    "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+    "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-15T00:08:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
+      }
+    ],
+    "score": 17.59
+  },
+  {
+    "id": "d45b5217ba8f59f4",
+    "title": "A family tree of software job titles",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+    "summary": "<p>Article URL: <a href=\"https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/\">https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50499038\">https://news.ycombinator.com/item?id=50499038</a></p>\n<p>Points: 349</p>\n<p># Comments: 176</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-14T17:45:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/"
+      }
+    ],
+    "score": 17.5
+  },
+  {
+    "id": "406292d7e040e265",
+    "title": "AWS Emulator proves agents need a verification loop. Realism is the hard part.",
+    "url": "https://thenewstack.io/aws-emulator-verification-loops/",
+    "summary": "<img alt=\"Abstract refracted rainbow light waves sliced into dark vertical bands, representing AI coding agent verification loops.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"573\" src=\"https://cdn.thenewstack.io/media/2026/11/42906fc6-imkara-visual-0vhccw56zg4-unsplash-1024x573.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>This week, Amazon Web Services released AWS Emulator, a local copy of AWS that coding agents can test against. It</p>\n<p>The post <a href=\"https://thenewstack.io/aws-emulator-verification-loops/\">AWS Emulator proves agents need a verification loop. Realism is the hard part.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-14T17:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/aws-emulator-verification-loops/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "4acfaba4d77a7ae8",
+    "title": "DuckLake 1.1 solves the absurd complexity of data lakes at AI scale",
+    "url": "https://thenewstack.io/ducklake-sql-lakehouse-metadata/",
+    "summary": "<img alt=\"In this episode of The New Stack Podcast, Pedro Holanda, lead DuckLake developer and principal engineer at DuckLake, discusses how the open-source table format reduces complexity, improves performance, and makes large-scale data management more accessible.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/b52163ee-for-thumbnail-25-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>How much simpler could a data lakehouse get if an ordinary SQL database kept track of its files? That&#8217;s the</p>\n<p>The post <a href=\"https://thenewstack.io/ducklake-sql-lakehouse-metadata/\">DuckLake 1.1 solves the absurd complexity of data lakes at AI scale</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-14T15:45:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ducklake-sql-lakehouse-metadata/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "d6e981227f54d87f",
+    "title": "Anthropic wants you to build on Claude. There’s a catch.",
+    "url": "https://thenewstack.io/anthropic-enterprise-developer-competition/",
+    "summary": "<img alt=\"Man stuck in a maze\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"https://cdn.thenewstack.io/media/2026/11/2d5f82cf-pablo-dr-yvf7hmzw3hu-unsplash-1024x683.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Anthropic wants developers to build businesses on Claude, but its expansion into enterprise software is raising concerns among founders that</p>\n<p>The post <a href=\"https://thenewstack.io/anthropic-enterprise-developer-competition/\">Anthropic wants you to build on Claude. There’s a catch.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-14T15:15:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-enterprise-developer-competition/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "46a344aeefda5fa8",
+    "title": "Anthropomorphic Software",
+    "url": "https://aspiz.uk/wiki/AnthropomorphicSoftware",
+    "summary": "<p><a href=\"https://lobste.rs/s/ofic7z/anthropomorphic_software\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-15T08:05:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://aspiz.uk/wiki/AnthropomorphicSoftware"
+      }
+    ],
+    "score": 16.81
+  },
+  {
+    "id": "5db870a5a4eceaee",
+    "title": "Joy & Curiosity #106",
+    "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-106",
+    "summary": "Interesting & joyful things from the previous week",
+    "category": "dev",
+    "source_name": "Thorsten Ball",
+    "published": "2026-11-15T07:39:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Thorsten Ball",
+        "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-106"
+      }
+    ],
+    "score": 16.5
+  },
+  {
+    "id": "4838fb5d83af6346",
+    "title": "Ggml v1.0.0",
+    "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+    "summary": "<p>Article URL: <a href=\"https://github.com/ggml-org/ggml/releases/tag/v1.0.0\">https://github.com/ggml-org/ggml/releases/tag/v1.0.0</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50493062\">https://news.ycombinator.com/item?id=50493062</a></p>\n<p>Points: 410</p>\n<p># Comments: 68</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-14T02:28:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0"
+      }
+    ],
+    "score": 16.07
+  },
+  {
+    "id": "f0e3ac204b15345f",
+    "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+    "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-14T21:41:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+      }
+    ],
+    "score": 14.81
+  },
+  {
+    "id": "2508871553a63321",
+    "title": "Periodic-Oriented Programming for FIRST Robotics",
+    "url": "https://bvisness.me/periodic-oriented-programming/",
+    "summary": "<p><a href=\"https://lobste.rs/s/bwjt1b/periodic_oriented_programming_for_first\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-15T03:16:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://bvisness.me/periodic-oriented-programming/"
+      }
+    ],
+    "score": 13.96
+  },
+  {
+    "id": "3a2cd7a410b50ad6",
+    "title": "Disk encryption on NetBSD achieving secrecy",
+    "url": "https://netbsd.org/~nia/disk-encrypt/",
+    "summary": "<p><a href=\"https://lobste.rs/s/6ovrdg/disk_encryption_on_netbsd_achieving\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-15T05:30:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://netbsd.org/~nia/disk-encrypt/"
+      }
+    ],
+    "score": 13.92
+  },
+  {
+    "id": "765516d7ddcb11ff",
+    "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+    "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+    "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-14T16:34:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
+      }
+    ],
+    "score": 13.53
+  },
+  {
+    "id": "5e4e0d517d238463",
+    "title": "Brilliant Builds Season 2: Rethinking Enterprise AI Across the Customer Journey",
+    "url": "https://www.twilio.com/en-us/blog/events/Builders-in-the-Spotlight--How-EMEA-Champions-Brought-SIGNAL-Paris-to-Life",
+    "summary": "Explore Season 2 of Brilliant Builds. Discover how enterprise leaders move past AI hype to unify omnichannel CX, build explainable AI, and balance automation with human support.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-13T00:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Builders-in-the-Spotlight--How-EMEA-Champions-Brought-SIGNAL-Paris-to-Life"
+      },
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Brilliant-Builds-Rethinking-Enterprise-AI-Across-the-Customer-Journey"
+      }
+    ],
+    "score": 12.77
+  },
+  {
+    "id": "d1fd154fb1bc4c3a",
+    "title": "EP233: Kubernetes Explained for Busy Engineers",
+    "url": "https://blog.bytebytego.com/p/ep233-kubernetes-explained-for-busy",
+    "summary": "Kubernetes is an orchestration platform that manages the deployment and maintenance of containerized applications, particularly on multiple machines.",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-14T16:30:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/ep233-kubernetes-explained-for-busy"
+      }
+    ],
+    "score": 10.49
+  },
+  {
+    "id": "0400655623f53061",
+    "title": "How to Do a Binary Search in Python",
+    "url": "https://realpython.com/binary-search-python/",
+    "summary": "Use the bisect module to do a binary search in Python, then implement this classic algorithm yourself, both iteratively and recursively.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-14T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/binary-search-python/"
+      }
+    ],
+    "score": 10.36
+  },
+  {
+    "id": "8556b650f0d02c4e",
+    "title": "Goal Engineering",
+    "url": "https://www.langchain.com/blog/goal-engineering",
+    "summary": "The future of agents is them taking on open ended goals and driving towards completion of those goals. Learn more.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-14T16:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/goal-engineering"
+      }
+    ],
+    "score": 10.14
+  }
+]

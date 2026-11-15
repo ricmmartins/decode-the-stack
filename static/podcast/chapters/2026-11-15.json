@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 139,
+      "title": "The Gmail story needs a narrower reading than its headline..."
+    },
+    {
+      "startTime": 285,
+      "title": "Self-hosting changes where a model runs, but it does not..."
+    },
+    {
+      "startTime": 433,
+      "title": "That makes the Claude Fable comparison a useful exercise in..."
+    },
+    {
+      "startTime": 582,
+      "title": "That question of complexity runs straight into DuckLake..."
+    },
+    {
+      "startTime": 730,
+      "title": "For our final stretch, these stories put engineering at..."
+    }
+  ]
+}

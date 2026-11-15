@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Sat, 14 Nov 2026 13:23:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 13:23:20 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>AI adoption puts engineering boundaries to the test</title>
+      <description>The strongest theme in this Sunday briefing is the gap between making software work and controlling what it can do. AI-assisted development, self-hosted models, and cloud services all bring that distinction into focus, while several supplied reports…</description>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-15.mp3?v=bcd85945a07a" length="11298734" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-15.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-15-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>The strongest theme in this Sunday briefing is the gap between making software work and controlling what it can do. AI-assisted development, self-hosted models, and cloud services all bring that distinction into focus, while several supplied reports…</itunes:summary>
+      <itunes:duration>941</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-15.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Faster platforms, sharper questions about control</title>
       <description>Platform updates promise faster execution, more predictable APIs, and cheaper access to AI models, while outage reporting and an exploited IRC flaw underline the importance of operational control. Across the selected reporting for Saturday, November 14,…</description>

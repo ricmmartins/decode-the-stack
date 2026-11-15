@@ -440,28 +440,61 @@
         "openai": 1,
         "meta": 1
       }
+    },
+    {
+      "date": "2026-11-15",
+      "tags": {
+        "dotnet": 2,
+        "meta": 2,
+        "claude": 5,
+        "anthropic": 4,
+        "openai": 1,
+        "llama": 1,
+        "hugging-face": 1,
+        "llm": 1,
+        "github": 4,
+        "javascript": 1,
+        "containers": 1,
+        "api": 1,
+        "chatgpt": 1,
+        "gemini": 1,
+        "mistral": 1,
+        "deepseek": 1,
+        "google": 1,
+        "aws": 4,
+        "typescript": 1,
+        "dynamodb": 1,
+        "golang": 1,
+        "terraform": 1,
+        "microsoft": 1,
+        "nvidia": 5,
+        "open-source": 1,
+        "react": 1,
+        "kubernetes": 1,
+        "python": 1
+      }
     }
   ],
   "top_tags": [
     "github",
     "api",
-    "open-source",
     "claude",
+    "open-source",
     "python",
-    "google",
     "nvidia",
+    "google",
     "dotnet",
-    "vercel",
     "openai",
+    "vercel",
+    "anthropic",
     "microsoft",
     "llm",
+    "aws",
     "golang",
     "linux",
     "cve",
-    "anthropic",
-    "rust",
-    "aws",
     "javascript",
-    "apple"
+    "rust",
+    "kubernetes"
   ]
 }
