@@ -473,28 +473,59 @@
         "kubernetes": 1,
         "python": 1
       }
+    },
+    {
+      "date": "2026-11-16",
+      "tags": {
+        "api": 5,
+        "vercel": 1,
+        "sre": 1,
+        "phishing": 1,
+        "rust": 1,
+        "nvidia": 3,
+        "linux": 3,
+        "openai": 3,
+        "chatgpt": 1,
+        "claude": 6,
+        "javascript": 2,
+        "dotnet": 1,
+        "github": 5,
+        "aws": 3,
+        "copilot": 1,
+        "cve": 1,
+        "apple": 1,
+        "nginx": 1,
+        "amd": 1,
+        "open-source": 2,
+        "python": 2,
+        "golang": 2,
+        "uber": 1,
+        "cicd": 1,
+        "mysql": 1,
+        "anthropic": 1
+      }
     }
   ],
   "top_tags": [
     "github",
-    "api",
     "claude",
+    "api",
     "open-source",
-    "python",
     "nvidia",
+    "python",
     "google",
     "dotnet",
     "openai",
     "vercel",
-    "anthropic",
-    "microsoft",
-    "llm",
     "aws",
+    "anthropic",
     "golang",
+    "microsoft",
     "linux",
+    "llm",
     "cve",
     "javascript",
     "rust",
-    "kubernetes"
+    "apple"
   ]
 }

@@ -1,0 +1,354 @@
+[
+  {
+    "id": "59f7b27991f695ad",
+    "title": "Kling 4.0 or Seedance 2.5? Cheaper per second, by resolution",
+    "url": "https://dev.to/chet103cc/kling-40-or-seedance-25-cheaper-per-second-by-resolution-5hnb",
+    "summary": "<p><strong>Answer: at the resolutions both models offer, Kling 4.0 is cheaper — 6 credits per second at 720p against 12 for Seedance 2.5, and 8.9 against 21 at 1080p in <a href=\"https://callirra.com/\" rel=\"noopener noreferrer\">Callirra</a>. Seedance 2.5 has a 480p tier at 5 credits that Kling 4.0 does not, and both render up to 30 seconds with generated audio. Both require an active Starter subscription or higher.</strong></p>\n\n<p>The comparison is refreshingly clean because the two models overlap almost exactly: same duration ceiling, same subscription requirement, same in-clip audio. The decision comes down to price per second and what each one does better.</p>\n\n<h2>\n  \n  \n  Matched specs\n</h2>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Kling 4.0</th>\n<th>Seedance 2.5</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>480p</td>\n<td>—</td>\n<td><strong>5 credits/s</strong></td>\n</tr>\n<tr>\n<td>720p</td>\n<td><strong>6 credits/s</strong></td>\n<td>12 credits/s</td>\n</tr>\n<t",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:06:04+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/chet103cc/kling-40-or-seedance-25-cheaper-per-second-by-resolution-5hnb"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/chet103cc/the-four-controls-that-decide-a-kling-40-shot-579n"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "661617761d5ecd32",
+    "title": "Duplicate Vector Search Chunks: Deterministic IDs Beat Random IDs During Ingestion",
+    "url": "https://dev.to/robertmiller4179/duplicate-vector-search-chunks-deterministic-ids-beat-random-ids-during-ingestion-1i81",
+    "summary": "<p>A page-change alert fires, and its vector search results contain duplicate chunks from the same paragraph under different IDs. The page did not change three times. The ingestion job did.</p>\n\n<p>TL;DR: A retried or re-run bulk ingestion probably inserted identical chunks under fresh random vector IDs. Derive each vector ID from the document ID and chunk index, so a repeat overwrites the same records instead of appending more. If a new parse can produce a different number of chunks, delete the old records by document ID before upserting the replacement set. Then assert that the indexed count for that document equals the parser's output.</p>\n\n<p>For a web-page watcher, that is the difference between an alert grounded in one current passage and an alert assembled from duplicate evidence. It also changes the first diagnostic question: inspect identity and cardinality before tuning similarity thresholds or adding a reranker.</p>\n\n<p>Infrai is a concrete fit when this watcher also needs o",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:07:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/robertmiller4179/duplicate-vector-search-chunks-deterministic-ids-beat-random-ids-during-ingestion-1i81"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e500ed00859f53b0",
+    "title": "Your iOS App Says “Offline”—But Is It? Debugging API Failures With a VPN Enabled",
+    "url": "https://dev.to/klarvpn/your-ios-app-says-offline-but-is-it-debugging-api-failures-with-a-vpn-enabled-358o",
+    "summary": "<p>A user connects their iPhone to a VPN, opens your app and sees:</p>\n\n<blockquote>\n<p>No internet connection. Please try again.</p>\n</blockquote>\n\n<p>They switch to another app, which works.</p>\n\n<p>Your app may have encountered a real failure. But “no internet” might be the wrong diagnosis.</p>\n\n<p>A hostname lookup can fail. A secure connection can fail. An API can return an authentication error. The response can arrive successfully and then fail JSON decoding.</p>\n\n<p><strong>A failed API operation does not automatically mean the device is offline—or that the VPN caused the failure.</strong></p>\n\n<p>The first useful fix is to preserve those distinctions in your networking code.</p>\n\n<h2>\n  \n  \n  Start with what actually failed\n</h2>\n\n<p>Think of an API operation as several stages:</p>\n\n<ol>\n<li>Establish a usable network connection.</li>\n<li>Resolve the destination hostname when needed.</li>\n<li>Establish the secure connection.</li>\n<li>Exchange the HTTP request and response.</li>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:06:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/klarvpn/your-ios-app-says-offline-but-is-it-debugging-api-failures-with-a-vpn-enabled-358o"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "02d328b448ab037f",
+    "title": "Release Autopilot: Releases that run themselves",
+    "url": "https://launchdarkly.com/blog/release-autopilot-releases-that-run-themselves/",
+    "summary": "Release Autopilot lets you automate release controls so agent-written changes reach customers safely.",
+    "category": "cloud",
+    "source_name": "LaunchDarkly Blog",
+    "published": "2026-11-16T19:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LaunchDarkly Blog",
+        "url": "https://launchdarkly.com/blog/release-autopilot-releases-that-run-themselves/"
+      }
+    ],
+    "score": 17.01
+  },
+  {
+    "id": "76461f5b68992790",
+    "title": "Qwen4-Max now available on AI Gateway",
+    "url": "https://vercel.com/changelog/qwen4-max-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/qwen4-max\">Qwen4-Max from Alibaba</a> is now available on AI Gateway. It is the first model in the Qwen4 series: a reasoning model with native vision and a 1M-token context window, built for coding, professional work, and long-running agent tasks.</p><p>Qwen4-Max is better at working with professional tools. It can build 3D scenes in Blender and playable games in Unity, Unreal Engine, and Godot, running what it builds and using visual feedback to fix camera, animation, and lighting issues. For finance, legal, and healthcare work, it can call many MCP tools, work through large sets of documents and images, and produce spreadsheets, slide decks, and reports that cite their sources.</p><p>For long-running tasks, the model delivers a usable first version early and then improves it in successive releases, so you can review progress and change direction before the work is finished. Alibaba is open-sourcing a Live Delivery plugin for this workf",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-15T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/qwen4-max-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "5d5dd6868d3aa2e1",
+    "title": "SRE Weekly Issue #543",
+    "url": "https://sreweekly.com/sre-weekly-issue-543/",
+    "summary": "View on sreweekly.com A message from our sponsor, Incident.io: Your agent is only as useful as the tools it can reach, and only as safe as the limits you set. Join incident.io’s engineering team for an Extensions showcase. We&#8217;ll build a skill live, watch it run, and safely deploy. Register Now → Introducing 100 Things [&#8230;]",
+    "category": "devops",
+    "source_name": "SRE Weekly",
+    "published": "2026-11-16T02:53:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "SRE Weekly",
+        "url": "https://sreweekly.com/sre-weekly-issue-543/"
+      }
+    ],
+    "score": 16.35
+  },
+  {
+    "id": "5eaa5f134c24c306",
+    "title": "Usable Security at Luxury Hotels",
+    "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+    "summary": "<p>Interesting <a href=\"https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/\">case study</a> from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved.</p>\n<p>This is a good illustration why &#8220;just don&#8217;t click on links&#8221; is bad advice. It can&#8217;t work when answering strangers&#8217; emails is the job. Even worse, in this case the guest-first culture punishes hesitation. More interesting, the case study shows that splitting security between owner, operator, and brand leaves nobody accountable. And this is exactly the setting where blaming staff becomes the convenient answer...</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-16T12:04:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "46d856a5a553e377",
+    "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+    "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+    "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads.\n\nCentral to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-16T09:32:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "513ee61a931ffe77",
+    "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+    "url": "https://openai.com/index/lvmh-media-division-partnership",
+    "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-16T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/lvmh-media-division-partnership"
+      }
+    ],
+    "score": 21.44
+  },
+  {
+    "id": "580c2738a23bd389",
+    "title": "datasette-apps 0.4a0",
+    "url": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.4a0\">datasette-apps 0.4a0</a></p>\n        <p>Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data.</p>\n<p>0.4a0 adds support for linking: you can link to an app with <code>#fragments</code> in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other.</p>\n<p>This means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their representations in the first app.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/datasette-agent\">datasette-agent</a>, <a href=\"https://simonwillison.net/tags/datasette-apps\">datasette-apps</a>, <a href=\"https://simonwillison.net/tags/datasette\">dat",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-15T04:02:45+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/15/datasette-2/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/15/datasette-apps/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "60645a267af2113e",
+    "title": "Article: Governed Autonomous Intelligence for Mission-Critical Utility",
+    "url": "https://www.infoq.com/articles/utility-governed-autonomous-intelligence-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/utility-governed-autonomous-intelligence-ai/en/headerimage/utility-governed-autonomous-intelligence-ai-header-1793368487796.jpg\" /><p>The article describes an architecture for agentic AI in regulated utility operations. Agents reason and propose actions, but a deterministic policy gate and a governed tool gateway control execution, with human approval where required. It covers an AWS reference implementation, grounding in runbooks, governed prediction, outcome validation, audit evidence, and phased autonomy.</p> <i>By Purnang Borah</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/utility-governed-autonomous-intelligence-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "46bf2c5da5e10b50",
+    "title": "GitHub Rebuilds the Copilot App's Diff Surface to Open Million-Line Pull Requests Without Jank",
+    "url": "https://www.infoq.com/news/2026/11/github-pull-requests-rebuild/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/github-pull-requests-rebuild/en/headerimage/generatedHeaderImage-1794747791339.jpg\" /><p>GitHub engineers rebuilt the diff view in the Copilot app to handle a pull request with 2,200 files, over a million changed lines and 400 inline comments. The design separates fixed-height code rows from variable-height comment blocks, which are measured in batches near the viewport. Performance is checked through CI budgets and automated app runs.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T10:32:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/github-pull-requests-rebuild/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "16dea2dd743869aa",
+    "title": "AWS Nitro Sandboxes Put Each EKS Pod in Its Own MicroVM with One RuntimeClass Field",
+    "url": "https://www.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/en/headerimage/generatedHeaderImage-1794301940782.jpg\" /><p>AWS has launched Nitro Sandboxes, running each opted-in EKS pod, ECS task or EC2 workload in its own Firecracker microVM with a separate kernel, enabled by one runtimeClassName field at no extra charge. A confidential mode adds attestation-gated key release. The documentation lists the trade-offs: no GPU passthrough, at most five sandboxes per vCPU, and half the compute on SMT instances.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T09:07:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "4c0cac4ed17a528d",
+    "title": "Alpine Linux Users Urged to Patch OpenSSH Authentication Flaw",
+    "url": "https://www.infoq.com/news/2026/11/alpine-linux-openssh-sshhole/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/alpine-linux-openssh-sshhole/en/headerimage/generatedHeaderImage-1794610199233.jpg\" /><p>A recently disclosed vulnerability in OpenSSH lets an unauthenticated attacker log into accounts that should have no usable password. The issue, named *sshole and tracked as CVE-2026-123158, affects Linux systems running OpenSSH with the musl C library and which don't use PAM. Security researchers now report that attackers are exploiting it in the wild.</p> <i>By Matt Saunders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/alpine-linux-openssh-sshhole/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "88fcca9b2487db02",
+    "title": "Podcast: Getting CRA Compliant Hardens the Code and Gets Your Company Closer to Digital Sovereignty",
+    "url": "https://www.infoq.com/podcasts/company-closer-digital-sovereignty/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/podcasts/company-closer-digital-sovereignty/en/smallimage/infoq-podcast-500-1794318137932.jpg\" /><p>In this episode, Christopher \"CRob\" Robinson, CTO of OpenSSF, Akrites and Chief Security Architect of the Linux Foundation, explores the state of software supply chain security amid multiple security incidents and explains how tools like Scorecard, the Security Baseline framework, and SLSA help harden software.</p> <i>By Christopher Robinson</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/podcasts/company-closer-digital-sovereignty/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.79
+  },
+  {
+    "id": "d5caa9694370187b",
+    "title": "Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data",
+    "url": "https://www.infoq.com/news/2026/11/airbnb-castle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Airbnb researchers have introduced CASTLE, a framework designed to address the cold-start problem in natural language search. The approach uses de-identified booking sessions and large language models (LLMs) to jointly generate synthetic search queries and relevance labels, enabling model training before sufficient real search traffic is available.</p> <i>By Robert Krzaczyński</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T12:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/airbnb-castle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.63
+  },
+  {
+    "id": "bbfe9baa15dae0f7",
+    "title": "AWS Open-Sources Emulator for Local Testing of 200+ Services by Coding Agents",
+    "url": "https://www.infoq.com/news/2026/11/aws-emulator-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-emulator-agents/en/headerimage/generatedHeaderImage-1794516406278.jpg\" /><p>AWS Emulator is a generally available local HTTPS endpoint, generated from public Smithy API models, that lets developers and coding agents test against more than 200 AWS services without an account, with published fidelity scores and documented limits around IAM, regions, and in-memory state.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T10:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-emulator-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.5
+  },
+  {
+    "id": "2234ab2e67248811",
+    "title": "Claude thinking tokens: what they cost and how to spend less",
+    "url": "https://dev.to/neverpaytwice/claude-thinking-tokens-what-they-cost-and-how-to-spend-less-1ji3",
+    "summary": "<p><em>Originally published at <a href=\"https://neverpaytwice.pages.dev/claude-thinking-tokens-cost\" rel=\"noopener noreferrer\">neverpaytwice.pages.dev</a>.</em></p>\n\n<p><strong>Short answer:</strong> thinking tokens are billed as output tokens, at the output price, whether or not you see them. On the newest Claude models thinking is on by default and its text comes back empty unless you ask for a summary, so it is easy to pay for a lot of it without noticing.</p>\n\n<p>Each response tells you how much was thinking. The main way to spend less is the <code>effort</code> setting; on some models you can also switch thinking off.</p>\n\n<h2>\n  \n  \n  How thinking is billed\n</h2>\n\n<p>Thinking is counted inside <code>usage.output_tokens</code>, and output is the most expensive kind of token: five times the input price on current Claude models. <code>usage.output_tokens_details.thinking_tokens</code> tells you how many of the output tokens were thinking.</p>\n\n<p>Example: a Claude Sonnet 5.5 respons",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:05:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/neverpaytwice/claude-thinking-tokens-what-they-cost-and-how-to-spend-less-1ji3"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "095c3696b5ddef70",
+    "title": "Your Hex Converter Is Off by 4,095: Five Base-Conversion Traps",
+    "url": "https://dev.to/zhihu_wu_dea1d82af01a04d7/your-hex-converter-is-off-by-4095-five-base-conversion-traps-4fgl",
+    "summary": "<p>I was chasing a mismatched ID in a log line last week. The value came in as hex, I pasted it into a converter, got a decimal back, compared it with what the database held — and the two disagreed by 4,095. The hex was fine. The converter was fine for 32-bit values. The number was 64 bits.</p>\n\n<p>Here are the five traps I have hit often enough to check first every time.</p>\n\n<h2>\n  \n  \n  1. Floats can't hold 64-bit integers\n</h2>\n\n\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight javascript\"><code><span class=\"nb\">parseInt</span><span class=\"p\">(</span><span class=\"s1\">'FFFFFFFFFFFFFFFF'</span><span class=\"p\">,</span> <span class=\"mi\">16</span><span class=\"p\">)</span>\n<span class=\"c1\">// 18446744073709552000  (wrong)</span>\n<span class=\"nc\">BigInt</span><span class=\"p\">(</span><span class=\"s1\">'0xFFFFFFFFFFFFFFFF'</span><span class=\"p\">)</span><span class=\"p\">.</span><span class=\"nf\">toString</span><span class=\"p\">(</span><span class=\"p\">)</span>\n<span class=\"c1\">// '",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:05:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/zhihu_wu_dea1d82af01a04d7/your-hex-converter-is-off-by-4095-five-base-conversion-traps-4fgl"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "d38ebe1abfb84d2a",
+    "title": "New App Store Age Rating Questions: What to Answer by 12 January Without Losing Your Audience",
+    "url": "https://dev.to/mosmox_studio/new-app-store-age-rating-questions-what-to-answer-by-12-january-without-losing-your-audience-4fd0",
+    "summary": "<p>Since 16 November 2026, the age rating questionnaire in App Store Connect has two new questions: can people share their real-world location with others (Shared Location), and does the app include dating or romantic relationships (Dating and Relationships). <strong>Every app must answer them by 12 January 2027</strong>, and the answers are also required with every update or questionnaire change.</p>\n\n<p>On paper it is a couple of checkboxes. In practice, one answer can raise an app to 18+, hide it from child and teen accounts with parental controls, and block a release right before the holidays. Here is what changed, how to audit your features, and how to avoid losing an audience over one careless answer.</p>\n\n<h2>\n  \n  \n  What Apple announced\n</h2>\n\n<p>According to <a href=\"https://developer.apple.com/news/?id=yxkh08us\" rel=\"noopener noreferrer\">Apple's announcement of 2 November 2026</a>, the age rating section gains two declarations:</p>\n\n<ul>\n<li>\n<strong>Shared Location:</strong",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:05:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mosmox_studio/new-app-store-age-rating-questions-what-to-answer-by-12-january-without-losing-your-audience-4fd0"
+      }
+    ],
+    "score": 21.0
+  }
+]

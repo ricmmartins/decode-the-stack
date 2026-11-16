@@ -115,5 +115,14 @@
     "main_stories": 19,
     "radar_items": 19,
     "generated_at": "2026-11-15T13:23:00.568935+00:00"
+  },
+  {
+    "date": "2026-11-16",
+    "total_sources": 242,
+    "articles_ingested": 67,
+    "clusters_formed": 63,
+    "main_stories": 20,
+    "radar_items": 30,
+    "generated_at": "2026-11-16T13:25:52.323283+00:00"
   }
 ]

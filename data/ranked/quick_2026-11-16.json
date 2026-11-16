@@ -1,0 +1,516 @@
+[
+  {
+    "id": "7d7473150dd420df",
+    "title": "Writing sound into a Kling 4.0 prompt",
+    "url": "https://dev.to/chet103cc/writing-sound-into-a-kling-40-prompt-jjl",
+    "summary": "<p><strong>Answer: Kling 4.0 in <a href=\"https://callirra.com/\" rel=\"noopener noreferrer\">Callirra </a>generates an audio track alongside the picture, and the prompt is the only mixing desk you get. Describe ambience, the specific events that belong to the action, and — most usefully — the sound the shot ends on. A silent prompt does not produce silence; it produces whatever the model associates with the scene.</strong></p>\n\n<p>That last sentence is the whole argument for writing audio. If the prompt says \"a maintenance robot runs through a rainy station\", the model will pick <em>some</em> ambience. If the prompt says \"begin with rain, quick mechanical footsteps and the low hum of the train, end on the small click of the lunchbox latch\", it picks the arc you asked for.</p>\n\n<h2>\n  \n  \n  The three-part structure that works\n</h2>\n\n<ol>\n<li>\n<strong>Bed.</strong> The continuous layer: room tone, wind, rain, traffic, a server room hum. One clause.</li>\n<li>\n<strong>Events.</strong> The sou",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:04:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/chet103cc/writing-sound-into-a-kling-40-prompt-jjl"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1fe5ace61570f17d",
+    "title": "Why AI Agent Approvals Missed a Gap and Checks Increased Confidence",
+    "url": "https://dev.to/orca_forge/why-ai-agent-approvals-missed-a-gap-and-checks-increased-confidence-4n3c",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/relayed-approval-amplifies-confidence/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=relayed-approval-amplifies-confidence\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR In a development environment with multiple AI sessions, I approved a relayed procedure that had not been verified. Everyone who read and approved it missed a gap. Adding <code>&amp;&amp;</code> as a condition did not establish safety and strengthened confidence in a false assumption.</p>\n\n<h2>\n  \n  \n  Conclusion First\n</h2>\n\n<p>The procedure relayed between AI sessions had not been verified, and everyone who read and approved it missed the flaw. Adding <code>&amp;&amp;</code> as a condition did not help; the reassurance of adding a condition only strengthened our confidence in a false assumption.</p>\n\n<h2>\n  \n  \n  I Took “Follow the Order” as a Safety Guarantee\n</h2>\n\n<p>This",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:04:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/why-ai-agent-approvals-missed-a-gap-and-checks-increased-confidence-4n3c"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "575f8e73b09c823b",
+    "title": "Nginx Proxy Manager opens a new backend connection for every request. Here's what that costs (and a 10-line fix)",
+    "url": "https://dev.to/moonjikwang/nginx-proxy-manager-opens-a-new-backend-connection-for-every-request-heres-what-that-costs-and-a-3jab",
+    "summary": "<p>I build an open-source gateway on top of OpenResty, and the first version of it was embarrassingly<br />\nslow: <strong>18 % of plain nginx's throughput</strong> on the same hardware. The biggest single fix turned out<br />\nto be one that many reverse proxies, including Nginx Proxy Manager (NPM), still don't apply:<br />\n<strong>reusing connections to the backend.</strong></p>\n\n<p>This post shows the benchmark, explains the cause, and gives you a fix you can apply to NPM today<br />\nwithout switching anything.</p>\n<h2>\n  \n  \n  The setup\n</h2>\n\n<p>Everything runs on one GitHub-hosted <code>ubuntu-24.04</code> runner (4 vCPU AMD EPYC), pinned with<br />\n<code>taskset</code> / <code>--cpuset-cpus</code> so the proxies can't steal CPU from the load generator:</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>CPU</th>\n<th>What runs there</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>\n<a href=\"https://github.com/wg/wrk\" rel=\"noopener noreferrer\">wrk</a>, 64 keep-alive cl",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:04:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/moonjikwang/nginx-proxy-manager-opens-a-new-backend-connection-for-every-request-heres-what-that-costs-and-a-3jab"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ad2ed059cdd84c0d",
+    "title": "Raw public keys move TLS identity into provisioning and rotation",
+    "url": "https://dev.to/kozhevniko/raw-public-keys-move-tls-identity-into-provisioning-and-rotation-opj",
+    "summary": "<h1>\n  \n  \n  Raw public keys move TLS identity into provisioning and rotation\n</h1>\n\n<p>Most TLS deployments rely on X.509 certificates to connect a public key with a name and a chain of trust. RFC 7250 defines another option: sending a raw <code>SubjectPublicKeyInfo</code> value in TLS or DTLS and learning the peer identity from an external mapping. The protocol still authenticates possession of the private key, but it does not perform certificate path validation for a peer certificate.</p>\n\n<p>This design is useful for constrained devices and closed systems where a full certificate profile is unnecessary. It also moves a large amount of security responsibility into provisioning. The verifier must know which raw public key belongs to which peer and must reject keys that are not on that list. A successful handshake with an unknown key is not an identity match.</p>\n\n<h2>\n  \n  \n  The key is the identity\n</h2>\n\n<p>With certificate-based authentication, applications often use subject names",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:03:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kozhevniko/raw-public-keys-move-tls-identity-into-provisioning-and-rotation-opj"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "498d17f2ef4a4676",
+    "title": "Stop showing a spinner: stream an AI answer's progress in 40 lines of Python",
+    "url": "https://dev.to/factqlai/stop-showing-a-spinner-stream-an-ai-answers-progress-in-40-lines-of-python-43lh",
+    "summary": "<p>A question about your data can take ten seconds or more to answer properly. Ten seconds of spinner feels broken. Ten seconds of visible progress feels like work being done.</p>\n\n<p>This post shows how to read a streamed answer with nothing but <code>requests</code>: progress lines first, then the rows, then the answer. It uses server-sent events (SSE), so the same pattern applies to any API that streams this way.</p>\n\n<h2>\n  \n  \n  The format in 30 seconds\n</h2>\n\n<p>An SSE response is plain text. Each event is two lines, then a blank line:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>event: status\ndata: {\"stage\": \"generating_sql\", \"message\": \"Generating SQL...\"}\n</code></pre>\n\n</div>\n\n\n\n<p>So the reader is a small loop: remember the last <code>event:</code> line, parse the next <code>data:</code> line as JSON, act on the pair.</p>\n\n<h2>\n  \n  \n  The code\n</h2>\n\n<p>This runs as is, with no signup: it borrows <a href=\"https://factql.ai/?re",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-16T13:03:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/factqlai/stop-showing-a-spinner-stream-an-ai-answers-progress-in-40-lines-of-python-43lh"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "d7d93965535c45a5",
+    "title": "After dodging death, battery startup Our Next Energy is now going public",
+    "url": "https://techcrunch.com/2026/11/16/after-dodging-death-battery-startup-our-next-energy-is-now-going-public/",
+    "summary": "Our Next Energy is the latest battery startup to go public via SPAC. Does it now have what it needs to survive in a the cutthroat battery industry?",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-16T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/16/after-dodging-death-battery-startup-our-next-energy-is-now-going-public/"
+      }
+    ],
+    "score": 20.47
+  },
+  {
+    "id": "98a2e57efec76338",
+    "title": "wire:key and the Row That Kept the Wrong Data",
+    "url": "https://freek.dev/3224-wirekey-and-the-row-that-kept-the-wrong-data",
+    "summary": "<p>Steven Richardson explains why missing or unstable wire:key values can leave Livewire lists showing the wrong Alpine state or stale nested component data after a row is deleted or reordered. He shows how to use stable, prefixed keys for rows and child components, and what server-side tests can and cannot verify.</p>\n\n\n<a href=\"https://richdynamix.com/articles/livewire-4-wire-key-list-diffing-stale-components\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-16T12:30:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3224-wirekey-and-the-row-that-kept-the-wrong-data"
+      }
+    ],
+    "score": 20.29
+  },
+  {
+    "id": "76a26e151a4cb00d",
+    "title": "Uber's Secure AI Framework Governs Autonomous AI Agents across Their Lifecycle",
+    "url": "https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/uber-secure-ai-framework/en/headerimage/uber-open-search-semantic-1794769460527.jpeg\" /><p>In a recent article, Uber Engineering highlights the limitations of traditional identity and API controls in securing AI agents that dynamically reason over external content and take real-world actions. Uber developed a framework to determine whether an agent's action is appropriate given the user's request, the agent's intended purpose, its permissions, and the context of the interaction.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-15T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "a17181406e9aea9a",
+    "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+    "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+    "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week.\n\nNo patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws.\n\nGovernment cybersecurity agencies in Belgium, Ireland and Germany told operators this week to",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-16T12:34:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "db780841aa0dc40c",
+    "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+    "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+    "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records.\n\nThe records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys.\n\nThe team said this",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-16T07:34:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "8af609c4e0a20e6d",
+    "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+    "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+    "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines.\n\n\"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today.\n\n\"The '7z.dll' file was a patched version of the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-16T12:33:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html"
+      }
+    ],
+    "score": 19.9
+  },
+  {
+    "id": "70c47c668bd8e127",
+    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+    "summary": "<p><a href=\"https://wallhop.io/https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html\" rel=\"nofollow\">https://wallhop.io/https://www.nytimes.com/2026/11/15/us/pol...</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50506180\">https://news.ycombinator.com/item?id=50506180</a></p>\n<p>Points: 502</p>\n<p># Comments: 238</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-15T11:40:51+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html"
+      }
+    ],
+    "score": 19.87
+  },
+  {
+    "id": "3944baeb95a83679",
+    "title": "Senator slams Commerce Secretary for flow of Nvidia AI chips to China",
+    "url": "https://www.theverge.com/policy/1034047/nvidia-us-commerce-department-cantwell-lutnick",
+    "summary": "Washington Senator Maria Cantwell, one of the top Democrats on the Senate commerce committee, has taken fire at the Department of Commerce (DOC) under Secretary Howard Lutnick for neglecting to enforce protections intended to keep Nvidia's AI chips away from China. In a letter to Lutnick on Sunday, Cantwell said the DOC has \"undermined America's [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-16T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/policy/1034047/nvidia-us-commerce-department-cantwell-lutnick"
+      }
+    ],
+    "score": 19.57
+  },
+  {
+    "id": "c83028eb62096bf0",
+    "title": "Run AI Agents in TeamCity",
+    "url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/",
+    "summary": "AI coding agents don&#8217;t have to run only on a developer&#8217;s machine. You can also make them part of your CI/CD workflows to review code, investigate failed builds, update documentation, or handle other repository tasks. The new experimental AI Agents plugin for TeamCity lets you run Codex and Claude Code directly in TeamCity builds and [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-16T09:28:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/"
+      }
+    ],
+    "score": 19.56
+  },
+  {
+    "id": "6d9c552f8b38370f",
+    "title": "Weekly Update 530: Email Dependencies & Apps",
+    "url": "https://www.troyhunt.com/weekly-update-530/",
+    "summary": "<p>Email is just one of those utilities like power or water where you always expect it to just, well, to just be there. You sign up with a provider and use as much of it as you need, when you need it, and the idea of it being unavailable for</p>",
+    "category": "security",
+    "source_name": "Troy Hunt",
+    "published": "2026-11-16T07:09:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Troy Hunt",
+        "url": "https://www.troyhunt.com/weekly-update-530/"
+      }
+    ],
+    "score": 18.45
+  },
+  {
+    "id": "7dee63c529565fdb",
+    "title": "Unenumerbrated",
+    "url": "https://thedailywtf.com/articles/unenumerbrated",
+    "summary": "<p>Submitter <b>Valts</b> shares an enumerated mystery:</p>\n\n<blockquote>\n<p>This happened a few years ago (before COVID). A colleague called me over because he couldn't make sense of the results he was getting from some MySQL queries in MySQL Workbench. I don't remember the queries in particular, but let's say <code>select * from payments where client_id=1234</code> showed 12 rows, all having the <code>successful</code> field set to <code>1</code>. But when you selected <code>select count(*) from payments where client_id=1234 and successful=1</code> you got back <code>0</code> rows. And this was reproducible on my machine, too. Yet in code similar queries worked just fine.</p>\n\n<p>After a lot of head-scratching and increasingly bizarre hypotheses, we finally figured out what was going on. In the far, far past, in dark days gone by, someone had defined the database field as <code>enum('0', '1')</code>. This SEEMS pretty rational ... until you start reading up how MySQL treats enums. En",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-16T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/unenumerbrated"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "e4280c7fb14b3163",
+    "title": "Quiz: How to Set Up a Python Project for Agentic Coding",
+    "url": "https://realpython.com/quizzes/python-project-for-agentic-coding/",
+    "summary": "Check how well you can set up a Python project for agentic coding, with the tests, type checks, linting, and hooks that give AI agents fast feedback.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-16T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/python-project-for-agentic-coding/"
+      }
+    ],
+    "score": 17.49
+  },
+  {
+    "id": "113c3f5435418a30",
+    "title": "All AI-generated code should be Open Source",
+    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+    "summary": "<p>Article URL: <a href=\"https://jakub.jankiewicz.org/blog/ai-code-open-source/\">https://jakub.jankiewicz.org/blog/ai-code-open-source/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50507303\">https://news.ycombinator.com/item?id=50507303</a></p>\n<p>Points: 1175</p>\n<p># Comments: 622</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-15T14:46:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/"
+      }
+    ],
+    "score": 17.13
+  },
+  {
+    "id": "b0cdba84aeb6b58e",
+    "title": "DuckDB has an answer to “bloated” database messages",
+    "url": "https://thenewstack.io/duckdb-quack-database-protocol/",
+    "summary": "<img alt=\"In this episode of The New Stack Podcast, Guillermo Sánchez Dionis, product lead at DuckLabs, explains how Quack addresses the limitations of traditional database protocols, which often introduce unnecessary overhead and inefficient data serialization.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/dcee749a-for-thumbnail-26-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Older database protocols were built before big data. Some still send results row by row, repeating details like column names</p>\n<p>The post <a href=\"https://thenewstack.io/duckdb-quack-database-protocol/\">DuckDB has an answer to “bloated” database messages</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-15T15:05:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/duckdb-quack-database-protocol/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "0e9156cdaba36f45",
+    "title": "Claude Fable 5.2 vs. Opus 5.5: Same scores at almost 4x the cost",
+    "url": "https://thenewstack.io/claude-fable-5-2-vs-opus-5-5/",
+    "summary": "<img alt=\"Gold and green 3D spheres with cut-out holes linked by ribbons, evoking a Claude Fable 5.2 vs. Opus 5.5 comparison\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/fd7d63c5-steve-a-johnson-cnkk7hrczto-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Anthropic released Claude Fable 5.2 on November 9 and said it beats Claude Opus 5.5 in almost every capability the</p>\n<p>The post <a href=\"https://thenewstack.io/claude-fable-5-2-vs-opus-5-5/\">Claude Fable 5.2 vs. Opus 5.5: Same scores at almost 4x the cost</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-15T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-fable-5-2-vs-opus-5-5/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "3c8cfcca37128209",
+    "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+    "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+    "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server.\n\nThe activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-16T06:53:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html"
+      }
+    ],
+    "score": 16.95
+  },
+  {
+    "id": "c571ea6b4f9db915",
+    "title": "Teach Genie One your workflows: The ultimate guide for skills in Genie One",
+    "url": "https://www.databricks.com/blog/teach-genie-one-your-workflows-ultimate-guide-skills-genie-one",
+    "summary": "Every team has “recipes” that govern how they work. The way finance puts together...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-16T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/teach-genie-one-your-workflows-ultimate-guide-skills-genie-one"
+      }
+    ],
+    "score": 16.84
+  },
+  {
+    "id": "292eb4855b318ff0",
+    "title": "Nvidia Was Already in Trouble Before the Jensen Huang Mess",
+    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+    "summary": "AI competitors are catching up to Nvidia—and poised to take advantage of the chaos.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-16T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/"
+      }
+    ],
+    "score": 16.83
+  },
+  {
+    "id": "9e0d5bd74c818258",
+    "title": "Programming a language",
+    "url": "https://nrinaudo.github.io/articles/pl.html",
+    "summary": "<p><a href=\"https://lobste.rs/s/aavjsr/programming_language\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-16T11:24:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://nrinaudo.github.io/articles/pl.html"
+      }
+    ],
+    "score": 16.77
+  },
+  {
+    "id": "645c8a8eb2b95ab3",
+    "title": "Our new blog for science",
+    "url": "https://openai.com/index/our-new-blog-for-science",
+    "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-15T22:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/our-new-blog-for-science"
+      }
+    ],
+    "score": 16.45
+  },
+  {
+    "id": "f997e97484bc48cb",
+    "title": "A step toward defining the Standard Model on a lattice",
+    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-15T22:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/step-toward-defining-the-standard-model"
+      }
+    ],
+    "score": 16.4
+  },
+  {
+    "id": "797b3cf47d255a9b",
+    "title": "The King’s Trust and OpenAI launch £1m partnership",
+    "url": "https://openai.com/index/the-kings-trust-and-openai",
+    "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-16T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/the-kings-trust-and-openai"
+      }
+    ],
+    "score": 16.36
+  },
+  {
+    "id": "69a0fb0cc2a190b9",
+    "title": "datasette-maplibre 0.1a0",
+    "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-maplibre/releases/tag/0.1a0\">datasette-maplibre 0.1a0</a></p>\n        <p>The first new Datasette geospatial plugin in quite a while! This one combines the excellent <a href=\"https://maplibre.org/maplibre-gl-js/docs/\">MapLibre GL</a> library with <a href=\"https://openfreemap.org\">OpenFreeMap</a>, the free vector map server operated by Zsolt Ero (you should <a href=\"https://github.com/sponsors/hyperknot\">sponsor Zsolt on GitHub</a>.)</p>\n<p>I built most of this with a single prompt to Claude Fable 5.2:</p>\n<blockquote>\n<p><code>Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside the box for other useful features the plugin might have</code></p>\n</blockquote>\n<p>\"Be creative and think ",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-15T23:58:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "78b379943be38a7d",
+    "title": "datasette 1.0a43",
+    "url": "https://simonwillison.net/2026/Nov/15/datasette/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a43\">datasette 1.0a43</a></p>\n        <p>I've been leaning hard into Claude Fable 5.2 to help knock things off the <a href=\"https://github.com/simonw/datasette/milestone/37\">1.0 milestone</a>, which is now 53% complete.</p>\n<p>The biggest 1.0 item in this release is <a href=\"https://docs.datasette.io/en/latest/plugin_hooks.html#plugin-register-output-renderer-streaming\">streaming support for output renderers</a> - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new <a href=\"https://docs.datasette.io/en/latest/internals.html#internals-response-stream\">Response.stream()</a> method.</p>\n<p>There are a couple of security fixes, one of which I deemed <a href=\"https://github.com/simonw/datasette/security/advisories/GHSA-mw6v-83vp-7c4c\">deserving of a GitHub advisory</a>: private stored que",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-15T23:20:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/15/datasette/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "b0cdc49c14dede6e",
+    "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+    "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+    "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-15T23:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+      }
+    ],
+    "score": 15.22
+  }
+]

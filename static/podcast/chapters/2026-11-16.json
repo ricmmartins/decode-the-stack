@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 8,
+      "title": "Opening"
+    },
+    {
+      "startTime": 140,
+      "title": "Local testing gives agents a feedback loop, but what does a..."
+    },
+    {
+      "startTime": 297,
+      "title": "The LVMH Media Division partnership with OpenAI has two..."
+    },
+    {
+      "startTime": 447,
+      "title": "The interface question here is surprisingly concrete: what..."
+    },
+    {
+      "startTime": 612,
+      "title": "That brings us to where agents actually run. JetBrains..."
+    },
+    {
+      "startTime": 763,
+      "title": "To close, let's connect practical AI skills with the tools..."
+    }
+  ]
+}
