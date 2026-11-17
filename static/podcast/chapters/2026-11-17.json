@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 136,
+      "title": "Observability belongs inside the performance budget, not..."
+    },
+    {
+      "startTime": 273,
+      "title": "Agent performance also gets harder to define once the..."
+    },
+    {
+      "startTime": 412,
+      "title": "A useful engineering question here is what a tool actually..."
+    },
+    {
+      "startTime": 564,
+      "title": "That leaves a practical question: what evidence should make..."
+    },
+    {
+      "startTime": 706,
+      "title": "To close, there is a useful tension across these stories:..."
+    }
+  ]
+}

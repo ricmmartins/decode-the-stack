@@ -1,0 +1,512 @@
+[
+  {
+    "id": "74e40685485630e1",
+    "title": "Lever's public postings API: what one request returns, and five things to handle",
+    "url": "https://dev.to/dododata/levers-public-postings-api-what-one-request-returns-and-five-things-to-handle-aj7",
+    "summary": "<p>Every Lever job board is also a public JSON API. Lever publishes it so that a company's jobs can be shown anywhere; it needs no key for reading. One request per company returns the whole board. We built a search on it this autumn; this is what the API gives you, measured on 16 November 2026 on three boards, Palantir (302 open jobs), Zoox (241) and Spotify (87), and on our daily index of 32,410 Lever jobs on 345 boards.</p>\n\n<h2>\n  \n  \n  One URL per company\n</h2>\n\n\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>https://api.lever.co/v0/postings/&lt;board&gt;?mode=json\n</code></pre>\n\n</div>\n\n\n\n<p><code>&lt;board&gt;</code> is the company's board name, the same word that appears in its job links (<code>jobs.lever.co/spotify/...</code>). A board name that does not exist returns HTTP 404 with <code>{\"ok\":false,\"error\":\"Document not found\"}</code>, so a typo fails loudly. Boards hosted in Europe (<code>jobs.eu.lever.co</code>, 66 of the 347 in our index) ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:04:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/dododata/levers-public-postings-api-what-one-request-returns-and-five-things-to-handle-aj7"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "13c10694d31ebd72",
+    "title": "How AI Video Generation Works",
+    "url": "https://dev.to/paragonaimag/how-ai-video-generation-works-3070",
+    "summary": "<p>Developer note: Series 3, Episode 5 deep dive for Paragon AI MAG. How does AI video generation work? The mechanism: a diffusion transformer (DiT) denoises latent representations — video compressed into latent space, chopped into 3D spacetime patches that act like text tokens, denoised over 20 to 50 passes with text conditioning, native audio generated in the same pass as the pixels. We also cover why clips stay under 30 seconds (compute grows with every frame, small errors compound into physical drift), the 2026 leaders (Veo 3.1, Kling 4, Seedance 2.5, Runway Gen-4.5), Veo 3.1 API rates and Flow credits, and the 6-element prompt formula. Canonical URL: <a href=\"https://paragonaimag.substack.com/p/how-ai-video-generation-works\" rel=\"noopener noreferrer\">https://paragonaimag.substack.com/p/how-ai-video-generation-works</a></p>\n\n<p>By Paragon AI MAG — Series 3, Episode 5, \"How the AI Tools You Use Actually Work\" — 17 November 2026</p>\n\n<p>Watch the video: <a href=\"https://youtu.be/Ew7y",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:04:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/paragonaimag/how-ai-video-generation-works-3070"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ada4f951af121573",
+    "title": "Cloudflare doesn't cache your HTML. Cache Rules, explained without the dashboard tour",
+    "url": "https://dev.to/nocachedev/cloudflare-doesnt-cache-your-html-cache-rules-explained-without-the-dashboard-tour-k47",
+    "summary": "<p>You put a site behind Cloudflare, send <code>Cache-Control: public, s-maxage=300</code> on your pages, and every HTML response still says <code>cf-cache-status: DYNAMIC</code>. Nothing is misconfigured. Cloudflare just never looked at your header.</p>\n\n<p>Its default cache behaviour page says it directly: \"Cloudflare only caches based on file extension and not by MIME type. The Cloudflare CDN does not cache HTML or JSON by default.\" Your <code>s-maxage</code> is only read after something has made the request eligible, and for HTML that something is a Cache Rule.</p>\n\n<p>Here's how the pieces fit, checked against Cloudflare's docs and two live sites today.</p>\n\n<h2>\n  \n  \n  What cf-cache-status is telling you\n</h2>\n\n<p>The statuses split into two groups, and the split matters more than any single value.</p>\n\n<p><strong>Decided at request time, before your origin answers:</strong></p>\n\n<ul>\n<li>\n<code>DYNAMIC</code>: \"not eligible for cache at request time\", so there was no cache look",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:03:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/nocachedev/cloudflare-doesnt-cache-your-html-cache-rules-explained-without-the-dashboard-tour-k47"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "37bd8cf93c51dcb2",
+    "title": "PHP2Shell & the Node.js Brotli Flaw: Patch Guide",
+    "url": "https://dev.to/_geekspark/php2shell-the-nodejs-brotli-flaw-patch-guide-ba6",
+    "summary": "<p>On October 21, 2026, PHP and Node.js both shipped urgent security releases on the same day. On the PHP side, two critical flaws nicknamed <strong>PHP2Shell</strong> let an attacker run code on a web server without logging in. On the Node.js side, a bug in the built-in <strong>Brotli</strong> decompressor could be abused the same way.</p>\n\n<p>If you run a WordPress site, a Laravel app, a PHP script you bought, or anything built on Node.js, this affects you. The good news is that the fix is simple: update, then restart. This guide explains what happened in plain language, which versions are safe, and exactly what to check on your servers.</p>\n\n<p><em>Last checked: November 7, 2026. Links to the official advisories are at the end.</em></p>\n\n<h2>\n  \n  \n  The short version\n</h2>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>If you run</th>\n<th>Update to</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>PHP 8.5</td>\n<td>8.5.12 or later</td>\n<td>Fixes PHP2Shell</td>\n</tr",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:03:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/_geekspark/php2shell-the-nodejs-brotli-flaw-patch-guide-ba6"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "b11fa63328f59297",
+    "title": "Build vs Buy a Video Editor SDK: 5 Options Compared for a Social App",
+    "url": "https://dev.to/dave_gordon/build-vs-buy-a-video-editor-sdk-5-options-compared-for-a-social-app-pi1",
+    "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>Building on AVFoundation and Media3 Transformer carries no license fee and leaves the whole editor to your team, on two codebases.</li>\n<li>FFmpeg reads almost any media format and gives you no interface. The mobile wrapper most teams used has been retired, so pick your fork before you commit.</li>\n<li>IMG.LY, Banuba and Meishe each sell a finished editor, and none of the three publishes a price.</li>\n<li>Each of the three has one commercial detail that costs more than it looks: per-platform licensing, no web editor, and assets licensed separately from the SDK.</li>\n<li>With the placeholder inputs I use below, a first in-house build comes to $100,000 and 4 months before any upkeep.</li>\n</ul>\n\n<p>A social app can get in-app editing five ways: build on the platform frameworks, build on FFmpeg, or buy a video editor SDK from IMG.LY, Banuba or Meishe. Building carries no license fee and takes engineer-months. Buying swaps those months for a quote an",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:02:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/dave_gordon/build-vs-buy-a-video-editor-sdk-5-options-compared-for-a-social-app-pi1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8f8a4ae3df4057eb",
+    "title": "Startup.jobs Salary Filters in Python: Overlap Does Not Prove a Pay Floor",
+    "url": "https://dev.to/vexaloom-labs/startupjobs-salary-filters-in-python-overlap-does-not-prove-a-pay-floor-2o7f",
+    "summary": "<p>Your recommender sets <code>minSalaryUsd</code>, then confidently recommends a listing whose published range starts below the user's minimum. The filter can be working correctly. That's the uncomfortable part.</p>\n\n<p>Lab note 116: can we turn salary-filtered job records into recommendations that support an annual minimum? Our bet: the model needs less listing text and a stricter decision made before the prompt.</p>\n\n<p>The catch comes first: published pay supports a statement about a listing, never a guaranteed offer. Even that narrower statement needs compatible pay periods.</p>\n\n<h2>\n  \n  \n  What does the salary filter actually promise?\n</h2>\n\n<p>The salary filters select overlapping published ranges, not ranges contained within your requested bounds.</p>\n\n<p><code>minSalaryUsd</code> compares your threshold with the listing's <strong>maximum</strong>. <code>maxSalaryUsd</code> compares your ceiling with the listing's <strong>minimum</strong>. Neither comparison establishes that ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:02:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vexaloom-labs/startupjobs-salary-filters-in-python-overlap-does-not-prove-a-pay-floor-2o7f"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e8a43e5aada3918c",
+    "title": "Connecting Claude Code to Figma on a Free Plan: A Setup Log",
+    "url": "https://dev.to/kmrb_works/connecting-claude-code-to-figma-on-a-free-plan-a-setup-log-53b2",
+    "summary": "<p>This post was generated by an AI agent from an article the account owner published in Japanese on note. The wording is not human-written.</p>\n\n<p>Setting up Claude Code to control Figma over MCP sounded straightforward: Anthropic's AI coding tool can talk to external tools via MCP, and Figma has an MCP server. In one attempt to connect the two using only Figma's free plan (no Dev Mode), nearly every step hit a snag before it worked.</p>\n\n<h2>\n  \n  \n  Environment\n</h2>\n\n<ul>\n<li>OS: Windows 11</li>\n<li>Figma: Free plan (desktop app)</li>\n<li>Claude Code: Pro plan</li>\n<li>Node.js: v18.16.1</li>\n<li>Bun: v1.3.9 (installed partway through)</li>\n</ul>\n\n<p>The core question going in was whether Figma integration was even possible without the paid Dev Mode feature.</p>\n\n<h2>\n  \n  \n  Step 1: Read-only MCP, eventually\n</h2>\n\n<p>The official remote MCP was the first thing tried:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>claude mcp add --tran",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:02:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kmrb_works/connecting-claude-code-to-figma-on-a-free-plan-a-setup-log-53b2"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "11370cdf6f068968",
+    "title": "GitHub as a Web3 Portfolio: Organize Blockchain Repos to Impress Recruiters",
+    "url": "https://dev.to/andr_diasmoreiraprol_b/github-as-a-web3-portfolio-organize-blockchain-repos-to-impress-recruiters-449c",
+    "summary": "<p>When I review candidates for Web3 roles, I rarely open a résumé first. I open their GitHub. After two decades in IT and blockchain development, I've learned that a well-organized repository tells me more about an engineer than any polished CV ever could. In the Stellar and Soroban ecosystems especially, your code is your reputation—and international recruiters are reading it closely.</p>\n\n<p>Let me share, as André Dias Moreira Prol, how to turn your GitHub into a portfolio that opens doors across borders.</p>\n\n<h2>\n  \n  \n  Structure Your Repos Like a Product, Not a Dump\n</h2>\n\n<p>The most common mistake I see is treating GitHub as a code graveyard: dozens of half-finished tutorials, forks with zero commits, and repos named <code>test123</code>. Recruiters at firms like Chainlink Labs or the Stellar Development Foundation spend an average of <strong>under 90 seconds</strong> on an initial profile scan. You have to earn attention fast.</p>\n\n<p>Pin your three to six strongest repositor",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:01:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/andr_diasmoreiraprol_b/github-as-a-web3-portfolio-organize-blockchain-repos-to-impress-recruiters-449c"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "267a31813d1c09ad",
+    "title": "Giving AI Agents a Better Way to Debug CSS",
+    "url": "https://freek.dev/3225-giving-ai-agents-a-better-way-to-debug-css",
+    "summary": "<p>Amit Merchant shows how to connect Chrome DevTools MCP to Codex and use its get_css_styles tool to inspect matched CSS rules and overridden declarations in the browser. This lets agents diagnose cascade and specificity issues using the styles actually applied to an element instead of guessing from source files.</p>\n\n\n<a href=\"https://www.amitmerchant.com/giving-ai-agents-a-better-way-to-debug-css/\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-17T12:30:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3225-giving-ai-agents-a-better-way-to-debug-css"
+      }
+    ],
+    "score": 20.18
+  },
+  {
+    "id": "2973c93839cd264b",
+    "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+    "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+    "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt.\n\nThe first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks.\n\nNik Tsytsarkin of Meta Red Team X published the technical details last week. Mustafa",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T12:14:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "999848b61138194b",
+    "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+    "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+    "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2).\n\nThe activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T11:20:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "c703b0223df3e425",
+    "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+    "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+    "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T12:25:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "df1aae2d444a5768",
+    "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+    "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+    "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents.\n\nThe changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its APIs: Device Control and Data Access, and Full Disk Access.\n\n\"Before granting an app such",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T11:07:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html"
+      }
+    ],
+    "score": 19.89
+  },
+  {
+    "id": "ca4b6eef3fb2baf1",
+    "title": "AI-Generated Code Security Risks: What Qodana Found in a Java App",
+    "url": "https://blog.jetbrains.com/qodana/2026/11/ai-generated-code-security-risks/",
+    "summary": "Adding search functionality, converting a document, or connecting a service sound like small changes. An AI coding agent may take it on in one pass, changing application logic, dependencies, configuration, and tests along the way. The result may pass functional tests and still contain security vulnerabilities. Static analysis can surface some AI-generated code security risks, [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-17T11:33:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/qodana/2026/11/ai-generated-code-security-risks/"
+      }
+    ],
+    "score": 19.88
+  },
+  {
+    "id": "c349f169361006ce",
+    "title": "Optimizely compromised, served malware on Zoom, GitLab",
+    "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+    "summary": "<p>Article URL: <a href=\"https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/\">https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50524767\">https://news.ycombinator.com/item?id=50524767</a></p>\n<p>Points: 406</p>\n<p># Comments: 165</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-16T23:00:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"
+      }
+    ],
+    "score": 19.78
+  },
+  {
+    "id": "6034db2c2ccc6b05",
+    "title": "The pioneering coding tricks that built Doom and Quake",
+    "url": "https://stackoverflow.blog/2026/11/17/coding-tricks-that-built-doom-and-quake/",
+    "summary": "Ryan chats with John Romero, creator of the WAD file and the video game Doom, about the self-modifying code and blitting techniques that made Wolfenstein run so fast on early PCs, the mod-friendly architecture that turned Doom into a cultural phenomenon, and why the raw creative problem-solving of Quake proves that human ideas will always beat AI coding agents.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-17T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/17/coding-tricks-that-built-doom-and-quake/"
+      }
+    ],
+    "score": 19.63
+  },
+  {
+    "id": "03e6ef1f1b803662",
+    "title": "Github Redesign (2019)",
+    "url": "https://tonsky.me/blog/github-redesign/",
+    "summary": "<p>I suggest the conversation steer away from the controversial last point where he flattens the UI quite a bit to make it less \"dated\", as the rest was quite good up until that point, and that deserves being discussed.</p>\n<p><a href=\"https://lobste.rs/s/kseyz1/github_redesign_2019\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-17T09:28:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://tonsky.me/blog/github-redesign/"
+      }
+    ],
+    "score": 19.01
+  },
+  {
+    "id": "9fbba5985fa012d4",
+    "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+    "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+    "summary": "<p>Article URL: <a href=\"https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026\">https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50517321\">https://news.ycombinator.com/item?id=50517321</a></p>\n<p>Points: 349</p>\n<p># Comments: 258</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-16T13:18:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026"
+      }
+    ],
+    "score": 18.66
+  },
+  {
+    "id": "a36f09b7b676cf54",
+    "title": "Java News Roundup: Lazy Constants, Spring for Apache Pulsar, GlassFish, Hibernate, TomEE, Seed4J",
+    "url": "https://www.infoq.com/news/2026/11/java-news-roundup-nov09-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/java-news-roundup-nov09-2026/en/headerimage/java-news-roundup-image-1794842460564.jpg\" /><p>This week's Java roundup for November 9th, 2026, features news highlighting: Lazy Constants proposed to target for JDK 28; TornadoVM jitLLM 3.0; point releases of Seed4J; second release candidates of Spring AI and Spring Boot; first release candidates of Hibernate ORM and Hibernate Reactive; fourth milestone release of GlassFish; and the second milestone release of Apache TomEE.</p> <i>By Michael Redlich</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T15:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/java-news-roundup-nov09-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "ddb160bd60b5151d",
+    "title": "Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG",
+    "url": "https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Uber’s Legal Redlining Agent reviews contract changes in Microsoft Word using RAG, historical lawyer feedback, and deterministic policy rules. Built with LangGraph, OpenSearch, and Redis, the system reports more than 20% lower average contract review time and 91% accuracy in AI-generated decisions. Uber is exploring agentic harnesses, skills, legal ontologies, and knowledge graphs.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-16T14:37:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 17.91
+  },
+  {
+    "id": "04b368a116c6a93d",
+    "title": "Rogue Agents Hacked His Company. Why Is Clément Delangue So Optimistic About AI?",
+    "url": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/",
+    "summary": "The French CEO of Hugging Face, a mega-hub of open-source AI software, says the attack by OpenAI models earlier this year proved one thing: Humanity can’t let AI be controlled by the few.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-17T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/wired-yearbook-2026-clement-delangue/"
+      }
+    ],
+    "score": 17.87
+  },
+  {
+    "id": "1492afb60136ec3e",
+    "title": "Software is breaking down at a systemic level",
+    "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+    "summary": "<p>Article URL: <a href=\"https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/\">https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50520866\">https://news.ycombinator.com/item?id=50520866</a></p>\n<p>Points: 374</p>\n<p># Comments: 231</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-16T18:17:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/"
+      }
+    ],
+    "score": 17.78
+  },
+  {
+    "id": "86fee680e023eecf",
+    "title": "AI Told These Ex-Google Guys How to Build a Billion-Dollar Weapons Business",
+    "url": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/",
+    "summary": "Google and Apple alumni Chad Steelberg and Andy Baynes are applying what they learned running software companies and designing iPhones to manufacturing lethal munitions.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-17T10:47:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/ai-told-these-ex-google-guys-how-to-build-a-billion-dollar-weapons-business/"
+      }
+    ],
+    "score": 17.69
+  },
+  {
+    "id": "ccc07d81e7e6cd09",
+    "title": "Are Smart Car Seats Worth It? I Tested Two to Find Out (2026)",
+    "url": "https://www.wired.com/story/do-you-need-a-smart-car-seat/",
+    "summary": "I tested the Babyark Classic and Cybex Cloud G Pro with my two kids. Here’s what the extra tech did for me and what I’d prioritize when buying a car seat.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-17T10:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/do-you-need-a-smart-car-seat/"
+      }
+    ],
+    "score": 17.54
+  },
+  {
+    "id": "afcb939de5e66deb",
+    "title": "Quiz: Understanding Python Namespace Packages",
+    "url": "https://realpython.com/quizzes/understanding-python-namespace-packages/",
+    "summary": "Test your understanding of Python namespace packages, how they differ from regular packages, and how to build, publish, and install them with uv.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-17T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/understanding-python-namespace-packages/"
+      }
+    ],
+    "score": 17.45
+  },
+  {
+    "id": "5aca6f78c9bb2508",
+    "title": "Talk to your clinical data: unlocking AWS HealthLake with OpenSharing and Genie One",
+    "url": "https://www.databricks.com/blog/talk-your-clinical-data-unlocking-aws-healthlake-opensharing-and-genie-one",
+    "summary": "Many healthcare and life sciences organizations have standardized on AWS HealthLake to manage clinical data...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-17T08:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/talk-your-clinical-data-unlocking-aws-healthlake-opensharing-and-genie-one"
+      }
+    ],
+    "score": 17.1
+  },
+  {
+    "id": "ccc0701d06617c8b",
+    "title": "Dax Raad rebuilt his browser tool in Rust for $60. Then memory use fell 97%.",
+    "url": "https://thenewstack.io/opencode-browse-rust-rewrite/",
+    "summary": "<img alt=\"developer with code on his screen\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"753\" src=\"https://cdn.thenewstack.io/media/2026/11/57fc2d31-rizki-ardia-i-aetokirtk-unsplash-1024x753.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>OpenCode developer Dax Raad says he rebuilt the project&#8217;s browser automation tool in Rust for $60, replacing the parts of</p>\n<p>The post <a href=\"https://thenewstack.io/opencode-browse-rust-rewrite/\">Dax Raad rebuilt his browser tool in Rust for $60. Then memory use fell 97%.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-16T17:59:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/opencode-browse-rust-rewrite/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "6dec6e1191aed533",
+    "title": "With Qwen4-Max, Alibaba puts the open source jacket back on the hanger",
+    "url": "https://thenewstack.io/qwen4-max-alibaba-open-weights/",
+    "summary": "<img alt=\"Alibaba Xixi Campus in Hangzhou, Zhejiang, China.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"https://cdn.thenewstack.io/media/2026/11/63d83074-zonghe-ma-3xzz4akzbau-unsplash-1-1024x683.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Alibaba has officially unveiled Qwen4-Max, the first model in its next-generation Qwen4 family, with a focus on complex professional tasks</p>\n<p>The post <a href=\"https://thenewstack.io/qwen4-max-alibaba-open-weights/\">With Qwen4-Max, Alibaba puts the open source jacket back on the hanger</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-16T16:54:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/qwen4-max-alibaba-open-weights/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "2994169b4a70dc5a",
+    "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+    "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+    "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.\n\nThe company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled, and",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T06:29:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html"
+      }
+    ],
+    "score": 16.89
+  },
+  {
+    "id": "144c6b3c889a4b83",
+    "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+    "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+    "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central.\n\nDescribing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform.\n\n\"HF3 builds on the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T05:00:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
+      }
+    ],
+    "score": 16.85
+  }
+]

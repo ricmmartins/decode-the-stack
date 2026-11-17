@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-11-16T13:25:52.348654+00:00",
+  "updated_at": "2026-11-17T13:21:38.205127+00:00",
   "configured_feeds": 242,
-  "editions_published": 14,
-  "headlines_published": 670,
+  "editions_published": 15,
+  "headlines_published": 720,
   "sources_credited": 74,
-  "latest_edition_date": "2026-11-16",
+  "latest_edition_date": "2026-11-17",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 155
+      "headlines": 166
     },
     {
       "name": "InfoQ",
-      "headlines": 63
+      "headlines": 70
     },
     {
       "name": "The Hacker News",
-      "headlines": 59
+      "headlines": 66
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 48
+      "headlines": 52
     },
     {
       "name": "TechCrunch",
@@ -29,7 +29,7 @@
     },
     {
       "name": "The New Stack",
-      "headlines": 25
+      "headlines": 28
     },
     {
       "name": "The Verge - Tech",
@@ -37,19 +37,23 @@
     },
     {
       "name": "Simon Willison",
-      "headlines": 20
+      "headlines": 21
     },
     {
       "name": "Real Python",
-      "headlines": 19
+      "headlines": 20
     },
     {
       "name": "Vercel Blog",
-      "headlines": 19
+      "headlines": 20
     },
     {
       "name": "Lobsters",
-      "headlines": 18
+      "headlines": 19
+    },
+    {
+      "name": "Wired",
+      "headlines": 17
     },
     {
       "name": "OpenAI Blog",
@@ -57,27 +61,23 @@
     },
     {
       "name": "JetBrains Blog",
-      "headlines": 14
-    },
-    {
-      "name": "Wired",
-      "headlines": 14
+      "headlines": 15
     },
     {
       "name": "Schneier on Security",
-      "headlines": 11
+      "headlines": 12
     },
     {
       "name": "The Daily WTF",
-      "headlines": 11
+      "headlines": 12
     },
     {
       "name": "CNCF Blog",
-      "headlines": 10
+      "headlines": 11
     },
     {
       "name": "Freek Van der Herten",
-      "headlines": 10
+      "headlines": 11
     },
     {
       "name": "Cloudflare Blog",
@@ -85,11 +85,19 @@
     },
     {
       "name": "Nvidia Developer Blog",
-      "headlines": 7
+      "headlines": 8
     },
     {
       "name": "Dark Reading",
       "headlines": 6
+    },
+    {
+      "name": "Anthropic Blog",
+      "headlines": 5
+    },
+    {
+      "name": "Databricks Engineering",
+      "headlines": 5
     },
     {
       "name": "Grafana Blog",
@@ -104,16 +112,16 @@
       "headlines": 5
     },
     {
-      "name": "Anthropic Blog",
-      "headlines": 4
-    },
-    {
-      "name": "Databricks Engineering",
-      "headlines": 4
-    },
-    {
       "name": "AWS Blog",
-      "headlines": 3
+      "headlines": 4
+    },
+    {
+      "name": "Microsoft 365 Developer Blog",
+      "headlines": 4
+    },
+    {
+      "name": "Stack Overflow Blog",
+      "headlines": 4
     },
     {
       "name": "Google Developers Blog",
@@ -128,15 +136,11 @@
       "headlines": 3
     },
     {
-      "name": "Microsoft 365 Developer Blog",
-      "headlines": 3
-    },
-    {
       "name": "Smashing Magazine",
       "headlines": 3
     },
     {
-      "name": "Stack Overflow Blog",
+      "name": "Spacelift Blog",
       "headlines": 3
     },
     {
@@ -177,10 +181,6 @@
     },
     {
       "name": "Risky Business (Podcast)",
-      "headlines": 2
-    },
-    {
-      "name": "Spacelift Blog",
       "headlines": 2
     },
     {
@@ -307,23 +307,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 489
+      "headlines": 525
     },
     {
       "name": "Security",
-      "headlines": 83
+      "headlines": 91
     },
     {
       "name": "AI/ML",
-      "headlines": 42
+      "headlines": 44
     },
     {
       "name": "Cloud",
-      "headlines": 31
+      "headlines": 33
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 24
+      "headlines": 26
     }
   ],
   "history": [
@@ -396,6 +396,11 @@
       "date": "2026-11-16",
       "headlines": 50,
       "sources": 21
+    },
+    {
+      "date": "2026-11-17",
+      "headlines": 50,
+      "sources": 22
     }
   ]
 }

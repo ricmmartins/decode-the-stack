@@ -1,0 +1,378 @@
+[
+  {
+    "id": "c038b1608aede51f",
+    "title": "X's docs say 4 images. Their schema says 20. We tested which one was true.",
+    "url": "https://dev.to/fuxuxscheduler/xs-docs-say-4-images-their-schema-says-20-we-tested-which-one-was-true-2ead",
+    "summary": "<p>We build a social media scheduler, so a tweet claiming \"X just raised its image limit from 4 to 20\" is the kind of thing that lands straight in our inbox. Before touching any code, we went looking for where that limit actually lives.</p>\n\n<p>We found two answers that disagreed with each other.</p>\n\n<h2>\n  \n  \n  Two sources, two numbers\n</h2>\n\n<p>X's own documentation, in plain prose, still says:</p>\n\n<blockquote>\n<p>You can attach up to 4 photos, 1 animated GIF, or 1 video to a Tweet.</p>\n</blockquote>\n\n<p>But the same page ships an OpenAPI schema for the same endpoint, and that schema says:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight json\"><code><span class=\"nl\">\"media_ids\"</span><span class=\"p\">:</span> <span class=\"p\">{</span>\n  <span class=\"nl\">\"type\"</span><span class=\"p\">:</span> <span class=\"s2\">\"array\"</span><span class=\"p\">,</span>\n  <span class=\"nl\">\"items\"</span><span class=\"p\">:</span> <span class=\"p\">{</span> <span class=\"nl\">\"type\"</span",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:03:10+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/fuxuxscheduler/xs-docs-say-4-images-their-schema-says-20-we-tested-which-one-was-true-2ead"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/fedoralepceska/generate-php-readonly-dtos-and-typescript-types-from-a-json-payload-ehj"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/building-a-line"
+      }
+    ],
+    "score": 27.0
+  },
+  {
+    "id": "027d537515432919",
+    "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
+    "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/",
+    "summary": "<img alt=\"Two rows of black data center racks with gold-colored server components against a black background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/mlperf-endpoints-vera-rubin-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"mlperf-endpoints-vera-rubin-featured\" width=\"768\" />Agentic workloads are demanding more from inference systems. AI agents carry growing conversation histories across turns and generate a mix of reasoning, tool...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-16T16:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/"
+      }
+    ],
+    "score": 23.0
+  },
+  {
+    "id": "320f6b20c503efe0",
+    "title": "New Capabilities for Building Digital Teammates in Microsoft Teams",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/new-capabilities-for-building-digital-teammates-in-microsoft-teams/",
+    "summary": "<p>Agents are becoming part of how people work together. In Microsoft Teams, developers can build agents that do more than respond to requests. They can participate in conversations, contribute to shared work and help people move from discussion to decision and action. As part of the broader Microsoft 365 Copilot agent ecosystem, Teams brings these [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/new-capabilities-for-building-digital-teammates-in-microsoft-teams/\">New Capabilities for Building Digital Teammates in Microsoft Teams</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-17T10:00:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/new-capabilities-for-building-digital-teammates-in-microsoft-teams/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a82618937c30f77c",
+    "title": "AI Gateway now supports Private Inference",
+    "url": "https://vercel.com/changelog/ai-gateway-now-supports-private-inference",
+    "summary": "<p><a href=\"https://vercel.com/docs/ai-gateway/security-and-compliance/private-inference\">Private Inference</a> connects your own model endpoints to <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a>.</p><p>Enterprises running fine-tuned, self-hosted, or prerelease models used to need separate keys, client code, and logs for them. Those models can now run through the same authentication, <a href=\"https://vercel.com/docs/ai-gateway/sdks-and-apis\">SDKs and APIs</a>, and observability as <a href=\"https://vercel.com/ai-gateway/models\">catalog models</a>, so every model your team uses is managed in one place.</p><div></div><p>Use Private Inference to:</p><ul><li><p><b>Switch between private and catalog models:</b> Call private models through Chat Completions, Responses, or Messages. AI Gateway translates each request to your endpoint's format, so switching only changes the model ID.</p></li><li><p><b>Keep models scoped to your team:</b> Only your Vercel team can view or call private mod",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-16T07:47:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/ai-gateway-now-supports-private-inference"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/seedance-2-5-flash-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "37e547f0b4d0e6d8",
+    "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+    "summary": "A second delivery of the same message can reveal more about an application than its happy-path demo. I like tools that make those cases easier to investigate while a change is still small. Last week’s launch of AWS Emulator brings part of that work onto your own machine: developers and coding agents can exercise AWS […]",
+    "category": "cloud",
+    "source_name": "AWS Blog",
+    "published": "2026-11-16T17:55:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/"
+      }
+    ],
+    "score": 15.21
+  },
+  {
+    "id": "353571d1237d5fc2",
+    "title": "Is your OpenTelemetry pipeline becoming a performance bottleneck?",
+    "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+    "summary": "At Cloud Native Days Austria 2026, I presented a talk called How to Defeat OTel’s Silent Killer: The Performance Overhead, exploring a problem that is easy to overlook when building observability pipelines: the cost of collecting...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-17T12:21:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/"
+      }
+    ],
+    "score": 18.32
+  },
+  {
+    "id": "a91400af2605268f",
+    "title": "Spacelift vs GitHub Actions: Key Differences",
+    "url": "https://spacelift.io/blog/spacelift-vs-github-actions",
+    "summary": "Compare Spacelift and GitHub Actions for infrastructure as code: state, locking, policy, drift, RBAC, and what each costs to run.",
+    "category": "devops",
+    "source_name": "Spacelift Blog",
+    "published": "2026-11-17T08:23:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Spacelift Blog",
+        "url": "https://spacelift.io/blog/spacelift-vs-github-actions"
+      }
+    ],
+    "score": 17.29
+  },
+  {
+    "id": "47b99a6fc50e08c2",
+    "title": "Formal Verification of the Signal Protocol Using AI",
+    "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
+    "summary": "<p><a href=\"https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/\">This</a> seems like a good thing:</p>\n<blockquote><p>Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees­a landmark development for the widely used cryptography and AI itself.</p>\n<p>Conducted as a sort of proof-of-concept project in just four weeks, the work is significant in two ways. It serves as further independent validation of the cryptography that protects massive quantities of the world&#8217;s communications on platforms like the Signal app, Google Messages, and WhatsApp. And it demonstrates Google DeepMind&#8217;s formal verification capabilities using a new AI framework called AlphaProof Code...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-17T12:05:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "91c95e0634d754f8",
+    "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+    "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+    "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today.\n\nVisitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run.\n\nThe code was built to",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T07:12:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "d44165d7f369071f",
+    "title": "Quoting Go Proverbs",
+    "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+    "summary": "<blockquote cite=\"https://go-proverbs.github.io\"><p>A little copying is better than a little dependency.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://go-proverbs.github.io\">Go Proverbs</a>, <a href=\"https://news.ycombinator.com/item?id=50516689#50526408\">via</a></p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/go\">go</a>, <a href=\"https://simonwillison.net/tags/programming\">programming</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-17T06:16:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/"
+      }
+    ],
+    "score": 17.18
+  },
+  {
+    "id": "baaaee7a3b7f4eb7",
+    "title": "Physicist Christopher Stubbs joins Anthropic&#x27;s Long-Term Benefit Trust",
+    "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+    "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control.  “I am honored to join Anthropic’s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,” said Stubbs. “I use AI tools in my research every day and see what they make possible, and as an educator I have confronted some of the hard questions they raise. As a grandfather, I want to help ensure that AI is developed and deployed for the long-term benefit of humanity.” Stubbs is the Samuel C. Moncher Professor of Physics and of Astronomy at Harvard, where he served as Dean of Science from 2018 to 2024. In 1998, as a member of the High-Z Supernova Search Team, he helped discover the accelerating expansion of the universe, work ",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-10-21T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "f7adf9ee465a81e9",
+    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "summary": "<p>Article URL: <a href=\"https://xusheng.dev/posts/windows-coding-agent-telemetry/\">https://xusheng.dev/posts/windows-coding-agent-telemetry/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50524736\">https://news.ycombinator.com/item?id=50524736</a></p>\n<p>Points: 637</p>\n<p># Comments: 494</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-16T22:58:20+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://blog.startifact.com/posts/how-rust-changed-me/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://burntsushi.net/jiff/"
+      }
+    ],
+    "score": 25.18
+  },
+  {
+    "id": "b7d19793d7c14e2b",
+    "title": "Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactivity and Out-of-Order Streaming",
+    "url": "https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/quik-2-streaming/en/headerimage/generatedHeaderImage-1794907611481.jpg\" /><p>Qwik 2.0 Release Candidate, published on 1 October 2026, replaces v1's HTML comment markers with two script blocks that hold state and virtual node data. It adds experimental out-of-order streaming, async useComputed$, and cacheable route loaders. Qwik's benchmarks show v2 at 1.23x vanilla JavaScript, versus 2.59x for v1. A migration command is provided.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-17T12:25:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "6efe56061090c898",
+    "title": "Presentation: Scaling LLM-Based Ranking Systems for Latency-Critical Search & Recommendation Workloads",
+    "url": "https://www.infoq.com/presentations/scale-llm-ranking-systems-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/scale-llm-ranking-systems-linkedin/en/mediumimage/SundaraRamanRamachandran-medium-1793279019345.jpeg\" /><p>Sundara Raman Ramachandran shares how LinkedIn productionizes LLM ranking under strict P99 latency SLAs. He discusses distilling a 7B model down to 400M parameters, compressing job contexts into single-token embeddings for a 10x throughput leap, and eliminating hidden system bottlenecks - from custom flash attention masks to Python GIL workarounds, gc.freeze, and non-blocking CUDA memory copies.</p> <i>By Sundara Raman Ramachandran</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-17T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/scale-llm-ranking-systems-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "9a8712b7fd27bcf9",
+    "title": "Ten Years On, Google Updates the SRE Book for the AI Era",
+    "url": "https://www.infoq.com/news/2026/11/google-sre-book-ai-era/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-sre-book-ai-era/en/headerimage/generatedHeaderImage-1794674690062.jpg\" /><p>Google has announced a completely rewritten second edition of Site Reliability Engineering: How Google Runs Production Systems, ten years after the original book was published by O'Reilly Media. The update reframes SRE around modern cloud architectures, platform engineering and AI workloads, while retaining the discipline's original emphasis on applying software engineering to operations.</p> <i>By Matt Saunders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-17T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-sre-book-ai-era/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "d470a307421ffcae",
+    "title": "Microsoft Releases .NET 11: C# 15 Union Types, Native AOT CLI Host, and CoreCLR by Default in MAUI",
+    "url": "https://www.infoq.com/news/2026/11/dotnet-11-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Microsoft has released .NET 11, a Standard Term Support release with two years of support. It ships C# 15 with union types and closed hierarchies, a Native AOT CLI host, a preview of Runtime Async, Zstandard compression, asynchronous validation and OpenAPI 3.2 in ASP.NET Core, CoreCLR as the default runtime in .NET MAUI, and EF Core 11 with experimental vector search.</p> <i>By Almir Vuk</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-17T11:50:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/dotnet-11-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.74
+  },
+  {
+    "id": "98d1699be68c4094",
+    "title": "Datadog Brings Production Experimentation to AI Agent Observability",
+    "url": "https://www.infoq.com/news/2026/11/datadog-ai-agent-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/datadog-ai-agent-observability/en/headerimage/generatedHeaderImage-1794408423767.jpg\" /><p>Datadog is extending its Agent Observability platform with Online Experiments, allowing engineering teams to compare AI agent versions against real production traffic rather than relying exclusively on predefined evaluation datasets.</p> <i>By Craig Risi</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-17T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/datadog-ai-agent-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.94
+  },
+  {
+    "id": "2a0c5c47261a83aa",
+    "title": "AI agents were all over KubeCon. Production is another story",
+    "url": "https://thenewstack.io/cncf-bryce-ai-agents/",
+    "summary": "<img alt=\"The New Stack’s Frederic Lardinois sat down with Jonathan Bryce, executive director of the Cloud Native Computing Foundation (CNCF), to discuss how AI is reshaping cloud native infrastructure, open source innovation, and the developer community.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/81c5d979-thumbnail-24-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>AI agents are testing systems that were originally built for people, and Jonathan Bryce thinks the cloud-native community has a</p>\n<p>The post <a href=\"https://thenewstack.io/cncf-bryce-ai-agents/\">AI agents were all over KubeCon. Production is another story</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-16T22:08:42+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cncf-bryce-ai-agents/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/autonomous-ai-exploit-agents/"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "5ddb5fff8afcb40d",
+    "title": "The $3.76 Million Kava Lend Hack: How a Single Accounting Flaw Put Millions at Risk",
+    "url": "https://dev.to/walletverse/the-376-million-kava-lend-hack-how-a-single-accounting-flaw-put-millions-at-risk-fdo",
+    "summary": "<p>On November 14, 2026, Kava Lend suffered a major DeFi exploit involving approximately $3.76 million worth of cryptocurrency at pre-attack prices. We explore how a lending-accounting vulnerability made the attack possible, why existing security mechanisms failed, and what developers and crypto users can learn from this incident.</p>\n\n<p>In this article, we explore what happened during the $3.76 million Kava Lend hack, how a single accounting vulnerability exposed millions in digital assets, and what developers and crypto users can learn from this incident to better understand and mitigate DeFi security risks. </p>\n\n<p>In decentralized finance, millions of dollars can depend on the accuracy of a mathematical calculation. A protocol may operate for years, process thousands of transactions, and serve an established community before an overlooked edge case exposes a critical vulnerability.</p>\n\n<p>On November 14, 2026, Kava Lend, also known as HARD Lend, became the latest example of how ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:04:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/walletverse/the-376-million-kava-lend-hack-how-a-single-accounting-flaw-put-millions-at-risk-fdo"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ac4dd588e1711965",
+    "title": "How to Build a Personal Scheduled SNS Video Posting Setup",
+    "url": "https://dev.to/orca_forge/how-to-build-a-personal-scheduled-sns-video-posting-setup-3d01",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/meta-auto-post-without-app-review/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=meta-auto-post-without-app-review\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR This setup uses a development mode app to post videos to accounts I manage. It separates token handling from posting, checks videos before publishing, and records results. The implementation alone cannot establish where review is not required, so check the current official documentation for permissions and review conditions.</p>\n\n<h2>\n  \n  \n  The Short Answer\n</h2>\n\n<p>You can set up an app in development mode to post videos on a schedule to an account you manage. My implementation notes alone aren’t enough to generalize which use cases are available without review, so check the official documentation for permission and review requirements before using this setup with accounts other ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-17T13:04:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/how-to-build-a-personal-scheduled-sns-video-posting-setup-3d01"
+      }
+    ],
+    "score": 21.0
+  }
+]
