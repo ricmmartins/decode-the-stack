@@ -3414,6 +3414,511 @@
           "section": "radar"
         }
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "stories": [
+        {
+          "title": "Engineering AI Discover",
+          "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 2,
+          "source_name": "Netflix Tech Blog",
+          "summary": "<p><em>The challenges and decisions behind AI Discover’s intelligence layer</em></p><p>By <a href=\"https://www.linkedin.com/in/varun-khaitan/\">Varun Khaitan</a>, <a href=\"https://www.linkedin.com/in/p",
+          "section": "main"
+        },
+        {
+          "title": "SPFx Dev Skills for SPFx 1.24.1: tested across agents and models",
+          "url": "https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Microsoft 365 Developer Blog",
+          "summary": "<p>SPFx Dev Skills v1.1.2 adds support for SPFx v1.24.1 and React 18 migration. Across 105 evaluation runs, the updated skill improved upgrade quality for every agent and model combination we tested, ",
+          "section": "main"
+        },
+        {
+          "title": "How to prevent Electron safeStorage decryption errors from deleting API keys",
+          "url": "https://dev.to/orca_forge/how-to-prevent-electron-safestorage-decryption-errors-from-deleting-api-keys-2hka",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/check-script-deleted-api-keys/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=check-scrip",
+          "section": "main"
+        },
+        {
+          "title": "GPT-6.2 Astra and Sol now available on AI Gateway",
+          "url": "https://vercel.com/changelog/gpt-6-2-astra-and-sol-now-available-on-ai-gateway",
+          "category": "cloud",
+          "score": 25.0,
+          "coverage_count": 10,
+          "source_name": "Vercel Blog",
+          "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gpt-6.2-astra\">GPT-6.2 Astra</a> and <a href=\"https://vercel.com/ai-gateway/models/gpt-6.2-sol\">GPT-6.2 Sol</a> from <a href=\"https://vercel.com/ai-gat",
+          "section": "main"
+        },
+        {
+          "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+          "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+          "category": "cloud",
+          "score": 23.0,
+          "coverage_count": 3,
+          "source_name": "Azure Blog",
+          "summary": "<p>At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new",
+          "section": "main"
+        },
+        {
+          "title": "Optimizing Kubernetes admission control: Where Kyverno’s CEL admission cost actually goes",
+          "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
+          "category": "devops",
+          "score": 18.31,
+          "coverage_count": 1,
+          "source_name": "CNCF Blog",
+          "summary": "Kyverno&#8217;s CEL (Common Expression Language)-based engines exist to evaluate policy expressions. So when we profiled the admission path, we expected to find the bulk of the cost in CEL evaluation.",
+          "section": "main"
+        },
+        {
+          "title": "Azure DevOps and GitHub: Start Your Agentic Journey Where You Are",
+          "url": "https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/",
+          "category": "devops",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Azure DevOps Blog",
+          "summary": "<p>Software development is changing fast as developers shift from writing code to directing agents. Today, we’re bringing more of that agentic experience to Azure DevOps teams who keep their code in A",
+          "section": "main"
+        },
+        {
+          "title": "France Is Blaming Iran for the Fridge Cyberattack",
+          "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+          "category": "security",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "Schneier on Security",
+          "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p>\n<blockquote><p>U.S. intelligence agencies have recently reached a &#8220;&#",
+          "section": "main"
+        },
+        {
+          "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+          "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+          "category": "security",
+          "score": 22.96,
+          "coverage_count": 2,
+          "source_name": "The Hacker News",
+          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.\n\nThe flaw, tracked as CVE-",
+          "section": "main"
+        },
+        {
+          "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+          "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+          "category": "ai",
+          "score": 16.42,
+          "coverage_count": 1,
+          "source_name": "OpenAI Blog",
+          "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+          "section": "main"
+        },
+        {
+          "title": "External sandboxes for coding agents",
+          "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+          "category": "ai",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p><strong><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">External sandboxes for coding agents</a></strong></p>\nI've been exploring new ways to sandbox code that is exec",
+          "section": "main"
+        },
+        {
+          "title": "CoreWeave connects custom training loops to model serving",
+          "url": "https://thenewstack.io/coreweave-forge-training-loops/",
+          "category": "news",
+          "score": 29.0,
+          "coverage_count": 5,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Abstract glowing digital light threads and data particles sweeping across a black background, representing AI training loops.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" ",
+          "section": "main"
+        },
+        {
+          "title": "Presentation: Behind Booking.com's AI Evolution: The Unpolished Story",
+          "url": "https://www.infoq.com/presentations/bookingcom-ml-data-platform-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/presentations/bookingcom-ml-data-platform-evolution/en/mediumimage/jabez-eliezer-manuel-medium-1792654383362.jpg\" /><p>Jabez Eliezer Manuel discusses the 20-year evolut",
+          "section": "main"
+        },
+        {
+          "title": "AWS PrivateLink Tunnel Endpoints Open a Whole CIDR Range to Another Account",
+          "url": "https://www.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/en/headerimage/generatedHeaderImage-1794476042263.jpg\" /><p>AWS has detailed tunnel endpoints, a PrivateLink endpoint type",
+          "section": "main"
+        },
+        {
+          "title": "Vercel Releases UI SDK for Agents to Compose UI from Reusable Behaviors",
+          "url": "https://www.infoq.com/news/2026/11/vercel-ui-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 24.25,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/vercel-ui-sdk/en/headerimage/generatedHeaderImage-1794576155684.jpg\" /><p>Vercel has released UI SDK in beta, an Apache 2.0 TypeScript library of more than",
+          "section": "main"
+        },
+        {
+          "title": "Yelp Migrates Cassandra to EKS by Moving EBS Volumes",
+          "url": "https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 23.43,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/kubernetes-cassandra-eks/en/headerimage/generatedHeaderImage-1794921404342.jpg\" /><p>Yelp has moved its Cassandra fleet from legacy self-managed Kubernetes",
+          "section": "main"
+        },
+        {
+          "title": "Nvidia isn’t selling any more AI chips to China",
+          "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+          "category": "news",
+          "score": 22.29,
+          "coverage_count": 2,
+          "source_name": "The Verge - Tech",
+          "summary": "Nvidia has stopped sending its advanced AI chips to China, despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette",
+          "section": "main"
+        },
+        {
+          "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+          "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+          "category": "security",
+          "score": 22.0,
+          "coverage_count": 1,
+          "source_name": "Krebs on Security",
+          "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps",
+          "section": "main"
+        },
+        {
+          "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+          "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+          "category": "news",
+          "score": 21.09,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress e",
+          "section": "main"
+        },
+        {
+          "title": "Resetting Vue State When Related Converter Routes Reuse One Component",
+          "url": "https://dev.to/begoodtool/resetting-vue-state-when-related-converter-routes-reuse-one-component-3hgb",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Moving between two converter URLs does not necessarily mean Vue creates a fresh component instance. I'll use a feet-to-meters page to show how to reset reused input refs without letting two-way wat",
+          "section": "main"
+        },
+        {
+          "title": "Full-disk encryption on a VPS: what it really protects",
+          "url": "https://dev.to/eqvps/full-disk-encryption-on-a-vps-what-it-really-protects-3bal",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A search for a \"privacy-focused VPS with full-disk encryption\" usually ends at a checkbox on a pricing page. The checkbox is real, but what it buys you is narrower than the marketing suggests. Befo",
+          "section": "radar"
+        },
+        {
+          "title": "Use open job postings as a sales signal: which companies are hiring for what, from just a domain",
+          "url": "https://dev.to/lindenbyte/use-open-job-postings-as-a-sales-signal-which-companies-are-hiring-for-what-from-just-a-domain-p9i",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<blockquote>\n<p>Disclosure: I'm Lindenbyte, the small studio that built the Apify Actor used below, and this post was<br />\ndrafted with AI assistance. You can read any company's careers page by hand;",
+          "section": "radar"
+        },
+        {
+          "title": "Why your Laravel deploy still serves the old code (and how to fix OPcache)",
+          "url": "https://dev.to/amjadiqbal/why-your-laravel-deploy-still-serves-the-old-code-and-how-to-fix-opcache-52a5",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>You ship a release. The files on the server are new. The site still behaves like the old version.</p>\n\n<h2>\n  \n  \n  What is going on\n</h2>\n\n<p>The recommended production setting is opcache.validate",
+          "section": "radar"
+        },
+        {
+          "title": "Qwen3 + Claude Code: Request Routing Sent 96% to the Cloud, Step Routing Kept 48% Local",
+          "url": "https://dev.to/kenimo49/qwen3-claude-code-request-routing-sent-96-to-the-cloud-step-routing-kept-48-local-3143",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Send Claude Code's whole requests to a local Qwen3 and almost nothing goes through. One recent measurement on an RTX 4070 counted <strong>100 real requests and 96 had to go to the frontier model.</",
+          "section": "radar"
+        },
+        {
+          "title": "Operators, conditions and loops (VB.NET)",
+          "url": "https://dev.to/divakarupadhyay/operators-conditions-and-loops-vbnet-3lc3",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/vbnet/lessons/operators-conditions-and-loops\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, l",
+          "section": "radar"
+        },
+        {
+          "title": "RxJS parte 4: Subjects, hot vs cold e um mini store",
+          "url": "https://dev.to/edwardteixeira/rxjs-parte-4-subjects-hot-vs-cold-e-um-mini-store-7md",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h2>\n  \n  \n  Introdução\n</h2>\n\n<p>Na <a href=\"https://dev.to/edwardteixeira/rxjs-parte-1-observables-50cp\">parte 1</a> a gente viu que observables são <strong>cold</strong>: cada subscribe dispara uma",
+          "section": "radar"
+        },
+        {
+          "title": "Match paths the way Spring MVC does: an encoded-path bypass in API-key auth",
+          "url": "https://dev.to/tenmatech/match-paths-the-way-spring-mvc-does-an-encoded-path-bypass-in-api-key-auth-3jj6",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>My starter kit lets a tenant create API keys for integrations: send <code>X-API-Key: ak_...</code> instead of a JWT. While adding that, I made a mistake that a security review caught before the rel",
+          "section": "radar"
+        },
+        {
+          "title": "How to generate an architecture diagram from a GitHub repo",
+          "url": "https://dev.to/repowise/how-to-generate-an-architecture-diagram-from-a-github-repo-2nof",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>To generate an architecture diagram from a GitHub repo, paste the repo URL into GitDiagram, Eraser or repowise, or run <code>repowise init --index-only</code> a",
+          "section": "radar"
+        },
+        {
+          "title": "AskDB: AI-written SQL and charts, without AI seeing your data",
+          "url": "https://dev.to/ygilany/askdb-ai-written-sql-and-charts-without-ai-seeing-your-data-2jdm",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>People want to use AI to run reports on their databases. They also don't want to give AI access to their database. It's a Catch-22.</p>\n\n<p><strong>AskDB</strong> is an open-source TypeScript text-",
+          "section": "radar"
+        },
+        {
+          "title": "How an options desk earns the right to trade real money",
+          "url": "https://dev.to/ankushyadavdev/how-an-options-desk-earns-the-right-to-trade-real-money-2nbg",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Strikedeck does not let a strategy touch real money until it has completed 50 paper trades at a 45 percent win rate or better, with daily loss caps and a kill switch in front of every order. Only t",
+          "section": "radar"
+        },
+        {
+          "title": "Nvidia says it does not intend to reinstate Jensen Huang as CEO",
+          "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo",
+          "category": "news",
+          "score": 20.73,
+          "coverage_count": 3,
+          "source_name": "The Verge - Tech",
+          "summary": "Starting Nvidia's quarterly earnings call on Tuesday, new board chair Harvey Jones said that when former CEO Jensen Huang resigned, \"the Nvidia board unanimously accepted his resignation and does not ",
+          "section": "radar"
+        },
+        {
+          "title": "China dominates battery graphite, but this startup could break the monopoly",
+          "url": "https://techcrunch.com/2026/11/18/china-dominates-battery-graphite-but-this-startup-could-break-the-monopoly/",
+          "category": "news",
+          "score": 20.64,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "Chinese companies maintain near total dominance of the graphite industry, but Molten Industries says its new factory in Oakland could spell the end of the monopoly.",
+          "section": "radar"
+        },
+        {
+          "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
+          "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+          "category": "news",
+          "score": 20.34,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
+          "section": "radar"
+        },
+        {
+          "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+          "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+          "category": "security",
+          "score": 19.98,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "TL;DR\n\n\n  Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on",
+          "section": "radar"
+        },
+        {
+          "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+          "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+          "category": "security",
+          "score": 19.94,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with t",
+          "section": "radar"
+        },
+        {
+          "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+          "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+          "category": "security",
+          "score": 19.85,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that ",
+          "section": "radar"
+        },
+        {
+          "title": "How Shopify Orchestrates AI-Powered Mobile App Development Without Overloading Developers' Machines",
+          "url": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 19.2,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/shopify-remote-ai-dev/en/headerimage/shopify-ruvy-ruby-wasm-1794947458635.jpeg\" /><p>To prevent AI development workflows from exhausting developer machines",
+          "section": "radar"
+        },
+        {
+          "title": "Deterministic Simulation Testing",
+          "url": "https://martinfowler.com/articles/deterministic-simulation-testing.html",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Martin Fowler",
+          "summary": "<p>Distributed systems are hard to test because partial failures overlap\n     with live traffic and the same fault can produce different execution traces\n     on different runs. <b class=\"author\">Unme",
+          "section": "radar"
+        },
+        {
+          "title": "Risky Business #860 -- Google: Agentic hacking has “crossed a threshold”",
+          "url": "https://risky.biz/RB860/",
+          "category": "security",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Risky Business (Podcast)",
+          "summary": "On this week’s show Patrick Gray and James Wilson are joined by special guest co-host Jason Kikta, CISO at METR.org, to talk through the week’s cybersecurity news, including:\n\n\n  Website management pl",
+          "section": "radar"
+        },
+        {
+          "title": "How to automate Telegram with your AI agent and Zapier",
+          "url": "https://zapier.com/blog/automate-telegram",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "Zapier Engineering",
+          "summary": "These days, more and more customers prefer to interact with businesses through messaging. If you've already invested in chat-based marketing and sales, you're probably familiar with Telegram, a popula",
+          "section": "radar"
+        },
+        {
+          "title": "Representative Line: Terning White as a (Style)Sheet",
+          "url": "https://thedailywtf.com/articles/terning-white-as-a-style-sheet",
+          "category": "dev",
+          "score": 18.0,
+          "coverage_count": 1,
+          "source_name": "The Daily WTF",
+          "summary": "<p>Years ago, <strong>Stefan</strong>'s company was short handed, especially on the developer team. But they had a large hell-desk support team. And at some point, someone had the genius idea: \"PHP is",
+          "section": "radar"
+        },
+        {
+          "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future  deals in doubt",
+          "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+          "category": "news",
+          "score": 17.93,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+          "section": "radar"
+        },
+        {
+          "title": "Lovable Wants You to Vibe Code Your Dream Job",
+          "url": "https://www.wired.com/story/lovable-wants-you-to-vibe-code-a-living/",
+          "category": "news",
+          "score": 17.46,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "This Swedish startup dominated the vibe-coded app boom. Two years after launch, Lovable is shifting gears to help users run vibe-coded businesses.",
+          "section": "radar"
+        },
+        {
+          "title": "Building the Agent Host Protocol for sessions that continue across devices",
+          "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+          "category": "dev",
+          "score": 17.46,
+          "coverage_count": 1,
+          "source_name": "GitHub Engineering",
+          "summary": "<p>Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud.</p>\n<p>The post <a href=\"https://github.blog/engineering/engin",
+          "section": "radar"
+        },
+        {
+          "title": "Exclusive: Germ DM Is a Signal Alternative That’s Now on Android",
+          "url": "https://www.wired.com/story/germ-dm-is-now-available-on-android/",
+          "category": "news",
+          "score": 17.45,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "Germ DM is an encrypted messaging platform that uses “burner cards” instead of phone numbers or usernames to compartmentalize your conversations.",
+          "section": "radar"
+        },
+        {
+          "title": "Quiz: Nuitka: Compile Python Into a Standalone Executable",
+          "url": "https://realpython.com/quizzes/nuitka/",
+          "category": "dev",
+          "score": 17.37,
+          "coverage_count": 1,
+          "source_name": "Real Python",
+          "summary": "Test your understanding of compiling Python with Nuitka, from standalone and onefile builds to speedups and when PyInstaller fits better.",
+          "section": "radar"
+        },
+        {
+          "title": "Blender on Tablet: Path to Release",
+          "url": "https://code.blender.org/2026/11/tablet-path-to-release/",
+          "category": "dev",
+          "score": 17.22,
+          "coverage_count": 1,
+          "source_name": "Blender Development",
+          "summary": "In October 2026, Blender HQ hosted a week-long workshop to define the steps needed to get the tablet project out the door.",
+          "section": "radar"
+        },
+        {
+          "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+          "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+          "category": "dev",
+          "score": 17.14,
+          "coverage_count": 1,
+          "source_name": "Cloudflare Blog",
+          "summary": "Quad9's forced withdrawal from France highlights the dangers of mandating DNS-level blocking. We explore why forcing public resolvers to act as content filters is technically flawed and threatens the ",
+          "section": "radar"
+        },
+        {
+          "title": "Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent",
+          "url": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/",
+          "category": "cloud",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "Azure Blog",
+          "summary": "<p>Today, we are announcing Microsoft IQ, the enterprise context management platform that helps organizations create their own IQ. What sets an organization apart is everything around the model: its o",
+          "section": "radar"
+        },
+        {
+          "title": "Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+          "category": "cloud",
+          "score": 16.97,
+          "coverage_count": 1,
+          "source_name": "Azure Blog",
+          "summary": "<p>Azure Cobalt 200 VMs bring improved performance and efficiency to cloud-native applications, databases, developer tools, and agentic AI workloads.</p>\n<p>The post <a href=\"https://azure.microsoft.c",
+          "section": "radar"
+        }
+      ]
     }
   ]
 }

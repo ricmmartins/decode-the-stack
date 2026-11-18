@@ -1,0 +1,414 @@
+[
+  {
+    "id": "c31785647d54d72b",
+    "title": "Engineering AI Discover",
+    "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4",
+    "summary": "<p><em>The challenges and decisions behind AI Discover’s intelligence layer</em></p><p>By <a href=\"https://www.linkedin.com/in/varun-khaitan/\">Varun Khaitan</a>, <a href=\"https://www.linkedin.com/in/peng-ren-49b88369/\">Peng Ren</a>, <a href=\"https://www.linkedin.com/in/thegarytang/\">Gary Tang</a>, <a href=\"https://www.linkedin.com/in/itay-t-31150b192/\">Itay Teller</a>, <a href=\"https://www.linkedin.com/in/faheematif/\">Atif Faheem</a>, <a href=\"https://www.linkedin.com/in/nipunk/\">Nipun Kumar</a>, <a href=\"https://www.linkedin.com/in/donniedeboer/\">Donnie DeBoer</a>, <a href=\"https://www.linkedin.com/in/eduardolundgren/\">Eduardo Lundgren</a>, <a href=\"https://www.linkedin.com/in/matteo-rinaldi/\">Matteo Rinaldi</a>, <a href=\"https://www.linkedin.com/in/b0kshi/\">Raghav Bakshi</a></p><p>We recently introduced <a href=\"https://about.netflix.com/en/news/introducing-ai-discover\">AI Discover</a>, a new tab in our TV app where a small group of members can try new ways to find something to watch",
+    "category": "dev",
+    "source_name": "Netflix Tech Blog",
+    "published": "2026-11-17T17:01:02+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Netflix Tech Blog",
+        "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4"
+      },
+      {
+        "name": "Airbnb Engineering",
+        "url": "https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0?source=rss----53c7c27702d5---4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "f944b611a0073b74",
+    "title": "SPFx Dev Skills for SPFx 1.24.1: tested across agents and models",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/",
+    "summary": "<p>SPFx Dev Skills v1.1.2 adds support for SPFx v1.24.1 and React 18 migration. Across 105 evaluation runs, the updated skill improved upgrade quality for every agent and model combination we tested, with 6 of 7 reaching a 100% mean score.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/\">SPFx Dev Skills for SPFx 1.24.1: tested across agents and models</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-18T11:56:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "469d0181ed081344",
+    "title": "How to prevent Electron safeStorage decryption errors from deleting API keys",
+    "url": "https://dev.to/orca_forge/how-to-prevent-electron-safestorage-decryption-errors-from-deleting-api-keys-2hka",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/check-script-deleted-api-keys/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=check-script-deleted-api-keys\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR A screen check script used the same settings location as the Electron app and handled ciphertext with a differently signed executable. Decryption then failed, and the error handler deleted all four API keys. Keep unreadable ciphertext under another name, retry it on read, and keep the check script away from <code>getSettings()</code> and <code>safeStorage</code>.</p>\n\n<h2>\n  \n  \n  TL;DR\n</h2>\n\n<p>In an Electron app, a test script signed differently from the production app accessed the same storage. After that, <code>safeStorage</code> could no longer decrypt the ciphertext, and the error handler deleted all four API keys. We changed the app to preserve undecryptable values under a different ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/how-to-prevent-electron-safestorage-decryption-errors-from-deleting-api-keys-2hka"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "b43268f0ec11ed14",
+    "title": "GPT-6.2 Astra and Sol now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gpt-6-2-astra-and-sol-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gpt-6.2-astra\">GPT-6.2 Astra</a> and <a href=\"https://vercel.com/ai-gateway/models/gpt-6.2-sol\">GPT-6.2 Sol</a> from <a href=\"https://vercel.com/ai-gateway/models/providers/openai\">OpenAI</a> are now available on <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a>.</p><ul><li><p><b>GPT-6.2 Astra:</b> for complex, multi-step projects, with improvements to implementing and testing changes in existing codebases, following document templates, and computer use</p></li><li><p><b>GPT-6.2 Sol:</b> for everyday coding, writing, and agent workflows, including building interactive web applications from a written brief</p></li></ul><p>Use <code>openai/gpt-6.2-astra</code> or <code>openai/gpt-6.2-sol</code> as the model ID. For the API examples, set <code>AI_GATEWAY_API_KEY</code> to your <a href=\"https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys\">AI Gateway API key</a>.</p><div></div><p>Both models also support the <a href=\"http",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 10,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/microsoft/onnxruntime"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/jquery/jquery/releases/tag/4.1.0"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://developer.apple.com/system-status/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://jordankrueger.com/blog/better-open-source-not-more-apps/"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gpt-6-2-astra-and-sol-now-available-on-ai-gateway"
+      },
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "5b1ea43deb0562db",
+    "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+    "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+    "summary": "<p>At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new capabilities across isolated execution, networking, context management, and inference efficiency, we’re fundamentally improving agent speed, security, and unit economics.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/\">Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-17T18:35:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/"
+      },
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/"
+      },
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/azure-databricks-sessions-microsoft-ignite-2026"
+      }
+    ],
+    "score": 23.0
+  },
+  {
+    "id": "f258424349f7c11e",
+    "title": "Optimizing Kubernetes admission control: Where Kyverno’s CEL admission cost actually goes",
+    "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
+    "summary": "Kyverno&#8217;s CEL (Common Expression Language)-based engines exist to evaluate policy expressions. So when we profiled the admission path, we expected to find the bulk of the cost in CEL evaluation. It was not there. About 86%...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-18T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/"
+      }
+    ],
+    "score": 18.31
+  },
+  {
+    "id": "e27bea43fa221c81",
+    "title": "Azure DevOps and GitHub: Start Your Agentic Journey Where You Are",
+    "url": "https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/",
+    "summary": "<p>Software development is changing fast as developers shift from writing code to directing agents. Today, we’re bringing more of that agentic experience to Azure DevOps teams who keep their code in Azure Repos: the GitHub Copilot app now works with Azure Repos, Copilot Code Review for Azure DevOps is generally available, and Copilot Autofix for [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/\">Azure DevOps and GitHub: Start Your Agentic Journey Where You Are</a> appeared first on <a href=\"https://devblogs.microsoft.com/devops\">Azure DevOps Blog</a>.</p>",
+    "category": "devops",
+    "source_name": "Azure DevOps Blog",
+    "published": "2026-11-17T20:17:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure DevOps Blog",
+        "url": "https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "077b3123b956704e",
+    "title": "France Is Blaming Iran for the Fridge Cyberattack",
+    "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+    "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p>\n<blockquote><p>U.S. intelligence agencies have recently reached a &#8220;&#8221;ow confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A &#8220;low confidence&#8221; assessment generally means that there is some intelligence that points in a certain direction but is fragmented, and that the assessment could change as more information is collected.</p>\n<p>The agencies&#8217; judgment on the French incidents linked those attacks to Iran generally and not to a specific group such as the Revolutionary Guards, two of the officials said. They added that Iran was also seen as probably responsible for other similar attacks around Europe, but that those investigations were in their early stages...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-18T12:05:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "d4e5ba8dcf1937f3",
+    "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+    "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.\n\nThe flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions.\n\n\"This critical memory-corruption",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T08:24:23+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html"
+      }
+    ],
+    "score": 22.96
+  },
+  {
+    "id": "f6965c7d608ba931",
+    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+    "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+    "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-18T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
+      }
+    ],
+    "score": 16.42
+  },
+  {
+    "id": "fd037a884cee50be",
+    "title": "External sandboxes for coding agents",
+    "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+    "summary": "<p><strong><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">External sandboxes for coding agents</a></strong></p>\nI've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine.</p>\n<p>I worked on this project with <a href=\"https://primeradiant.com\">Prime Radiant</a>, the AI research lab behind Superpowers and <a href=\"https://github.com/orgs/prime-radiant-inc/repositories\">other projects</a>.</p>\n<p><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">My post</a> on the Prime Radiant blog introduces the <strong>external sandbox</strong> pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.</p>\n<p>To demonstrate this pattern we've released three sandbox server implementations:</p>\n<u",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-17T22:52:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "59ad89ac82f7f30e",
+    "title": "CoreWeave connects custom training loops to model serving",
+    "url": "https://thenewstack.io/coreweave-forge-training-loops/",
+    "summary": "<img alt=\"Abstract glowing digital light threads and data particles sweeping across a black background, representing AI training loops.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"768\" src=\"https://cdn.thenewstack.io/media/2026/11/7a22998e-paris-bilal-gld2k8ozalu-unsplash-1024x768.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Production traffic shows failures that benchmarks or pre-deployment evaluations can&#8217;t fully reveal. It tells you which edge cases matter and</p>\n<p>The post <a href=\"https://thenewstack.io/coreweave-forge-training-loops/\">CoreWeave connects custom training loops to model serving</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-17T16:30:00+00:00",
+    "coverage_count": 5,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/coding-agent-harness-costs/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/astra-hides-coding-failures/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/microsoft-mai-code-2/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/microsoft-cobalt-200-ga/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/coreweave-forge-training-loops/"
+      }
+    ],
+    "score": 29.0
+  },
+  {
+    "id": "e343c6ae37862bc2",
+    "title": "Presentation: Behind Booking.com's AI Evolution: The Unpolished Story",
+    "url": "https://www.infoq.com/presentations/bookingcom-ml-data-platform-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/bookingcom-ml-data-platform-evolution/en/mediumimage/jabez-eliezer-manuel-medium-1792654383362.jpg\" /><p>Jabez Eliezer Manuel discusses the 20-year evolution of Booking.com’s data management and ML platforms. He explains how they scaled MySQL topologies, sunset Hadoop for cloud architecture, and built high-throughput model serving and feature stores operating at 400B predictions per day. He also shares insights on personalization, interleaved experimentation, and their new agentic AI foundation.</p> <i>By Jabez Eliezer Manuel</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/bookingcom-ml-data-platform-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "bb0cb9cc38ca7953",
+    "title": "AWS PrivateLink Tunnel Endpoints Open a Whole CIDR Range to Another Account",
+    "url": "https://www.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/en/headerimage/generatedHeaderImage-1794476042263.jpg\" /><p>AWS has detailed tunnel endpoints, a PrivateLink endpoint type that gives a consumer VPC access to an entire network segment in another account rather than one resource at a time, over an overlapping address space and with consumer-initiated connections only. The consumer must wrap traffic in GENEVE; only TCP and DNS pass, and access logs cannot attribute traffic to a workload behind the endpoint.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T09:29:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "53c5cf91df0a072b",
+    "title": "Vercel Releases UI SDK for Agents to Compose UI from Reusable Behaviors",
+    "url": "https://www.infoq.com/news/2026/11/vercel-ui-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/vercel-ui-sdk/en/headerimage/generatedHeaderImage-1794576155684.jpg\" /><p>Vercel has released UI SDK in beta, an Apache 2.0 TypeScript library of more than 50 UI behaviors in @ui-sdk/core, with adapters for React, Vue, Svelte, Solid, and Web Components, so agents can compose accessible components and operate them through a documented agent bridge.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T10:12:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/vercel-ui-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.25
+  },
+  {
+    "id": "7b688ffb32300c73",
+    "title": "Yelp Migrates Cassandra to EKS by Moving EBS Volumes",
+    "url": "https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/kubernetes-cassandra-eks/en/headerimage/generatedHeaderImage-1794921404342.jpg\" /><p>Yelp has moved its Cassandra fleet from legacy self-managed Kubernetes clusters to Amazon EKS by re-pointing existing EBS volumes at new pods, rather than streaming data between nodes.</p> <i>By Claudio Masolo</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.43
+  },
+  {
+    "id": "1ac6c48f0b512f70",
+    "title": "Nvidia isn’t selling any more AI chips to China",
+    "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+    "summary": "Nvidia has stopped sending its advanced AI chips to China, despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette Kress during an earnings call on Tuesday, marking a notable shift for the company that, under former CEO Jensen Huang, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-18T13:01:05+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/"
+      }
+    ],
+    "score": 22.29
+  },
+  {
+    "id": "aa16c77ad64a274b",
+    "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+    "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+    "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC, CNN, Equifax, Ledger and Zoom, was exacerbated by the reality that few popular websites enforce strict rules on the sources of third-party content.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-18T02:52:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "489b205315c4c509",
+    "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+    "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+    "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/"
+      }
+    ],
+    "score": 21.09
+  },
+  {
+    "id": "c7749cffdd2f877b",
+    "title": "Resetting Vue State When Related Converter Routes Reuse One Component",
+    "url": "https://dev.to/begoodtool/resetting-vue-state-when-related-converter-routes-reuse-one-component-3hgb",
+    "summary": "<p>Moving between two converter URLs does not necessarily mean Vue creates a fresh component instance. I'll use a feet-to-meters page to show how to reset reused input refs without letting two-way watchers overwrite the intended defaults.</p>\n\n<p>I used a feet-to-meters page as a concrete example. The arithmetic is simply multiplication by 0.3048, but the implementation is more interesting as a small case study in route-driven data, editable state, and resetting both sides of a two-way calculation.</p>\n\n<h2>\n  \n  \n  Put Page Identity in Route Data\n</h2>\n\n<p>The application describes fixed conversion pairs as data. Each pair carries a slug, category, source unit, destination unit, development-order value, and localized content.</p>\n\n<p>The router expands those definitions into routes that use one shared component. It places the pair slug in route metadata, so the component can look up the current definition:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight jav",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/begoodtool/resetting-vue-state-when-related-converter-routes-reuse-one-component-3hgb"
+      }
+    ],
+    "score": 21.0
+  }
+]

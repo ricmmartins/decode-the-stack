@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "b43268f0ec11ed14",
+    "title": "GPT-6.2 Astra and Sol now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gpt-6-2-astra-and-sol-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gpt-6.2-astra\">GPT-6.2 Astra</a> and <a href=\"https://vercel.com/ai-gateway/models/gpt-6.2-sol\">GPT-6.2 Sol</a> from <a href=\"https://vercel.com/ai-gateway/models/providers/openai\">OpenAI</a> are now available on <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a>.</p><ul><li><p><b>GPT-6.2 Astra:</b> for complex, multi-step projects, with improvements to implementing and testing changes in existing codebases, following document templates, and computer use</p></li><li><p><b>GPT-6.2 Sol:</b> for everyday coding, writing, and agent workflows, including building interactive web applications from a written brief</p></li></ul><p>Use <code>openai/gpt-6.2-astra</code> or <code>openai/gpt-6.2-sol</code> as the model ID. For the API examples, set <code>AI_GATEWAY_API_KEY</code> to your <a href=\"https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys\">AI Gateway API key</a>.</p><div></div><p>Both models also support the <a href=\"http",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 10,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/microsoft/onnxruntime"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/jquery/jquery/releases/tag/4.1.0"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://developer.apple.com/system-status/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://jordankrueger.com/blog/better-open-source-not-more-apps/"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gpt-6-2-astra-and-sol-now-available-on-ai-gateway"
+      },
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"
+      }
+    ]
+  },
+  {
+    "id": "59ad89ac82f7f30e",
+    "title": "CoreWeave connects custom training loops to model serving",
+    "url": "https://thenewstack.io/coreweave-forge-training-loops/",
+    "summary": "<img alt=\"Abstract glowing digital light threads and data particles sweeping across a black background, representing AI training loops.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"768\" src=\"https://cdn.thenewstack.io/media/2026/11/7a22998e-paris-bilal-gld2k8ozalu-unsplash-1024x768.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Production traffic shows failures that benchmarks or pre-deployment evaluations can&#8217;t fully reveal. It tells you which edge cases matter and</p>\n<p>The post <a href=\"https://thenewstack.io/coreweave-forge-training-loops/\">CoreWeave connects custom training loops to model serving</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-17T16:30:00+00:00",
+    "coverage_count": 5,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/coding-agent-harness-costs/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/astra-hides-coding-failures/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/microsoft-mai-code-2/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/microsoft-cobalt-200-ga/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/coreweave-forge-training-loops/"
+      }
+    ]
+  },
+  {
+    "id": "03bcc6c50b3e8e9d",
+    "title": "Windows 11 collects data on which coding agents and dev tools you use",
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "summary": "<p><a href=\"https://lobste.rs/s/cwxmdw/windows_11_collects_data_on_which_coding\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-18T11:57:46+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://edvong.com/bypass-orphan-rule/"
+      }
+    ]
+  },
+  {
+    "id": "2c9621c2725673c4",
+    "title": "Nvidia says it does not intend to reinstate Jensen Huang as CEO",
+    "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo",
+    "summary": "Starting Nvidia's quarterly earnings call on Tuesday, new board chair Harvey Jones said that when former CEO Jensen Huang resigned, \"the Nvidia board unanimously accepted his resignation and does not intend to reinstate Jensen as CEO.\" Jones added, \"We will not be addressing or taking questions on today's call regarding the circumstances of Jensen's resignation [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-17T22:05:05+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1036160/nvidia-earnings-harvey-c-jones-jensen-huang"
+      },
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo"
+      },
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang"
+      }
+    ]
+  },
+  {
+    "id": "5b1ea43deb0562db",
+    "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+    "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+    "summary": "<p>At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new capabilities across isolated execution, networking, context management, and inference efficiency, we’re fundamentally improving agent speed, security, and unit economics.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/\">Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-17T18:35:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/"
+      },
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/"
+      },
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/azure-databricks-sessions-microsoft-ignite-2026"
+      }
+    ]
+  },
+  {
+    "id": "1ac6c48f0b512f70",
+    "title": "Nvidia isn’t selling any more AI chips to China",
+    "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+    "summary": "Nvidia has stopped sending its advanced AI chips to China, despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette Kress during an earnings call on Tuesday, marking a notable shift for the company that, under former CEO Jensen Huang, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-18T13:01:05+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/"
+      }
+    ]
+  },
+  {
+    "id": "c31785647d54d72b",
+    "title": "Engineering AI Discover",
+    "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4",
+    "summary": "<p><em>The challenges and decisions behind AI Discover’s intelligence layer</em></p><p>By <a href=\"https://www.linkedin.com/in/varun-khaitan/\">Varun Khaitan</a>, <a href=\"https://www.linkedin.com/in/peng-ren-49b88369/\">Peng Ren</a>, <a href=\"https://www.linkedin.com/in/thegarytang/\">Gary Tang</a>, <a href=\"https://www.linkedin.com/in/itay-t-31150b192/\">Itay Teller</a>, <a href=\"https://www.linkedin.com/in/faheematif/\">Atif Faheem</a>, <a href=\"https://www.linkedin.com/in/nipunk/\">Nipun Kumar</a>, <a href=\"https://www.linkedin.com/in/donniedeboer/\">Donnie DeBoer</a>, <a href=\"https://www.linkedin.com/in/eduardolundgren/\">Eduardo Lundgren</a>, <a href=\"https://www.linkedin.com/in/matteo-rinaldi/\">Matteo Rinaldi</a>, <a href=\"https://www.linkedin.com/in/b0kshi/\">Raghav Bakshi</a></p><p>We recently introduced <a href=\"https://about.netflix.com/en/news/introducing-ai-discover\">AI Discover</a>, a new tab in our TV app where a small group of members can try new ways to find something to watch",
+    "category": "dev",
+    "source_name": "Netflix Tech Blog",
+    "published": "2026-11-17T17:01:02+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Netflix Tech Blog",
+        "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4"
+      },
+      {
+        "name": "Airbnb Engineering",
+        "url": "https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0?source=rss----53c7c27702d5---4"
+      }
+    ]
+  },
+  {
+    "id": "d4e5ba8dcf1937f3",
+    "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+    "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.\n\nThe flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions.\n\n\"This critical memory-corruption",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T08:24:23+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html"
+      }
+    ]
+  },
+  {
+    "id": "ff53e831490ca8c1",
+    "title": "Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins",
+    "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/hybrid-quantum-classical-computing-architecture-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"hybrid-quantum-classical-computing-architecture\" width=\"768\" />Quantum processors are being integrated into supercomputing centers worldwide. National programs in North America, Europe, and Asia are driving the installation...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-17T17:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/"
+      }
+    ]
+  },
+  {
+    "id": "1f5e5222289c2681",
+    "title": "Calendar automation: 5 ways to automate your calendar with your AI agent and Zapier",
+    "url": "https://zapier.com/blog/connect-everything-calendar",
+    "summary": "My calendar basically dictates how I spend each and every moment of my work day. It helps me prioritize my tasks, prepare for meetings, and lets me know when I have downtime to get specific things done. But none of that is possible—or as streamlined—without the help of automation. From cross-posting events to my different calendars (I have several) to blocking out time in my calendar for specific projects, Zapier helps me stay on top of my schedule. Most of these no longer need you to build anyt",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T08:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/connect-everything-calendar"
+      },
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-google-calendar-with-zapier"
+      }
+    ]
+  },
+  {
+    "id": "3b6f0c4f7bff79a2",
+    "title": "Hundreds of websites deliver potent malware cocktail to unsuspecting visitors",
+    "url": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/",
+    "summary": "Malware cocktail delivers cryptocurrency theft payloads and iOS exploits, among other things.",
+    "category": "news",
+    "source_name": "Ars Technica",
+    "published": "2026-11-17T22:32:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/"
+      }
+    ]
+  },
+  {
+    "id": "0e8226a39b606af5",
+    "title": "Grok Bot took unapproved actions, ignored orders to stop, and then denied it",
+    "url": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/",
+    "summary": "AI agent takes unapproved actions even when laptop lid is closed and told not to.",
+    "category": "news",
+    "source_name": "Ars Technica",
+    "published": "2026-11-17T14:00:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/"
+      }
+    ]
+  },
+  {
+    "id": "2cd65086e39f1a17",
+    "title": "Jeff Bezos says he was ‘heavily involved’ in picking the new James Bond",
+    "url": "https://www.theverge.com/entertainment/1036110/jeff-bezos-james-bond-casting-amazon",
+    "summary": "Robert Pattinson's casting as James Bond made enough sense given his recent work with director Denis Villeneuve, who's making the franchise's next film over at Amazon. But it turns out that Amazon founder Jeff Bezos played a significant role in making the final decision, too. During Semafor's Silicon Valley and the World conference today, Bezos [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-17T22:38:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/entertainment/1036110/jeff-bezos-james-bond-casting-amazon"
+      }
+    ]
+  },
+  {
+    "id": "489b205315c4c509",
+    "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+    "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+    "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/"
+      }
+    ]
+  },
+  {
+    "id": "9e456b24f8e8b282",
+    "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
+    "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+    "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-18T11:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/"
+      }
+    ]
+  },
+  {
+    "id": "32708371d1c6f57a",
+    "title": "China dominates battery graphite, but this startup could break the monopoly",
+    "url": "https://techcrunch.com/2026/11/18/china-dominates-battery-graphite-but-this-startup-could-break-the-monopoly/",
+    "summary": "Chinese companies maintain near total dominance of the graphite industry, but Molten Industries says its new factory in Oakland could spell the end of the monopoly.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-18T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/18/china-dominates-battery-graphite-but-this-startup-could-break-the-monopoly/"
+      }
+    ]
+  },
+  {
+    "id": "6c6466508ead3a84",
+    "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future  deals in doubt",
+    "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+    "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-18T01:44:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/"
+      }
+    ]
+  },
+  {
+    "id": "a8c2951cc2464b08",
+    "title": "Nvidia promises that revenue will keep soaring — for now",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+    "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-18T00:16:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/"
+      }
+    ]
+  },
+  {
+    "id": "2136392febc9336a",
+    "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+    "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T23:04:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/"
+      }
+    ]
+  },
+  {
+    "id": "742ed3141d26a396",
+    "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+    "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T22:42:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/"
+      }
+    ]
+  },
+  {
+    "id": "640a70ccfe48aff2",
+    "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+    "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+    "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T22:29:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/"
+      }
+    ]
+  },
+  {
+    "id": "1395c9a07bac62c9",
+    "title": "SEC reportedly investigating Nvidia amid Huang exit",
+    "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
+    "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T21:48:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/"
+      }
+    ]
+  },
+  {
+    "id": "8bc4ace4be7f9dc0",
+    "title": "Model ML raises $250M to automate investment banking grunt work",
+    "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+    "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T19:32:11+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/"
+      }
+    ]
+  },
+  {
+    "id": "0094524aa9d31016",
+    "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
+    "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
+    "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T19:02:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/"
+      }
+    ]
+  },
+  {
+    "id": "efb3de1e333fd082",
+    "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
+    "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+    "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-17T18:48:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/"
+      }
+    ]
+  },
+  {
+    "id": "e343c6ae37862bc2",
+    "title": "Presentation: Behind Booking.com's AI Evolution: The Unpolished Story",
+    "url": "https://www.infoq.com/presentations/bookingcom-ml-data-platform-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/bookingcom-ml-data-platform-evolution/en/mediumimage/jabez-eliezer-manuel-medium-1792654383362.jpg\" /><p>Jabez Eliezer Manuel discusses the 20-year evolution of Booking.com’s data management and ML platforms. He explains how they scaled MySQL topologies, sunset Hadoop for cloud architecture, and built high-throughput model serving and feature stores operating at 400B predictions per day. He also shares insights on personalization, interleaved experimentation, and their new agentic AI foundation.</p> <i>By Jabez Eliezer Manuel</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/bookingcom-ml-data-platform-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "53c5cf91df0a072b",
+    "title": "Vercel Releases UI SDK for Agents to Compose UI from Reusable Behaviors",
+    "url": "https://www.infoq.com/news/2026/11/vercel-ui-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/vercel-ui-sdk/en/headerimage/generatedHeaderImage-1794576155684.jpg\" /><p>Vercel has released UI SDK in beta, an Apache 2.0 TypeScript library of more than 50 UI behaviors in @ui-sdk/core, with adapters for React, Vue, Svelte, Solid, and Web Components, so agents can compose accessible components and operate them through a documented agent bridge.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T10:12:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/vercel-ui-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "bb0cb9cc38ca7953",
+    "title": "AWS PrivateLink Tunnel Endpoints Open a Whole CIDR Range to Another Account",
+    "url": "https://www.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/en/headerimage/generatedHeaderImage-1794476042263.jpg\" /><p>AWS has detailed tunnel endpoints, a PrivateLink endpoint type that gives a consumer VPC access to an entire network segment in another account rather than one resource at a time, over an overlapping address space and with consumer-initiated connections only. The consumer must wrap traffic in GENEVE; only TCP and DNS pass, and access logs cannot attribute traffic to a workload behind the endpoint.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T09:29:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "7b688ffb32300c73",
+    "title": "Yelp Migrates Cassandra to EKS by Moving EBS Volumes",
+    "url": "https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/kubernetes-cassandra-eks/en/headerimage/generatedHeaderImage-1794921404342.jpg\" /><p>Yelp has moved its Cassandra fleet from legacy self-managed Kubernetes clusters to Amazon EKS by re-pointing existing EBS volumes at new pods, rather than streaming data between nodes.</p> <i>By Claudio Masolo</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-18T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "7b945fae4bc5b290",
+    "title": "How Shopify Orchestrates AI-Powered Mobile App Development Without Overloading Developers' Machines",
+    "url": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/shopify-remote-ai-dev/en/headerimage/shopify-ruvy-ruby-wasm-1794947458635.jpeg\" /><p>To prevent AI development workflows from exhausting developer machines' resources, Shopify built Remote Dev, a remote mobile development environment that enables AI agents to independently build, test and maintain iOS and Android applications and in parallel.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-17T21:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "ee89a11367fb29e3",
+    "title": "GPT-6.2 🤖, widespread outages ⚠️, being known as a good dev 👨‍💻",
+    "url": "https://tldr.tech/tech/2026-11-18",
+    "summary": "",
+    "category": "news",
+    "source_name": "TLDR",
+    "published": "2026-11-18T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TLDR",
+        "url": "https://tldr.tech/tech/2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "04d443b350a6c305",
+    "title": "Exclusive: Germ DM Is a Signal Alternative That’s Now on Android",
+    "url": "https://www.wired.com/story/germ-dm-is-now-available-on-android/",
+    "summary": "Germ DM is an encrypted messaging platform that uses “burner cards” instead of phone numbers or usernames to compartmentalize your conversations.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-18T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/germ-dm-is-now-available-on-android/"
+      }
+    ]
+  },
+  {
+    "id": "c931452a8e37e846",
+    "title": "Lovable Wants You to Vibe Code Your Dream Job",
+    "url": "https://www.wired.com/story/lovable-wants-you-to-vibe-code-a-living/",
+    "summary": "This Swedish startup dominated the vibe-coded app boom. Two years after launch, Lovable is shifting gears to help users run vibe-coded businesses.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-18T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/lovable-wants-you-to-vibe-code-a-living/"
+      }
+    ]
+  },
+  {
+    "id": "43a8842da0b9ec76",
+    "title": "Building the Agent Host Protocol for sessions that continue across devices",
+    "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+    "summary": "<p>Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud.</p>\n<p>The post <a href=\"https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/\">Building the Agent Host Protocol for sessions that continue across devices</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "GitHub Engineering",
+    "published": "2026-11-17T18:20:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitHub Engineering",
+        "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+      }
+    ]
+  },
+  {
+    "id": "b5ef22a2a27f492e",
+    "title": "Accelerating development for massive Git repositories",
+    "url": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
+    "summary": "Meet Another Build File Service (ABFS), Google's open-source content-addressable filesystem and build cache that cuts Android checkouts to <8s and builds to ~2m.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/"
+      }
+    ]
+  },
+  {
+    "id": "d966adf5964cca00",
+    "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
+    "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
+    "summary": "Google's Gemini 4 Hydrogen brings strong spatial and embodied reasoning capabilities to a fast, efficient model built specifically for robotics. To help developers put these capabilities to work, the new Robotics plugin for Google Antigravity transforms the platform into a comprehensive workbench supporting rapid hardware bring-up, MuJoCo simulation, and closed-loop control. Developers can leverage these tools to transition from an unboxed robot arm to a fully functional real-to-sim-to-real application in an afternoon using natural language prompts and day-one support in the google-genai SDKs.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/"
+      }
+    ]
+  },
+  {
+    "id": "a6bede33d098751b",
+    "title": "Build full-stack Android apps with Gemini in Google AI Studio",
+    "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
+    "summary": "Google AI Studio now lets developers build, test, and ship full-stack Kotlin Android apps from a single prompt—complete with Cloud Firestore, Firebase Authentication, Firebase AI Logic, a faster HD emulator with audio, visual screenshot debugging, and direct publishing to your personal Google Play library.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/"
+      }
+    ]
+  },
+  {
+    "id": "4d9c698252939e9f",
+    "title": "PowerShell 7 is coming to Windows",
+    "url": "https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/",
+    "summary": "<p>PowerShell 7 is coming to Windows, beginning with the next release of Windows.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/\">PowerShell 7 is coming to Windows</a> appeared first on <a href=\"https://devblogs.microsoft.com/powershell\">PowerShell Team</a>.</p>",
+    "category": "dev",
+    "source_name": "PowerShell Blog",
+    "published": "2026-11-17T20:07:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PowerShell Blog",
+        "url": "https://devblogs.microsoft.com/powershell/powershell-7-coming-to-windows/"
+      }
+    ]
+  },
+  {
+    "id": "f944b611a0073b74",
+    "title": "SPFx Dev Skills for SPFx 1.24.1: tested across agents and models",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/",
+    "summary": "<p>SPFx Dev Skills v1.1.2 adds support for SPFx v1.24.1 and React 18 migration. Across 105 evaluation runs, the updated skill improved upgrade quality for every agent and model combination we tested, with 6 of 7 reaching a 100% mean score.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/\">SPFx Dev Skills for SPFx 1.24.1: tested across agents and models</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-18T11:56:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/"
+      }
+    ]
+  },
+  {
+    "id": "da58e499ca73e017",
+    "title": "Introducing the Starter Pack for Work IQ",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-starter-pack-for-work-iq/",
+    "summary": "<p>Announcing the Starter Pack for Work IQ Anyone who has prepared a Copilot demo or who wanted to play with Copilot and Work IQ without touching real business data knows the hardest part is the lack of demo/test content in the target tenant: no emails worth summarizing, no meetings to recap, no documents or business [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/introducing-the-starter-pack-for-work-iq/\">Introducing the Starter Pack for Work IQ</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-17T23:15:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-starter-pack-for-work-iq/"
+      }
+    ]
+  },
+  {
+    "id": "136cecd38c2758f8",
+    "title": "Enterprise Deployment of Governed Agents on Windows",
+    "url": "https://blogs.windows.com/windowsdeveloper/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/",
+    "summary": "<p>As AI agents become more capable, they promise substantial productivity gains across enterprise workflows. At the same time, they can collapse familiar execution boundaries and introduce new risk paths—from agent to human, agent to agent, agent to </p>\n<p>The post <a href=\"https://blogs.windows.com/windowsdeveloper/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/\">Enterprise Deployment of Governed Agents on Windows</a> appeared first on <a href=\"https://blogs.windows.com/windowsdeveloper\">Windows Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Windows Developer Blog",
+    "published": "2026-11-17T18:15:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Windows Developer Blog",
+        "url": "https://blogs.windows.com/windowsdeveloper/2026/11/17/enterprise-deployment-of-governed-agents-on-windows/"
+      }
+    ]
+  },
+  {
+    "id": "e69bf3272f0dd354",
+    "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+    "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+    "summary": "<p>In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half.</p>\n<p>The post <a href=\"https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/\">Maintainers don&#8217;t need more AI bug reports. They need fixes. </a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "GitHub Blog",
+    "published": "2026-11-17T18:29:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+      }
+    ]
+  },
+  {
+    "id": "9071acc1c0cc9ae7",
+    "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+    "summary": "Quad9's forced withdrawal from France highlights the dangers of mandating DNS-level blocking. We explore why forcing public resolvers to act as content filters is technically flawed and threatens the open Internet.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-17T20:24:27+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/"
+      }
+    ]
+  },
+  {
+    "id": "9bb589f11f337c30",
+    "title": "Find the log line that matters faster with full-text search in Grafana Cloud Logs",
+    "url": "https://grafana.com/blog/find-the-log-line-that-matters-faster-with-full-text-search-in-grafana-cloud-logs/",
+    "summary": "<p>A support ticket comes in with one clue: a transaction ID. The answer is somewhere in your logs, but you don&#039;t know which service logged it, which pod handled it, or which day it happened. So you write the query you always write, <code>{service=&quot;payments&quot;} |= &quot;txn-123456&quot;</code>, widen the time range to the last two weeks, and wait. Then the query times out.</p><p><a href=\"https://grafana.com/oss/loki/\"><u>Loki</u></a> was originally built around a simple idea: index labels, not log content, and store compressed logs cheaply in object storage. That design keeps storage costs low and operations light, and it&#039;s why teams keep choosing Loki and <a href=\"https://grafana.com/products/cloud/logs/\"><u>Grafana Cloud Logs</u></a>, the fully managed log aggregation system powered by Loki, as their log volumes grow. For most queries, this model works very well. But when you search for a highly unique value, like a request ID, job ID, user ID, or device ID, labels ",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-17T16:53:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/find-the-log-line-that-matters-faster-with-full-text-search-in-grafana-cloud-logs/"
+      }
+    ]
+  },
+  {
+    "id": "71433c665d79b883",
+    "title": "Builders in the Spotlight: How EMEA Champions Brought SIGNAL Paris to Life",
+    "url": "https://www.twilio.com/en-us/blog/events/Builders-in-the-Spotlight--How-EMEA-Champions-Brought-SIGNAL-Paris-to-Life",
+    "summary": "Go behind the scenes at SIGNAL Paris with Twilio Champions Mattieu Detaille (Elora) and Oleg Davydov (Davydov Consulting). Watch their floor takeover vlog, catch Red Couch CX Hot Takes, and explore practical architectural lessons on Voice AI agents, Twilio Media Streams, and unified customer data in production.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/Builders-in-the-Spotlight--How-EMEA-Champions-Brought-SIGNAL-Paris-to-Life"
+      }
+    ]
+  },
+  {
+    "id": "a25184177c34ad72",
+    "title": "From Voice AI Demo to Production: Why Infrastructure and Agent Supervision Matter",
+    "url": "https://www.twilio.com/en-us/blog/products/new-capabilities-conversation-relay-intelligence-twilio-agent-connect",
+    "summary": "Explore Twilio’s new Voice AI infrastructure features from Conversation Relay, Agent Connect, and Conversation Intelligence.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/products/new-capabilities-conversation-relay-intelligence-twilio-agent-connect"
+      }
+    ]
+  },
+  {
+    "id": "67ca32defdefdf3f",
+    "title": "Twilio Expands Conversations Layer for AI Agent Supervision",
+    "url": "https://www.twilio.com/en-us/blog/products/launches/conversation-intelligence-operators-ai-agent-supervision",
+    "summary": "Supervise AI agents effectively with Twilio Conversations and our new operators for task completion and hallucination detection to ensure quality at scale.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/products/launches/conversation-intelligence-operators-ai-agent-supervision"
+      }
+    ]
+  },
+  {
+    "id": "2c3cdb9373090c82",
+    "title": "Creating a Halloween Escape Room Hotline for Twilio",
+    "url": "https://www.twilio.com/en-us/blog/developers/halloween-escape-room-hotline-2026-twilio",
+    "summary": "Creating a Halloween Escape Room Hotline for Twilio - how I did it and tips and tricks for vibe coding your own IVR escape room experience",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/developers/halloween-escape-room-hotline-2026-twilio"
+      }
+    ]
+  },
+  {
+    "id": "4b320fa9223bd7ea",
+    "title": "What is a no-reply email (and why you should never use them)",
+    "url": "https://www.twilio.com/en-us/blog/insights/why-you-should-not-use-noreplydomain-com-in-your-emails",
+    "summary": "A no-reply email comes from an address that can’t receive replies. Learn why they hurt engagement and deliverability, and what to use instead.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/insights/why-you-should-not-use-noreplydomain-com-in-your-emails"
+      }
+    ]
+  },
+  {
+    "id": "a5ed0b05cb47a02f",
+    "title": "What is click-to-open rate (CTOR) in email marketing?",
+    "url": "https://www.twilio.com/en-us/blog/insights/click-to-open-rate-how-relevant-is-my-email",
+    "summary": "Click-to-open rate (CTOR) is the percentage of email openers who click. Learn the formula, what a good CTOR is, and how to improve yours.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-16T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/insights/click-to-open-rate-how-relevant-is-my-email"
+      }
+    ]
+  },
+  {
+    "id": "617f321b5ba67bc8",
+    "title": "SMTP port 587 vs. 465: Which port should you use?",
+    "url": "https://www.twilio.com/en-us/blog/insights/whats-the-difference-between-ports-465-and-587",
+    "summary": "Port 587 or 465? Compare SMTP ports, how StartTLS and implicit TLS differ, and which port to use for Gmail, Outlook, and Twilio SendGrid.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-14T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/insights/whats-the-difference-between-ports-465-and-587"
+      }
+    ]
+  },
+  {
+    "id": "7fe4525c1b950550",
+    "title": "Four Continents, Four New AWS Heroes: Closing Out 2026",
+    "url": "https://aws.amazon.com/blogs/aws/four-continents-four-new-aws-heroes-closing-out-2026/",
+    "summary": "As AWS re:Invent is around the corner, we’re proud to recognize a new group of AWS Heroes. Every Hero finds their own way to give back, whether through sharing what they know, bringing people together, or building tools that help others succeed. What they have in common is a genuine commitment to supporting the builders […]",
+    "category": "cloud",
+    "source_name": "AWS Blog",
+    "published": "2026-11-17T17:06:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/four-continents-four-new-aws-heroes-closing-out-2026/"
+      }
+    ]
+  },
+  {
+    "id": "964b31b66e00c49b",
+    "title": "Microsoft and Oracle bring agentic AI into flow of enterprise work",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/",
+    "summary": "<p>Our new integrations let AI agents reason across Oracle’s business-critical data.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/\">Microsoft and Oracle bring agentic AI into flow of enterprise work</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-17T18:35:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/"
+      }
+    ]
+  },
+  {
+    "id": "5d18405b914f1362",
+    "title": "Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era",
+    "url": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+    "summary": "<p>Azure Cobalt 200 VMs bring improved performance and efficiency to cloud-native applications, databases, developer tools, and agentic AI workloads.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/\">Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-17T18:20:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/"
+      }
+    ]
+  },
+  {
+    "id": "6f1b30c8c271316d",
+    "title": "Continuous improvement comes to Microsoft Foundry",
+    "url": "https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/",
+    "summary": "<p>Discover how continuous improvement in Microsoft Foundry helps organizations evaluate, optimize, and improve agents over time while keeping teams in control.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/\">Continuous improvement comes to Microsoft Foundry</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-17T18:15:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/"
+      }
+    ]
+  },
+  {
+    "id": "e51d31843fd0e26e",
+    "title": "Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent",
+    "url": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/",
+    "summary": "<p>Today, we are announcing Microsoft IQ, the enterprise context management platform that helps organizations create their own IQ. What sets an organization apart is everything around the model: its own intelligence.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/\">Introducing the new Microsoft IQ: Putting your organization&#8217;s intelligence to work in every agent</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Azure Blog",
+    "published": "2026-11-17T18:05:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure Blog",
+        "url": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/"
+      }
+    ]
+  },
+  {
+    "id": "e27bea43fa221c81",
+    "title": "Azure DevOps and GitHub: Start Your Agentic Journey Where You Are",
+    "url": "https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/",
+    "summary": "<p>Software development is changing fast as developers shift from writing code to directing agents. Today, we’re bringing more of that agentic experience to Azure DevOps teams who keep their code in Azure Repos: the GitHub Copilot app now works with Azure Repos, Copilot Code Review for Azure DevOps is generally available, and Copilot Autofix for [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/\">Azure DevOps and GitHub: Start Your Agentic Journey Where You Are</a> appeared first on <a href=\"https://devblogs.microsoft.com/devops\">Azure DevOps Blog</a>.</p>",
+    "category": "devops",
+    "source_name": "Azure DevOps Blog",
+    "published": "2026-11-17T20:17:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure DevOps Blog",
+        "url": "https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/"
+      }
+    ]
+  },
+  {
+    "id": "b328ac9841f223bf",
+    "title": "Standard builds move to usage-based billing for new teams",
+    "url": "https://vercel.com/changelog/standard-build-billing-new-teams",
+    "summary": "<p>Starting today, new Pro and Enterprise teams no longer include a Standard build slot. This brings Standard builds under the same usage-based billing model as other build machines. </p><p>On Pro, Standard builds cost $0.014 per build minute, and your monthly usage credit applies to build usage. Enterprise rates follow your contract. Standard builds remain billable after switching from Elastic to Standard for teams covered by this change.</p><p>Select a build machine in <a href=\"https://vercel.com/d?title=Set+team+level+build+machines&amp;to=%2F%5Bteam%5D%2F~%2Fsettings%2Fbuild-and-deployment%23build-machines\">team settings</a> or <a href=\"https://vercel.com/d?title=Configure+your+build+machine&amp;to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fsettings%2Fbuild-and-deployment%23build-machine\">project settings</a>, or read more about <a href=\"https://vercel.com/docs/builds/managing-builds\">managing your builds</a>.</p>\n          <p class=\"more\">\n            <a href=\"https://vercel.com/changelog/st",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/standard-build-billing-new-teams"
+      }
+    ]
+  },
+  {
+    "id": "56f3dbe466c109e3",
+    "title": "Vercel Blob now supports TTLs for automatic deletion",
+    "url": "https://vercel.com/changelog/vercel-blob-now-supports-ttls-for-automatic-deletion",
+    "summary": "<p>Vercel Blob can now delete blobs automatically. Pass <code>ttlDays</code> when you write a blob and it is deleted that many days after upload, from 1 to 730 days. The TTL counts from the blob's upload date.</p><p>Use TTLs for blobs you would otherwise delete yourself, such as session transcripts, exports, and temporary uploads.</p><p><code>ttlDays</code> works on <code>put()</code>, <code>copy()</code>, <code>putImage()</code>, multipart uploads, and presigned upload URLs. Every write result and <code>head()</code> response now includes <code>expiresAt</code>, so you know when a blob is due for deletion.</p><div></div><p><code>setTtl()</code> changes or removes the TTL of blobs you already have, one URL or up to 1,000 at a time, without re-uploading them.</p><p>In <code>Vercel CLI 65.16.0</code> and later, pass <code>--ttl-days</code> to <code>vercel blob put</code>, <code>put-image</code>, <code>copy</code> or <code>presign</code>, and use <code>vercel blob set-ttl</code> on existi",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-blob-now-supports-ttls-for-automatic-deletion"
+      }
+    ]
+  },
+  {
+    "id": "fdc35ff44677ce77",
+    "title": "Speed Insights now measures soft navigations",
+    "url": "https://vercel.com/changelog/speed-insights-now-measures-soft-navigations",
+    "summary": "<p><a href=\"https://vercel.com/docs/speed-insights\">Speed Insights</a> now measures soft navigations: client-side route changes that update page content without a full reload. This means you can now track performance as users move through your app, not just on full-page loads.</p><p>Speed Insights captures LCP, FCP, INP, and CLS for soft navigations and includes these measurements in your Real Experience Score. TTFB is not captured because there is no new document request.</p><p>Soft-navigation tracking is enabled by default for all projects using Speed Insights, with no action required. It works with modern web frameworks such as Next.js, SvelteKit, and Nuxt, in Chromium-based browsers.</p><p>In your project's <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fspeed-insights&amp;title=Speed+Insights\">Speed Insights dashboard</a>, use the new <b>Navigation Type</b> filter to view <b>All</b>, <b>Hard</b>, or <b>Soft</b> navigation data. </p><div></div><p>Soft-navigation ev",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T12:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/speed-insights-now-measures-soft-navigations"
+      }
+    ]
+  },
+  {
+    "id": "eceb75a422429a7b",
+    "title": "Pull-request-only preset now available for preview builds",
+    "url": "https://vercel.com/changelog/pull-request-only-preset-now-available-for-preview-builds",
+    "summary": "<p>A new Ignored Build Step preset lets you skip preview builds for branches without an open pull request. Production deployments and previews for branches with open pull requests continue to build.</p><p>On GitHub and GitLab projects, skipped preview deployments are canceled before consuming any Build CPU Minutes.</p><p>To enable this, open your project’s <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fsettings%2Fbuild-and-deployment&amp;title=Build+and+Deployment+Settings\"><b>Deployments &gt; Configuration</b></a>. Under <b>Ignored Build Step</b>, select <b>Only build previews for pull requests</b> from the <b>Behavior</b> menu and click <b>Save</b>.</p><div></div><p>Learn more in the <a href=\"https://vercel.com/docs/project-configuration/project-settings#ignored-build-step\">Ignored Build Step documentation</a>.</p>\n          <p class=\"more\">\n            <a href=\"https://vercel.com/changelog/pull-request-only-preset-now-available-for-preview-builds\">Read more</a>\n   ",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T02:37:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/pull-request-only-preset-now-available-for-preview-builds"
+      }
+    ]
+  },
+  {
+    "id": "1ea234073807292f",
+    "title": "Introducing eve 1.0",
+    "url": "https://vercel.com/blog/eve-is-now-generally-available",
+    "summary": "<p>Today we're announcing <a href=\"https://eve.dev\">eve 1.0</a>, the open-source framework for building production-ready agents.</p><p>Since the <a href=\"https://vercel.com/blog/introducing-eve\">public preview in June</a>, we've worked with early adopters to prepare eve for 1.0, shipping 230+ releases and merging thousands of pull requests. With this release, eve is now generally available.</p><p>We've made eve faster, expanded integrations, and improved observability. Security controls let you decide which actions need approval and what data gets collected. We've also made it easier for coding agents to build with, measuring that experience with a rigorous evaluation suite.</p><p>With eve handling your harness and infrastructure, you and your agent can focus on building instead.</p><h2>Build production agents on a harness you own</h2><p>The harness in eve is the loop that calls models, runs tools, and delegates work to subagents. You choose the model, add or replace tools, edit instru",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/eve-is-now-generally-available"
+      }
+    ]
+  },
+  {
+    "id": "aba58510e06b5b7a",
+    "title": "Decision-1.1 now available on AI Gateway",
+    "url": "https://vercel.com/changelog/decision-1-1-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/decision-1.1\">Decision-1.1</a> from Microsoft AI is now available on AI Gateway.  It is more accurate, better calibrated, and faster than Decision-1.</p><p>The decision model returns structured answers instead of free-form text for tasks such as routing support requests, choosing which model should handle a request, selecting the next step in a workflow, or grading AI responses.</p><ul><li><p>Boolean: the probability that a condition is true</p></li><li><p>Choice: a selected category and probabilities for each option</p></li><li><p>Score: a numerical rating on a scale you define</p></li></ul><p>Multiple questions can share the same input in one request. Better calibration means the model's probabilities track how often it is right, so your application can set thresholds for when to act, flag a case for review, or escalate.</p><p>Decision-1.1 accepts the same request format as Decision-1. To switch, change the model ID to <code>microsoft/",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/decision-1-1-now-available-on-ai-gateway"
+      }
+    ]
+  },
+  {
+    "id": "b123ab64c4b52d6f",
+    "title": "MAI-Image-2.7 and MAI-Image-2.7-Flash now available on AI Gateway",
+    "url": "https://vercel.com/changelog/mai-image-2-7-and-mai-image-2-7-flash-now-available-on-ai-gateway",
+    "summary": "<p>Microsoft’s <a href=\"https://vercel.com/ai-gateway/models/mai-image-2.7\">MAI-Image-2.7</a> and <a href=\"https://vercel.com/ai-gateway/models/mai-image-2.7-flash\">MAI-Image-2.7-Flash</a> are now available in public preview on <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a>. Both increase the maximum output size to 2048 x 2048 pixels and add transparent backgrounds for generated and edited images.</p><p>Generate images from text or edit existing images with one AI Gateway API key, without a Microsoft account. Both models support photorealistic images, text rendering, and targeted edits to products, portraits, and layouts. Use up to five reference images to guide edits or combine subjects.</p><ul><li><p><b>MAI-Image-2.7</b> (<code>microsoft/mai-image-2.7</code>): for final assets where image quality is the priority</p></li><li><p><b>MAI-Image-2.7-Flash</b> (<code>microsoft/mai-image-2.7-flash</code>): for faster, lower-cost generation when exploring prompts or creating variation",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/mai-image-2-7-and-mai-image-2-7-flash-now-available-on-ai-gateway"
+      }
+    ]
+  },
+  {
+    "id": "71dc90980b1a3f0a",
+    "title": "Single-second static deployments now support more assets",
+    "url": "https://vercel.com/changelog/single-second-static-deployments-now-support-more-assets",
+    "summary": "<p><a href=\"https://vercel.com/changelog/sub-second-artifact-deployments-are-now-supported-in-vercel-cli\">Instant deployments</a> let you deploy eligible static sites to Vercel in about a second, without a build step. They now support CSS, images, fonts, and other assets alongside HTML and Markdown.</p><p>Deploy a landing page with its stylesheet and images, or a report created by your coding agent, through the <a href=\"https://vercel.com/docs/cli/deploy\">Vercel CLI</a> or <a href=\"https://vercel.com/docs/rest-api/deployments/create-a-new-deployment\">REST API</a>. With the CLI, run:</p><div></div><p>Newly supported file types include:</p><ul><li><p><b>Styles and data:</b> CSS, JSON, XML, plain text, and web manifests</p></li><li><p><b>Images:</b> SVG, PNG, JPEG, GIF, WebP, AVIF, and ICO</p></li><li><p><b>Fonts:</b> WOFF, WOFF2, TTF, OTF, and EOT</p></li><li><p><b>Documents and media:</b> PDF, MP4, WebM, MP3, WAV, and OGG</p></li></ul><p>Instant deployments support up to 100 files total",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-16T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/single-second-static-deployments-now-support-more-assets"
+      }
+    ]
+  },
+  {
+    "id": "58813e2c88bcfe1e",
+    "title": "Vercel Sandbox Python SDK 1.0 is now available",
+    "url": "https://vercel.com/changelog/vercel-sandbox-python-sdk-1-0-is-now-available",
+    "summary": "<p>The <a href=\"https://pypi.org/project/vercel-sandbox/1.0.0/\">Vercel Sandbox Python SDK</a> has reached 1.0, stabilizing its public API and bringing feature parity with the TypeScript SDK. Use it to run AI-generated code, test changes, and analyze datasets in isolated sandboxes from your Python application.</p><p>The SDK includes context managers for automatic sandbox cleanup and <a href=\"https://github.com/agronholm/anyio\">AnyIO</a>-based async support for <code>asyncio</code> and Trio. For synchronous code, use <code>vercel.sandbox.sync</code>.</p><p>Install with <code>uv add 'vercel-sandbox&gt;=1.0'</code> and <a href=\"https://vercel.com/docs/sandbox/python-sdk-reference#authentication\">configure authentication</a>.</p><div></div><p>If you’re upgrading from 0.x, review the <a href=\"https://github.com/vercel/vercel-py/releases/tag/vercel-sandbox-v1.0.0\">1.0 release notes</a> for breaking changes, including the switch to bytes for command input and output.</p><p>Learn more in the <a",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-16T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-sandbox-python-sdk-1-0-is-now-available"
+      }
+    ]
+  },
+  {
+    "id": "aa659511325c2be8",
+    "title": "From exposed secrets to managed credentials: Reducing credential risk across the application lifecycle",
+    "url": "https://www.hashicorp.com/blog/from-exposed-secrets-to-managed-credentials",
+    "summary": "Learn how Vault Radar and Vault help organizations find exposed secrets, improve remediation, and reduce credential risk across the application lifecycle.",
+    "category": "cloud",
+    "source_name": "Hashicorp Blog",
+    "published": "2026-11-17T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hashicorp Blog",
+        "url": "https://www.hashicorp.com/blog/from-exposed-secrets-to-managed-credentials"
+      }
+    ]
+  },
+  {
+    "id": "1e5cf9a4b9c3b586",
+    "title": "HCP introduces IBMid support and new enterprise governance capabilities",
+    "url": "https://www.hashicorp.com/blog/hcp-introduces-ibmid-support-and-new-enterprise-governance-capabilities",
+    "summary": "HCP Platform continues to enhance identity management, governance, and administrative workflows, helping organizations securely adopt and operate HashiCorp products at scale.",
+    "category": "cloud",
+    "source_name": "Hashicorp Blog",
+    "published": "2026-11-16T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hashicorp Blog",
+        "url": "https://www.hashicorp.com/blog/hcp-introduces-ibmid-support-and-new-enterprise-governance-capabilities"
+      }
+    ]
+  },
+  {
+    "id": "460a91ff873eb70c",
+    "title": "Introducing Insights Agent",
+    "url": "https://planetscale.com/blog/introducing-insights-agent",
+    "summary": "Insights Agent connect to your codebase to turn slow queries and schema recommendations into pull requests.",
+    "category": "cloud",
+    "source_name": "PlanetScale Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PlanetScale Blog",
+        "url": "https://planetscale.com/blog/introducing-insights-agent"
+      }
+    ]
+  },
+  {
+    "id": "f258424349f7c11e",
+    "title": "Optimizing Kubernetes admission control: Where Kyverno’s CEL admission cost actually goes",
+    "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
+    "summary": "Kyverno&#8217;s CEL (Common Expression Language)-based engines exist to evaluate policy expressions. So when we profiled the admission path, we expected to find the bulk of the cost in CEL evaluation. It was not there. About 86%...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-18T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/"
+      }
+    ]
+  },
+  {
+    "id": "7f8bd5bf2a4f4b2f",
+    "title": "What CISA’s new cyber strategy means for how you ship software",
+    "url": "https://about.gitlab.com/blog/cisa-2030-cyber-strategy/",
+    "summary": "<p>On October 26, 2026, the Cybersecurity and Infrastructure Security Agency released <a href=\"https://www.cisa.gov/about/CISA2030\" rel=\"\">CISA 2030: Defend, Harden, Prevail</a>, three pillars of a four-year strategy for securing the nation’s critical infrastructure. The focus is on operational technology, but the pillars apply to anyone building and shipping software for the government.</p><p>CISA has given itself 60 days to review its current services, 180 days to publish an implementation plan, and a year to report progress. That plan is what agencies, and the vendors who supply them, will be measured against. In this article, you'll learn what each pillar asks of your software factory, and where GitLab fits in to your strategy.</p><h2 id=\"why-the-timing-matters\">Why the timing matters</h2><p>CISA's plan lands as AI accelerates both sides of security. The same models that let agents write and ship code at machine speed also make old weaknesses cheaper to find and exploit. The Forum ",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/cisa-2030-cyber-strategy/"
+      }
+    ]
+  },
+  {
+    "id": "aa16c77ad64a274b",
+    "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+    "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+    "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC, CNN, Equifax, Ledger and Zoom, was exacerbated by the reality that few popular websites enforce strict rules on the sources of third-party content.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-18T02:52:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+      }
+    ]
+  },
+  {
+    "id": "3af7ab9aa09e484d",
+    "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+    "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+    "summary": "TL;DR\n\n\n  Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day.\n  AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety.\n  Make",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T12:15:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html"
+      }
+    ]
+  },
+  {
+    "id": "469470b0646c51d0",
+    "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+    "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+    "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.\n\nThe flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature.\n\nTracked as",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T11:55:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+      }
+    ]
+  },
+  {
+    "id": "24fb7878837df8f0",
+    "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+    "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+    "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both.\n\nAI pentesting has emerged as a way to run in-depth tests whenever teams need them, instead of waiting for the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T11:03:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html"
+      }
+    ]
+  },
+  {
+    "id": "ffca5c7b044bb2a6",
+    "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+    "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+    "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz.\n\nThe malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are designed to run a credential stealer on every Python start. As of",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T06:45:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html"
+      }
+    ]
+  },
+  {
+    "id": "3b2e2d3fba218aab",
+    "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+    "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+    "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise.\n\nGoogle's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-18T05:58:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html"
+      }
+    ]
+  },
+  {
+    "id": "6feea55a2ec1ff4e",
+    "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+    "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+    "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company.\n\nWidgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server, because only approved bots can send",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T19:34:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html"
+      }
+    ]
+  },
+  {
+    "id": "79ba3ac011d0549a",
+    "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+    "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+    "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK.\n\nThe 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T15:17:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
+      }
+    ]
+  },
+  {
+    "id": "54ad9d37436e0e10",
+    "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+    "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+    "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram.\n\n\"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an infostealer themselves,\" Stormshield said in a deep-dive technical report",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-17T15:17:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html"
+      }
+    ]
+  },
+  {
+    "id": "077b3123b956704e",
+    "title": "France Is Blaming Iran for the Fridge Cyberattack",
+    "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+    "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p>\n<blockquote><p>U.S. intelligence agencies have recently reached a &#8220;&#8221;ow confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A &#8220;low confidence&#8221; assessment generally means that there is some intelligence that points in a certain direction but is fragmented, and that the assessment could change as more information is collected.</p>\n<p>The agencies&#8217; judgment on the French incidents linked those attacks to Iran generally and not to a specific group such as the Revolutionary Guards, two of the officials said. They added that Iran was also seen as probably responsible for other similar attacks around Europe, but that those investigations were in their early stages...</p></blockquote>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-18T12:05:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html"
+      }
+    ]
+  },
+  {
+    "id": "64c992ea507d4361",
+    "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+    "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+    "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-17T22:34:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks"
+      }
+    ]
+  },
+  {
+    "id": "7b704b85a57a7012",
+    "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
+    "url": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
+    "summary": "The commercial kit uses attacker-supplied AI models to personalize lures, evade spam filters, and scale campaigns to tens of thousands of targets.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-17T20:58:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat"
+      }
+    ]
+  },
+  {
+    "id": "fa3ba6f52c7f5aa4",
+    "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+    "url": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+    "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-17T18:38:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach"
+      }
+    ]
+  },
+  {
+    "id": "597760347e8df329",
+    "title": "Grok Bots Attempt to Access Corporate Data Without User Approval",
+    "url": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
+    "summary": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner approval.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-17T13:12:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval"
+      }
+    ]
+  },
+  {
+    "id": "6a31850569ad9225",
+    "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
+    "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
+    "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-16T19:56:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline"
+      }
+    ]
+  },
+  {
+    "id": "c739a1f3759bb8ed",
+    "title": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
+    "url": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+    "summary": "The emerging technology will soon break the &quot;lock and key&quot; encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-16T14:22:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check"
+      }
+    ]
+  },
+  {
+    "id": "f6965c7d608ba931",
+    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+    "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+    "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-18T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
+      }
+    ]
+  },
+  {
+    "id": "db023ba03b680656",
+    "title": "Introducing ChatGPT for Sales",
+    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-17T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/introducing-chatgpt-for-sales"
+      }
+    ]
+  },
+  {
+    "id": "994b39efdaae8a4c",
+    "title": "Astra for Law leads in legal intelligence",
+    "url": "https://openai.com/index/astra-law-6-2",
+    "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/astra-law-6-2"
+      }
+    ]
+  },
+  {
+    "id": "10235f5007203fe1",
+    "title": "Introducing OpenAI for Chile",
+    "url": "https://openai.com/index/introducing-openai-for-chile",
+    "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/introducing-openai-for-chile"
+      }
+    ]
+  },
+  {
+    "id": "143f4ec96c51b1ff",
+    "title": "Put Gemini to work for you",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "summary": "A user interface displaying the prompt \"What can I get done for you?\" above an input box containing placeholder text \"Describe a task\".",
+    "category": "ai",
+    "source_name": "Google AI Blog",
+    "published": "2026-11-17T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+      }
+    ]
+  },
+  {
+    "id": "658833876cbe8da2",
+    "title": "Advancing Claude for Financial Services",
+    "url": "https://www.anthropic.com/news/advancing-claude-for-financial-services",
+    "summary": "Claude for Financial Services adds a native Excel plugin, real-time market connectors, and skills for modeling, comp analysis, and earnings reports.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2025-10-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news/advancing-claude-for-financial-services"
+      }
+    ]
+  },
+  {
+    "id": "ccaac5841efd00bf",
+    "title": "LLMs are making formal software verification feasible at a much larger scale",
+    "url": "https://www.anthropic.com/research/formal-verification",
+    "summary": "Claude formally proved security properties in the compiled code of 123 open-source libraries. Along the way, it found bugs that had eluded detection for years.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-10-22T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      }
+    ]
+  },
+  {
+    "id": "a5611129e99bfcab",
+    "title": "Building strong safety evaluations",
+    "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+    "summary": "Recommendations for designing, running, and reporting safety evaluations, based on our own experiences.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-13T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/building-strong-safety-evaluations"
+      }
+    ]
+  },
+  {
+    "id": "56a85c32d24aeb4f",
+    "title": "How to Choose the Right Sandbox for AI Agents",
+    "url": "https://www.langchain.com/blog/how-to-choose-the-right-sandbox-for-your-agent",
+    "summary": "Learn how to choose a secure sandbox for AI agents, with guidance on filesystem isolation, network access, resource limits, and microVMs.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-18T00:46:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/how-to-choose-the-right-sandbox-for-your-agent"
+      }
+    ]
+  },
+  {
+    "id": "2bb69bc4f6b4f093",
+    "title": "Protect sensitive data in your traces: new controls in LangSmith",
+    "url": "https://www.langchain.com/blog/protect-sensitive-data-in-your-traces-new-controls-in-langsmith",
+    "summary": "New controls are now in LangSmith to help teams manage access to sensitive trace data. Learn more.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-17T21:31:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/protect-sensitive-data-in-your-traces-new-controls-in-langsmith"
+      }
+    ]
+  },
+  {
+    "id": "a08267711dca083e",
+    "title": "How to Build Proactive, Always-On Agents with the Schedules SDK in Managed Deep Agents",
+    "url": "https://www.langchain.com/blog/proactive-agents",
+    "summary": "Most proactive agents run on a simple cron. Learn what scheduled runs unlock, from memory to smart triage, and how to add them to Managed Deep Agents.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-17T21:31:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/proactive-agents"
+      }
+    ]
+  },
+  {
+    "id": "ec805db2f0f186a1",
+    "title": "What We’ve Learned Building Proactive Agents",
+    "url": "https://www.langchain.com/blog/what-weve-learned-building-proactive-agents",
+    "summary": "Proactive agents work toward goals in the background and check in when they need you. What we've learned about memory and UX from building GTM Agent and Robin.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-17T16:49:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/what-weve-learned-building-proactive-agents"
+      }
+    ]
+  },
+  {
+    "id": "fd037a884cee50be",
+    "title": "External sandboxes for coding agents",
+    "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+    "summary": "<p><strong><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">External sandboxes for coding agents</a></strong></p>\nI've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine.</p>\n<p>I worked on this project with <a href=\"https://primeradiant.com\">Prime Radiant</a>, the AI research lab behind Superpowers and <a href=\"https://github.com/orgs/prime-radiant-inc/repositories\">other projects</a>.</p>\n<p><a href=\"https://blog.primeradiant.com/external-sandboxes-for-coding-agents/\">My post</a> on the Prime Radiant blog introduces the <strong>external sandbox</strong> pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.</p>\n<p>To demonstrate this pattern we've released three sandbox server implementations:</p>\n<u",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-17T22:52:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+      }
+    ]
+  },
+  {
+    "id": "eeb6cf441092be25",
+    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+    "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+    "summary": "<p><a href=\"https://lite.datasette.io/\">Datasette Lite</a> is my port of the <a href=\"https://datasette.io/\">Datasette</a> Python application to run directly in the browser using WebAssembly and <a href=\"https://pyodide.org/\">Pyodide</a>. I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application.</p>\n<p>You can now do all of the following, using a carefully crafted URL to <strong>lite.datasette.io</strong>:</p>\n<ul>\n<li>Load client-side Datasette to browse any SQLite database, JSON file, CSV file or SQL script</li>\n<li>Select a released version of Datasette to load from PyPI</li>\n<li>Load a specific commit, tag, or branch name from the Datasette GitHub repository</li>\n<li>Pick from over 100 versions of SQLite to use with Datasette</li>\n<li>Install additional Datasette plugins from PyPI or URLs to wheel files, including JavaScript visualization tools</li>\n</ul>\n<p>The ability to load specific Dat",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-17T16:48:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/"
+      }
+    ]
+  },
+  {
+    "id": "f72c0246f7db7ffe",
+    "title": "Deterministic Simulation Testing",
+    "url": "https://martinfowler.com/articles/deterministic-simulation-testing.html",
+    "summary": "<p>Distributed systems are hard to test because partial failures overlap\n     with live traffic and the same fault can produce different execution traces\n     on different runs. <b class=\"author\">Unmesh Joshi</b> describes how\n     deterministic simulation testing addresses this by replacing real clocks,\n     networks, and storage with simulated components driven by a single-threaded\n     execution loop. This allows simulating both hard failures and routine\n     slowdowns&#x2014;such as network and disk latency spikes&#x2014;and more importantly\n     makes every execution reproducible. This article explains the technique\n     using a quorum key-value store as a running example, with code from\n     Tickloom, a Java implementation of the approach.</p>\n\n<p><a class=\"more\" href=\"https://martinfowler.com/articles/deterministic-simulation-testing.html\">more…</a></p>",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-17T14:33:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/articles/deterministic-simulation-testing.html"
+      }
+    ]
+  },
+  {
+    "id": "25ac9272a683635a",
+    "title": "Inference engineering for software engineers",
+    "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
+    "summary": "When is the right time to drop APIs provided by the frontier AI labs, and what about choosing models & providers, caching, dedicated GPUs, KV cache concerns, and more? A practical deepdive",
+    "category": "dev",
+    "source_name": "Pragmatic Engineer",
+    "published": "2026-11-17T16:11:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Pragmatic Engineer",
+        "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers"
+      }
+    ]
+  },
+  {
+    "id": "fb0cb332cdbb857c",
+    "title": "In the Microsoft employee price list, why did the BASIC compiler cost less than the BASIC interpreter?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261117-00/?p=112866/",
+    "summary": "<p>Understanding the pricing scheme.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261117-00/?p=112866/\">In the Microsoft employee price list, why did the BASIC compiler cost less than the BASIC interpreter?</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-11-17T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261117-00/?p=112866/"
+      }
+    ]
+  },
+  {
+    "id": "469d0181ed081344",
+    "title": "How to prevent Electron safeStorage decryption errors from deleting API keys",
+    "url": "https://dev.to/orca_forge/how-to-prevent-electron-safestorage-decryption-errors-from-deleting-api-keys-2hka",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/check-script-deleted-api-keys/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=check-script-deleted-api-keys\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR A screen check script used the same settings location as the Electron app and handled ciphertext with a differently signed executable. Decryption then failed, and the error handler deleted all four API keys. Keep unreadable ciphertext under another name, retry it on read, and keep the check script away from <code>getSettings()</code> and <code>safeStorage</code>.</p>\n\n<h2>\n  \n  \n  TL;DR\n</h2>\n\n<p>In an Electron app, a test script signed differently from the production app accessed the same storage. After that, <code>safeStorage</code> could no longer decrypt the ciphertext, and the error handler deleted all four API keys. We changed the app to preserve undecryptable values under a different ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/how-to-prevent-electron-safestorage-decryption-errors-from-deleting-api-keys-2hka"
+      }
+    ]
+  },
+  {
+    "id": "c7749cffdd2f877b",
+    "title": "Resetting Vue State When Related Converter Routes Reuse One Component",
+    "url": "https://dev.to/begoodtool/resetting-vue-state-when-related-converter-routes-reuse-one-component-3hgb",
+    "summary": "<p>Moving between two converter URLs does not necessarily mean Vue creates a fresh component instance. I'll use a feet-to-meters page to show how to reset reused input refs without letting two-way watchers overwrite the intended defaults.</p>\n\n<p>I used a feet-to-meters page as a concrete example. The arithmetic is simply multiplication by 0.3048, but the implementation is more interesting as a small case study in route-driven data, editable state, and resetting both sides of a two-way calculation.</p>\n\n<h2>\n  \n  \n  Put Page Identity in Route Data\n</h2>\n\n<p>The application describes fixed conversion pairs as data. Each pair carries a slug, category, source unit, destination unit, development-order value, and localized content.</p>\n\n<p>The router expands those definitions into routes that use one shared component. It places the pair slug in route metadata, so the component can look up the current definition:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight jav",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/begoodtool/resetting-vue-state-when-related-converter-routes-reuse-one-component-3hgb"
+      }
+    ]
+  },
+  {
+    "id": "80245667019a6a59",
+    "title": "Full-disk encryption on a VPS: what it really protects",
+    "url": "https://dev.to/eqvps/full-disk-encryption-on-a-vps-what-it-really-protects-3bal",
+    "summary": "<p>A search for a \"privacy-focused VPS with full-disk encryption\" usually ends at a checkbox on a pricing page. The checkbox is real, but what it buys you is narrower than the marketing suggests. Before you encrypt anything, it helps to be precise about who you're protecting the data from — because for one important case, disk encryption does nothing at all.</p>\n\n<h2>\n  \n  \n  What encryption on a VPS protects — and what it doesn't\n</h2>\n\n<p>A VPS is a virtual machine on someone else's hardware. While it runs, the disk is unlocked and the encryption key lives in the VM's memory. The host machine can, in principle, read that memory. So:</p>\n\n<p><strong>Encryption helps against:</strong></p>\n\n<ul>\n<li>A copy of your disk image or snapshot ending up where it shouldn't.</li>\n<li>Old drives being retired after a hardware replacement.</li>\n<li>Someone getting access to storage or backups without access to your running server.</li>\n</ul>\n\n<p><strong>Encryption does not help against:</strong></",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eqvps/full-disk-encryption-on-a-vps-what-it-really-protects-3bal"
+      }
+    ]
+  },
+  {
+    "id": "a145458d152207f0",
+    "title": "Use open job postings as a sales signal: which companies are hiring for what, from just a domain",
+    "url": "https://dev.to/lindenbyte/use-open-job-postings-as-a-sales-signal-which-companies-are-hiring-for-what-from-just-a-domain-p9i",
+    "summary": "<blockquote>\n<p>Disclosure: I'm Lindenbyte, the small studio that built the Apify Actor used below, and this post was<br />\ndrafted with AI assistance. You can read any company's careers page by hand; this is a way to do it for a list of target accounts<br />\nat once and get a summary plus \"what changed since last week\".</p>\n</blockquote>\n\n<p>If you sell to engineering, sales or security teams, a company's open roles tell you where it is investing. 66 open sales roles at a SaaS company means one thing, 16 engineering roles another.<br />\nThe catch: companies use different applicant-tracking systems (ATS), so you would need a different scraper per target.<br />\nThe <a href=\"https://apify.com/lindenbyte/company-hiring-signals-monitor\" rel=\"noopener noreferrer\">Company Hiring Signals Monitor</a> takes company <strong>domains</strong>, detects which ATS each one uses<br />\n(Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Personio) and returns one summary row per company plu",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/lindenbyte/use-open-job-postings-as-a-sales-signal-which-companies-are-hiring-for-what-from-just-a-domain-p9i"
+      }
+    ]
+  },
+  {
+    "id": "e6a6c616bfa08bad",
+    "title": "Why your Laravel deploy still serves the old code (and how to fix OPcache)",
+    "url": "https://dev.to/amjadiqbal/why-your-laravel-deploy-still-serves-the-old-code-and-how-to-fix-opcache-52a5",
+    "summary": "<p>You ship a release. The files on the server are new. The site still behaves like the old version.</p>\n\n<h2>\n  \n  \n  What is going on\n</h2>\n\n<p>The recommended production setting is opcache.validate_timestamps=0. PHP then never checks whether a file changed, so it keeps serving the compiled bytecode of the previous release until the process pool restarts.<br />\nThe obvious fix, resetting OPcache from an Artisan command, does not work. The CLI and the FPM worker pool do not share the same OPcache, so the command resets a cache that your visitors never touch.</p>\n\n<h2>\n  \n  \n  The fix\n</h2>\n\n<p>I built Kiln, a small package that adds four commands: kiln:clear, kiln:warm, kiln:status and kiln:config. It also adds an optional HTTP route that runs the clear or the warm inside an actual FPM worker, which is the only place that can reset the cache your site really uses.</p>\n\n<ul>\n<li>The route only accepts temporary signed URLs and refuses a signature that has no expiry.- Clear and warm are",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/amjadiqbal/why-your-laravel-deploy-still-serves-the-old-code-and-how-to-fix-opcache-52a5"
+      }
+    ]
+  },
+  {
+    "id": "12d112ba4aeb84f8",
+    "title": "Qwen3 + Claude Code: Request Routing Sent 96% to the Cloud, Step Routing Kept 48% Local",
+    "url": "https://dev.to/kenimo49/qwen3-claude-code-request-routing-sent-96-to-the-cloud-step-routing-kept-48-local-3143",
+    "summary": "<p>Send Claude Code's whole requests to a local Qwen3 and almost nothing goes through. One recent measurement on an RTX 4070 counted <strong>100 real requests and 96 had to go to the frontier model.</strong> Then the same workload was split into single Claude Code steps and counted again: <strong>97 of 200 steps were fine on the local model.</strong> Same box. Same requests. The thing that changed was the routing granularity.</p>\n\n<p>Both numbers are from the companion material for a Kindle book by kenimo49 (<a href=\"https://kenimoto.dev/books/local-llm-step-routing?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=step-routing-96-48\" rel=\"noopener noreferrer\">Local LLM or Claude Code?</a>), with MIT-licensed reference code on GitHub as <a href=\"https://github.com/kenimo49/local-step-router\" rel=\"noopener noreferrer\"><code>local-step-router</code></a>. I want to walk through what those two numbers imply for anyone who has a local LLM sitting idle and a Claude Code bill that is n",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kenimo49/qwen3-claude-code-request-routing-sent-96-to-the-cloud-step-routing-kept-48-local-3143"
+      }
+    ]
+  },
+  {
+    "id": "b55e3d57c630b1d9",
+    "title": "Operators, conditions and loops (VB.NET)",
+    "url": "https://dev.to/divakarupadhyay/operators-conditions-and-loops-vbnet-3lc3",
+    "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/vbnet/lessons/operators-conditions-and-loops\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, lesson 3 of 12 in the <a href=\"https://devladder.pages.dev/courses/vbnet\" rel=\"noopener noreferrer\">VB.NET: Visual Basic .NET from Basics to Advanced (with C# Comparison)</a> course)</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Purpose</th>\n<th>VB.NET</th>\n<th>C#</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Equality</td>\n<td><code>=</code></td>\n<td><code>==</code></td>\n</tr>\n<tr>\n<td>Not equal</td>\n<td><code>&lt;&gt;</code></td>\n<td><code>!=</code></td>\n</tr>\n<tr>\n<td>Logical and/or (short-circuit)</td>\n<td>\n<code>AndAlso</code>, <code>OrElse</code>\n</td>\n<td>\n<code>&amp;&amp;</code>, `\\</td>\n</tr>\n<tr>\n<td>Logical and/or (always both)</td>\n<td>{% raw %}<code>And</code>, <code>Or</code>\n</td>\n<td>\n<code>&amp;</code>, `\\</td>\n</tr>\n<tr>\n<td>Not</td>\n<td>{% raw %}<code>Not</code",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/divakarupadhyay/operators-conditions-and-loops-vbnet-3lc3"
+      }
+    ]
+  },
+  {
+    "id": "3dd8f8448eb63a85",
+    "title": "RxJS parte 4: Subjects, hot vs cold e um mini store",
+    "url": "https://dev.to/edwardteixeira/rxjs-parte-4-subjects-hot-vs-cold-e-um-mini-store-7md",
+    "summary": "<h2>\n  \n  \n  Introdução\n</h2>\n\n<p>Na <a href=\"https://dev.to/edwardteixeira/rxjs-parte-1-observables-50cp\">parte 1</a> a gente viu que observables são <strong>cold</strong>: cada subscribe dispara uma execução nova. No fim da parte 3 ficou um problema no ar: se dois pedaços da tela fizerem subscribe na mesma busca, são <strong>dois</strong> requests por termo. Neste artigo a gente vai entender o porquê, conhecer os <strong>Subjects</strong>, compartilhar uma execução entre vários subscribers com <code>share</code> e <code>shareReplay</code>, ver como evitar memory leak, e no final montar um <strong>mini store</strong> de carrinho de compras, a mesma ideia por trás de bibliotecas como NgRx, com poucas dezenas de linhas.</p>\n\n<blockquote>\n<p>Os exemplos usam <strong>RxJS 7</strong> (7.8.x). Todos os trechos de código deste artigo foram executados, e as saídas mostradas são as saídas reais.</p>\n</blockquote>\n\n<h2>\n  \n  \n  O problema do observable cold\n</h2>\n\n<p>Um observable cold é como u",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/edwardteixeira/rxjs-parte-4-subjects-hot-vs-cold-e-um-mini-store-7md"
+      }
+    ]
+  },
+  {
+    "id": "1cfc0835989fd9a0",
+    "title": "Match paths the way Spring MVC does: an encoded-path bypass in API-key auth",
+    "url": "https://dev.to/tenmatech/match-paths-the-way-spring-mvc-does-an-encoded-path-bypass-in-api-key-auth-3jj6",
+    "summary": "<p>My starter kit lets a tenant create API keys for integrations: send <code>X-API-Key: ak_...</code> instead of a JWT. While adding that, I made a mistake that a security review caught before the release. It's a small, common one, and the fix is one Spring Security class.</p>\n\n<h2>\n  \n  \n  The rule: a key can't manage credentials\n</h2>\n\n<p>A key acts as the user who created it, inside the key's tenant. That's convenient, and it means a leaked key is as powerful as its creator. So a key must not be able to touch credentials or accounts. Otherwise a leaked key could mint a new key, or reset a password, and keep access after it's revoked.</p>\n\n<p>The excluded areas are API keys themselves, sign-in and 2FA, the profile, and writes to users and platform administration.</p>\n\n<h2>\n  \n  \n  The first version\n</h2>\n\n<p>The first version checked the request path as a string:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight java\"><code><span class=\"kt\">String</span> <sp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tenmatech/match-paths-the-way-spring-mvc-does-an-encoded-path-bypass-in-api-key-auth-3jj6"
+      }
+    ]
+  },
+  {
+    "id": "873a679d582fee60",
+    "title": "How to generate an architecture diagram from a GitHub repo",
+    "url": "https://dev.to/repowise/how-to-generate-an-architecture-diagram-from-a-github-repo-2nof",
+    "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>To generate an architecture diagram from a GitHub repo, paste the repo URL into GitDiagram, Eraser or repowise, or run <code>repowise init --index-only</code> and <code>repowise export --format structurizr</code> on a local checkout.</li>\n<li>GitDiagram and Eraser have a model read a sample of the code and draw the system. Parsed graphs such as repowise, Madge and pydeps resolve every import.</li>\n<li>Checked edge by edge against Flask's 24 modules and 78 runtime import edges, the GitDiagram drawing of Flask left out 9 modules, including <code>globals.py</code> (imported by 12 Flask modules) and <code>helpers.py</code> (imported by 9).</li>\n</ul>\n\n<p><em>This post first appeared on the repowise blog. I am posting it here because the question I tested comes up a lot on dev.to: if a tool draws your repo for you, how much of the repo is actually in the picture?</em></p>\n\n<p>To generate an architecture diagram from a GitHub repo, paste the repo URL i",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/repowise/how-to-generate-an-architecture-diagram-from-a-github-repo-2nof"
+      }
+    ]
+  },
+  {
+    "id": "60e7971fd5cf470a",
+    "title": "AskDB: AI-written SQL and charts, without AI seeing your data",
+    "url": "https://dev.to/ygilany/askdb-ai-written-sql-and-charts-without-ai-seeing-your-data-2jdm",
+    "summary": "<p>People want to use AI to run reports on their databases. They also don't want to give AI access to their database. It's a Catch-22.</p>\n\n<p><strong>AskDB</strong> is an open-source TypeScript text-to-SQL toolkit: it turns a question into checked SQL for your app to run. The model sees your schema and the notes you write, never your data.</p>\n\n<p>Today I'm announcing the release candidate for AskDB 1.0. The current build is 1.0.0-rc.3.</p>\n\n<p>The whole flow in 41 seconds: <a href=\"https://yahyagilany.io/videos/askdb-demo.mp4\" rel=\"noopener noreferrer\">watch the demo</a>.</p>\n\n<h2>\n  \n  \n  Where NL-to-SQL goes wrong\n</h2>\n\n<p>NL-to-SQL is an old problem. Systems that answer English questions from a database go back to BASEBALL (1961)<sup id=\"fnref1\">1</sup> and LUNAR (1971)<sup id=\"fnref2\">2</sup>. Studies of large language models such as OpenAI's Codex writing SQL go back to early 2022<sup id=\"fnref3\">3</sup>. So the problem is not new.</p>\n\n<p>The problem now isn't generating plaus",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ygilany/askdb-ai-written-sql-and-charts-without-ai-seeing-your-data-2jdm"
+      }
+    ]
+  },
+  {
+    "id": "1d3159dcec46df4a",
+    "title": "How an options desk earns the right to trade real money",
+    "url": "https://dev.to/ankushyadavdev/how-an-options-desk-earns-the-right-to-trade-real-money-2nbg",
+    "summary": "<p>Strikedeck does not let a strategy touch real money until it has completed 50 paper trades at a 45 percent win rate or better, with daily loss caps and a kill switch in front of every order. Only then is the desk promoted from PAPER to LIMITED LIVE, and full LIVE still needs an operator token.</p>\n\n<h2>\n  \n  \n  Why is gating money behind evidence a product decision?\n</h2>\n\n<p>Most trading tools treat risk controls as a settings page. The user ticks a box, and the box can be unticked at the worst possible moment. Strikedeck treats the gate as part of the product, not as an option.</p>\n\n<p>The desk starts in PAPER. Every signal is logged and filled against live prices, but no order leaves the machine. The desk has to prove itself on the same data it would later trade on.</p>\n\n<p>That design says something to the person using it. The software is not asking for trust up front. It asks for 50 trades of evidence first, and it shows the count on screen the whole time.</p>\n\n<h2>\n  \n  \n  Wha",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-18T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ankushyadavdev/how-an-options-desk-earns-the-right-to-trade-real-money-2nbg"
+      }
+    ]
+  },
+  {
+    "id": "c3248aaef563f2e0",
+    "title": "Meet AI 2027 Conference (Dec 1)",
+    "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/",
+    "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns. What to expect in 2027 and where teams are getting AI right. [Jump to tickets.](https://smashingconf.com/ai-2027-conference/registration)",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-17T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/"
+      }
+    ]
+  },
+  {
+    "id": "e51477432f7057cc",
+    "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+    "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
+    "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what separates the teams whose accessibility efforts are keeping up, and how to embed human judgment into AI-enabled workflows without slowing delivery.",
+    "category": "dev",
+    "source_name": "Smashing Magazine",
+    "published": "2026-11-17T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/"
+      }
+    ]
+  },
+  {
+    "id": "c983d45941bfe9b2",
+    "title": "How we raised Databricks cluster rate limits by 7.5×",
+    "url": "https://www.databricks.com/blog/how-we-raised-databricks-cluster-rate-limits-75",
+    "summary": "As part of the Compute Platform team at Databricks, we turn cloud infrastructure...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-18T02:30:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/how-we-raised-databricks-cluster-rate-limits-75"
+      }
+    ]
+  },
+  {
+    "id": "ac26f0963fb30d65",
+    "title": "Branch, sync, serve: What our Lakebase Hackathon taught us about building on Lakebase",
+    "url": "https://www.databricks.com/blog/branch-sync-serve-what-our-lakebase-hackathon-taught-us-about-building-lakebase",
+    "summary": "How Databricks hackathons workWe run these hackathons for a simple reason: the fastest...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-17T19:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/branch-sync-serve-what-our-lakebase-hackathon-taught-us-about-building-lakebase"
+      }
+    ]
+  },
+  {
+    "id": "cb4b9ee608c26977",
+    "title": "The new Azure Databricks on Azure Government is now in Beta",
+    "url": "https://www.databricks.com/blog/new-azure-databricks-azure-government-now-beta",
+    "summary": "Modern data and AI, built for the missionGovernment agencies and their mission-critical...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-17T16:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/new-azure-databricks-azure-government-now-beta"
+      }
+    ]
+  },
+  {
+    "id": "a5bc696dbbfa5df0",
+    "title": "Advancing Catalog Interoperability with Unity Catalog and Google Cloud’s Borderless Lakehouse",
+    "url": "https://www.databricks.com/blog/advancing-catalog-interoperability-unity-catalog-and-google-clouds-borderless-lakehouse",
+    "summary": "The Lakehouse architecture is becoming more open than ever. What started with open...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-17T16:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/advancing-catalog-interoperability-unity-catalog-and-google-clouds-borderless-lakehouse"
+      }
+    ]
+  },
+  {
+    "id": "da78dded6ab27f6b",
+    "title": "How packaged clean rooms bring RampID to your lakehouse",
+    "url": "https://www.databricks.com/blog/liveramp-rampid-identity-resolution-packaged-clean-rooms",
+    "summary": "Partner identity resolution used to mean sending your PII to the vendorHistorically on Databricks...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-17T16:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/liveramp-rampid-identity-resolution-packaged-clean-rooms"
+      }
+    ]
+  },
+  {
+    "id": "8a52a1153641e58b",
+    "title": "Built on object storage, served from cache",
+    "url": "https://www.databricks.com/blog/built-object-storage-served-cache",
+    "summary": "The common argument against running Postgres on object storage goes like this:Postgres...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-17T13:54:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/built-object-storage-served-cache"
+      }
+    ]
+  },
+  {
+    "id": "29000c6ed8a83b4f",
+    "title": "Is your observability pipeline becoming the bottleneck?",
+    "url": "https://www.confluent.io/blog/is-your-observability-pipeline-becoming-the-bottleneck/",
+    "summary": "Discover four signs your observability pipeline is reaching its limits and learn how data streaming can help you build a more scalable architecture. Get the guide.",
+    "category": "dev",
+    "source_name": "Confluent Blog",
+    "published": "2026-11-18T05:04:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Confluent Blog",
+        "url": "https://www.confluent.io/blog/is-your-observability-pipeline-becoming-the-bottleneck/"
+      }
+    ]
+  },
+  {
+    "id": "c186e5f845110746",
+    "title": "Netmap caching: keeping Tailscale up on iffy connections",
+    "url": "https://tailscale.com/blog/netmap-caching",
+    "summary": "Tailscale can now start from a saved copy of your tailnet map, speeding everybody's startup times and mitigating some rough connections.",
+    "category": "dev",
+    "source_name": "Tailscale Blog",
+    "published": "2026-11-17T16:45:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Tailscale Blog",
+        "url": "https://tailscale.com/blog/netmap-caching"
+      }
+    ]
+  },
+  {
+    "id": "4ff1ea16b57a8642",
+    "title": "We accidentally launched our new UI",
+    "url": "https://posthog.com/blog/accidentally-launched-new-ui",
+    "summary": "TL;DR:  The new Home page opens on what needs your attention today. A new nav rail down the left sorts every product by the question it answers. It's…",
+    "category": "dev",
+    "source_name": "PostHog Engineering",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PostHog Engineering",
+        "url": "https://posthog.com/blog/accidentally-launched-new-ui"
+      }
+    ]
+  },
+  {
+    "id": "e2a068084bfb56b1",
+    "title": "Introducing Snapshot Migration to Heroku Postgres Advanced",
+    "url": "https://www.heroku.com/blog/introducing-snapshot-migration-heroku-postgres-advanced/",
+    "summary": "<p>When we announced Heroku Postgres Advanced in October, migration tooling for Postgres Classic databases was the first item on our roadmap. The first part of that tooling is available today: heroku data:pg:migrate. heroku data:pg:migrate is a guided, interactive Heroku CLI workflow that moves a Postgres Classic tier database to Heroku Postgres Advanced. You don&#8217;t write [&#8230;]</p>\n<p>The post <a href=\"https://www.heroku.com/blog/introducing-snapshot-migration-heroku-postgres-advanced/\">Introducing Snapshot Migration to Heroku Postgres Advanced</a> appeared first on <a href=\"https://www.heroku.com\">Heroku</a>.</p>",
+    "category": "dev",
+    "source_name": "Heroku Engineering",
+    "published": "2026-11-17T20:29:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Heroku Engineering",
+        "url": "https://www.heroku.com/blog/introducing-snapshot-migration-heroku-postgres-advanced/"
+      }
+    ]
+  },
+  {
+    "id": "edb8f66126262963",
+    "title": "Create and analyze SurveyMonkey surveys directly in Gemini",
+    "url": "https://www.surveymonkey.com/curiosity/surveymonkey-gemini-integration/?ut_source=rss",
+    "summary": "",
+    "category": "dev",
+    "source_name": "SurveyMonkey Engineering",
+    "published": "2026-11-18T07:00:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "SurveyMonkey Engineering",
+        "url": "https://www.surveymonkey.com/curiosity/surveymonkey-gemini-integration/?ut_source=rss"
+      }
+    ]
+  },
+  {
+    "id": "d908490fc653a02b",
+    "title": "Keep Your Products on Google: Fix Undersized Images With One Transformation",
+    "url": "https://cloudinary.com/blog/google-undersized-images-transformation",
+    "summary": "<p>Frequently Asked Questions Do all images need resizing? No. The transformation only acts on images where a side is under 500 pixels, and leaves the rest at their original size. Does this change the original files? No. Cloudinary creates the larger version when the URL is requested, so your originals stay unchanged. Only the images [&#8230;]</p>\n<p>The post <a href=\"https://cloudinary.com/blog/google-undersized-images-transformation\">Keep Your Products on Google: Fix Undersized Images With One Transformation</a> appeared first on <a href=\"https://cloudinary.com/blog\">Cloudinary Blog</a>.</p>",
+    "category": "cloud",
+    "source_name": "Cloudinary Blog",
+    "published": "2026-11-17T20:35:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudinary Blog",
+        "url": "https://cloudinary.com/blog/google-undersized-images-transformation"
+      }
+    ]
+  },
+  {
+    "id": "814d303e424be4d7",
+    "title": "The safest release workflow is the one engineers don't have to remember",
+    "url": "https://launchdarkly.com/blog/the-safest-release-workflow-is-the-one-engineers-dont-have-to-remember/",
+    "summary": "As AI agents write more code, release safeguards that depend on someone remembering to add them often get skipped. Here’s how to find those gaps and close them.",
+    "category": "cloud",
+    "source_name": "LaunchDarkly Blog",
+    "published": "2026-11-17T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LaunchDarkly Blog",
+        "url": "https://launchdarkly.com/blog/the-safest-release-workflow-is-the-one-engineers-dont-have-to-remember/"
+      }
+    ]
+  },
+  {
+    "id": "78eb3562df8315bf",
+    "title": "Automate experimentation with LaunchDarkly, AWS DevOps Agent, and Kiro",
+    "url": "https://launchdarkly.com/blog/automate-experimentation-launchdarkly-aws-devops-agent-kiro/",
+    "summary": "With AWS and LaunchDarkly, AI agents plan, safely ship, and measure experiments against goals your team defines.",
+    "category": "cloud",
+    "source_name": "LaunchDarkly Blog",
+    "published": "2026-11-17T17:35:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LaunchDarkly Blog",
+        "url": "https://launchdarkly.com/blog/automate-experimentation-launchdarkly-aws-devops-agent-kiro/"
+      }
+    ]
+  },
+  {
+    "id": "c27063e9f02d4cb6",
+    "title": "Building Trust in an AI SRE Agent: Royal Caribbean and LiveRamp at AWS re:Invent by PagerDuty",
+    "url": "https://www.pagerduty.com/blog/ai/building-trust-in-an-ai-sre-agent-royal-caribbean-and-liveramp-at-aws-reinvent/",
+    "summary": "<p>An alert fires at 3 a.m. The on-call engineer wakes up, opens their laptop, and spends the next 20 minutes triaging and diagnosing what’s broken....</p>\n<p>The post <a href=\"https://www.pagerduty.com/blog/ai/building-trust-in-an-ai-sre-agent-royal-caribbean-and-liveramp-at-aws-reinvent/\">Building Trust in an AI SRE Agent: Royal Caribbean and LiveRamp at AWS re:Invent</a> appeared first on <a href=\"https://www.pagerduty.com\">PagerDuty</a>.</p>",
+    "category": "cloud",
+    "source_name": "PagerDuty Blog",
+    "published": "2026-11-17T14:00:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "PagerDuty Blog",
+        "url": "https://www.pagerduty.com/blog/ai/building-trust-in-an-ai-sre-agent-royal-caribbean-and-liveramp-at-aws-reinvent/"
+      }
+    ]
+  },
+  {
+    "id": "d51d6cb396fa95f2",
+    "title": "Risky Business #860 -- Google: Agentic hacking has “crossed a threshold”",
+    "url": "https://risky.biz/RB860/",
+    "summary": "On this week’s show Patrick Gray and James Wilson are joined by special guest co-host Jason Kikta, CISO at METR.org, to talk through the week’s cybersecurity news, including:\n\n\n  Website management platform Optimizely got popped… CNN and BBC readers got some malware with their daily news\n  There’s some hype around an RCE bug in Java, but it probably won’t reach internet burning status… we think… so far\n  United Airlines wants to block its customers from using AI. Lol, good luck!\n  Nightmare Eclipse has dropped so many Windows 0-days that it’s kinda boring\n  Much, much more!\n\n\nThis week’s show is brought to you by Dropzone AI. Founder and CEO Edward Wu joins Patrick Gray to talk about the ARTEX pentesting framework. The vulnerabilities it can find and exploit aren’t anything new, but its speed and scope is what allows low-level attackers the ability to throw the proverbial spaghetti at the wall and see what sticks.\n\nThis episode is also available on YouTube",
+    "category": "security",
+    "source_name": "Risky Business (Podcast)",
+    "published": "2026-11-18T04:47:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Risky Business (Podcast)",
+        "url": "https://risky.biz/RB860/"
+      }
+    ]
+  },
+  {
+    "id": "56e98e550f47b6dd",
+    "title": "Split-and-Scale Latent 3D Representations",
+    "url": "https://machinelearning.apple.com/research/split-scale-latent-3d",
+    "summary": "Latent 3D representations have significantly expanded the capabilities of modern shape modeling, enabling compact encoding of 3D scenes and supporting powerful 3D generative models. Despite this progress, current representations struggle to capture the fine details of complex objects, fundamentally limited by the capacity of their latents. However, scaling latent capacity at training time is computationally expensive and often infeasible under memory limits, and naively increasing the number of latents at inference fails to make effective use of the added capacity. In this paper, we address…",
+    "category": "ai",
+    "source_name": "Apple Machine Learning",
+    "published": "2026-11-16T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Apple Machine Learning",
+        "url": "https://machinelearning.apple.com/research/split-scale-latent-3d"
+      }
+    ]
+  },
+  {
+    "id": "3e2f121e66262456",
+    "title": "Ensemble Brings Agentic AI to RCM Platform | Cohere",
+    "url": "https://cohere.com/blog/ensemble-cohere-custom-healthcare-llm-for-rcm",
+    "summary": "Learn how Ensemble is bringing agentic AI automations to its industry-leading platform with Cohere’s new custom LLM for healthcare RCM.",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-03-31T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/blog/ensemble-cohere-custom-healthcare-llm-for-rcm"
+      }
+    ]
+  },
+  {
+    "id": "57ab4a30fc279b28",
+    "title": "Crunchbase dans North | Cohere",
+    "url": "https://cohere.com/fr/blog/crunchbase-in-north",
+    "summary": "Équipez vos agents d’IA des données de Crunchbase. Accédez à plus de 5 millions de profils d’entreprises, à leurs historiques de financement et à des indicateurs prédictifs, directement dans North.",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-11-17T19:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/fr/blog/crunchbase-in-north"
+      }
+    ]
+  },
+  {
+    "id": "d98f891ffc99503a",
+    "title": "Crunchbase in North | Cohere",
+    "url": "https://cohere.com/blog/crunchbase-in-north",
+    "summary": "Equip your AI agents with Crunchbase data. Access 5M+ company profiles, funding histories, and predictive signals — right inside North.",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-11-17T19:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/blog/crunchbase-in-north"
+      }
+    ]
+  },
+  {
+    "id": "39de008f976587f9",
+    "title": "Efficient Benchmarking Is Just Feature Selection and Multiple Regression",
+    "url": "https://cohere.com/research/papers/efficient-benchmarking-is-just-feature-selection-and-multiple-regression-2026-05-25",
+    "summary": "Efficient benchmarking techniques aim to lower the computational cost of evaluating LLMs by predicting full benchmark scores using only a subset of a bench",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-05-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/research/papers/efficient-benchmarking-is-just-feature-selection-and-multiple-regression-2026-05-25"
+      }
+    ]
+  },
+  {
+    "id": "8c8aeb370a219346",
+    "title": "M*: A Modular, Extensible, Serving System for Multimodal Models",
+    "url": "https://cohere.com/research/papers/m-a-modular-extensible-serving-system-for-multimodal-models-2026-06-10",
+    "summary": "We are entering a new era of composite model architectures that integrate diverse components such as vision encoders, language backbones, diffusion and flo",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-06-10T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/research/papers/m-a-modular-extensible-serving-system-for-multimodal-models-2026-06-10"
+      }
+    ]
+  },
+  {
+    "id": "e6125a96ce269dc4",
+    "title": "Why Speculative Decoding Works Better Than Predicted on Sparse MoE Models",
+    "url": "https://cohere.com/research/papers/why-speculative-decoding-works-better-than-predicted-on-sparse-moe-models-2026-10-28",
+    "summary": "Speculative decoding (SD) accelerates autoregressive inference by leveraging the memory bound nature of decoding, verifying multiple draft tokens in a sing",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-10-28T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/research/papers/why-speculative-decoding-works-better-than-predicted-on-sparse-moe-models-2026-10-28"
+      }
+    ]
+  },
+  {
+    "id": "58da83931a2a7e82",
+    "title": "RVR: Retrieve-Verify-Retrieve for Comprehensive Question Answering",
+    "url": "https://cohere.com/research/papers/rvr-retrieve-verify-retrieve-for-comprehensive-question-answering-2026-02-20",
+    "summary": "Comprehensively retrieving diverse documents is crucial to address queries that admit a wide range of valid answers. We introduce retrieve-verify-retrieve ",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-02-20T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/research/papers/rvr-retrieve-verify-retrieve-for-comprehensive-question-answering-2026-02-20"
+      }
+    ]
+  },
+  {
+    "id": "1f1059803317da5c",
+    "title": "Why Thinking More Can Make an LLM Dumb",
+    "url": "https://blog.bytebytego.com/p/why-thinking-more-can-make-an-llm",
+    "summary": "In this article, we&#8217;ll try to understand why thinking longer can make an LLM dumber.",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-17T16:31:11+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/why-thinking-more-can-make-an-llm"
+      }
+    ]
+  },
+  {
+    "id": "42ee27278125beec",
+    "title": "Why are all the indie-friendly products dying at the same time?",
+    "url": "https://cassidoo.co/post/dying-indies/",
+    "summary": "So many startups and products are shutting down, seemingly all at once. There's a few reasons why that could be.",
+    "category": "dev",
+    "source_name": "Cassidy Williams",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cassidy Williams",
+        "url": "https://cassidoo.co/post/dying-indies/"
+      }
+    ]
+  },
+  {
+    "id": "75e94dd1aeaf4277",
+    "title": "Kotlin Toolchain 0.14: Agentic Development and iOS Publishing",
+    "url": "https://blog.jetbrains.com/kotlin/2026/11/kotlin-toolchain-0-14-agentic-development-and-ios-publishing/",
+    "summary": "The Kotlin Toolchain helps you build and ship multiplatform apps faster, with less setup and configuration. Its CLI provides a unified workflow for building, running, testing, and publishing apps for Android, iOS, desktop, and web, whether you&#8217;re developing with AI agents or writing code yourself. Kotlin Toolchain 0.14 makes it easier to publish iOS apps [&#8230;]",
+    "category": "dev",
+    "source_name": "Kotlin Blog",
+    "published": "2026-11-17T15:25:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Kotlin Blog",
+        "url": "https://blog.jetbrains.com/kotlin/2026/11/kotlin-toolchain-0-14-agentic-development-and-ios-publishing/"
+      }
+    ]
+  },
+  {
+    "id": "c4cdb1c1021916c8",
+    "title": "Introducing staged publishing on NuGet.org",
+    "url": "https://devblogs.microsoft.com/dotnet/nuget-staged-publishing/",
+    "summary": "<p>Stage and validate packages privately on NuGet.org, then approve their release when you are ready.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/dotnet/nuget-staged-publishing/\">Introducing staged publishing on NuGet.org</a> appeared first on <a href=\"https://devblogs.microsoft.com/dotnet\">.NET Blog</a>.</p>",
+    "category": "dev",
+    "source_name": ".NET Blog",
+    "published": "2026-11-17T21:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": ".NET Blog",
+        "url": "https://devblogs.microsoft.com/dotnet/nuget-staged-publishing/"
+      }
+    ]
+  },
+  {
+    "id": "34fa11856993d06a",
+    "title": "Sky’s the Limit: The Cloud9 × JetBrains Global Hackathon Is Back",
+    "url": "https://blog.jetbrains.com/blog/2026/11/17/sky-s-the-limit-the-cloud9-jetbrains-global-hackathon-is-back/",
+    "summary": "Sky’s the Limit is back! Join Cloud9 and JetBrains for the next edition of our global hackathon. Last year, around 2,300 participants registered, and we received 180 project submissions, ranging from coaching tools and scouting assistants to games for fans. You can read about the results and winning projects here. This year, we’d love to [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-17T19:02:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/blog/2026/11/17/sky-s-the-limit-the-cloud9-jetbrains-global-hackathon-is-back/"
+      }
+    ]
+  },
+  {
+    "id": "f256d05c9fb9425a",
+    "title": "PhpStorm Light: Experimenting With a Lighter Version of PhpStorm",
+    "url": "https://blog.jetbrains.com/phpstorm/2026/11/phpstorm-light-experimenting-with-a-lighter-version-of-phpstorm/",
+    "summary": "You may have never heard of PhpStorm Light, or you may be using it and wondering if this Early Access build is ever going to make its way into a major release. In this post, we explain what PhpStorm Light is, what we’ve learned from this experiment, and what’s happening next. What is PhpStorm Light? [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-17T13:59:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/phpstorm/2026/11/phpstorm-light-experimenting-with-a-lighter-version-of-phpstorm/"
+      }
+    ]
+  },
+  {
+    "id": "0621218772c48f94",
+    "title": "How to automate Telegram with your AI agent and Zapier",
+    "url": "https://zapier.com/blog/automate-telegram",
+    "summary": "These days, more and more customers prefer to interact with businesses through messaging. If you've already invested in chat-based marketing and sales, you're probably familiar with Telegram, a popular cloud-based, encrypted instant messaging service. But don't write it off as just another platform to keep up with. Telegram can actually be a great tool for fostering customer engagement without any extra manual work. When you pair it with Zapier, you can create entire automated Zap workflows—that",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-18T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-telegram"
+      }
+    ]
+  },
+  {
+    "id": "a6d24ba1b29dc529",
+    "title": "Link any Facebook Page to LinkedIn and publish posts automatically",
+    "url": "https://zapier.com/blog/link-facebook-page-to-linkedin",
+    "summary": "Do you copy posts from your Facebook Page and paste them into LinkedIn? What if you didn't have to do the copying and pasting yourself? Set up a Zap once, and every new post on your Facebook Page gets published to LinkedIn on its own, with no more copy and paste. In this article, I'll show you how to publish such posts on your personal LinkedIn page and a company LinkedIn page. Each starts from a ready-made Zap template you can have running in a few minutes.  Automatically publish Facebook Pages",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T16:44:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/link-facebook-page-to-linkedin"
+      }
+    ]
+  },
+  {
+    "id": "86a69425763bbae3",
+    "title": "How a part-time finance manager transformed a Toronto theatre's back office with Zapier",
+    "url": "https://zapier.com/blog/theatre-passe-muraille-next-gen-zaps",
+    "summary": "A paper system and 28 hours a week When John Cabanela became the interim bookkeeper at Theatre Passe Muraille in April 2024, he inherited a paper-heavy bookkeeping system built around QuickBooks Desktop. \"I was not about that at all,\" he says. He began moving the theatre's financial processes to the cloud, starting with a transition from Excel spreadsheets to Google Sheets. Then, in June 2025, a few months after being made the finance manager, someone at Intuit's Get Connected conference mention",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/theatre-passe-muraille-next-gen-zaps"
+      }
+    ]
+  },
+  {
+    "id": "9e379f15a55fdbce",
+    "title": "Get it done: 10 task automation ideas",
+    "url": "https://zapier.com/blog/task-management",
+    "summary": "I love a good to-do list for my personal life. (Whether I actually follow that list and check things off in a timely manner is my own business.) And most of the joy of managing tasks, at least to my nerdy soul, is in using automation to make sure everything shows up in one place and keeps my brain clutter-free. If you're like me, your tasks show up everywhere: in texts from your partner, emails from your kid's school, random notes you jotted down mid-errand, and those \"Oh, I should really do tha",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T11:12:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/task-management"
+      }
+    ]
+  },
+  {
+    "id": "bbb2e171ae161c41",
+    "title": "CRM automation: A guide to automating your CRM with your AI agent and Zapier",
+    "url": "https://zapier.com/blog/crm-automation",
+    "summary": "A customer relationship management tool (or CRM) is a critical hub for sales and marketing teams—but it's not just a place to store contact details. When used effectively, your CRM becomes a central command center for tracking relationships, managing pipelines, and coordinating touchpoints across your entire customer journey. But here's the catch: most of that activity doesn't happen in your CRM. It's happening on your website, in your inbox, through social media, at events, or across dozens of",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/crm-automation"
+      }
+    ]
+  },
+  {
+    "id": "77a66abb4a973a47",
+    "title": "Google Drive automation: Automate Google Drive from your AI agent with Zapier",
+    "url": "https://zapier.com/blog/automate-google-drive",
+    "summary": "Remember rifling through old metal file cabinets filled to the brim with manila folders? Those cabinets required meticulous, organized systems—or else it would be impossible to find the documents you needed.  We may have upgraded that file cabinet to Google Drive, but we still face that same problem. If you don't have systems to keep your files organized, important documents get lost. The good news is you no longer have to build those systems by hand.  Add Zapier to the AI assistant you already",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-google-drive"
+      }
+    ]
+  },
+  {
+    "id": "488206fdac9147f1",
+    "title": "Facebook automation: 6 ways to streamline your Pages with your AI agent and Zapier",
+    "url": "https://zapier.com/blog/how-to-automate-your-business-facebook-page-for-easier-marketing",
+    "summary": "Facebook Pages lets businesses promote their brand and start conversations with customers or prospects interested in learning more about their services. Your Facebook Page should be a central location where you share reviews, events, and anything else your audience might want to know.  While setting up a Facebook Page is easy, keeping it up to date while still growing your business can be tricky. The solution is Facebook automation. Add Zapier to your AI assistant, tell your agent what your Page",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T07:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/how-to-automate-your-business-facebook-page-for-easier-marketing"
+      }
+    ]
+  },
+  {
+    "id": "2b14045f8326b056",
+    "title": "How to automate your note taking app with Zapier",
+    "url": "https://zapier.com/blog/automate-note-taking",
+    "summary": "I used to organize my entire life by taking notes in an actual notebook, pen to paper. That was, of course, a very messy way to keep track of my personal and work life. But I discovered that even when using a note taking app, it's easy to become disorganized. Notes can pile up, ideas can get lost, and important information can slip through the cracks.  Fortunately, automation can turn that chaos into clarity, helping you manage your notes effortlessly and focus on what really matters. And you ca",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T07:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-note-taking"
+      }
+    ]
+  },
+  {
+    "id": "dd9405ed6a6189a3",
+    "title": "5 ways to safely automate OpenClaw with Zapier MCP",
+    "url": "https://zapier.com/blog/automate-openclaw-zapier-mcp",
+    "summary": "When OpenClaw went viral, the reaction from most people I talked to was some mix of impressed and afraid. The idea that an open-source AI personal assistant could negotiate a car deal or fight your insurance company over WhatsApp while you slept was…a lot to process. In case you're only tangentially familiar, OpenClaw is made up of two parts—an AI agent that runs on a computer or server you control, and a gateway that lets you talk to it from a messaging app like WhatsApp or Telegram. The agent",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-openclaw-zapier-mcp"
+      }
+    ]
+  },
+  {
+    "id": "aa37f1c9244f59eb",
+    "title": "How to automate Facebook Lead Ads with your AI agent and Zapier",
+    "url": "https://zapier.com/blog/automate-facebook-lead-ads",
+    "summary": "Congrats: You've captured some leads through Facebook Lead Ads. Now you need to act fast based on where your prospects are in the sales funnel. You might need your sales team to reach out while they're warm, for example, or add them to a nurture campaign—or create custom deals in your CRM for each new lead.  But manually downloading and uploading leads is a huge chore at scale. By automating this process every step of the way, you can avoid wasting time on repetitive tasks. You can even build a",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-facebook-lead-ads"
+      }
+    ]
+  },
+  {
+    "id": "00afd42fe57e1979",
+    "title": "WhatsApp automation: Automate WhatsApp Notifications with your AI agent and Zapier",
+    "url": "https://zapier.com/blog/automate-whatsapp-notifications",
+    "summary": "Texting can be a great way to stay connected to your work on the go. You can talk to your team, your boss—maybe even your mom if you need a little encouragement. And with tools like WhatsApp, you can text across time zones and countries for free, which is a great perk if you have a distributed team.  But texting isn't just for keeping in touch. With WhatsApp Notifications and a little automation, you can also keep track of important developments even when you're not at your computer—which is rea",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/automate-whatsapp-notifications"
+      }
+    ]
+  },
+  {
+    "id": "8e862498d01c29c5",
+    "title": "Your guide to marketing automation",
+    "url": "https://zapier.com/blog/marketing-automation-use-cases",
+    "summary": "Marketing teams juggle a lot: capturing leads, nurturing them across channels, tracking campaign performance, and personalizing every touchpoint—all while managing an ever-growing stack of tools. Doing that manually isn't just time-consuming—it's unsustainable. That's where marketing automation comes in.  Now you can start from the AI tool you already work in. Add Zapier to your AI assistant, describe the campaign you want running, and your agent turns it into a Zap. Zapier takes over from there",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/marketing-automation-use-cases"
+      }
+    ]
+  },
+  {
+    "id": "ad7606c153e24658",
+    "title": "How to connect Google Sheets to ChatGPT",
+    "url": "https://zapier.com/blog/connect-google-sheets-with-chatgpt",
+    "summary": "I've been connecting Google Sheets to other apps since long before ChatGPT was even a sparkle in an algorithm's eye. I use all sorts of Google Sheets add-ons, and more commonly, I use Zapier so Google Sheets can talk to every other app I use for work. Once ChatGPT was released, I embedded it right into my Google Sheets workflows with Zapier. But there's an embarrassment of riches when it comes to how to connect Google Sheets to ChatGPT. For starters, ChatGPT has a Google Sheets connector: it's a",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-17T04:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/connect-google-sheets-with-chatgpt"
+      }
+    ]
+  },
+  {
+    "id": "3c7d484cdad3384b",
+    "title": "Blender on Tablet: Path to Release",
+    "url": "https://code.blender.org/2026/11/tablet-path-to-release/",
+    "summary": "In October 2026, Blender HQ hosted a week-long workshop to define the steps needed to get the tablet project out the door.",
+    "category": "dev",
+    "source_name": "Blender Development",
+    "published": "2026-11-18T12:45:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Blender Development",
+        "url": "https://code.blender.org/2026/11/tablet-path-to-release/"
+      }
+    ]
+  },
+  {
+    "id": "dbc006a7733e279f",
+    "title": "Quiz: Nuitka: Compile Python Into a Standalone Executable",
+    "url": "https://realpython.com/quizzes/nuitka/",
+    "summary": "Test your understanding of compiling Python with Nuitka, from standalone and onefile builds to speedups and when PyInstaller fits better.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-18T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/nuitka/"
+      }
+    ]
+  },
+  {
+    "id": "e003b77c0fc5c4ab",
+    "title": "Python Bindings: Calling C or C++ From Python",
+    "url": "https://realpython.com/python-bindings-overview/",
+    "summary": "Learn how Python bindings let you call C or C++ code from Python, and compare tools like ctypes, CFFI, PyBind11, and Cython.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-17T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/python-bindings-overview/"
+      }
+    ]
+  },
+  {
+    "id": "a3892e6549d648fd",
+    "title": "Getting Started With Git",
+    "url": "https://realpython.com/courses/getting-started-with-git/",
+    "summary": "Learn how to set up Git, create a repository, track and commit changes, undo mistakes with git reset, and ignore files using .gitignore.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-17T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/courses/getting-started-with-git/"
+      }
+    ]
+  },
+  {
+    "id": "ccd1f4464f45f6b7",
+    "title": "Representative Line: Terning White as a (Style)Sheet",
+    "url": "https://thedailywtf.com/articles/terning-white-as-a-style-sheet",
+    "summary": "<p>Years ago, <strong>Stefan</strong>'s company was short handed, especially on the developer team. But they had a large hell-desk support team. And at some point, someone had the genius idea: \"PHP is easy for anyone to learn, and so our helpdesk folks should have no problem. Let's hand them development tasks.\"</p>\n<p>Which meant Stefan inherited lots of lines which look like this:</p>\n<pre><code class=\"language-php\"><span class=\"hljs-variable\">$bgc</span> = <span class=\"hljs-variable\">$tno</span> ? <span class=\"hljs-string\">'#FFFFFF'</span> : <span class=\"hljs-string\">'#FFFFFF'</span>;\n</code></pre>\n<p>Unlike many examples of this pattern, this is not the result of a pre-processing or templating step generating a conditional where both branches are the same value. Someone actually typed this. Also, notably, the variable <code>$tno</code> holds a numeric value, not a boolean, and is never null. It sometimes is zero, which is <a href=\"https://www.php.net/manual/en/language.types.boolean",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-18T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/terning-white-as-a-style-sheet"
+      }
+    ]
+  },
+  {
+    "id": "852f59c010dae94b",
+    "title": "Ship smarter keep rules: How library providers can unblock app-level DEX code optimization",
+    "url": "https://developer.android.com/blog/posts/ship-smarter-keep-rules-unblock-dex-optimization",
+    "summary": "As Android app and library developers, we all strive for the same goal: performant apps that provide a smooth user experience. A major part of that involves R8, Android’s app optimizer. R8 improves app performance by removing unused code, and optimizing and obfuscating the rest.",
+    "category": "dev",
+    "source_name": "Android Developers Blog",
+    "published": "2026-11-17T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Android Developers Blog",
+        "url": "https://developer.android.com/blog/posts/ship-smarter-keep-rules-unblock-dex-optimization"
+      }
+    ]
+  },
+  {
+    "id": "72063a0ae31f715c",
+    "title": "Durable Workflow: Long-Running Workflows for Laravel",
+    "url": "https://laravel-news.com/durable-workflow-laravel?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/durable-workflow-laravel\"><img alt=\"Durable Workflow: Long-Running Workflows for Laravel\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/Durable-Workflow-LN.png\" /></a></p>\n                                        <hr />\n\n                    <p>Durable Workflow runs long-running Laravel workflows on your own database, queues, and cache. Learn how it records progress and coordinates background work.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/durable-workflow-laravel\">Durable Workflow: Long-Running Workflows for Laravel</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-16T03:04:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/durable-workflow-laravel?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ]
+  },
+  {
+    "id": "c6016299ac68bbff",
+    "title": "Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations",
+    "url": "https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/",
+    "summary": "<p>https://www.youtube.com/watch?v=eK7msluMltY</p>\n<p><em><strong>Summary:</strong> Edge for Business is the most used enterprise browser in the world. At Microsoft Ignite 2026, we're introducing new ways for users and agents to get more done. Deeper integrat</p>\n<p>The post <a href=\"https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/\">Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations</a> appeared first on <a href=\"https://blogs.windows.com/msedgedev\">Microsoft Edge Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft Edge Dev Blog",
+    "published": "2026-11-17T18:40:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft Edge Dev Blog",
+        "url": "https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/"
+      }
+    ]
+  }
+]

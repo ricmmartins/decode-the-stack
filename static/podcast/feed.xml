@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Tue, 17 Nov 2026 13:21:57 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 13:25:52 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>AI ambitions meet the realities of production</title>
+      <description>Wednesday’s reporting connects expanding AI capabilities with the engineering boundaries that make them usable: evaluation, isolation, state management, and infrastructure constraints. Alongside new models and agent integrations, migration accounts and…</description>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-18.mp3?v=ee8860495f71" length="11687436" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-18.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-18-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Wednesday’s reporting connects expanding AI capabilities with the engineering boundaries that make them usable: evaluation, isolation, state management, and infrastructure constraints. Alongside new models and agent integrations, migration accounts and…</itunes:summary>
+      <itunes:duration>974</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-18.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>AI ambitions meet the realities of production</title>
       <description>Tuesday, 2026-11-17 brings a common thread across AI, cloud and software engineering: adding capabilities is only part of the work; validating contracts, controlling access and operating reliably remain decisive. Agent infrastructure and developer-platform…</description>

@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 140,
+      "title": "AWS is widening the connectivity boundary: PrivateLink..."
+    },
+    {
+      "startTime": 289,
+      "title": "The sandbox story makes a distinction worth slowing down..."
+    },
+    {
+      "startTime": 432,
+      "title": "That question of what a system actually guarantees connects..."
+    },
+    {
+      "startTime": 586,
+      "title": "That puts a sharper question behind AI adoption: not just..."
+    },
+    {
+      "startTime": 735,
+      "title": "To close, the investment backdrop: TechCrunch reports..."
+    }
+  ]
+}
