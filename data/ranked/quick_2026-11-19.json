@@ -1,0 +1,528 @@
+[
+  {
+    "id": "315b4ced0fd35425",
+    "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
+    "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+    "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T17:38:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+      }
+    ],
+    "score": 21.31
+  },
+  {
+    "id": "9d252915f7b6ee67",
+    "title": "NetWasm 0.10 Speeds Up C# on WebAssembly, Now Faster Than Mono AOT",
+    "url": "https://www.infoq.com/news/2026/11/NetWasm-0-10-Faster/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/NetWasm-0-10-Faster/en/headerimage/header-1794869319776.jpg\" /><p>Summary: NetWasm, an ahead-of-time compiler from C# to WebAssembly, has reworked exception handling, bounds-check elimination, SIMD and division in its 0.10 series. Across more than 2000 benchmark cases, the project reports running in 0.41 times the time of Mono AOT’s WASI build.</p> <i>By Edin Kapić</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-19T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/NetWasm-0-10-Faster/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.16
+  },
+  {
+    "id": "1f7f9f6f3a5c456c",
+    "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
+    "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+    "summary": "Anthropic faces enormous compute commitments as it goes public, but its biggest infrastructure partners, including Amazon and Google, could continue profiting from AI even if Anthropic loses its lead.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T14:54:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "89d6f4a17c96c405",
+    "title": "Benchmarking v5 Droplets: what the numbers say across real workloads",
+    "url": "https://www.digitalocean.com/blog/v5-droplets-vs-dedicated-premium-benchmark",
+    "summary": "<p>We ran v5 (5th Gen AMD EPYC “Turin”) compared to our existing Dedicated Premium Droplets across a range of workloads: a realistic microservices application, raw CPU, memory, and database transactions. We measured throughput and latency for each. Throughout, we compare <strong>v5 against Dedicated Premium on the same storage type</strong> (network-attached Block Storage Volumes on both), so the comparison focuses on performance improvements in the compute platform.</p>\n<h2 id=\"general-purpose-microservices-v5-handles-more-with-room-to-spare\">General-purpose microservices: v5 handles more, with room to spare<a class=\"hash-anchor\" href=\"#general-purpose-microservices-v5-handles-more-with-room-to-spare\"></a></h2>\n<p>Most real applications aren’t a single tight loop;  they’re a mesh of services calling each other, where one user request fans out across front-ends, business logic, caches, and databases. This is the workload that best predicts how v5 behaves for a typical web app, API back",
+    "category": "dev",
+    "source_name": "DigitalOcean Blog",
+    "published": "2026-11-19T19:38:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "DigitalOcean Blog",
+        "url": "https://www.digitalocean.com/blog/v5-droplets-vs-dedicated-premium-benchmark"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6ccd1219ebb4597d",
+    "title": "Virtualization, Responsible Disclosure, and CVE-2026-99312",
+    "url": "https://www.digitalocean.com/blog/cve-2026-99312-kvm-patch",
+    "summary": "<h2 id=\"the-wall-between-you-and-your-neighbor\">The wall between you and your neighbor<a class=\"hash-anchor\" href=\"#the-wall-between-you-and-your-neighbor\"></a></h2>\n<p>Every cloud customer gets the same promise: a bright-line boundary between your workload and your neighbors. Your virtual machine is yours, your neighbors’ are theirs, and the hypervisor keeps it that way.</p>\n<p>A hypervisor is large, complex software written by people, and flaws come with that. These boundaries get tested to fix those flaws. What matters is who finds them first and what they do next.</p>\n<p>A researcher who finds a flaw in shared infrastructure can publish it, sell it, or tell us. Responsible disclosure partners tell us – that gives open source maintainers who own the code time to build and test a fix before an attacker can use it. It is the difference between a quiet patch cycle and an all-hands emergency.</p>\n<p>The gap between a flaw going public and attackers using it is now near-zero, or <em>ahea",
+    "category": "dev",
+    "source_name": "DigitalOcean Blog",
+    "published": "2026-11-19T17:13:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "DigitalOcean Blog",
+        "url": "https://www.digitalocean.com/blog/cve-2026-99312-kvm-patch"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "aa15176c09f94105",
+    "title": "Azure DevOps integration with the GitHub Copilot app (public preview)",
+    "url": "https://devblogs.microsoft.com/devops/azure-devops-integration-with-the-github-copilot-app-public-preview/",
+    "summary": "<p>We’re excited to announce the public preview of Azure DevOps integration in the Copilot app. You can now start agent sessions that work directly with your Azure DevOps repositories to create branches, make code changes, commit changes, and open pull requests. This brings GitHub Copilot&#8217;s coding agents to teams using Azure DevOps repositories. What is [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/devops/azure-devops-integration-with-the-github-copilot-app-public-preview/\">Azure DevOps integration with the GitHub Copilot app (public preview)</a> appeared first on <a href=\"https://devblogs.microsoft.com/devops\">Azure DevOps Blog</a>.</p>",
+    "category": "devops",
+    "source_name": "Azure DevOps Blog",
+    "published": "2026-11-19T17:39:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure DevOps Blog",
+        "url": "https://devblogs.microsoft.com/devops/azure-devops-integration-with-the-github-copilot-app-public-preview/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2bcaadd8e41b4fdb",
+    "title": "Building a $0 Modern Data Platform: dbt, MotherDuck, and Automated CI/CD (Zero AWS Required)",
+    "url": "https://dev.to/fabrizioperezperalta/building-a-0-modern-data-platform-dbt-motherduck-and-automated-cicd-zero-aws-required-p62",
+    "summary": "<blockquote>\n<p><strong>Author:</strong> Fabrizio Perez Peralta<br /><br />\n<strong>Course:</strong> Business Intelligence<br /><br />\n<strong>Published on:</strong> [Dev.to / HashNode / Medium]<br /><br />\n<strong>Public Repository:</strong> <a href=\"https://github.com/FabrizioPerezPeralta/crypto-intelligence-lakehouse\" rel=\"noopener noreferrer\">GitHub Repository Link</a><br /><br />\n<strong>Live Dashboard:</strong> <a href=\"https://crypto-intelligence-lakehouse.streamlit.app\" rel=\"noopener noreferrer\">Streamlit Community Cloud Live App</a></p>\n</blockquote>\n\n\n\n\n<h2>\n  \n  \n  1. Introduction: The Real Cost of the \"Modern Data Stack\"\n</h2>\n\n<p>In recent years, the <strong>Modern Data Stack (MDS)</strong> has revolutionized how organizations extract, transform, and analyze information. However, traditional implementations often come with a steep barrier to entry: enterprise data warehouses (Snowflake, BigQuery, Redshift), paid managed orchestrators (Astronomer, Airflow clusters), and com",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:21:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/fabrizioperezperalta/building-a-0-modern-data-platform-dbt-motherduck-and-automated-cicd-zero-aws-required-p62"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "67b5060c1068d0d5",
+    "title": "O certificado ISO 42001 tem prazo de validade: o que acontece entre a emissão e o vencimento",
+    "url": "https://dev.to/anderson_chipak/o-certificado-iso-42001-tem-prazo-de-validade-o-que-acontece-entre-a-emissao-e-o-vencimento-4mj1",
+    "summary": "<h1>\n  \n  \n  O certificado ISO 42001 tem prazo de validade: o que acontece entre a emissão e o vencimento\n</h1>\n\n<h1>\n  \n  \n  O certificado ISO 42001 tem prazo de validade: o que acontece entre a emissão e o vencimento\n</h1>\n\n<p>Boa parte das empresas que certificam a ISO 42001 trata a auditoria inicial como linha de chegada. Ela não é. O certificado dura três anos, e dentro desse prazo existe um calendário obrigatório de visitas que decide se ele continua valendo ou se vira papel vencido.<br />\nEu entendo essa escolha como auditor, não como quem vende certificação: um sistema de gestão é um conjunto de práticas que a empresa precisa continuar executando depois que o auditor vai embora, não um produto testado uma vez. A ISO 42001 certifica a prática contínua, e um ciclo com verificação anual é o jeito da norma confirmar isso.</p>\n\n<h2>\n  \n  \n  O ciclo de três anos, e de onde ele vem\n</h2>\n\n<p>A lógica do ciclo não nasce na norma de IA. Vem da ISO/IEC 17021-1:2015, que rege como qualque",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:20:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/anderson_chipak/o-certificado-iso-42001-tem-prazo-de-validade-o-que-acontece-entre-a-emissao-e-o-vencimento-4mj1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ad483b0fe234cb3f",
+    "title": "Building Smarter Inventory Systems: How RFID, IoT, and Real-Time Data Work Together",
+    "url": "https://dev.to/maryam_hussaini_19a585bac/building-smarter-inventory-systems-how-rfid-iot-and-real-time-data-work-together-234h",
+    "summary": "<p>Inventory management might look like a simple process from the outside. A business receives products, stores them, and ships them when customers place orders.</p>\n\n<p>But what happens when a warehouse handles thousands of items across multiple locations?</p>\n\n<p>Keeping inventory records accurate becomes much more complicated.</p>\n\n<p>Manual updates, delayed synchronization, misplaced products, and inconsistent records can create serious operational problems.</p>\n\n<p>This is where modern technologies such as RFID, IoT, cloud computing, and real-time data processing become useful.</p>\n\n<p>Let's explore how these technologies can work together to build smarter inventory systems.</p>\n\n<ol>\n<li>RFID: Improving Item Identification</li>\n</ol>\n\n<p>Radio Frequency Identification (RFID) uses radio waves to identify tagged objects.</p>\n\n<p>An RFID inventory system generally includes:</p>\n\n<ul>\n<li>RFID tags attached to products or assets.</li>\n<li>RFID readers that detect tags.</li>\n<li>Anten",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:19:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/maryam_hussaini_19a585bac/building-smarter-inventory-systems-how-rfid-iot-and-real-time-data-work-together-234h"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "be2ab993ea82a247",
+    "title": "Jikan shut down. Here's how I moved my anime app to AniList without rewriting every screen",
+    "url": "https://dev.to/animedex_80b88d040a58d723/jikan-shut-down-heres-how-i-moved-my-anime-app-to-anilist-without-rewriting-every-screen-6a3",
+    "summary": "<p>In September 2026 the Jikan API, the unofficial MyAnimeList REST API that a lot of hobby anime apps were built on, went offline. My app, MyAnimeDex (a free anime tracker for iOS and Android), used it on almost every screen: search, anime details, seasonal charts, recommendations.</p>\n\n<p>This is how I moved everything to the AniList GraphQL API without touching most of those screens, and the rate-limit bugs I hit on the way.</p>\n\n<h2>\n  \n  \n  The trick: keep the old shape, change what's behind it\n</h2>\n\n<p>Screens imported one module, <code>lib/jikan.ts</code>, and used Jikan-shaped objects: <code>mal_id</code>, <code>images.jpg.large_image_url</code>, <code>genres: [{ mal_id, name }]</code> and so on. Rewriting the home screen, anime details, lists, onboarding, the dice picker and the recommendation service to AniList's shape at once would have broken things I couldn't easily test.</p>\n\n<p>Instead <code>lib/jikan.ts</code> kept its exports and types, and started delegating to a new",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:18:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/animedex_80b88d040a58d723/jikan-shut-down-heres-how-i-moved-my-anime-app-to-anilist-without-rewriting-every-screen-6a3"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "b0fe912377353279",
+    "title": "How to Attribute Checkout Failures With a Small SaaS Custom Metrics Push API",
+    "url": "https://dev.to/syltharwave2946/how-to-attribute-checkout-failures-with-a-small-saas-custom-metrics-push-api-52ip",
+    "summary": "<p>A small SaaS evaluating a push API alternative to Prometheus for its custom metrics dashboard should first define which checkout operation consumed each charge. In healthtech, a red counter alone cannot establish that relationship. Start with the attribution record, because choosing a collection protocol before defining what a failed attempt means leaves the team with attractive charts and an ambiguous denominator.</p>\n\n<p>TL;DR: Use an application push API for straightforward custom metrics when a beginner needs a small dashboard without operating exporters, scraping, and a PromQL-heavy setup. Keep authoritative attribution records separately, reconcile observations before aggregation, and favor Prometheus for Kubernetes and host monitoring. Grafana belongs in the dashboard discussion, while notification routing and missed-job detection need their own evaluation.</p>\n\n<p>The choice turns on evidence. A request accepted by a metrics service is not, by itself, proof that a payment se",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:18:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/syltharwave2946/how-to-attribute-checkout-failures-with-a-small-saas-custom-metrics-push-api-52ip"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "da22ca072ecc2394",
+    "title": "Calculando o FGTS em JavaScript: depósito mensal, saldo e a multa de 40%",
+    "url": "https://dev.to/jeitobr/calculando-o-fgts-em-javascript-deposito-mensal-saldo-e-a-multa-de-40-ha4",
+    "summary": "<p>Todo mês, o empregador deposita 8% do salário bruto do trabalhador em uma conta vinculada do FGTS — o Fundo de Garantia do Tempo de Serviço, criado pela Lei nº 8.036/1990. Esse dinheiro não sai do bolso do empregado: é uma obrigação do empregador, e o valor fica guardado para situações como a demissão sem justa causa, a compra da casa própria e a aposentadoria, entre outras.</p>\n\n<p>Na demissão sem justa causa, além de poder sacar o saldo, o trabalhador tem direito a uma multa de 40% sobre o total depositado pelo empregador durante o contrato.</p>\n\n<p>Neste artigo, vamos transformar essas regras em código: uma função simples em JavaScript que calcula o depósito mensal, o saldo acumulado e a multa de 40%.</p>\n\n<h2>\n  \n  \n  A regra em números\n</h2>\n\n<ul>\n<li>\n<strong>Depósito mensal</strong> = 8% do salário bruto</li>\n<li>\n<strong>Saldo</strong> = depósito mensal × número de meses</li>\n<li>\n<strong>Multa</strong> = 40% do saldo</li>\n<li>\n<strong>Total</strong> = saldo + multa</li>\n</u",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:17:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jeitobr/calculando-o-fgts-em-javascript-deposito-mensal-saldo-e-a-multa-de-40-ha4"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "d3773e73b765b768",
+    "title": "Password Reset Email Backend: Why I Audit Abuse Prevention and Expiry",
+    "url": "https://dev.to/aidensterling3417/password-reset-email-backend-why-i-audit-abuse-prevention-and-expiry-46ba",
+    "summary": "<p>Short answer: build a password reset email backend around application-owned abuse controls, an identical public response for every address, and an audit trail that preserves token expiry alongside the send result. For a media reader trying to regain access, delivery reliability means receiving a usable link before its short deadline. An accepted send alone cannot establish that result.</p>\n\n<p>My design choice is to make the remaining validity window the decision criterion. This is a proposed experiment, with synthetic timestamps below, rather than a report of measured provider performance. The evaluation constraint is strict: a message status must never be treated as proof that a reader received a usable reset link.</p>\n\n<p>The tempting implementation accepts an address, sends an email, and returns success. That is easy to sketch in a notebook. It leaves three different questions tangled together: was this request allowed, was the send accepted, and could the reader still use the t",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:17:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aidensterling3417/password-reset-email-backend-why-i-audit-abuse-prevention-and-expiry-46ba"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "103607b1b8ba0e6f",
+    "title": "Building a PDF Editor in the Browser with pdf.js and pdf-lib: 7 Lessons",
+    "url": "https://dev.to/rezoiafashion/building-a-pdf-editor-in-the-browser-with-pdfjs-and-pdf-lib-7-lessons-21cn",
+    "summary": "<p>I recently built a PDF editor that runs entirely in the browser: you open a PDF, add text, shapes, highlights and images, and download the result. No server touches the file. Along the way I hit a handful of problems that cost me time, so here they are with the fixes.</p>\n\n<p><strong>Disclosure:</strong> I run Signplify, and the editor is one of its free tools. The code snippets below are simplified from what I actually shipped.</p>\n\n<h2>\n  \n  \n  The architecture in one paragraph\n</h2>\n\n<ul>\n<li>\n<strong>pdf.js</strong> renders each page to a canvas for display.</li>\n<li>A transparent overlay on top of the canvas holds the annotations (text, shapes, images). Their coordinates are stored in <strong>PDF points</strong>, not screen pixels.</li>\n<li>\n<strong>pdf-lib</strong> loads the original bytes, draws the annotations onto the real pages and saves a new file.</li>\n</ul>\n\n<p>Keeping the overlay in points means zooming never changes the data, only how it is drawn.</p>\n\n<h2>\n  \n  \n  Le",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:16:11+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/rezoiafashion/building-a-pdf-editor-in-the-browser-with-pdfjs-and-pdf-lib-7-lessons-21cn"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "0efad79fb40f9621",
+    "title": "Estimación PERT de 3 Puntos: Distribución Beta, CLT y Project Buffers P90",
+    "url": "https://dev.to/datalaria/estimacion-pert-de-3-puntos-distribucion-beta-clt-y-project-buffers-p90-bb1",
+    "summary": "<blockquote>\n<p><em>Publicado originalmente en <a href=\"https://datalaria.com/es/posts/estimacion-pert-3-puntos/?utm_source=devto&amp;utm_medium=syndication&amp;utm_campaign=estimacion-pert-3-puntos&amp;utm_content=canonical_attribution\" rel=\"noopener noreferrer\">Datalaria</a>.</em></p>\n</blockquote>\n\n<p>En comités de dirección ejecutiva (<em>Executive Committee</em>), consejos de administración y comités de inversiones, directores generales (CEOs), directores de operaciones (COOs), directores de tecnología (CTOs) y directores de oficina de proyectos (PMOs) presencian de forma recurrente una patología organizativa endémica que en consultoría estratégica e investigación operativa denominamos <strong>\"la falacia de la última milla determinista\"</strong>:</p>\n\n<p>Un equipo de ingeniería de software, transformación cloud o infraestructuras críticas presenta la planificación de una iniciativa estratégica de varios millones de euros. Tras semanas de descomposición del alcance en una estructu",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:14:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/datalaria/estimacion-pert-de-3-puntos-distribucion-beta-clt-y-project-buffers-p90-bb1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "39d74acf8015cbb0",
+    "title": "The jiu-jitsu coach who told Claude what he wanted and never opened the Zap",
+    "url": "https://zapier.com/blog/rough-hands-bjj-next-gen-zaps",
+    "summary": "Jesse Walker spent years as a tech product manager. About 10 years ago he left the industry to turn his evening gig, coaching jiu-jitsu, into a full-time one. He now owns and coaches at Rough Hands BJJ in Louisville, Kentucky. Rough Hands BJJ has been open for 10 years and teaches Brazilian jiu-jitsu to about 200 students in the Louisville area. The product brain came with him. \"I have lots of techie stuff kind of infused in my business,\" he says. He even worked with Claude to build an Apple TV",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-20T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/rough-hands-bjj-next-gen-zaps"
+      }
+    ],
+    "score": 20.99
+  },
+  {
+    "id": "10aaefa255dcf2cd",
+    "title": "The unfolding Jensen Huang scandal: a timeline",
+    "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T20:18:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+      }
+    ],
+    "score": 20.86
+  },
+  {
+    "id": "d9d6e6d27717b478",
+    "title": "Anthropic’s IPO could deliver $156 billion to charity",
+    "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+    "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T19:10:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/"
+      }
+    ],
+    "score": 20.42
+  },
+  {
+    "id": "37213b78aad41e35",
+    "title": "Google gives Gemini the ability to use your Mac for you",
+    "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T18:09:11+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+      }
+    ],
+    "score": 20.35
+  },
+  {
+    "id": "f43d521ba3c07031",
+    "title": "JetBrains Plugin Developer Conf 2026: Watch All the Talks",
+    "url": "https://blog.jetbrains.com/platform/2026/11/jetbrains-plugin-developer-conf-2026-watch-all-the-talks/",
+    "summary": "JetBrains Plugin Developer Conf 2026 took place on November 10, bringing together JetBrains experts and plugin developers for a day of technical talks, practical examples, and discussions about the latest in plugin development. This year&#8217;s program explored how AI and agents are influencing plugin development, alongside new IntelliJ Platform APIs, language support, plugin architecture, and [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-19T14:52:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/platform/2026/11/jetbrains-plugin-developer-conf-2026-watch-all-the-talks/"
+      }
+    ],
+    "score": 20.07
+  },
+  {
+    "id": "17d359c868e9ed88",
+    "title": "Discord Rewrites Desktop and Mobile Clients in Rust Using Zed's GPU-Accelerated Rendering Framework",
+    "url": "https://www.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/en/headerimage/generatedHeaderImage-1795054565892.jpg\" /><p>Discord’s CTO Stanislav Vishnevskiy recently announced rewriting its desktop and mobile clients in Rust, moving away from Electron and React Native. The project eliminates layers of abstraction to directly leverage the device’s GPU, native mobile views, and a Rust core shared across platforms. Early results hint at a significant reduction in RAM usage and boot time for chat, voice, and streaming.</p> <i>By Bruno Couriol</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-19T03:12:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "64bcac7a9cf790fb",
+    "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
+    "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+    "summary": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T16:59:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "5f400a1c38bcee9d",
+    "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+    "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+    "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server.\n\nToday's PHP releases fix the flaw, called phpAfterShell.\n\nThe flaw is tracked as CVE-2026-126714 and rated",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-19T16:59:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "2705568027beb3e8",
+    "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+    "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+    "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.\n\nFixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines.\n\nThe",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-19T15:11:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
+      }
+    ],
+    "score": 19.9
+  },
+  {
+    "id": "aa66be041b49717d",
+    "title": "The best things in open source are built together",
+    "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+    "summary": "<p>Introducing Replica and the Open Source Accessibility Framework, new open source projects for collaboration and inclusion.</p>\n<p>The post <a href=\"https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/\">The best things in open source are built together</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "GitHub Blog",
+    "published": "2026-11-19T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/"
+      }
+    ],
+    "score": 19.73
+  },
+  {
+    "id": "7b2c99b81c2979e1",
+    "title": "Gemini on Mac can now use your computer",
+    "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+    "summary": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says. Google suggests the feature might be useful for things like speeding up workflows, filling in forms, making presentations, and listing items for sale. Users will [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-19T18:21:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+      }
+    ],
+    "score": 19.45
+  },
+  {
+    "id": "dbbd4d8b4f49867f",
+    "title": "Apple’s iPhone camera leader has reportedly left the company",
+    "url": "https://www.theverge.com/tech/1037846/apple-jon-mccormack-retired-iphone-camera",
+    "summary": "Jon McCormack, Apple's vice president of camera software engineering, left the company last month, Bloomberg reports. Its sources say McCormack retired \"at the end of October after more than eight years at the company.\" Apple reportedly has not yet named a new VP to step in for McCormack, who oversaw its Camera and Photos apps, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-19T18:13:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1037846/apple-jon-mccormack-retired-iphone-camera"
+      }
+    ],
+    "score": 19.39
+  },
+  {
+    "id": "462592c6954b7786",
+    "title": "Meta’s Muse Charm might cost $300",
+    "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
+    "summary": "Meta is planning to price the Muse Charm, a little gadget with a screen that lets you chat with your Muse AI agent, at $300, according to The Information. CEO Mark Zuckerberg revealed the gadget earlier this year and said the company expected to ship the Charm \"in time for the holidays in December,\" but [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-19T20:22:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price"
+      }
+    ],
+    "score": 19.14
+  },
+  {
+    "id": "e1a2bdaa2b2eeb72",
+    "title": "Everything after code, as code",
+    "url": "https://www.pulumi.com/blog/everything-after-code-as-code/",
+    "summary": "<img src=\"https://www.pulumi.com/images/generated/blog/everything-after-code-as-code/index.png\" />\n<p><em>Introducing Pulumi Delivery and Pulumi Agents: agentic code to production, and back again.</em></p>\n<p>At Pulumi, we like code. A lot. And we aren&rsquo;t the only ones: agents like it too. This year, the share of infrastructure operations on Pulumi done by agents went from zero in January to over 40% in October. Anything expressed as code (infrastructure, policy, configuration) is something an agent can work on. Today we&rsquo;re extending that to everything after the merge with two launches: Pulumi Delivery, which lets you and your agents write delivery pipelines as code, and Pulumi Agents, customizable agents that watch your running systems and act when something goes wrong. Together, they take agentic code to production, and back again. I honestly can&rsquo;t remember a launch since Pulumi 1.0 that our customers and team have been this excited about.</p>\n<p><img alt=\"Bar chart ",
+    "category": "devops",
+    "source_name": "Pulumi Blog",
+    "published": "2026-11-18T13:30:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Pulumi Blog",
+        "url": "https://www.pulumi.com/blog/everything-after-code-as-code/"
+      },
+      {
+        "name": "Pulumi Blog",
+        "url": "https://www.pulumi.com/blog/introducing-pulumi-delivery/"
+      },
+      {
+        "name": "Pulumi Blog",
+        "url": "https://www.pulumi.com/blog/introducing-pulumi-agents/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "c39a932df4899e45",
+    "title": "JSON Schema Validation Rules and a RetryFor Attribute in Laravel 13.43",
+    "url": "https://laravel-news.com/laravel-13-43-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/laravel-13-43-0\"><img alt=\"JSON Schema Validation Rules and a RetryFor Attribute in Laravel 13.43\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/laravel-13-featured.png\" /></a></p>\n                                        <hr />\n\n                    <p>Laravel 13.43 turns JSON schemas into validation rules, adds a #[RetryFor] queue attribute and releaseUsingBackoff(), and ships several security fixes.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/laravel-13-43-0\">JSON Schema Validation Rules and a RetryFor Attribute in Laravel 13.43</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-17T23:07:18+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/php-8-6-release-day?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-warrant?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laravel-13-43-0?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 19.0
+  }
+]

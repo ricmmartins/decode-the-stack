@@ -1,54 +1,58 @@
 {
-  "updated_at": "2026-11-18T13:25:22.262213+00:00",
+  "updated_at": "2026-11-19T20:38:51.616310+00:00",
   "configured_feeds": 242,
-  "editions_published": 16,
-  "headlines_published": 770,
-  "sources_credited": 79,
-  "latest_edition_date": "2026-11-18",
+  "editions_published": 17,
+  "headlines_published": 820,
+  "sources_credited": 80,
+  "latest_edition_date": "2026-11-19",
   "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 178
+      "headlines": 189
     },
     {
       "name": "InfoQ",
-      "headlines": 75
+      "headlines": 81
     },
     {
       "name": "The Hacker News",
-      "headlines": 70
+      "headlines": 74
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 53
+      "headlines": 54
     },
     {
       "name": "TechCrunch",
-      "headlines": 42
+      "headlines": 48
     },
     {
       "name": "The New Stack",
-      "headlines": 29
+      "headlines": 33
     },
     {
       "name": "The Verge - Tech",
-      "headlines": 24
+      "headlines": 27
     },
     {
       "name": "Simon Willison",
-      "headlines": 23
+      "headlines": 24
+    },
+    {
+      "name": "Vercel Blog",
+      "headlines": 22
     },
     {
       "name": "Real Python",
       "headlines": 21
     },
     {
-      "name": "Vercel Blog",
-      "headlines": 21
+      "name": "Lobsters",
+      "headlines": 20
     },
     {
-      "name": "Lobsters",
+      "name": "OpenAI Blog",
       "headlines": 19
     },
     {
@@ -56,19 +60,15 @@
       "headlines": 19
     },
     {
-      "name": "OpenAI Blog",
-      "headlines": 18
-    },
-    {
       "name": "JetBrains Blog",
-      "headlines": 15
-    },
-    {
-      "name": "Schneier on Security",
-      "headlines": 13
+      "headlines": 16
     },
     {
       "name": "The Daily WTF",
+      "headlines": 14
+    },
+    {
+      "name": "Schneier on Security",
       "headlines": 13
     },
     {
@@ -85,7 +85,11 @@
     },
     {
       "name": "Nvidia Developer Blog",
-      "headlines": 8
+      "headlines": 9
+    },
+    {
+      "name": "Grafana Blog",
+      "headlines": 7
     },
     {
       "name": "Dark Reading",
@@ -93,6 +97,10 @@
     },
     {
       "name": "Databricks Engineering",
+      "headlines": 6
+    },
+    {
+      "name": "Laravel News",
       "headlines": 6
     },
     {
@@ -108,14 +116,6 @@
       "headlines": 5
     },
     {
-      "name": "Grafana Blog",
-      "headlines": 5
-    },
-    {
-      "name": "Laravel News",
-      "headlines": 5
-    },
-    {
       "name": "Microsoft 365 Developer Blog",
       "headlines": 5
     },
@@ -128,15 +128,27 @@
       "headlines": 4
     },
     {
+      "name": "LangChain Blog",
+      "headlines": 4
+    },
+    {
       "name": "Stack Overflow Blog",
       "headlines": 4
     },
     {
-      "name": "Google Developers Blog",
+      "name": "DeepMind Blog",
       "headlines": 3
     },
     {
-      "name": "LangChain Blog",
+      "name": "DigitalOcean Blog",
+      "headlines": 3
+    },
+    {
+      "name": "GitHub Blog",
+      "headlines": 3
+    },
+    {
+      "name": "Google Developers Blog",
       "headlines": 3
     },
     {
@@ -156,19 +168,15 @@
       "headlines": 2
     },
     {
+      "name": "Azure DevOps Blog",
+      "headlines": 2
+    },
+    {
       "name": "CircleCI Blog",
       "headlines": 2
     },
     {
       "name": "Cloudinary Blog",
-      "headlines": 2
-    },
-    {
-      "name": "DeepMind Blog",
-      "headlines": 2
-    },
-    {
-      "name": "GitHub Blog",
       "headlines": 2
     },
     {
@@ -184,7 +192,15 @@
       "headlines": 2
     },
     {
+      "name": "LaunchDarkly Blog",
+      "headlines": 2
+    },
+    {
       "name": "PagerDuty Blog",
+      "headlines": 2
+    },
+    {
+      "name": "Pragmatic Engineer",
       "headlines": 2
     },
     {
@@ -200,6 +216,10 @@
       "headlines": 2
     },
     {
+      "name": "Zapier Engineering",
+      "headlines": 2
+    },
+    {
       "name": "Zendesk Engineering",
       "headlines": 2
     },
@@ -209,10 +229,6 @@
     },
     {
       "name": "Ars Technica",
-      "headlines": 1
-    },
-    {
-      "name": "Azure DevOps Blog",
       "headlines": 1
     },
     {
@@ -240,10 +256,6 @@
       "headlines": 1
     },
     {
-      "name": "DigitalOcean Blog",
-      "headlines": 1
-    },
-    {
       "name": "Dropbox Tech",
       "headlines": 1
     },
@@ -268,10 +280,6 @@
       "headlines": 1
     },
     {
-      "name": "LaunchDarkly Blog",
-      "headlines": 1
-    },
-    {
       "name": "Meta Engineering",
       "headlines": 1
     },
@@ -292,7 +300,7 @@
       "headlines": 1
     },
     {
-      "name": "Pragmatic Engineer",
+      "name": "Pulumi Blog",
       "headlines": 1
     },
     {
@@ -318,32 +326,28 @@
     {
       "name": "Wise Engineering",
       "headlines": 1
-    },
-    {
-      "name": "Zapier Engineering",
-      "headlines": 1
     }
   ],
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 560
+      "headlines": 598
     },
     {
       "name": "Security",
-      "headlines": 98
+      "headlines": 102
     },
     {
       "name": "AI/ML",
-      "headlines": 46
+      "headlines": 48
     },
     {
       "name": "Cloud",
-      "headlines": 37
+      "headlines": 39
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 28
+      "headlines": 32
     }
   ],
   "history": [
@@ -426,6 +430,11 @@
       "date": "2026-11-18",
       "headlines": 50,
       "sources": 28
+    },
+    {
+      "date": "2026-11-19",
+      "headlines": 50,
+      "sources": 25
     }
   ]
 }

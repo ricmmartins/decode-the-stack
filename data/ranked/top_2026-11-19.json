@@ -1,0 +1,430 @@
+[
+  {
+    "id": "4c714c38e081d3c6",
+    "title": "Build Tool-Calling Parsers in Rust with AI Agents",
+    "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/",
+    "summary": "<img alt=\"A developer, code blocks, a checklist, and a rising bar chart connect to a central network diagram.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/agentic-ai-rl-gym-1024x576-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-rl-gym-1024x576-1\" width=\"768\" />A tool call can arrive in pieces, an argument can be cut short, or model-specific markup can leak into the answer. A frontend parser turns that output, received...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-19T16:30:46+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/"
+      }
+    ],
+    "score": 30.0
+  },
+  {
+    "id": "7524929645a9b409",
+    "title": "We built an AI news desk that writes in Bangla twice a day, clusters duplicate stories, and credits every source",
+    "url": "https://dev.to/arwahyn_ai_a9134e083fcc3d/we-built-an-ai-news-desk-that-writes-in-bangla-twice-a-day-clusters-duplicate-stories-and-credits-5747",
+    "summary": "<p>Most AI news in Bangla is either a translated headline with no context or a copied article. We wanted something closer to a morning newsletter: what happened, why it matters, and what it changes for someone working in Bangladesh, written in Bangla that reads like a person wrote it.</p>\n\n<p>So our academy runs its own small news desk:</p>\n\n<ol>\n<li>\n<strong>A collector</strong> checks a list of tech and AI news sources every 30 minutes and scores each headline.</li>\n<li>\n<strong>Two editorial runs a day</strong>, at 8 AM and 7 PM Dhaka time, the way a newspaper has a morning and an evening edition. Each run writes at most three stories.</li>\n<li>\n<strong>The bar rises for each extra story.</strong> The first story only needs to clear a basic score. The second and third have to be genuinely big: well above a typical week's scores, or covered by two or more outlets.</li>\n<li>\n<strong>Duplicate stories are clustered.</strong> When five outlets cover the same launch, the desk writes it o",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:20:42+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/arwahyn_ai_a9134e083fcc3d/we-built-an-ai-news-desk-that-writes-in-bangla-twice-a-day-clusters-duplicate-stories-and-credits-5747"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/arwahyn_ai_a9134e083fcc3d/a-private-chatgpt-for-the-office-with-ollama-open-webui-where-nothing-leaves-your-machine-1668"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "54c65ee3b93a4a01",
+    "title": "Importing Bandcamp ZIPs in a Flutter music player: streams, zip slip and Finder junk",
+    "url": "https://dev.to/felix-helleckes/importing-bandcamp-zips-in-a-flutter-music-player-streams-zip-slip-and-finder-junk-gpm",
+    "summary": "<p>People who still buy music mostly get it as a ZIP. Bandcamp, Qobuz and most download shops hand you one archive per album. My offline music player, Clickwheel, could only import loose audio files, so the first thing a new user had to do was find an unzip tool on their phone. That is a bad first minute.</p>\n\n<p>So I added ZIP import. The diff was 469 lines across 13 files, and almost none of it was \"call the unzip function\". Here is what the rest was.</p>\n\n<h2>\n  \n  \n  1. Stream from disk, off the UI thread\n</h2>\n\n<p>A FLAC album is easily several hundred megabytes. Reading it into a <code>Uint8List</code> on a phone is asking for an out-of-memory kill. The <code>archive</code> package (4.x) can decode from a file stream and write each entry straight to disk:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight dart\"><code><span class=\"k\">static</span> <span class=\"kt\">List</span><span class=\"o\">&lt;</span><span class=\"kt\">String</span><span class=\"o\">&gt;</spa",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-19T20:18:21+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/felix-helleckes/importing-bandcamp-zips-in-a-flutter-music-player-streams-zip-slip-and-finder-junk-gpm"
+      },
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/a-living-fossil"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "04f6fb9666c78ffc",
+    "title": "Parallel web search is free on AI Gateway and eve through January 31",
+    "url": "https://vercel.com/changelog/parallel-web-search-is-free-on-ai-gateway-and-eve-through-january-31",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/parallel/search\">Parallel</a> web search in fast mode is now free on <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> through January 31, 2027, and Parallel is now the default web search for <a href=\"https://vercel.com/eve\">eve</a> agents.</p><p>The tool works with any AI Gateway model, with no separate Parallel API key. Parallel finds relevant web pages and returns links with short excerpts. You can filter results by website or publication date.</p><p>In eve, the built-in <code>web_search</code> tool uses Parallel fast mode automatically when the model is served through AI Gateway. See the <a href=\"https://eve.dev/docs/concepts/built-in-tools#web_search\">eve documentation</a> for other search configurations.</p><p>To use Parallel fast mode with the AI SDK, add <code>gateway.tools.parallelSearch({ mode: 'fast' })</code> to your tools:</p><div></div><p>The offer covers fast mode only, with <a href=\"https://vercel.com/docs/ai-gateway",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-18T05:00:00+00:00",
+    "coverage_count": 16,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://verialabs.com/ruby2shell/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://energy-based-reasoners.github.io/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/idrive-ai-agents-backup/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-workloads-data-gravity/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/groundcover-ai-incident-investigations/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/groundcover-coding-agents-observability/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gemini-neon-antigravity-harness/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/openshell-ai-agent-security/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/silent-ai-agent-failures/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-code-verification-gap/"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/parallel-web-search-is-free-on-ai-gateway-and-eve-through-january-31"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gemini-4-neon-now-available-on-ai-gateway"
+      },
+      {
+        "name": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "3f17cdeeb07e9941",
+    "title": "Self-healing AI agents in production: Detect, diagnose, and recover",
+    "url": "https://launchdarkly.com/blog/self-healing-ai-agents/",
+    "summary": "Self-healing AI agents detect a failure, find the cause, and recover using a plan your team set up in advance. It runs the fix your team already defined, and it can roll that fix back automatically if your metrics regress. Learn how to build the loop and keep the fix under control.",
+    "category": "cloud",
+    "source_name": "LaunchDarkly Blog",
+    "published": "2026-11-19T20:23:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LaunchDarkly Blog",
+        "url": "https://launchdarkly.com/blog/self-healing-ai-agents/"
+      }
+    ],
+    "score": 18.82
+  },
+  {
+    "id": "1de169515a7cb80e",
+    "title": "Grafana Labs’ First Executive Briefing Center Coming to Ginza",
+    "url": "https://grafana.com/blog/grafana-labs-ebc1/",
+    "summary": "<p>Grafana Labs does not have a headquarters office. Since its founding in 2014, it has been fully remote-first.</p><p>It began with three co-founders living on different continents, and today our team spans more than 50 countries.<br />From day one, the organization was designed with the assumption that everyone works remotely. Real-time meetings are kept to a minimum, information is shared through documentation, and we have cultivated a culture that trusts people to “work autonomously.” At its core lies the transparency and autonomy of open source.</p><p>And now, we are building the world’s first Executive Briefing Center (EBC) in Ginza, Tokyo.</p><p>A remote-first company creating a physical space—what does that mean?<br />This article is the first in a three-part series following the EBC launch project.<br />From the background of the concept to site selection, design philosophy, and even the demolition process, we will walk you through the journey.</p><p></p><p></p><hr /><h3>Not a",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-19T16:32:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/grafana-labs-ebc1/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a12c14ad154e2ef9",
+    "title": "Bring charts, queries, and context into one shareable document: Introducing Grafana Notebooks",
+    "url": "https://grafana.com/blog/bring-charts-queries-and-context-into-one-shareable-document-introducing-grafana-notebooks/",
+    "summary": "<p>A teammate asks why you think a deployment caused checkout failures. You have an error-rate chart in your dashboard, a query that narrows the failures to one payment provider, and an explanation you&#039;ve been exploring with <a href=\"https://grafana.com/products/cloud/ai-assistant/\"><u>Grafana Assistant</u></a>. To bring your teammate up to speed, you start collecting screenshots and query links, then write out how they connect.</p><p>That explanation is part of the analysis. Your teammate needs to see what supports the conclusion and where you&#039;re still making an assumption. As findings come from both your own exploration in Grafana and from AI-assisted work, having one place to examine them together becomes key.</p><p><a href=\"https://grafana.com/docs/grafana/latest/visualizations/notebooks/\"><u>Grafana Notebooks</u></a> help you do just that, bringing charts, queries, and findings from Assistant together in one working document, so teammates can follow your reasoning and as",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-19T15:22:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/bring-charts-queries-and-context-into-one-shareable-document-introducing-grafana-notebooks/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1fe6648cb31b6643",
+    "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+    "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+    "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site.\n\nThat can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday.\n\nThe Drupal Security Team disclosed",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-19T14:33:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html"
+      }
+    ],
+    "score": 19.98
+  },
+  {
+    "id": "50410cdce86b049c",
+    "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+    "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+    "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access.\n\nThere's another shift worth watching. AI is making some attacks easier",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-19T18:47:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "8d5b4fa6b4b01e4a",
+    "title": "LangSmith Tool Gateway: Secure, governed tool use for agents",
+    "url": "https://www.langchain.com/blog/langsmith-tool-gateway",
+    "summary": "LangSmith Tool Gateway, now in Public Beta, handles credentials, identity, and access for every agent tool call, with policies, approvals, and traces.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-19T15:51:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/langsmith-tool-gateway"
+      }
+    ],
+    "score": 17.5
+  },
+  {
+    "id": "f86b76b3c863b8b7",
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-19T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
+      }
+    ],
+    "score": 16.5
+  },
+  {
+    "id": "a7f6c76172725b02",
+    "title": "Presentation: AI-Assisted Software Delivery: From Code to Production",
+    "url": "https://www.infoq.com/presentations/ai-assisted-software-delivery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/ai-assisted-software-delivery/en/mediumimage/infoq-live-medium-1795097572325.jpg\" /><p>The panelists explore how engineering teams adapt delivery architectures, pipelines, security, and governance for AI-assisted development. They share practical strategies for verifying AI-generated code, solving testing and deployment bottlenecks, maintaining human oversight, and measuring AI’s true impact on software velocity, quality, reliability, and operational cost.</p> <i>By Garima Bajpaj, Martin Reynolds, Patrick Debois, Gunnar Grosch, Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-19T14:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/ai-assisted-software-delivery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "44cb36b8d78ca38f",
+    "title": "A “headless Slack”: Vercel’s new message board lets Claude Code and Codex agents work together",
+    "url": "https://thenewstack.io/vercel-board-agent-swarms/",
+    "summary": "<img alt=\"Illustration of a laptop surrounded by colorful sticky notes and a message board.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/7411f0ae-feat-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>For AI agents to work together effectively, they need a way to communicate and divvy up tasks &#8212; much as</p>\n<p>The post <a href=\"https://thenewstack.io/vercel-board-agent-swarms/\">A “headless Slack”: Vercel’s new message board lets Claude Code and Codex agents work together</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-19T16:58:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/vercel-board-agent-swarms/"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "1cf2693202929085",
+    "title": "How Amazon ECS handles blue/green, canary, and linear deployments",
+    "url": "https://thenewstack.io/amazon-ecs-deployment-strategies/",
+    "summary": "<img alt=\"Dark abstract signal wave narrowing and expanding in neon colors, representing Amazon ECS blue/green and canary deployments\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/87fffaf2-point-normal-5vjupgpqxj4-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Deploying containers safely at scale can mean assembling your own system: traffic-splitting logic, alarm evaluation, rollback automation, approval gates. It’s</p>\n<p>The post <a href=\"https://thenewstack.io/amazon-ecs-deployment-strategies/\">How Amazon ECS handles blue/green, canary, and linear deployments</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-19T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/amazon-ecs-deployment-strategies/"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "ba3b887f1b6311e8",
+    "title": "Agent security is product security, and your marketing site counts",
+    "url": "https://thenewstack.io/marketing-site-agent-security/",
+    "summary": "<img alt=\"Abstract digital grid forming concentric waves around a central vortex, evoking AI agent security and system tension.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"https://cdn.thenewstack.io/media/2026/11/1039798d-alex-shuper-ebygbnkwq_g-unsplash-1024x683.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>A marketing site used to have two kinds of visitors: people and search crawlers. Now an agent can build a</p>\n<p>The post <a href=\"https://thenewstack.io/marketing-site-agent-security/\">Agent security is product security, and your marketing site counts</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-19T14:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/marketing-site-agent-security/"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "5a93653d7c622123",
+    "title": "OpenRun v1.0 - declarative deployments for internal tools on Docker or Kubernetes",
+    "url": "https://openrun.dev/blog/openrun-1.0/",
+    "summary": "<p><a href=\"https://lobste.rs/s/t9wxzg/openrun_v1_0_declarative_deployments_for\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-19T18:46:21+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://mccue.dev/pages/11-18-26-java4shell"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://openrun.dev/blog/openrun-1.0/"
+      }
+    ],
+    "score": 22.97
+  },
+  {
+    "id": "28693f9959c42b9b",
+    "title": ".NET 11 : ASP.NET Core: Union Type Support, OpenAPI 3.2 by Default and Blazor AI Components",
+    "url": "https://www.infoq.com/news/2026/11/asp-net-11-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Microsoft has released ASP.NET Core in .NET 11. The update adds C# union type support in JSON bodies, asynchronous validation for Minimal APIs, OpenAPI 3.2 by default, and SignalR authentication refresh. Blazor gains a CacheView component, client-side validation for static SSR forms, opt-in circuit pause for inactive tabs, and experimental AI components. Zstandard compression is on by default.</p> <i>By Almir Vuk</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-19T11:27:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/asp-net-11-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "4065487aa2efeea8",
+    "title": "Presentation: RIIIR: Rewrite It In *Idiomatic* Rust (with AI)",
+    "url": "https://www.infoq.com/presentations/rust-ai-symposium-agent-client-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/rust-ai-symposium-agent-client-protocol/en/mediumimage/NikoMatsakis-medium-1793279155828.jpeg\" /><p>Nicholas Matsakis shares why AI makes Rust the ideal choice for modern production systems, skipping steep adoption hurdles via compiler guardrails. He discusses Symposium - an open-source, agent-oriented toolchain from the Rust Foundation - and demonstrates how the Agent Client Protocol (ACP) standardizes agent-to-tool extensibility across diverse enterprise developer workflows.</p> <i>By Niko Matsakis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-19T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/rust-ai-symposium-agent-client-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "6b58bb28efbf88df",
+    "title": "Producing Healthy Code with Artificial Intelligence Costs Fewer Tokens",
+    "url": "https://www.infoq.com/news/2026/11/healthy-code-AI-tokens/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/healthy-code-AI-tokens/en/headerimage/header-1794837764807.jpg\" /><p>Agentic AI can speed up velocity, but the gains vanish within months as code complexity grows.  Healthy code makes AI perform better and costs fewer tokens. Safeguarding means keeping code health high through agentic refactoring, with an MCP supplying code health data, so AI can maintain the code it generates.</p> <i>By Ben Linders</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-19T11:09:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/healthy-code-AI-tokens/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.51
+  },
+  {
+    "id": "4822116019cfc09b",
+    "title": "The Pulse: Is Amazon’s writing culture collapsing because of AI?",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture",
+    "summary": "Also: Anthropic goes public with the largest-ever IPO, Meta frantically reverses shutdown of popular AI coding harness Conductor, and more",
+    "category": "dev",
+    "source_name": "Pragmatic Engineer",
+    "published": "2026-11-19T17:08:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Pragmatic Engineer",
+        "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture"
+      }
+    ],
+    "score": 21.38
+  }
+]

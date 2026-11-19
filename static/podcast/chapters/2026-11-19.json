@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 12,
+      "title": "Opening"
+    },
+    {
+      "startTime": 146,
+      "title": "Deployment safety depends on more than choosing blue/green,..."
+    },
+    {
+      "startTime": 295,
+      "title": "The Bangla news desk makes editorial restraint part of the..."
+    },
+    {
+      "startTime": 436,
+      "title": "That maintenance question also runs through DigitalOcean’s..."
+    },
+    {
+      "startTime": 584,
+      "title": "That question of how much control to delegate also connects..."
+    },
+    {
+      "startTime": 739,
+      "title": "For our final stretch, capital meets execution. TechCrunch..."
+    }
+  ]
+}
