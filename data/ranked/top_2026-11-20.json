@@ -1,0 +1,354 @@
+[
+  {
+    "id": "f9bae85c44ea288b",
+    "title": "Cluster Autoscaler not scaling down nodes: finding the reason in its logs",
+    "url": "https://dev.to/shinagawa-web/cluster-autoscaler-not-scaling-down-nodes-finding-the-reason-in-its-logs-1742",
+    "summary": "<p>To cut node costs, you lowered the requests on your Pods and deployed. Requests are the amount of CPU and memory reserved for each container in a Pod. Allocatable is the amount of a node's CPU and memory that can be assigned to Pods. When you check it yourself, for the resource you lowered, the sum of requests on every node is below half of allocatable.</p>\n\n<p>Cluster Autoscaler (CA) removes a node when the sum of requests on it falls below half of allocatable.<sup id=\"fnref1\">1</sup> Yet an hour later the node count hasn't changed, and the CA logs have no error lines (lines starting with <code>E</code>). The bill doesn't go down until nodes are removed.</p>\n\n<p>CA logs, for each node, the reason it decided not to remove it. The line it prints tells you the reason and where to fix it.</p>\n\n<p>I reproduced this on a test cluster, triggered each reason for not removing a node one at a time, and checked which line CA logs for each.<sup id=\"fnref2\">2</sup></p>\n\n<h2>\n  \n  \n  Check the C",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:06:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/shinagawa-web/cluster-autoscaler-not-scaling-down-nodes-finding-the-reason-in-its-logs-1742"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e488ffdee1c33027",
+    "title": "How I Built a Marketplace Review Site on WordPress — Lessons on Speed, Structure, and Trust",
+    "url": "https://dev.to/magazinbest/how-i-built-a-marketplace-review-site-on-wordpress-lessons-on-speed-structure-and-trust-3llm",
+    "summary": "<p>I run a small review site about online marketplaces. Not a SaaS, not a startup pitch — just a WordPress site that answers one question people actually google: 'is this store worth ordering from?' The live result is Magazin Best — <a href=\"https://magazinbest.com\" rel=\"noopener noreferrer\">https://magazinbest.com</a> — a Russian-language site covering Ozon, Wildberries, MTS Shop and Flowwow. Building it taught me more about practical webdev than a dozen tutorial projects. Here is what stuck. 1. Content structure beats design. Each review answers the same five questions in the same order: what the store sells, delivery, payment, returns, and the catch. Same headings, same comparison logic. That sounds boring. It is the whole point. When the structure is predictable, readers find the answer in seconds, and adding a new store is copy-paste plus facts — not a redesign. 2. Speed is mostly images. The homepage is a grid of review cards with 335x220 thumbnails. That size is deliberate: no 2",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:02:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/magazinbest/how-i-built-a-marketplace-review-site-on-wordpress-lessons-on-speed-structure-and-trust-3llm"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "0d55229243de718a",
+    "title": "AWS Setup Checklist for Startups: Account Ownership, IAM, MFA, Budgets and Cleanup (With Configs)",
+    "url": "https://dev.to/utl/aws-setup-checklist-for-startups-account-ownership-iam-mfa-budgets-and-cleanup-with-configs-3l21",
+    "summary": "<p><em>By Jonathan Knight, Head of DevOps &amp; Technical Manager at Utah Tech Labs. Originally published on <a href=\"https://www.utahtechlabs.com/blog/aws-setup-right-from-day-one/?utm_source=devto&amp;utm_medium=syndication&amp;utm_campaign=aws_setup_video\" rel=\"noopener noreferrer\">utahtechlabs.com</a>.</em></p>\n\n<p><strong>TL;DR:</strong> a production-ready AWS baseline for a startup comes down to seven controls: company-owned account, vaulted root with hardware MFA, one IAM identity per engineer with least privilege, MFA enforced by policy, AWS Budgets with tiered alerts, environment tagging, and scheduled cleanup of idle resources. This post walks through each one with the commands and configs we use.</p>\n\n<h2>\n  \n  \n  Why rushed AWS setups become technical debt\n</h2>\n\n<p>Most early-stage AWS accounts are built through the console in a weekend: one region, one shared admin login, a couple of EC2 instances and an RDS database. It ships. Six to twelve months later the same account ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:02:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/utl/aws-setup-checklist-for-startups-account-ownership-iam-mfa-budgets-and-cleanup-with-configs-3l21"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "15ca4149a1a729b1",
+    "title": "GPT-Live 1.1 now available on AI Gateway",
+    "url": "https://vercel.com/changelog/gpt-live-1-1-now-available-on-ai-gateway",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway/models/gpt-live-1.1\">GPT-Live 1.1 from OpenAI</a> is now available on AI Gateway.</p><p>GPT-Live 1.1 is a full-duplex voice model, so it listens while it speaks and a caller can pause, interrupt, or add detail mid-reply. Compared with the previous GPT-Live model, it transcribes speech more accurately and keeps a more consistent accent and voice across languages. It uses the same Live endpoint and client delegation, so an existing GPT-Live integration only needs the new model ID.</p><h3>Simple example without delegation</h3><p>Run <code>openai/gpt-live-1.1</code> by itself:</p><div></div><h3>Delegate work and keep talking</h3><p>Turn on client delegation, and use the session instructions to tell GPT-Live 1.1 when to ask for help. It asks by sending delegation-created. Answer with any text model on AI Gateway and return the result on the commentary channel for GPT-Live to speak. This example uses openai/gpt-6.2-sol and builds on the session above",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-19T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/gpt-live-1-1-now-available-on-ai-gateway"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "b5c4089249f0e7d7",
+    "title": "Fastly’s Virtual Patch for Java4Shell (CVE-2026-114938)",
+    "url": "https://www.fastly.com/blog/fastlys-virtual-patch-for-java4shell-cve-2026-114938/",
+    "summary": "Learn about Fastly’s virtual patch for the critical Java4Shell vulnerability (CVE-2026-114938).",
+    "category": "cloud",
+    "source_name": "Fastly Blog",
+    "published": "2026-11-19T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Fastly Blog",
+        "url": "https://www.fastly.com/blog/fastlys-virtual-patch-for-java4shell-cve-2026-114938/"
+      }
+    ],
+    "score": 8.95
+  },
+  {
+    "id": "918098c9cbd0a9d0",
+    "title": "When a sync window closes: How Argo CD self-heal skipped the migration hook",
+    "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+    "summary": "The uncomfortable question A few days ago, a customer asked me a question that sounded simple: &#8220;Argo CD said the sync succeeded, so why didn&#8217;t our migration run?&#8221; They had pushed a release while a deny...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-20T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/"
+      }
+    ],
+    "score": 18.22
+  },
+  {
+    "id": "80c5208e6f679447",
+    "title": "Opening a 400-Year-Old Cryptex",
+    "url": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
+    "summary": "<p>Researchers used CT scanning technology to recover the code and <a href=\"https://www.bbc.com/news/articles/c69qz9jzq4jro\">open</a> a 400-year-old cryptex padlock.</p>\n<p>You can buy a USB-drive <a href=\"https://puzzleboxworld.com/products/cryptex-antique-gold-color-usb-flash-drive-16-gb\">cryptex</a>.</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-20T12:04:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html"
+      }
+    ],
+    "score": 23.08
+  },
+  {
+    "id": "983aa39df0f1ff60",
+    "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+    "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T10:32:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
+      }
+    ],
+    "score": 19.98
+  },
+  {
+    "id": "822d0ad1d386b419",
+    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement ",
+    "url": "https://www.anthropic.com/news/ipo-close",
+    "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-20T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news/ipo-close"
+      }
+    ],
+    "score": 18.75
+  },
+  {
+    "id": "dabb8af0771acabe",
+    "title": "Token fraud is here and it’s BAD (YouTube)",
+    "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+    "summary": "<p><strong><a href=\"https://www.youtube.com/watch?v=ZDpP7JXPlhc\">Token fraud is here and it’s BAD (YouTube)</a></strong></p>\nClaire Vo runs <a href=\"https://www.chatprd.ai\">ChatPRD</a>, an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time.</p>\n<p>In this YouTube video (see also the <a href=\"https://x.com/clairevo/status/2119985786045227197\">accompanying Twitter post</a>) Claire describes the <em>flood</em> of token fraud she has seen from groups abusing the product's free trial, sometimes just to get free AI usage but often to resell tokens or run other commercial enterprises on top of the ChatPRD agent.</p>\n<blockquote>\n<p>I am funding a international Roblox and Fortnite map studio. They run a loop of free trials and promo codes and then tunnel to my agent and use it to build Roblox and Fortnite maps.</p>\n</blockquote>\n<p>Apparently one of the common prompts",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-20T02:49:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "4c4a9dc2c5d98595",
+    "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+    "url": "https://github.com/openssl/openssl/pull/33652",
+    "summary": "<p>Article URL: <a href=\"https://github.com/openssl/openssl/pull/33652\">https://github.com/openssl/openssl/pull/33652</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50569226\">https://news.ycombinator.com/item?id=50569226</a></p>\n<p>Points: 291</p>\n<p># Comments: 227</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-20T02:01:09+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/openssl/openssl/pull/33652"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://git-aarvin.github.io/mei/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/openjdk/jdk/pull/32781"
+      }
+    ],
+    "score": 26.94
+  },
+  {
+    "id": "61c300888adfa5d0",
+    "title": "Presentation: Modernising Retail at Scale: Architecting a Cloud‑to‑Edge Platform for a Global Enterprise",
+    "url": "https://www.infoq.com/presentations/tesco-enterprise-tech-transformation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/tesco-enterprise-tech-transformation/en/mediumimage/JayeshBhayani-medium-1792654742095.jpg\" /><p>Jayesh Bhayani discusses Tesco’s decade-long enterprise transformation from fragmented legacy systems to a unified cloud-edge platform. He explains how aligning system, talent, and process modernizations allowed Tesco to scale mission-critical retail operations to millions of customers, while sharing practical lessons on build vs. buy, cloud cost management, and preparing for agentic commerce.</p> <i>By Jayesh Bhayani</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-20T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/tesco-enterprise-tech-transformation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "e59a43db86e60d8e",
+    "title": "Article: Building Reliability Into the Cloud: Observability as the Control Plane for Multi-Region Failover",
+    "url": "https://www.infoq.com/articles/observability-control-plane-failover/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/observability-control-plane-failover/en/headerimage/header-1795002929606.jpg\" /><p>Cloud SLAs promise uptime statistically, not absolutely. This article shows how to treat observability as a control plane that detects regional degradation, triggers automated failover, and confirms recovery rather than paging a human. Covers active-active architecture, DNS TTL pitfalls, composite Prometheus alerting, Route 53 weighted routing, and confirmation loops backed by a real S3 outage.</p> <i>By Saurabh Ahuja</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-20T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/observability-control-plane-failover/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "673fb8ec8be12bcb",
+    "title": "Google Donates Agent Substrate and gVisor to the CNCF to Secure AI Agents at Scale",
+    "url": "https://www.infoq.com/news/2026/11/google-substrate-gvisor-cncf/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-substrate-gvisor-cncf/en/headerimage/generatedHeaderImage-1794408775099.jpg\" /><p>Google has announced it is donating Agent Substrate and gVisor to the Cloud Native Computing Foundation (CNCF), placing two important components of its AI agent infrastructure under vendor-neutral open-source governance.</p> <i>By Craig Risi</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-20T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-substrate-gvisor-cncf/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.79
+  },
+  {
+    "id": "b04621e6111cc219",
+    "title": "An engineer didn’t message his AI for 22 of 44 days. It built an Android app anyway.",
+    "url": "https://thenewstack.io/cognition-devin-bots-management/",
+    "summary": "<img alt=\"person texting\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"647\" src=\"https://cdn.thenewstack.io/media/2026/11/e4ef422e-milhad-yaktvxoa6gc-unsplash-1-1024x647.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Cognition has spent nearly three years developing Devin as an autonomous engineer that takes a ticket and ships a pull</p>\n<p>The post <a href=\"https://thenewstack.io/cognition-devin-bots-management/\">An engineer didn&#8217;t message his AI for 22 of 44 days. It built an Android app anyway.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-19T20:22:18+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gemini-mac-computer-use/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cognition-devin-bots-management/"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "3a0fa76a27ad3e03",
+    "title": "AWS Releases a Free Local Emulator of AWS Built Entirely by Agents",
+    "url": "https://www.infoq.com/news/2026/11/aws-emulator-local-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-emulator-local-testing/en/headerimage/generatedHeaderImage-1795086946449.jpg\" /><p>AWS has released AWS Emulator, a free, CC0-licensed local stand-in for more than 200 of its services, generated from its public API models and aimed at the test loops of coding agents. AWS says agents wrote and maintain all of the code and publishes per-release fidelity scores. The docs say it does not evaluate IAM, and practitioners are split on trusting an emulator nobody reviewed.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-20T06:53:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-emulator-local-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "98e5987d05fab544",
+    "title": "Does your AI agent need an LLM to decide what to do next?",
+    "url": "https://thenewstack.io/aws-decider-models-agents/",
+    "summary": "<img alt=\"In this episode of The New Stack podcast, recorded at AGNTCon + MCPCon in San Jose, Nick Lucchesi speaks with Mike Chambers, Senior AI Developer Experience Engineer at AWS, about how small decision models could make AI agents faster, more efficient, and cost-effective. Unlike large language models (LLMs) that generate responses through multiple processing steps, decider models quickly evaluate information and return probability-based decisions.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/65a3138e-for-thumbnail-20-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Say &#8220;good morning&#8221; to an AI agent, and it might search its long-term memory before saying hello back. Somewhere in</p>\n<p>The post <a href=\"https://thenewstack.io/aws-decider-models-agents/\">Does your AI agent need an LLM to decide what to do next?</a> appeared first on <a href=\"https://t",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-20T01:37:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/aws-decider-models-agents/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "df4ead8ca6ad213f",
+    "title": "When I say a ticket is fully tested, how sure am I?",
+    "url": "https://dev.to/lenzz920/when-i-say-a-ticket-is-fully-tested-how-sure-am-i-2644",
+    "summary": "<p>Even after 6 years in the field, I ask myself this question all the time. Once I tested something that worked like a shared document with a version history. A specific action would create a new version of it. The original must never change.</p>\n\n<p>I created different documents and tried to change them in different ways, and it was all working pretty well. I was checking on all the obvious places, but the bugs are usually not there.</p>\n\n<p>I know that it isn’t realistic to verify that there are no bugs in the software. There are always the obvious ones, but it takes real critical thinking and understanding of the software to find the ones lurking in the shadows. </p>\n\n<p>I like to hold myself to high standards, and over the years I’ve learned where to look for them. One of my main influences is the book “Explore It!” by Elisabeth Hendrickson.</p>\n\n<p>As an exploratory tester I need to find every piece of data I can create, read, update or delete, and ask several questions about it:",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:01:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/lenzz920/when-i-say-a-ticket-is-fully-tested-how-sure-am-i-2644"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "93daf852edf53d50",
+    "title": "André Dias Moreira Prol explica: Ethereum ou Stellar para tokenizar ativos",
+    "url": "https://dev.to/andr_diasmoreiraprol_b/andre-dias-moreira-prol-explica-ethereum-ou-stellar-para-tokenizar-ativos-8lp",
+    "summary": "<p>Quando um gestor de fundos imobiliários me pergunta onde tokenizar seus ativos, percebo que a dúvida raramente é técnica — é estratégica. A escolha entre Ethereum e Stellar define custos, velocidade, compliance e, principalmente, a viabilidade de um projeto no mercado brasileiro. Depois de duas décadas implementando infraestrutura de TI e os últimos anos imerso em Web3, construí uma visão prática sobre quando cada rede faz sentido. Vou compartilhar isso de forma direta.</p>\n\n<h2>\n  \n  \n  O peso do custo e da velocidade na operação brasileira\n</h2>\n\n<p>O Brasil é um mercado sensível a taxas. Tokenizar um recebível de R$ 50 mil não pode custar R$ 80 em gas fees — e é exatamente aqui que Ethereum frequentemente tropeça. Mesmo com os avanços pós-Dencun e as soluções Layer 2 como Arbitrum e Base, o custo médio de uma transação na mainnet ainda oscila conforme o congestionamento, podendo ultrapassar US$ 2 a US$ 5 em momentos de pico.</p>\n\n<p>Stellar, por outro lado, opera com taxas na cas",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:01:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/andr_diasmoreiraprol_b/andre-dias-moreira-prol-explica-ethereum-ou-stellar-para-tokenizar-ativos-8lp"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "71b1fef09086920c",
+    "title": "Give the agent the existing form-library pattern, don’t invent a new useState form",
+    "url": "https://dev.to/sherotree/give-the-agent-the-existing-form-library-pattern-dont-invent-a-new-usestate-form-54kn",
+    "summary": "<p>The agent adds an “edit display name” form with four <code>useState</code> hooks, a hand-rolled <code>errors</code> object, and a <code>disabled={loading}</code> flag that does not match the existing submit button. The repo already uses React Hook Form (or Formik, or the design-system <code>useForm</code>) with a shared validation helper and a standard error message component. The new form ignores all of it, so the field chrome, the error announcement, and the submit policy look different from every other settings row.</p>\n\n<p>I’ve started treating <strong>a from-scratch <code>useState</code> form in a repo that already has a form library as a rewrite</strong>, not as a small UI addition. The library is there so validation, touched state, and submit errors stay consistent.</p>\n\n<h2>\n  \n  \n  Why the hand-rolled form shows up\n</h2>\n\n<p>Tutorials start with <code>useState</code>. The model can generate that without opening another file. Wired-up RHF examples take more context: the reso",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sherotree/give-the-agent-the-existing-form-library-pattern-dont-invent-a-new-usestate-form-54kn"
+      }
+    ],
+    "score": 21.0
+  }
+]

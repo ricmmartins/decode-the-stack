@@ -1,0 +1,512 @@
+[
+  {
+    "id": "2b1b395b0c06e6b4",
+    "title": "How to reduce AI costs: 9 ways that work in 2026",
+    "url": "https://dev.to/zaichenko/how-to-reduce-ai-costs-9-ways-that-work-in-2026-29a2",
+    "summary": "<p>TL;DR. The fastest way to reduce AI costs is to stop paying top-model prices for every step. Turn the effort level down first. In <a href=\"https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence\" rel=\"noopener noreferrer\">Anthropic's own test</a>, one model solved 87.4% of coding tasks at low effort for USD 0.11 each against 95.3% at high for USD 0.29. Running low then retrying only the failures at high reached about 97% for about USD 0.17. Then cache repeated prompts, batch work that can wait (<a href=\"https://platform.claude.com/docs/en/about-claude/pricing\" rel=\"noopener noreferrer\">50% off</a>), give simple steps to free or cheap models, and keep the strong model as the one that decides.</p>\n\n<p>I'm Denys, a Forward Deployed Engineer. I build AI agents and automations for small firms. This list is the one I use. It's for the owner who sees an AI line on the invoice growing and wants to know which levers move it. The numbers are vendor figures",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/zaichenko/how-to-reduce-ai-costs-9-ways-that-work-in-2026-29a2"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "19abbe3c860e43bc",
+    "title": "The average that mixed two waits",
+    "url": "https://dev.to/ilya_mozerov_867dbdd91feb/the-average-that-mixed-two-waits-5dif",
+    "summary": "<p>A single number can be correct and still point you at the wrong problem. We had one: the average time from a checked change being committed to a new running version starting. It was a real measurement, taken from real records. It was also two different waits wearing one average.</p>\n\n<h2>\n  \n  \n  One path, two situations\n</h2>\n\n<p>Changes ship along a single path. Only one release can occupy it at a time. When a change is committed while another release is still running, it cannot join that release's snapshot — it has to wait for the run to finish, then for the next scheduled check to pick it up. When a change is committed with nothing in flight, it waits only for that next check.</p>\n\n<p>Those are different waits with different causes. One is queueing behind work; the other is waiting for a clock tick. The average added them together.</p>\n\n<p>Splitting each commit by whether the path was busy when it landed told the story. Over one day, 129 of 174 commits landed during a run, with ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ilya_mozerov_867dbdd91feb/the-average-that-mixed-two-waits-5dif"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "0d5ae8b57497786a",
+    "title": "Google Cloud Datastream pricing explained, with examples",
+    "url": "https://dev.to/quayen_support/google-cloud-datastream-pricing-explained-with-examples-e84",
+    "summary": "<p>Google Cloud Datastream charges for data processed, not for running streams: an idle stream costs nothing. The catch is how \"processed\" is measured. Google notes that a processed byte is an internal representation of the source data, and for most workloads it is <strong>2 to 5 times larger</strong> than the data itself.</p>\n\n<h2>\n  \n  \n  CDC prices (USD, November 2026)\n</h2>\n\n<p>Tiered per billing account per month; each price applies only to the GiB inside its tier:</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Monthly CDC volume</th>\n<th>Price per GiB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0 – 2,500 GiB</td>\n<td>$2.00</td>\n</tr>\n<tr>\n<td>2,500 – 5,000 GiB</td>\n<td>$1.50</td>\n</tr>\n<tr>\n<td>5,000 – 10,000 GiB</td>\n<td>$1.20</td>\n</tr>\n<tr>\n<td>10,000+ GiB</td>\n<td>$0.80 (contact sales beyond 10 TB)</td>\n</tr>\n</tbody>\n</table></div>\n\n<h2>\n  \n  \n  Backfill\n</h2>\n\n<p>The initial snapshot is billed at a flat per-GiB rate, with the first 500 GiB each month free. Re-r",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/quayen_support/google-cloud-datastream-pricing-explained-with-examples-e84"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "87b131cc1d145694",
+    "title": "Claude Code Pricing 2026: Pro vs Max vs Ultra vs API Cost",
+    "url": "https://dev.to/saurabh_bhayana/claude-code-pricing-2026-pro-vs-max-vs-ultra-vs-api-cost-2af1",
+    "summary": "<p><em>This guide was first published on <a href=\"https://saurabhbhayana.com/claude-code-pricing\" rel=\"noopener noreferrer\">saurabhbhayana.com</a>.</em></p>\n\n<p>Search for Claude Code pricing and you find a dozen numbers: $17, $20, $100, $200, per-token rates, per-seat rates. They are all real, and they answer different questions. The short version is that Claude Code has no price tag of its own. It comes inside Claude's paid plans, or you pay for exactly what you use through the API.</p>\n\n<p>This guide puts every option side by side, explains how usage limits work, shows what a day of Claude Code costs on the API, and helps you pick. One honest caveat first: Anthropic changes plans and prices regularly. Every number here was checked on Anthropic's own pricing page and documentation in November 2026. Check claude.com/pricing before you buy.</p>\n\n<h2>\n  \n  \n  How much does Claude Code cost?\n</h2>\n\n<p>Claude Code costs $20 a month at the entry level, through the Claude Pro plan. Heavy us",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/saurabh_bhayana/claude-code-pricing-2026-pro-vs-max-vs-ultra-vs-api-cost-2af1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4a0d54e22fd3e47d",
+    "title": "We shipped a free motion design editor for iPhone: KeyCut Mobile",
+    "url": "https://dev.to/pascal_hoffmann_ee489908a/we-shipped-a-free-motion-design-editor-for-iphone-keycut-mobile-4p5l",
+    "summary": "<p>KeyCut Mobile is out: we shipped a layer-based motion design editor for iPhone and iPad, and it's free.</p>\n\n<p>We built KeyCut Mobile at CRE8NOW as the pocket version of our Mac editor. The trailer shows the app in action; here's what's behind it.</p>\n\n<h2>\n  \n  \n  What it is\n</h2>\n\n<p>A native video editor for iOS and iPadOS 18+, written in Swift/SwiftUI. Every film is made of real layers (text, images, video, shapes, overlays, 3D camera) that you animate on a touch timeline with keyframes. What you see on the canvas is exactly what gets exported.</p>\n\n<h2>\n  \n  \n  What's inside\n</h2>\n\n<ul>\n<li>128 text presets in 11 families, plus per-letter, per-word and per-line text reveals</li>\n<li>150 transitions in 6 categories that snap to the next cut</li>\n<li>32 motion overlays (film burn, grain, light leaks, bokeh, rain, snow, VHS)</li>\n<li>Text and shape masks</li>\n<li>A real 3D camera with depth of field: orbit, tilt and dolly with your fingers</li>\n<li>Color grading, blur and blend m",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/pascal_hoffmann_ee489908a/we-shipped-a-free-motion-design-editor-for-iphone-keycut-mobile-4p5l"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "432603174d779e82",
+    "title": "Preparing IKEA Materials in Python Without Reading Missing Data as No Wood",
+    "url": "https://dev.to/vexaloom-labs/preparing-ikea-materials-in-python-without-reading-missing-data-as-no-wood-5amj",
+    "summary": "<p>Flatten a materials list and the back panel gets promoted to the whole bookcase.</p>\n\n<p>If your furniture assistant keeps turning “oak veneer” into “solid oak,” inspect the text entering your index before rewriting the prompt. <strong>A component's material supports a claim about that component, not the entire product.</strong></p>\n\n<p>Lab note 130: can we preserve that boundary from product record to retrieval chunk?</p>\n\n<p>The catch comes early: keeping the relationship intact can't guarantee a correct answer. It gives retrieval and generation usable evidence. Missing materials also mean “unknown,” not “contains no wood.”</p>\n\n<h2>\n  \n  \n  The relationship disappears before embedding\n</h2>\n\n<p>A material list looks harmless until the serializer removes the part names.</p>\n\n<p>This Example uses synthetic furniture entries to compare the representations without asserting anything about a real product:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight pyth",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-20T13:00:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vexaloom-labs/preparing-ikea-materials-in-python-without-reading-missing-data-as-no-wood-5amj"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "660441629bb0a0b2",
+    "title": "★ Detecting suspicious logins in your Laravel app",
+    "url": "https://freek.dev/3230-detecting-suspicious-logins-in-your-laravel-app",
+    "summary": "<p>Imagine someone logs in to your account from the other side of the world. If you're travelling, that might be perfectly normal. But if you're sitting at home in your hometown, it's suspicious. Someone might have gotten hold of your credentials.</p>\n<p>We've released <a href=\"https://spatie.be/docs/laravel-suspicious-login\">laravel-suspicious-login</a> to notify users about suspicious logins and let you decide what happens next. It looks at signals such as the browser, location and earlier failed attempts. You can email the user, block the login or run your own actions.</p>\n<p>You can install it with Composer, or let your AI coding agent do it. The package includes a Laravel Boost skill for installing and customizing it.</p>\n<!--more-->\n<h2 id=\"adding-up-the-signals\">Adding up the signals</h2>\n<p>Let's take a look at how the package detects signals that might indicate a suspicious login.</p>\n<p>An unfamiliar IP address isn't much of a reason to reject a login. Mobile networks change ",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-20T10:01:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3230-detecting-suspicious-logins-in-your-laravel-app"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6a9e8ad8dcfa8472",
+    "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+    "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+    "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T09:38:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "8944c81780766f46",
+    "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+    "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+    "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean.\n\nOn a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with AMD processors and nested virtualization enabled.\n\nFixed kernels shipped",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T12:20:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html"
+      }
+    ],
+    "score": 19.93
+  },
+  {
+    "id": "5f1cf96759b2a9d1",
+    "title": "The Path to AI Autonomy in the SOC",
+    "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+    "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html"
+      }
+    ],
+    "score": 19.91
+  },
+  {
+    "id": "6633cd306da0e39f",
+    "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+    "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+    "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks.\n\n\"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\" SonicWall said. \"We expect internet-facing Gen 6 firewalls to be actively",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T10:38:22+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html"
+      }
+    ],
+    "score": 19.9
+  },
+  {
+    "id": "ce0ee5a9db86bea0",
+    "title": "Trying to get our Arms around AI efficiency",
+    "url": "https://stackoverflow.blog/2026/11/20/trying-to-get-our-arms-around-ai-efficiency/",
+    "summary": "Ryan sits down with Alex Spinelli, Senior Vice President of AI and Developer Platforms at Arm, for a conversation about bringing ML capabilities to edge devices, adapting software tools to meet the unique demands of autonomous agents, and the critical importance of prioritizing functional safety as artificial intelligence transitions into the physical world of robotics.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-20T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/20/trying-to-get-our-arms-around-ai-efficiency/"
+      }
+    ],
+    "score": 19.72
+  },
+  {
+    "id": "3baaefb2d9e01b12",
+    "title": "llms.txt and MCP didn't move the needle for us. Here's what did.",
+    "url": "https://freek.dev/3228-llmstxt-and-mcp-didnt-move-the-needle-for-us-heres-what-did",
+    "summary": "<p>Cristian Tabacitu shares why stable APIs, readable source code, Laravel Boost guidelines, and code generators helped AI agents work with Backpack more than llms.txt or a docs-only MCP server.</p>\n\n\n<a href=\"https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-20T12:30:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3228-llmstxt-and-mcp-didnt-move-the-needle-for-us-heres-what-did"
+      }
+    ],
+    "score": 19.36
+  },
+  {
+    "id": "d77d8b4fa52773ea",
+    "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+    "url": "https://blog.cloudflare.com/nginx2root/",
+    "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-20T01:58:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/nginx2root/"
+      }
+    ],
+    "score": 19.28
+  },
+  {
+    "id": "32aa6e629764c8b9",
+    "title": "Error'd: There's a Chill in the Air",
+    "url": "https://thedailywtf.com/articles/there-s-a-chill-in-the-air",
+    "summary": "<p>There's a bathroom on the right! </p>\n\n<p>\"Interesting temperature reading from WU\" notes\n<strong>Peter G.</strong>\n\"This must be what happens when a bulk liquid nitrogen\ncarrier runs aground in your favourite holiday spot. Either that\nor you're supposed to take the average of +60 and\n-40 to get the actual temperature.\"\n</p><blockquote><p><a href=\"#0ba898115e864cd08c200e520f79e24f\"><img alt=\"0ba898115e864cd08c200e520f79e24f\" border=\"0\" src=\"https://d3hvi6t161kfmf.cloudfront.net/images/2026/11/14/0ba898115e864cd08c200e520f79e24f.png\" /></a></p><p> </p></blockquote>\n\n<p>At the same time, an anon mutters \n\"I think someone left the freezer door open.\"\n</p><blockquote><p><a href=\"#90c21670aae6469482db10dc1451ebdc\"><img alt=\"90c21670aae6469482db10dc1451ebdc\" border=\"0\" src=\"https://d3hvi6t161kfmf.cloudfront.net/images/2026/11/14/90c21670aae6469482db10dc1451ebdc.png\" /></a></p><p> </p></blockquote>\n\n<p>And an anonagain loves\n\"M$ SharePoint security. Need I say more?\"\n</p><blockquote><p><a ",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-20T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/there-s-a-chill-in-the-air"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "e422e1f7406be718",
+    "title": "UK government forced to admit it issued Apple a secret encryption order",
+    "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+    "summary": "<p>Article URL: <a href=\"https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/\">https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50562113\">https://news.ycombinator.com/item?id=50562113</a></p>\n<p>Points: 663</p>\n<p># Comments: 313</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-19T16:21:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/"
+      }
+    ],
+    "score": 17.92
+  },
+  {
+    "id": "c56ac641cb85262f",
+    "title": "Quiz: Python Practice Problems: Parsing CSV Files",
+    "url": "https://realpython.com/quizzes/python-interview-problem-parsing-csv-files/",
+    "summary": "Practice parsing CSV files in Python with the csv module, generators, pytest, and pandas, and get ready to discuss your solutions in an interview.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-20T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/python-interview-problem-parsing-csv-files/"
+      }
+    ],
+    "score": 17.46
+  },
+  {
+    "id": "3eeac95325832f62",
+    "title": "Claude solves two open problems in the physics of black holes",
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+    "summary": "<p>Article URL: <a href=\"https://www.anthropic.com/research/claude-black-hole-physics\">https://www.anthropic.com/research/claude-black-hole-physics</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50563148\">https://news.ycombinator.com/item?id=50563148</a></p>\n<p>Points: 515</p>\n<p># Comments: 242</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-19T17:30:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+      }
+    ],
+    "score": 17.24
+  },
+  {
+    "id": "2d8101a0bf9bf55a",
+    "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+    "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+    "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.\n\nThe method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T05:30:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html"
+      }
+    ],
+    "score": 16.98
+  },
+  {
+    "id": "ac9fb18d80e1b5f8",
+    "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+    "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+    "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS.\n\n\"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while retaining ClickFix and signed binary sideloading techniques,\" Blackpoint",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-20T07:11:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html"
+      }
+    ],
+    "score": 16.91
+  },
+  {
+    "id": "26309710e0351e3d",
+    "title": "What I wish gym owners knew about payments before opening a gym",
+    "url": "https://gocardless.com/blog/clubright-wish-gym-owners-knew",
+    "summary": "ClubRight founder, Wayne Heath on why payments belong on your opening checklist.",
+    "category": "dev",
+    "source_name": "GoCardless Tech Blog",
+    "published": "2026-11-20T09:30:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GoCardless Tech Blog",
+        "url": "https://gocardless.com/blog/clubright-wish-gym-owners-knew"
+      }
+    ],
+    "score": 16.8
+  },
+  {
+    "id": "1bc6cf259e5a6aa2",
+    "title": "These tech outages are giving Y2K, AI agent style",
+    "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+    "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-19T21:42:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "1caedfb975e57129",
+    "title": "Live technical training, wherever you are: A VSLive! benefit for Visual Studio subscribers",
+    "url": "https://devblogs.microsoft.com/visualstudio/live-technical-training-wherever-you-are-a-vslive-benefit-for-visual-studio-subscribers/",
+    "summary": "<p>Developers are constantly speaking to me about how AI tool mastery has become an essential part of their everyday work. But learning how to use these tools effectively takes more than experimenting with a few prompts, and it often requires opportunities to learn that go beyond documentation and tutorials.  Some of the best technical skill development takes [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/visualstudio/live-technical-training-wherever-you-are-a-vslive-benefit-for-visual-studio-subscribers/\">Live technical training, wherever you are: A VSLive! benefit for Visual Studio subscribers </a> appeared first on <a href=\"https://devblogs.microsoft.com/visualstudio\">Visual Studio Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Visual Studio Blog",
+    "published": "2026-11-19T21:30:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Visual Studio Blog",
+        "url": "https://devblogs.microsoft.com/visualstudio/live-technical-training-wherever-you-are-a-vslive-benefit-for-visual-studio-subscribers/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "36cf10f4b46254c9",
+    "title": "PostgreSQL 19 Released",
+    "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+    "summary": "<p><strong><a href=\"https://www.postgresql.org/about/news/postgresql-19-released-3449/\">PostgreSQL 19 Released</a></strong></p>\nMost years PostgreSQL ships a new release in September, but this year's release came two months later <a href=\"https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html\">thanks mainly</a> to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse.</p>\n<p>This release was definitely worth the wait. My favorite new feature is this one:</p>\n<blockquote>\n<p>For applications that send reads to standbys, PostgreSQL 19 adds \"read-your-writes\" consistency with the new <a href=\"https://www.postgresql.org/docs/19/sql-wait.html\"><code>WAIT FOR LSN</code></a> command. A session on a standby can use <code>WAIT FOR LSN</code> to wait until the standby has replayed the write-ahead log (WAL) up to a specific <a href=\"https://www.postgresql.org/docs/19/wal-internals.html\">log sequence numbe",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-19T20:43:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "3358361cf51db7d1",
+    "title": "Hello folks, @jubs here.",
+    "url": "https://engineering.tumblr.com/post/833747462928875520",
+    "summary": "<p>Hello folks, <a class=\"tumblelog\" href=\"https://tmblr.co/MoSBunGyPbUVHos3uHooEFA\">@jubs</a> here.</p><p>I’ve been working on the suggestions you see when adding tags to a post, both when you open the tag box (before you type anything), and also after you start typing.</p><p>I recently launched a change for when you&rsquo;re <b>already typing</b>, which should show more relevant tags used on your blog, and more relevant popular tags on Tumblr. Let me know how that feels!</p><p>For tag suggestions <b>before you start typing</b>, I had implemented suggesting tags related to your last added tag (which are not generated by AI, btw), but I&rsquo;ve reverted the change based on feedback I saw on Tumblr posts and Support tickets. Thank you for sharing your experience.</p><p>Now, I&rsquo;d love to hear, when creating or reblogging a post&hellip;</p><div class=\"poll-post\"><p class=\"poll-question\">What would be a helpful tag suggestion?</p><a class=\"poll-row\" href=\"https://www.tumblr.com/engin",
+    "category": "dev",
+    "source_name": "Tumblr Engineering",
+    "published": "2026-11-19T21:25:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Tumblr Engineering",
+        "url": "https://engineering.tumblr.com/post/833747462928875520"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "a198a0c9f2800928",
+    "title": "Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge",
+    "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+    "summary": "<p>Rapidly evolving AI capabilities are redefining what sites can do for users on the web. With <a href=\"https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/\">on-device AI in Microsoft </p>\n<p>The post <a href=\"https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/\">Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge</a> appeared first on <a href=\"https://blogs.windows.com/msedgedev\">Microsoft Edge Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft Edge Dev Blog",
+    "published": "2026-11-19T23:08:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft Edge Dev Blog",
+        "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "e31322cbd1898f18",
+    "title": "Anthropic rival says companies can (mostly) skip the pricey models",
+    "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+    "summary": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’ trust.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-20T00:26:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/"
+      }
+    ],
+    "score": 15.99
+  },
+  {
+    "id": "f456febfe6018a0b",
+    "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
+    "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+    "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
+    "category": "news",
+    "source_name": "Ars Technica",
+    "published": "2026-11-19T20:29:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/"
+      }
+    ],
+    "score": 15.92
+  },
+  {
+    "id": "a2b2851ad664c32e",
+    "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+    "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+    "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-20T00:43:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/"
+      }
+    ],
+    "score": 15.37
+  },
+  {
+    "id": "0a619267c20d1b19",
+    "title": "Apple may be developing its own AI agent that runs your Mac",
+    "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+    "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-20T00:56:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"
+      }
+    ],
+    "score": 15.27
+  }
+]

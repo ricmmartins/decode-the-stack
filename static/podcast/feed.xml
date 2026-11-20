@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Thu, 19 Nov 2026 20:39:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 13:28:37 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Automation advances; trust still needs evidence</title>
+      <description>Friday’s reporting puts a shared constraint on cloud automation and AI agents: a successful operation is not necessarily proof of the intended outcome. Agent-built infrastructure, skipped deployment hooks, and abused AI trials all sharpen the need to…</description>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-20.mp3?v=b463edd2e8a8" length="11530075" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-20.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-20-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Friday’s reporting puts a shared constraint on cloud automation and AI agents: a successful operation is not necessarily proof of the intended outcome. Agent-built infrastructure, skipped deployment hooks, and abused AI trials all sharpen the need to…</itunes:summary>
+      <itunes:duration>961</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-20.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>AI’s next challenge is the machinery around it</title>
       <description>AI-assisted development is shifting attention from generating code to governing tools, preserving code quality, and operating systems reliably. Thursday’s selection also highlights more conventional engineering priorities: safe deployments, efficient file…</description>
