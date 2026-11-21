@@ -1,0 +1,370 @@
+[
+  {
+    "id": "876e2ec72a52466e",
+    "title": "Why the Inspection Paradox Favors Long Intervals and Large Classes",
+    "url": "https://dev.to/landisaac1/why-the-inspection-paradox-favors-long-intervals-and-large-classes-1pkh",
+    "summary": "<h1>\n  \n  \n  Why the Inspection Paradox Favors Long Intervals and Large Classes\n</h1>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fooabxdgyacr2ve0t4rx2.webp\"><img alt=\"A bus stop sign in Geebung, Brisbane, Australia, displaying departure timetables for the routes serving the stop, photographed early one morning in 2009\" height=\"619\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fooabxdgyacr2ve0t4rx2.webp\" width=\"800\" /></a></p>\n\n<p>The timetable board at Sandra Street stop 47 on Piccadilly Street in Geebung, Brisbane, Australia (photographed in 2009). The average departure interval calculated from the timetable is an average across bus departures. Photograph: John Robert McPherson; source: Wikime",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/landisaac1/why-the-inspection-paradox-favors-long-intervals-and-large-classes-1pkh"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/devanshu_patil/refactoring-finledgers-entire-lending-subsystem-what-i-broke-and-how-i-fixed-it-5fei"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/hisashispace/claude-code-hooks-examples-which-mistakes-need-a-hook-and-how-to-build-one-that-really-stops-them-3nb3"
+      }
+    ],
+    "score": 27.0
+  },
+  {
+    "id": "f77ac2a0b9e615de",
+    "title": "Python Refreshes for Lever Jobs: Separate New Roles from Changed Content",
+    "url": "https://dev.to/vexaloom-labs/python-refreshes-for-lever-jobs-separate-new-roles-from-changed-content-5hi",
+    "summary": "<p>Your ingestion job is green. Your job assistant is still quoting yesterday's requirements from a posting whose <code>id</code> hasn't changed.</p>\n\n<p>Only-new monitoring is an identity feed; refreshing existing answers requires comparing their content.</p>\n\n<p>Lab note 136: can a daily job feed keep role answers current? The catch comes first: the API provides no update or closed-job timestamp. We need repeated observations to notice a rewrite, and those observations can't tell us when the employer made it.</p>\n\n<h2>\n  \n  \n  What did your daily refresh actually refresh?\n</h2>\n\n<p>The job-board Actor's <code>onlyNewSinceLastRun</code> option emits postings unseen by an earlier run with the same query shape. The first run returns everything.</p>\n\n<p>That's useful for new-role alerts. Using it to refresh requirements in retrieval doesn't work: an existing posting can change without becoming a new posting.</p>\n\n<p>We'd make the snapshot setting explicit, even though <code>false</code> ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/vexaloom-labs/python-refreshes-for-lever-jobs-separate-new-roles-from-changed-content-5hi"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ce2a2010e265f238",
+    "title": "BYOL Windows Server on a VPS: licensing done right",
+    "url": "https://dev.to/eqvps/byol-windows-server-on-a-vps-licensing-done-right-37be",
+    "summary": "<p>\"BYOL\" shows up on every Windows VPS page and rarely gets explained. Here is the whole thing, honestly: what the licence is, why the image starts as Evaluation, how to activate, how to switch editions without reinstalling, and which keys are actually allowed on a rented server.</p>\n\n<h2>\n  \n  \n  Why the image is Evaluation\n</h2>\n\n<p>When you deploy a Windows plan, the machine boots <strong>Windows Server 2022 Standard (Desktop Experience)</strong> from a clean image — with the virtio drivers and guest agent already in place, so RDP and the console work out of the box. That image is the <strong>Evaluation</strong> edition.</p>\n\n<p>Evaluation is a genuine, fully functional Windows Server — it just isn't licensed for production, and it runs on a timer. It exists so you can set the server up, test that your software runs, and decide it's the right box <em>before</em> you activate. It is not a way to run Windows for free: the countdown is real, and it's meant to end with you entering a k",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eqvps/byol-windows-server-on-a-vps-licensing-done-right-37be"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1733f547cd4bd147",
+    "title": "Vercel Functions now support request bodies up to 20MiB",
+    "url": "https://vercel.com/changelog/vercel-functions-now-support-request-bodies-up-to-20mib",
+    "summary": "<p><a href=\"https://vercel.com/docs/functions/limitations\">Vercel Functions</a> now accept inbound request bodies up to 20MiB, up from 4.5MB, in Public Beta.</p><p>To turn this on, set the <code>VERCEL_SUPPORT_LARGE_REQUEST_BODY=1</code> environment variable. The opt-in applies to the whole project in the environment where you set it, so you can test the larger limit on preview before enabling it in production. It requires the project's functions to use the performance memory setting of 4GB. It applies to functions on the Node.js, Python, and Bun runtimes, and to Routing Middleware. Functions and Routing Middleware on the Edge runtime keep the 4.5MB cap and return 413 on oversize bodies, so moving them onto the larger limit means switching to the Node.js runtime with <code>runtime: 'nodejs'</code>, or <code>proxy.ts</code> in Next.js.</p><p>When a project opts in, Routing Middleware receives request headers and metadata but no request body, enforced at the project level. Middleware sti",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-20T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/vercel-functions-now-support-request-bodies-up-to-20mib"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "1aa2c1d5f2ee7696",
+    "title": "Vercel completes ISO/IEC 42001:2023 certification",
+    "url": "https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification",
+    "summary": "<p>Vercel has completed its ISO/IEC 42001:2023 certification, meeting the international standard for AI management systems.</p><p>This certification gives our customers confidence to ship fast with agents on Vercel, demonstrating how Vercel designs, builds, operates, and governs our AI products.</p><p>Our AI management system covers Vercel’s underlying infrastructure and core AI products, including AI Gateway, Vercel Agent, v0, AI-based open source software and frameworks, as well as the people and processes behind them.</p><p>Vercel’s certificate is available <a href=\"https://www.schellman.com/certificate-directory?certificateNumber=1929712-1\">here</a>, and additional audit documentation is available through our <a href=\"https://security.vercel.com/\">Trust Center</a>.</p><h2>What is ISO 42001?</h2><p>ISO/IEC 42001:2023 is the international standard for <a href=\"https://www.iso.org/artificial-intelligence/ai-management-systems\">AI management systems</a> and applies to any organization ",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-20T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "b55300b1572db03d",
+    "title": "From AI agents to fishing dashboards: The latest stories from Unprompted, the Grafana Labs engineering blog",
+    "url": "https://grafana.com/blog/from-ai-agents-to-fishing-dashboards-the-latest-stories-from-unprompted/",
+    "summary": "<p>Some of the best technical insights come from sharing what you&#039;ve built and what you&#039;ve learned along the way.</p><p>That&#039;s one of the core ideas behind <a href=\"https://medium.com/grafana-labs\"><u>Unprompted</u></a>, the blog we launched on Medium earlier this year to give Grafana Labs engineers and our broader OSS community a space to showcase their work. From behind-the-scenes engineering stories and technical deep dives to creative use cases for Grafana (a fishing dashboard, anyone?), it&#039;s a place to share ideas and learn from one another.</p><p>To give you a sense of what you&#039;ll find, we&#039;ve rounded up a few recent posts covering everything from Grafana&#039;s architecture to monitoring your favorite reality TV show.</p><p></p><h2><strong>Behind the scenes at Grafana Labs</strong></h2><p>These posts explore some of the technical challenges our teams have tackled at Grafana Labs, including the decisions, tradeoffs, and lessons that shaped their work.",
+    "category": "devops",
+    "source_name": "Grafana Blog",
+    "published": "2026-11-20T15:07:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grafana Blog",
+        "url": "https://grafana.com/blog/from-ai-agents-to-fishing-dashboards-the-latest-stories-from-unprompted/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "1b3b22243708595b",
+    "title": "Copilot Code Reviews for Azure Repos is generally available",
+    "url": "https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-is-generally-available/",
+    "summary": "<p>Copilot Code Review for Azure Repos is now generally available. Use GitHub Copilot to review pull requests, identify issues, and suggest code changes.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-is-generally-available/\">Copilot Code Reviews for Azure Repos is generally available</a> appeared first on <a href=\"https://devblogs.microsoft.com/devops\">Azure DevOps Blog</a>.</p>",
+    "category": "devops",
+    "source_name": "Azure DevOps Blog",
+    "published": "2026-11-20T18:41:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Azure DevOps Blog",
+        "url": "https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-is-generally-available/"
+      }
+    ],
+    "score": 13.35
+  },
+  {
+    "id": "075ee3aa4e48fdbc",
+    "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+    "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+    "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\"\n\nThe feature applies to agentic systems built into iOS 27 and on Android versions where the encrypted messaging platform can detect an AI assistant attempting to read the Signal",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-21T08:49:20+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
+      }
+    ],
+    "score": 22.92
+  },
+  {
+    "id": "40db5e574f82cad0",
+    "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+    "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+    "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown.\n\nThe same attack could be extended to reach the credentials Muse stores for the user's connected accounts.\n\nThe work was a laboratory demonstration, not an attack on real users, and it stayed inside the individual user's",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-21T11:53:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
+      }
+    ],
+    "score": 19.98
+  },
+  {
+    "id": "b3773fd0cd9f9dc4",
+    "title": "Quoting Ravi Vakil",
+    "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+    "summary": "<blockquote cite=\"https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\"><p>Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\">Ravi Vakil</a>, Hurried Announcement: Alessandro Masullo GRH</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/mathematics\">mathematics</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-20T19:21:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "93d06300067bb224",
+    "title": "Cohere Labs führt Tiny Aya für Mehrsprach-KI ein | Cohere",
+    "url": "https://cohere.com/de/blog/cohere-labs-tiny-aya",
+    "summary": "Cohere Labs stellt Tiny Aya vor, ein kompaktes, offenes Mehrsprachmodell, das leistungsstarke KI auf bescheidener Hardware für über 70 Sprachen verfügbar macht.",
+    "category": "ai",
+    "source_name": "Cohere Blog",
+    "published": "2026-02-17T04:00:07-05:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/ja/blog/cohere-labs-tiny-aya"
+      },
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/de/blog/cohere-labs-tiny-aya"
+      },
+      {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/blog/cohere-labs-tiny-aya"
+      }
+    ],
+    "score": 15.6
+  },
+  {
+    "id": "066971503e5f4f40",
+    "title": "“We are not querying like humans anymore”: OpenSearch’s Bianca Lewis on why AI agent mistakes look like successes",
+    "url": "https://thenewstack.io/opensearch-ai-agent-observability/",
+    "summary": "<img alt=\"In this episode of The New Stack podcast, recorded at AGNTCon + MCPCon 2026, Frederic Lardinois speaks with Bianca Lewis, Executive Director of the OpenSearch Software Foundation, about why unified, open source data infrastructure is becoming essential for agentic AI.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/4aa50960-for-thumbnail-23-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>This situation is more common than one might think: An AI agent calls the wrong API, gets a perfectly good</p>\n<p>The post <a href=\"https://thenewstack.io/opensearch-ai-agent-observability/\">“We are not querying like humans anymore”: OpenSearch’s Bianca Lewis on why AI agent mistakes look like successes</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-20T19:37:08+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/opensearch-ai-agent-observability/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-agent-memory-boundaries/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-claude-code-verification/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "e86dc70cfcab4cde",
+    "title": "How Google Traced GKE API Timeouts to a Linux Kernel TCP Bug",
+    "url": "https://www.infoq.com/news/2026/11/gke-kernel-network-bug/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/gke-kernel-network-bug/en/headerimage/generatedHeaderImage-1794082671635.jpg\" /><p>Google recently detailed how three interacting bugs across Google Kubernetes Engine (GKE), Private Service Connect, and the Linux kernel caused intermittent Kubernetes API connectivity failures, blocking around 800 developers from deploying to production.</p> <i>By Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-21T09:44:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/gke-kernel-network-bug/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.1
+  },
+  {
+    "id": "772164eb37d23d2f",
+    "title": "Checking Borat quotes with Python's difflib: Wikiquote vs the film transcript",
+    "url": "https://dev.to/jeremiah_say/checking-borat-quotes-with-pythons-difflib-wikiquote-vs-the-film-transcript-5489",
+    "summary": "<p>Most movie quote pages copy each other. One site types a line from memory, another copies it, and soon \"Very nice!\" is followed by words nobody in the film ever said.</p>\n\n<p>For our <a href=\"https://graciousquotes.com/borat-quotes/\" rel=\"noopener noreferrer\">Borat quotes page</a> we used a simple rule: <strong>a film line goes on the page only if two separate texts agree on it.</strong> The first is Wikiquote. The second is a transcript of the film. A short Python script decides whether they agree.</p>\n\n<p>Of the 97 Borat lines the script checked, 74 passed. This post covers how it decides, why the other 23 failed, and a mistake the check missed that I found while writing this.</p>\n\n<h2>\n  \n  \n  The two witnesses\n</h2>\n\n<p><strong>Witness 1: Wikiquote.</strong> We fetch each film's page as wikitext (<code>action=raw</code>) and parse it into JSON: one record per line, with the speaker and the film. The wording on our page is copied from this file, never retyped.</p>\n\n<p><strong>Wit",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jeremiah_say/checking-borat-quotes-with-pythons-difflib-wikiquote-vs-the-film-transcript-5489"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a37b5963fbb84af9",
+    "title": "L: Liskov Substitution Principle (SOLID Principles with Examples)",
+    "url": "https://dev.to/divakarupadhyay/l-liskov-substitution-principle-solid-principles-with-examples-3236",
+    "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/solid/lessons/l-liskov-substitution-principle\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, lesson 3 of 8 in the <a href=\"https://devladder.pages.dev/courses/solid\" rel=\"noopener noreferrer\">SOLID Principles with Examples</a> course)</p>\n\n<p>If <code>S</code> is a subtype of <code>T</code>, objects of type <code>T</code> may be replaced by objects of type <code>S</code> <strong>without breaking the program</strong>. Subclasses must honour the base class's contract: no stronger preconditions, no weaker postconditions, no surprise exceptions.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight csharp\"><code><span class=\"c1\">// ❌ Classic violation: Square changes Rectangle's behaviour</span>\n<span class=\"k\">public</span> <span class=\"k\">class</span> <span class=\"nc\">Rectangle</span> <span class=\"p\">{</span> <span class=\"k\">public</span> <span class=\"k\">virtua",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/divakarupadhyay/l-liskov-substitution-principle-solid-principles-with-examples-3236"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e9c694706589bcbf",
+    "title": "5 automation workflows that save small teams 20+ hours every week",
+    "url": "https://dev.to/kawsarlog/5-automation-workflows-that-save-small-teams-20-hours-every-week-io5",
+    "summary": "<p><em>The typical small business owner loses 14 hours a week to tasks that software could do faster, better, and without a single sick day. It never shows up as waste on the income statement. It vanishes into payroll, written off as \"just doing the job.\"</em></p>\n\n<p>Consider a 5-person service business paying an average of $25 an hour. It spends $10,000 to $15,000 a month on administrative overhead alone, and most of that can be automated. The figure doesn't come from big, memorable tasks. It comes from two-minute chores that repeat fifty times a week: manually logging a lead into a CRM, sending the same welcome email with one name swapped, building a weekly report from three different spreadsheets, or chasing an invoice that has sat unpaid for eleven days.</p>\n\n<p>None of these is a complex problem. They're repetitive ones, and repetitive problems with predictable inputs and outputs are exactly what no-code automation handles well in 2026.</p>\n\n<p>The five workflows below recover mo",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kawsarlog/5-automation-workflows-that-save-small-teams-20-hours-every-week-io5"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "202b301d7377fb9c",
+    "title": "We shipped a browser game to the Microsoft Store as a $0.99 app",
+    "url": "https://dev.to/makerio/we-shipped-a-browser-game-to-the-microsoft-store-as-a-099-app-5dfl",
+    "summary": "<p>Our games are small HTML5 titles that already run in any browser. The Microsoft Store accepts Progressive Web Apps, so we tried selling two of them there for $0.99. Both passed certification on the first try. Here is what it took.</p>\n\n<h2>\n  \n  \n  1. Make the game a real PWA\n</h2>\n\n<p>The Store packages a website, so the website has to behave like an app:</p>\n\n<ul>\n<li>a <code>manifest.webmanifest</code> with name, icons (192 and 512 px), <code>display: fullscreen</code> and <code>start_url: ./</code>;</li>\n<li>a service worker that caches every file of the game, so it starts with no network at all. We version the cache with the build time and delete old caches on activate;</li>\n<li>no dependence on anything external to start. If an SDK script fails to load offline, the game must boot anyway.</li>\n</ul>\n\n<p>We tested the last point the boring way: load the page once, switch the browser to offline, reload. If the canvas draws, the app will work on a plane.</p>\n\n<h2>\n  \n  \n  2. Reser",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/makerio/we-shipped-a-browser-game-to-the-microsoft-store-as-a-099-app-5dfl"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4d78849622d000ef",
+    "title": "Making a 3D glass portfolio fast",
+    "url": "https://dev.to/ankushyadavdev/making-a-3d-glass-portfolio-fast-1ik8",
+    "summary": "<p>Five changes took this portfolio from about 46 fps mid-page to 60 fps in the hero and the mid fifties lower down. It removed backdrop blur over the canvas, dropped blend modes, froze the orbs, gave the WebGL field adaptive quality, and deferred its scripts.</p>\n\n<h2>\n  \n  \n  Why was the first version slow?\n</h2>\n\n<p>The site runs five apps as live demos inside phone and laptop frames. Behind them a Three.js field draws 2,600 dust particles, a 150-node synaptic lattice with travelling pulses, and holographic shards. The canvas changes on every frame.</p>\n\n<p>The first version held up in the hero and then dropped to about 46 fps mid-page on a mid laptop. The WebGL code was not the main cost. The damage came from the CSS layered on top of the canvas.</p>\n\n<p>Profiling put the causes in this order:</p>\n\n<ul>\n<li>backdrop-filter on every glass panel over a canvas that changes every frame</li>\n<li>mix-blend-mode on the custom cursor and the grain layer</li>\n<li>three large blurred orbs re",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ankushyadavdev/making-a-3d-glass-portfolio-fast-1ik8"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e9af01b84f14ebd8",
+    "title": "An eye test in the browser: turning CSS pixels into millimetres with a bank card",
+    "url": "https://dev.to/adrian_kereky_23e9b987b1b/an-eye-test-in-the-browser-turning-css-pixels-into-millimetres-with-a-bank-card-eai",
+    "summary": "<p>A distance eye test has one hard requirement: the letter on the screen has to be a known physical size, at a known distance. The browser gives you neither. A CSS pixel isn't a physical unit, there's no API that reports millimetres, and <code>devicePixelRatio</code> tells you about device pixels, not about the size of the glass.</p>\n\n<p>We built a free eye test that runs in a browser tab anyway (<a href=\"https://anpheros.com/eye-test\" rel=\"noopener noreferrer\">anpheros.com/eye-test</a>). This post covers how it gets a physical size out of a web page, the maths that turns a distance into a letter height, and where the precision quietly runs out.</p>\n\n<h2>\n  \n  \n  Step 1: a ruler everyone carries\n</h2>\n\n<p>Bank cards, ID cards and most loyalty cards share one format, ISO/IEC 7810 ID-1: 85.60 × 53.98 mm. That's a physical reference almost everyone has in reach.</p>\n\n<p>So the first screen shows a card-shaped box and a slider. You hold a real card flat against the screen and drag until t",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/adrian_kereky_23e9b987b1b/an-eye-test-in-the-browser-turning-css-pixels-into-millimetres-with-a-bank-card-eai"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "dd640b826c48fd23",
+    "title": "The Comment That Ruined My Thursday",
+    "url": "https://dev.to/aheadkit/the-comment-that-ruined-my-thursday-mb8",
+    "summary": "<p>09:12. I open the pull request and there it is, three words under a line of my code, in red.</p>\n\n<p>\"This is wrong.\"</p>\n\n<p>No line number beyond the one it sits on. No \"because\". No \"try this instead\". Just the three words, and a name beside them I recognise from the team list, and a little grey timestamp that says it arrived at 08:47, twenty-five minutes before I got to my desk.</p>\n\n<p>I read it again. Then I read it a third time, slower, as if the extra words might be hiding between the three that are there. They are not.</p>\n\n<p>The line it sits on is mine. It sorts a list of invoices by date, and I wrote it on Tuesday afternoon, in a hurry, because the dashboard needed it and the afternoon was already gone. I remember writing it. I remember feeling clever about it for about four seconds, which is the usual length of time I feel clever about anything I write.</p>\n\n<p>09:14. I click on the file. The function is eleven lines long. I read it the way you read a text from someone ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/aheadkit/the-comment-that-ruined-my-thursday-mb8"
+      }
+    ],
+    "score": 21.0
+  }
+]

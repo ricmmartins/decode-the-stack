@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Fri, 20 Nov 2026 13:28:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 13:23:03 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Automation raises the stakes for verification</title>
+      <description>Saturday's briefing connects a larger serverless request limit, generally available AI code review, and new questions about what automated systems can see and trust. Across infrastructure incidents, data refreshes, and browser engineering, the strongest…</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-21.mp3?v=c9a716da1e3f" length="11986173" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-21.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-21-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Saturday's briefing connects a larger serverless request limit, generally available AI code review, and new questions about what automated systems can see and trust. Across infrastructure incidents, data refreshes, and browser engineering, the strongest…</itunes:summary>
+      <itunes:duration>999</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-21.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Automation advances; trust still needs evidence</title>
       <description>Friday’s reporting puts a shared constraint on cloud automation and AI agents: a successful operation is not necessarily proof of the intended outcome. Agent-built infrastructure, skipped deployment hooks, and abused AI trials all sharpen the need to…</description>

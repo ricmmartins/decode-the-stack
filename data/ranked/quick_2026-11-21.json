@@ -1,0 +1,524 @@
+[
+  {
+    "id": "131655dce8cec1f4",
+    "title": "How Panoramic Properties caught a missing field in its leasing workflow",
+    "url": "https://zapier.com/blog/panoramic-properties-next-gen-zaps",
+    "summary": "Adam Julien has a rule about Fridays. \"I never want to put anything live on a Friday and then be gone for the weekend,\" he says. He is a marketing coordinator at Panoramic Properties, with some programming experience and a background in game development. Panoramic Properties is a multifamily leasing company with about 50 buildings across 11 cities. Most of its leads come through Google Ads lead forms, and each one needs to land in Freshsales, the company's CRM, with enough detail for a leasing a",
+    "category": "dev",
+    "source_name": "Zapier Engineering",
+    "published": "2026-11-25T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Zapier Engineering",
+        "url": "https://zapier.com/blog/panoramic-properties-next-gen-zaps"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "29614e9e4ccf8685",
+    "title": "We promoted developers into architects without informing them",
+    "url": "https://manidoraisamy.com/developer-to-architect.html",
+    "summary": "<p>Article URL: <a href=\"https://manidoraisamy.com/developer-to-architect.html\">https://manidoraisamy.com/developer-to-architect.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50579331\">https://news.ycombinator.com/item?id=50579331</a></p>\n<p>Points: 474</p>\n<p># Comments: 259</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-20T18:17:51+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://manidoraisamy.com/developer-to-architect.html"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://architectlabs.com/blog/frostbite"
+      }
+    ],
+    "score": 20.1
+  },
+  {
+    "id": "4f58013b30da13d7",
+    "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+    "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week.\n\nThe flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI Label 0.8.5 and earlier in the default setup,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-21T11:03:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "c27c63bd80d28049",
+    "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-129448 (CVSS score: 9.8) - A deserialization of untrusted data vulnerability in",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-21T08:49:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "5ba28bb7256677c7",
+    "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+    "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+    "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG.\n\nThe GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions.\n\nThe bug, tracked as CVE-2026-129975, affects all software that uses GPGME before version 2.3.0,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-21T11:05:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
+      }
+    ],
+    "score": 19.92
+  },
+  {
+    "id": "4014daaee52e5db1",
+    "title": "Clone Your Voice: Local Text-to-Speech With Chatterbox and the Laravel AI SDK",
+    "url": "https://freek.dev/3229-clone-your-voice-local-text-to-speech-with-chatterbox-and-the-laravel-ai-sdk",
+    "summary": "<p>Nico Devs shows how to clone your voice locally with Chatterbox and connect it to the Laravel AI SDK. The guide covers generating voiceovers from documents, queueing audio generation, and testing with the SDK's fakes.</p>\n\n\n<a href=\"https://tighten.com/insights/clone-your-voice-local-text-to-speech-with-chatterbox-and-the-laravel-ai-sdk/\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-21T12:30:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3229-clone-your-voice-local-text-to-speech-with-chatterbox-and-the-laravel-ai-sdk"
+      }
+    ],
+    "score": 19.57
+  },
+  {
+    "id": "21dc019b7791d660",
+    "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
+    "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
+    "summary": "<p>This <a href=\"https://www.worldatlas.com/oceans/the-largest-squid-ever-filmed.html\"> is the story</a> of the largest squid ever filmed, in December 2006 near Japan&#8217;s Ogasawara Islands.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-20T22:04:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html"
+      }
+    ],
+    "score": 19.48
+  },
+  {
+    "id": "3922b831a802f168",
+    "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+    "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+    "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
+    "category": "security",
+    "source_name": "Krebs on Security",
+    "published": "2026-11-21T00:36:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/"
+      }
+    ],
+    "score": 18.85
+  },
+  {
+    "id": "7c823a65a4d0c9c4",
+    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "summary": "<p>Article URL: <a href=\"https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off\">https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50574383\">https://news.ycombinator.com/item?id=50574383</a></p>\n<p>Points: 357</p>\n<p># Comments: 652</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-20T13:29:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off"
+      }
+    ],
+    "score": 18.06
+  },
+  {
+    "id": "e13688f7520fb4ae",
+    "title": "Fragments: November 20",
+    "url": "https://martinfowler.com/fragments/2026-11-20.html",
+    "summary": "<p>Marcus Borg recounts an experiment to investigate <a href=\"https://codescene.com/blog/does-code-quality-affect-ai-token-costs\">if healthy code was cheaper for agents to review</a>.</p>\n\n<blockquote>\n  <p>Between a typical unhealthy pull request (CodeHealth 2.8) and a typical healthy one (9.7), that adds up to 22 to 35%.</p>\n</blockquote>\n\n<p>The measures of health come from CodeScene. The experiment looked at three LLMs, 465 pull requests on 246 open source repositories. Each pull request was put through a review and fix pipeline involving five agents. They also looked at which code smells led to increased costs: they highlighted Complex Method and Complex Conditional from the smells identified by CodeScene.</p>\n\n<p>Another drop of evidence that good quality code matters in agentic engineering.</p>\n\n<p> ❄                ❄                ❄                ❄                ❄</p>\n\n<p><a href=\"https://x.com/GergelyOrosz/status/2121989104204132472\">Gergely Orosz:</a></p>\n\n<blockquote>\n  <",
+    "category": "dev",
+    "source_name": "Martin Fowler",
+    "published": "2026-11-20T18:38:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/fragments/2026-11-20.html"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "6d8053fb12eb051e",
+    "title": "Why there are still no non-WebKit browsers on iOS",
+    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+    "summary": "<p>Article URL: <a href=\"https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/\">https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50575644\">https://news.ycombinator.com/item?id=50575644</a></p>\n<p>Points: 360</p>\n<p># Comments: 215</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-20T15:03:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/"
+      }
+    ],
+    "score": 17.7
+  },
+  {
+    "id": "02fca2f17540fa94",
+    "title": "I'll never buy Framework hardware again",
+    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+    "summary": "<p>Article URL: <a href=\"https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/\">https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50576855\">https://news.ycombinator.com/item?id=50576855</a></p>\n<p>Points: 800</p>\n<p># Comments: 592</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-20T16:06:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/"
+      }
+    ],
+    "score": 17.52
+  },
+  {
+    "id": "a05ae47fd04bdb31",
+    "title": "The Outages Are Just Getting Started",
+    "url": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
+    "summary": "AI is forcing companies to patch their systems faster as attackers race to exploit newly discovered vulnerabilities. Welcome to internet outage hell.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-21T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/"
+      }
+    ],
+    "score": 17.49
+  },
+  {
+    "id": "7246d9d22ebff5ba",
+    "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+    "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+    "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-20T20:00:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/"
+      }
+    ],
+    "score": 17.3
+  },
+  {
+    "id": "93acfb7cd3b2ee63",
+    "title": "Startup sues Apple in India over tap-to-share contacts feature",
+    "url": "https://techcrunch.com/2026/11/20/startup-sues-apple-in-india-over-tap-to-share-contacts-feature/",
+    "summary": "A U.S. startup is seeking $162 million in damages and an injunction to impact iPhone and Apple Watch imports to India.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T04:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/20/startup-sues-apple-in-india-over-tap-to-share-contacts-feature/"
+      }
+    ],
+    "score": 17.18
+  },
+  {
+    "id": "bcbc4b1e62904e04",
+    "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+    "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+    "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-20T20:24:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/"
+      }
+    ],
+    "score": 17.13
+  },
+  {
+    "id": "207da929c9e6bc5c",
+    "title": "GnuPG Security Advisory for GPGME (T8557,CVE-2026-129975)",
+    "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+    "summary": "<p><a href=\"https://lobste.rs/s/vxokkj/gnupg_security_advisory_for_gpgme_t8557\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-21T10:09:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html"
+      }
+    ],
+    "score": 16.96
+  },
+  {
+    "id": "e17d088aefc5e269",
+    "title": "If you stop writing code, you also get worse at reviewing it",
+    "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+    "summary": "<p>Article URL: <a href=\"https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/\">https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50573886\">https://news.ycombinator.com/item?id=50573886</a></p>\n<p>Points: 359</p>\n<p># Comments: 175</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-20T12:41:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/"
+      }
+    ],
+    "score": 16.86
+  },
+  {
+    "id": "db8631a8e57dc2ce",
+    "title": "Meta TLX, a Native GPU Compiler Extension Supporting Advanced Hardware Capabilities",
+    "url": "https://www.infoq.com/news/2026/11/meta-triton-tlx-gpu-compiler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/meta-triton-tlx-gpu-compiler/en/headerimage/meta-java-kotlin-port-1795195032767.jpeg\" /><p>Meta developed Triton Low-Level Extensions (TLX), designed to bridge the gap between high-level GPU programming abstractions and the low-level execution control required to fully exploit modern GPU architectures.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-20T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/meta-triton-tlx-gpu-compiler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 16.79
+  },
+  {
+    "id": "30b08b5b0d122d9f",
+    "title": "Laranon: Reversible PII Anonymization for Laravel and LLMs",
+    "url": "https://laravel-news.com/laranon-pii-anonymization?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/laranon-pii-anonymization\"><img alt=\"Laranon: Reversible PII Anonymization for Laravel and LLMs\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/Laranon-LN.png\" /></a></p>\n                                        <hr />\n\n                    <p>Laranon finds personal data in Laravel apps and replaces it with tokens before it reaches an LLM, then puts the real values back in the model&#039;s reply.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/laranon-pii-anonymization\">Laranon: Reversible PII Anonymization for Laravel and LLMs</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-20T01:44:50+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/pgjumbo-postgresql-client?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      },
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/laranon-pii-anonymization?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "a68434f12a102c2c",
+    "title": "A seminal moment in computing",
+    "url": "https://changelog.com/podcast/692",
+    "summary": "MG, founder and CEO of WorkOS, is back to talk about leading a company through what DHH called a seminal moment in computing. He explains Atlas, the AI coworker WorkOS built for itself and then launched, why agents will soon choose and sign up for your tech stack, and why this moment feels closer to fire than to the iPhone. Then he gets practical: starting a company is easier than ever, but product-market fit is harder, so be a heat-seeking missile for pain, pick customers you like, and stop calling yourself non-technical.",
+    "category": "dev",
+    "source_name": "Changelog",
+    "published": "2026-11-20T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Changelog",
+        "url": "https://changelog.com/podcast/692"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "e5c65e404d1da616",
+    "title": "Agent Anomaly Detection: Safeguarding agents across other clouds",
+    "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
+    "summary": "Agent Anomaly Detection now monitors ADK agents running across AWS, Azure, or on-premises by analyzing their traces and logs in your Google Cloud project. By ingesting OpenTelemetry-formatted data through the Telemetry API, it evaluates full conversations for behavioral drift without needing access to the agent's underlying runtime. This enables security teams to detect risks like rogue behaviors, tool misuse, and resource exhaustion across multi-cloud environments.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/"
+      }
+    ],
+    "score": 15.7
+  },
+  {
+    "id": "f7522af85180c0ea",
+    "title": "How to handle user, connector, and agent auth in Gemini Enterprise with a custom UI",
+    "url": "https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/",
+    "summary": "When building a custom enterprise UI on top of Gemini Enterprise's :streamAssist API, developers must manually implement three core authentication layers. These include authenticating users or workloads via Google Identity or Workforce/Workload Identity Federation, managing third-party 3-legged OAuth (3LO) for Federated Connectors through the Keystore, and configuring on-demand per-tool OAuth for custom ADK agents using Vertex AI Agent Engine and GCP Auth Manager.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/"
+      }
+    ],
+    "score": 15.68
+  },
+  {
+    "id": "889024b3aff0370d",
+    "title": "Experts warn: Nearly everyone in AI is susceptible to a honey-trap scheme right now",
+    "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+    "summary": "Techies are building technology that can advance all aspects of the world — but can they protect their hearts? That's the vulnerability that honey pots exploit.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-20T20:58:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/"
+      }
+    ],
+    "score": 15.6
+  },
+  {
+    "id": "e931a9065007528e",
+    "title": "Another failed attempt to get the icon for the icon for the .. parent folder",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261120-00/?p=112883/",
+    "summary": "<p>Trying to generate a path that turns out to be invalid.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261120-00/?p=112883/\">Another failed attempt to get the icon for the icon for the &lt;TT&gt;..&lt;/TT&gt; parent folder</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-11-20T15:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261120-00/?p=112883/"
+      },
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261119-00/?p=112879/"
+      }
+    ],
+    "score": 15.5
+  },
+  {
+    "id": "58347842b9eb34df",
+    "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+    "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+    "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-20T19:53:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/"
+      }
+    ],
+    "score": 15.4
+  },
+  {
+    "id": "0d87d9a9e965c70b",
+    "title": "Check what your AI agents do before they do it, with Semantic governance policies",
+    "url": "https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/",
+    "summary": "Semantic governance policies enable developers to govern AI agents by evaluating every proposed tool call inline before execution. Operating via Agent Gateway, the policy engine checks each action against user intent and plain-language rules to prevent unauthorized data sharing and prompt injection attacks. Developers can easily attach natural-language constraints to their agents and monitor auditable verdicts through Cloud Logging.",
+    "category": "dev",
+    "source_name": "Google Developers Blog",
+    "published": null,
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/"
+      }
+    ],
+    "score": 15.36
+  },
+  {
+    "id": "e432c3004423cf14",
+    "title": "Quoting Levent Alpöge",
+    "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+    "summary": "<blockquote cite=\"https://alpo.ge/remark.pdf\"><p>I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a principal guiding light, but what I saw during the course of progress so amazed me that I believe it is one dawn across science of something far greater. [...]</p>\n<p>Claude and I have had a great time together with such breadth in recent months, but this time Claude far outpaced me near the finish line. No, Claude flew, and danced, and sparkled near that finish line.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://alpo.ge/remark.pdf\">Levent Alpöge</a>, alpo.ge/remark.pdf</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/anthropic\">ant",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-20T16:30:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "7abe067a519bd727",
+    "title": "Andy Clarke answers six questions about Standout Designs for the Web",
+    "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/",
+    "summary": "<p class=\"wp-block-paragraph\">Web designer, author, and <a href=\"https://stuffandnonsense.co.uk\" rel=\"nofollow noopener\">Stuff &#38; Nonsense</a> founder Andy Clarke has released <em><a href=\"/product/standout-web-design-for-the-web/\">Standout Designs for the Web</a></em>, a new e-book that encourages designers to move beyond familiar templates and conventional layouts to create more personality-driven websites.</p>\n<p class=\"wp-block-paragraph\">The book draws &#8230;</p>\n<hr />\n<p><small><a href=\"https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/\" rel=\"nofollow\">Andy Clarke answers six questions about Standout Designs for the Web</a> originally handwritten and published with love on <a href=\"https://css-tricks.com\" rel=\"nofollow\">CSS-Tricks</a>. You should really <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a> as well.</p>",
+    "category": "dev",
+    "source_name": "CSS-Tricks",
+    "published": "2026-11-20T15:03:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "4068ad82a525a99d",
+    "title": "Borealis Isolated Postgres: Serious Database Security for the Common Runtime",
+    "url": "https://www.heroku.com/blog/borealis-isolated-postgres/",
+    "summary": "<p>The power of Heroku lies in its simplicity. Developers can spin up an entire app stack, complete with its own database and caching layers with just a single command. No need for the specialized, time-consuming work of managing servers and virtual machines. This convenience applies to interacting with your app stack as well. Need to apply some database schema migrations or populate your database with reference data? Just connect directly to the PostgreSQL database server using your app’s username and password and run your scripts.</p>\n<p>The post <a href=\"https://www.heroku.com/blog/borealis-isolated-postgres/\">Borealis Isolated Postgres: Serious Database Security for the Common Runtime</a> appeared first on <a href=\"https://www.heroku.com\">Heroku</a>.</p>",
+    "category": "dev",
+    "source_name": "Heroku Engineering",
+    "published": "2026-11-20T17:24:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Heroku Engineering",
+        "url": "https://www.heroku.com/blog/borealis-isolated-postgres/"
+      }
+    ],
+    "score": 14.0
+  }
+]

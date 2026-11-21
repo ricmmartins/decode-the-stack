@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 11,
+      "title": "Opening"
+    },
+    {
+      "startTime": 140,
+      "title": "A browser eye test makes the measurement problem tangible:..."
+    },
+    {
+      "startTime": 302,
+      "title": "The Meta Muse demonstration makes the trust boundary..."
+    },
+    {
+      "startTime": 454,
+      "title": "The GPGME warning makes the security pressure concrete:..."
+    },
+    {
+      "startTime": 608,
+      "title": "The security stories put a useful distinction on the table:..."
+    },
+    {
+      "startTime": 774,
+      "title": "To close, agent safety has two distinct angles. Google says..."
+    }
+  ]
+}
