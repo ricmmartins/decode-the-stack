@@ -1,59 +1,59 @@
 {
-  "updated_at": "2026-11-21T13:22:36.042822+00:00",
+  "updated_at": "2026-11-22T13:23:05.962899+00:00",
   "configured_feeds": 242,
-  "editions_published": 19,
-  "headlines_published": 920,
-  "sources_credited": 86,
-  "latest_edition_date": "2026-11-21",
-  "latest_headlines": 50,
+  "editions_published": 20,
+  "headlines_published": 960,
+  "sources_credited": 88,
+  "latest_edition_date": "2026-11-22",
+  "latest_headlines": 40,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 211
+      "headlines": 222
     },
     {
       "name": "InfoQ",
-      "headlines": 87
+      "headlines": 91
     },
     {
       "name": "The Hacker News",
-      "headlines": 86
+      "headlines": 88
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 62
+      "headlines": 63
     },
     {
       "name": "TechCrunch",
-      "headlines": 55
+      "headlines": 59
     },
     {
       "name": "The New Stack",
-      "headlines": 36
+      "headlines": 41
     },
     {
       "name": "Simon Willison",
-      "headlines": 28
+      "headlines": 30
     },
     {
       "name": "The Verge - Tech",
-      "headlines": 28
+      "headlines": 29
     },
     {
       "name": "Vercel Blog",
       "headlines": 25
     },
     {
-      "name": "Real Python",
-      "headlines": 22
+      "name": "Lobsters",
+      "headlines": 24
     },
     {
-      "name": "Lobsters",
-      "headlines": 21
+      "name": "Real Python",
+      "headlines": 23
     },
     {
       "name": "Wired",
-      "headlines": 20
+      "headlines": 21
     },
     {
       "name": "OpenAI Blog",
@@ -64,16 +64,16 @@
       "headlines": 16
     },
     {
+      "name": "Freek Van der Herten",
+      "headlines": 15
+    },
+    {
       "name": "Schneier on Security",
       "headlines": 15
     },
     {
       "name": "The Daily WTF",
       "headlines": 15
-    },
-    {
-      "name": "Freek Van der Herten",
-      "headlines": 14
     },
     {
       "name": "CNCF Blog",
@@ -124,6 +124,10 @@
       "headlines": 5
     },
     {
+      "name": "LangChain Blog",
+      "headlines": 5
+    },
+    {
       "name": "Microsoft 365 Developer Blog",
       "headlines": 5
     },
@@ -133,10 +137,6 @@
     },
     {
       "name": "AWS Blog",
-      "headlines": 4
-    },
-    {
-      "name": "LangChain Blog",
       "headlines": 4
     },
     {
@@ -232,6 +232,10 @@
       "headlines": 2
     },
     {
+      "name": "Troy Hunt",
+      "headlines": 2
+    },
+    {
       "name": "Twilio Blog",
       "headlines": 2
     },
@@ -269,6 +273,10 @@
     },
     {
       "name": "Dropbox Tech",
+      "headlines": 1
+    },
+    {
+      "name": "Eli Bendersky",
       "headlines": 1
     },
     {
@@ -340,11 +348,11 @@
       "headlines": 1
     },
     {
-      "name": "Troy Hunt",
+      "name": "Tumblr Engineering",
       "headlines": 1
     },
     {
-      "name": "Tumblr Engineering",
+      "name": "Will Larson (Irrational Exuberance)",
       "headlines": 1
     },
     {
@@ -355,15 +363,15 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 670
+      "headlines": 704
     },
     {
       "name": "Security",
-      "headlines": 117
+      "headlines": 120
     },
     {
       "name": "AI/ML",
-      "headlines": 54
+      "headlines": 57
     },
     {
       "name": "Cloud",
@@ -469,6 +477,11 @@
       "date": "2026-11-21",
       "headlines": 50,
       "sources": 26
+    },
+    {
+      "date": "2026-11-22",
+      "headlines": 40,
+      "sources": 16
     }
   ]
 }

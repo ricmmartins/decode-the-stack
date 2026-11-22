@@ -1,511 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-11-14",
-      "stories": [
-        {
-          "title": "The day after the Microsoft 365 outage: what we learned and what you can do now",
-          "url": "https://dev.to/mikweb2025design/the-day-after-the-microsoft-365-outage-what-we-learned-and-what-you-can-do-now-2gha",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>On Thursday 12 November 2026, Exchange Online, Teams, SharePoint Online, Microsoft 365 Copilot and Defender XDR failed or ran degraded worldwide. This post sorts it out: what is documented, what is",
-          "section": "main"
-        },
-        {
-          "title": "Preventing Feedback Loops in a Two-Way Vue Unit Converter",
-          "url": "https://dev.to/begoodtool/preventing-feedback-loops-in-a-two-way-vue-unit-converter-1gni",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>If both fields in a Vue unit converter are editable, how do you stop a calculated result from overwriting the user's input? I use explicit conversion directions and synchronous watchers so that eac",
-          "section": "main"
-        },
-        {
-          "title": "Your Pay Matcher Confused Annual Units With Earnings",
-          "url": "https://dev.to/vexaloom-labs/your-pay-matcher-confused-annual-units-with-earnings-4hd3",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>The day-rate contract wins your job comparison because <code>salaryFromPerAnnum</code> is larger. Your assistant sounds decisive. You get to explain the contract risk it quietly skipped.</p>\n\n<p>Tw",
-          "section": "main"
-        },
-        {
-          "title": "Vercel Sandbox starts up to 4x faster",
-          "url": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster",
-          "category": "cloud",
-          "score": 19.0,
-          "coverage_count": 3,
-          "source_name": "Vercel Blog",
-          "summary": "<p><a href=\"https://vercel.com/docs/sandbox\">Vercel Sandbox</a> now initializes up to 4x faster outside the Washington, D.C. (<code>iad1</code>) region when reused image data is served from a regional",
-          "section": "main"
-        },
-        {
-          "title": "Token Pass now includes $150 in tokens for $30/month",
-          "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens",
-          "category": "cloud",
-          "score": 17.0,
-          "coverage_count": 2,
-          "source_name": "Vercel Blog",
-          "summary": "<p><a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fai-gateway%2Ftoken-pass%3Fsource%3Dtoken_pass_150_changelog\">Vercel Token Pass</a> now includes $150 of tokens per month (up from $80) for the s",
-          "section": "main"
-        },
-        {
-          "title": "What's new in Pyroscope: profile more of your workflows, troubleshoot with AI agents, and more",
-          "url": "https://grafana.com/blog/whats-new-in-pyroscope-profile-more-of-your-workflows-troubleshoot-with-ai-agents-and-more/",
-          "category": "devops",
-          "score": 14.0,
-          "coverage_count": 1,
-          "source_name": "Grafana Blog",
-          "summary": "<p>When an application slows down or memory usage keeps climbing, knowing which code is responsible can help you find a fix faster. Continuous profiling gives you that visibility, so you can see where",
-          "section": "main"
-        },
-        {
-          "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-          "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-          "category": "security",
-          "score": 19.94,
-          "coverage_count": 1,
-          "source_name": "The Hacker News",
-          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Explo",
-          "section": "main"
-        },
-        {
-          "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
-          "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
-          "category": "security",
-          "score": 19.22,
-          "coverage_count": 1,
-          "source_name": "Schneier on Security",
-          "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p>\n<p>As usual, you can also us",
-          "section": "main"
-        },
-        {
-          "title": "datasette-cluster-map 0.19",
-          "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
-          "category": "ai",
-          "score": 19.0,
-          "coverage_count": 2,
-          "source_name": "Simon Willison",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-cluster-map/releases/tag/0.19\">datasette-cluster-map 0.19</a></p>\n        <p>One of the oldest Datasette plugins, and still on",
-          "section": "main"
-        },
-        {
-          "title": "Introducing ChatGPT Wallet",
-          "url": "https://openai.com/index/introducing-chatgpt-wallet",
-          "category": "ai",
-          "score": 14.56,
-          "coverage_count": 1,
-          "source_name": "OpenAI Blog",
-          "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-          "section": "main"
-        },
-        {
-          "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-          "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-          "category": "news",
-          "score": 27.34,
-          "coverage_count": 4,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas\">https://www.freightwaves.com/news/11-4-million-in-nvidia-h",
-          "section": "main"
-        },
-        {
-          "title": "Google Cloud Moves the Compute Engine API to Immutable Date-Based Versions",
-          "url": "https://www.infoq.com/news/2026/11/compute-engine-api-versioning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 25.0,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/compute-engine-api-versioning/en/headerimage/generatedHeaderImage-1794296072866.jpg\" /><p>Google Cloud has made date-based versioning of the Compute Engine",
-          "section": "main"
-        },
-        {
-          "title": "Node.js Brings Debounce, Throttle, and PKCS#12 Parsing Into Core Modules",
-          "url": "https://www.infoq.com/news/2026/11/nodejs-debounce-throttle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 24.99,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/nodejs-debounce-throttle/en/headerimage/generatedHeaderImage-1794593143949.jpg\" /><p>Node.js 26.10.0 adds util.debounce() and util.throttle(), plus util.ma",
-          "section": "main"
-        },
-        {
-          "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-          "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-          "category": "news",
-          "score": 22.24,
-          "coverage_count": 1,
-          "source_name": "Hacker News (Best)",
-          "summary": "<p>Article URL: <a href=\"https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus\">https://www.techpowerup.com/354814/nvidia-allegedly-engineered-",
-          "section": "main"
-        },
-        {
-          "title": "O: Open/Closed Principle (SOLID Principles with Examples)",
-          "url": "https://dev.to/divakarupadhyay/o-openclosed-principle-solid-principles-with-examples-44pb",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p><strong>👉 <a href=\"https://devladder.pages.dev/courses/solid/lessons/o-open-closed-principle\" rel=\"noopener noreferrer\">Full lesson with practice questions on DevLadder</a></strong> (free, lesson 2",
-          "section": "main"
-        },
-        {
-          "title": "Is GoHighLevel HIPAA Compliant? BAA, $297 Add-On and Setup Guide (2026)",
-          "url": "https://dev.to/arslanautomates/is-gohighlevel-hipaa-compliant-baa-297-add-on-and-setup-guide-2026-3fod",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<blockquote>\n<p><strong>Quick answer:</strong> Not by default. GoHighLevel becomes usable for protected health information only with HighLevel's HIPAA add-on ($297/month or $2,970/year, non-cancellabl",
-          "section": "main"
-        },
-        {
-          "title": "The Code I Wrote and No Longer Understand",
-          "url": "https://dev.to/aheadkit/the-code-i-wrote-and-no-longer-understand-501i",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>I wrote this file, and I cannot read it.</p>\n\n<p>That is the whole confession. There is no twist coming. The file is called billing_reconcile.py. It is 214 lines long, and every one of those lines ",
-          "section": "main"
-        },
-        {
-          "title": "Bus factor 1 is the default: per-language ownership in 195 popular repos",
-          "url": "https://dev.to/repowise/bus-factor-1-is-the-default-per-language-ownership-in-195-popular-repos-54kh",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p><strong>TL;DR</strong></p>\n\n<ul>\n<li>Bus factor is the fewest people who together made 80% of a file's commits; a bus factor of 1 means one person made 80% or more of them.</li>\n<li>In the median o",
-          "section": "main"
-        },
-        {
-          "title": "UnrealIRCd CVE-2026-114713: how to check your server and apply the hot-patch",
-          "url": "https://dev.to/mikweb2025design/unrealircd-cve-2026-114713-how-to-check-your-server-and-apply-the-hot-patch-ol5",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p><strong>In short:</strong> if you run UnrealIRCd 6.0.0 to 6.2.7 (or version 5), your server is affected. Version 6.2.7.1, released on 7 November 2026, fixes it, and a hot-patch does the job without",
-          "section": "main"
-        },
-        {
-          "title": "How Kigali’s Developer Communities Transformed My Journey",
-          "url": "https://dev.to/gentil_m/how-kigalis-developer-communities-transformed-my-journey-479m",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Before becoming involved in Kigali’s developer communities, most of my learning happened alone. I spent a significant amount of time working on personal projects, reading documentation, watching tu",
-          "section": "main"
-        },
-        {
-          "title": "I built a Windows app to explore and compare Instagram data exports locally",
-          "url": "https://dev.to/kayakaan/i-built-a-windows-app-to-explore-and-compare-instagram-data-exports-locally-1629",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p>Instagram gives you a ZIP when you request a copy of your data. I built InstagramTracker to make that archive easier to browse and to compare two exports from the same account.</p>\n\n<p>The Windows ",
-          "section": "radar"
-        },
-        {
-          "title": "Lightweight CSPRNG Selection and Implementation for C++ Schnorr Zero-Knowledge Proofs",
-          "url": "https://dev.to/serbyte/lightweight-csprng-selection-and-implementation-for-c-schnorr-zero-knowledge-proofs-330i",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws",
-          "section": "radar"
-        },
-        {
-          "title": "Review: Jing swap-router-stx-usdcx v6 — Zest CLMM integration (commit 9dab9bd)",
-          "url": "https://dev.to/cianspider/review-jing-swap-router-stx-usdcx-v6-zest-clmm-integration-commit-9dab9bd-c8m",
-          "category": "dev",
-          "score": 21.0,
-          "coverage_count": 1,
-          "source_name": "Dev.to (Top)",
-          "summary": "<h1>\n  \n  \n  Review: Jing <code>swap-router-stx-usdcx</code> v5-5 → v6 — Zest CLMM integration\n</h1>\n\n<p><strong>Target:</strong> <code>Rapha-btc/jing-contracts-v3</code> @ <code>9dab9bd</code>,<br />",
-          "section": "radar"
-        },
-        {
-          "title": "Open Source DocumentDB 1.0 Reaches General Availability",
-          "url": "https://www.infoq.com/news/2026/11/mongodb-compatible-documentdb/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 20.47,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>DocumentDB 1.0 is the first generally available release of the open source, MIT-licensed document database built on Post",
-          "section": "radar"
-        },
-        {
-          "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
-          "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/",
-          "category": "dev",
-          "score": 19.45,
-          "coverage_count": 3,
-          "source_name": "Nvidia Developer Blog",
-          "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/SOMA_Retargeter_Featured_600x338.gif\" style=\"display: block; ma",
-          "section": "radar"
-        },
-        {
-          "title": "Jensen Huang and the decline of the visionary showman founder CEO",
-          "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
-          "category": "news",
-          "score": 19.25,
-          "coverage_count": 1,
-          "source_name": "The Verge - Tech",
-          "summary": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packe",
-          "section": "radar"
-        },
-        {
-          "title": "How Claude reviews our docs every Monday",
-          "url": "https://freek.dev/3221-how-claude-reviews-our-docs-every-monday",
-          "category": "dev",
-          "score": 19.04,
-          "coverage_count": 1,
-          "source_name": "Freek Van der Herten",
-          "summary": "<p>A practical look at the GitHub Action we use to let Claude review Flare docs every Monday. It checks recent changes, updates the docs where needed, and opens a draft PR while staying within tight b",
-          "section": "radar"
-        },
-        {
-          "title": "Anthropic now lets you self-host Claude Managed Agents. The catch? 8 hours to act if it flags a safety risk in the software",
-          "url": "https://thenewstack.io/self-hosted-claude-managed-agents/",
-          "category": "news",
-          "score": 19.0,
-          "coverage_count": 1,
-          "source_name": "The New Stack",
-          "summary": "<img alt=\"A finger on the button, depicting roll-backs and kill-switches.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"646\" src=\"https://cdn.thenewstack.io/media/2026/11/287",
-          "section": "radar"
-        },
-        {
-          "title": "Google Open Sources Ambient Quality Agent (AQuA) to Diagnose Production AI Agent Failures",
-          "url": "https://www.infoq.com/news/2026/11/google-ambient-agent-prod/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 18.0,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-ambient-agent-prod/en/headerimage/generatedHeaderImage-1792894383462.jpg\" /><p>Google has open-sourced AQuA, a reference implementation that analyze",
-          "section": "radar"
-        },
-        {
-          "title": "Siri AI Developer Preview Lets iOS, iPadOS, and macOS Apps Integrate with Siri",
-          "url": "https://www.infoq.com/news/2026/11/apple-siri-ai-integration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-          "category": "news",
-          "score": 17.54,
-          "coverage_count": 1,
-          "source_name": "InfoQ",
-          "summary": "<img src=\"https://res.infoq.com/news/2026/11/apple-siri-ai-integration/en/headerimage/ios-27-virtualization-1794583601204.jpeg\" /><p>Apple released the Siri AI Developer Preview in the 27.3 beta relea",
-          "section": "radar"
-        },
-        {
-          "title": "How to Run SteamOS on Your Mac",
-          "url": "https://www.wired.com/story/get-steamos-easily-running-on-your-mac/",
-          "category": "news",
-          "score": 17.36,
-          "coverage_count": 1,
-          "source_name": "Wired",
-          "summary": "A free app lets you boot SteamOS in a virtual machine on your Apple Silicon Mac, unlocking PC and legacy games that otherwise won’t run.",
-          "section": "radar"
-        },
-        {
-          "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
-          "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
-          "category": "dev",
-          "score": 17.23,
-          "coverage_count": 1,
-          "source_name": "Cloudflare Blog",
-          "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recom",
-          "section": "radar"
-        },
-        {
-          "title": "Beware the New AI-Fueled Ransomware Boom",
-          "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
-          "category": "news",
-          "score": 17.21,
-          "coverage_count": 1,
-          "source_name": "Wired",
-          "summary": "Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.",
-          "section": "radar"
-        },
-        {
-          "title": "It’s Time to Run an Audit of All the Cloud Storage Links You’ve Shared",
-          "url": "https://www.wired.com/story/audit-all-the-cloud-storage-links-youve-shared/",
-          "category": "news",
-          "score": 17.13,
-          "coverage_count": 1,
-          "source_name": "Wired",
-          "summary": "Those old links you shared with friends ages ago are still live, and they might be attracting unwelcome visitors.",
-          "section": "radar"
-        },
-        {
-          "title": "DeepSeek’s coding agent is too tidy for its own good — and benchmarks are punishing it",
-          "url": "https://thenewstack.io/deepseek-harness-cleanup-benchmark/",
-          "category": "news",
-          "score": 17.0,
-          "coverage_count": 1,
-          "source_name": "The New Stack",
-          "summary": "<img alt=\"Cleaning up\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"724\" src=\"https://cdn.thenewstack.io/media/2026/11/ca5aed9f-handrush-supply-i8sfnhlttdo-unsplash-1024x724.",
-          "section": "radar"
-        },
-        {
-          "title": "Kitesurf is now open source",
-          "url": "https://blog.cloudflare.com/kitesurf-open-source/",
-          "category": "dev",
-          "score": 16.61,
-          "coverage_count": 1,
-          "source_name": "Cloudflare Blog",
-          "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
-          "section": "radar"
-        },
-        {
-          "title": "Daemons can now send traces to Vercel Tracing",
-          "url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
-          "category": "cloud",
-          "score": 16.0,
-          "coverage_count": 1,
-          "source_name": "Vercel Blog",
-          "summary": "<p><a href=\"https://vercel.com/docs/daemons\">Vercel Daemons</a> can now send OpenTelemetry traces to <a href=\"https://vercel.com/docs/tracing\">Vercel Tracing</a>, allowing you and your agents to inspe",
-          "section": "radar"
-        },
-        {
-          "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
-          "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
-          "category": "dev",
-          "score": 16.0,
-          "coverage_count": 1,
-          "source_name": "Nvidia Developer Blog",
-          "summary": "<img alt=\"Black hole illustration with a dark central region surrounded by bright orange rings and curved bands of light against a black background.\" class=\"webfeedsFeaturedVisual wp-post-image\" heigh",
-          "section": "radar"
-        },
-        {
-          "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
-          "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
-          "category": "news",
-          "score": 15.79,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "Drogue is harvesting heat from the ocean to power data centers on floating vessels. The first prototype should be bobbing around the ocean, crunching bits, in less than two years.",
-          "section": "radar"
-        },
-        {
-          "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-          "category": "news",
-          "score": 15.55,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-          "section": "radar"
-        },
-        {
-          "title": "AI agent startup LangChain hits $3B valuation",
-          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-          "category": "news",
-          "score": 15.04,
-          "coverage_count": 1,
-          "source_name": "TechCrunch",
-          "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-          "section": "radar"
-        },
-        {
-          "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
-          "url": "https://blog.cloudflare.com/spend-management/",
-          "category": "dev",
-          "score": 14.94,
-          "coverage_count": 1,
-          "source_name": "Cloudflare Blog",
-          "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions.",
-          "section": "radar"
-        },
-        {
-          "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-          "category": "news",
-          "score": 14.42,
-          "coverage_count": 1,
-          "source_name": "The Verge - Tech",
-          "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 a",
-          "section": "radar"
-        },
-        {
-          "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
-          "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
-          "category": "dev",
-          "score": 14.0,
-          "coverage_count": 1,
-          "source_name": "Meta Engineering",
-          "summary": "<p>How Meta's Reality Labs brought Cuttlefish and its QEMU backend to macOS and Apple silicon. [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026",
-          "section": "radar"
-        },
-        {
-          "title": "How to Upload Videos to Cloudinary: 4 Methods Compared",
-          "url": "https://cloudinary.com/blog/video_uploads_with_cloudinary",
-          "category": "cloud",
-          "score": 14.0,
-          "coverage_count": 1,
-          "source_name": "Cloudinary Blog",
-          "summary": "<p>Frequently Asked Questions What is the easiest way to upload a video to Cloudinary? For a team member, use Upload in the Console Media Library. For visitors to a website, the Upload Widget provides",
-          "section": "radar"
-        },
-        {
-          "title": "10 Big Ol’ 2027 Black Friday Deals",
-          "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
-          "category": "dev",
-          "score": 13.94,
-          "coverage_count": 1,
-          "source_name": "CSS-Tricks",
-          "summary": "<p>A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the business.</p>\n<hr />\n<p><small><a href=\"https://css-tricks.com/2027-front-end-",
-          "section": "radar"
-        },
-        {
-          "title": "Apache Spark vs Apache Flink: which should you use?",
-          "url": "https://www.databricks.com/blog/spark-vs-flink",
-          "category": "dev",
-          "score": 13.91,
-          "coverage_count": 1,
-          "source_name": "Databricks Engineering",
-          "summary": "For most teams, Apache Spark™ is the better choice. Spark runs batch ETL, SQL analytics,...",
-          "section": "radar"
-        },
-        {
-          "title": "Writing a DSL for high performance parallel programming in OxCaml",
-          "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
-          "category": "news",
-          "score": 13.89,
-          "coverage_count": 1,
-          "source_name": "Lobsters",
-          "summary": "<p><a href=\"https://lobste.rs/s/kh9fri/writing_dsl_for_high_performance\">Comments</a></p>",
-          "section": "radar"
-        },
-        {
-          "title": "Writing to me with AI",
-          "url": "https://cassidoo.co/post/writing-to-me-with-ai/",
-          "category": "dev",
-          "score": 13.87,
-          "coverage_count": 1,
-          "source_name": "Cassidy Williams",
-          "summary": "I'm getting a whole lot of generated messages lately, and I think we have to do better!",
-          "section": "radar"
-        },
-        {
-          "title": "Making Claude a chemist",
-          "url": "https://www.anthropic.com/research/making-claude-a-chemist",
-          "category": "ai",
-          "score": 13.85,
-          "coverage_count": 1,
-          "source_name": "Anthropic Blog",
-          "summary": "Anthropic is working with world-class synthetic, computational, and analytical chemists to make Claude better at chemistry. In this post, we share our first work as part of this effort.",
-          "section": "radar"
-        }
-      ]
-    },
-    {
       "date": "2026-11-15",
       "stories": [
         {
@@ -3916,6 +3411,411 @@
           "coverage_count": 1,
           "source_name": "Heroku Engineering",
           "summary": "<p>The power of Heroku lies in its simplicity. Developers can spin up an entire app stack, complete with its own database and caching layers with just a single command. No need for the specialized, ti",
+          "section": "radar"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "stories": [
+        {
+          "title": "🐱 NECOZ School Picnic When 30 Cats Went Crazy! 🚌Python Data Types",
+          "url": "https://dev.to/necoz/necoz-school-picnic-when-30-cats-went-crazy-python-data-types-3b71",
+          "category": "dev",
+          "score": 24.0,
+          "coverage_count": 2,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>It was 7 AM at NECOZ School. Everyone was excited because today was the biggest school picnic ever! 🥳</p>\n\n<p>All 30 Cats arrived at school with their bags. One brought chips, another brought choco",
+          "section": "main"
+        },
+        {
+          "title": "VM API Makes VM Configuration More Portable. It Doesn't Make Operations Portable",
+          "url": "https://dev.to/ntctech/vm-api-makes-vm-configuration-more-portable-it-doesnt-make-operations-portable-3j91",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws",
+          "section": "main"
+        },
+        {
+          "title": "Search Console after a launch: real search opportunity or noise?",
+          "url": "https://dev.to/mohammad_shazam_c8450b289/search-console-after-a-launch-real-search-opportunity-or-noise-2cd5",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><em>Disclosure: I write for LaunchReach, which connects GA4 and Search Console. The method below works with the raw reports too; the product is mentioned once near the end.</em></p>\n\n<p>A week or t",
+          "section": "main"
+        },
+        {
+          "title": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
+          "url": "https://www.troyhunt.com/weekly-update-531/",
+          "category": "security",
+          "score": 18.97,
+          "coverage_count": 1,
+          "source_name": "Troy Hunt",
+          "summary": "<p>&quot;You can&apos;t outsource accountability&quot;. But it feels like that&apos;s what&apos;s happening when a disclosure notice refers to &quot;an incident being at a third party&quot;, as though",
+          "section": "main"
+        },
+        {
+          "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+          "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+          "category": "security",
+          "score": 16.93,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux serve",
+          "section": "main"
+        },
+        {
+          "title": "Muru",
+          "url": "https://simonwillison.net/2026/Nov/21/muru/",
+          "category": "ai",
+          "score": 16.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p><strong><a href=\"https://github.com/muruhq/muru\">Muru</a></strong></p>\nGraham Dumpleton started <a href=\"https://modwsgi.readthedocs.io/\">mod_wsgi</a> 20 years ago, and has been thinking about the ",
+          "section": "main"
+        },
+        {
+          "title": "llm-gemini 0.38.1",
+          "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+          "category": "ai",
+          "score": 13.0,
+          "coverage_count": 1,
+          "source_name": "Simon Willison",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.38.1\">llm-gemini 0.38.1</a></p>\n        <p>Gemini 4 Carbon only supports <code>low</code>, <code>medium</code>",
+          "section": "main"
+        },
+        {
+          "title": "Claude Code Has Been Leaking Secrets Through Its \"Don't Ask Again\" Feature",
+          "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 25.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/claude-code-leaking-secrets/en/headerimage/linux-6-12-real-time-1795344939763.jpeg\" /><p>Agentic security firm Apiiro found that Claude Code has been expos",
+          "section": "main"
+        },
+        {
+          "title": "PostgreSQL 19 Released with Online Table Repacking and Query Planning Controls",
+          "url": "https://www.infoq.com/news/2026/11/postgresql-19-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 24.95,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/postgresql-19-released/en/headerimage/generatedHeaderImage-1795349035334.jpg\" /><p>The PostgreSQL Global Development Group released PostgreSQL 19, introduc",
+          "section": "main"
+        },
+        {
+          "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
+          "url": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 22.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-agent-compute-engine/en/headerimage/generatedHeaderImage-1793561615054.jpg\" /><p>Google recently announced Agent Compute Engine, a managed service t",
+          "section": "main"
+        },
+        {
+          "title": "AWS Lambda Now Runs GPU Inference with 48 Concurrent Invocations Sharing One Model per GPU",
+          "url": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "category": "news",
+          "score": 22.0,
+          "coverage_count": 1,
+          "source_name": "InfoQ",
+          "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/en/headerimage/generatedHeaderImage-1795178998128.jpg\" /><p>AWS Lambda now runs Event Functions on EC2 G-series GPU instan",
+          "section": "main"
+        },
+        {
+          "title": "Where do you draw the fail-closed line?",
+          "url": "https://dev.to/eliashivemind/where-do-you-draw-the-fail-closed-line-1455",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>Every release pipeline has checks that can stop the line. The interesting question is what a check does when it can't finish its own job — when coverage is partial, a source times out, or half the ",
+          "section": "main"
+        },
+        {
+          "title": "How to monitor your competitors' Facebook ads automatically (and get only what changed)",
+          "url": "https://dev.to/arxrock/how-to-monitor-your-competitors-facebook-ads-automatically-and-get-only-what-changed-p5c",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>If you run paid ads, the <strong>Meta Ad Library</strong> is a goldmine. Every active ad on Facebook and Instagram is public: the copy, the creative, the landing page, the date it started. It's fre",
+          "section": "main"
+        },
+        {
+          "title": "One API Key, Many Routes: Calling AI Video Models in Python with Automatic Failover",
+          "url": "https://dev.to/xiao_lin_d3a217fb49d23f1b/one-api-key-many-routes-calling-ai-video-models-in-python-with-automatic-failover-395d",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p>A single API key should not lock you into a single upstream. When you generate AI video at scale, the model you pick today can be rate-limited, throttled, or temporarily down tomorrow. The fix is a",
+          "section": "main"
+        },
+        {
+          "title": "Why CSS zoom Shrinks Every Slide to 30%",
+          "url": "https://dev.to/orca_forge/why-css-zoom-shrinks-every-slide-to-30-k9f",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/fit-one-screen-shrank-to-30-percent/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=fit-o",
+          "section": "main"
+        },
+        {
+          "title": "Five APIs on Cloudflare Workers, and the bugs that nearly shipped",
+          "url": "https://dev.to/ayam04/five-apis-on-cloudflare-workers-and-the-bugs-that-nearly-shipped-ia4",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h1>\n  \n  \n  Five APIs on Cloudflare Workers, and the bugs that nearly shipped\n</h1>\n\n<p>Five products, 37 endpoints, 470 tests, one deploy command each. This is the architecture, the pricing maths ag",
+          "section": "main"
+        },
+        {
+          "title": "How I Built a Tank Bot for battle.training: Fixed-Point Math, BFS Flow Fields, and 113 Ranked Sets",
+          "url": "https://dev.to/xiaogui917/how-i-built-a-tank-bot-for-battletraining-fixed-point-math-bfs-flow-fields-and-113-ranked-sets-15b3",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<p><em>Paid placement: this post is submitted to a paid promotion campaign run by promotedby.ai for battle.training, and it may earn a reward if the advertiser accepts it. The bot, the code, the repla",
+          "section": "main"
+        },
+        {
+          "title": "KVM's AMD Nested-Reset Bug Changes the Boundary Between Tenants",
+          "url": "https://dev.to/bianliang/kvms-amd-nested-reset-bug-changes-the-boundary-between-tenants-4i5n",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h1>\n  \n  \n  KVM's AMD Nested-Reset Bug Changes the Boundary Between Tenants\n</h1>\n\n<p>A virtual machine is supposed to contain an untrusted workload. KVM's boundary is the promise that the guest cann",
+          "section": "main"
+        },
+        {
+          "title": "Architectural Deep Dive: Inside RL Post-Training in Diffusion Transformers Is Activation Steering",
+          "url": "https://dev.to/sharathjapa/architectural-deep-dive-inside-rl-post-training-in-diffusion-transformers-is-activation-steering-1dd5",
+          "category": "dev",
+          "score": 21.0,
+          "coverage_count": 1,
+          "source_name": "Dev.to (Top)",
+          "summary": "<h1>\n  \n  \n  Architectural Deep Dive: Inside RL Post-Training in Diffusion Transformers Is Activation Steering\n</h1>\n\n<h2>\n  \n  \n  Executive Summary\n</h2>\n\n<p>The engineering challenges surrounding RL",
+          "section": "main"
+        },
+        {
+          "title": "Lean verification of the Riemann Hypothesis",
+          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+          "category": "news",
+          "score": 20.43,
+          "coverage_count": 2,
+          "source_name": "Hacker News (Best)",
+          "summary": "<p>Article URL: <a href=\"https://leanprover-community.github.io/blog/posts/riemann-hypothesis/\">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></p>\n<p>Comments URL: <a href=\"",
+          "section": "main"
+        },
+        {
+          "title": "What’s New in PHP 8.6 from a Performance Perspective",
+          "url": "https://freek.dev/3231-whats-new-in-php-86-from-a-performance-perspective",
+          "category": "dev",
+          "score": 19.33,
+          "coverage_count": 1,
+          "source_name": "Freek Van der Herten",
+          "summary": "<p>Tideways looks at PHP 8.6 benchmarks for Symfony, Laravel, and WordPress, explaining why upgrading alone won't bring a broad speed boost. The video also covers faster functions, the new Polling API",
+          "section": "radar"
+        },
+        {
+          "title": "“It is a rollercoaster ride”: Angie Jones of the Agentic AI Foundation on keeping up with AI agents",
+          "url": "https://thenewstack.io/junior-developers-ai-agents-block/",
+          "category": "news",
+          "score": 19.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"In this episode of The New Stack podcast, recorded at AGNTCon and MCPCon in San Jose, Frederic Lardinois speaks with Angie Jones, Vice President of the Agentic AI Foundation, about the evolv",
+          "section": "radar"
+        },
+        {
+          "title": "Banks Have Had It Up to Here With Your AI Agent",
+          "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+          "category": "news",
+          "score": 17.6,
+          "coverage_count": 1,
+          "source_name": "Wired",
+          "summary": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+          "section": "radar"
+        },
+        {
+          "title": "If we stop reading the code, what do we read?",
+          "url": "https://thenewstack.io/ai-agent-code-review/",
+          "category": "news",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Motion-blurred stacks of glowing red, orange, and blue blocks, evoking the speed of AI agent code review\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"htt",
+          "section": "radar"
+        },
+        {
+          "title": "GPT-6.2 Sol vs. Claude Opus 5.5: Not as accurate, but still might be the better buy",
+          "url": "https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/",
+          "category": "news",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Two 3D sphere patterns, an orderly blue spiral and a scattered gold cluster, evoking a GPT-6.2 Sol vs. Claude Opus 5.5 matchup\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\"",
+          "section": "radar"
+        },
+        {
+          "title": "Dynatrace just laid out its AI observability playbook at KubeCon. Here’s why it matters for developers.",
+          "url": "https://thenewstack.io/ai-feature-flags-observability/",
+          "category": "news",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"In this episode of The New Stack Podcast, recorded at KubeCon + CloudNativeCon 2026 in Salt Lake City, Sean O&#039;Dell of Dynatrace joins Frederic Lardinois to discuss the future of full-st",
+          "section": "radar"
+        },
+        {
+          "title": "Nvidia used 20,000 training examples to fix its AI’s mistakes. Its coding score jumped.",
+          "url": "https://thenewstack.io/nvidia-droid-harness-nemotron/",
+          "category": "news",
+          "score": 17.0,
+          "coverage_count": 1,
+          "source_name": "The New Stack",
+          "summary": "<img alt=\"Warning screen\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/896468a0-getty-images-4oky858elvi-unsplash-1024x576.",
+          "section": "radar"
+        },
+        {
+          "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+          "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+          "category": "security",
+          "score": 16.89,
+          "coverage_count": 1,
+          "source_name": "The Hacker News",
+          "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of t",
+          "section": "radar"
+        },
+        {
+          "title": "The Claude Delusion",
+          "url": "https://www.netmeister.org/blog/claude-delusion.html",
+          "category": "news",
+          "score": 16.72,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/v3m2uj/claude_delusion\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "Notes on the discrete Fourier transform (DFT)",
+          "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/",
+          "category": "dev",
+          "score": 15.58,
+          "coverage_count": 1,
+          "source_name": "Eli Bendersky",
+          "summary": "<p>In the <a class=\"reference external\" href=\"https://eli.thegreenplace.net/2026/notes-on-discrete-time-fourier-series-and-transform/\">previous post on this\ntopic</a>,\nwe’ve seen how the Discrete-Time",
+          "section": "radar"
+        },
+        {
+          "title": "A tale of two Nvidias",
+          "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+          "category": "news",
+          "score": 15.5,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "We got two very different pictures of Nvidia —  the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+          "section": "radar"
+        },
+        {
+          "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+          "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+          "category": "news",
+          "score": 14.87,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+          "section": "radar"
+        },
+        {
+          "title": "The Explorer Pattern for product invention and development.",
+          "url": "https://lethain.com/explorer-pattern/",
+          "category": "dev",
+          "score": 14.0,
+          "coverage_count": 1,
+          "source_name": "Will Larson (Irrational Exuberance)",
+          "summary": "<p>tl;dr: the Explorer Pattern is one individual or team building a functional implementation that minimizes cross-team and cross-functional impacts as much as humanly possible, and then reconciling t",
+          "section": "radar"
+        },
+        {
+          "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+          "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+          "category": "news",
+          "score": 13.87,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+          "section": "radar"
+        },
+        {
+          "title": "Inkling 2 Mini Draws a Python Reading a Book",
+          "url": "https://realpython.com/ai-benchmark-inkling-2-mini/",
+          "category": "dev",
+          "score": 13.65,
+          "coverage_count": 2,
+          "source_name": "Real Python",
+          "summary": "Explore Inkling 2 Mini's Python code, turtle drawing, and responses to small tasks that check modern syntax, release knowledge, focused edits, and made-up functions.",
+          "section": "radar"
+        },
+        {
+          "title": "GhostScript CVE 2026-125396: \"Upload2Shell\"",
+          "url": "https://pwn.ai/upload2shell/research.html",
+          "category": "news",
+          "score": 13.33,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://nvd.nist.gov/vuln/detail/cve-2026-125396\" rel=\"ugc\">Here's the NVD page for the CVE with some additional useful context</a>.</p>\n<p><a href=\"https://lobste.rs/s/n5i1ds/ghostscript_",
+          "section": "radar"
+        },
+        {
+          "title": "Trump says reported FBI database hack is ‘not good’",
+          "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+          "category": "news",
+          "score": 12.84,
+          "coverage_count": 1,
+          "source_name": "TechCrunch",
+          "summary": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
+          "section": "radar"
+        },
+        {
+          "title": "Can Anthropic afford to put safety first?",
+          "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+          "category": "news",
+          "score": 12.27,
+          "coverage_count": 1,
+          "source_name": "The Verge - Tech",
+          "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public ",
+          "section": "radar"
+        },
+        {
+          "title": "Advice for the next 100 Rust GUIs",
+          "url": "https://linebender.org/blog/next-100-guis/",
+          "category": "news",
+          "score": 11.86,
+          "coverage_count": 1,
+          "source_name": "Lobsters",
+          "summary": "<p><a href=\"https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis\">Comments</a></p>",
+          "section": "radar"
+        },
+        {
+          "title": "How to build a knowledge factory for AI agents",
+          "url": "https://www.langchain.com/blog/knowledge-factory",
+          "category": "ai",
+          "score": 10.59,
+          "coverage_count": 1,
+          "source_name": "LangChain Blog",
+          "summary": "The knowledge factory is how LangChain keeps its agents' company knowledge current: agents flag what's missing, and a curator agent fixes it in the background.",
           "section": "radar"
         }
       ]

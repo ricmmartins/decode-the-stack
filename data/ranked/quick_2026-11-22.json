@@ -1,0 +1,346 @@
+[
+  {
+    "id": "de454ef3869fda0a",
+    "title": "What’s New in PHP 8.6 from a Performance Perspective",
+    "url": "https://freek.dev/3231-whats-new-in-php-86-from-a-performance-perspective",
+    "summary": "<p>Tideways looks at PHP 8.6 benchmarks for Symfony, Laravel, and WordPress, explaining why upgrading alone won't bring a broad speed boost. The video also covers faster functions, the new Polling API, reduced ZTS overhead, and TLS handshake reuse in streams.</p>\n\n\n<a href=\"https://www.youtube.com/watch?v=CDv_EBhRfko\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-22T12:30:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3231-whats-new-in-php-86-from-a-performance-perspective"
+      }
+    ],
+    "score": 19.33
+  },
+  {
+    "id": "e55fcdfadf8992a0",
+    "title": "“It is a rollercoaster ride”: Angie Jones of the Agentic AI Foundation on keeping up with AI agents",
+    "url": "https://thenewstack.io/junior-developers-ai-agents-block/",
+    "summary": "<img alt=\"In this episode of The New Stack podcast, recorded at AGNTCon and MCPCon in San Jose, Frederic Lardinois speaks with Angie Jones, Vice President of the Agentic AI Foundation, about the evolving developer role and the challenges of adopting AI across engineering organizations.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/86d487dd-thumbnail-21-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Only a few years ago, it would have been impossible to picture this scenario: A lead developer once gave 10</p>\n<p>The post <a href=\"https://thenewstack.io/junior-developers-ai-agents-block/\">“It is a rollercoaster ride”: Angie Jones of the Agentic AI Foundation on keeping up with AI agents</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T21:58:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/junior-developers-ai-agents-block/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "3833113321fbebd2",
+    "title": "Banks Have Had It Up to Here With Your AI Agent",
+    "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+    "summary": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-22T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/"
+      }
+    ],
+    "score": 17.6
+  },
+  {
+    "id": "6e6d47cb9e7870a1",
+    "title": "If we stop reading the code, what do we read?",
+    "url": "https://thenewstack.io/ai-agent-code-review/",
+    "summary": "<img alt=\"Motion-blurred stacks of glowing red, orange, and blue blocks, evoking the speed of AI agent code review\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"https://cdn.thenewstack.io/media/2026/11/7a7f047b-steve-a-johnson-fe-tfvxrgca-unsplash-1024x683.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>&#8220;Human beings are too slow when dealing with code. So if we&#8217;re going to move at the speed of the</p>\n<p>The post <a href=\"https://thenewstack.io/ai-agent-code-review/\">If we stop reading the code, what do we read?</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T17:23:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-agent-code-review/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "494b78804d10dfc3",
+    "title": "GPT-6.2 Sol vs. Claude Opus 5.5: Not as accurate, but still might be the better buy",
+    "url": "https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/",
+    "summary": "<img alt=\"Two 3D sphere patterns, an orderly blue spiral and a scattered gold cluster, evoking a GPT-6.2 Sol vs. Claude Opus 5.5 matchup\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"545\" src=\"https://cdn.thenewstack.io/media/2026/11/f6686670-buddha-elemental-3d-ndm1ep5pfyo-unsplash-1024x545.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Claude Opus 5.5 is the model everyone wants to beat, and it has a mixed record in my tests since</p>\n<p>The post <a href=\"https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/\">GPT-6.2 Sol vs. Claude Opus 5.5: Not as accurate, but still might be the better buy</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T17:08:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "16a170b657e0f065",
+    "title": "Dynatrace just laid out its AI observability playbook at KubeCon. Here’s why it matters for developers.",
+    "url": "https://thenewstack.io/ai-feature-flags-observability/",
+    "summary": "<img alt=\"In this episode of The New Stack Podcast, recorded at KubeCon + CloudNativeCon 2026 in Salt Lake City, Sean O&#039;Dell of Dynatrace joins Frederic Lardinois to discuss the future of full-stack observability and AI-driven development.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/48f2a966-thumbnail-26-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>A new AI model goes live for a small group of users. Some of them start seeing errors. The build</p>\n<p>The post <a href=\"https://thenewstack.io/ai-feature-flags-observability/\">Dynatrace just laid out its AI observability playbook at KubeCon. Here’s why it matters for developers.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T16:08:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-feature-flags-observability/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "555234c6794ce06a",
+    "title": "Nvidia used 20,000 training examples to fix its AI’s mistakes. Its coding score jumped.",
+    "url": "https://thenewstack.io/nvidia-droid-harness-nemotron/",
+    "summary": "<img alt=\"Warning screen\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/896468a0-getty-images-4oky858elvi-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Nvidia used Factory&#8217;s Droid coding-agent harness to generate roughly 20,000 rows of post-training data for Nemotron 3 Ultra, the 550-billion-parameter</p>\n<p>The post <a href=\"https://thenewstack.io/nvidia-droid-harness-nemotron/\">Nvidia used 20,000 training examples to fix its AI&#8217;s mistakes. Its coding score jumped.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T15:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/nvidia-droid-harness-nemotron/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "92cba23bea79ef80",
+    "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+    "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+    "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-22T05:06:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+      }
+    ],
+    "score": 16.89
+  },
+  {
+    "id": "49e75b68338d9174",
+    "title": "The Claude Delusion",
+    "url": "https://www.netmeister.org/blog/claude-delusion.html",
+    "summary": "<p><a href=\"https://lobste.rs/s/v3m2uj/claude_delusion\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-22T09:21:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://www.netmeister.org/blog/claude-delusion.html"
+      }
+    ],
+    "score": 16.72
+  },
+  {
+    "id": "ff50916fce83954d",
+    "title": "Notes on the discrete Fourier transform (DFT)",
+    "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/",
+    "summary": "<p>In the <a class=\"reference external\" href=\"https://eli.thegreenplace.net/2026/notes-on-discrete-time-fourier-series-and-transform/\">previous post on this\ntopic</a>,\nwe’ve seen how the Discrete-Time Fourier Series (DTFS) and transform\n(DTFT) are used to analyze infinite-duration periodic and non-periodic\ndiscrete signals. Now, it’s time to turn to realistic digital signal\nprocessing where signals are not only discrete, but also <em>finite in …</em></p>",
+    "category": "dev",
+    "source_name": "Eli Bendersky",
+    "published": "2026-11-21T22:26:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Eli Bendersky",
+        "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/"
+      }
+    ],
+    "score": 15.58
+  },
+  {
+    "id": "bc5083974b28729b",
+    "title": "A tale of two Nvidias",
+    "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+    "summary": "We got two very different pictures of Nvidia —  the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T21:07:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/"
+      }
+    ],
+    "score": 15.5
+  },
+  {
+    "id": "6fa2c867839601c9",
+    "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+    "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T21:37:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+      }
+    ],
+    "score": 14.87
+  },
+  {
+    "id": "687352c4bd05cd13",
+    "title": "The Explorer Pattern for product invention and development.",
+    "url": "https://lethain.com/explorer-pattern/",
+    "summary": "<p>tl;dr: the Explorer Pattern is one individual or team building a functional implementation that minimizes cross-team and cross-functional impacts as much as humanly possible, and then reconciling the details with other teams after that prototype is completed, accepting that this approach can require very substantial rework to that initial development.</p>\n<h2 id=\"why-write-this\">Why write this?</h2>\n<p>Imprint previously called this the &ldquo;Tech-led&rdquo; or &ldquo;Engineering-led&rdquo; development model, but it&rsquo;s pretty unclear to folks what that means. This writeup provides a more defined term, the &ldquo;Explorer Pattern&rdquo;, and explains in more detail how this works.</p>\n<h2 id=\"why-do-we-need-to-adjust-the-way-we-work\">Why do we need to adjust the way we work?</h2>\n<p>Before 2026:</p>\n<ul>\n<li>Code is expensive, and we design process to minimize implementation and rework</li>\n</ul>\n<p>In and after 2026:</p>\n<ul>\n<li>Writing software is extremely cheap, but it&rsq",
+    "category": "dev",
+    "source_name": "Will Larson (Irrational Exuberance)",
+    "published": "2026-11-21T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Will Larson (Irrational Exuberance)",
+        "url": "https://lethain.com/explorer-pattern/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "1d38af2be92323d2",
+    "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+    "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+    "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/"
+      }
+    ],
+    "score": 13.87
+  },
+  {
+    "id": "69910b904c702c7a",
+    "title": "Inkling 2 Mini Draws a Python Reading a Book",
+    "url": "https://realpython.com/ai-benchmark-inkling-2-mini/",
+    "summary": "Explore Inkling 2 Mini's Python code, turtle drawing, and responses to small tasks that check modern syntax, release knowledge, focused edits, and made-up functions.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-21T14:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/ai-benchmark-gemini-4-neon/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/ai-benchmark-inkling-2-mini/"
+      }
+    ],
+    "score": 13.65
+  },
+  {
+    "id": "f0be211ce7060c16",
+    "title": "GhostScript CVE 2026-125396: \"Upload2Shell\"",
+    "url": "https://pwn.ai/upload2shell/research.html",
+    "summary": "<p><a href=\"https://nvd.nist.gov/vuln/detail/cve-2026-125396\" rel=\"ugc\">Here's the NVD page for the CVE with some additional useful context</a>.</p>\n<p><a href=\"https://lobste.rs/s/n5i1ds/ghostscript_cve_2026_125396\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-22T00:52:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://pwn.ai/upload2shell/research.html"
+      }
+    ],
+    "score": 13.33
+  },
+  {
+    "id": "04b582514510a296",
+    "title": "Trump says reported FBI database hack is ‘not good’",
+    "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+    "summary": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T18:44:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/"
+      }
+    ],
+    "score": 12.84
+  },
+  {
+    "id": "72ec0e983f289ff1",
+    "title": "Can Anthropic afford to put safety first?",
+    "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+    "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-21T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+      }
+    ],
+    "score": 12.27
+  },
+  {
+    "id": "00bb0945194f6d91",
+    "title": "Advice for the next 100 Rust GUIs",
+    "url": "https://linebender.org/blog/next-100-guis/",
+    "summary": "<p><a href=\"https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-21T23:10:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://linebender.org/blog/next-100-guis/"
+      }
+    ],
+    "score": 11.86
+  },
+  {
+    "id": "7f64a19c8d482283",
+    "title": "How to build a knowledge factory for AI agents",
+    "url": "https://www.langchain.com/blog/knowledge-factory",
+    "summary": "The knowledge factory is how LangChain keeps its agents' company knowledge current: agents flag what's missing, and a curator agent fixes it in the background.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-21T16:45:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/knowledge-factory"
+      }
+    ],
+    "score": 10.59
+  }
+]

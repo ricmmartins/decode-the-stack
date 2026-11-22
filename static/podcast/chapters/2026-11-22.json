@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 140,
+      "title": "That distinction between a headline and evidence matters..."
+    },
+    {
+      "startTime": 286,
+      "title": "The Ghostscript story makes the upload boundary less..."
+    },
+    {
+      "startTime": 438,
+      "title": "The diffusion transformer story turns on a distinction:..."
+    },
+    {
+      "startTime": 600,
+      "title": "That brings us to a distinction worth keeping sharp:..."
+    },
+    {
+      "startTime": 760,
+      "title": "For our final stretch, an actor has licensed his face to a..."
+    }
+  ]
+}

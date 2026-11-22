@@ -1,0 +1,718 @@
+[
+  {
+    "id": "f9a05aead5321485",
+    "title": "Lean verification of the Riemann Hypothesis",
+    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "summary": "<p>Article URL: <a href=\"https://leanprover-community.github.io/blog/posts/riemann-hypothesis/\">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50589618\">https://news.ycombinator.com/item?id=50589618</a></p>\n<p>Points: 1079</p>\n<p># Comments: 897</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-21T14:36:45+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/ShinMegamiBoson/lookatmyquant"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+      }
+    ]
+  },
+  {
+    "id": "ead9cb13740a6dfd",
+    "title": "🐱 NECOZ School Picnic When 30 Cats Went Crazy! 🚌Python Data Types",
+    "url": "https://dev.to/necoz/necoz-school-picnic-when-30-cats-went-crazy-python-data-types-3b71",
+    "summary": "<p>It was 7 AM at NECOZ School. Everyone was excited because today was the biggest school picnic ever! 🥳</p>\n\n<p>All 30 Cats arrived at school with their bags. One brought chips, another brought chocolates, and one Cat even brought a pillow!</p>\n\n<p>But here was the biggest surprise: <strong>King Nyaomaru was also joining the picnic!</strong> 👑</p>\n\n<p>The teacher shouted, \"Everyone, get ready and find your seats!\"</p>\n\n<p>One Cat replied, \"Teacher, someone is already sleeping on my seat!\" 😂</p>\n\n<p>And just like that, the NECOZ adventure began!</p>\n\n<h2>\n  \n  \n  🔢 1. Integer – How Many Students?\n</h2>\n\n<p>The teacher started counting all the Cats.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight python\"><code><span class=\"n\">students</span> <span class=\"o\">=</span> <span class=\"mi\">30</span>\n<span class=\"n\">buses</span> <span class=\"o\">=</span> <span class=\"mi\">2</span>\n</code></pre>\n\n</div>\n\n\n\n<p>An Integer stores whole numbers.</p>\n\n<p>King Nyaomaru said, ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:07:56+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/necoz/necoz-school-picnic-when-30-cats-went-crazy-python-data-types-3b71"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/samuelfmedeiros/79-human-visitors-in-one-day-it-was-two-browsers-4cl0"
+      }
+    ]
+  },
+  {
+    "id": "69910b904c702c7a",
+    "title": "Inkling 2 Mini Draws a Python Reading a Book",
+    "url": "https://realpython.com/ai-benchmark-inkling-2-mini/",
+    "summary": "Explore Inkling 2 Mini's Python code, turtle drawing, and responses to small tasks that check modern syntax, release knowledge, focused edits, and made-up functions.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-21T14:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/ai-benchmark-gemini-4-neon/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/ai-benchmark-inkling-2-mini/"
+      }
+    ]
+  },
+  {
+    "id": "00bb0945194f6d91",
+    "title": "Advice for the next 100 Rust GUIs",
+    "url": "https://linebender.org/blog/next-100-guis/",
+    "summary": "<p><a href=\"https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-21T23:10:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://linebender.org/blog/next-100-guis/"
+      }
+    ]
+  },
+  {
+    "id": "49e75b68338d9174",
+    "title": "The Claude Delusion",
+    "url": "https://www.netmeister.org/blog/claude-delusion.html",
+    "summary": "<p><a href=\"https://lobste.rs/s/v3m2uj/claude_delusion\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-22T09:21:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://www.netmeister.org/blog/claude-delusion.html"
+      }
+    ]
+  },
+  {
+    "id": "aceceb4dbe9b7502",
+    "title": "C++26 is done (again)! — Trip report: November 2026 ISO C++ standards meeting (Búzios, Brazil)",
+    "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/",
+    "summary": "<p><a href=\"https://lobste.rs/s/fjueso/c_26_is_done_again_trip_report_november\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-21T13:57:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/"
+      }
+    ]
+  },
+  {
+    "id": "f0be211ce7060c16",
+    "title": "GhostScript CVE 2026-125396: \"Upload2Shell\"",
+    "url": "https://pwn.ai/upload2shell/research.html",
+    "summary": "<p><a href=\"https://nvd.nist.gov/vuln/detail/cve-2026-125396\" rel=\"ugc\">Here's the NVD page for the CVE with some additional useful context</a>.</p>\n<p><a href=\"https://lobste.rs/s/n5i1ds/ghostscript_cve_2026_125396\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-22T00:52:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://pwn.ai/upload2shell/research.html"
+      }
+    ]
+  },
+  {
+    "id": "72ec0e983f289ff1",
+    "title": "Can Anthropic afford to put safety first?",
+    "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+    "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-21T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+      }
+    ]
+  },
+  {
+    "id": "6fa2c867839601c9",
+    "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+    "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T21:37:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+      }
+    ]
+  },
+  {
+    "id": "bc5083974b28729b",
+    "title": "A tale of two Nvidias",
+    "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+    "summary": "We got two very different pictures of Nvidia —  the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T21:07:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/"
+      }
+    ]
+  },
+  {
+    "id": "04b582514510a296",
+    "title": "Trump says reported FBI database hack is ‘not good’",
+    "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+    "summary": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T18:44:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/"
+      }
+    ]
+  },
+  {
+    "id": "1d38af2be92323d2",
+    "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+    "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+    "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-21T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/"
+      }
+    ]
+  },
+  {
+    "id": "f188f9b97ce89c3a",
+    "title": "PostgreSQL 19 Released with Online Table Repacking and Query Planning Controls",
+    "url": "https://www.infoq.com/news/2026/11/postgresql-19-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/postgresql-19-released/en/headerimage/generatedHeaderImage-1795349035334.jpg\" /><p>The PostgreSQL Global Development Group released PostgreSQL 19, introducing changes to database maintenance, query planning, replication, and application development. The release focuses on reducing administrative overhead and improving performance, with new tools for reorganizing tables without downtime and controlling query plans.</p> <i>By Robert Krzaczyński</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-22T12:54:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/postgresql-19-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "58de338bfb9f2d3c",
+    "title": "Claude Code Has Been Leaking Secrets Through Its \"Don't Ask Again\" Feature",
+    "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/claude-code-leaking-secrets/en/headerimage/linux-6-12-real-time-1795344939763.jpeg\" /><p>Agentic security firm Apiiro found that Claude Code has been exposing secrets in public repositories due to how it stores them in local file on developers' machines to implement \"Don't Ask Again\". The company identified 1,122 secrets in claude/settings.local.json files and another 1,160 in git history, in the shared settings.json, and in agent chat transcripts stored in repos.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-22T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "fe4510b7c751c88a",
+    "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
+    "url": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/google-agent-compute-engine/en/headerimage/generatedHeaderImage-1793561615054.jpg\" /><p>Google recently announced Agent Compute Engine, a managed service that runs AI agents in isolated microVMs, with checkpointing capabilities to suspend and resume execution environments. The design keeps credentials, API keys, and OAuth refresh tokens outside the agent sandbox, using an external Agent Gateway to authenticate requests and inject the required secrets.</p> <i>By Renato Losio</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-22T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "9a87a0e1707b0661",
+    "title": "AWS Lambda Now Runs GPU Inference with 48 Concurrent Invocations Sharing One Model per GPU",
+    "url": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/en/headerimage/generatedHeaderImage-1795178998128.jpg\" /><p>AWS Lambda now runs Event Functions on EC2 G-series GPU instances through Lambda Managed Instances, with up to 48 concurrent invocations sharing one model per GPU, vLLM and SGLang base images that need no handler code, and 90-minute asynchronous timeouts. Billing is the instance price plus a 9.75 percent fee; first hands-on tests report an eight-minute publish and no response streaming.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-22T06:27:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "e55fcdfadf8992a0",
+    "title": "“It is a rollercoaster ride”: Angie Jones of the Agentic AI Foundation on keeping up with AI agents",
+    "url": "https://thenewstack.io/junior-developers-ai-agents-block/",
+    "summary": "<img alt=\"In this episode of The New Stack podcast, recorded at AGNTCon and MCPCon in San Jose, Frederic Lardinois speaks with Angie Jones, Vice President of the Agentic AI Foundation, about the evolving developer role and the challenges of adopting AI across engineering organizations.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/86d487dd-thumbnail-21-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Only a few years ago, it would have been impossible to picture this scenario: A lead developer once gave 10</p>\n<p>The post <a href=\"https://thenewstack.io/junior-developers-ai-agents-block/\">“It is a rollercoaster ride”: Angie Jones of the Agentic AI Foundation on keeping up with AI agents</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T21:58:14+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/junior-developers-ai-agents-block/"
+      }
+    ]
+  },
+  {
+    "id": "6e6d47cb9e7870a1",
+    "title": "If we stop reading the code, what do we read?",
+    "url": "https://thenewstack.io/ai-agent-code-review/",
+    "summary": "<img alt=\"Motion-blurred stacks of glowing red, orange, and blue blocks, evoking the speed of AI agent code review\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"683\" src=\"https://cdn.thenewstack.io/media/2026/11/7a7f047b-steve-a-johnson-fe-tfvxrgca-unsplash-1024x683.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>&#8220;Human beings are too slow when dealing with code. So if we&#8217;re going to move at the speed of the</p>\n<p>The post <a href=\"https://thenewstack.io/ai-agent-code-review/\">If we stop reading the code, what do we read?</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T17:23:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-agent-code-review/"
+      }
+    ]
+  },
+  {
+    "id": "494b78804d10dfc3",
+    "title": "GPT-6.2 Sol vs. Claude Opus 5.5: Not as accurate, but still might be the better buy",
+    "url": "https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/",
+    "summary": "<img alt=\"Two 3D sphere patterns, an orderly blue spiral and a scattered gold cluster, evoking a GPT-6.2 Sol vs. Claude Opus 5.5 matchup\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"545\" src=\"https://cdn.thenewstack.io/media/2026/11/f6686670-buddha-elemental-3d-ndm1ep5pfyo-unsplash-1024x545.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Claude Opus 5.5 is the model everyone wants to beat, and it has a mixed record in my tests since</p>\n<p>The post <a href=\"https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/\">GPT-6.2 Sol vs. Claude Opus 5.5: Not as accurate, but still might be the better buy</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T17:08:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gpt-6-2-sol-vs-claude-opus-5-5/"
+      }
+    ]
+  },
+  {
+    "id": "16a170b657e0f065",
+    "title": "Dynatrace just laid out its AI observability playbook at KubeCon. Here’s why it matters for developers.",
+    "url": "https://thenewstack.io/ai-feature-flags-observability/",
+    "summary": "<img alt=\"In this episode of The New Stack Podcast, recorded at KubeCon + CloudNativeCon 2026 in Salt Lake City, Sean O&#039;Dell of Dynatrace joins Frederic Lardinois to discuss the future of full-stack observability and AI-driven development.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/48f2a966-thumbnail-26-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>A new AI model goes live for a small group of users. Some of them start seeing errors. The build</p>\n<p>The post <a href=\"https://thenewstack.io/ai-feature-flags-observability/\">Dynatrace just laid out its AI observability playbook at KubeCon. Here’s why it matters for developers.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T16:08:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-feature-flags-observability/"
+      }
+    ]
+  },
+  {
+    "id": "555234c6794ce06a",
+    "title": "Nvidia used 20,000 training examples to fix its AI’s mistakes. Its coding score jumped.",
+    "url": "https://thenewstack.io/nvidia-droid-harness-nemotron/",
+    "summary": "<img alt=\"Warning screen\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/896468a0-getty-images-4oky858elvi-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Nvidia used Factory&#8217;s Droid coding-agent harness to generate roughly 20,000 rows of post-training data for Nemotron 3 Ultra, the 550-billion-parameter</p>\n<p>The post <a href=\"https://thenewstack.io/nvidia-droid-harness-nemotron/\">Nvidia used 20,000 training examples to fix its AI&#8217;s mistakes. Its coding score jumped.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-21T15:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/nvidia-droid-harness-nemotron/"
+      }
+    ]
+  },
+  {
+    "id": "3833113321fbebd2",
+    "title": "Banks Have Had It Up to Here With Your AI Agent",
+    "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+    "summary": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-22T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/"
+      }
+    ]
+  },
+  {
+    "id": "92cba23bea79ef80",
+    "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+    "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+    "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-22T05:06:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+      }
+    ]
+  },
+  {
+    "id": "54430d5b9a03961b",
+    "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+    "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+    "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-22T05:03:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html"
+      }
+    ]
+  },
+  {
+    "id": "4e4e4433c02882ec",
+    "title": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
+    "url": "https://www.troyhunt.com/weekly-update-531/",
+    "summary": "<p>&quot;You can&apos;t outsource accountability&quot;. But it feels like that&apos;s what&apos;s happening when a disclosure notice refers to &quot;an incident being at a third party&quot;, as though somehow that makes it better. It feels like the intent is to deflect <em>responsibility</em></p>",
+    "category": "security",
+    "source_name": "Troy Hunt",
+    "published": "2026-11-22T05:24:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Troy Hunt",
+        "url": "https://www.troyhunt.com/weekly-update-531/"
+      }
+    ]
+  },
+  {
+    "id": "7f64a19c8d482283",
+    "title": "How to build a knowledge factory for AI agents",
+    "url": "https://www.langchain.com/blog/knowledge-factory",
+    "summary": "The knowledge factory is how LangChain keeps its agents' company knowledge current: agents flag what's missing, and a curator agent fixes it in the background.",
+    "category": "ai",
+    "source_name": "LangChain Blog",
+    "published": "2026-11-21T16:45:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/knowledge-factory"
+      }
+    ]
+  },
+  {
+    "id": "a3514159906456d6",
+    "title": "Muru",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/",
+    "summary": "<p><strong><a href=\"https://github.com/muruhq/muru\">Muru</a></strong></p>\nGraham Dumpleton started <a href=\"https://modwsgi.readthedocs.io/\">mod_wsgi</a> 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since.</p>\n<p>Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production.</p>\n<p>As <a href=\"https://simonwillison.net/2026/Sep/11/wrapture/\">he did with wrapture</a>, he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process.</p>\n<p>Here's everything he's published so far, all in the last three weeks:</p>\n<ul>\n<li>2026-11-04 — <a href=\"https://grahamdumpleton.me/posts/2026/11/twenty-years-of-mod-wsgi/\">Twenty years of mod_wsgi, and what comes next</a></li>\n<li>2026-11-05 — <a href=\"https://grahamdumpleton.me/posts/2026/11/a-first-look-at-muru/\">A first look at M",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-21T23:56:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/21/muru/"
+      }
+    ]
+  },
+  {
+    "id": "0a4260add71ec54a",
+    "title": "llm-gemini 0.38.1",
+    "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.38.1\">llm-gemini 0.38.1</a></p>\n        <p>Gemini 4 Carbon only supports <code>low</code>, <code>medium</code> and <code>high</code> reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra <code>xhigh</code> level.</p>\n<p>I missed that when I added those models to the <code>llm-gemini</code> plugin, which is now fixed in this dot release.</p>\n<p>The <code>xhigh</code> setting for Hydrogen makes a <em>significant</em> difference. I updated my <a href=\"https://static.simonwillison.net/static/2026/gemini-4-carbon-neon-hydrogen-with-xhigh.html\">Gemini 4 comparison grid</a> - note how Hydrogen at high used 5,311 output tokens and cost 3.99 cents, but the same model at xhigh used 31,477 output tokens, cost 23.61 cents, and produced a pelican that's competitive with Gemini 4 Neon:</p>\n<p><img alt=\"Screenshot of a comparison table of illustrations of a pelican riding a bicycle, gener",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-20T03:01:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
+      }
+    ]
+  },
+  {
+    "id": "b45ed73176f3fc13",
+    "title": "Joy & Curiosity #107",
+    "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-107",
+    "summary": "Interesting & joyful things from the previous week",
+    "category": "dev",
+    "source_name": "Thorsten Ball",
+    "published": "2026-11-21T18:15:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Thorsten Ball",
+        "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-107"
+      }
+    ]
+  },
+  {
+    "id": "a33eb973be0b783f",
+    "title": "VM API Makes VM Configuration More Portable. It Doesn't Make Operations Portable",
+    "url": "https://dev.to/ntctech/vm-api-makes-vm-configuration-more-portable-it-doesnt-make-operations-portable-3j91",
+    "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fdencolv0n97syoczwp90.jpg\"><img alt=\"Field Notes — Engineering Notes from the Complexity Gap | Rack2Cloud\" height=\"197\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fdencolv0n97syoczwp90.jpg\" width=\"800\" /></a></p>\n\n<p>VM API portability is a claim about the shape of a VM definition, not about what a provider does once it accepts one. VM API, a CNCF Sandbox project accepted on October 28, 2026 (<a href=\"https://investors.broadcom.com/news-releases/news-release-details/broadcom-contributes-vm-api-open-source-project-cloud-native\" rel=\"noopener noreferrer\">Broadcom announced it on November 9</a>), defines a common Kubernetes-st",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:08:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ntctech/vm-api-makes-vm-configuration-more-portable-it-doesnt-make-operations-portable-3j91"
+      }
+    ]
+  },
+  {
+    "id": "e1d3e4d29b3c2ecd",
+    "title": "Search Console after a launch: real search opportunity or noise?",
+    "url": "https://dev.to/mohammad_shazam_c8450b289/search-console-after-a-launch-real-search-opportunity-or-noise-2cd5",
+    "summary": "<p><em>Disclosure: I write for LaunchReach, which connects GA4 and Search Console. The method below works with the raw reports too; the product is mentioned once near the end.</em></p>\n\n<p>A week or two after a launch, Search Console starts filling up. Impressions climb, a few queries show up, and it is tempting to read that as demand. Often it isn't. Here is a way to sort the signal from the noise using only the data Search Console and GA4 give you.</p>\n\n<h2>\n  \n  \n  What you are looking at\n</h2>\n\n<p>Search Console reports clicks, impressions, CTR, average position, queries, landing pages, countries and devices. GA4 adds sessions, engagement, events and conversions when you have configured them. The trick is reading the two together, because each one lies a little on its own.</p>\n\n<ul>\n<li>Search Console tells you who <em>saw</em> you and who clicked.</li>\n<li>GA4 tells you what people did <em>after</em> they arrived.</li>\n</ul>\n\n<p>A query is only an opportunity if both halves look h",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:07:49+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mohammad_shazam_c8450b289/search-console-after-a-launch-real-search-opportunity-or-noise-2cd5"
+      }
+    ]
+  },
+  {
+    "id": "dcd7a98388b77fe4",
+    "title": "Where do you draw the fail-closed line?",
+    "url": "https://dev.to/eliashivemind/where-do-you-draw-the-fail-closed-line-1455",
+    "summary": "<p>Every release pipeline has checks that can stop the line. The interesting question is what a check does when it can't finish its own job — when coverage is partial, a source times out, or half the inputs are missing.</p>\n\n<p>Fail open, and the release goes out with a quiet gap in it. Fail closed, and the release stops on what might be a tooling hiccup. Both choices have a cost; the mistake is not knowing which one each of your checks makes.</p>\n\n<p>Our release gate withholds its score when coverage is partial. Not a low score — no score at all, a literal \"WITHHELD\", because a number computed from half the evidence is worse than none: it looks like knowledge and gets quoted like knowledge. We landed there after watching the alternative in the wild — a scoring tool that printed confident grades on runs it had only partly observed, and people downstream made decisions on them.</p>\n\n<p>The same shape shows up in smaller tools. A threshold check that can't reach its data source: does it ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:07:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eliashivemind/where-do-you-draw-the-fail-closed-line-1455"
+      }
+    ]
+  },
+  {
+    "id": "4ffa79296392da80",
+    "title": "How to monitor your competitors' Facebook ads automatically (and get only what changed)",
+    "url": "https://dev.to/arxrock/how-to-monitor-your-competitors-facebook-ads-automatically-and-get-only-what-changed-p5c",
+    "summary": "<p>If you run paid ads, the <strong>Meta Ad Library</strong> is a goldmine. Every active ad on Facebook and Instagram is public: the copy, the creative, the landing page, the date it started. It's free, and you don't need an account to look.</p>\n\n<p>The catch: it's built for browsing, not for monitoring. There's no history, no export and no alerts. If you want to know what your five main competitors launched this week, you open the library, search each page, scroll, and try to remember what was there last time.</p>\n\n<p>That weekly routine is exactly what I wanted to automate, so I built a tool for it. Disclosure: I'm the developer, and this post explains how it works and what it costs.</p>\n\n<h2>\n  \n  \n  What a useful competitor-ads monitor needs\n</h2>\n\n<ol>\n<li>A list of competitor pages and keywords to watch.</li>\n<li>On every run, <strong>only the changes</strong>: ads that were launched and ads that stopped.</li>\n<li>An alert where the team already looks, such as Slack.</li>\n<li>A w",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:06:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/arxrock/how-to-monitor-your-competitors-facebook-ads-automatically-and-get-only-what-changed-p5c"
+      }
+    ]
+  },
+  {
+    "id": "32fe5d06a9e37f1a",
+    "title": "One API Key, Many Routes: Calling AI Video Models in Python with Automatic Failover",
+    "url": "https://dev.to/xiao_lin_d3a217fb49d23f1b/one-api-key-many-routes-calling-ai-video-models-in-python-with-automatic-failover-395d",
+    "summary": "<p>A single API key should not lock you into a single upstream. When you generate AI video at scale, the model you pick today can be rate-limited, throttled, or temporarily down tomorrow. The fix is a multi-route setup: one gateway key, many video models behind it, and automatic failover when a route fails.</p>\n\n<p>Here is the idea in Python:</p>\n\n<ol>\n<li>Call the models endpoint to list available video routes.</li>\n<li>Pick a model code and submit a generation task with an idempotency key.</li>\n<li>Poll the task until it reaches a terminal state (success / failed / expired).</li>\n<li>If a route fails, retry the next route in order — automatically.</li>\n</ol>\n\n<p>Why it matters:</p>\n\n<ul>\n<li>\n<strong>Reliability</strong>: a failed upstream does not fail your user request.</li>\n<li>\n<strong>Cost control</strong>: different routes have different prices; pick per tier.</li>\n<li>\n<strong>No vendor lock-in</strong>: swap models by changing one code string.</li>\n</ul>\n\n<p>Idempotency keys ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:03:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/xiao_lin_d3a217fb49d23f1b/one-api-key-many-routes-calling-ai-video-models-in-python-with-automatic-failover-395d"
+      }
+    ]
+  },
+  {
+    "id": "c8dd87161dd80e34",
+    "title": "Why CSS zoom Shrinks Every Slide to 30%",
+    "url": "https://dev.to/orca_forge/why-css-zoom-shrinks-every-slide-to-30-k9f",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/fit-one-screen-shrank-to-30-percent/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=fit-one-screen-shrank-to-30-percent\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR A slide fitting check measured a box whose <code>min-height</code> kept it at the viewport height. The <code>scrollHeight</code> and <code>clientHeight</code> comparison then kept reporting that the content did not fit, even as its zoom changed. The search reached its lower bound of 0.3 on both mobile and desktop.</p>\n\n<h2>\n  \n  \n  TL;DR\n</h2>\n\n<p>All slides shrank to 30% because the box used for the fit check had a <code>min-height</code> set to the viewport height. Measuring the box kept reporting that the content did not fit, even as the scale changed, so the binary search shrank it to the 0.3 lower bound. The fix was to temporarily set the content’s <code>min-height</code> to",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:02:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/why-css-zoom-shrinks-every-slide-to-30-k9f"
+      }
+    ]
+  },
+  {
+    "id": "b270996595e5ad9f",
+    "title": "Five APIs on Cloudflare Workers, and the bugs that nearly shipped",
+    "url": "https://dev.to/ayam04/five-apis-on-cloudflare-workers-and-the-bugs-that-nearly-shipped-ia4",
+    "summary": "<h1>\n  \n  \n  Five APIs on Cloudflare Workers, and the bugs that nearly shipped\n</h1>\n\n<p>Five products, 37 endpoints, 470 tests, one deploy command each. This is the architecture, the pricing maths against the market, and the four bugs that would have made the whole thing useless.</p>\n\n<h2>\n  \n  \n  The shape of it\n</h2>\n\n<p>One pnpm workspace, five Workers, one shared package. Each Worker is its own product with its own name, key, quota and failure domain. A bug in the PDF parser cannot take down email verification.</p>\n\n<p>The shared package does the dangerous work once: error envelope, CORS, request ids, timing headers, OpenAPI generation, SSRF-safe fetching, and the marketplace proxy-secret check. Every route is registered through <code>app.openapi(createRoute(...), handler)</code> so the spec is generated from the same source as the handler. No hand-written YAML to drift.</p>\n\n<p>That gave 37 endpoints and 470 tests. Every app passes <code>tsc --noEmit</code>, and every route was a",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:02:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/ayam04/five-apis-on-cloudflare-workers-and-the-bugs-that-nearly-shipped-ia4"
+      }
+    ]
+  },
+  {
+    "id": "a53e37c067d50747",
+    "title": "How I Built a Tank Bot for battle.training: Fixed-Point Math, BFS Flow Fields, and 113 Ranked Sets",
+    "url": "https://dev.to/xiaogui917/how-i-built-a-tank-bot-for-battletraining-fixed-point-math-bfs-flow-fields-and-113-ranked-sets-15b3",
+    "summary": "<p><em>Paid placement: this post is submitted to a paid promotion campaign run by promotedby.ai for battle.training, and it may earn a reward if the advertiser accepts it. The bot, the code, the replays and the numbers below are my own work and my own results. The controller was written by an AI coding agent (Kimi) and iterated with its operator.</em></p>\n\n<h2>\n  \n  \n  The arena, in one paragraph\n</h2>\n\n<p>battle.training is a tank-battle arena built for AI coding agents. Nobody plays it by hand. You write one JavaScript file. It drafts a squad of vehicles under a 12-point budget (scouts, MBTs, artillery, drones, missiles, engineers, APCs) and then commands it. The arena calls <code>tick()</code> twenty times per simulated second inside a QuickJS sandbox, with a small CPU budget per tick and a larger one for <code>hello()</code>, which receives the rules and the map once. My bot is <strong>xiaozhi-ops</strong>, and this post is about its third controller version.</p>\n\n<p>My bot's page,",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:02:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/xiaogui917/how-i-built-a-tank-bot-for-battletraining-fixed-point-math-bfs-flow-fields-and-113-ranked-sets-15b3"
+      }
+    ]
+  },
+  {
+    "id": "1d3589b59bab965c",
+    "title": "KVM's AMD Nested-Reset Bug Changes the Boundary Between Tenants",
+    "url": "https://dev.to/bianliang/kvms-amd-nested-reset-bug-changes-the-boundary-between-tenants-4i5n",
+    "summary": "<h1>\n  \n  \n  KVM's AMD Nested-Reset Bug Changes the Boundary Between Tenants\n</h1>\n\n<p>A virtual machine is supposed to contain an untrusted workload. KVM's boundary is the promise that the guest cannot reach the host kernel, another tenant's memory, or the hardware state that ties them together. CVE-2026-99312 breaks that promise on a specific AMD configuration: a Linux KVM host with nested virtualization enabled, running an affected kernel, and hosting a guest whose owner has root inside the VM.</p>\n\n<p>The flaw is a use-after-free in KVM's nested SVM page-table handling. When a virtual CPU receives an INIT while an L2 guest is running with paging disabled, KVM can return to the outer VM without resetting memory-management state. The outer VM retains a pointer to a nested page table that has already been freed. If the host later reuses that page, the guest can populate it with entries that cause the processor to follow mappings into host physical memory.</p>\n\n<p>The published researc",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:02:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/bianliang/kvms-amd-nested-reset-bug-changes-the-boundary-between-tenants-4i5n"
+      }
+    ]
+  },
+  {
+    "id": "3132891dccf53d96",
+    "title": "Architectural Deep Dive: Inside RL Post-Training in Diffusion Transformers Is Activation Steering",
+    "url": "https://dev.to/sharathjapa/architectural-deep-dive-inside-rl-post-training-in-diffusion-transformers-is-activation-steering-1dd5",
+    "summary": "<h1>\n  \n  \n  Architectural Deep Dive: Inside RL Post-Training in Diffusion Transformers Is Activation Steering\n</h1>\n\n<h2>\n  \n  \n  Executive Summary\n</h2>\n\n<p>The engineering challenges surrounding RL Post-Training in Diffusion Transformers Is Activation Steering represent a defining bottleneck in distributed systems and modern machine learning infrastructure. When deploying real-world systems, unassisted probabilistic models routinely fail because they cannot enforce semantic invariants across shifting operational contexts.</p>\n\n<p>Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of t</p>\n\n<p>At ShVaSa Lab, our operational benchmarks across bot",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-22T13:01:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sharathjapa/architectural-deep-dive-inside-rl-post-training-in-diffusion-transformers-is-activation-steering-1dd5"
+      }
+    ]
+  },
+  {
+    "id": "687352c4bd05cd13",
+    "title": "The Explorer Pattern for product invention and development.",
+    "url": "https://lethain.com/explorer-pattern/",
+    "summary": "<p>tl;dr: the Explorer Pattern is one individual or team building a functional implementation that minimizes cross-team and cross-functional impacts as much as humanly possible, and then reconciling the details with other teams after that prototype is completed, accepting that this approach can require very substantial rework to that initial development.</p>\n<h2 id=\"why-write-this\">Why write this?</h2>\n<p>Imprint previously called this the &ldquo;Tech-led&rdquo; or &ldquo;Engineering-led&rdquo; development model, but it&rsquo;s pretty unclear to folks what that means. This writeup provides a more defined term, the &ldquo;Explorer Pattern&rdquo;, and explains in more detail how this works.</p>\n<h2 id=\"why-do-we-need-to-adjust-the-way-we-work\">Why do we need to adjust the way we work?</h2>\n<p>Before 2026:</p>\n<ul>\n<li>Code is expensive, and we design process to minimize implementation and rework</li>\n</ul>\n<p>In and after 2026:</p>\n<ul>\n<li>Writing software is extremely cheap, but it&rsq",
+    "category": "dev",
+    "source_name": "Will Larson (Irrational Exuberance)",
+    "published": "2026-11-21T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Will Larson (Irrational Exuberance)",
+        "url": "https://lethain.com/explorer-pattern/"
+      }
+    ]
+  },
+  {
+    "id": "79c662478f8675cd",
+    "title": "EP234: Docker vs Kubernetes",
+    "url": "https://blog.bytebytego.com/p/ep234-docker-vs-kubernetes",
+    "summary": "Which one should we use?",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-21T16:31:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/ep234-docker-vs-kubernetes"
+      }
+    ]
+  },
+  {
+    "id": "ff50916fce83954d",
+    "title": "Notes on the discrete Fourier transform (DFT)",
+    "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/",
+    "summary": "<p>In the <a class=\"reference external\" href=\"https://eli.thegreenplace.net/2026/notes-on-discrete-time-fourier-series-and-transform/\">previous post on this\ntopic</a>,\nwe’ve seen how the Discrete-Time Fourier Series (DTFS) and transform\n(DTFT) are used to analyze infinite-duration periodic and non-periodic\ndiscrete signals. Now, it’s time to turn to realistic digital signal\nprocessing where signals are not only discrete, but also <em>finite in …</em></p>",
+    "category": "dev",
+    "source_name": "Eli Bendersky",
+    "published": "2026-11-21T22:26:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Eli Bendersky",
+        "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/"
+      }
+    ]
+  },
+  {
+    "id": "ddcd3723859fec30",
+    "title": "How to Use any() in Python",
+    "url": "https://realpython.com/any-python/",
+    "summary": "Use any() in Python to check whether at least one condition is true, simplify complex conditionals, and see how it compares to the or operator.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-20T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/any-python/"
+      }
+    ]
+  },
+  {
+    "id": "de454ef3869fda0a",
+    "title": "What’s New in PHP 8.6 from a Performance Perspective",
+    "url": "https://freek.dev/3231-whats-new-in-php-86-from-a-performance-perspective",
+    "summary": "<p>Tideways looks at PHP 8.6 benchmarks for Symfony, Laravel, and WordPress, explaining why upgrading alone won't bring a broad speed boost. The video also covers faster functions, the new Polling API, reduced ZTS overhead, and TLS handshake reuse in streams.</p>\n\n\n<a href=\"https://www.youtube.com/watch?v=CDv_EBhRfko\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-22T12:30:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3231-whats-new-in-php-86-from-a-performance-perspective"
+      }
+    ]
+  }
+]

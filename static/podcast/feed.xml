@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Sat, 21 Nov 2026 13:23:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 13:23:45 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Automation advances, but its boundaries still matter</title>
+      <description>This Sunday’s briefing connects new execution platforms and developer tooling with a recurring concern: abstractions do not remove operational responsibility. The supplied reporting highlights advances in agent isolation, GPU inference and database…</description>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-22.mp3?v=f8998cae7cc1" length="11651074" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-22.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-22-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>This Sunday’s briefing connects new execution platforms and developer tooling with a recurring concern: abstractions do not remove operational responsibility. The supplied reporting highlights advances in agent isolation, GPU inference and database…</itunes:summary>
+      <itunes:duration>971</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-22.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Automation raises the stakes for verification</title>
       <description>Saturday's briefing connects a larger serverless request limit, generally available AI code review, and new questions about what automated systems can see and trust. Across infrastructure incidents, data refreshes, and browser engineering, the strongest…</description>
