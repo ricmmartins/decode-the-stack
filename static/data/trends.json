@@ -752,6 +752,39 @@
         "anthropic": 1,
         "langchain": 1
       }
+    },
+    {
+      "date": "2026-11-23",
+      "tags": {
+        "microsoft": 1,
+        "api": 3,
+        "golang": 1,
+        "claude": 7,
+        "rust": 2,
+        "vercel": 3,
+        "sre": 1,
+        "pulumi": 1,
+        "dotnet": 4,
+        "github": 3,
+        "anthropic": 3,
+        "javascript": 1,
+        "slack": 2,
+        "openai": 2,
+        "chatgpt": 1,
+        "containers": 2,
+        "graphql": 1,
+        "nodejs": 1,
+        "meta": 3,
+        "python": 2,
+        "cve": 3,
+        "github-actions": 1,
+        "cicd": 1,
+        "langchain": 1,
+        "rag": 1,
+        "open-source": 1,
+        "wasm": 1,
+        "spring": 1
+      }
     }
   ],
   "top_tags": [
@@ -763,17 +796,17 @@
     "google",
     "nvidia",
     "dotnet",
-    "microsoft",
     "anthropic",
+    "microsoft",
     "cve",
     "openai",
-    "aws",
     "vercel",
+    "aws",
     "golang",
     "linux",
     "llm",
-    "apple",
     "rust",
-    "kubernetes"
+    "apple",
+    "meta"
   ]
 }

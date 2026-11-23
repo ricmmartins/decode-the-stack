@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-11-22T13:23:05.962899+00:00",
+  "updated_at": "2026-11-23T13:29:39.196377+00:00",
   "configured_feeds": 242,
-  "editions_published": 20,
-  "headlines_published": 960,
-  "sources_credited": 88,
-  "latest_edition_date": "2026-11-22",
-  "latest_headlines": 40,
+  "editions_published": 21,
+  "headlines_published": 1010,
+  "sources_credited": 90,
+  "latest_edition_date": "2026-11-23",
+  "latest_headlines": 50,
   "source_counts": [
     {
       "name": "Dev.to (Top)",
-      "headlines": 222
+      "headlines": 234
     },
     {
       "name": "InfoQ",
-      "headlines": 91
+      "headlines": 93
     },
     {
       "name": "The Hacker News",
-      "headlines": 88
+      "headlines": 93
     },
     {
       "name": "Hacker News (Best)",
-      "headlines": 63
+      "headlines": 68
     },
     {
       "name": "TechCrunch",
-      "headlines": 59
+      "headlines": 60
     },
     {
       "name": "The New Stack",
-      "headlines": 41
+      "headlines": 42
     },
     {
       "name": "Simon Willison",
-      "headlines": 30
+      "headlines": 31
     },
     {
       "name": "The Verge - Tech",
-      "headlines": 29
+      "headlines": 30
     },
     {
       "name": "Vercel Blog",
-      "headlines": 25
+      "headlines": 29
     },
     {
       "name": "Lobsters",
-      "headlines": 24
+      "headlines": 26
     },
     {
       "name": "Real Python",
-      "headlines": 23
+      "headlines": 24
     },
     {
       "name": "Wired",
-      "headlines": 21
+      "headlines": 23
     },
     {
       "name": "OpenAI Blog",
-      "headlines": 19
+      "headlines": 20
     },
     {
       "name": "JetBrains Blog",
-      "headlines": 16
+      "headlines": 17
     },
     {
       "name": "Freek Van der Herten",
-      "headlines": 15
+      "headlines": 16
     },
     {
       "name": "Schneier on Security",
-      "headlines": 15
+      "headlines": 16
     },
     {
       "name": "The Daily WTF",
@@ -140,6 +140,10 @@
       "headlines": 4
     },
     {
+      "name": "Risky Business (Podcast)",
+      "headlines": 4
+    },
+    {
       "name": "Azure DevOps Blog",
       "headlines": 3
     },
@@ -156,7 +160,7 @@
       "headlines": 3
     },
     {
-      "name": "Risky Business (Podcast)",
+      "name": "Grab Tech",
       "headlines": 3
     },
     {
@@ -165,6 +169,14 @@
     },
     {
       "name": "Spacelift Blog",
+      "headlines": 3
+    },
+    {
+      "name": "SRE Weekly",
+      "headlines": 3
+    },
+    {
+      "name": "Troy Hunt",
       "headlines": 3
     },
     {
@@ -208,6 +220,10 @@
       "headlines": 2
     },
     {
+      "name": "Kyle Kingsbury (Aphyr)",
+      "headlines": 2
+    },
+    {
       "name": "LaunchDarkly Blog",
       "headlines": 2
     },
@@ -220,19 +236,15 @@
       "headlines": 2
     },
     {
+      "name": "Pulumi Blog",
+      "headlines": 2
+    },
+    {
       "name": "Raymond Chen (Old New Thing)",
       "headlines": 2
     },
     {
-      "name": "SRE Weekly",
-      "headlines": 2
-    },
-    {
       "name": "Thorsten Ball",
-      "headlines": 2
-    },
-    {
-      "name": "Troy Hunt",
       "headlines": 2
     },
     {
@@ -308,11 +320,11 @@
       "headlines": 1
     },
     {
-      "name": "Kyle Kingsbury (Aphyr)",
+      "name": "Meta Engineering",
       "headlines": 1
     },
     {
-      "name": "Meta Engineering",
+      "name": "Microsoft DevBlogs",
       "headlines": 1
     },
     {
@@ -333,10 +345,6 @@
     },
     {
       "name": "PortSwigger Research",
-      "headlines": 1
-    },
-    {
-      "name": "Pulumi Blog",
       "headlines": 1
     },
     {
@@ -363,23 +371,23 @@
   "category_counts": [
     {
       "name": "Software Engineering",
-      "headlines": 704
+      "headlines": 738
     },
     {
       "name": "Security",
-      "headlines": 120
+      "headlines": 128
     },
     {
       "name": "AI/ML",
-      "headlines": 57
+      "headlines": 59
     },
     {
       "name": "Cloud",
-      "headlines": 43
+      "headlines": 47
     },
     {
       "name": "DevOps & SRE",
-      "headlines": 35
+      "headlines": 37
     }
   ],
   "history": [
@@ -482,6 +490,11 @@
       "date": "2026-11-22",
       "headlines": 40,
       "sources": 16
+    },
+    {
+      "date": "2026-11-23",
+      "headlines": 50,
+      "sources": 23
     }
   ]
 }

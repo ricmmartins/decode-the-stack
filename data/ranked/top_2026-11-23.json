@@ -1,0 +1,354 @@
+[
+  {
+    "id": "1313be224734d501",
+    "title": "Do AI coding agents struggle with non-REST APIs?",
+    "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/",
+    "summary": "<p>Should your next API be REST, or something else? And which one will AI coding agents handle best? We tested REST, POST-only and RPC-style APIs with six models across 1,356 runs, and what decided whether agents succeeded had nothing to do with API style.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/\">Do AI coding agents struggle with non-REST APIs?</a> appeared first on <a href=\"https://devblogs.microsoft.com\">Microsoft for Developers</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft DevBlogs",
+    "published": "2026-11-23T10:25:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft DevBlogs",
+        "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "f48edd6a3b6cfee1",
+    "title": "A Freelance Designer, a New Client and a Contract Nobody Had to Log In For",
+    "url": "https://dev.to/documantra/a-freelance-designer-a-new-client-and-a-contract-nobody-had-to-log-in-for-51ih",
+    "summary": "<p><em>Illustrative example: the people and details below are fictional, written to show how the process works.</em></p>\n\n<p>Meera is a freelance brand designer in Kolkata. Last month, a Mumbai restaurant group asked her for a logo refresh and menu design. They agreed on scope and fees over a video call, and Meera promised to \"send the contract today\". This is how that afternoon went, and what she learned about getting signatures from busy clients.</p>\n\n<h2>\n  \n  \n  The problem with her old method\n</h2>\n\n<p>Previously, Meera emailed a Word file and asked clients to print, sign, scan and return it. Some sent a phone photo, slightly crooked, with half the page in shadow. Others replied \"Looks good, go ahead\" and never signed at all. One client asked her to sign up on a tool he used, and the account email he sent got lost in her spam folder for a week.</p>\n\n<p>The restaurant's operations head, Farhan, had already told her he was \"travelling all week, on the phone only\". Asking him to regi",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:02:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/documantra/a-freelance-designer-a-new-client-and-a-contract-nobody-had-to-log-in-for-51ih"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8aa606327a208847",
+    "title": "Lean Certifies Claude's Riemann Proof. The Hype Check Follows.",
+    "url": "https://dev.to/lanternproton/lean-certifies-claudes-riemann-proof-the-hype-check-follows-7o8",
+    "summary": "<p>Two things arrived in the Chinese AI channels on November 23: a machine-checked proof of the Riemann Hypothesis, and a crowd arguing about what it actually means.</p>\n\n<p>▸ <strong>Lean and Mathlib signed off on the proof.</strong> On November 21 the two communities issued a joint statement confirming that Levent Alpöge's Lean library — 17 million lines, 175,187 modules compiled against Mathlib 4.33.1 — states and proves the Riemann Hypothesis. The checks covered four points: definitions correct, code compiles, the theorem is the standard RH rather than a swapped definition, and the export passes independent kernels (lean4lean, the Rust kernel Nanoda, con-leche). The axiom audit found only <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code> <em>(source: <a href=\"https://t.me/aigc1024/27309\" rel=\"noopener noreferrer\">@aigc1024</a>)</em>.</p>\n\n<p>▸ <strong>What the certificate does not settle.</strong> Verification covers the formal artifact, not the mathem",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:02:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/lanternproton/lean-certifies-claudes-riemann-proof-the-hype-check-follows-7o8"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "52b6d47c81e5f604",
+    "title": "AI Gateway now runs canary ZDR audits",
+    "url": "https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits",
+    "summary": "<p><a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> now runs canary audits against inference providers to detect when prompt content is read outside the inference path.</p><p>Contractual Zero Data Retention (ZDR) agreements and point-in-time security audits establish how a provider should handle your data, but production infrastructure changes continuously. Canary audits add a detection layer on top.</p><p>Each canary audit run:</p><ol><li><p>Mints unique URLs that exist nowhere else, each mapped privately to a specific provider, model, and audit run.</p></li><li><p>Sends prompts containing those URLs through the normal inference path, with ZDR requested for covered providers and non-ZDR pairs included as positive controls.</p></li><li><p>Watches for traffic. A ZDR provider should never retain, inspect, or crawl prompt content, so a canary URL should never receive a request.</p></li><li><p>Records any request to a canary URL, identifying the provider, model, and run for investiga",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-23T06:19:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "45297c92d322056f",
+    "title": "Introducing Audited ZDR on AI Gateway",
+    "url": "https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway",
+    "summary": "<p>AI is now used in every part of a business, and as a result, companies send source code, customer records, and regulated data through inference providers. </p><p>The assurance that no data is retained after processing is still publicly unverified. Payment platforms, cloud infrastructure, and most other layers that handle data this sensitive have a way to prove their controls to outside parties, and inference will follow the same path.</p><p>Today we are introducing Audited ZDR on AI Gateway. A provider is labeled Audited ZDR only after an independent security firm tests its zero data retention claims against its code, infrastructure, and live traffic, then publishes the report. <a href=\"https://www.baseten.co/\">Baseten</a>, <a href=\"https://modal.com/\">Modal</a>, and <a href=\"https://www.wafer.ai/\">Wafer</a> are launch partners that have already begun audits, and more providers are encouraged to join to help raise the bar for security and privacy. </p><p>Audited ZDR builds on two st",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-23T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "155c686f8a3320f2",
+    "title": "SRE Weekly Issue #544",
+    "url": "https://sreweekly.com/sre-weekly-issue-544/",
+    "summary": "View on sreweekly.com A message from our sponsor, JAMS Software: Our support team moved its on-call off PagerDuty in under an hour. JAMS Incident Management checks your PagerDuty account read-only, then imports: schedules, rotations, and overrides escalation policies, teams, and people without emailing, texting, or calling anyone ☞ Run the PagerDuty conversion, free for 14 [&#8230;]",
+    "category": "devops",
+    "source_name": "SRE Weekly",
+    "published": "2026-11-23T04:06:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "SRE Weekly",
+        "url": "https://sreweekly.com/sre-weekly-issue-544/"
+      }
+    ],
+    "score": 16.85
+  },
+  {
+    "id": "5721da93aeb57985",
+    "title": "Least privilege by default: what's new in Pulumi Cloud RBAC",
+    "url": "https://www.pulumi.com/blog/pulumi-cloud-rbac-least-privilege-by-default/",
+    "summary": "<img src=\"https://www.pulumi.com/images/generated/blog/pulumi-cloud-rbac-least-privilege-by-default/index.png\" />\n<p>Access control in <a href=\"https://www.pulumi.com/docs/administration/concepts/rbac/\">Pulumi Cloud</a> now starts from least privilege. Every organization gets three new built-in roles, you can share a single stack or environment with a teammate, and you can create service principals to give your automated workloads their own identity.</p>\n<h2 id=\"why-change-how-access-works\">Why change how access works?</h2>\n<p>Protecting your infrastructure is central to how we build Pulumi Cloud, and access control has to keep up with how teams work. More people outside the platform team touch infrastructure, and a growing share of changes comes from pipelines and coding agents, which need to be governed as carefully as the people they work for.</p>\n<p>Security works best when the secure choice is also the convenient one. Giving people, agents, and automation the access they need, and",
+    "category": "devops",
+    "source_name": "Pulumi Blog",
+    "published": "2026-11-23T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Pulumi Blog",
+        "url": "https://www.pulumi.com/blog/pulumi-cloud-rbac-least-privilege-by-default/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "5f8d3130c6d16267",
+    "title": "Humans Have Rights. Machines Do Not.",
+    "url": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
+    "summary": "<p><em>This essay originally appeared in <a href=\"https://www.techpolicy.press/humans-have-rights-machines-do-not/\">Tech Policy Press</a>.</em></p>\n<p>Last year, Character.AI <a href=\"https://storage.courtlistener.com/recap/gov.uscourts.flmd.433581/gov.uscourts.flmd.433581.59.0.pdf\">asked</a> a federal court in Florida to dismiss a wrongful-death suit, brought by the mother of a fourteen-year-old boy who had killed himself after months of conversation with its chatbot. The company made two arguments. One, that the chatbot&#8217;s words were speech that its users had a First Amendment right to receive. And two, that Character.AI was a service rather than a product&#8212;so product-liability law could not touch it. In May 2025, Judge Anne Conway <a href=\"https://storage.courtlistener.com/recap/gov.uscourts.flmd.433581/gov.uscourts.flmd.433581.59.0.pdf\">accepted</a> neither...</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-23T12:00:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "6e0e296dfcc1fedf",
+    "title": "Here's Why Data Breach Disclosure is so Hard: Lessons from Hundreds of Emails with Hacked Companies",
+    "url": "https://www.troyhunt.com/heres-why-data-breach-disclosure-is-so-hard-lessons-from-hundreds-of-emails-with-hacked-companies/",
+    "summary": "<p>When I asked Claude to write the blog post below, I already knew what was in the messages it would read. Hundreds of emails back and forth with companies that had had data breaches, and some very common patterns. I knew the emails contained standoffish behaviour, deliberate delays, heavy involvement</p>",
+    "category": "security",
+    "source_name": "Troy Hunt",
+    "published": "2026-11-23T07:58:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Troy Hunt",
+        "url": "https://www.troyhunt.com/heres-why-data-breach-disclosure-is-so-hard-lessons-from-hundreds-of-emails-with-hacked-companies/"
+      }
+    ],
+    "score": 22.07
+  },
+  {
+    "id": "e09611c4f8c4705b",
+    "title": "Select Styling Specimens",
+    "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+    "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/select-styling\">Select Styling Specimens</a></p>\n        <p>I got frustrated at how HTML <code>&lt;select&gt;</code> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome:</p>\n<p><img alt=\"The same select box in Chrome, Safari, and Firefox, Chrome is white with a black border. Safari is grey with no border. Firefox is gray with a black border. They are all slightly different sizes.\" src=\"https://static.simonwillison.net/static/2026/select-firefox-safari-chrome.webp\" /></p>\n<p>So I had Claude Fable 5.2 <a href=\"https://claude.ai/share/a82c181c-0ea6-4fec-a659-8de653cb3e7b\">build</a> me <a href=\"https://tools.simonwillison.net/select-styling\">this page</a> showing all of the ways they can be styled:</p>\n<blockquote>\n<p><code>Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser</code></p>\n</blockquo",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-22T19:45:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/22/select-styling/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "eab0ff871b65d3e9",
+    "title": "Perplexity and Intelligence",
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+    "category": "ai",
+    "source_name": "OpenAI Blog",
+    "published": "2026-11-22T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/perplexity-and-intelligence"
+      }
+    ],
+    "score": 13.44
+  },
+  {
+    "id": "58683c97a40e0a0d",
+    "title": "Fast-Anything: Don't rewrite it in Rust. Rewrite the 5% that's slow",
+    "url": "https://github.com/EL4CTEO/fast-anything",
+    "summary": "<p>Article URL: <a href=\"https://github.com/EL4CTEO/fast-anything\">https://github.com/EL4CTEO/fast-anything</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50596155\">https://news.ycombinator.com/item?id=50596155</a></p>\n<p>Points: 200</p>\n<p># Comments: 163</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-22T04:10:09+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://z.ai/blog/glm-5.4"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/AFK-surf/xnulinux"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/gulivan/worker755"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/EL4CTEO/fast-anything"
+      }
+    ],
+    "score": 24.84
+  },
+  {
+    "id": "866e4caadf4efd66",
+    "title": "Claude Code Adds Experimental Code Mode to Orchestrate Tool Calls with JavaScript",
+    "url": "https://www.infoq.com/news/2026/11/claude-code-mode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/claude-code-mode/en/headerimage/generatedHeaderImage-1795090945761.jpg\" /><p>Anthropic's experimental Code Mode lets Claude Code write JavaScript that chains, parallelizes, and filters Bash, Read, and Edit calls, with changes to how auto mode and hooks review those calls.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-23T12:17:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/claude-code-mode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 23.48
+  },
+  {
+    "id": "75b6d90d90379d7e",
+    "title": "A Practical Cheat Sheet for Exporting Short Video Clips for the Web",
+    "url": "https://dev.to/clipa_video_3b8a53fbe7c4f/a-practical-cheat-sheet-for-exporting-short-video-clips-for-the-web-5de1",
+    "summary": "<p>Short clips (10 to 90 seconds) end up everywhere: bug reports, docs, chat threads, landing pages. Most of the time people export them with whatever defaults their tool picks, and end up with either a 40 MB file for a 20-second clip or a blurry mess. Here is the cheat sheet I use.</p>\n\n<h2>\n  \n  \n  1. Pick the resolution from the content\n</h2>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Content on screen</th>\n<th>Suggested height</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Talking head, music, sports highlight</td>\n<td>360p to 480p</td>\n</tr>\n<tr>\n<td>UI walkthrough with normal-size text</td>\n<td>720p</td>\n</tr>\n<tr>\n<td>Code, terminal, dense dashboards</td>\n<td>1080p (or crop to the region)</td>\n</tr>\n</tbody>\n</table></div>\n\n<p>Chat apps (WhatsApp, Telegram, Slack previews) recompress uploads anyway, so for people-and-motion content 480p is usually indistinguishable after the app is done with it.</p>\n\n<h2>\n  \n  \n  2. Use CRF instead of a fixed bitrate\n</h2>\n\n<p>For H.26",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:02:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/clipa_video_3b8a53fbe7c4f/a-practical-cheat-sheet-for-exporting-short-video-clips-for-the-web-5de1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ce8528d3325ef899",
+    "title": "Convert a PDF to Markdown with MinerU from the command line",
+    "url": "https://dev.to/yingtse/convert-a-pdf-to-markdown-with-mineru-from-the-command-line-k8l",
+    "summary": "<p>You have a PDF report and want it as Markdown: for your notes, or to give to an AI.</p>\n\n<p>How do you do it?</p>\n\n<p>You copy and paste from the PDF viewer. The headings turn into plain lines, and the tables turn into rows of numbers with no columns.</p>\n\n<p>You ask an AI, and it points you to <a href=\"https://github.com/opendatalab/MinerU\" rel=\"noopener noreferrer\">MinerU</a>, which reads the layout and keeps headings and tables. You install it, start its server, and find the command:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight shell\"><code>mineru parse report.pdf --tier standard --pages 1-10 -o report.md --wait 600\n</code></pre>\n\n</div>\n\n\n\n<p>Every flag matters. Leave out <code>--pages</code> and you only get the first 10 pages. Leave out <code>--wait</code> and a long document stops waiting after 60 seconds. <code>--tier</code> trades speed for quality.</p>\n\n<p>You save it somewhere: a Markdown note, or a <code>pdf2md.sh</code> file. Next time it'",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:02:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/yingtse/convert-a-pdf-to-markdown-with-mineru-from-the-command-line-k8l"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "f8a158588a492d01",
+    "title": "ChatGPT CSV File Limit: Why Big Files Fail and What Works",
+    "url": "https://dev.to/404jacobpnotfound/chatgpt-csv-file-limit-why-big-files-fail-and-what-works-138l",
+    "summary": "<p>This was first published on the Infograph blog: <a href=\"https://infograph.ai/blog/chatgpt-csv-file-limit\" rel=\"noopener noreferrer\">https://infograph.ai/blog/chatgpt-csv-file-limit</a></p>\n\n<p>ChatGPT takes CSV files up to about 50 MB. OpenAI, the company behind ChatGPT, calls that figure approximate, because it depends on how much is in each row. On a Free account you can also upload only three files a day.</p>\n\n<p>Being under 50 MB doesn't guarantee a full answer, though. OpenAI's own help says a file can upload fine and still be too big to analyse completely, and the reply may not say so. Here's how to check.</p>\n\n<p>Most files fit once you delete the columns your question doesn't need. If yours still won't, or you ask about the same data every week, a database is a better home for it: software built to answer questions over every row. It takes more setting up than a chat, so try the simple fixes first.</p>\n\n<h2>\n  \n  \n  How many rows fit in 50 MB\n</h2>\n\n<p>There's no fixed numb",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:01:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/404jacobpnotfound/chatgpt-csv-file-limit-why-big-files-fail-and-what-works-138l"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "42f074bb37207d6d",
+    "title": "21 Things to Do With Claude: Real Use Cases and Which Ones Need Care",
+    "url": "https://dev.to/saurabh_bhayana/21-things-to-do-with-claude-real-use-cases-and-which-ones-need-care-5dbc",
+    "summary": "<p><em>This guide was first published on <a href=\"https://saurabhbhayana.com/things-to-do-with-claude\" rel=\"noopener noreferrer\">saurabhbhayana.com</a>.</em></p>\n\n<p>Most people use Claude like a smarter search box: ask a question, read the answer, close the tab. That is the smallest part of what it can do now. Claude can read a 30-page contract, write and run code on your computer, act inside your browser, and run a job every morning while your laptop is closed.</p>\n\n<p>Ishan Sharma's recent video collected 21 ways people are using Claude, researched, fittingly, with a Claude skill that scans Reddit, X and YouTube. We grouped them by what they get you, added which Claude surface each one needs, and flagged the ones where you should check Claude's work before it acts. We use Claude Code every day to run this blog, so where we have done something similar ourselves, we say so.</p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfi",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:01:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/saurabh_bhayana/21-things-to-do-with-claude-real-use-cases-and-which-ones-need-care-5dbc"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "4136782163b8efeb",
+    "title": "Research Synthesis: Fine-Tuning Next-Scale Visual Autoregressive Models with Group Relative Policy Optimization",
+    "url": "https://dev.to/sharathjapa/research-synthesis-fine-tuning-next-scale-visual-autoregressive-models-with-group-relative-policy-5c9k",
+    "summary": "<h1>\n  \n  \n  Research Synthesis: Fine-Tuning Next-Scale Visual Autoregressive Models with Group Relative Policy Optimization\n</h1>\n\n<p>Here's a thinking process:</p>\n\n<ol>\n<li>\n<p><strong>Analyze User Input:</strong></p>\n\n<ul>\n<li>\n<strong>Author/Persona:</strong> Sharath Japa, Lead Systems Researcher &amp; Author at ShVaSa Lab (blog.shvasa.us)</li>\n<li>\n<strong>Topic:</strong> Fine-Tuning Next-Scale Visual Autoregressive Models with <a href=\"https://dev.to/posts/grpo-and-reinforcement-learning-for-small-reasoning-models\">Group Relative Policy Optimization</a>\n</li>\n<li>\n<strong>Category:</strong> tech</li>\n<li>\n<strong>Context Summary:</strong> arXiv:2505.23331v3, RL fine-tuning for generative models, GRPO application to next-scale visual autoregressive models.</li>\n<li>\n<strong>ShVaSa Continuation Perspective:</strong> Focus on reproducible homelab infrastructure, deterministic container orchestration, symbolic verification, local cluster consensus, data governance, deterministic exe",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:01:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sharathjapa/research-synthesis-fine-tuning-next-scale-visual-autoregressive-models-with-group-relative-policy-5c9k"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ca4786fd41d020bc",
+    "title": "GraphQL in Flutter: Queries, Mutations, and Why It Changes How You Think About APIs",
+    "url": "https://dev.to/yadneshteli/graphql-in-flutter-queries-mutations-and-why-it-changes-how-you-think-about-apis-535b",
+    "summary": "<p><em>Series 7 — Part 1 of 1</em></p>\n\n<h1>\n  \n  \n  GraphQL in Flutter: Queries, Mutations, and Why It Changes How You Think About APIs\n</h1>\n\n<p><em>A standalone post on integrating GraphQL using the graphql_flutter package</em></p>\n\n<p>Every API I had worked with in Flutter so far used REST — a fixed set of endpoints that return fixed data shapes. GraphQL is different. Instead of the server deciding what data you get, the client specifies exactly what it needs. I spent a day reading about GraphQL concepts and another day implementing a Flutter app that used it.</p>\n\n<h2>\n  \n  \n  The GraphQL mental model\n</h2>\n\n<p>In REST you call <code>GET /products</code> and get everything the server thinks you need. In GraphQL you write a query that specifies exactly which fields you want:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight graphql\"><code><span class=\"k\">query</span><span class=\"w\"> </span><span class=\"n\">GetProducts</span><span class=\"w\"> </span><span cla",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:01:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/yadneshteli/graphql-in-flutter-queries-mutations-and-why-it-changes-how-you-think-about-apis-535b"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2c12ca2ee267edd6",
+    "title": "What one AI reply on WhatsApp really costs when Zapier runs the flow",
+    "url": "https://dev.to/murad_adil_auto/what-one-ai-reply-on-whatsapp-really-costs-when-zapier-runs-the-flow-4llc",
+    "summary": "<p>This article was drafted with AI help and reviewed by the author.</p>\n\n<p>Someone asks \"how much will the WhatsApp AI assistant cost us a month?\" and the first answer is usually the model bill.</p>\n\n<p>That's one line out of three. When a Zap runs the flow, every AI reply also uses Zapier tasks, and the reply itself is a WhatsApp message that Meta may charge for. On a small or mid-sized flow the model line can end up the smallest of the three.</p>\n\n<p>This post does two things. It gives you a per-reply formula you can fill in with your own numbers. Then it adds one Code by Zapier step that logs the real model cost of each reply on the HubSpot contact and flags a handoff when one conversation gets expensive.</p>\n\n<p>All prices in this post are placeholders. The code was run locally against sample inputs with Node.js. It wasn't run inside Zapier, HubSpot or WhatsApp.</p>\n\n<h2>The Zap we're pricing</h2>\n\n<p>A typical inbound AI reply flow looks like this:</p>\n\n<p>``<code>text Trigger: ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:00:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/murad_adil_auto/what-one-ai-reply-on-whatsapp-really-costs-when-zapier-runs-the-flow-4llc"
+      }
+    ],
+    "score": 21.0
+  }
+]

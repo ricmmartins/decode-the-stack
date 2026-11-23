@@ -1,0 +1,512 @@
+[
+  {
+    "id": "ffa3a98e6e84a559",
+    "title": "Credit card interest in code: why a 2% minimum payment takes 110 years at 22.36%",
+    "url": "https://dev.to/jeremiah_say/credit-card-interest-in-code-why-a-2-minimum-payment-takes-110-years-at-2236-321",
+    "summary": "<p>Put $5,000 on a credit card at 22.36% and pay only a minimum of 2% of the balance (at least $20). How long until it's gone?</p>\n\n<p><strong>110 years and 3 months, with $56,440 of interest.</strong></p>\n\n<p>That isn't a bug in my code. It's the minimum-payment formula from Regulation Z's own sample, run with the Federal Reserve's latest average rate for cards that are charged interest. Switch to another common formula, 1% of the balance <strong>plus</strong> that month's interest, and the same $5,000 takes 19 years and 3 months.</p>\n\n<p>I built a <a href=\"https://toggle9.com/credit-card-interest-calculator/\" rel=\"noopener noreferrer\">credit card interest calculator</a> that follows the rules US card issuers use for the repayment estimate printed on every statement. This post covers the arithmetic, the rounding rules and the tests, and why one formula ends and the other nearly doesn't.</p>\n\n<h2>\n  \n  \n  Where 22.36% comes from\n</h2>\n\n<p>The Federal Reserve's <a href=\"https://www.fede",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jeremiah_say/credit-card-interest-in-code-why-a-2-minimum-payment-takes-110-years-at-2236-321"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "79302f9ec68748c9",
+    "title": "Why container image deletions persist with layered builds",
+    "url": "https://dev.to/orca_forge/why-container-image-deletions-persist-with-layered-builds-2ck9",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/crane-append-deletions-not-applied/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=crane-append-deletions-not-applied\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR Layered image builds include added or overwritten files, but do not carry forward deletions from the base image. In this case, two files deleted in the 10-09 change remained in the image after build time fell from 18 minutes to a few seconds. Use whiteout files or a full build to apply deletions, and check file contents, ownership, and mode before deployment.</p>\n\n<h2>\n  \n  \n  The Conclusion First\n</h2>\n\n<p>Adding a diff layer lets you apply additions and overwrites, but deletions of files in the original image are not carried through. To apply deletions, use whiteouts (files that mark deletions) or perform a full build. Before stacking layers, also check their contents, ownership,",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:00:01+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/why-container-image-deletions-persist-with-layered-builds-2ck9"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "45fe108a55cfe039",
+    "title": "Put Runtime Checks in a Dataclass Post-Init Hook",
+    "url": "https://dev.to/tokenpeakai/put-runtime-checks-in-a-dataclass-post-init-hook-8a1",
+    "summary": "<p>A field annotation describes an intended type; it does not automatically reject a different runtime value. A dataclass can generate a useful constructor while still accepting a string where the annotation says int.</p>\n\n<p>The <a href=\"https://docs.python.org/3.12/library/dataclasses.html#post-init-processing\" rel=\"noopener noreferrer\">Python dataclasses reference</a> describes the generated initializer and its call to <strong>post_init</strong>. This example adds one deliberately narrow contract: an exact integer count that is not negative. Boolean values are rejected even though bool is an int subclass.</p>\n\n<h2>\n  \n  \n  Test the generated behavior and the explicit policy\n</h2>\n\n<p>Plain is a counterexample without validation. Quantity adds checks in its post-init hook and freezes ordinary attribute assignment. The replace case checks that constructing a replacement also goes through validation.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight python\"><c",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-23T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tokenpeakai/put-runtime-checks-in-a-dataclass-post-init-hook-8a1"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6f8047d30550a1d3",
+    "title": "QCon San Francisco 2026: The Harness Is the New Operating System",
+    "url": "https://www.infoq.com/news/2026/11/harness-new-operating-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/harness-new-operating-system/en/headerimage/harness-header-1200x630-1795301479582.jpg\" /><p>At QCon San Francisco 2026, Mad Labs founder and CEO Manju Rajashekhar opened the conference arguing that the harness around an AI model, rather than the model itself, decides what an agent can do and how safely it does it. The keynote mapped the parts of a harness, including context, tools, state, permissions and feedback loops, onto jobs that operating systems already perform.</p> <i>By Andrew Hoblitzell</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-22T22:44:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/harness-new-operating-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "07488997f9982cc2",
+    "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+    "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+    "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers.\n\nThe bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-23T12:28:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "851e69fcb500bf73",
+    "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+    "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+    "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country.\n\nThis unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-23T08:24:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "a2ec21d43988705b",
+    "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+    "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+    "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today.\n\nThe company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-23T09:04:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html"
+      }
+    ],
+    "score": 19.95
+  },
+  {
+    "id": "3868e528fb8893c8",
+    "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+    "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers.\n\nThe activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host.\n\n\"On November 12, 2026, we observed one managed service",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-23T12:41:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
+      }
+    ],
+    "score": 19.91
+  },
+  {
+    "id": "b9bedd65936af1c2",
+    "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+    "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-23T09:11:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+      }
+    ],
+    "score": 19.91
+  },
+  {
+    "id": "e7859afd81e7b33c",
+    "title": "Bypassing iOS Safari’s 60 FPS Limit to Build Web Applications That Feel Native",
+    "url": "https://freek.dev/3232-bypassing-ios-safaris-60-fps-limit-to-build-web-applications-that-feel-native",
+    "summary": "<p>Rida F'kih combines native scrolling with OffscreenCanvas to get 120 Hz input and rendering on iOS Safari. He walks through the experiments behind a Liquid Glass tab bar and explains why this workaround isn't something to rebuild an entire app around.</p>\n\n\n<a href=\"https://rida.dev/blog/bypassing-ios-safari-60-fps-limit\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-23T12:30:38+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3232-bypassing-ios-safaris-60-fps-limit-to-build-web-applications-that-feel-native"
+      }
+    ],
+    "score": 19.4
+  },
+  {
+    "id": "6db60892fbb10d02",
+    "title": "Best GitHub Actions Alternatives in 2026: What 838 Organizations Actually Use",
+    "url": "https://blog.jetbrains.com/teamcity/2026/11/github-actions-alternatives/",
+    "summary": "GitHub Actions is the default CI/CD tool for much of the industry, because it&#8217;s built into GitHub. But 2026 gave teams reasons to look around. On July 9, hosted runner jobs were delayed or failing for more than nine hours. In May, the Megalodon campaign pushed malicious workflows to more than 5,500 repositories in one [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-23T07:56:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/teamcity/2026/11/github-actions-alternatives/"
+      }
+    ],
+    "score": 19.35
+  },
+  {
+    "id": "a8c242638171eea3",
+    "title": "Meta Muse can now do your Black Friday shopping at Walmart",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "summary": "Walmart will now let Meta's Muse shop on its website on your behalf, allowing the AI agent to find and purchase Black Friday deals. The retail giant is rolling out a live implementation of the Agent Gateway it announced last month, which helps AI agents find relevant products for you without sharing your purchase history, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-23T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
+      }
+    ],
+    "score": 19.33
+  },
+  {
+    "id": "a3bdaea852ce097a",
+    "title": "What Happened to Silicon Valley?",
+    "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+    "summary": "<p>Article URL: <a href=\"https://www.oreilly.com/radar/what-happened-to-silicon-valley/\">https://www.oreilly.com/radar/what-happened-to-silicon-valley/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50602947\">https://news.ycombinator.com/item?id=50602947</a></p>\n<p>Points: 722</p>\n<p># Comments: 390</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-22T19:20:15+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/"
+      }
+    ],
+    "score": 19.28
+  },
+  {
+    "id": "3007ec559a1c24f8",
+    "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+    "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+    "summary": "<p>Article URL: <a href=\"https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3\">https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50605045\">https://news.ycombinator.com/item?id=50605045</a></p>\n<p>Points: 243</p>\n<p># Comments: 181</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-22T23:12:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3"
+      }
+    ],
+    "score": 19.02
+  },
+  {
+    "id": "4d453c750f4d1e0f",
+    "title": "Backblaze customers worried of personal data sale/sharing after policy update",
+    "url": "https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/",
+    "summary": "<p>Article URL: <a href=\"https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/\">https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50600435\">https://news.ycombinator.com/item?id=50600435</a></p>\n<p>Points: 170</p>\n<p># Comments: 63</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-22T15:16:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/"
+      }
+    ],
+    "score": 18.13
+  },
+  {
+    "id": "b07a9f21faf188a6",
+    "title": "Catch missing feature flags before they reach production",
+    "url": "https://vercel.com/changelog/catch-missing-feature-flags-before-they-reach-production",
+    "summary": "<p><a href=\"https://vercel.com/docs/flags/vercel-flags\">Vercel Flags</a> can now block a deployment from reaching production if you’ve declared a flag in code but haven’t created it in your project. Without that definition, your app can silently fall back to the flag’s default value, even if that turns on a feature you meant to keep off.</p><p>The <b>Flag Definitions Present</b> <a href=\"https://vercel.com/docs/deployment-checks#native-deployment-checks\">Deployment Check</a> runs when a deployment is ready. If any flags are missing, the check fails and lists them in the results, where you can create each one before redeploying.</p><p>The check reads your <a href=\"https://vercel.com/docs/flags/flags-sdk-reference\">Flags SDK</a> discovery endpoint and requires <code>FLAGS_SECRET</code> to be set in your project’s environment.</p><p>To turn on blocking, teams on all plans can enable the check in their project’s <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fsettings%2Fbu",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-23T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/catch-missing-feature-flags-before-they-reach-production"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "eb4f8c505626ecb9",
+    "title": "A Power Provider for Meta Urged Regulators to Exempt Data Center Plants From Acid Rain Rules",
+    "url": "https://www.wired.com/story/a-power-provider-for-meta-urged-regulators-to-exempt-data-center-plants-from-acid-rain-rules/",
+    "summary": "Before the EPA recommended waiving acid rain regulations for certain data-center power plants, it met with industry players—including Williams, a gas power provider for Meta data centers.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-23T10:15:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/a-power-provider-for-meta-urged-regulators-to-exempt-data-center-plants-from-acid-rain-rules/"
+      }
+    ],
+    "score": 17.87
+  },
+  {
+    "id": "dea911291c48a8e8",
+    "title": "Quiz: LangChain Tutorial: From Prompts to RAG and AI Agents",
+    "url": "https://realpython.com/quizzes/langchain-tutorial/",
+    "summary": "Check your grasp of LangChain in Python, from chat messages and prompt templates to LCEL chains, RAG retrieval, and tool-calling agents.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-23T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/langchain-tutorial/"
+      }
+    ],
+    "score": 17.36
+  },
+  {
+    "id": "421c3230c172e0ea",
+    "title": "GPT-6.2 Astra vs. Claude Fable 5.2: Astra’s launch got mixed reviews, but it tested well here",
+    "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/",
+    "summary": "<img alt=\"Two 3D cubes side by side, one glowing green with rainbow edges and one dark blue, evoking an AI model head-to-head\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/a7a49ed2-steve-a-johnson-z4cfaa14neu-unsplash-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>When I compared Anthropic’s Fable 5.2 vs. OpenAI’s GPT-6 Astra last week, Fable 5.2 was slightly more accurate (149 points</p>\n<p>The post <a href=\"https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/\">GPT-6.2 Astra vs. Claude Fable 5.2: Astra’s launch got mixed reviews, but it tested well here</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-22T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "4e7c9142cdb282d6",
+    "title": "Goodbye, World: The End of Programmers",
+    "url": "https://www.wired.com/story/goodbye-world-the-end-of-programmers/",
+    "summary": "The last thing you should ever read—and the last thing I may ever write—about the craft of coding.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-23T10:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/goodbye-world-the-end-of-programmers/"
+      }
+    ],
+    "score": 16.98
+  },
+  {
+    "id": "a82ff7b7ae290873",
+    "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+    "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+    "summary": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T01:25:53+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/"
+      }
+    ],
+    "score": 16.87
+  },
+  {
+    "id": "49480d5723291645",
+    "title": "Open Social Web Alliance",
+    "url": "https://osw-alliance.net/en/",
+    "summary": "<p>Article URL: <a href=\"https://osw-alliance.net/en/\">https://osw-alliance.net/en/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50600511\">https://news.ycombinator.com/item?id=50600511</a></p>\n<p>Points: 246</p>\n<p># Comments: 236</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-22T15:24:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://osw-alliance.net/en/"
+      }
+    ],
+    "score": 16.6
+  },
+  {
+    "id": "92f14bbf985b913d",
+    "title": "Part 1: Simulation-first AI experimentation for ads at Grab",
+    "url": "https://engineering.grab.com/part-1-ads-simulation-blogpost",
+    "summary": "<h2 id=\"introduction\">Introduction</h2>\n\n<p>Ads delivery at Grab is increasingly an artificial intelligence (AI) decisioning problem. Every ad opportunity requires the system to infer user intent, predict engagement, balance advertiser returns, platform revenue, and user engagement, respect campaign budgets, and decide which ads should appear in a highly constrained product surface. As our ads systems become more complex, the range of bidding, ranking, and pacing strategies we need to evaluate grows with them. To continue improving quickly and safely, our approach to experimentation had to evolve: test more hypotheses offline, filter them against business and user guardrails, and reserve live traffic for the most promising ideas.</p>\n\n<p>Live A/B tests remain the gold standard for testing changes, but they consume real traffic, take time to gather clear signals, and expose users and advertisers’ budgets to unproven ideas. At Grab, we built an offline ads simulator to evaluate AI-driven",
+    "category": "dev",
+    "source_name": "Grab Tech",
+    "published": "2026-11-23T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grab Tech",
+        "url": "https://engineering.grab.com/part-1-ads-simulation-blogpost"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "f384f2c59bcb13cb",
+    "title": "Replaying merged changes: how we test whether a knowledge base makes coding agents better",
+    "url": "https://engineering.grab.com/replaying-merged-changes-knowledge-base-coding-agents-better",
+    "summary": "<h2 id=\"introduction\">Introduction</h2>\n\n<p>Every session, you get a new teammate: a coding agent. It reads code faster than you and has seen more of it than your whole team put together. What it does not have is any memory of how your service got this way.</p>\n\n<p>It can see what the code does. It cannot see why a limit lives in configuration, which nightly job breaks if you touch a shared client, or what an old review thread settled. So it asks, or it guesses.</p>\n\n<p>We built a knowledge base to fill that gap. For each backend service, it maps how requests move through the code, what a change could break, which configuration values the code runs with, and why the team made the calls it did. Agents load it before they touch a service.</p>\n\n<p>The harder part was knowing whether it helped. A plan that reads well can still be wrong, and every agent session starts from scratch, so you cannot watch an agent improve the way you watch a new hire settle in. We found the answer key in our Gi",
+    "category": "dev",
+    "source_name": "Grab Tech",
+    "published": "2026-11-23T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grab Tech",
+        "url": "https://engineering.grab.com/replaying-merged-changes-knowledge-base-coding-agents-better"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "f08721adfe41c72b",
+    "title": "How Grab built Scarlet: the AI teammate that turns a Slack message into a production data pipeline",
+    "url": "https://engineering.grab.com/how-grab-built-scarlet-blog",
+    "summary": "<h2 id=\"introduction\">Introduction</h2>\n\n<p>In the blog <a href=\"https://engineering.grab.com/from-firefighting-to-building\">From firefighting to building</a>, we described the agents our Analytics Data Warehouse (ADW) team built to take routine work off data engineers. Scarlet was the Enhancement Agent in that post. It read a ticket, wrote the change, and opened a merge request (MR) for an engineer to review. A routine enhancement dropped from about a day to one or two hours.</p>\n\n<div class=\"post-image-section\"><figure>\n  <img alt=\"\" src=\"/img/scarlet/figure-1.png\" style=\"width: 100%;\" /><figcaption align=\"middle\">Figure 1. A pipeline change without Scarlet.</figcaption>\n  </figure>\n</div>\n\n<p>Then other teams asked for it, and four limits became clear:</p>\n\n<ul>\n  <li><strong>One team only:</strong> Scarlet’s repository and conventions lived in a single system prompt sent on every request. A second team meant forking the bot.</li>\n  <li><strong>No proof the data was right:</strong> ",
+    "category": "dev",
+    "source_name": "Grab Tech",
+    "published": "2026-11-23T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Grab Tech",
+        "url": "https://engineering.grab.com/how-grab-built-scarlet-blog"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "fc6b5c783500429a",
+    "title": "Choose AI Gateway providers by headquarters country",
+    "url": "https://vercel.com/changelog/choose-ai-gateway-providers-by-headquarters-country",
+    "summary": "<p><a href=\"https://vercel.com/docs/ai-gateway/security-and-compliance/provider-headquarters\">Provider headquarters</a> sends your <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> requests only to providers headquartered in countries you choose, so you can meet compliance and procurement rules about where your AI vendors are located.</p><p>You can configure provider headquarters to be an allowlist of the countries to use, or a denylist of the countries to block. AI Gateway skips providers in blocked countries and routes requests to the rest of the list, so a model stays accessible as long as it is available in one of its allowed provider locations. </p><p>Use provider headquarters with <a href=\"https://vercel.com/docs/ai-gateway/security-and-compliance/regional-hosting\">regional hosting</a> and <a href=\"https://vercel.com/docs/ai-gateway/security-and-compliance/regional-inference\">regional inference</a> to control where a request is received, where the model runs, and who runs it",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-23T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/choose-ai-gateway-providers-by-headquarters-country"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "5fff320ee2c84675",
+    "title": "Soap Box: Do AI agents need their own identities?",
+    "url": "https://risky.biz/SOAPBOX113/",
+    "summary": "In this sponsored Soap Box edition of the Risky Business podcast Patrick Gray chats with Fletcher Heisler, the CEO of open source IDP company Authentik.\n\nDo AI agents need their own identities? Or can we scope agent actions and authorisations in different ways?\n\nIt’s a fast moving space and lots of new tech and standards are emerging. Fletcher joins Pat to demystify it all!\n\nThis episode is also available on YouTube.",
+    "category": "security",
+    "source_name": "Risky Business (Podcast)",
+    "published": "2026-11-23T01:09:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Risky Business (Podcast)",
+        "url": "https://risky.biz/SOAPBOX113/"
+      }
+    ],
+    "score": 15.2
+  },
+  {
+    "id": "0f423a00843eb1d5",
+    "title": "Calculate radio link placement and node amount for your city's mesh network",
+    "url": "https://meshcoveragecalculator.lalala.ing/",
+    "summary": "<p>FSPL + Delta-Bullington based local-first WASM radio mesh network calculator with the end goal of making calls over mesh networks possible <strong>without</strong> pissing off anybody in the process (yes, I'm talking about you, Meshtastic maintainers).</p>\n<p>Feel free to tell me how this idea <em>does</em> or doesn't make sense and I'll continue vibing away in the meantime. Peace!</p>\n<p><a href=\"https://public-forge.lalala.ing/timoha/meshconveragecalculator/\" rel=\"ugc\">source code</a></p>\n<p><a href=\"https://lobste.rs/s/e89tey/calculate_radio_link_placement_node\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-22T18:17:44+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://meshcoveragecalculator.lalala.ing/"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "0464a10a8f9a8ad6",
+    "title": "\"And You Would be Supporting a Local Paper\"",
+    "url": "https://aphyr.com/posts/429-and-you-would-be-supporting-a-local-paper",
+    "summary": "<p>Last spring my dear friend Taber was doored while riding his bike, and came very close to dying. A friend and I got in our cars, made it to the hospital by three AM, and spent the next week caring for him. We traded off sitting at his bedside, making sure he stayed plugged in to the machines keeping him alive, coordinating with a dozen-odd specialists, taking notes, working with the medical and city bureaucracy, and transitioning to home care. My client was kind enough to let me take some time off, but I was still trying to work my way through a slew of database bugs during spare moments. We stayed in a hotel best described as “backrooms”, and I picked up a case of scabies. There was one point where I started crying while trying to pick out thank-you cards at Target. It was, in short, an exceedingly rough time, and it took the better part of a month to really recover.</p>\n<p>Taber, thank goodness, has made a spectacular recovery, and I’m so happy for him. My friend who came to care ",
+    "category": "dev",
+    "source_name": "Kyle Kingsbury (Aphyr)",
+    "published": "2026-11-22T14:46:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Kyle Kingsbury (Aphyr)",
+        "url": "https://aphyr.com/posts/429-and-you-would-be-supporting-a-local-paper"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "02dbe86936d83d7c",
+    "title": "Marches & Gnats programming challenges",
+    "url": "https://mng.quest/",
+    "summary": "<p><a href=\"https://lobste.rs/s/2zhfms/marches_gnats_programming_challenges\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-23T05:12:52+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://mng.quest/"
+      }
+    ],
+    "score": 13.93
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 136,
+      "title": "Vercel’s Audited ZDR proposal makes retention assurances..."
+    },
+    {
+      "startTime": 277,
+      "title": "The interesting shift in Claude Code’s experimental Code..."
+    },
+    {
+      "startTime": 419,
+      "title": "The security stories put delegated control under scrutiny...."
+    },
+    {
+      "startTime": 574,
+      "title": "That question of what we can actually verify connects two..."
+    },
+    {
+      "startTime": 730,
+      "title": "To close, let's connect the AI stories through a practical..."
+    }
+  ]
+}
