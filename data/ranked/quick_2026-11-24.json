@@ -1,0 +1,520 @@
+[
+  {
+    "id": "3bfed8df3a862e47",
+    "title": "Agoda Reduces API Code Review Time by 64% with Modular Architecture",
+    "url": "https://www.infoq.com/news/2026/11/agoda-modular-monolith-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/agoda-modular-monolith-framework/en/headerimage/generatedHeaderImage-1793569078425.jpg\" /><p>Agoda introduced a modular monolith framework in its post-booking API to reduce coupling without a full rewrite. The platform uses domain components, Data Mapper patterns, typed builders, and ArchUnit tests to enforce boundaries. Framework-backed changes showed 64% shorter median code reviews and 34% faster initial feedback than legacy changes.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-23T14:33:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/agoda-modular-monolith-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "e4216883c0b6dcd5",
+    "title": "How LinkedIn Built a View-Agnostic Analytics System for Modern iOS UI Architectures",
+    "url": "https://www.infoq.com/news/2026/11/linkedin-view-agnostic-analytics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/linkedin-view-agnostic-analytics/en/headerimage/linkedin-view-agnostic-analytics-1795455502517.jpeg\" /><p>To address the challenge posed by modern iOS UI systems where the logical UI structure may not mirror the native UIKit hierarchy, LinkedIn engineers developed a view-agnostic analytics system build around a shared MeasurableNode contract.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-23T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/linkedin-view-agnostic-analytics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 21.2
+  },
+  {
+    "id": "74ae39cff6a562f5",
+    "title": "Dev Material Archive",
+    "url": "https://css-tricks.com/dev-material-archive/",
+    "summary": "<p class=\"wp-block-paragraph\">A new <a href=\"https://dev-archive.org\" rel=\"nofollow noopener\">resource resurrecting lost web-dev articles and posts</a>:</p>\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n<p class=\"wp-block-paragraph\">This is an archive of written articles about web development, web design, and web accessibility that once existed on the World Wide Web and which would otherwise be lost to </p>\n</blockquote>\n<p>&#8230;</p>\n<hr />\n<p><small><a href=\"https://css-tricks.com/dev-material-archive/\" rel=\"nofollow\">Dev Material Archive</a> originally handwritten and published with love on <a href=\"https://css-tricks.com\" rel=\"nofollow\">CSS-Tricks</a>. You should really <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a> as well.</p>",
+    "category": "dev",
+    "source_name": "CSS-Tricks",
+    "published": "2026-11-23T14:18:50+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/using-frontend-fallbacks/"
+      },
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/dev-material-archive/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c2e5bc1bececb3f7",
+    "title": "AWS launches 5 new open decision models for AI agents",
+    "url": "https://thenewstack.io/aws-strands-decider-v2/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"768\" src=\"https://cdn.thenewstack.io/media/2026/05/2f95a795-img_3509-1024x768.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>AWS on Monday launched Strands Decider v2, a family of five open decision models. The release comes only seven weeks</p>\n<p>The post <a href=\"https://thenewstack.io/aws-strands-decider-v2/\">AWS launches 5 new open decision models for AI agents</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-23T18:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/aws-strands-decider-v2/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7aa3ecc7843fefef",
+    "title": "Palo Alto and Elastic snap up AI startups. The prize? Enterprise trust and control.",
+    "url": "https://thenewstack.io/palo-alto-applied-computer-elastic-honeyhive/",
+    "summary": "<img alt=\"Illustration of a developer working on a laptop surrounded by code windows, representing the growing enterprise AI infrastructure market for model training, evaluation and observability.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"640\" src=\"https://cdn.thenewstack.io/media/2026/11/95ebc045-hj-project-jykqoo7i25w-unsplash-1024x640.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>They say that to understand where an industry is heading, you have to follow the money. And two acquisitions announced</p>\n<p>The post <a href=\"https://thenewstack.io/palo-alto-applied-computer-elastic-honeyhive/\">Palo Alto and Elastic snap up AI startups. The prize? Enterprise trust and control.</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-23T15:22:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/palo-alto-applied-computer-elastic-honeyhive/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2d0a816c09a12283",
+    "title": "Ladybird's first alpha release",
+    "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+    "summary": "<p><a href=\"https://ladybird.org\">Ladybird</a> is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like <a href=\"https://github.com/harfbuzz/harfbuzz\">HarfBuzz</a> for text shaping, <a href=\"https://skia.org/\">Skia</a> for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project <a href=\"https://serenityos.org/\">SerenityOS</a>.</p>\n<p>This morning the Ladybird project <a href=\"https://ladybird.org/posts/alpha/\">released their first alpha</a>, which means you can now <a href=\"https://ladybird.org/download/\">install the browser</a> (on macOS or Linux) without having to compile it yourself!</p>\n<p>I've been trying it out today, and it's very impressive. It feels fast, the UI is ",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-23T21:46:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/23/ladybird/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "6e0745bb4f5008d8",
+    "title": "Alternativa offline a Descript y CapCut: quitar silencios, comprimir vídeos <10 MB y subtítulos con FFmpeg 9.1 y Whisper",
+    "url": "https://dev.to/juan_manuelrevillamaill/alternativa-offline-a-descript-y-capcut-quitar-silencios-comprimir-videos-10-mb-y-subtitulos-con-3n7m",
+    "summary": "<p>Si editas podcasts, tutoriales, gameplay o Shorts, seguramente ya conoces el peaje habitual de la nube: <strong>$20–$30 al mes</strong> en suscripciones como Descript, CapCut Pro o OpusClip, subidas lentas de archivos de varios gigas y marcas de agua si no pagas.</p>\n\n<p>La buena noticia en 2026 es que <strong>FFmpeg 9.1</strong> (ya con soporte nativo para <code>whisper.cpp</code> offline) permite hacer todo el trabajo pesado <strong>100% en local a la velocidad nativa de tu PC</strong>, sin subir ni un byte a internet.</p>\n\n<p>Aquí tienes las <strong>4 recetas exactas listas para copiar y pegar</strong>, además de una <strong><a href=\"https://clipforge-local.netlify.app/es/#free-tool\" rel=\"noopener noreferrer\">Calculadora Exact-MB de Bitrate y Comandos FFmpeg 9.x gratuita</a></strong> (sin registro) para calcular los parámetros exactos de cualquier vídeo.</p>\n\n\n\n\n<h3>\n  \n  \n  1. Comprimir un vídeo al tamaño exacto para Discord (&lt;10 MB) o WhatsApp (15 MB) sin perder calidad\n</h3",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:23:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/juan_manuelrevillamaill/alternativa-offline-a-descript-y-capcut-quitar-silencios-comprimir-videos-10-mb-y-subtitulos-con-3n7m"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "1eb4a9542f46c5a1",
+    "title": "How to Compare Cloud Storage Providers for Direct Browser Uploads — Go",
+    "url": "https://dev.to/suttonhawkins6723/how-to-compare-cloud-storage-providers-for-direct-browser-uploads-go-41f8",
+    "summary": "<p>Short answer: compare the tenant boundary before comparing upload latency. For a logistics receipt workflow, the browser should receive a short-lived upload URL for one server-selected object key, while the storage policy must prevent that URL from crossing tenants. S3, Cloudflare R2, and Wasabi can all be evaluated through that same contract because the important test is the trust boundary: who chooses the bucket, key, headers, and expiry, and what happens when a client retries?</p>\n\n<p>I have been paged by missed jobs and duplicate deliveries. Those alerts changed how I look at direct uploads. A successful HTTP response is not proof that the receipt is attached to the right shipment. A retry can create a second object, and a copied upload URL can expose another tenant's prefix. The provider comparison belongs after those cases are defined.</p>\n\n<h2>\n  \n  \n  What can a browser upload safely?\n</h2>\n\n<p>The browser needs permission to send bytes, not permission to invent identity. Th",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:21:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/suttonhawkins6723/how-to-compare-cloud-storage-providers-for-direct-browser-uploads-go-41f8"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "8e0c59ed3d5fe198",
+    "title": "Using JackedIN with AI agents",
+    "url": "https://dev.to/jackedin_app/using-jackedin-with-ai-agents-ghc",
+    "summary": "<h1>\n  \n  \n  Using JackedIN with AI agents\n</h1>\n\n<p>This article describes JackedIN 1.2.1, plus a safety rule being built for the next release. Human approval before any change is not in 1.2.1 yet. The canonical version is on the product site: <a href=\"https://getpathprobe.com/jackedin/ai-agents/\" rel=\"noopener noreferrer\">Using JackedIN with AI agents</a>.</p>\n\n<p>JackedIN is an SSH, Telnet and serial terminal for Windows, Linux and Raspberry Pi. The same program is a desktop window, a command line, a local API, and a stdio MCP server. Built-in profiles for Junos, Cisco IOS/NX-OS, Arista, Nokia, MikroTik and more.</p>\n\n<p>Use it only on devices you own or are allowed to manage. Examples use <code>192.0.2.10</code> and <code>router1</code>. Keep passwords out of the command line; set <code>JACKEDIN_PASSWORD</code> or a credential reference instead.</p>\n\n<h2>\n  \n  \n  Human approval before any change (coming in the next release)\n</h2>\n\n<p>This is the safety rule being built for AI sessi",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:19:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jackedin_app/using-jackedin-with-ai-agents-ghc"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a50978dddb99ac27",
+    "title": "Shadow AI Discovery and Data Loss Prevention Playbook",
+    "url": "https://dev.to/veduis/shadow-ai-discovery-and-data-loss-prevention-playbook-1kfh",
+    "summary": "<p>Shadow AI discovery is the part of AI governance that IT teams inherit without being asked. Nobody sends a memo announcing that the sales team pasted a customer contract into a chat tool, that an engineer connected a coding assistant to the production repository, or that finance trials four summarisation tools on last quarter's board pack. The usage simply exists, and the first question leadership asks is one nobody can answer from existing dashboards: how much of this is happening, and what data has left the building?</p>\n\n<p>The comfortable answer, that the company has a policy and a list of approved tools, describes intent rather than reality. Discovery is a separate discipline with its own data sources, its own blind spots, and its own false positives. This playbook is the version I would run at a 100 to 1,000 person company with a small IT team and no enterprise SIEM: what signals to collect, what risks those signals reveal, and which controls are worth buying before the rest.<",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:18:39+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/veduis/shadow-ai-discovery-and-data-loss-prevention-playbook-1kfh"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "01ad4620cc2dcca1",
+    "title": "Is It Safe to Delete ~/Library/Caches on a Mac? How to Clear Cache Safely",
+    "url": "https://dev.to/fastlog/is-it-safe-to-delete-librarycaches-on-a-mac-how-to-clear-cache-safely-259d",
+    "summary": "<p><strong>Yes—most subfolders inside <code>~/Library/Caches</code> are safe to delete on a Mac, as long as you quit running apps first, remove only the contents inside (never the <code>Caches</code> folder itself), and skip Apple system caches and sensitive tool data.</strong> Apps automatically recreate their cache files the next time you open them, so the only normal side effect is a slightly slower first launch or re-downloading cached assets.</p>\n\n<p>What you should <strong>not</strong> touch are macOS's system-wide <code>/Library/Caches</code> and <code>/System/Library/Caches</code> folders—macOS manages those itself. Also keep expectations realistic: clearing cache reclaims disk space, <strong>not</strong> RAM or CPU performance; in fact, rebuilding caches can briefly use a little extra disk and network activity right after cleanup.</p>\n\n<p>On one developer Mac we measured using CleanBit's scan engine, general <strong>App Caches</strong> inside <code>~/Library/Caches</code> held",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:18:10+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/fastlog/is-it-safe-to-delete-librarycaches-on-a-mac-how-to-clear-cache-safely-259d"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "80fa74dfd729b6cc",
+    "title": "How we keep a Laravel log ingest endpoint fast (Valkey buffer, batched ClickHouse writes)",
+    "url": "https://dev.to/tailcove/how-we-keep-a-laravel-log-ingest-endpoint-fast-valkey-buffer-batched-clickhouse-writes-4ifa",
+    "summary": "<p>We're building a hosted log tool on Laravel 13, and the part that took the most thought was ingestion. Clients send logs in bursts, sometimes thousands of lines a second, and the endpoint can't sit waiting on a database while that happens.</p>\n\n<h2>\n  \n  \n  The request does almost nothing\n</h2>\n\n<p>It checks the token, pushes the batch into Valkey (Redis-compatible) and returns a 202. There are no MySQL queries in that path and no queue job per line.</p>\n\n<h2>\n  \n  \n  Drainers do the writing\n</h2>\n\n<p>Separate long-running drainer processes, one per buffer shard, claim a batch of 500 to 1000 lines, insert it into ClickHouse, and only acknowledge it after the insert succeeded. Popping first and writing second looks simpler, but it loses lines if the process dies in between.</p>\n\n<h2>\n  \n  \n  Replays without duplicates\n</h2>\n\n<p>That raises the opposite problem: if a drainer dies after inserting but before acknowledging, the batch gets inserted again on restart. ClickHouse's <code>ins",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:15:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/tailcove/how-we-keep-a-laravel-log-ingest-endpoint-fast-valkey-buffer-batched-clickhouse-writes-4ifa"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "d7e50bb591041351",
+    "title": "Hermes Agent + local Gemma(llama)",
+    "url": "https://dev.to/metis_atelier_studio/hermes-agent-local-gemmallama-593p",
+    "summary": "<h1>\n  \n  \n  Switching Between a Home LLM and a Free Cloud Model — Safely\n</h1>\n\n<p><em>A practical setup with llama.cpp + Tailscale + OpenRouter + Hermes Agent</em><br />\n<em>By Matis atelier</em></p>\n\n<blockquote>\n<p><strong>About the date of this information</strong><br />\nEverything here reflects the state of the software <strong>as of August 2026</strong>, when I read the Hermes Agent source code directly because I could not find this behavior documented. Official documentation has probably improved since then. <strong>Check the current docs first</strong>; treat this article as the \"why it behaves that way\" companion, not as the final word. Config key names may have changed.<br />\nAll IPs, keys, hostnames and paths below are placeholders.</p>\n</blockquote>\n\n\n<h2>\n  \n  \n  1. The goal\n</h2>\n\n<p>I run an LLM at home (llama.cpp, Gemma 4 12B) and an agent (Hermes Agent) on a VPS. I wanted:</p>\n\n<div class=\"table-wrapper-paragraph\"><table>\n<thead>\n<tr>\n<th>Situation</th>\n<th>Behavior</",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-24T00:14:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/metis_atelier_studio/hermes-agent-local-gemmallama-593p"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "91a33912ef71303b",
+    "title": "Push notifications for browsers",
+    "url": "https://engineering.tumblr.com/post/834100458918412288",
+    "summary": "<p>Hey folks, <a class=\"tumblelog\" href=\"https://tmblr.co/Mba1WdB15nZPOJFNurRGsQg\">@blowery</a> here!</p><p>We&rsquo;ve supported push notifications in our apps for years. Now you can get the same notifications in your browser without installing anything. You don&rsquo;t need to keep a Tumblr tab open: you&rsquo;ll find out about new likes, reblogs, posts, DMs, and asks as soon as they happen.</p><p>To turn them on, visit <a href=\"https://www.tumblr.com/settings/notifications\">Settings -&gt; Notifications</a> and flip on the new Browser notifications toggle at the top of the screen. Your browser will ask for permission, and then you should be set! You may also need to allow notifications for your browser in your operating system&rsquo;s settings.</p><p>Push notifications work in most major browsers without any extra setup, but Apple does makes you jump through an extra hoop on iOS and iPadOS: you’ll need to add Tumblr to your home screen first. To do that, open <a href=\"https://www.tum",
+    "category": "dev",
+    "source_name": "Tumblr Engineering",
+    "published": "2026-11-23T18:56:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Tumblr Engineering",
+        "url": "https://engineering.tumblr.com/post/834100458918412288"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "26130dc3b12e83d5",
+    "title": "Leading Projects as a Wealthfront Engineer",
+    "url": "https://eng.wealthfront.com/2026/11/23/leading-projects-as-a-wealthfront-engineer/",
+    "summary": "Our engineering culture at Wealthfront emphasizes Individual Ownership and Engineering participation throughout the Product Lifecycle. These are two things that make Wealthfront such an amazing place to work and grow as an engineer. Every new effort that we develop is owned by an individual project lead from Engineering; they are responsible for wholly owning the... <a class=\"moretag\" href=\"https://eng.wealthfront.com/2026/11/23/leading-projects-as-a-wealthfront-engineer/\">Read more</a>",
+    "category": "dev",
+    "source_name": "Wealthfront Engineering",
+    "published": "2026-11-23T20:43:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wealthfront Engineering",
+        "url": "https://eng.wealthfront.com/2026/11/23/leading-projects-as-a-wealthfront-engineer/"
+      }
+    ],
+    "score": 20.91
+  },
+  {
+    "id": "57eed1e5d3c40578",
+    "title": "CrowdStrike to acquire Zscaler for $44 billion",
+    "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/",
+    "summary": "The cybersecurity giant said that the deal to buy Zscaler, which provides zero-trust products to large enterprises, will better equip their customers to use AI agents.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T16:20:11+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/"
+      },
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal"
+      }
+    ],
+    "score": 20.67
+  },
+  {
+    "id": "c3717cdae124e94c",
+    "title": "‘Outrageous,’ ‘reckless,’ ‘wow’: Here’s what politicians are saying about Jensen Huang’s return to Nvidia",
+    "url": "https://techcrunch.com/2026/11/23/outrageous-reckless-wow-heres-what-politicians-are-saying-about-jensen-huangs-return-to-nvidia/",
+    "summary": "Politicians on both sides of the aisle seem angry, agitated, and nonplussed by the return of Jensen Huang to Nvidia leadership less than two weeks after his ousting.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T19:31:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/23/outrageous-reckless-wow-heres-what-politicians-are-saying-about-jensen-huangs-return-to-nvidia/"
+      }
+    ],
+    "score": 20.65
+  },
+  {
+    "id": "adb6b3f9bef322f0",
+    "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+    "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T19:14:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/"
+      }
+    ],
+    "score": 20.63
+  },
+  {
+    "id": "d64b1615eaea9a80",
+    "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+    "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+    "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T22:02:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/"
+      }
+    ],
+    "score": 20.5
+  },
+  {
+    "id": "05a696c00d5156ea",
+    "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+    "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+    "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T22:05:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+      }
+    ],
+    "score": 20.42
+  },
+  {
+    "id": "81e661df1d5d6dcc",
+    "title": "Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0",
+    "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/",
+    "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2024/06/DatacenterKV-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA cuDSS 3.0\" width=\"768\" />Sparse linear systems are at the core of nearly every engineering and scientific simulation, from structural mechanics and computational fluid dynamics to...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-23T19:59:40+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/"
+      }
+    ],
+    "score": 20.18
+  },
+  {
+    "id": "54b8b777d6292314",
+    "title": "Nvidia CEO Jensen Huang is back. What happens next?",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+    "summary": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, after The New York Times reported there was evidence of another affair, this time with an Nvidia executive who reported directly to him, a board meeting that night ended [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-23T22:10:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
+      }
+    ],
+    "score": 19.77
+  },
+  {
+    "id": "fee322ec61f475ce",
+    "title": "Ladybird, the first new browser engine in years, is now available to test",
+    "url": "https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing",
+    "summary": "Ladybird, an independent web browser with a built-from-scratch engine, is finally available for testing. On Monday, Ladybird developer Andreas Kling announced that the browser is launching in alpha on macOS and Linux following more than four years of development. The release makes Ladybird the first browser in years to arrive with an entirely new engine. [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-23T22:38:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing"
+      }
+    ],
+    "score": 19.66
+  },
+  {
+    "id": "5a56f3f5fc2cc033",
+    "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+    "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+    "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-23T21:47:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/"
+      }
+    ],
+    "score": 19.54
+  },
+  {
+    "id": "61775fe002c66046",
+    "title": "Trump engineered a risky comeback for Jensen Huang",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+    "summary": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-23T22:25:12+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated"
+      }
+    ],
+    "score": 19.4
+  },
+  {
+    "id": "11311b8450467df9",
+    "title": "How Jensen Huang ended up as Nvidia CEO again",
+    "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+    "summary": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over mounting scrutiny around his alleged affairs. Huang admitted he had been \"unfaithful\" to his wife [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-23T19:57:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return"
+      }
+    ],
+    "score": 19.28
+  },
+  {
+    "id": "6b45b09188103fae",
+    "title": "Welcome to elite impunity, Jensen Huang",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+    "summary": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. Now, those of us who had some kind of basic education on what a \"free market\" is might [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-23T22:09:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang"
+      }
+    ],
+    "score": 19.15
+  },
+  {
+    "id": "f03d149de601a2f6",
+    "title": "Probing DNS at Cloudflare",
+    "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
+    "summary": "At Cloudflare we’ve built tools to enable teams to extend our internal testing framework and build test tooling for networking protocols. This is the story of how this was used for DNS.",
+    "category": "dev",
+    "source_name": "Cloudflare Blog",
+    "published": "2026-11-23T14:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/"
+      }
+    ],
+    "score": 18.85
+  },
+  {
+    "id": "fed1636203cef8a6",
+    "title": "Kubernetes v1.38 Sneak Peek",
+    "url": "https://kubernetes.io/blog/2026/11/23/kubernetes-v1-38-sneak-peek/",
+    "summary": "<p>As we get closer to the release date for Kubernetes v1.38, the project develops and matures,\nfeatures may be deprecated, removed, or replaced with better ones for the project's overall health.\nThis blog post outlines some of the planned changes for the Kubernetes v1.38 release that the\nrelease team feels you should be aware of for the continued maintenance of your Kubernetes\nenvironment and keeping up to date with the latest changes. The information listed below is based\non the current status of the v1.38 release and may change before the actual release date.</p>\n<h2 id=\"deprecations-and-removals-for-kubernetes-v1-38\">Deprecations and removals for Kubernetes v1.38<a class=\"td-heading-self-link\" href=\"#deprecations-and-removals-for-kubernetes-v1-38\"></a></h2><h3 id=\"kubectl-websocket-opt-out-environment-variables-removed\">kubectl: WebSocket opt-out environment variables removed<a class=\"td-heading-self-link\" href=\"#kubectl-websocket-opt-out-environment-variables-removed\"></a></h3><p>",
+    "category": "devops",
+    "source_name": "Kubernetes Blog",
+    "published": "2026-11-23T16:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Kubernetes Blog",
+        "url": "https://kubernetes.io/blog/2026/11/23/kubernetes-v1-38-sneak-peek/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "d971df506b0f0421",
+    "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+    "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+    "summary": "<img alt=\"Animated GPU and SQL database icons connected by moving data signals.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/sirius-duckdb-gpu-analytics.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"GPU-powered DuckDB analytics\" width=\"600\" />As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-23T17:09:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/"
+      }
+    ],
+    "score": 18.0
+  }
+]

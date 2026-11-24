@@ -785,6 +785,49 @@
         "wasm": 1,
         "spring": 1
       }
+    },
+    {
+      "date": "2026-11-24",
+      "tags": {
+        "chatgpt": 1,
+        "claude": 3,
+        "slack": 1,
+        "laravel": 2,
+        "supabase": 1,
+        "azure": 2,
+        "github": 2,
+        "microsoft": 2,
+        "openai": 1,
+        "linux": 5,
+        "open-source": 1,
+        "anthropic": 2,
+        "postgresql": 1,
+        "gemini": 2,
+        "deepmind": 1,
+        "google": 2,
+        "nvidia": 9,
+        "java": 1,
+        "netflix": 1,
+        "api": 2,
+        "aws": 1,
+        "observability": 1,
+        "javascript": 1,
+        "wasm": 1,
+        "sqlite": 1,
+        "dotnet": 1,
+        "cloudflare": 2,
+        "golang": 1,
+        "siem": 1,
+        "apple": 2,
+        "mysql": 1,
+        "redis": 1,
+        "clickhouse": 1,
+        "valkey": 1,
+        "llama": 1,
+        "llm": 1,
+        "kubernetes": 1,
+        "websocket": 1
+      }
     }
   ],
   "top_tags": [
@@ -792,9 +835,9 @@
     "api",
     "claude",
     "open-source",
+    "nvidia",
     "python",
     "google",
-    "nvidia",
     "dotnet",
     "anthropic",
     "microsoft",
@@ -802,11 +845,11 @@
     "openai",
     "vercel",
     "aws",
-    "golang",
     "linux",
+    "golang",
+    "apple",
     "llm",
     "rust",
-    "apple",
-    "meta"
+    "javascript"
   ]
 }

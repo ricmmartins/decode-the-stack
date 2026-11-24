@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 12,
+      "title": "Opening"
+    },
+    {
+      "startTime": 141,
+      "title": "Microsoft’s Agentic Autofix is now in public preview for..."
+    },
+    {
+      "startTime": 294,
+      "title": "The useful part of DeepMind’s quantum story is that there..."
+    },
+    {
+      "startTime": 434,
+      "title": "Control also connects these enterprise AI stories. The New..."
+    },
+    {
+      "startTime": 593,
+      "title": "That question of ownership becomes concrete with Claude..."
+    },
+    {
+      "startTime": 748,
+      "title": "To close, two kinds of change: leadership at Nvidia, and..."
+    }
+  ]
+}

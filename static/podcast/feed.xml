@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Mon, 23 Nov 2026 13:30:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 00:41:02 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>AI gains authority as verification becomes the bottleneck</title>
+      <description>AI systems are moving beyond suggesting work toward approving changes, running persistent workflows, and producing results that others must verify. Across the supplied reporting, the strongest counterweight is operational discipline: explicit architectural…</description>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-24.mp3?v=9d6df2eda7ee" length="11364876" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-24.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-24-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>AI systems are moving beyond suggesting work toward approving changes, running persistent workflows, and producing results that others must verify. Across the supplied reporting, the strongest counterweight is operational discipline: explicit architectural…</itunes:summary>
+      <itunes:duration>947</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-24.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>AI adoption raises the bar for proof and control</title>
       <description>Monday’s reporting connects a practical question: how to make AI-assisted work useful: with a harder one: how to establish that it is reliable, appropriately permissioned, and accountable. The strongest supplied material concerns tighter infrastructure…</description>
