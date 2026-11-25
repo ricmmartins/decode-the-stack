@@ -1,0 +1,406 @@
+[
+  {
+    "id": "cf5afd24b5da6977",
+    "title": "Interleaved Vision-Language Reasoning: Scaling ThinkMorph-SSL with Pretext Tasks and Deterministic Compute",
+    "url": "https://dev.to/sharathjapa/interleaved-vision-language-reasoning-scaling-thinkmorph-ssl-with-pretext-tasks-and-deterministic-4fc4",
+    "summary": "<h1>\n  \n  \n  Interleaved Vision-Language Reasoning: Scaling ThinkMorph-SSL with Pretext Tasks and Deterministic Compute\n</h1>\n\n<h2>\n  \n  \n  Table of Contents\n</h2>\n\n<ul>\n<li>Executive Summary</li>\n<li>Methodology &amp; Architectural Formulation</li>\n<li>Implementation &amp; Quantitative Simulation</li>\n<li>Empirical Benchmark &amp; Comparative Evaluation</li>\n<li>ShVaSa Intuition &amp; Continuation Twist</li>\n<li>Grounding &amp; Source Attribution</li>\n</ul>\n\n<h2>\n  \n  \n  Executive Summary\n</h2>\n\n<p>Interleaved multimodal reasoning forces large language models to generate intermediate visual states that steer subsequent textual inference. This architecture collapses token entropy but triggers catastrophic KV-cache expansion. When a model alternates between text generation and image synthesis, the attention matrix grows quadratically, saturating HBM2 memory buses and starving downstream inference threads. Unhardened deployments fracture under this load, producing hallucinated reasoning ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:04:21+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sharathjapa/interleaved-vision-language-reasoning-scaling-thinkmorph-ssl-with-pretext-tasks-and-deterministic-4fc4"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kmrb_works/giving-claude-code-direct-access-to-google-sheets-via-a-custom-mcp-server-2occ"
+      }
+    ],
+    "score": 24.0
+  },
+  {
+    "id": "3f1dd7bbaf916914",
+    "title": "Do inconsistent docs hurt AI coding agents?",
+    "url": "https://devblogs.microsoft.com/blog/do-inconsistent-docs-hurt-ai-coding-agents/",
+    "summary": "<p>Somewhere in your docs, two pages disagree. Coding agents often notice, follow the wrong page anyway, and pay for it in extra tokens or a broken build.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/blog/do-inconsistent-docs-hurt-ai-coding-agents/\">Do inconsistent docs hurt AI coding agents?</a> appeared first on <a href=\"https://devblogs.microsoft.com\">Microsoft for Developers</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft DevBlogs",
+    "published": "2026-11-25T11:46:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft DevBlogs",
+        "url": "https://devblogs.microsoft.com/blog/do-inconsistent-docs-hurt-ai-coding-agents/"
+      }
+    ],
+    "score": 23.01
+  },
+  {
+    "id": "eae7631e6c082e3a",
+    "title": "Prepare Market Data for Forecasting with NVIDIA Megatron Core",
+    "url": "https://developer.nvidia.com/blog/prepare-market-data-for-forecasting-with-nvidia-megatron-core/",
+    "summary": "<img alt=\"Illustration of stacked neural-network layers above four GPU chips on a purple grid background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/megatron-market-forecasting-e1795123732504-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NeMo Megatron Core\" width=\"768\" />Market data arrives as a stream of trades and quotes: every execution, bid, and ask, timestamped to the microsecond. Preparing this data for AI-based market...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-24T17:00:00+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/prepare-market-data-for-forecasting-with-nvidia-megatron-core/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools/"
+      },
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/qa-how-everstone-brings-where-winds-meet-to-life-with-nvidia-dlss-5/"
+      }
+    ],
+    "score": 23.0
+  },
+  {
+    "id": "aeb7a11b7bd6a6c2",
+    "title": "Standard builds for existing Pro teams have moved to usage-based billing",
+    "url": "https://vercel.com/changelog/standard-builds-for-existing-pro-teams-have-moved-to-usage-based-billing",
+    "summary": "<p>Existing Pro teams will no longer include a Standard build slot. This brings Standard builds under the same usage-based billing model as other build machines. </p><p>Standard builds cost $0.014 per build minute, and your monthly usage credit applies to build usage. Billing applies to all projects on the team.</p><p>See included and Standard build minutes for your team on the <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fusage&amp;title=Go+to+Usage\">Usage page</a>. Select a build machine in <a href=\"https://vercel.com/d?title=Set+team+level+build+machines&amp;to=%2F%5Bteam%5D%2F~%2Fsettings%2Fbuild-and-deployment%23build-machines\">team settings</a> or <a href=\"https://vercel.com/d?title=Configure+your+build+machine&amp;to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fsettings%2Fbuild-and-deployment%23build-machine\">project settings</a>.</p><p>To learn more, read more about <a href=\"https://vercel.com/docs/builds/managing-builds\">managing your builds</a>.</p>\n          <p class=\"more\">\n   ",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-25T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/standard-builds-for-existing-pro-teams-have-moved-to-usage-based-billing"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e07c023245cf5143",
+    "title": "Kazunari Hanao joins Vercel as Country Manager, Japan",
+    "url": "https://vercel.com/blog/kazunari-hanao-joins-vercel-as-country-manager-japan",
+    "summary": "<p><b>日本語版はこちら：</b><a href=\"https://vercel.com/blog/ja-kazunari-hanao-joins-vercel-as-country-manager-japan\"><b>Vercel日本法人の代表に花尾和成が就任いたしました</b></a></p><p><a href=\"https://www.linkedin.com/in/kazunari-hanao-baaa1511a/\">Kazunari Hanao</a> has joined Vercel as Country Manager for Japan, based in Tokyo. His appointment is part of our continued investment in the Japanese market, including plans to expand our local team.</p><p>Japanese developers were early adopters of Next.js. And today, Vercel's customers in Japan include Mitsubishi Corporation, Fujitsu Limited, U-NEXT CO., Ltd., and DeNA Co., Ltd., alongside startups like SANU Inc. and Reiwa Travel, Inc.</p><p>Kazunari has spent the last decade building and leading software businesses in Japan. He joins Vercel from Pendo, where he was President of Pendo Japan. Before that, he built HashiCorp’s Japan business and spent nearly five years in sales leadership at Pivotal in Tokyo.</p><p>I asked him about the opportunity in Japan and his decisi",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-23T05:00:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/kazunari-hanao-joins-vercel-as-country-manager-japan"
+      },
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/ja-kazunari-hanao-joins-vercel-as-country-manager-japan"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "47723a3a39748856",
+    "title": "🚀 The story behind “Drone 2”: My KubeCon + CloudNativeCon North America 2026 keynote",
+    "url": "https://www.cncf.io/blog/2026/11/25/%f0%9f%9a%80-the-story-behind-drone-2-my-kubecon-cloudnativecon-north-america-2026-keynote/",
+    "summary": "An open source adventure featuring Kubernetes, agent-substrate, kagent, AI agents, drones, and more! Just 30 seconds before going live for the KubeCon + CloudNativeCon NA 2026 closing keynote, “Cloud Native Without Limits: What Can AI Agents...",
+    "category": "devops",
+    "source_name": "CNCF Blog",
+    "published": "2026-11-25T12:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "CNCF Blog",
+        "url": "https://www.cncf.io/blog/2026/11/25/%f0%9f%9a%80-the-story-behind-drone-2-my-kubecon-cloudnativecon-north-america-2026-keynote/"
+      }
+    ],
+    "score": 18.44
+  },
+  {
+    "id": "a3af7757b56adde8",
+    "title": "GitLab Dedicated: A go-live guide",
+    "url": "https://about.gitlab.com/blog/gitlab-dedicated-a-go-live-guide/",
+    "summary": "<p>GitLab Dedicated is a single-tenant SaaS solution that is fully isolated, deployed in your preferred AWS cloud region, and hosted and maintained by GitLab. <a href=\"https://about.gitlab.com/blog/gitlab-dedicated-compliance/\" rel=\"\">GitLab Dedicated and compliance</a> covers why regulated organizations choose a single-tenant instance operated by GitLab, and serves as a starting point for evaluation. In this article, you'll learn what to do after you sign on to GitLab Dedicated, including understanding which responsibilities GitLab takes on and which remain with your teams, as well as what controls each team needs to put in place.</p><p>Teams arriving from any self-managed source-control or CI/CD platform bring an operating model built around upgrade runbooks, pre-flight checks, staging environments, and rollback plans. On GitLab Dedicated, many of those responsibilities move to GitLab, and the ones that stay with you look different.</p><h2 id=\"division-of-responsibility\">Division of ",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-11-24T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/gitlab-dedicated-a-go-live-guide/"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "1677eb175c579822",
+    "title": "Tracking Incidents of Hacking Using AI Tools",
+    "url": "https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html",
+    "summary": "<p>Daniel Meissler is <a href=\"https://newsletter.danielmiessler.com/p/whos-hacking-with-ai\">tracking</a> incidents of AI-enhanced hacking, and the offensive harnesses the hackers are using.</p>",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-25T12:07:21+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html"
+      }
+    ],
+    "score": 21.94
+  },
+  {
+    "id": "bd97735396606103",
+    "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+    "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-25T11:23:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "0bfa1fec60052996",
+    "title": "Alignment",
+    "url": "https://www.anthropic.com/research/team/alignment",
+    "summary": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.",
+    "category": "ai",
+    "source_name": "Anthropic Blog",
+    "published": "2026-11-24T17:02:51.779000+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/team/alignment"
+      },
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/research/team/interpretability"
+      }
+    ],
+    "score": 17.26
+  },
+  {
+    "id": "7dca37e1d764407b",
+    "title": "datasette-charts 0.2a0",
+    "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-charts/releases/tag/0.2a0\">datasette-charts 0.2a0</a></p>\n        <p>I introduced this new charting plugin for Datasette <a href=\"https://simonwillison.net/2026/Nov/23/datasette-charts/\">yesterday</a>. Today it's gained integration with <a href=\"https://agent.datasette.io/\">Datasette Agent</a>, so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools.</p>\n<p>Here's a demo video, recorded on <a href=\"https://agent.datasette.io/\">agent.datasette.io</a>  where you can sign in with GitHub to try the plugin yourself:</p>\n<figure>\n  <video controls=\"controls\" height=\"1080\" poster=\"https://static.simonwillison.net/static/cors-allow/2026/datasette-charts-agent-demo.webp\" preload=\"none\" style=\"height: auto;\" width=\"1440\">\n    <source src=\"https://static.simonwillison.net/static/cors-allow/2026/datasette-charts-agent-demo.mp4\" type=\"video/mp4\" />\n",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-24T04:24:29+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "c27401b0c998cfe3",
+    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+    "url": "https://news.ycombinator.com/item?id=50630809",
+    "summary": "<p>Basically the title.<p>Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.<p>Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?<p>Now I've got 24h to prove we didn't.<p>Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user's privacy?</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50630809\">https://news.ycombinator.com/item?id=50630809</a></p>\n<p>Points: 334</p>\n<p># Comments: 253</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-24T16:45:44+00:00",
+    "coverage_count": 5,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://news.ycombinator.com/item?id=50630809"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://twitter.com/raul_bs3/status/2125213756238291075"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/ItsNotRexed/Leonida/issues"
+      }
+    ],
+    "score": 31.0
+  },
+  {
+    "id": "2b123413d6f66969",
+    "title": "Move fast, don’t break 100 apps: Dan Garfield on keeping AI-powered coding on the rails",
+    "url": "https://thenewstack.io/ai-coding-delivery-bottleneck/",
+    "summary": "<img alt=\"In this episode of The New Stack Podcast, recorded at KubeCon + CloudNativeCon North America 2026 in Salt Lake City, Matt Burns speaks with Dan Garfield, VP of Open Source at Octopus Deploy, about improving software delivery, evolving GitOps practices, and managing the growing impact of AI agents.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/b1ec37cf-thumbnail-22-1024x576.png\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>An AI coding agent can give a product manager a working prototype before the next planning meeting. Which is great!</p>\n<p>The post <a href=\"https://thenewstack.io/ai-coding-delivery-bottleneck/\">Move fast, don’t break 100 apps: Dan Garfield on keeping AI-powered coding on the rails</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-24T19:48:46+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/teleport-agent-delegated-identity/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-coding-delivery-bottleneck/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/claude-ship-automated-approvals/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/kubernetes-gpu-inference-startup/"
+      }
+    ],
+    "score": 28.0
+  },
+  {
+    "id": "25237abdff60a052",
+    "title": "AWS Lambda Doubles Its Timeout to 30 Minutes After Eight Years at 15",
+    "url": "https://www.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/en/headerimage/generatedHeaderImage-1795522224655.jpg\" /><p>AWS has raised the maximum timeout of on-demand Lambda Event Functions from 15 to 30 minutes in all commercial regions, with no opt-in and no new pricing. The limit had stood since 2018. AWS's post lists the costs: twice the concurrency at the same request rate, three-hour SQS visibility timeouts, and Kafka mappings that must be recreated. Practitioners welcome it and ask what belongs elsewhere.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T07:02:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      },
+      {
+        "name": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "5c91653b8b3e5239",
+    "title": "Presentation: Learning Out Loud (Under Near-Existential Pressure)",
+    "url": "https://www.infoq.com/presentations/ai-engineering-culture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/ai-engineering-culture/en/mediumimage/LauraSavino-medium-1793278596285.jpeg\" /><p>Laura Savino discusses the psychological friction of AI adoption for senior engineers & architects. She explains how shifting from static expertise to learning in public lowers anxiety, accelerates tooling fluency, and prevents burnout. Leaders will discover actionable strategies to support their teams, debunk tech zealotry, and foster an adaptive engineering culture that thrives during upheaval.</p> <i>By Laura Savino</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/ai-engineering-culture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 25.0
+  },
+  {
+    "id": "b3ccd48d515df26d",
+    "title": "Rust 1.100 Ships the Never Type After Ten Years and Five Failed Attempts",
+    "url": "https://www.infoq.com/news/2026/11/rust-1-100-never-types/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/rust-1-100-never-types/en/headerimage/generatedHeaderImage-1795523502483.jpg\" /><p>Rust 1.100.0, released 12 November 2026, stabilises the never type (!) after ten years of work and makes Infallible an alias for it. The release also stabilises the core of the allocator API, adds DropGuard, and gives Cargo an opt-in dependency cooldown setting. Some critics note the allocator design still lacks inline storage support.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T07:29:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/rust-1-100-never-types/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.93
+  },
+  {
+    "id": "74ca779c54c45065",
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "summary": "<p>Article URL: <a href=\"https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/\">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50634658\">https://news.ycombinator.com/item?id=50634658</a></p>\n<p>Points: 288</p>\n<p># Comments: 87</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-24T21:02:22+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+      },
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+      }
+    ],
+    "score": 22.79
+  },
+  {
+    "id": "2d731fef9e49c2d3",
+    "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+    "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+    "summary": "<p>Article URL: <a href=\"https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf\">https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50637220\">https://news.ycombinator.com/item?id=50637220</a></p>\n<p>Points: 727</p>\n<p># Comments: 405</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-25T01:19:26+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"
+      }
+    ],
+    "score": 22.6
+  },
+  {
+    "id": "3a8cbc3ee0ed4dd0",
+    "title": "Action required: Update app-only permissions for SharePoint tenant App Catalog writes",
+    "url": "https://devblogs.microsoft.com/microsoft365dev/action-required-update-app-only-permissions-for-sharepoint-tenant-app-catalog-writes/",
+    "summary": "<p>We are introducing an additional authorization requirement for applications that use app-only authentication to write directly to specific surfaces in the SharePoint tenant App Catalog. Starting January 31, 2027, affected app-only workflows must have the SharePointTenantSettings.ReadWrite.All application permission on the Office 365 SharePoint Online resource. After that date, Sites.ReadWrite.All alone will no longer authorize these [&#8230;]</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/microsoft365dev/action-required-update-app-only-permissions-for-sharepoint-tenant-app-catalog-writes/\">Action required: Update app-only permissions for SharePoint tenant App Catalog writes</a> appeared first on <a href=\"https://devblogs.microsoft.com/microsoft365dev\">Microsoft 365 Developer Blog</a>.</p>",
+    "category": "dev",
+    "source_name": "Microsoft 365 Developer Blog",
+    "published": "2026-11-25T09:01:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Microsoft 365 Developer Blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/action-required-update-app-only-permissions-for-sharepoint-tenant-app-catalog-writes/"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "02c4d5fc6309747c",
+    "title": "How to Diagnose 303-Second Speech Synthesis Delays",
+    "url": "https://dev.to/orca_forge/how-to-diagnose-303-second-speech-synthesis-delays-3ek1",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/gpt-4o-mini-tts-slow/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=gpt-4o-mini-tts-slow\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR The reply text arrived quickly, but speech synthesis took as long as 303 seconds. Measurements that day ranged from 0.7–1.3 seconds to 48–303 seconds, with slow runs making up more than half. After reverting to the previous model, about 40 runs took 0.8–2.2 seconds.</p>\n\n<h2>\n  \n  \n  Summary\n</h2>\n\n<p>Speech synthesis took 0.7–1.3 seconds in some runs and 48–303 seconds in others, even when measured on the same day; more than half of the runs were slow. After switching back to the model I had used before, about 40 runs took 0.8–2.2 seconds. In a separate issue, retries stopped after two consecutive rejections of unsupported settings fields. After fixing the issue, tests confirmed that a response arrived on th",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:03:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/how-to-diagnose-303-second-speech-synthesis-delays-3ek1"
+      }
+    ],
+    "score": 21.0
+  }
+]

@@ -1,0 +1,536 @@
+[
+  {
+    "id": "f901c03d2a29cd3e",
+    "title": "From Bytes to Glyphs: How Computers Actually Understand and Display Text",
+    "url": "https://dev.to/mohhddhassan/from-bytes-to-glyphs-how-computers-actually-understand-and-display-text-1dlk",
+    "summary": "<p>I was solving the Anagram exercise in Go when a single word stopped me: <code>rune</code>.</p>\n\n<p>I had written a loop to count characters, and Go handed me a <code>rune</code> instead of a <code>byte</code> or a <code>char</code>. I knew it had something to do with Unicode, but I couldn't have told you what a rune really was, or why <code>len()</code> sometimes disagrees with the number of characters I can see.</p>\n\n<p>One small type led to a lot of questions. What is Unicode, and does it assign bits to characters? How does UTF-8 fit in? And why do some screenshots show text as a row of empty boxes?</p>\n\n<p>This post follows how I worked through those questions. Every Go snippet below compiles and runs, and the outputs are real.</p>\n\n<h2>\n  \n  \n  The Beginning: A Simple Go Problem\n</h2>\n\n<p>The exercise gives you a subject word and a list of candidates, and asks which candidates are anagrams of the subject:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highligh",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:02:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mohhddhassan/from-bytes-to-glyphs-how-computers-actually-understand-and-display-text-1dlk"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "ef265eed7e1347d1",
+    "title": "Gating an Agent Reverse-Engineering Runner Behind Next.js Server Actions",
+    "url": "https://dev.to/elena_rostova/gating-an-agent-reverse-engineering-runner-behind-nextjs-server-actions-1i29",
+    "summary": "<p>We did not adopt morluto/rea to reverse engineer other people's software. We needed a repeatable pass over artifacts we already ship: the client bundle from our Next.js 15 app, and a small native helper that rides with the desktop build. The project describes agents that walk app behavior down toward native binaries, which matched the two layers we actually own. Hanging that runner off the same app that produces the artifacts failed in two places that had nothing to do with disassembly quality.</p>\n\n<p>The first failure was a secret in the client bundle. A shared module imported server-only config so the runner could read a model key. A form later gained <code>\"use client\"</code> and pulled a value import from that module instead of <code>import type</code>. The compiler followed the edge. The key showed up in a client chunk. We found it in a sourcemap diff during a release check, not from an external report. After that, the module that talks to morluto/rea is server-only. The only ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:02:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/elena_rostova/gating-an-agent-reverse-engineering-runner-behind-nextjs-server-actions-1i29"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "af0d936f43fa5643",
+    "title": "Dynamic Sites, Statically Hosted, Best for SEO & Performance",
+    "url": "https://dev.to/praxham/dynamic-sites-statically-hosted-best-for-seo-performance-21jk",
+    "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fyvl6xgenilveg2elepz9.png\"><img alt=\"Lighthouse performance of website\" height=\"531\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fyvl6xgenilveg2elepz9.png\" width=\"800\" /></a></p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fhxdumkkdmplaqyl014f0.png\"><img alt=\"network request and payload size of website\" height=\"142\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-up",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:02:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/praxham/dynamic-sites-statically-hosted-best-for-seo-performance-21jk"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "f478acea5160fcfc",
+    "title": "Add Schema Markup to WordPress Without Plugin: JSON-LD",
+    "url": "https://dev.to/istiakahamed/add-schema-markup-to-wordpress-without-plugin-json-ld-4884",
+    "summary": "<p>Most WordPress schema plugins load an admin dashboard, register custom database tables, and still output disconnected JSON-LD fragments that collide with your theme or WooCommerce defaults. Learning how to <strong>add schema markup to WordPress without plugin</strong> dependencies lets you emit a single, connected <code>@graph</code> payload in <code>wp_head</code> using native PHP arrays and <code>wp_json_encode()</code>. Below is the complete code architecture for generating <code>Organization</code>, <code>WebSite</code>, <code>BlogPosting</code>, <code>Person</code>, and <code>BreadcrumbList</code> structured data conditionally per template—without syntax errors, duplicate graphs, or plugin bloat.</p>\n\n<h2>\n  \n  \n  Table of Contents\n</h2>\n\n<ul>\n<li>Quick Answer: Output a Safe JSON-LD Graph in wp_head</li>\n<li>Why JSON-LD Beats Inline Microdata in Modern WordPress Themes</li>\n<li>What Google Search Central Actually Supports for Rich Results</li>\n<li>Execution Flow: Conditional Sc",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:02:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/istiakahamed/add-schema-markup-to-wordpress-without-plugin-json-ld-4884"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "7effa4f2f501e353",
+    "title": "How to Use AI to Summarize a 50-Page Report Into the 3 Bullet Points Your Boss Actually Wants",
+    "url": "https://dev.to/scobsmett/how-to-use-ai-to-summarize-a-50-page-report-into-the-3-bullet-points-your-boss-actually-wants-3inj",
+    "summary": "<p>You know that person who's connected every news story from the past six months with red string on their living room wall? The one who can talk for three hours straight about how it all fits together, but has learned through hard experience that nobody will listen unless they can boil the entire theory down to three sentences before their audience starts backing toward the door? That's what you're about to become, except instead of newspaper clippings, you're working with quarterly reports, and instead of losing friends at parties, you're impressing your boss at 9 AM standups.</p>\n\n<h2>\n  \n  \n  Why Your Brain Checks Out After Page Three (And Why AI Doesn't)\n</h2>\n\n<p>Our theorist has read every article, highlighted every relevant phrase, and traced every connection. They know which details actually matter and which ones just look dramatic on the wall. But getting there took weeks of sorting through everything.</p>\n\n<p>AI language models work the same way, except they never get tired ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:01:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/scobsmett/how-to-use-ai-to-summarize-a-50-page-report-into-the-3-bullet-points-your-boss-actually-wants-3inj"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3313f4a11cfb5cfc",
+    "title": "A Weekly Cash Shortfall Calculator in Python With Late-Payment Scenarios",
+    "url": "https://dev.to/micheal_slyderink_810b3f6/a-weekly-cash-shortfall-calculator-in-python-with-late-payment-scenarios-5b2j",
+    "summary": "<p><em>Arron Bennett, Founder of Bennett Financials</em></p>\n\n<p>  \n  \n</p>\n\n<p>That's one of my recent videos, on finding your next cash shortfall before payroll is due. It opens with a small example. A business has 60 grand in the bank. One 40-grand invoice is expected in week 2. If it arrives on time, they're fine. If it arrives two weeks late, they're 20 grand short in week 3.</p>\n\n<p>Nothing changed about the amount the customer owes. Only the date changed.</p>\n\n<p>This post turns that example into a small Python script. Roll cash forward week by week. Find the lowest point. Then move one receipt and see what breaks.</p>\n\n<p>Full disclosure, I'm bad at math in my head. I'd rather a script do the adding.</p>\n\n<h2>\n  \n  \n  Why model it at all?\n</h2>\n\n<p>Because a bank balance only tells you about today.</p>\n\n<p>Most owners check the balance, see a decent number, and feel fine. But payroll, rent and contractor bills are coming. And the money to pay them depends on clients paying on t",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:01:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/micheal_slyderink_810b3f6/a-weekly-cash-shortfall-calculator-in-python-with-late-payment-scenarios-5b2j"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "54a3463212046429",
+    "title": "Pesquisas atualizadas em redes sociais com a skill last30days",
+    "url": "https://dev.to/victor_hugo_a07c85ac09eea/pesquisas-atualizadas-em-redes-sociais-com-a-skill-last30days-o65",
+    "summary": "<h3>\n  \n  \n  O que é\n</h3>\n\n<p>O last30days-skill é uma ferramenta para agentes de IA que busca informações em diversas fontes da web, como Reddit, X (Twitter), YouTube, Hacker News, Polymarket, TikTok e GitHub. A ferramenta analisa o conteúdo produzido nos últimos 30 dias e o organiza em um resumo consolidado, classificando os resultados pelo engajamento do público, como curtidas, votos positivos e dados de mercados de previsão.</p>\n\n<h3>\n  \n  \n  Para quem serve\n</h3>\n\n<p>A solução é útil para quem precisa acompanhar novidades frequentes em inteligência artificial e tecnologia. Também serve para pesquisar o histórico recente de empresas ou pessoas antes de reuniões e chamadas comerciais, além de mapear discussões de comunidades sobre problemas técnicos, produtos ou viagens.</p>\n\n<h3>\n  \n  \n  Como começar\n</h3>\n\n<p>No Claude Code, a instalação é feita adicionando o plugin pelo mercado com o comando <code>/plugin marketplace add mvanhorn/last30days-skill</code> e executando <code>/plugi",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:01:35+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/victor_hugo_a07c85ac09eea/pesquisas-atualizadas-em-redes-sociais-com-a-skill-last30days-o65"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "71837e6d351d3433",
+    "title": "Segurança em Blockchain: Os 5 Ataques Mais Comuns e Como Evitá-los",
+    "url": "https://dev.to/andr_diasmoreiraprol_b/seguranca-em-blockchain-os-5-ataques-mais-comuns-e-como-evita-los-1gd5",
+    "summary": "<p>Imagine perder milhões de dólares em segundos por causa de uma única linha de código mal escrita. Essa não é uma hipótese distante: só em 2023, ataques a projetos blockchain causaram prejuízos superiores a US$ 1,7 bilhão globalmente, segundo a Chainalysis. Ao longo de mais de duas décadas atuando com tecnologia e, mais recentemente, mergulhado no universo Web3 e na rede Stellar, eu, André Dias Moreira Prol, aprendi que segurança não é um recurso opcional — é a espinha dorsal de qualquer projeto que pretenda sobreviver.</p>\n\n<p>Neste artigo, vou direto ao ponto: os cinco ataques mais comuns e como blindar sua operação.</p>\n\n<h2>\n  \n  \n  Os 5 ataques que mais derrubam projetos\n</h2>\n\n<p><strong>1. Reentrancy (Reentrância)</strong><br />\nO clássico que derrubou o The DAO em 2016 e drenou US$ 60 milhões. O contrato chama um contrato externo antes de atualizar seu próprio estado, permitindo saques repetidos. A proteção é simples: adote o padrão <em>checks-effects-interactions</em> e use ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:01:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/andr_diasmoreiraprol_b/seguranca-em-blockchain-os-5-ataques-mais-comuns-e-como-evita-los-1gd5"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "728f8cb35791fdd9",
+    "title": "A BLS quorum must count signatures, not unused bitmap positions",
+    "url": "https://dev.to/sorrelthorncroft/a-bls-quorum-must-count-signatures-not-unused-bitmap-positions-348n",
+    "summary": "<h1>\n  \n  \n  A BLS quorum must count signatures, not unused bitmap positions\n</h1>\n\n<p>Klever Go validates aggregate BLS signatures for block headers. CVE-2026-58262 affects versions before 1.7.20. The flaw is that padding bits in <code>PubKeysBitmap</code> were counted toward the quorum, allowing a block to satisfy the signature threshold with fewer real signatures than the protocol requires.</p>\n\n<h2>\n  \n  \n  The consensus detail\n</h2>\n\n<p>The bitmap tells the verifier which public keys contributed to an aggregate signature. A block has a fixed number of possible signers, but the bitmap has padding positions when the set size is not a multiple of the bitmap storage unit. Those unused positions must be zero and must not count as participating validators. If the verifier treats a set bit in the padding area as a real signer, it can compute a quorum from entries that never signed.</p>\n\n<p>The advisory names CWE-345 and CWE-347 because the result is insufficient verification of authentic",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-25T13:01:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sorrelthorncroft/a-bls-quorum-must-count-signatures-not-unused-bitmap-positions-348n"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3a32ba3ce6c490e8",
+    "title": "Flipkart CEO Kalyan Krishnamurthy to step down next week amid IPO uncertainty",
+    "url": "https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/",
+    "summary": "Flipkart's product and technology chief Balaji Thiagarajan will lead the company alongside its board until a successor is found.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-25T13:08:19+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/"
+      }
+    ],
+    "score": 20.28
+  },
+  {
+    "id": "8fc7daf9dae10811",
+    "title": "QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI",
+    "url": "https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/qcon-sf-openai-lessons/en/headerimage/generatedHeaderImage-1795453078651.jpg\" /><p>At QCon San Francisco 2026, OpenAI's Brian Yang described building the ChatGPT ads product with Codex agents and no human-written code. He outlined layered testing, sandboxes, and batched pull request reviews, and noted failure modes such as code \"slop\" and unsafe agent actions. He advised gradual adoption and framed engineers as managers of agents.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-24T06:32:00+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/openai-spark-fleet/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      },
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 20.0
+  },
+  {
+    "id": "68cf0fae2d461172",
+    "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+    "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+    "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday.\n\nAbdulrahman Alfozan, a 35-year-old Saudi national, was arrested on October 9, 2026, for allegedly bugging the artificial intelligence (AI) company's offices with the aim",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-25T10:43:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "66ae95b054c5399e",
+    "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+    "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+    "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from.\n\nThe flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15 minutes of the first malicious request.\n\nChecks",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-25T09:06:59+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html"
+      }
+    ],
+    "score": 19.96
+  },
+  {
+    "id": "0cc9741e161e1f28",
+    "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+    "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+    "summary": "TL;DR\n\n\n  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.\n  Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-25T11:51:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "9af7406087d0d17f",
+    "title": "Mellum2.1 Instruct Is Out, Bringing Faster Answers for Coding Agents",
+    "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/",
+    "summary": "The faster sibling of Mellum2.1 Thinking, built for sub-agents, tool loops, and chat. In October, we released Mellum2.1 Thinking, an open 12B mixture-of-experts model with 2.5B active parameters, trained to work as a coding agent. Today, we are releasing its sibling, Mellum2.1 Instruct. It is built on the same architecture and trained identically, but it [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-25T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/"
+      }
+    ],
+    "score": 19.66
+  },
+  {
+    "id": "cdbde44e333cc381",
+    "title": "Microsoft declares ‘Code Red’ after huge Outlook outage",
+    "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage",
+    "summary": "This month's Exchange Online and Microsoft Outlook outage has prompted the software giant to declare an unusual \"Code Red\" internally, Reuters reports. The nearly 24-hour outage took down email for millions of customers, and was triggered by a bug that had been sitting on Microsoft 365 networking gateway servers since July without any impact to [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-25T11:12:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage"
+      }
+    ],
+    "score": 19.56
+  },
+  {
+    "id": "e146c0332fe3b360",
+    "title": "Has vibe coding made open source the new normal for synths?",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+    "summary": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, like Roland, have remained silent for now, others have embraced the modding community. In the last several weeks, as it's become clear that no [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-25T13:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
+      }
+    ],
+    "score": 19.51
+  },
+  {
+    "id": "cb3b6966d66ea09e",
+    "title": "What Does JetBrains Do? The Essential Guide to Our Business",
+    "url": "https://blog.jetbrains.com/life-at-jetbrains/2026/11/what-does-jetbrains-do/",
+    "summary": "JetBrains builds tools developers use to write, check, and ship software, including tools that work with AI agents. You don&#8217;t need to be a coder to work here, but the specialists we hire are experienced in their fields, curious about technology, and ready to embrace AI. This guide explains what JetBrains does in plain language [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-25T09:46:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/life-at-jetbrains/2026/11/what-does-jetbrains-do/"
+      }
+    ],
+    "score": 19.44
+  },
+  {
+    "id": "10138bb37fa2042a",
+    "title": "Introducing Inertia UI Notifications: Toasts, a notification center, and preferences for Laravel and Inertia.js",
+    "url": "https://freek.dev/3234-introducing-inertia-ui-notifications-toasts-a-notification-center-and-preferences-for-laravel-and-inertiajs",
+    "summary": "<p>Say hello to Inertia Notifications. It brings toasts, a notification center, and notification preferences to your Laravel and Inertia.js app, with components for both Vue and React.</p>\n\n\n<a href=\"https://pascalbaljet.dev/introducing-inertia-notifications-toasts-a-notification-center-and-preferences-for-laravel-and-inertiajs\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-25T13:10:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3234-introducing-inertia-ui-notifications-toasts-a-notification-center-and-preferences-for-laravel-and-inertiajs"
+      }
+    ],
+    "score": 19.44
+  },
+  {
+    "id": "0e8bbab1cfff60e6",
+    "title": "[Livestream] 5 Things to Try in TeamCity 2026.3",
+    "url": "https://blog.jetbrains.com/teamcity/2026/11/livestream-dec3-2026/",
+    "summary": "TeamCity 2026.3 is almost here! Join us on December 3 for a live walkthrough of the new release and recent updates to AI, Pipelines, and GitHub integration. Register for the livestream During this one-hour session, Nikita Koshcheev and Artem Rokhin from the TeamCity team will show five things you can try in TeamCity: 1. Run [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-25T09:20:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/teamcity/2026/11/livestream-dec3-2026/"
+      }
+    ],
+    "score": 19.35
+  },
+  {
+    "id": "5b8d08369530bfe4",
+    "title": "Trump reportedly says pardoning Jensen Huang is ‘an option’",
+    "url": "https://techcrunch.com/2026/11/24/trump-reportedly-says-pardoning-jensen-huang-is-an-option-but-that-he-doesnt-think-it-will-be-necessary/",
+    "summary": "Huang faces ongoing questions about his relationship with Alice Huang, an executive with alleged ties to Chinese intelligence who previously worked for a company that has been accused of illegally diverting Nvidia chips to China.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-25T00:10:27+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/24/trump-reportedly-says-pardoning-jensen-huang-is-an-option-but-that-he-doesnt-think-it-will-be-necessary/"
+      }
+    ],
+    "score": 19.29
+  },
+  {
+    "id": "c654f6604ba05603",
+    "title": "Black Friday Deal: Save 40% on New JetBrains Subscriptions and Upgrades",
+    "url": "https://blog.jetbrains.com/blog/2026/11/25/black-friday-2026/",
+    "summary": "As a treat on Black Friday, you can get 40% off a new annual individual JetBrains IDE or ReSharper subscription, or an upgrade to an annual individual All Products Pack or dotUltimate one. A lot about development has changed, and your JetBrains IDE has changed with it. We recently introduced Air in IDEs, a new [&#8230;]",
+    "category": "dev",
+    "source_name": "JetBrains Blog",
+    "published": "2026-11-25T08:36:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "JetBrains Blog",
+        "url": "https://blog.jetbrains.com/blog/2026/11/25/black-friday-2026/"
+      }
+    ],
+    "score": 19.21
+  },
+  {
+    "id": "40eb3526812098b7",
+    "title": "Confluent spent 3 months rewriting Kafka’s Java client in Rust with AI — and had to start over",
+    "url": "https://thenewstack.io/confluent-kafka-rust-agents/",
+    "summary": "<img alt=\"Person pushing a boulder up a steep hill\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"682\" src=\"https://cdn.thenewstack.io/media/2026/11/028e7f98-getty-images-7ag-cmu7_fw-unsplash-1024x682.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Confluent spent nearly three months using AI coding agents to translate Apache Kafka&#8217;s Java client into Rust. The engineers discarded</p>\n<p>The post <a href=\"https://thenewstack.io/confluent-kafka-rust-agents/\">Confluent spent 3 months rewriting Kafka’s Java client in Rust with AI — and had to start over</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-24T19:26:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/confluent-kafka-rust-agents/"
+      }
+    ],
+    "score": 19.0
+  },
+  {
+    "id": "2bbaedf39fc7c2d1",
+    "title": "Beyond Linux: A Journey Through the Open Source Ecosystem",
+    "url": "https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem/",
+    "summary": "<p><a href=\"https://lobste.rs/s/y56k2b/beyond_linux_journey_through_open_source\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-24T17:45:29+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://www.marginalia.nu/log/a_141_marginalia_update/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem/"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://blog.gordo.life/2026/04/12/haskell-websockets.html"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit"
+      }
+    ],
+    "score": 18.97
+  },
+  {
+    "id": "c1fabb9ddccc8891",
+    "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
+    "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+    "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-25T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide"
+      }
+    ],
+    "score": 18.22
+  },
+  {
+    "id": "8868e979ec881b19",
+    "title": "Anthropic breaks below $83 IPO price",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+    "summary": "<p>Article URL: <a href=\"https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading\">https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50627836\">https://news.ycombinator.com/item?id=50627836</a></p>\n<p>Points: 405</p>\n<p># Comments: 771</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-24T13:23:47+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading"
+      }
+    ],
+    "score": 18.18
+  },
+  {
+    "id": "0b8cd76a852c0ac8",
+    "title": "Risky Business #861 -- You can’t trust AI routers",
+    "url": "https://risky.biz/RB861/",
+    "summary": "On this week’s show Patrick Gray and James Wilson are joined by the former head of the CIA’s Center for Cyber Intelligence and current GRVTY chief Strategy Officer, Pete Ranks, to talk through the week’s cybersecurity news, including:\n\n\n  HD Moore threw two million canary tokens into OpenRouter to see if they’d leak. (They leaked.)\n  Cloud keys shipped in Docker Hub are being stolen in seconds\n  Patching is the likely cause of America’s high profile outages\n  CrowdStrike is buying Zscaler\n  Much, much more!\n\n\nThis week’s show is brought to you by Socket. Founder and CEO Feross Aboukhadijeh joins James Wilson to chat through Socket Certified Patches. The company is on a mission, taking security fixes and backporting them to the exact package version that customers are running. With 30,000 patches over a thousand vulnerabilities already sorted, Feross wants to one day say “we’ve patched all the vulnerabilities”. Ambitious!\n\nThis episode is also available on YouTube",
+    "category": "security",
+    "source_name": "Risky Business (Podcast)",
+    "published": "2026-11-25T03:26:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Risky Business (Podcast)",
+        "url": "https://risky.biz/RB861/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "c0d67b090d5a4841",
+    "title": "CodeSOD: ReferenceError: HELL is not defined",
+    "url": "https://thedailywtf.com/articles/referenceerror-hell-is-not-defined",
+    "summary": "<p><strong>David</strong> came across some Java code. This particular block needed to, based on an integer masquerading as an enumerated type, return an amount of time to sleep. It has strong opinions about what should happen when you send it an invalid value:</p>\n<pre><code class=\"language-java\"><span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">getTime</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> mode)</span> {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">switch</span> (mode) {\n        <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">0</span> -&gt; <span class=\"hljs-number\">30</span> * SECOND;\n        <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">1</span> -&gt; <span class=\"hljs-number\">15</span> * SECOND;\n        <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">2</span> -&gt; <span c",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-25T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/referenceerror-hell-is-not-defined"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "5d7e6d7c53b9d440",
+    "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
+    "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
+    "summary": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits and raising the question of whether the country is celebrating a company that has helped put advanced chips in its adversaries' hands.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-25T00:12:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/"
+      }
+    ],
+    "score": 17.95
+  },
+  {
+    "id": "a2270576031dfdfe",
+    "title": "Jensen Huang reportedly tells Nvidia staff it&#8217;s ‘not true’ Trump got him rehired",
+    "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
+    "summary": "Nvidia CEO Jensen Huang apologized to staff during his first all-hands since returning to the company, while attempting to distance himself from the narrative that the White House and tech leaders helped him get his job back, according to reports from Bloomberg, The New York Times, and The Handbasket's Marisa Kabas. During the meeting, Huang [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-24T20:02:03+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/"
+      }
+    ],
+    "score": 17.53
+  }
+]

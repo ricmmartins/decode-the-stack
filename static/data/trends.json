@@ -828,6 +828,43 @@
         "kubernetes": 1,
         "websocket": 1
       }
+    },
+    {
+      "date": "2026-11-25",
+      "tags": {
+        "microsoft": 3,
+        "nvidia": 4,
+        "vercel": 2,
+        "golang": 4,
+        "nextjs": 2,
+        "hashicorp": 1,
+        "kubernetes": 1,
+        "open-source": 4,
+        "aws": 2,
+        "cicd": 1,
+        "gitlab": 1,
+        "cve": 2,
+        "anthropic": 3,
+        "dotnet": 1,
+        "github": 4,
+        "api": 2,
+        "rails": 1,
+        "rust": 2,
+        "openai": 4,
+        "gpt": 1,
+        "php": 1,
+        "google": 1,
+        "python": 1,
+        "claude": 1,
+        "chatgpt": 1,
+        "elixir": 1,
+        "react": 1,
+        "vue": 1,
+        "laravel": 1,
+        "java": 2,
+        "linux": 1,
+        "docker": 1
+      }
     }
   ],
   "top_tags": [
@@ -838,18 +875,18 @@
     "nvidia",
     "python",
     "google",
-    "dotnet",
     "anthropic",
+    "dotnet",
     "microsoft",
-    "cve",
     "openai",
+    "cve",
     "vercel",
     "aws",
-    "linux",
     "golang",
+    "linux",
+    "rust",
     "apple",
     "llm",
-    "rust",
-    "javascript"
+    "kubernetes"
   ]
 }

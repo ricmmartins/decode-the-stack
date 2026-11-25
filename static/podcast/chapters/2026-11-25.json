@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 10,
+      "title": "Opening"
+    },
+    {
+      "startTime": 136,
+      "title": "The interesting boundary here is where an AI agent stops..."
+    },
+    {
+      "startTime": 284,
+      "title": "There’s a useful distinction here between an ambition, a..."
+    },
+    {
+      "startTime": 423,
+      "title": "That distinction between useful output and convincing..."
+    },
+    {
+      "startTime": 583,
+      "title": "That uncertainty becomes especially consequential with..."
+    },
+    {
+      "startTime": 733,
+      "title": "For our final stretch, separate an attractive offer from a..."
+    }
+  ]
+}
