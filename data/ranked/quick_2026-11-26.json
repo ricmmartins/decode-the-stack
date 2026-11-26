@@ -1,0 +1,528 @@
+[
+  {
+    "id": "3c549de3b6a90e7c",
+    "title": "Generate One Campaign in Five Ad Sizes with the Prisma Design API (Node.js)",
+    "url": "https://dev.to/devkenan/generate-one-campaign-in-five-ad-sizes-with-the-prisma-design-api-nodejs-1158",
+    "summary": "<p>A single ad rarely ships alone. The same offer usually needs a square post, a portrait feed version, a full-screen story, a landscape video frame and a link-ad banner. In <a href=\"https://dev.to/devkenan/how-to-generate-editable-multi-layer-fabricjs-templates-via-rest-api-prisma-v10-tutorial-4cl8\">my previous tutorial</a> we made one Prisma generation: submit, poll, fetch the template and load it into Fabric.js. This time we run a whole campaign: one brief, five aspect ratios, five editable templates on disk.</p>\n\n<p>Five jobs bring new problems: staying inside the rate limits, surviving a dropped connection without paying twice, and knowing which size failed and why. The script below handles all three, then copies the image assets to your own server.</p>\n\n<h2>\n  \n  \n  What we're building\n</h2>\n\n<p>Each of Prisma's five aspect ratios is a separate generation. You send the same brief five times with a different <code>aspect_ratio</code>, and Prisma builds a new layout for each canvas",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:00:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/devkenan/generate-one-campaign-in-five-ad-sizes-with-the-prisma-design-api-nodejs-1158"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "76915455b764253e",
+    "title": "Medu Neter: I built a hieroglyph typewriter with Kiro (Kiroween 2026)",
+    "url": "https://dev.to/mahmoudabdalhamid10alt/medu-neter-i-built-a-hieroglyph-typewriter-with-kiro-kiroween-2026-3bje",
+    "summary": "<p><em>Written as part of the Kiroween 2026 hackathon. Disclosure: this project and this post were made by Mahmoud's AI assistant, working on his behalf and with his permission, using Kiro.</em></p>\n\n<p>Medu Neter is Egyptian for \"the words of the gods\", the ancient name for hieroglyphs. My project, <strong>Medu Neter, the Hieroglyph Typewriter</strong>, lets you type modern English and see it turn into Egyptian hieroglyphs as you type.</p>\n\n<p><strong>Live demo:</strong> <a href=\"https://mahmoudabdalhamid10-alt.github.io/medu-neter/\" rel=\"noopener noreferrer\">https://mahmoudabdalhamid10-alt.github.io/medu-neter/</a><br />\n<strong>Code (MIT):</strong> <a href=\"https://github.com/mahmoudabdalhamid10-alt/medu-neter\" rel=\"noopener noreferrer\">https://github.com/mahmoudabdalhamid10-alt/medu-neter</a></p>\n\n<h2>\n  \n  \n  What it does\n</h2>\n\n<ul>\n<li>Turns each letter into hieroglyphs (uniliteral signs mapped to Unicode Egyptian Hieroglyphs).</li>\n<li>Shows an Egyptological transliteration und",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:00:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/mahmoudabdalhamid10alt/medu-neter-i-built-a-hieroglyph-typewriter-with-kiro-kiroween-2026-3bje"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "a2faaf288cc867f3",
+    "title": "How to Debug a React Settings Screen That Won’t Open",
+    "url": "https://dev.to/orca_forge/how-to-debug-a-react-settings-screen-that-wont-open-3620",
+    "summary": "<blockquote>\n<p>📝 Originally published (in Japanese) at <a href=\"https://forge.workstyle.tech/blog/1650-tests-pass-but-breaks/?utm_source=devto&amp;utm_medium=crosspost&amp;utm_campaign=1650-tests-pass-but-breaks\" rel=\"noopener noreferrer\">forge.workstyle.tech</a>.</p>\n</blockquote>\n\n<p>TL;DR The settings screen showed “This section could not be displayed” even though about 1,650 tests passed. An early return before <code>useState</code> broke the order of React hooks. Source string checks and unit tests that did not render the screen could not catch the rendering failure.</p>\n\n<h2>\n  \n  \n  TL;DR\n</h2>\n\n<p>The React settings screen failed to open because a <code>useState</code> call came after an early return, breaking the order of hooks. Tests that only checked source strings or didn’t render the screen couldn’t catch the bug. I added linting for the Rules of Hooks and smoke checks that open each settings section.</p>\n\n<h2>\n  \n  \n  What Were the 425 Tests Actually Checking?\n</h2>\n\n<p>",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/orca_forge/how-to-debug-a-react-settings-screen-that-wont-open-3620"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3e083e6d513d196a",
+    "title": "Fender serial number lookup in JavaScript: why E412345 can mean the USA or Japan",
+    "url": "https://dev.to/jeremiah_say/fender-serial-number-lookup-in-javascript-why-e412345-can-mean-the-usa-or-japan-d65",
+    "summary": "<p>Type <code>E412345</code> into a Fender serial decoder. When and where was the guitar made?</p>\n\n<p>According to Fender's own dating charts, it's one of two guitars:</p>\n\n<ul>\n<li>\n<strong>USA, 1984 to 1988.</strong> \"E4 + 5 digits\" is a row on the American chart.</li>\n<li>\n<strong>Japan, 1984 to 1987.</strong> \"E + 6 digits\" is a row on the Japanese chart.</li>\n</ul>\n\n<p>Both patterns match the same seven characters. The serial alone can't decide. What decides is printed right next to it: the decal that says <strong>Made in USA</strong> or <strong>Made in Japan</strong>.</p>\n\n<p>I built a <a href=\"https://whoactuallymakes.com/fender-serial-number-lookup/\" rel=\"noopener noreferrer\">Fender serial number lookup</a> for Who Actually Makes. Every rule in it comes from Fender's support articles, and the build checks every rule against a saved copy of those articles. This post covers how it's built: rules as data, a decoder that returns every reading instead of the first, and tests that r",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:00:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jeremiah_say/fender-serial-number-lookup-in-javascript-why-e412345-can-mean-the-usa-or-japan-d65"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "2fe8feca41737693",
+    "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+    "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+    "summary": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment.\n\n\"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher Kush Pandya said in a technical write-up. \"In the versions we analyzed, building or running a",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T03:48:52+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html"
+      },
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments"
+      }
+    ],
+    "score": 19.93
+  },
+  {
+    "id": "584cd9f475dde259",
+    "title": "What PHP's session handler teaches us about atomicity",
+    "url": "https://freek.dev/3237-what-phps-session-handler-teaches-us-about-atomicity",
+    "summary": "<p>Amit Merchant explains how interrupted writes in PHP's file-based session handler could turn leftover session data into a security vulnerability. It's a useful example of why locking a file doesn't make an update atomic.</p>\n\n\n<a href=\"https://www.amitmerchant.com/what-phps-session-handler-teaches-us-about-atomicity/\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-26T09:56:33+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3237-what-phps-session-handler-teaches-us-about-atomicity"
+      }
+    ],
+    "score": 19.36
+  },
+  {
+    "id": "9b29bd5961d05341",
+    "title": "Ray is getting rusty!",
+    "url": "https://freek.dev/3235-ray-is-getting-rusty",
+    "summary": "<p>We've rewritten Ray in Rust with GPUI, making it faster and lighter while keeping the interface familiar. Dries shares how we used Claude and a parity harness to build Ray 4, which is a free upgrade for existing users.</p>\n\n\n<a href=\"https://spatie.be/blog/ray-is-getting-rusty\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-26T12:30:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3235-ray-is-getting-rusty"
+      }
+    ],
+    "score": 18.95
+  },
+  {
+    "id": "d128605ee311ab66",
+    "title": "GitHub Ditches CSS-in-JS for CSS Modules, Reports 55% Faster SSR After Three-Year Migration",
+    "url": "https://www.infoq.com/news/2026/11/github-css-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/github-css-migration/en/headerimage/generatedHeaderImage-1795537886697.jpg\" /><p>GitHub migrated github.com from styled-components to CSS Modules over three years, reporting a 55% cut in server-side rendering time and 25% faster component initialisation. Primer components were converted behind feature flags, and about 7,760 sx prop usages were migrated with codemods and Copilot agents. Commenters questioned user impact and hashed class names.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T15:29:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/github-css-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "082157a8192d34e6",
+    "title": "DoorDash Scales Dispatch 10x While Maintaining 99.99% Peak Availability",
+    "url": "https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/doordash-dispatch-redesign/en/headerimage/generatedHeaderImage-1793847001864.jpg\" /><p>DoorDash has redesigned its real-time dispatch platform, replacing a monolithic optimization engine with a distributed architecture that separates coordination from computation. The new system delivers 10x higher throughput and more than 99.99% peak availability. It also supports hybrid machine learning inference and multi-agent reinforcement learning to dynamically optimize delivery assignments.</p> <i>By Leela Kumili</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T14:44:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "e55f5b6a3509db1d",
+    "title": "Classic WTF: The Quine Programmer",
+    "url": "https://thedailywtf.com/articles/classic-wtf-the-quine-programmer",
+    "summary": "<blockquote>It's a holiday in the US, where we give thanks. Specifically, we give thanks that we're not working with the person responsible for this. <a href=\"https://thedailywtf.com/articles/The-Quine-Programmer\">Original</a> --<strong>Remy</strong></blockquote>\n\n<p>The Quine – i.e., a program that produces its own source code as output – lives in the esoteric realm of computing and computer science. It’s almost entirely useless, but usually pretty fun. The Quine Programmer, on the other hand, is among the pantheon of programming gods, sitting between The Great Abstractor and <a href=\"https://thedailywtf.com/Articles/Divine-by-Zero.aspx\">The PHP God</a>.</p>\n<p>The Quine Programmer has the uncanny gifts of being infinitely good at programming <em>and</em> infinitely insightful, thus allowing him to write a program to replace himself and all other programmers. The output of The Quine Programmer is system that’s fully configurable by the end-user; should the end-user want something chan",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-26T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/classic-wtf-the-quine-programmer"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "f25ff163c599c9a7",
+    "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+    "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+    "summary": "<p>Article URL: <a href=\"https://github.com/google-research/google-research/tree/master/cogentic_research_papers\">https://github.com/google-research/google-research/tree/master/cogentic_research_papers</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50642086\">https://news.ycombinator.com/item?id=50642086</a></p>\n<p>Points: 495</p>\n<p># Comments: 358</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-25T13:33:07+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers"
+      }
+    ],
+    "score": 17.78
+  },
+  {
+    "id": "587d0515d441abd1",
+    "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+    "summary": "A previously undocumented Iranian threat group called &quot;Volant Manticore&quot; is targeting Cypriot organizations as part of an intelligence-gathering effort for Tehran.",
+    "category": "security",
+    "source_name": "Dark Reading",
+    "published": "2026-11-26T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers"
+      }
+    ],
+    "score": 17.73
+  },
+  {
+    "id": "d316b84b8f787d39",
+    "title": "Here’s Everything You Can Do With With the New Gemini AI on Android Auto",
+    "url": "https://www.wired.com/story/heres-everything-you-can-do-with-with-the-new-gemini-ai-on-android-auto/",
+    "summary": "Android Auto is now smarter than before, thanks to the addition of Gemini. You can navigate more easily and even bounce ideas off of it along the way.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-26T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/heres-everything-you-can-do-with-with-the-new-gemini-ai-on-android-auto/"
+      }
+    ],
+    "score": 17.5
+  },
+  {
+    "id": "10a31ff08d18b5d2",
+    "title": "Quiz: Python and TOML: Read, Write, and Configure with tomllib",
+    "url": "https://realpython.com/quizzes/python-toml/",
+    "summary": "Test your knowledge of TOML in Python. Review the syntax for tables and arrays, and read and write config files with tomllib, tomli_w, and tomlkit.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-26T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/python-toml/"
+      }
+    ],
+    "score": 17.47
+  },
+  {
+    "id": "f578370861aff984",
+    "title": "RSS Club: Preview Art-Directed Scrollytelling Article",
+    "url": "https://css-tricks.com/rss-club-preview-art-directed-scrollytelling-article/",
+    "summary": "<p class=\"wp-block-paragraph\">Hey folks! I&#8217;m just so dang excited about this little project I&#8217;m working on with long-time author <a href=\"https://css-tricks.com/author/leemeyer/\">Lee Meyer</a> that I had to share it with you before it goes out.</p>\n<p class=\"wp-block-paragraph\">We&#8217;re going full 2013-meets-2026 with an art-directed piece that &#8230;</p>\n<hr />\n<p><small><a href=\"https://css-tricks.com/rss-club-preview-art-directed-scrollytelling-article/\" rel=\"nofollow\">RSS Club: Preview Art-Directed Scrollytelling Article</a> originally handwritten and published with love on <a href=\"https://css-tricks.com\" rel=\"nofollow\">CSS-Tricks</a>. You should really <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a> as well.</p>",
+    "category": "dev",
+    "source_name": "CSS-Tricks",
+    "published": "2026-11-25T15:32:42+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/rss-club-preview-art-directed-scrollytelling-article/"
+      },
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/css-style-queries-as-conditional-modifiers/"
+      }
+    ],
+    "score": 17.0
+  },
+  {
+    "id": "78f7153120a15fcf",
+    "title": "DeepMind's Gemini Robotics 2.5 Aims to Make Robots Safer, More Dexterous, and Faster Learners",
+    "url": "https://www.infoq.com/news/2026/11/deepmind-gemini-robotics-2-5/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/deepmind-gemini-robotics-2-5/en/headerimage/tripadvisor-tca-migration-1795623375360.jpeg\" /><p>Google DeepMind introduced Gemini Robotics 2.5, a vision-language-action (VLA) model designed to improve robots' dexterity, reliability, and learning speed, while enabling safer operation in unstructured real-world environments.</p> <i>By Sergio De Simone</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T17:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/deepmind-gemini-robotics-2-5/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 16.99
+  },
+  {
+    "id": "71915d696d7233be",
+    "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.\n\nThe Mitel MiCollab vulnerabilities are listed below -\n\n\n  CVE-2026-133275 (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T06:44:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html"
+      }
+    ],
+    "score": 16.98
+  },
+  {
+    "id": "9849b4ccf965f57c",
+    "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+    "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+    "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T07:02:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
+      }
+    ],
+    "score": 16.94
+  },
+  {
+    "id": "04ce481f57420c61",
+    "title": "Browser tabs as a container runtime",
+    "url": "https://fzakaria.com/2026/11/25/browser-tabs-as-a-container-runtime",
+    "summary": "<p><a href=\"https://lobste.rs/s/hge0sd/browser_tabs_as_container_runtime\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-26T04:57:04+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://fzakaria.com/2026/11/25/browser-tabs-as-a-container-runtime"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/"
+      }
+    ],
+    "score": 16.9
+  },
+  {
+    "id": "b1944874c4f39d79",
+    "title": "Smart people who give a shit use tools",
+    "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+    "summary": "<p>Article URL: <a href=\"https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools\">https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50639698\">https://news.ycombinator.com/item?id=50639698</a></p>\n<p>Points: 345</p>\n<p># Comments: 270</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-25T07:46:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools"
+      }
+    ],
+    "score": 16.8
+  },
+  {
+    "id": "ce6e036f7b99eec3",
+    "title": "What we learned building the UK’s first agentic bank payment",
+    "url": "https://gocardless.com/blog/engineering-learnings-first-agentic-payment",
+    "summary": "Lessons we learned from building the first A2A agentic payment.",
+    "category": "dev",
+    "source_name": "GoCardless Tech Blog",
+    "published": "2026-11-26T10:10:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GoCardless Tech Blog",
+        "url": "https://gocardless.com/blog/engineering-learnings-first-agentic-payment"
+      }
+    ],
+    "score": 16.63
+  },
+  {
+    "id": "791de8a412a40828",
+    "title": "Vercel Launched Experimental Board to Coordinate Tasks Across Humans and Coding Agents",
+    "url": "https://www.infoq.com/news/2026/11/vercel-board-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/vercel-board-agents/en/headerimage/generatedHeaderImage-1795183495782.jpg\" /><p>Vercel's experimental Board is a headless message store where people and coding agents claim leased tasks, declare dependencies, and sync threads with Slack, GitHub, and Linear.</p> <i>By Daniel Dominguez</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-25T13:57:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/vercel-board-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 16.33
+  },
+  {
+    "id": "e88ea14466ef3b90",
+    "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+    "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "summary": "",
+    "category": "ai",
+    "source_name": "Hugging Face Blog",
+    "published": "2026-11-26T11:37:17+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "3425179d5f776daf",
+    "title": "Quoting Scott Aaronson",
+    "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+    "summary": "<blockquote cite=\"https://scottaaronson.blog/?p=10379\"><p>It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you <em>some</em> idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://scottaaronson.blog/?p=10379\">Scott Aaronson</a></p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/mathematics\">mathematics</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a></p>",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-25T23:26:32+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "fa625e60681226c7",
+    "title": "Node.js 27.0.0-alpha.0.2.0 (Alpha)",
+    "url": "https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0",
+    "summary": "",
+    "category": "dev",
+    "source_name": "Node.js Blog",
+    "published": "2026-11-26T10:30:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Node.js Blog",
+        "url": "https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "46e12d4c6b26c7fa",
+    "title": "How to use PostgreSQL pgvector with JPA, Hibernate, and Spring AI",
+    "url": "https://vladmihalcea.com/postgresql-pgvector-jpa-hibernate-spring-ai/",
+    "summary": "<p>Introduction In this article, I&#8217;m going to show you how to map the PostgreSQL vector column type from pgvector to a JPA entity attribute using Hypersistence Utils, and how to use it with Spring AI and Ollama to implement semantic search, recommendations, and Retrieval-Augmented Generation (RAG). Starting with version 3.16.0, the Hypersistence Utils project provides the PostgreSQLVectorType. What is pgvector In AI, an embedding is a numerical vector representation of data (e.g., text, image), which in Java can be represented as an array of floating-point numbers. Two texts having a similar meaning... <a class=\"read-more\" href=\"https://vladmihalcea.com/postgresql-pgvector-jpa-hibernate-spring-ai/\">Read More</a></p>\n<p>The post <a href=\"https://vladmihalcea.com/postgresql-pgvector-jpa-hibernate-spring-ai/\">How to use PostgreSQL pgvector with JPA, Hibernate, and Spring AI</a> appeared first on <a href=\"https://vladmihalcea.com\">Vlad Mihalcea</a>.</p>",
+    "category": "dev",
+    "source_name": "Vlad Mihalcea",
+    "published": "2026-11-25T20:28:16+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vlad Mihalcea",
+        "url": "https://vladmihalcea.com/postgresql-pgvector-jpa-hibernate-spring-ai/"
+      }
+    ],
+    "score": 16.0
+  },
+  {
+    "id": "37a427b3aaad75ad",
+    "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
+    "url": "https://gpu-demo-gallery.pages.dev/",
+    "summary": "<p>Article URL: <a href=\"https://gpu-demo-gallery.pages.dev/\">https://gpu-demo-gallery.pages.dev/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50638503\">https://news.ycombinator.com/item?id=50638503</a></p>\n<p>Points: 348</p>\n<p># Comments: 80</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-25T04:31:48+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://gpu-demo-gallery.pages.dev/"
+      }
+    ],
+    "score": 15.73
+  },
+  {
+    "id": "20dd289eb9b609d2",
+    "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+    "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+    "summary": "Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center on the kinds of products the AI agent recommends and the potential impact on the ecommerce giant's advertising revenue. As reported by Fortune, [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-25T14:12:33+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+      }
+    ],
+    "score": 15.53
+  },
+  {
+    "id": "e69e4369c7faf586",
+    "title": "How to Optimize NVFP4 Attention on NVIDIA RTX Blackwell Through Register Recycling",
+    "url": "https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/",
+    "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/10/floating-cubes-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"floating-cubes\" width=\"768\" />Attention can be a major bottleneck when serving world foundation models, where long sequences make inference computationally demanding. On NVIDIA Hopper and...",
+    "category": "dev",
+    "source_name": "Nvidia Developer Blog",
+    "published": "2026-11-25T19:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Nvidia Developer Blog",
+        "url": "https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/"
+      }
+    ],
+    "score": 15.36
+  },
+  {
+    "id": "c3f83d13b4043e9d",
+    "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+    "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+    "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-25T19:54:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/"
+      }
+    ],
+    "score": 15.13
+  }
+]

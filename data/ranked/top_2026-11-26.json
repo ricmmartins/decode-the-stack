@@ -1,0 +1,370 @@
+[
+  {
+    "id": "383db73624a3537c",
+    "title": "Make the agent reuse the existing empty-state component, not a one-off dashed box",
+    "url": "https://dev.to/sherotree/make-the-agent-reuse-the-existing-empty-state-component-not-a-one-off-dashed-box-3n6o",
+    "summary": "<p>The PR handles \"no items\" with a dashed border, a generic \"Nothing here,\" and a one-off button. The repo already has an <code>EmptyState</code> (or <code>BlankSlate</code>) component with a slot for an icon, a title, a short description, and the primary action. Nearby lists use it. The new box uses different spacing, a different heading level, and a CTA that does not match the existing empty-state tone.</p>\n\n<p>I've started treating <strong>a homemade empty box as a missed component</strong>, not as a lighter placeholder. The dashed border is easy to sketch. Shared typography and action placement are why the component exists.</p>\n\n<h2>\n  \n  \n  Why the one-off empty box shows up\n</h2>\n\n<p>Tutorials draw an empty list as a dashed rectangle and a sentence. The model can write that without finding <code>EmptyState</code>. Your component may be named <code>BlankSlate</code> or live under a patterns folder, which is easy to miss if the prompt only says \"show a message when the list is emp",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:02:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sherotree/make-the-agent-reuse-the-existing-empty-state-component-not-a-one-off-dashed-box-3n6o"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "f9156ef60e20e47d",
+    "title": "Optimized Prompting for Modern Reasoning LLMs",
+    "url": "https://dev.to/koolkamalkishor/optimized-prompting-for-modern-reasoning-llms-4okp",
+    "summary": "<blockquote>\n<p><strong>TL;DR:</strong> Many traditional prompting methods over-instruct and hinder modern reasoning LLMs. This guide explains how to use optimized prompting to get faster, more accurate results by leveraging the model's internal thought process.</p>\n</blockquote>\n\n<p>Many developers still rely on rigid, overly specific prompts that were more effective with older, less capable LLMs. This approach often leads to verbose, slow, and sometimes inaccurate responses from advanced models like Claude 3 Opus or Gemini 1.5 Pro. These modern LLMs possess sophisticated reasoning capabilities that are underutilized when they are simply told <em>what</em> to do at every step. It’s like giving a senior developer a list of junior-level tasks to execute without letting them decide the optimal approach.</p>\n\n<p>This issue stems from outdated prompting patterns that can hinder modern reasoning LLMs, causing slower, less accurate, and more verbose outputs. The key to better interaction is ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:02:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/koolkamalkishor/optimized-prompting-for-modern-reasoning-llms-4okp"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "c20080b888b488ca",
+    "title": "Why CCTV Footage Looks Blurry When It Matters",
+    "url": "https://dev.to/stone_cao_f11532d0d4fb790/why-cctv-footage-looks-blurry-when-it-matters-36mn",
+    "summary": "<p><em>Fixed wide-angle lenses, DORI pixel limits, low-light motion blur, 24/7 bitrate compression and viral cropping all stack together—here is why single-frame CCTV rarely gives a clear face and how investigators actually connect the trail.</em></p>\n\n<p>Originally published at <a href=\"https://tracewind.world/articles/why-cctv-footage-looks-blurry/\" rel=\"noopener noreferrer\">Tracewind Engineering</a>.</p>\n\n<p>Every time surveillance footage from a major incident goes public, the comment section asks the same question: modern phones shoot crisp 4K video even at night, so why does real CCTV footage still look blurry right when a suspect's face matters most?</p>\n\n<p>The pattern keeps repeating across major cases—even when cameras are everywhere:</p>\n\n<p>In the multi-province Zhou Kehua robbery-homicide series in China (2004–2012), investigators pulled massive volumes of street and bank surveillance footage across cities, yet older camera resolutions, off-axis mounts, lowered baseball ca",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:02:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/stone_cao_f11532d0d4fb790/why-cctv-footage-looks-blurry-when-it-matters-36mn"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "e49df2b0dd2c01ad",
+    "title": "How Cozey turns its operators into software builders on Vercel",
+    "url": "https://vercel.com/blog/how-cozey-turns-its-operators-into-software-builders-on-vercel",
+    "summary": "<ul><li><p>Employees outside engineering, including warehouse, finance, and support staff, are now building applications and deploying them to Vercel</p></li><li><p>Finance uses an app it built to review profit and loss weekly instead of monthly</p></li><li><p>Adopting <a href=\"https://vercel.com/docs/flags/vercel-flags\">Vercel Flags</a> allowed Cozey to retire a separate tool that cost approximately $80,000 annually</p></li><li><p>Six projects, including the storefront, use <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a></p></li></ul><hr /><p><a href=\"https://www.cozey.com/en-us\">Cozey</a> is a Canadian furniture company that makes modular sofas customers can configure for their homes. It runs its storefront and most of its back-office applications on Vercel. Warehouse, finance, and customer support employees now securely deploy their own apps on that same platform.</p><div></div><h2>Turning everyday problems into working applications</h2><p>CEO Fred Aubé encourages employees t",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-25T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/blog/how-cozey-turns-its-operators-into-software-builders-on-vercel"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "8b42529d58a92950",
+    "title": "Workflow is 10x faster, again",
+    "url": "https://vercel.com/changelog/workflows-speculative-execution",
+    "summary": "<p><a href=\"https://workflow-sdk.dev\">Workflow SDK</a> 5.8 runs workflows on a new execution engine, rebuilt for performance. Step-to-step latency is 12x lower, and large fan-outs, like running 256 steps in parallel, use 14x less function time outside your step code. This directly improves turn times for <a href=\"https://vercel.com/blog/making-every-harness-durable\">durable AI agents</a>, among many other improvements.</p><p>To get the new engine, upgrade to <code>workflow@5.8.0</code> or later. New runs will use the new engine by default, and runs already started on an older version will safely keep running on that version. Make sure your steps are <a href=\"#speculative-execution-for-retryable-steps\">idempotent where possible</a> to get the most out of this upgrade.</p><h3>Drastically reduced overhead</h3><div></div><p>In our <a href=\"https://workflow-sdk.dev/docs/performance\">benchmarks</a> comparing <code>5.2.0</code> to <code>5.8.0</code>, p75 step-to-step overhead fell from 85 ms ",
+    "category": "cloud",
+    "source_name": "Vercel Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Vercel Blog",
+        "url": "https://vercel.com/changelog/workflows-speculative-execution"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "7f18a326e5798b26",
+    "title": "Take on complex coding changes with Gemini 4 Neon on GitLab",
+    "url": "https://about.gitlab.com/blog/gemini-4-neon-on-gitlab/",
+    "summary": "<p>Google's Gemini 4 Neon is now available on <a href=\"https://about.gitlab.com/gitlab-duo-agent-platform/\" rel=\"\">GitLab Duo Agent Platform</a>, offering engineers a versatile model for agentic work, with particular strength in coding.</p><p>Gemini 4 Neon is the latest addition to a growing Gemini 4 lineup on GitLab Duo Agent Platform, joining Argon, Hydrogen, and Carbon. Each model brings its own balance of speed, reasoning, and cost, giving your team a broad selection of Gemini models to power everything from quick fixes to large, cross-codebase refactors.</p><p>Neon handles the mix of tasks an agent takes on in a day, such as planning an issue, reading a long spec, answering questions about a codebase in Agentic Chat, and then making the change. It performs best on agentic coding, where an agent has to read, run, and edit its way to a change ready for review.</p><h2 id=\"carry-complex-coding-work-through-to-a-merge-request\">Carry complex coding work through to a merge request</h2><p",
+    "category": "devops",
+    "source_name": "GitLab Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "GitLab Blog",
+        "url": "https://about.gitlab.com/blog/gemini-4-neon-on-gitlab/"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "6cdab7acc0a6549f",
+    "title": "How FIPS led to leaner container images for everyone",
+    "url": "https://www.pulumi.com/blog/fips-images-ga/",
+    "summary": "<img src=\"https://www.pulumi.com/images/generated/blog/fips-images-ga/index.png\" />\n<p>It started with a familiar story. A <a href=\"https://trivy.dev\">Trivy</a> scan of our service image flagged six distinct critical vulnerabilities and nine distinct high-severity vulnerabilities across <code>curl</code> and <code>libcurl</code>. We expected to rush out a patch. Then we traced what curl was doing in the image. Its only job was to make a health check request to localhost. Did we need it there at all?</p>\n<p>That question took on more urgency as we worked with teams running <a href=\"https://www.pulumi.com/docs/administration/self-hosting/\">self-hosted Pulumi Cloud</a> in air-gapped networks or inside FedRAMP authorization boundaries. When those teams run our images inside their own networks, every package in them becomes theirs to scan, justify in a security review, and keep patched. Anything we ship that doesn’t need to be there becomes their problem, too.</p>\n<p>Today, four new FIPS im",
+    "category": "devops",
+    "source_name": "Pulumi Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Pulumi Blog",
+        "url": "https://www.pulumi.com/blog/fips-images-ga/"
+      }
+    ],
+    "score": 13.0
+  },
+  {
+    "id": "a4eaac71cc7b2a6a",
+    "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+    "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+    "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about.\n\nAt Push Security, we measure this as breakthrough rate: The share of attacks that get past email security, web gateways, and safe browsing to reach the user.\n\nHow an",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T10:57:55+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "4a75f79b2864ce2a",
+    "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+    "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+    "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed.\n\n\"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T10:57:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
+      }
+    ],
+    "score": 19.97
+  },
+  {
+    "id": "cca9da920829aa4a",
+    "title": "datasette-charts 0.2a1",
+    "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2/",
+    "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-charts/releases/tag/0.2a1\">datasette-charts 0.2a1</a></p>\n        <blockquote>\n<p>Minor UI improvements:</p>\n<ul>\n<li>Collapsing the <strong>suggested charts</strong> section now leaves the chart visible.</li>\n<li>Following a link to a chart opens it with the suggestions collapsed for that visit.</li>\n<li>On table pages the panel now sits below the \"4,235 rows where country = CHN\" line.</li>\n<li>The \"Data\" table under each chart has been replaced by <strong>Copy TSV</strong> and <strong>Copy CSV</strong> buttons.</li>\n<li>Removed the \"Chart this data\" item from the table, view and query action menus.</li>\n<li>More space between lines in chart tooltips.</li>\n</ul>\n</blockquote>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/datasette\">datasette</a>, <a href=\"https://simonwillison.net/tags/visualization\">visualization</a>, <a href=\"https://simonwillison.net/tags/datasette-charts\">datasette-ch",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-24T06:07:19+00:00",
+    "coverage_count": 4,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2/"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sharathjapa/kanbrix-deterministic-issue-tracking-on-sovereign-homelab-infrastructure-2gd2"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sharathjapa/module-specific-policy-optimization-decoupling-credit-assignment-in-multimodal-rlvr-2l90"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/eva-nomados/my-github-repository-got-more-clones-but-does-that-mean-more-users-354f"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "966dd770162a6f6e",
+    "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+    "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+    "summary": "<p><strong><a href=\"https://www.sqlite.org/rsync.html\">sqlite3_rsync: Database Remote-Copy Tool For SQLite</a></strong></p>\nThis additional SQLite tool has been around for a while now - it was added as \"experimental\" <a href=\"https://www.sqlite.org/releaselog/3_47_0.html\">in SQLite 3.47.0 in October 2024</a> and enhanced in <a href=\"https://www.sqlite.org/releaselog/3_50_0.html\">SQLite 3.50.0 in May 2025</a>. It was only today that I understood one of its most attractive characteristics.</p>\n<p>Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the <a href=\"https://www.sqlite.org/backup.html\">backup API</a> or <a href=\"https://www.sqlite.org/lang_vacuum.html#vacuuminto\">VACUUM INTO</a>. In both cases you need enough disk space to create a duplicate copy of your database, so if you're on a small instance and you already use more than half of the available disk you are plain out of luck.</p>\n<p><code>sqlite3_rsync</code> can copy a snapshot of your",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-26T06:08:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "8bfb034b4c5c52da",
+    "title": "Cognition’s new engineers aren’t even downloading code anymore — they build entirely through Devin",
+    "url": "https://thenewstack.io/cognition-devin-automated-engineering/",
+    "summary": "<img alt=\"silhouette of engineer\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"576\" src=\"https://cdn.thenewstack.io/media/2026/11/b4387bc3-chris-yang-1tns_bvy9jk-unsplash-1-1024x576.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>Some engineers joining Cognition no longer set up local development environments. Instead, Devin has become their primary interface for software</p>\n<p>The post <a href=\"https://thenewstack.io/cognition-devin-automated-engineering/\">Cognition’s new engineers aren’t even downloading code anymore — they build entirely through Devin</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-26T12:53:43+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/cognition-devin-automated-engineering/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/anthropic-siren-sandbox-escape/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/jetbrains-mellum2-1-instruct-coding-model/"
+      }
+    ],
+    "score": 30.0
+  },
+  {
+    "id": "764ffbd03809fdb8",
+    "title": ".NET MAUI 11 Makes CoreCLR the Default Runtime and Adds Incremental XAML Hot Reload",
+    "url": "https://www.infoq.com/news/2026/11/dotnet-maui-11-coreclr-hotreload/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/dotnet-maui-11-coreclr-hotreload/en/headerimage/header-1795560880894.jpg\" /><p>Microsoft released .NET 11 with a .NET MAUI update focused on product quality. CoreCLR is now the default runtime on all platforms, and XAML gets incremental hot reload, implicit namespaces and faster resource dictionaries. The release also adds device test templates and passkey support, and raises the minimum Android and Apple platform versions.</p> <i>By Edin Kapić</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-26T08:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/dotnet-maui-11-coreclr-hotreload/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.97
+  },
+  {
+    "id": "8e585406c023060d",
+    "title": "Presentation: Finetuning Your Embedding Model for Better Search: Learning from Agentic Search at Dell",
+    "url": "https://www.infoq.com/presentations/fine-tune-enterprise-rag-embeddings/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/fine-tune-enterprise-rag-embeddings/en/mediumimage/rachel-shalo-medium-1793801102883.jpeg\" /><p>Rachel Shalom explains how Dell solved enterprise RAG retrieval failures on internal terminology by fine-tuning open-source embedding models. She discusses data prep with hard negatives, distributed InfoNCE loss training on H100 GPUs, automated hyperparameter tuning, and production evaluation using LLM-as-a-judge.</p> <i>By Rachel Shalom</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-26T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/fine-tune-enterprise-rag-embeddings/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 24.85
+  },
+  {
+    "id": "0aa65f99ac99a468",
+    "title": "Generalized Riemann Hypothesis proof in Lean 4, in 76k lines (down from 17M)",
+    "url": "https://leanprover.zulipchat.com/#narrow/channel/658556-Riemann-Hypothesis/topic/Cleaning.20up.20the.20proof/near/643702366",
+    "summary": "<p>This is a shortened version of Alpöge's Lean proof of RH and GRH for Dirichlet L-functions (<a href=\"https://alpo.ge/remark.pdf\" rel=\"ugc\">https://alpo.ge/remark.pdf</a>), which was about 17 million lines.</p>\n<p>There are two editions proving the same five theorems: a readable one at about 300,000 lines (start at grh/GUIDE.md) and a compact one at about 76,000.</p>\n<p>Github repo: <a href=\"https://github.com/lsernau/grh-lean\" rel=\"ugc\">https://github.com/lsernau/grh-lean</a></p>\n<p><a href=\"https://lobste.rs/s/tlwot6/generalized_riemann_hypothesis_proof\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-25T22:26:56+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/lsernau/grh-lean"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/xoxorwr/pw-loudness-eq"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://leanprover.zulipchat.com/#narrow/channel/658556-Riemann-Hypothesis/topic/Cleaning.20up.20the.20proof/near/643702366"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "213502f21453d5ae",
+    "title": "Mock Service Worker Releases v3.0 with ESM-Only Build, Socket-Based Interception and GraphQL Subs",
+    "url": "https://www.infoq.com/news/2026/11/mock-service-worker-v3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/mock-service-worker-v3/en/headerimage/generatedHeaderImage-1795626212829.jpg\" /><p>Mock Service Worker 3.0 is now ESM-only, requires Node.js 22 or later, and cuts package size from 416KB to 234KB. It adds GraphQL subscription support, protocol-specific entrypoints, and an experimental defineNetwork API. Node.js interception now works at the TCP and TLS level. Some users report test failures from newly intercepted OPTIONS preflight requests.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-26T06:59:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/mock-service-worker-v3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "109a6783fb792b64",
+    "title": "Recap of Microsoft Ignite 2026: Copilot as the Work OS and Agent Governance",
+    "url": "https://www.infoq.com/news/2026/11/microsoft-ignite-2026-recap/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/microsoft-ignite-2026-recap/en/headerimage/generatedHeaderImage-1795605995597.jpg\" /><p>At Ignite 2026, Microsoft positioned Copilot as the operating system for work and extended agent identity, governance, and cost controls across Azure, Foundry, Entra, and Defender. Highlights include Cobalt 200 VMs, Azure HorizonDB, a continuous improvement loop in Foundry, Microsoft IQ, a standalone Azure AI Gateway, and Windows Server 2028.</p> <i>By Steef-Jan Wiggers</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-26T06:45:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/microsoft-ignite-2026-recap/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 22.0
+  },
+  {
+    "id": "0c841090e4f6dedc",
+    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+    "summary": "<p>Article URL: <a href=\"https://twitter.com/thsottiaux/status/2125784147889393806\">https://twitter.com/thsottiaux/status/2125784147889393806</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50651117\">https://news.ycombinator.com/item?id=50651117</a></p>\n<p>Points: 316</p>\n<p># Comments: 177</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-26T03:36:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://twitter.com/thsottiaux/status/2125784147889393806"
+      }
+    ],
+    "score": 21.18
+  },
+  {
+    "id": "3c075fbf2e329029",
+    "title": "The Webhook Inbox Pattern: Making Laravel Integrations Safe to Retry",
+    "url": "https://dev.to/sanratul/the-webhook-inbox-pattern-making-laravel-integrations-safe-to-retry-2hd3",
+    "summary": "<p><em>How to handle duplicate events, queue failures, concurrent processing, and out-of-order delivery without corrupting business data.</em></p>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fi31dtzc7n4g0djd3qhjn.png\"><img alt=\"The Webhook Inbox Pattern: Making Laravel Integrations Safe to Retry\" height=\"451\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fi31dtzc7n4g0djd3qhjn.png\" width=\"800\" /></a></p>\n\n<p>A webhook endpoint returning HTTP 200 does not necessarily mean the business operation was completed successfully.</p>\n\n<p>It only means the receiving application acknowledged the request.</p>\n\n<p>This distinction becomes important when integrating payment gateways,",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:01:36+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/sanratul/the-webhook-inbox-pattern-making-laravel-integrations-safe-to-retry-2hd3"
+      }
+    ],
+    "score": 21.0
+  },
+  {
+    "id": "3f7c36bc2f616b13",
+    "title": "I built 59 free browser-based dev tools in vanilla JS — here's what I learned",
+    "url": "https://dev.to/yuvaraj_radhakrishnan_224/i-built-59-free-browser-based-dev-tools-in-vanilla-js-heres-what-i-learned-2kj2",
+    "summary": "<p>I've been quietly building <strong><a href=\"https://antigravitytools.app\" rel=\"noopener noreferrer\">Antigravity Tools</a></strong> — a collection of 59 free, browser-based developer utilities — and today I'm sharing everything I built and learned.</p>\n\n<h2>\n  \n  \n  Why vanilla JS? No React, no build step.\n</h2>\n\n<p>The main constraint I set for myself: <strong>zero dependencies, zero server, zero telemetry</strong>.</p>\n\n<p>When you paste your JWT token into jwt.io, it goes to their server. When you use an online regex tester, your test strings are logged. I built Antigravity Tools so every operation runs inside your browser, using native APIs.<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight plaintext\"><code>No Node.js backend\nNo npm packages\nNo webpack/vite/parcel\nNo Google Analytics\nNo cookies\n</code></pre>\n\n</div>\n\n\n\n<p>Everything runs on <code>Web Crypto API</code>, <code>Canvas API</code>, <code>Web Audio API</code>, and <code>IndexedDB</code> — all ",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-26T13:01:09+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/yuvaraj_radhakrishnan_224/i-built-59-free-browser-based-dev-tools-in-vanilla-js-heres-what-i-learned-2kj2"
+      }
+    ],
+    "score": 21.0
+  }
+]

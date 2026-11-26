@@ -865,6 +865,50 @@
         "linux": 1,
         "docker": 1
       }
+    },
+    {
+      "date": "2026-11-26",
+      "tags": {
+        "claude": 2,
+        "gemini": 4,
+        "vercel": 3,
+        "neon": 1,
+        "gitlab": 1,
+        "google": 4,
+        "pulumi": 1,
+        "containers": 2,
+        "phishing": 1,
+        "github": 7,
+        "dotnet": 4,
+        "sqlite": 1,
+        "api": 4,
+        "microsoft": 2,
+        "apple": 1,
+        "llm": 1,
+        "rag": 2,
+        "open-source": 1,
+        "nodejs": 4,
+        "graphql": 1,
+        "azure": 1,
+        "copilot": 2,
+        "openai": 1,
+        "laravel": 1,
+        "react": 2,
+        "javascript": 1,
+        "php": 2,
+        "rust": 1,
+        "python": 1,
+        "deepmind": 1,
+        "cve": 2,
+        "slack": 1,
+        "llama": 1,
+        "amd": 1,
+        "java": 1,
+        "spring": 1,
+        "postgresql": 1,
+        "nvidia": 3,
+        "meta": 1
+      }
     }
   ],
   "top_tags": [
@@ -873,13 +917,13 @@
     "claude",
     "open-source",
     "nvidia",
-    "python",
     "google",
-    "anthropic",
+    "python",
     "dotnet",
     "microsoft",
-    "openai",
+    "anthropic",
     "cve",
+    "openai",
     "vercel",
     "aws",
     "golang",
@@ -887,6 +931,6 @@
     "rust",
     "apple",
     "llm",
-    "kubernetes"
+    "laravel"
   ]
 }

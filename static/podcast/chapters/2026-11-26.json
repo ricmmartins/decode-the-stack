@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 9,
+      "title": "Opening"
+    },
+    {
+      "startTime": 139,
+      "title": "Cozey offers a concrete example of broader software..."
+    },
+    {
+      "startTime": 300,
+      "title": "The important boundary in the 1Password report is between..."
+    },
+    {
+      "startTime": 458,
+      "title": "That trust question also reaches recruitment: The Hacker..."
+    },
+    {
+      "startTime": 609,
+      "title": "Tool choice becomes especially interesting when the tool..."
+    },
+    {
+      "startTime": 769,
+      "title": "To close, a few stories about coordination, performance,..."
+    }
+  ]
+}
