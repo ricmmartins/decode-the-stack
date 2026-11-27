@@ -1,0 +1,495 @@
+[
+  {
+    "id": "9366f031305cab79",
+    "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+    "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+    "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.\n\n\"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T09:29:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html"
+      }
+    ],
+    "score": 19.94
+  },
+  {
+    "id": "963308162e2d0956",
+    "title": "NEW Laravel Package: Spatie Suspicious Login",
+    "url": "https://freek.dev/3240-new-laravel-package-spatie-suspicious-login",
+    "summary": "<p>Povilas walks through our Laravel Suspicious Login package, from email alerts to custom blocking rules, with more details in <a href=\"https://freek.dev/3230-detecting-suspicious-logins-in-your-laravel-app\">our blog post</a> and <a href=\"https://spatie.be/docs/laravel-suspicious-login/v1/introduction\">our docs</a>.</p>\n\n\n<a href=\"https://www.youtube.com/watch?v=7NlUFEtZsXA\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-27T09:06:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3240-new-laravel-package-spatie-suspicious-login"
+      }
+    ],
+    "score": 19.92
+  },
+  {
+    "id": "9ddc601322640bb0",
+    "title": "Tokens, constraints, and Black+Decker",
+    "url": "https://freek.dev/3236-tokens-constraints-and-blackdecker",
+    "summary": "<p>Sebastian De Deyne uses Black+Decker's move to computerized planning to show why new technology calls for rethinking old processes. He applies that lesson to AI, encouraging us to question constraints and be more ambitious about what we can build.</p>\n\n\n<a href=\"https://information-overload.net/tokens-constraints-and-black-decker\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-27T12:30:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3236-tokens-constraints-and-blackdecker"
+      }
+    ],
+    "score": 19.49
+  },
+  {
+    "id": "50b6b46e8e52ea00",
+    "title": "The Real Python Podcast – Episode #320: Optimizing Python Performance & Building a Django Static Site",
+    "url": "https://realpython.com/podcasts/rpp/320/",
+    "summary": "What goes into moving from profiling the performance of a Python program to optimizing it? What are common techniques you should consider for speeding up your code, and which ones should you avoid? Christopher Trudeau is back on the show this week with another batch of PyCoder's Weekly articles and projects.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-27T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/podcasts/rpp/320/"
+      }
+    ],
+    "score": 19.09
+  },
+  {
+    "id": "8cd2aaa9b09af447",
+    "title": "QCon San Francisco 2026: How to Kill the Code Review",
+    "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/en/headerimage/generatedHeaderImage-1795712695641.jpg\" /><p>Ankit Jain of Aviator told QCon San Francisco 2026 that line-by-line code review is already fading, since most review comments concern knowledge sharing rather than defects and over 75% of PRs merge without human review. He proposed six layers: argue, capture, codify, prove, debate, own. His team merges four times more PRs, with about 40% fewer reverts.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-26T17:16:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "0f139fa98eff21d7",
+    "title": "Safe, automated bug discovery and fixing with Prospero",
+    "url": "https://nullprogram.com/blog/2026/11/27/",
+    "summary": "<p>Fuzz testing remains an effective tool for discovering software defects,\nmore so than ever with AI agents driving, fixing bugs on the fly, clearing\nthe way for deeper fuzzing, all unattended. My <a href=\"/blog/2026/10/31/\">coding harness</a>,\n<a href=\"https://github.com/skeeto/prospero\">Prospero</a>, is particularly suited for this task via its unique <em>deploy\nto container</em> feature. With a bit of one-time prep work, you can run\nagents within a no-network Docker or Podman container with instructions to\nset up and run a fuzzing campaign on your repository. Any fallout from the\nagent or fuzzing campaign is safely trapped in the container, while bug\nfixes flow out freely. As far as I’m aware, Prospero is the only AI\ntooling with this capability.</p>\n\n<p>Fuzz testing has always risked its host. The whole point is to drive the\ntarget into undefined behavior, which may summon nasal demons. Coding\nagents are a new risk to hosts. While not malicious in practice, they make\nmistakes like",
+    "category": "dev",
+    "source_name": "null program (Chris Wellons)",
+    "published": "2026-11-27T03:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "null program (Chris Wellons)",
+        "url": "https://nullprogram.com/blog/2026/11/27/"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "2edc18145fe9097b",
+    "title": "Error'd: Mental Health",
+    "url": "https://thedailywtf.com/articles/mental-health",
+    "summary": "<p>Uncharacteristically, I will be earnest for a moment. The holiday season can be a difficult time for many people, for many reasons that are beyond the scope of this column except for the fact that most of them are also wtfs. If you're one of those, stick around, because there are a lot of us here.  And with that, on to BJH, who's a little behind.</p>\n\n<p>\n<strong>B.J. H.</strong> reflects \n\"Have there been any changes in my life in the\nlast 55 years that could cause depression, other than the\ncreation of the Internet?\" I can think of a few but that's definitely on the list.\n</p><blockquote><p><a href=\"#88dd478897514cec92bd6fefbf0d8226\"><img alt=\"88dd478897514cec92bd6fefbf0d8226\" border=\"0\" src=\"https://d3hvi6t161kfmf.cloudfront.net/images/2026/11/26/88dd478897514cec92bd6fefbf0d8226.png\" /></a></p><p> </p></blockquote>\n\n<p>\"I am not an (alphanumeric) number, I'm a free man!\" declares\n<strong>Simon T.</strong>\n\"Teams offered me a new look interface at the top\n- would I like to try it?",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-27T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/mental-health"
+      }
+    ],
+    "score": 18.0
+  },
+  {
+    "id": "73fe38cbd33b85e6",
+    "title": "Sandboxes, secure inference, and keeping agents from going rogue",
+    "url": "https://stackoverflow.blog/2026/11/27/sandboxes-secure-inference-and-rogue-agents/",
+    "summary": "At We Are Developers, Ryan talks with Daytona CEO and cofounder Ivan Burazin about agent sandboxes and Blackbox AI CTO and cofounder Richard Risk about encrypted inference.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-27T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/27/sandboxes-secure-inference-and-rogue-agents/"
+      }
+    ],
+    "score": 17.72
+  },
+  {
+    "id": "dfbb6a2a62088403",
+    "title": "Best Black Friday Google Pixel Deals (2026): Up to $400 Off",
+    "url": "https://www.wired.com/story/best-google-pixel-black-friday-deals-11-27-2026/",
+    "summary": "Upgrade to the smartest Android smartphones. Google’s latest Pixel 11 phones are all on sale at their lowest prices to date for Black Friday.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-27T11:24:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/best-google-pixel-black-friday-deals-11-27-2026/"
+      }
+    ],
+    "score": 17.41
+  },
+  {
+    "id": "6a1289b8e8a3f197",
+    "title": "Quiz: Python Timer Functions: Three Ways to Monitor Your Code",
+    "url": "https://realpython.com/quizzes/python-timer/",
+    "summary": "Test your knowledge of Python timer functions, from time.perf_counter() to timers built with classes, context managers, and decorators.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-27T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/python-timer/"
+      }
+    ],
+    "score": 17.35
+  },
+  {
+    "id": "1c8c20ea77249238",
+    "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+    "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+    "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.\n\nThe proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.\n\n\"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T05:48:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+      }
+    ],
+    "score": 16.96
+  },
+  {
+    "id": "1010105753936f56",
+    "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+    "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday.\n\nThree of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T06:04:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html"
+      }
+    ],
+    "score": 16.95
+  },
+  {
+    "id": "5c51253caa73c9c2",
+    "title": "AMD-specific fork of llama.cpp",
+    "url": "https://devnull.land/amd-specific-llama-cpp",
+    "summary": "<p>Article URL: <a href=\"https://devnull.land/amd-specific-llama-cpp\">https://devnull.land/amd-specific-llama-cpp</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50657265\">https://news.ycombinator.com/item?id=50657265</a></p>\n<p>Points: 386</p>\n<p># Comments: 94</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-26T17:11:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://devnull.land/amd-specific-llama-cpp"
+      }
+    ],
+    "score": 16.89
+  },
+  {
+    "id": "d861b70118c05e98",
+    "title": "Is Alice Huang a spy or not?",
+    "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
+    "summary": "The central, still-unproven claim in the Nvidia scandal is that Alice Huang, the former Megaspeed exec with whom Nvidia CEO Jensen Huang had an extramarital affair, is a Chinese spy.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-26T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/"
+      }
+    ],
+    "score": 15.82
+  },
+  {
+    "id": "bfd09f888726d2d6",
+    "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+    "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-26T20:03:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+      }
+    ],
+    "score": 15.72
+  },
+  {
+    "id": "aea26dd09bf13524",
+    "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+    "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+    "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much.\n\nThen there’s the question of who gets to use what. Stolen logins are opening",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T19:39:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html"
+      }
+    ],
+    "score": 14.93
+  },
+  {
+    "id": "87a93fb01e3fdff3",
+    "title": "Advent of Code 2026: ’Tis the Season to Code in Kotlin",
+    "url": "https://blog.jetbrains.com/kotlin/2026/11/advent-of-code-2026-in-kotlin/",
+    "summary": "December is almost here, and so is one of our favorite coding traditions! We’re excited to take part in Advent of Code once again and invite you to join us for another season of festive puzzles, clever Kotlin solutions, and friendly competition. Advent of Code is a great opportunity to learn something new and have [&#8230;]",
+    "category": "dev",
+    "source_name": "Kotlin Blog",
+    "published": "2026-11-26T22:35:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Kotlin Blog",
+        "url": "https://blog.jetbrains.com/kotlin/2026/11/advent-of-code-2026-in-kotlin/"
+      }
+    ],
+    "score": 14.25
+  },
+  {
+    "id": "c0a032872ba07785",
+    "title": "Pun: Format, Lint, and Analyze PHP With One Rust Binary",
+    "url": "https://laravel-news.com/pun-php-toolchain?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/pun-php-toolchain\"><img alt=\"Pun: Format, Lint, and Analyze PHP With One Rust Binary\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/HX5WWxJbkAAZz0k.jpeg\" /></a></p>\n                                        <hr />\n\n                    <p>Pun is a Rust binary in public beta that formats, lints, and analyzes PHP 8.3+ code, installs Composer packages, and reads one pun.toml config file.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/pun-php-toolchain\">Pun: Format, Lint, and Analyze PHP With One Rust Binary</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-26T14:33:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/pun-php-toolchain?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ],
+    "score": 14.0
+  },
+  {
+    "id": "62b978e1783e0fc6",
+    "title": "Curb impacts of AI on programming to maintain EU sovereignty",
+    "url": "https://www.draketo.de/software/curb-ai-impact",
+    "summary": "<p><a href=\"https://lobste.rs/s/lmxpfo/curb_impacts_ai_on_programming_maintain\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-27T07:00:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://www.draketo.de/software/curb-ai-impact"
+      }
+    ],
+    "score": 13.96
+  },
+  {
+    "id": "4704b8e6e683dcf2",
+    "title": "A design audit of an AI-built GitHub clone",
+    "url": "https://swyx.io/a-design-audit-of-an-ai-built-github-clone",
+    "summary": "slug: design-audit-ai-built-github-clone",
+    "category": "dev",
+    "source_name": "Swyx (Shawn Wang)",
+    "published": "2026-11-27T02:32:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Swyx (Shawn Wang)",
+        "url": "https://swyx.io/a-design-audit-of-an-ai-built-github-clone"
+      }
+    ],
+    "score": 13.4
+  },
+  {
+    "id": "48c93ba039db9425",
+    "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+    "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+    "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025.\n\n\"These are real developers, not throwaway accounts,\" Apiiro researcher Shmulik Cohen said. \"6,541 of the 7,609 repos (86%) belong",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T15:13:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html"
+      }
+    ],
+    "score": 12.95
+  },
+  {
+    "id": "5d3069414508a45a",
+    "title": "Android app developers will soon have to share their address publicly",
+    "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
+    "summary": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly. The policy change is intended to meet European Union regulations under the Digital Services Act, but Google says contact details will be made public worldwide. [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-26T17:06:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu"
+      }
+    ],
+    "score": 12.55
+  },
+  {
+    "id": "53aebb8927ba3306",
+    "title": "What happens when you put a non-agile object in the CoreApplication Properties?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/",
+    "summary": "<p>The reference expires, but the entry remains.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/\">What happens when you put a non-agile object in the CoreApplication Properties?</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-11-26T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/"
+      }
+    ],
+    "score": 12.22
+  },
+  {
+    "id": "e34080a4fa37e621",
+    "title": "The need for a formally verifiable mainstream programming language",
+    "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+    "summary": "<p><a href=\"https://lobste.rs/s/byfdgn/need_for_formally_verifiable_mainstream\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-26T20:06:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://blainehansen.me/post/mainstream-verifiable-language/"
+      }
+    ],
+    "score": 11.96
+  },
+  {
+    "id": "de7e24dd39def9b7",
+    "title": "NWRUG's (Manchester, UK) December 2026 meeting — Festive social",
+    "url": "https://thoughtbot.com/blog/nwrug-s-manchester-uk-december-2026-meeting-festive-social",
+    "summary": "Swap talks and code for chats and drinks at NWRUG's annual festive social this December.",
+    "category": "dev",
+    "source_name": "Thoughtbot Blog",
+    "published": "2026-11-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Thoughtbot Blog",
+        "url": "https://thoughtbot.com/blog/nwrug-s-manchester-uk-december-2026-meeting-festive-social"
+      }
+    ],
+    "score": 11.88
+  },
+  {
+    "id": "e2728f5570f51ed5",
+    "title": "Nvidia's China crackdown ⚡, OpenAI cost control 💰, multiagent coding 👨‍💻",
+    "url": "https://tldr.tech/tech/2026-11-27",
+    "summary": "",
+    "category": "news",
+    "source_name": "TLDR",
+    "published": "2026-11-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TLDR",
+        "url": "https://tldr.tech/tech/2026-11-27"
+      }
+    ],
+    "score": 11.0
+  },
+  {
+    "id": "118dff371c4140a2",
+    "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+    "url": "https://huggingface.co/blog/video-trainium3",
+    "summary": "",
+    "category": "ai",
+    "source_name": "Hugging Face Blog",
+    "published": "2026-11-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/video-trainium3"
+      }
+    ],
+    "score": 11.0
+  },
+  {
+    "id": "44c8c516a6ce4f5b",
+    "title": "A Year, One Sphere, Many Shapes: Houmahani Kane’s Portfolio",
+    "url": "https://tympanus.net/codrops/2026/11/26/houmahani-kane-portfolio/",
+    "summary": "A portfolio built on one morphing sphere, with contour lines inspired by West African wax prints, in Three.js and custom shaders.",
+    "category": "dev",
+    "source_name": "Codrops",
+    "published": "2026-11-26T15:00:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Codrops",
+        "url": "https://tympanus.net/codrops/2026/11/26/houmahani-kane-portfolio/"
+      }
+    ],
+    "score": 10.29
+  },
+  {
+    "id": "0bf90a53b4282498",
+    "title": "The Life of a Database Row: What Really Happens Behind the Scenes",
+    "url": "https://blog.bytebytego.com/p/the-life-of-a-database-row-what-really",
+    "summary": "In this article, we&#8217;ll look at the life of a row in the database with respect to these operations.",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-26T16:30:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/the-life-of-a-database-row-what-really"
+      }
+    ],
+    "score": 10.04
+  }
+]

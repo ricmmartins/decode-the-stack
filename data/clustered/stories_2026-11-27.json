@@ -1,0 +1,994 @@
+[
+  {
+    "id": "777aaf00c10a9b57",
+    "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+    "url": "https://github.com/antonpictures/youtube-punisher",
+    "summary": "<p>Article URL: <a href=\"https://github.com/antonpictures/youtube-punisher\">https://github.com/antonpictures/youtube-punisher</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50657530\">https://news.ycombinator.com/item?id=50657530</a></p>\n<p>Points: 439</p>\n<p># Comments: 509</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-26T17:36:47+00:00",
+    "coverage_count": 3,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/antonpictures/youtube-punisher"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://github.com/intel/intel-one-mono"
+      },
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://progrium.github.io/minipg/"
+      }
+    ]
+  },
+  {
+    "id": "adc42ec39f4ed0de",
+    "title": "AI wrote the code. Can your test data tell you if it works?",
+    "url": "https://thenewstack.io/protecting-enterprise-ai-data/",
+    "summary": "<img alt=\"Monochrome abstract grid warped by a deep distortion, symbolizing structural tension and system boundaries.\" class=\"webfeedsFeaturedVisual wp-post-image wp-stateless-item\" height=\"540\" src=\"https://cdn.thenewstack.io/media/2026/07/a0f6a841-osarugue-igbinoba-eqscha021_q-unsplash-1024x540.jpg\" style=\"display: block; margin: auto; margin-bottom: 20px;\" width=\"1024\" /><p>As organizations invest in AI, many are discovering a new bottleneck: obtaining data that is both protected and useful. Engineering</p>\n<p>The post <a href=\"https://thenewstack.io/protecting-enterprise-ai-data/\">AI wrote the code. Can your test data tell you if it works?</a> appeared first on <a href=\"https://thenewstack.io\">The New Stack</a>.</p>",
+    "category": "news",
+    "source_name": "The New Stack",
+    "published": "2026-11-26T16:18:49+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/protecting-enterprise-ai-data/"
+      },
+      {
+        "name": "The New Stack",
+        "url": "https://thenewstack.io/ai-agents-remote-sandboxes/"
+      }
+    ]
+  },
+  {
+    "id": "f3116a6ccace8ed6",
+    "title": "Orchestrator and Sub-Agent Patterns: Designing Specialist Agents That Collaborate",
+    "url": "https://dev.to/intellibooksai/orchestrator-and-sub-agent-patterns-designing-specialist-agents-that-collaborate-9f2",
+    "summary": "<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fb47zn13658czaz4nptp4.png\"><img alt=\" \" height=\"450\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fb47zn13658czaz4nptp4.png\" width=\"800\" /></a></p>\n\n<p>In one sentence: Splitting work among specialist agents is only the start; the craft lies in choosing the right collaboration pattern (router, pipeline, fan-out, planner, reviewer or human checkpoint) for each part of the job and in giving every pattern clear contracts and firm limits.</p>\n\n<p>Once a team accepts that one agent is rarely enough, a new question appears: how should the specialists work together? The answer is not a single architecture. Different problems call fo",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:09:33+00:00",
+    "coverage_count": 2,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/intellibooksai/orchestrator-and-sub-agent-patterns-designing-specialist-agents-that-collaborate-9f2"
+      },
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/shittu_olumide_/sitemapxml-vs-website-mapping-vs-crawling-3mhc"
+      }
+    ]
+  },
+  {
+    "id": "5c51253caa73c9c2",
+    "title": "AMD-specific fork of llama.cpp",
+    "url": "https://devnull.land/amd-specific-llama-cpp",
+    "summary": "<p>Article URL: <a href=\"https://devnull.land/amd-specific-llama-cpp\">https://devnull.land/amd-specific-llama-cpp</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50657265\">https://news.ycombinator.com/item?id=50657265</a></p>\n<p>Points: 386</p>\n<p># Comments: 94</p>",
+    "category": "news",
+    "source_name": "Hacker News (Best)",
+    "published": "2026-11-26T17:11:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hacker News (Best)",
+        "url": "https://devnull.land/amd-specific-llama-cpp"
+      }
+    ]
+  },
+  {
+    "id": "32e513b0ca07f6f3",
+    "title": "Tiny Hat: a new Linux distro dedicated to retro gamedev",
+    "url": "https://roboticoverlords.org/tinyhat",
+    "summary": "<p>Tiny Hat uses only around 100MB of RAM after booting, and can be booted from a &gt;= 1GB memory stick. It comes with a few small games, an easy way to install and run more games and several example programs for getting into retro game development. It also uses a modern stack of libraries, with dwl / Wayland, SDL3 and GTK4.</p>\n<p>One possible use is to buy a cheap x86 machine for younger members of a family, to <del>completely brain wash</del> inspire them into getting into graphics programming and appreciating retro games, perhaps as a Christmas present.</p>\n<p>At least a few people have found it fun so far, so I wanted to share it.</p>\n<p><a href=\"https://lobste.rs/s/mbm7xw/tiny_hat_new_linux_distro_dedicated_retro\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-27T09:11:13+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://roboticoverlords.org/tinyhat"
+      }
+    ]
+  },
+  {
+    "id": "e34080a4fa37e621",
+    "title": "The need for a formally verifiable mainstream programming language",
+    "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+    "summary": "<p><a href=\"https://lobste.rs/s/byfdgn/need_for_formally_verifiable_mainstream\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-26T20:06:50+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://blainehansen.me/post/mainstream-verifiable-language/"
+      }
+    ]
+  },
+  {
+    "id": "25807cfe761418b5",
+    "title": "In defense of lock poisoning in Rust (2025)",
+    "url": "https://sunshowers.io/posts/on-poisoning/",
+    "summary": "<p><a href=\"https://lobste.rs/s/wpylec/defense_lock_poisoning_rust_2025\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-26T11:51:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://sunshowers.io/posts/on-poisoning/"
+      }
+    ]
+  },
+  {
+    "id": "62b978e1783e0fc6",
+    "title": "Curb impacts of AI on programming to maintain EU sovereignty",
+    "url": "https://www.draketo.de/software/curb-ai-impact",
+    "summary": "<p><a href=\"https://lobste.rs/s/lmxpfo/curb_impacts_ai_on_programming_maintain\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-27T07:00:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://www.draketo.de/software/curb-ai-impact"
+      }
+    ]
+  },
+  {
+    "id": "c706dda8ba209435",
+    "title": "Ansible Fails waiting for privilege escalation on Ubuntu 26",
+    "url": "https://www.jeffgeerling.com/blog/2026/ansible-fails-become-ubuntu2604/",
+    "summary": "<p><a href=\"https://lobste.rs/s/3lkriu/ansible_fails_waiting_for_privilege\">Comments</a></p>",
+    "category": "news",
+    "source_name": "Lobsters",
+    "published": "2026-11-26T09:45:42+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Lobsters",
+        "url": "https://www.jeffgeerling.com/blog/2026/ansible-fails-become-ubuntu2604/"
+      }
+    ]
+  },
+  {
+    "id": "5d3069414508a45a",
+    "title": "Android app developers will soon have to share their address publicly",
+    "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
+    "summary": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly. The policy change is intended to meet European Union regulations under the Digital Services Act, but Google says contact details will be made public worldwide. [&#8230;]",
+    "category": "news",
+    "source_name": "The Verge - Tech",
+    "published": "2026-11-26T17:06:24+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Verge - Tech",
+        "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu"
+      }
+    ]
+  },
+  {
+    "id": "bfd09f888726d2d6",
+    "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+    "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-26T20:03:54+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+      }
+    ]
+  },
+  {
+    "id": "d861b70118c05e98",
+    "title": "Is Alice Huang a spy or not?",
+    "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
+    "summary": "The central, still-unproven claim in the Nvidia scandal is that Alice Huang, the former Megaspeed exec with whom Nvidia CEO Jensen Huang had an extramarital affair, is a Chinese spy.",
+    "category": "news",
+    "source_name": "TechCrunch",
+    "published": "2026-11-26T20:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/"
+      }
+    ]
+  },
+  {
+    "id": "4d66ac582a4ed31f",
+    "title": "Presentation: From Fan-Out to Fast: Sub-100ms API Design in Distributed Systems",
+    "url": "https://www.infoq.com/presentations/sub-100ms-latency-distributed-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/presentations/sub-100ms-latency-distributed-systems/en/mediumimage/saranya-vedagiri-medium-1793800504577.jpeg\" /><p>Saranya Vedagiri explains how to design resilient, low-latency distributed APIs under 100ms. Drawing on practical scale at eBay, she discusses hop-by-hop latency budgets, async fanout tradeoffs, thread pool sizing, caching, and circuit breakers. Learn actionable strategies to eliminate tail-latency bottlenecks and establish performance-first engineering practices.</p> <i>By Saranya Vedagiri</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-27T11:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/presentations/sub-100ms-latency-distributed-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "b950a87c25574ae0",
+    "title": "Article: Engineering Reliable Telematics from Smartphone Sensors",
+    "url": "https://www.infoq.com/articles/engineering-reliable-smartphone-sensor-telematics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/articles/engineering-reliable-smartphone-sensor-telematics/en/headerimage/engineering-reliable-smartphone-sensor-telematics-header-1795176941366.jpg\" /><p>Smartphones make telematics more accessible by combining location, motion sensors, computing power, and connectivity in a single device. But the convenience comes with a trade-off: device placement varies, sampling behavior is managed by the mobile platform, and measurements have different timing and coordinate semantics. This article explores a six-stage architecture to address these challenges.</p> <i>By Praveen Kumar Gopalakrishnan</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-27T09:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/articles/engineering-reliable-smartphone-sensor-telematics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "8cd2aaa9b09af447",
+    "title": "QCon San Francisco 2026: How to Kill the Code Review",
+    "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "<img src=\"https://res.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/en/headerimage/generatedHeaderImage-1795712695641.jpg\" /><p>Ankit Jain of Aviator told QCon San Francisco 2026 that line-by-line code review is already fading, since most review comments concern knowledge sharing rather than defects and over 75% of PRs merge without human review. He proposed six layers: argue, capture, codify, prove, debate, own. His team merges four times more PRs, with about 40% fewer reverts.</p> <i>By Daniel Curtis</i>",
+    "category": "news",
+    "source_name": "InfoQ",
+    "published": "2026-11-26T17:16:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "InfoQ",
+        "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+      }
+    ]
+  },
+  {
+    "id": "e2728f5570f51ed5",
+    "title": "Nvidia's China crackdown ⚡, OpenAI cost control 💰, multiagent coding 👨‍💻",
+    "url": "https://tldr.tech/tech/2026-11-27",
+    "summary": "",
+    "category": "news",
+    "source_name": "TLDR",
+    "published": "2026-11-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "TLDR",
+        "url": "https://tldr.tech/tech/2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "dfbb6a2a62088403",
+    "title": "Best Black Friday Google Pixel Deals (2026): Up to $400 Off",
+    "url": "https://www.wired.com/story/best-google-pixel-black-friday-deals-11-27-2026/",
+    "summary": "Upgrade to the smartest Android smartphones. Google’s latest Pixel 11 phones are all on sale at their lowest prices to date for Black Friday.",
+    "category": "news",
+    "source_name": "Wired",
+    "published": "2026-11-27T11:24:04+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/story/best-google-pixel-black-friday-deals-11-27-2026/"
+      }
+    ]
+  },
+  {
+    "id": "b5d3c951b24b38f9",
+    "title": "Twilio SIGNAL London 2026: Turning AI Intelligence into Actionable Customer Engagement",
+    "url": "https://www.twilio.com/en-us/blog/events/signal-london-2026",
+    "summary": "On 19 November 2026, developers, business leaders, and innovators packed into London’s historic Banqueting House for Twilio SIGNAL, the grand finale of the SIGNAL World Tour.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-26T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/events/signal-london-2026"
+      }
+    ]
+  },
+  {
+    "id": "b7ad566616c77bc2",
+    "title": "Build a Low-latency Voice AI Agent with Guardrails on Twilio and AWS",
+    "url": "https://www.twilio.com/en-us/blog/developers/tutorials/integrations/blueprint-voice-ai-agent-guardrails-twilio-aws",
+    "summary": "Deploy an inbound voice AI agent on Twilio and AWS that verifies callers, keeps identity out of the model, and hands off to a person with full context.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/developers/tutorials/integrations/blueprint-voice-ai-agent-guardrails-twilio-aws"
+      }
+    ]
+  },
+  {
+    "id": "d6a753f7624be538",
+    "title": "How to Build a Production Voice AI agent: A Reference Architecture",
+    "url": "https://www.twilio.com/en-us/blog/developers/best-practices/voice-ai-agent-reference-architecture",
+    "summary": "A reference architecture for production voice AI agents built with: everything from what you’ll build to the 12 decisions you’ll need to  make.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/developers/best-practices/voice-ai-agent-reference-architecture"
+      }
+    ]
+  },
+  {
+    "id": "a6b7a0f860c949ac",
+    "title": "How to Enable MMS on an iPhone",
+    "url": "https://www.twilio.com/en-us/blog/how-to-enable-mms-on-iphone",
+    "summary": "Enabling MMS on an iPhone allows you to send multimedia text messages without iMessage. Learn how to enable MMS messages on your iPhone here.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/how-to-enable-mms-on-iphone"
+      }
+    ]
+  },
+  {
+    "id": "68eb06bffb5d09bb",
+    "title": "How to Enable MMS Messaging & Fix Download Issues on Android",
+    "url": "https://www.twilio.com/en-us/blog/mms-messages-not-sending",
+    "summary": "MMS not working on Android? Learn how to enable MMS messaging, fix download issues, and troubleshoot common problems with our step-by-step guide.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/mms-messages-not-sending"
+      }
+    ]
+  },
+  {
+    "id": "e2af63694f837941",
+    "title": "Opt-in and opt-out text messages: definition, examples, and guidelines",
+    "url": "https://www.twilio.com/en-us/blog/insights/compliance/opt-in-opt-out-text-messages",
+    "summary": "Opt-in and opt-out text messages ensure you only send SMS customers want. Learn what they are, the guidelines, and examples of opt-in messages.",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/insights/compliance/opt-in-opt-out-text-messages"
+      }
+    ]
+  },
+  {
+    "id": "d26788a599b94e3f",
+    "title": "Using Conversation Relay for Graceful AI to Human Handoff",
+    "url": "https://www.twilio.com/en-us/blog/developers/tutorials/product/conversation-relay-graceful-ai-to-human-handoff",
+    "summary": "Using Conversation Relay for Graceful AI to Human Handoff",
+    "category": "dev",
+    "source_name": "Twilio Blog",
+    "published": "2026-11-25T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Twilio Blog",
+        "url": "https://www.twilio.com/en-us/blog/developers/tutorials/product/conversation-relay-graceful-ai-to-human-handoff"
+      }
+    ]
+  },
+  {
+    "id": "6883fb256e4df01f",
+    "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+    "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and presents a picture of a program that is,",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T10:32:18+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html"
+      }
+    ]
+  },
+  {
+    "id": "9366f031305cab79",
+    "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+    "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+    "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.\n\n\"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T09:29:30+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html"
+      }
+    ]
+  },
+  {
+    "id": "1010105753936f56",
+    "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+    "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday.\n\nThree of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T06:04:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html"
+      }
+    ]
+  },
+  {
+    "id": "1c8c20ea77249238",
+    "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+    "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+    "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.\n\nThe proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.\n\n\"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-27T05:48:20+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+      }
+    ]
+  },
+  {
+    "id": "aea26dd09bf13524",
+    "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+    "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+    "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much.\n\nThen there’s the question of who gets to use what. Stolen logins are opening",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T19:39:57+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html"
+      }
+    ]
+  },
+  {
+    "id": "48c93ba039db9425",
+    "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+    "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+    "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025.\n\n\"These are real developers, not throwaway accounts,\" Apiiro researcher Shmulik Cohen said. \"6,541 of the 7,609 repos (86%) belong",
+    "category": "security",
+    "source_name": "The Hacker News",
+    "published": "2026-11-26T15:13:41+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html"
+      }
+    ]
+  },
+  {
+    "id": "be788b7fb15b705a",
+    "title": "Recent Outages Have Economic Causes",
+    "url": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+    "summary": "<p><em>This essay originally appeared in <a href=\"https://www.theguardian.com/commentisfree/2026/nov/20/cyber-attacks-outages-blame-economy\">The Guardian</a>. It&#8217;s an expanded version of the one I posted as &#8220;<a href=\"https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html\">We Get the Infrastructure We Pay For</a>.&#8221;</em></p>\n<p>It&#8217;s been a bad week for our computerized infrastructure. We&#8217;ve seen outages at <a href=\"https://www.the-independent.com/tech/microsoft-outage-why-what-caused-global-outlook-down-b3085576.html\">Microsoft</a>, the <a href=\"https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html\">FAA</a>, a handful of <a href=\"https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda\">banks</a>, <a href=\"https://www.nbcnews.com/news/us-news/united-airlines-system-outage-rcna609712\">United Airlines</a>, an unnamed classified <a href=\"https://www.reuters.com",
+    "category": "security",
+    "source_name": "Schneier on Security",
+    "published": "2026-11-27T12:02:23+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html"
+      }
+    ]
+  },
+  {
+    "id": "118dff371c4140a2",
+    "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+    "url": "https://huggingface.co/blog/video-trainium3",
+    "summary": "",
+    "category": "ai",
+    "source_name": "Hugging Face Blog",
+    "published": "2026-11-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/video-trainium3"
+      }
+    ]
+  },
+  {
+    "id": "70d4471f8d947fd5",
+    "title": "Quoting Jack Despain Zhou",
+    "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+    "summary": "<blockquote cite=\"https://www.tracingwoodgrains.com/p/spitting-in-the-face-of-glaude\"><p>Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, <em>and I see Claude</em>.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://www.tracingwoodgrains.com/p/spitting-in-the-face-of-glaude\">Jack Despain Zhou</a>, Spitting in the Face of Glaude</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai-misuse\">ai-misuse</a>, <a href=\"https://simonwillison.net/tags/claude\">claude</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwill",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-26T15:09:31+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/"
+      }
+    ]
+  },
+  {
+    "id": "97bf029bbfe35544",
+    "title": "The New York Times warns photographers not to update Photoshop over AI features",
+    "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+    "summary": "<p><a href=\"https://news.ycombinator.com/item?id=50647673#50651685\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=50647673\">The New York Times warns photographers not to update Photoshop over AI features</a> &mdash; Hacker News.</p><p>I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping and balancing applied but no edits beyond that.</p>\n<p>He did spend a bunch of time trying to find the best possible natural lighting for the shots he wanted.</p>\n<p>The photo at the top of <a href=\"https://www.nytimes.com/2026/02/02/technology/moltbook-ai-social-media.html\">https://www.nytimes.com/2026/02/02/technology/moltbook-ai-so...</a> is my laptop, taken in my garden, after hunting around for the best spot that didn't have too much glare on the screen. Y",
+    "category": "ai",
+    "source_name": "Simon Willison",
+    "published": "2026-11-26T05:08:46+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/"
+      }
+    ]
+  },
+  {
+    "id": "53aebb8927ba3306",
+    "title": "What happens when you put a non-agile object in the CoreApplication Properties?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/",
+    "summary": "<p>The reference expires, but the entry remains.</p>\n<p>The post <a href=\"https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/\">What happens when you put a non-agile object in the CoreApplication Properties?</a> appeared first on <a href=\"https://devblogs.microsoft.com/oldnewthing\">The Old New Thing</a>.</p>",
+    "category": "dev",
+    "source_name": "Raymond Chen (Old New Thing)",
+    "published": "2026-11-26T15:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Raymond Chen (Old New Thing)",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20261126-00/?p=112899/"
+      }
+    ]
+  },
+  {
+    "id": "c5201b2cc8e26288",
+    "title": "AI Image Guides for Small Teams: Build a One-Page Visual Spec So Every Contributor Ships Consistent Assets",
+    "url": "https://dev.to/jay_pixbloom/ai-image-guides-for-small-teams-build-a-one-page-visual-spec-so-every-contributor-ships-consistent-4elp",
+    "summary": "<p>If three different people make images for your project, you will get three different visual identities within a month. One person likes moody lighting, another reaches for bright flat colors, and the third copies whatever looked good on social media that week. Searching for ai image guides usually means you have hit this wall: each image is fine on its own, but together they look like they came from three unrelated brands.</p>\n\n<p>The fix is not a thicker brand book. It is a small, living document I call an AI image guide: a one-page visual spec plus a prompt and reference playbook that anyone on the team can follow without asking you. This article walks through how to build one, with three concrete examples, and is honest about what a guide can and cannot control.</p>\n\n<h2>\n  \n  \n  What an AI image guide actually contains\n</h2>\n\n<p>A useful guide answers five questions in plain language, in this order:</p>\n\n<ol>\n<li>\n<strong>Who is the image for, and where does it live?</strong> Ch",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:09:58+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/jay_pixbloom/ai-image-guides-for-small-teams-build-a-one-page-visual-spec-so-every-contributor-ships-consistent-4elp"
+      }
+    ]
+  },
+  {
+    "id": "f41bf238f88b635f",
+    "title": "Jujutsu Kaisen e UX: por que o feitiço de Kirara me lembrou um Service Blueprint",
+    "url": "https://dev.to/he4rt/jujutsu-kaisen-e-ux-por-que-o-feitico-de-kirara-me-lembrou-um-service-blueprint-g45",
+    "summary": "<p>Tem uma cena de <a href=\"https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen\" rel=\"noopener noreferrer\">Jujutsu Kaisen</a> que vive na minha cabeça: Megumi, Yuji e os outros precisam chegar até um gângster dentro de um prédio, mas antes têm que passar pela namorada dele, Kirara Hoshi. Ela usa uma técnica baseada em estrelas, mais especificamente no Cruzeiro do Sul, que cria uma espécie de rede de permissões entre as pessoas.</p>\n\n<blockquote>\n<p>A princípio, parece só um feitiço bonito com estrelas. Mas, olhando com <strong>olhar de UX</strong>, ele funciona muito mais como um Service Blueprint do que como um diagrama de afinidade.</p>\n</blockquote>\n\n<p>Kirara marca energia amaldiçoada com cinco estrelas inspiradas no Cruzeiro do Sul: Imai, Acrux, Mimosa, Ginan e Gacrux. Para se aproximar de alguém que carrega uma dessas marcas, é preciso seguir uma ordem específica.</p>\n\n<p>Megumi percebe isso e entende que não basta “chegar perto” do alvo. Ele precisa decifrar o cami",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:09:06+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/he4rt/jujutsu-kaisen-e-ux-por-que-o-feitico-de-kirara-me-lembrou-um-service-blueprint-g45"
+      }
+    ]
+  },
+  {
+    "id": "6b9eaef793700aa0",
+    "title": "I built a browser test that proves when a mouse sensor loses tracking (and got my refund with it)",
+    "url": "https://dev.to/isaaq_44ee3debd56fc63f093/i-built-a-browser-test-that-proves-when-a-mouse-sensor-loses-tracking-and-got-my-refund-with-it-51jp",
+    "summary": "<p>Short story long, I bought a budget gaming mouse and something felt off in Valorant: slow aiming was fine, but hard flicks moved the crosshair far less than my hand did, and sometimes it snapped backwards. The usual online mouse testers check buttons, double-clicks and polling rate. None of them could show the seller what was actually happening.</p>\n\n<p>So I built one that can.</p>\n\n<h2>\n  \n  \n  The idea\n</h2>\n\n<p>If the mouse moves the exact same physical distance every time, a healthy sensor reports the same number of counts, no matter how fast you move. So:</p>\n\n<ol>\n<li>Put two hard stops on the mousepad (books, a ruler, the pad's edges).</li>\n<li>Do a few slow swipes between them. Their median becomes the baseline.</li>\n<li>Flick hard between the same stops.</li>\n<li>Any fast swipe more than 10% off the baseline is flagged: SHORT (lost movement), LONG (added movement) or spin-out (movement reported backwards).</li>\n</ol>\n\n<h2>\n  \n  \n  How it reads the sensor\n</h2>\n\n<ul>\n<li>\n<c",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:08:51+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/isaaq_44ee3debd56fc63f093/i-built-a-browser-test-that-proves-when-a-mouse-sensor-loses-tracking-and-got-my-refund-with-it-51jp"
+      }
+    ]
+  },
+  {
+    "id": "06d22e753ba79e5c",
+    "title": "We Plugged an LLM Into Our Review Pipeline - And Built It So the Model Can Never Decide",
+    "url": "https://dev.to/spread2009/we-plugged-an-llm-into-our-review-pipeline-and-built-it-so-the-model-can-never-decide-58ha",
+    "summary": "<h1>\n  \n  \n  We Plugged an LLM Into Our Review Pipeline - And Built It So the Model Can Never Decide\n</h1>\n\n<blockquote>\n<p><strong>Short answer:</strong> our agents file feedback and request human review<br />\n(EPIC-230), and humans were doing all the sorting, reading, and drafting<br />\nby hand. So we wired an LLM into six operator scenarios - classification,<br />\nsummaries, knowledge search, answer drafts, feedback extraction, review<br />\nhints - under four modes where <code>shadow</code> means the model works blind and<br />\n<code>supervised</code> still ends with a human pressing the button. The decision<br />\ntable has no code path an AI run can write to. Every mode change, every<br />\ncall, and every cent of spend lands in append-only rows you can audit.</p>\n</blockquote>\n\n<p><a class=\"article-body-image-wrapper\" href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farti",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:08:45+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/spread2009/we-plugged-an-llm-into-our-review-pipeline-and-built-it-so-the-model-can-never-decide-58ha"
+      }
+    ]
+  },
+  {
+    "id": "a386ded595b239c4",
+    "title": "I built a free Google Play keyword rank checker (no sign-up). Here is how it works",
+    "url": "https://dev.to/rankfy/i-built-a-free-google-play-keyword-rank-checker-no-sign-up-here-is-how-it-works-1h0o",
+    "summary": "<h2>\n  \n  \n  Why\n</h2>\n\n<p>I publish Android apps and wanted one number per keyword, per country, per day, without buying a full ASO suite. So I built Rankfy.</p>\n\n<h2>\n  \n  \n  How it works\n</h2>\n\n<ul>\n<li>For Google Play, Rankfy requests the public search page for a keyword with the country (<code>gl</code>) and language (<code>hl</code>) set, and reads the apps in the order the store returns them.</li>\n<li>For the App Store, it uses the public iTunes Search API with the country code.</li>\n<li>Your position is your index in that list. A scheduled job repeats the check every day and stores the history.</li>\n<li>No paid data source is involved, which is why it cannot tell you search volume.</li>\n</ul>\n\n<h2>\n  \n  \n  What surprised me\n</h2>\n\n<ul>\n<li>Positions move within a day. One weather app was #27 in the morning and #8 at night for the same keyword.</li>\n<li>Country and store language matter more than I expected. The same app can be #1 in eleven countries and #15 in another for the s",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:08:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/rankfy/i-built-a-free-google-play-keyword-rank-checker-no-sign-up-here-is-how-it-works-1h0o"
+      }
+    ]
+  },
+  {
+    "id": "17b4f4fef4364fd0",
+    "title": "This 27-Line README Failed 10 Checks. A Visitor Would Have Left in 3 Seconds.",
+    "url": "https://dev.to/capafy_factory/this-27-line-readme-failed-10-checks-a-visitor-would-have-left-in-3-seconds-jhn",
+    "summary": "<p>Open a repository you have never seen before. The README is the first thing you read, and you decide in about three seconds whether to stay or close the tab. You do not read it. You scan it for four answers: what is this, can I install it, can I see it work, and can I legally use it?</p>\n\n<p>Most READMEs fail that scan. Not because the project is bad, but because the README never answers those four questions. Here is a real example — a short, 27-line README — and the 10 things wrong with it.</p>\n\n<h3>\n  \n  \n  The README I tested\n</h3>\n\n<p>This is the risky sample bundled with a README checker. It is a small project, and every line below is the kind of thing that shows up in real repositories:<br />\n</p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight markdown\"><code><span class=\"gu\"># Risky Project\n</span>\n<span class=\"gu\">### Advanced Options\n</span>\nUse the advanced mode for more power.\n\n<span class=\"gu\">## Installation\n</span>\nInstall it somehow, it is easy.\n\n[Se",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:07:02+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/capafy_factory/this-27-line-readme-failed-10-checks-a-visitor-would-have-left-in-3-seconds-jhn"
+      }
+    ]
+  },
+  {
+    "id": "45fcf2fd06fd124c",
+    "title": "Why Optimistic UI Updates Make Your Apps Feel Instant",
+    "url": "https://dev.to/saurav_tb_pandey/why-optimistic-ui-updates-make-your-apps-feel-instant-21ec",
+    "summary": "<h3>\n  \n  \n  What Are Optimistic UI Updates?\n</h3>\n\n<p>An <strong>optimistic UI update</strong> is a frontend design pattern where a web application immediately updates its screen to show the result of a user's action before getting confirmation from the backend server. Instead of freezing the screen or displaying a loading spinner while waiting for a network request—the process of sending data across the internet to a remote server—the app acts optimistic. It predicts that the server request will succeed 99% of the time, updates the interface instantly, and syncs with the database in the background. If the request unexpectedly fails, the app catches the error and silently rolls the user interface back to its original state.</p>\n\n<h3>\n  \n  \n  The Real-Life Analogy: Sending a Text Message\n</h3>\n\n<p>Imagine sending a text message on your smartphone. When you tap \"Send,\" your message immediately pops up in a green or blue chat bubble inside the conversation window. You don't sit staring a",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:06:37+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/saurav_tb_pandey/why-optimistic-ui-updates-make-your-apps-feel-instant-21ec"
+      }
+    ]
+  },
+  {
+    "id": "95134ffd4319060f",
+    "title": "Why AI Coding Agents Break Pixel Art (And How a 1:1 Indexed MCP Server Fixes It)",
+    "url": "https://dev.to/kalle_hiitola_3845831aa4c/why-ai-coding-agents-break-pixel-art-and-how-a-11-indexed-mcp-server-fixes-it-gkn",
+    "summary": "<p>Ask Claude Code, Cursor, or Codex to scaffold a 2D dungeon platformer in Godot 4, Unity, or Phaser 3 and it will write working movement, collisions, and camera code in five minutes.</p>\n\n<p>Then look at the sprites.</p>\n\n<p>You either get colored placeholder rectangles or 1024x1024 diffusion PNGs downscaled into blurry soup: uneven pixel widths (\"mixels\"), hundreds of off-palette shades, and semi-transparent alpha halos that bleed ugly edges the moment you enable <code>pixelArt: true</code> or <code>texture_filter = 1</code> in your game engine.</p>\n\n<h2>\n  \n  \n  The Root Problem: Continuous Pixels vs. Indexed Grids\n</h2>\n\n<p>Real 2D pixel art is not a low-resolution photo. Every pixel sits on a strict integer lattice (such as <code>16x16</code> or <code>24x24</code>), picks from a small locked palette (such as 11 to 16 opaque colors), and uses crisp 1-bit transparency (<code>alpha = 0</code> or <code>255</code>).</p>\n\n<p>When you take a continuous image and bilinearly downsample it",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:04:29+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/kalle_hiitola_3845831aa4c/why-ai-coding-agents-break-pixel-art-and-how-a-11-indexed-mcp-server-fixes-it-gkn"
+      }
+    ]
+  },
+  {
+    "id": "c0d79f37d614e205",
+    "title": "Only p99 is slow while iostat looks normal: the cause is a cgroup IOPS limit",
+    "url": "https://dev.to/shinagawa-web/only-p99-is-slow-while-iostat-looks-normal-the-cause-is-a-cgroup-iops-limit-2l7k",
+    "summary": "<p>In the read times measured by an application, the median stays where it usually is, but only the upper percentiles such as p99 (the value at the 99% position when the times are sorted from fastest to slowest) jump to around 100ms.</p>\n\n<p><code>iostat -x</code> for the same period shows an <code>r_await</code> (the average wait per read) far below the values that jumped, and a low <code>%util</code> (the fraction of time the disk was processing something).</p>\n\n<p>If you see this combination, suspect a cgroup read limit. A cgroup is the kernel mechanism that groups processes and places limits on their CPU, memory, and I/O. Each systemd service and each Docker container is one cgroup.</p>\n\n<p>I reproduced this combination by placing a limit on a virtual disk, and verified it.</p>\n\n<h2>\n  \n  \n  What is happening\n</h2>\n\n<h3>\n  \n  \n  How the limit is written\n</h3>\n\n<p>Each cgroup has a file named <code>io.max</code>, where per-disk I/O limits are written.<sup id=\"fnref1\">1</sup> A limit",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:04:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/shinagawa-web/only-p99-is-slow-while-iostat-looks-normal-the-cause-is-a-cgroup-iops-limit-2l7k"
+      }
+    ]
+  },
+  {
+    "id": "b6171b615354b988",
+    "title": "POS Software Development: 7 Checkout Scenarios to Test Before Launch",
+    "url": "https://dev.to/digittrix_infotechpvtl/pos-software-development-7-checkout-scenarios-to-test-before-launch-1o0m",
+    "summary": "<p>A cashier completes a sale. The customer takes the receipt and leaves.</p>\n\n<p>Then the internet connection drops.</p>\n\n<p>When the register reconnects, the system uploads the transaction twice. The sales report shows two purchases, inventory drops twice, and the manager has to investigate.</p>\n\n<p>The checkout screen worked. The complete transaction flow did not.</p>\n\n<p><strong>POS software development needs to cover what happens before, during, and after a sale—including interruptions, refunds, and reconciliation.</strong></p>\n\n<p>Before launching a custom point-of-sale system, test these seven scenarios.</p>\n\n<h2>\n  \n  \n  What does POS software development involve?\n</h2>\n\n<p>POS software development connects checkout, payments, receipts, inventory, staff permissions, and reporting into one workflow.</p>\n\n<p>The scope depends on the business. A restaurant may need table orders and kitchen tickets. A retailer may need barcode scanning, product variants, and returns across branches",
+    "category": "dev",
+    "source_name": "Dev.to (Top)",
+    "published": "2026-11-27T13:03:25+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Dev.to (Top)",
+        "url": "https://dev.to/digittrix_infotechpvtl/pos-software-development-7-checkout-scenarios-to-test-before-launch-1o0m"
+      }
+    ]
+  },
+  {
+    "id": "73fe38cbd33b85e6",
+    "title": "Sandboxes, secure inference, and keeping agents from going rogue",
+    "url": "https://stackoverflow.blog/2026/11/27/sandboxes-secure-inference-and-rogue-agents/",
+    "summary": "At We Are Developers, Ryan talks with Daytona CEO and cofounder Ivan Burazin about agent sandboxes and Blackbox AI CTO and cofounder Richard Risk about encrypted inference.",
+    "category": "dev",
+    "source_name": "Stack Overflow Blog",
+    "published": "2026-11-27T08:40:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Stack Overflow Blog",
+        "url": "https://stackoverflow.blog/2026/11/27/sandboxes-secure-inference-and-rogue-agents/"
+      }
+    ]
+  },
+  {
+    "id": "557a567f4c852f96",
+    "title": "Rethinking read replicas for the lakebase architecture",
+    "url": "https://www.databricks.com/blog/rethinking-read-replicas-lakebase-architecture",
+    "summary": "The idea behind read replicas makes sense: when your app gets busy, you add a couple...",
+    "category": "dev",
+    "source_name": "Databricks Engineering",
+    "published": "2026-11-26T13:45:08+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Databricks Engineering",
+        "url": "https://www.databricks.com/blog/rethinking-read-replicas-lakebase-architecture"
+      }
+    ]
+  },
+  {
+    "id": "0bf90a53b4282498",
+    "title": "The Life of a Database Row: What Really Happens Behind the Scenes",
+    "url": "https://blog.bytebytego.com/p/the-life-of-a-database-row-what-really",
+    "summary": "In this article, we&#8217;ll look at the life of a row in the database with respect to these operations.",
+    "category": "dev",
+    "source_name": "Alex Xu (ByteByteGo)",
+    "published": "2026-11-26T16:30:34+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Alex Xu (ByteByteGo)",
+        "url": "https://blog.bytebytego.com/p/the-life-of-a-database-row-what-really"
+      }
+    ]
+  },
+  {
+    "id": "4704b8e6e683dcf2",
+    "title": "A design audit of an AI-built GitHub clone",
+    "url": "https://swyx.io/a-design-audit-of-an-ai-built-github-clone",
+    "summary": "slug: design-audit-ai-built-github-clone",
+    "category": "dev",
+    "source_name": "Swyx (Shawn Wang)",
+    "published": "2026-11-27T02:32:28+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Swyx (Shawn Wang)",
+        "url": "https://swyx.io/a-design-audit-of-an-ai-built-github-clone"
+      }
+    ]
+  },
+  {
+    "id": "87a93fb01e3fdff3",
+    "title": "Advent of Code 2026: ’Tis the Season to Code in Kotlin",
+    "url": "https://blog.jetbrains.com/kotlin/2026/11/advent-of-code-2026-in-kotlin/",
+    "summary": "December is almost here, and so is one of our favorite coding traditions! We’re excited to take part in Advent of Code once again and invite you to join us for another season of festive puzzles, clever Kotlin solutions, and friendly competition. Advent of Code is a great opportunity to learn something new and have [&#8230;]",
+    "category": "dev",
+    "source_name": "Kotlin Blog",
+    "published": "2026-11-26T22:35:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Kotlin Blog",
+        "url": "https://blog.jetbrains.com/kotlin/2026/11/advent-of-code-2026-in-kotlin/"
+      }
+    ]
+  },
+  {
+    "id": "de7e24dd39def9b7",
+    "title": "NWRUG's (Manchester, UK) December 2026 meeting — Festive social",
+    "url": "https://thoughtbot.com/blog/nwrug-s-manchester-uk-december-2026-meeting-festive-social",
+    "summary": "Swap talks and code for chats and drinks at NWRUG's annual festive social this December.",
+    "category": "dev",
+    "source_name": "Thoughtbot Blog",
+    "published": "2026-11-27T00:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Thoughtbot Blog",
+        "url": "https://thoughtbot.com/blog/nwrug-s-manchester-uk-december-2026-meeting-festive-social"
+      }
+    ]
+  },
+  {
+    "id": "0f139fa98eff21d7",
+    "title": "Safe, automated bug discovery and fixing with Prospero",
+    "url": "https://nullprogram.com/blog/2026/11/27/",
+    "summary": "<p>Fuzz testing remains an effective tool for discovering software defects,\nmore so than ever with AI agents driving, fixing bugs on the fly, clearing\nthe way for deeper fuzzing, all unattended. My <a href=\"/blog/2026/10/31/\">coding harness</a>,\n<a href=\"https://github.com/skeeto/prospero\">Prospero</a>, is particularly suited for this task via its unique <em>deploy\nto container</em> feature. With a bit of one-time prep work, you can run\nagents within a no-network Docker or Podman container with instructions to\nset up and run a fuzzing campaign on your repository. Any fallout from the\nagent or fuzzing campaign is safely trapped in the container, while bug\nfixes flow out freely. As far as I’m aware, Prospero is the only AI\ntooling with this capability.</p>\n\n<p>Fuzz testing has always risked its host. The whole point is to drive the\ntarget into undefined behavior, which may summon nasal demons. Coding\nagents are a new risk to hosts. While not malicious in practice, they make\nmistakes like",
+    "category": "dev",
+    "source_name": "null program (Chris Wellons)",
+    "published": "2026-11-27T03:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "null program (Chris Wellons)",
+        "url": "https://nullprogram.com/blog/2026/11/27/"
+      }
+    ]
+  },
+  {
+    "id": "50b6b46e8e52ea00",
+    "title": "The Real Python Podcast – Episode #320: Optimizing Python Performance & Building a Django Static Site",
+    "url": "https://realpython.com/podcasts/rpp/320/",
+    "summary": "What goes into moving from profiling the performance of a Python program to optimizing it? What are common techniques you should consider for speeding up your code, and which ones should you avoid? Christopher Trudeau is back on the show this week with another batch of PyCoder's Weekly articles and projects.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-27T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/podcasts/rpp/320/"
+      }
+    ]
+  },
+  {
+    "id": "6a1289b8e8a3f197",
+    "title": "Quiz: Python Timer Functions: Three Ways to Monitor Your Code",
+    "url": "https://realpython.com/quizzes/python-timer/",
+    "summary": "Test your knowledge of Python timer functions, from time.perf_counter() to timers built with classes, context managers, and decorators.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-27T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/python-timer/"
+      }
+    ]
+  },
+  {
+    "id": "317abf116da4c3d0",
+    "title": "Quiz: The No AI Slop Manifesto: A Pledge to Own What Agents Ship",
+    "url": "https://realpython.com/quizzes/no-ai-slop-manifesto/",
+    "summary": "Check what you know about the No AI Slop Manifesto, from how it defines slop to owning AI code and what critics dispute.",
+    "category": "dev",
+    "source_name": "Real Python",
+    "published": "2026-11-25T12:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/quizzes/no-ai-slop-manifesto/"
+      }
+    ]
+  },
+  {
+    "id": "2edc18145fe9097b",
+    "title": "Error'd: Mental Health",
+    "url": "https://thedailywtf.com/articles/mental-health",
+    "summary": "<p>Uncharacteristically, I will be earnest for a moment. The holiday season can be a difficult time for many people, for many reasons that are beyond the scope of this column except for the fact that most of them are also wtfs. If you're one of those, stick around, because there are a lot of us here.  And with that, on to BJH, who's a little behind.</p>\n\n<p>\n<strong>B.J. H.</strong> reflects \n\"Have there been any changes in my life in the\nlast 55 years that could cause depression, other than the\ncreation of the Internet?\" I can think of a few but that's definitely on the list.\n</p><blockquote><p><a href=\"#88dd478897514cec92bd6fefbf0d8226\"><img alt=\"88dd478897514cec92bd6fefbf0d8226\" border=\"0\" src=\"https://d3hvi6t161kfmf.cloudfront.net/images/2026/11/26/88dd478897514cec92bd6fefbf0d8226.png\" /></a></p><p> </p></blockquote>\n\n<p>\"I am not an (alphanumeric) number, I'm a free man!\" declares\n<strong>Simon T.</strong>\n\"Teams offered me a new look interface at the top\n- would I like to try it?",
+    "category": "dev",
+    "source_name": "The Daily WTF",
+    "published": "2026-11-27T06:30:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "The Daily WTF",
+        "url": "https://thedailywtf.com/articles/mental-health"
+      }
+    ]
+  },
+  {
+    "id": "44c8c516a6ce4f5b",
+    "title": "A Year, One Sphere, Many Shapes: Houmahani Kane’s Portfolio",
+    "url": "https://tympanus.net/codrops/2026/11/26/houmahani-kane-portfolio/",
+    "summary": "A portfolio built on one morphing sphere, with contour lines inspired by West African wax prints, in Three.js and custom shaders.",
+    "category": "dev",
+    "source_name": "Codrops",
+    "published": "2026-11-26T15:00:56+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Codrops",
+        "url": "https://tympanus.net/codrops/2026/11/26/houmahani-kane-portfolio/"
+      }
+    ]
+  },
+  {
+    "id": "fb1fac45f3c4cc1d",
+    "title": "Freeze And Resume Network Calls In Cypress",
+    "url": "https://glebbahmutov.com/blog/freeze-network-calls/",
+    "summary": "<p>Often our tests need to confirm that while the application is loading its data, the web page shows specific information. For example, whi",
+    "category": "dev",
+    "source_name": "Gleb Bahmutov",
+    "published": "2026-11-26T05:00:00+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Gleb Bahmutov",
+        "url": "https://glebbahmutov.com/blog/freeze-network-calls/"
+      }
+    ]
+  },
+  {
+    "id": "9ddc601322640bb0",
+    "title": "Tokens, constraints, and Black+Decker",
+    "url": "https://freek.dev/3236-tokens-constraints-and-blackdecker",
+    "summary": "<p>Sebastian De Deyne uses Black+Decker's move to computerized planning to show why new technology calls for rethinking old processes. He applies that lesson to AI, encouraging us to question constraints and be more ambitious about what we can build.</p>\n\n\n<a href=\"https://information-overload.net/tokens-constraints-and-black-decker\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-27T12:30:43+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3236-tokens-constraints-and-blackdecker"
+      }
+    ]
+  },
+  {
+    "id": "963308162e2d0956",
+    "title": "NEW Laravel Package: Spatie Suspicious Login",
+    "url": "https://freek.dev/3240-new-laravel-package-spatie-suspicious-login",
+    "summary": "<p>Povilas walks through our Laravel Suspicious Login package, from email alerts to custom blocking rules, with more details in <a href=\"https://freek.dev/3230-detecting-suspicious-logins-in-your-laravel-app\">our blog post</a> and <a href=\"https://spatie.be/docs/laravel-suspicious-login/v1/introduction\">our docs</a>.</p>\n\n\n<a href=\"https://www.youtube.com/watch?v=7NlUFEtZsXA\">Read more</a>",
+    "category": "dev",
+    "source_name": "Freek Van der Herten",
+    "published": "2026-11-27T09:06:05+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Freek Van der Herten",
+        "url": "https://freek.dev/3240-new-laravel-package-spatie-suspicious-login"
+      }
+    ]
+  },
+  {
+    "id": "c0a032872ba07785",
+    "title": "Pun: Format, Lint, and Analyze PHP With One Rust Binary",
+    "url": "https://laravel-news.com/pun-php-toolchain?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews",
+    "summary": "<p><a href=\"https://laravel-news.com/pun-php-toolchain\"><img alt=\"Pun: Format, Lint, and Analyze PHP With One Rust Binary\" src=\"https://picperf.io/https://laravelnews.s3.amazonaws.com/featured-images/HX5WWxJbkAAZz0k.jpeg\" /></a></p>\n                                        <hr />\n\n                    <p>Pun is a Rust binary in public beta that formats, lints, and analyzes PHP 8.3+ code, installs Composer packages, and reads one pun.toml config file.</p>\n\n                    <p>The post <a href=\"https://laravel-news.com/pun-php-toolchain\">Pun: Format, Lint, and Analyze PHP With One Rust Binary</a> appeared first on <a href=\"https://laravel-news.com\">Laravel News</a>.</p>\n                    <p>Join the <a href=\"https://laravel-news.com/newsletter\">Laravel Newsletter</a> to get <a href=\"https://laravel-news.com\">Laravel</a> articles like this directly in your inbox.</p>",
+    "category": "dev",
+    "source_name": "Laravel News",
+    "published": "2026-11-26T14:33:03+00:00",
+    "coverage_count": 1,
+    "sources": [
+      {
+        "name": "Laravel News",
+        "url": "https://laravel-news.com/pun-php-toolchain?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+laravelnews"
+      }
+    ]
+  }
+]

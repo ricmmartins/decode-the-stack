@@ -909,28 +909,56 @@
         "nvidia": 3,
         "meta": 1
       }
+    },
+    {
+      "date": "2026-11-27",
+      "tags": {
+        "microsoft": 2,
+        "claude": 2,
+        "dotnet": 3,
+        "api": 2,
+        "github": 4,
+        "linux": 1,
+        "llm": 1,
+        "google": 3,
+        "docker": 2,
+        "containers": 2,
+        "laravel": 2,
+        "python": 3,
+        "django": 1,
+        "zero-day": 1,
+        "open-source": 1,
+        "llama": 1,
+        "amd": 1,
+        "nvidia": 3,
+        "nginx": 1,
+        "kotlin": 1,
+        "rust": 1,
+        "php": 1,
+        "openai": 1
+      }
     }
   ],
   "top_tags": [
     "github",
     "api",
     "claude",
-    "open-source",
     "nvidia",
+    "open-source",
     "google",
     "python",
     "dotnet",
     "microsoft",
     "anthropic",
-    "cve",
     "openai",
+    "cve",
     "vercel",
     "aws",
     "golang",
     "linux",
     "rust",
-    "apple",
     "llm",
+    "apple",
     "laravel"
   ]
 }

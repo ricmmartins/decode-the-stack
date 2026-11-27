@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0,
+      "title": "Teaser"
+    },
+    {
+      "startTime": 8,
+      "title": "Opening"
+    },
+    {
+      "startTime": 150,
+      "title": "An interface can feel instant without the operation..."
+    },
+    {
+      "startTime": 309,
+      "title": "The common thread here is coordination: between agents,..."
+    },
+    {
+      "startTime": 455,
+      "title": "The provocative title here is “How to Kill the Code..."
+    },
+    {
+      "startTime": 613,
+      "title": "That question of control also runs through the AMD-specific..."
+    },
+    {
+      "startTime": 748,
+      "title": "To close, a reminder that developer infrastructure carries..."
+    }
+  ]
+}

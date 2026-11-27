@@ -9,7 +9,7 @@
     <link>https://decodethestack.com/</link>
     <language>en-US</language>
     <description>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</description>
-    <lastBuildDate>Thu, 26 Nov 2026 13:27:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 13:26:56 +0000</lastBuildDate>
     <atom:link href="https://decodethestack.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Decode the Stack</itunes:author>
     <itunes:summary>A daily English-language technology briefing for software professionals. Anna, Maria, and Pedro connect the context behind engineering, cloud, DevOps, security, and AI/ML stories.</itunes:summary>
@@ -28,6 +28,20 @@
       <title>Decode the Stack</title>
       <link>https://decodethestack.com/</link>
     </image>
+    <item>
+      <title>Faster software still needs boundaries and evidence</title>
+      <description>Friday’s selection connects AI-assisted development, responsive interfaces, and distributed performance through a shared concern: apparent success is not the same as verified correctness. Across these reports and practitioner accounts, the strongest lesson…</description>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://decodethestack.com/podcast/audio/2026-11-27.mp3?v=430341d6edd8" length="11634773" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://decodethestack.com/podcast/audio/2026-11-27.mp3</guid>
+      <link>https://decodethestack.com/posts/2026-11-27-daily/</link>
+      <itunes:author>Decode the Stack</itunes:author>
+      <itunes:summary>Friday’s selection connects AI-assisted development, responsive interfaces, and distributed performance through a shared concern: apparent success is not the same as verified correctness. Across these reports and practitioner accounts, the strongest lesson…</itunes:summary>
+      <itunes:duration>969</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:chapters url="https://decodethestack.com/podcast/chapters/2026-11-27.json" type="application/json+chapters"/>
+    </item>
     <item>
       <title>Agent-led work puts reliability and control in focus</title>
       <description>Thursday’s briefing connects expanding software-building autonomy with the infrastructure needed to support it: reusable components, durable execution, better retrieval, and clearer governance. Alongside those developments, security reporting and tooling…</description>
